@@ -1,0 +1,91 @@
+
+    body
+    {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        margin:0;
+        padding: 0;
+        background: url(../img/abs.jpg);
+        color:white;
+    }
+
+    .navbar1 li a
+    {
+        font-size:23px;
+        padding: 23px;
+        margin: 2px 25px;
+        text-decoration: none;
+        color: white;
+    }
+    .navbar1 li a:hover
+    {
+        color:rgb(241, 241, 120);
+        transition: .5s;
+        text-decoration:underline;
+    }
+    .left img
+    {
+        width: 150px;
+        height:70px;
+        filter: invert(13%);
+    }
+    .btn
+    {
+        margin: 15px 10px;
+        background-color: black;
+        color: white;
+        padding: 5px;
+        border-radius: 10px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+    .btn:hover
+    {
+        background: rgb(87, 82, 82);
+    }
+    
+    .form-grp input
+    {
+        width:350px;
+        font-size:15px;
+        font-weight:bolder;
+        color:black;
+        margin:10px auto;
+        padding:5px;
+        text-align: center;
+        display: block;
+        border-radius: 20px;
+        border:none;
+    }
+
+    .container h1
+    {
+        text-align: center;
+    }
+    .container .btn2
+    {
+        width: 200px;
+        display:block;
+        margin: 0px  auto;
+        padding: 10px;
+    }
+    .container .btn2:hover
+    {
+        font-size: larger;
+        width: 300px;
+        margin: 0px  auto;
+        padding: 10px;
+        background-color: rgb(134, 131, 131);
+        transition:0.5s;
+    }
+
+    @media screen and (max-width: 1000px) {
+  body {
+    /*background-color: blue;*/
+  }
+  .header
+  {
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+  }
+}

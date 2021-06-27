@@ -1,0 +1,239 @@
+.myfont
+{
+	font-family: 'Dancing Script';
+}
+
+/*nav*/
+.navsec
+{
+	height: 100vh;
+}
+.navsec::before
+{
+	content: "";
+	width: 100%;
+	height: 100vh;
+	background:url("img/bg.jpg");	
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	z-index: -1;
+}
+.mynavbar a 
+{
+/*color: #c3ce57;*/
+font-size: 2rem;
+}
+
+section .mybtn1
+{
+		color: #c3ce57;
+		background-color:#393d12;
+		opacity: 0.6;
+		margin: 20px;
+		padding: 10px 40px;
+		font-size: 2rem;
+}
+section .mybtn1:hover
+{
+		color: #393d12;
+		background-color: #c3ce57;
+		opacity: 0.6;
+		margin: 20px;
+		padding: 20px 50px;
+		border-radius: 20px;
+		border:none;
+		font-size: 2rem;
+}
+.navsec .mydiv
+{
+	height: 80vh;
+	color: #c3ce57;
+	font-weight: bold;
+}  
+.sectwo
+{
+	height: 40vh;
+	color: #c3ce57;
+	background-image: url("img/9.jpg");
+	background-repeat:no-repeat;
+}
+.sectwo p
+{
+	color: #fff;
+}
+.secthree
+{
+	/*background-color:#474c16;*/
+	opacity: .9
+}
+/*.secthree::before
+{
+	content: "";
+	width: 100%;
+	height: 46vh;
+	background:url("img/bg3.png");	
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	z-index: -1;
+*/
+.secthree .mycard2
+{
+	background-color:#474c16;
+	color: #fff;
+	border: none;	
+}
+.secthree .mycard2:hover
+{
+	background-color:#474c16;
+	color: #fff;
+	border: none;
+	padding:10px;	
+}
+
+.secthree .mycard2 i
+{
+	color: green;
+	border: none;
+}
+
+.secfour
+{
+	background-color: black;
+	opacity: .9;
+}
+.secfour .mycard
+{
+height: 30vh;
+border: none;
+/*background-color:#474c16;*/
+}
+.secfour .mycard:hover
+{
+height: 30vh;
+border: none;
+margin:20px;
+padding: 5px;
+/*background-color:#474c16;*/
+}
+
+.secfour .mycard h5
+{
+	color: green;
+}
+.secfour .mycard img
+{
+height: 30vh;
+}
+
+.secsix
+{
+	background-image: url("img/7.jpg");
+	width: 100vw;
+	height: 30vh;	
+}
+.secseven
+{
+	/*background-color: green;*/
+}
+
+.seceight
+{
+	background-image: url("img/9.jpg");
+	width: 100vw;
+	height: 100vh;	
+}
+.secnine,.secnine input,.mycolor
+{
+	background-color: black;
+	opacity: 0.9;
+	color: #fff;
+}
+
+.secnine #mybtn2
+{
+	margin: 20px 20px;
+	padding: 5px 80px;
+	color: #fff;
+	background-color: black;
+	border: 2px solid #fff;
+	border-radius: 10px;
+}
+.secnine #mybtn2:hover
+{
+	margin: 20px 20px;
+	padding: 5px 80px;
+	color:black;
+	background-color: #fff;
+	border: 2px solid #fff;
+	border-radius: 10px;
+	font-size: 1.2rem;
+}
+
+.secten
+{
+	background-image: url("img/8.jpg");
+	width: 100vw;
+	height: 100vh;	
+}
+
+.seceleven .mybtn3
+{
+	color: black;
+	text-transform: capitalize;
+    border-bottom: 3px solid green;
+}
+
+
+/*footer*/
+.myfooter ul
+{
+	display: flex;
+	padding: 0;
+}
+.myfooter ul li
+{
+	list-style: none;
+	margin-left: 20px;
+	font-size: 2rem;
+	padding: 10px;
+}
+.myfooter ul li a i
+{
+	color:black;
+	border-radius: 50%;
+	 padding: 8px;
+	 background-color: #fff;
+}
+
+.fa:hover {
+    opacity: 0.9;
+    font-size: 2.7rem;
+}
+/*footer end*/
+
+.sec13 li
+{
+	list-style: none;
+}
+
+@media screen and (max-width: 452px) {
+  body {
+    /*background-color: blue;*/
+  }
+  .myfooter ul li
+{
+	list-style: none;
+	margin-left: 10px;
+	font-size: 1rem;
+	padding: 5px;
+}
+.myfooter ul li a i
+{
+	color:black;
+	border-radius: 50%;
+	 padding: 5px;
+	 background-color: #fff;
+}
+}
