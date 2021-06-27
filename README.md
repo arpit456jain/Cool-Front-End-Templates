@@ -115,7 +115,7 @@ Thanks go to these **Wonderful People** 👨🏻‍💻:      🚀 **Contributio
 	<tr>
 		 <td>
   <a href="https://github.com/arpit456jain/Cool-Front-End_Templates/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=arpit456jain/Cool-Front-End_Templates" />
+  <img src="https://contributors-img.web.app/image?repo=arpit456jain/Cool-Front-End_Templates" />
   </a>
 		</td>
 	</tr>
