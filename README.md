@@ -72,5 +72,77 @@ You should navigate to your forked repository, and press the "Compare & pull req
 GitHub will alert you that you can merge the two branches because there is no competing code. You should add in a title, a comment, and then press the “Create pull request” button.
 
 
+
+
 <br>
+
+ ## 📌Till Then 
+<p align="center"><img src="http://www.gurpreetsaluja.com/wp-content/uploads/2016/05/always-keep-learning.png" width=30%></p>
+<hr>
+
+ <h1 align=center> Project Admin ❤️ </h1>
+<p align="center">
+
+<table>
+  <tbody><tr>
+ <td align="center"><a href="https://github.com/arpit456jain"><img alt="" src="https://avatars.githubusercontent.com/arpit456jain" width="130px;"><br><sub><b> Arpit Jain </b></sub></a><br><a href="https://github.com/arpit456jain/Cool-Front-End_Templates/commits?author=arpit456jain" title="Code">💻 </a></td> </a></td>
+<td align="center"><a href="https://github.com/codeaholic-shub"><img alt="" src="https://avatars.githubusercontent.com/codeaholic-shub" width="130px;"><br><sub><b> Shubhankar Poddar </b></sub></a><br><a href="https://github.com/codeaholic-shub/Cool-Front-End_Templates/commits?author=codeaholic-shub" title="Code">💻 </a></td> </a></td>
+</tbody></table>
+
+<h1 align=center> Project Maintainers 😃 </h1>
+<p align="center">
+
+<table>
+  <tbody><tr>
+    <td align="center"><a href="https://github.com/JyotiKumari2"><img alt="" src="https://avatars.githubusercontent.com/JyotiKumari2" width="130px;"><br><sub><b> Jyoti Kumari </b></sub></a><br><a href="https://github.com/JyotiKumari2/Cool-Front-End_Templates/commits?author=JyotiKumari2" title="Code">💻 </a></td></a></td>
+    <td align="center"><a href="https://github.com/MrTwinkleSharma"><img alt="" src="https://avatars.githubusercontent.com/MrTwinkleSharma" width="130px;"><br><sub><b> Mr. Twinkle Sharma </b></sub></a><br><a href="https://github.com/MrTwinkleSharma/Cool-Front-End_Templates/commits?author=MrTwinkleSharma" title="Code">💻 </a></td></a></td>
+     <td align="center"><a href="https://github.com/RishikaGhosh"><img alt="" src="https://avatars.githubusercontent.com/RishikaGhosh" width="130px;"><br><sub><b>
+Rishika Ghosh  </b></sub></a><br><a href="https://github.com/RishikaGhosh/Cool-Front-End_Templates/commits?author=RishikaGhosh" title="Code">💻 </a></td></a></td>
+<td align="center"><a href="https://github.com/RounakNeogy"><img alt="" src="https://avatars.githubusercontent.com/RounakNeogy" width="130px;"><br><sub><b>
+Rounak Neogy  </b></sub></a><br><a href="https://github.com/RounakNeogy/Cool-Front-End_Templates/commits?author=RounakNeogy" title="Code">💻 </a></td></a></td>
+<td align="center"><a href="https://github.com/siddhi-244"><img alt="" src="https://avatars.githubusercontent.com/siddhi-244" width="130px;"><br><sub><b>
+Siddhi Bhanushali  </b></sub></a><br><a href="https://github.com/siddhi-244/Cool-Front-End_Templates/commits?author=siddhi-244" title="Code">💻 </a></td></a></td>
+
+
+  </tr>
+</tbody></table>
+
+<h2 align=center> ✨ Contributors </h2>
+
+Thanks go to these **Wonderful People** 👨🏻‍💻:      🚀 **Contributions** of any kind are welcome! 
+
+<table>
+	<tr>
+		 <td>
+  <a href="https://github.com/arpit456jain/Cool-Front-End_Templates/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=arpit456jain/Cool-Front-End_Templates" />
+  </a>
+		</td>
+	</tr>
+</table>
+
+
+
+## ✔️Code of Conduct
+<p align="center"><a href="https://github.com/nilisha-jais/Musicophilia/blob/main/CODE_OF_CONDUCT.md"><img width=35% src="https://media.giphy.com/media/qHRwTyhWIj4UU/200w_d.gif"></a></p>
+
+## ✔️License 
+<p align="center"><a href="https://github.com/nilisha-jais/Musicophilia/blob/main/LICENSE"><img width=35% src="https://media.giphy.com/media/xUPGcJGy8I928yIlAQ/giphy.gif"></a></p>
+
+
+<hr>
+
+<h1 align=center>Happy Coding 👨‍💻 </h1>
+
+
+
+
+
+
+
+
+
+
+
+
 show some ❤️&nbsp; by giving the star to this repo
