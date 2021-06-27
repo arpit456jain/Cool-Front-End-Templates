@@ -1,0 +1,134 @@
+body {
+  background-color: #EAF6F6;
+  font-family: 'Merriweather', serif;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Roboto Mono', monospace;
+}
+
+.tribute {
+  text-align: center;
+}
+
+.project {
+  height: 265.450px;
+  width: 200px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+hr {
+  border: dotted #A8A8A8 6px;
+  border-bottom: none;
+  width: 4%;
+  margin: 40px auto;
+}
+
+p {
+  line-height: 2;
+  margin-bottom: 33.200px;
+}
+
+a {
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  color: black;
+}
+
+h2 {
+  text-align: center;
+}
+
+table, th, td {
+  text-align: center;
+  border: 1px solid black;
+  width: 50%;
+  margin-left: 380px;
+}
+
+.first {
+  width: 300px;
+  height: 300px;
+}
+
+.second {
+  width: 305px;
+  height: 305px;
+}
+
+.third {
+  width: 300px;
+  height: 300px;
+}
+
+.fourth {
+  width: 300px;
+  height: 300px;
+}
+
+.fifth {
+  width: 300px;
+  height: 300px;
+}
+
+.sixth {
+  width: 300px;
+  height: 300px;
+}
+
+.seventh {
+  width: 300px;
+  height: 300px;
+}
+
+.eigth {
+  width: 300px;
+  height: 300px;
+}
+
+.ninth {
+  width: 300px;
+  height: 300px;
+}
+
+.tenth {
+  width: 330px;
+  height: 330px;
+}
+
+.eleventh {
+  width: 300px;
+  height: 300px;
+}
+
+.twelth {
+  width: 300px;
+  height: 300px;
+}
+.copyright{
+  color: #EAF6F6;
+  padding: 20px 0;
+  font-size: 0.74rem;
+}
+.bottom-container{
+  background-color: #66BFBF;
+  padding: 30px 0 0;
+  margin-top: 10px;
+}
+.design{
+  font-family: 'Pacifico', cursive;
+  font-size: 30px;
+}
+.abc:hover{
+  color: #EAF6F6
+}
+.design1{
+  font-size: 20px;
+}
+.designing:hover{
+  color: #66BFBF;
+}
