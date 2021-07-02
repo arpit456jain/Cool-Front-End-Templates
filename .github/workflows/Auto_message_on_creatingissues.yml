@@ -14,7 +14,7 @@ jobs:
       with:
         issue-number: ${{tojson(github.event.issue.number)}}
         body: |
-            Hello there!👋, @${{ github.actor }} Welcome to the Amazing CSS-Effects project!🚀⚡Thank you and congrats🎉 for opening issue in this project.
+            Hello there!👋, @${{ github.actor }} Welcome to the Cool-Front-End_Templates!🚀⚡Thank you and congrats🎉 for opening issue in this project.
   Please make sure not to start working on the issue, unless you get assigned to it.😄
              
   
