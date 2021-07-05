@@ -1,0 +1,101 @@
+body {
+  margin: 0 auto;
+  padding: auto;
+  background-color: rgb(19, 24, 44);
+}
+  /* heading */
+h1 {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  text-align: center;
+  padding: 15px 20px;
+  position: relative;
+    }
+    h1:after {    
+      background: none repeat scroll 0 0 transparent;
+      bottom: 0;
+      content: "";
+      display: block;
+      height: 2px;
+      left: 50%;
+      position: absolute;
+      background: #fff;
+      transition: width 0.3s ease 0s, left 0.3s ease 0s;
+      width: 0;
+    }
+    h1:hover:after { 
+      width: 100%; 
+      left: 0; 
+    }  
+   
+.styles {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  margin-top: 4vmin;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
+}
+
+.stylebox {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(240, 216, 216);
+  padding: 3vmin;
+  text-align: center;
+  font-size: 2vmax;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 1vmax;
+  border-radius: 8px;
+  box-shadow: 3px 3px rgba(0, 0, 0, 0.459);
+  border: 2px solid black;
+  width: 40vmin;
+  height: 40vmin;
+  justify-content: center;
+}
+
+.stylebox a {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 1vmin;
+  font-size: 2vmax;
+  background-color: rgb(29, 128, 119);
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: rgb(15, 173, 173);
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .styles {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 4vmin;
+  }
+  .stylebox {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 3vmin;
+    text-align: center;
+    font-size: 3vmax;
+    border-radius: 8px;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.459);
+    border: 2px solid black;
+    width: 80vmin;
+    height: 30vmin;
+    margin: auto;
+    margin-top: 1vmax;
+    margin-bottom: 1vmax;
+    justify-content: center;
+  }
+}
+
