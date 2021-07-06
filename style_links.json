@@ -7,6 +7,12 @@
     "name": "Chinese Restaurant",
     "link": "Chinese Restaurant/index.html"
   },
+
+  {
+    "name": "Coming Soon",
+    "link": "ComingSoon/index.html"
+  },
+  
   {
     "name": "Covid-19",
     "link": "Covid-19/index.html"
@@ -40,7 +46,19 @@
     "link": "Simple portfolio template/index.html"
   },
   {
+    "name": "Stationary website",
+    "link": "Stationary website/index.html"
+  },
+  {
+    "name": "Tailwind Portfolio",
+    "link": "Tailwind Portfolio/index.html"
+  },
+  {
     "name": "Responsive Imaginative",
     "link": "Responsive Imaginative/index.html"
+  },
+  {
+    "name": "We design and develop",
+    "link": "We design and develop/index.html"
   }
 ]
