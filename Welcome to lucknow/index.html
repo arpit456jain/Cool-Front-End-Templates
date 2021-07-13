@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+<title>First website</title>
+</head>
+<body style="background-color:rgba(5, 2, 14, 0.979);">
+    <header class="text-gray-600 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg>
+            <span class="ml-3 text-xl"><font face="Arial" color="#FFFFFF">WELCOME TO LUCKNOW</font></span>
+          </a>
+          <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
+            <a class="mr-5 hover:text-gray-900"><font face="Arial" color="#FFFFFF">Home</font></a>
+            <a class="mr-5 hover:text-gray-900"><font face="Arial" color="#FFFFFF">Travel blog</font></a>
+            <a class="mr-5 hover:text-gray-900"><font face="Arial" color="#FFFFFF">Road trips</font></a>
+            <a class="mr-5 hover:text-gray-900"><font face="Arial" color="#FFFFFF">Budget Hotels</font></a>
+          </nav>
+          <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Book Hotel
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </button>
+        </div>
+      </header>
+      <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto flex flex-wrap items-center">
+          <div class="lg:w-3/5 md:w-1/2 md:pr-16 lg:pr-0 pr-0">
+            <h1 class="title-font font-medium text-3xl text-gray-900"><font face="Corben" size="10" color="#FFFFFF"><marquee>Nawabon ka Shahar-Lucknow</marquee></font></h1>
+            <p class="leading-relaxed mt-4"><font face="Arial" color="#FFFFFF"> Lucknow is the capital city of Uttar Pradesh and it has always been a multicultural city.
+              Lucknow has always been a multicultural city that flourished as a North Indian cultural 
+              and artistic hub, and the seat of power of Nawabs in the 18th
+               and 19th centuries. It continues to be an important centre of governance, 
+               administration, education, commerce, aerospace, finance, pharmaceuticals, technology, 
+               design, culture, tourism, music and poetry.<br>
+               Places to Visit in Lucknow:
+               Bara Imambara	             ,            Chota Imambara
+               British Residency	          ,            Rumi Darwaza
+               Chattar Manzil           	   ,           Dilkusha Kothi
+               Husainabad Clock Tower	        ,          Amrapali Water Park
+               Four Seasons Fun City Water Park, 	       Aminabad Market
+               Hazratganj Market                ,        	Chowk
+               Indira Gandhi Planetarium	       ,        Ambedkar Park
+               Nawab Wahid Ali Shah Zoological Garden	,   State Museum
+               Ram Manohar Lohiya Park	               ,    Gomti Riverfront Park
+               Janeshwar Mishra Park	                  ,   Chandrika Devi Temple
+               Fun Republic Mall                         ,  	Jama Masjid
+               Constantia House	                          ,    Satkhanda
+               Charbagh Railway Station</font></p>
+          </div>
+          <div class="lg:w-2/6 md:w-1/2 bg-gray-100 rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0">
+            <h2 class="text-gray-900 text-lg font-medium title-font mb-5">Sign Up/login to get notifications</h2>
+            <div class="relative mb-4">
+              <label for="full-name" class="leading-7 text-sm text-gray-600">Full Name</label>
+              <input type="text" id="full-name" name="full-name" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+            </div>
+            <div class="relative mb-4">
+              <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
+              <input type="email" id="email" name="email" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+            </div>
+            <button class="text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
+            <p class="text-xs text-gray-500 mt-3">Checkins/Checkouts.</p>
+          </div>
+        </div>
+      </section>
+      
+      <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-wrap -m-4">
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+              <a class="block relative h-48 rounded overflow-hidden">
+                <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://images.unsplash.com/photo-1547716467-fdb9102f1ac4?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bHVja25vd3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
+              </a>
+              <div class="mt-4">
+                <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1"><font face="Arial" color="#C0C0C0">Bara Imambara</font></h3>
+                <h2 class="text-gray-900 title-font text-lg font-medium"><font face="Arial" color="#FFFFFF">
+                  Bara Imambara, also known as Asfi Imambara is an
+                   imambara complex in Lucknow, India built by Asaf-ud-Daula,
+                    Nawab of Awadh in 1784.</font></h2>
+                <p class="mt-1"><font face="Arial" color="#C0C0C0">Timings: Sunrise to Sunset; every day 
+                  Entry Fee: ₹ 25 for Indians; ₹ 500 for foreign nationals</font></p>
+              </div>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+              <a class="block relative h-48 rounded overflow-hidden">
+                <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://www.fabhotels.com/blog/wp-content/uploads/2019/03/1000x650-7.jpg">
+              </a>
+              <div class="mt-4">
+                <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1"><font face="Arial" color="#C0C0C0"> Rumi Darwaza</font></h3>
+                <h2 class="text-gray-900 title-font text-lg font-medium"><font face="Arial" color="#FFFFFF">This gateway built in 1784 by 
+                  Nawab Asaf-ud-Daula is about 60-feet tall
+                   and is generally used as the logo for Lucknow city.</font></h2>
+                <p class="mt-1"><font face="Arial" color="#C0C0C0">Timings: 24×7
+                  Entry Fee: Free</font></p>
+              </div>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+              <a class="block relative h-48 rounded overflow-hidden">
+                <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://www.fabhotels.com/blog/wp-content/uploads/2019/03/Husainabad-Clock-Tower.jpg">
+              </a>
+              <div class="mt-4">
+                <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1"><font face="Arial" color="#C0C0C0">Husainabad Clock Tower</font></h3>
+                <h2 class="text-gray-900 title-font text-lg font-medium"><font face="Arial" color="#FFFFFF">Located adjacent to the Rumi Darwaza,
+                   Husainabad Clock Tower is another heritage
+                    monument dotting the cityscape of Lucknow.</font> </h2>
+                <p class="mt-1"><font face="Arial" color="#C0C0C0">Timings: 24×7; every day  
+                  Entry Fee: Free</font></p>
+              </div>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+              <a class="block relative h-48 rounded overflow-hidden">
+                <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://www.fabhotels.com/blog/wp-content/uploads/2019/02/Shell-City-Water-Park.jpg">
+              </a>
+              <div class="mt-4">
+                <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1"><font face="Arial" color="#C0C0C0"> Amrapali Water Park</font></h3>
+                <h2 class="text-gray-900 title-font text-lg font-medium"><font face="Arial" color="#FFFFFF">When you are in the mood for some aquatic fun, head off to Amrapali Water Park, one of the best water parks in Lucknow.</font></h2>
+                <p class="mt-1"><font face="Arial" color="#C0C0C0">Timings: 10:00 am to 6:00 pm; every day
+                  Entry Fee: ₹ 800 for adults; ₹ 600 for kids</font></p>
+              </div>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+              <a class="block relative h-48 rounded overflow-hidden">
+                <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://www.fabhotels.com/blog/wp-content/uploads/2019/03/Aminabad-Market.jpg">
+              </a>
+              <div class="mt-4">
+                <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1"><font face="Arial" color="#C0C0C0">Aminabad Market</font></h3>
+                <h2 class="text-gray-900 title-font text-lg font-medium"><font face="Arial" color="#FFFFFF">One of the best places to shop in Lucknow is the Aminabad Market, which has been in operation since the times of the Nawabs.</font></h2>
+                <p class="mt-1"><font face="Arial" color="#C0C0C0">Timings: Morning till night; closed on Thursdays
+                  Must-visit destinations: Madan Sarees, Sargodha Cloth House, Keshav Décor, Om Prakash Seth, Dupatta Mahal, and Sri Keshav Handloom</font></p>
+              </div>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+              <a class="block relative h-48 rounded overflow-hidden">
+                <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://www.fabhotels.com/blog/wp-content/uploads/2019/03/1000x650-8.jpg">
+              </a>
+              <div class="mt-4">
+                <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1"><font face="Arial" color="#C0C0C0"> Hazratganj Market</font></h3>
+                <h2 class="text-gray-900 title-font text-lg font-medium"><font face="Arial" color="#FFFFFF">The Hazratganj Market, a century-old shopping area located in the heart of Lucknow, is where you can find the city’s vibrant soul</font></h2>
+                <p class="mt-1"><font face="Arial" color="#C0C0C0">Timings: Morning till night; closed on Sundays
+                  Must-visit destinations: Sahara Mall, Janpath, Kashmir Government Arts Emporium, Gandhi Ashram, Ram Advani Booksellers, Naza Computer Market</font></p>
+              </div>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+              <a class="block relative h-48 rounded overflow-hidden">
+                <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://www.fabhotels.com/blog/wp-content/uploads/2019/03/1000x650-9.jpg">
+              </a>
+              <div class="mt-4">
+                <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1"><font face="Arial" color="#C0C0C0">Indira Gandhi Planetarium</font></h3>
+                <h2 class="text-gray-900 title-font text-lg font-medium"><font face="Arial" color="#FFFFFF">A visit to the Indira Gandhi Planetarium must be on your list of things to do in Lucknow, especially if you are a science enthusiast or traveling with your kids</font></h2>
+                <p class="mt-1"><font face="Arial" color="#C0C0C0">Timings: 10:00 am to 5:00 pm; closed on Mondays
+                  Entry Fee: ₹ 25 per person</font></p>
+              </div>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+              <a class="block relative h-48 rounded overflow-hidden">
+                <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://www.fabhotels.com/blog/wp-content/uploads/2019/03/1000x650-10.jpg">
+              </a>
+              <div class="mt-4">
+                <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1"><font face="Arial" color="#C0C0C0">Ambedkar Park</font></h3>
+                <h2 class="text-gray-900 title-font text-lg font-medium"><font face="Arial" color="#FFFFFF">A public park and memorial built across 107 acres in Gomti Nagar, Ambedkar Park honors Dr. Ambedkar, Jyotirao Phule, Kanshi Ram, Narayana Guru, and many other social reformers who worked for equality and social justice.</font></h2>
+                <p class="mt-1"><font face="Arial" color="#C0C0C0">Timings: 11:00 am to 9:00 pm; every day 
+                  Entry Fee: ₹ 15 per person</font></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="text-gray-600 body-font">
+        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+          <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg>
+            <span class="ml-3 text-xl"><font face="Arial" color="#FFFFFF">Explore and Travel</font></span>
+          </a>
+          <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4"><font face="Arial" color="#FFFFFF">© 2021 akritisrivastava</font>
+            <a href="https://twitter.com/knyttneve" class="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank"><font face="Arial" color="#FFFFFF">@abcdefgh</font></a>
+          </p>
+          <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+            <a class="text-gray-500">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500">
+              <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                <circle cx="4" cy="4" r="2" stroke="none"></circle>
+              </svg>
+            </a>
+          </span>
+        </div>
+      </footer>
+    
+
+</body>
+</html>
