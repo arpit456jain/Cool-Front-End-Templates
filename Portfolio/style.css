@@ -1,0 +1,246 @@
+
+
+.bgimg
+{
+	background: url("img/bg7.jpg");
+	background-size: 100% 100%;
+	background-attachment: fixed;
+	content: "";
+	height: 100vh;
+
+}
+
+
+.navbar li , .navbar > a
+{
+	margin: 5px;
+	font-size: 1.2rem;
+	font-weight: 600;
+	/*background-color: red;*/
+	border-radius: 20px;
+	padding: 5px 10px;
+}
+.navbar li:hover , .navbar > a:hover 
+{
+	background-color: skyblue;
+	/*font-size: 1.3	rem;*/
+	transition: .5s;
+}
+.navbar .active
+{
+	background-color:skyblue;
+	border-radius: 20px;
+	padding: 5px 10px;
+}
+.headerset
+{
+	padding-top:15%;
+	box-sizing: border-box; 
+}
+.headerset h3
+{
+	font-size: 1.4rem;
+}
+.headerset h1
+{
+	font-size: 4rem;
+	font-weight: bold;
+}
+
+.rowsetting
+{
+	margin: 80px 0px;
+	padding: 10px;
+}
+.imgsetting
+{
+	height: 15vh;
+	color: #fff;	
+	width: 15vh;
+}
+.fa-shopping-cart
+{
+	margin-top: 20px;
+}
+.card
+{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border: none;	
+}
+  
+#footer {
+	background: #101522;
+	padding: 0 0 25px 0;
+	color: #eee;
+	font-size: 14px;
+  }
+  
+  #footer .footer-top {
+	background: #040919;
+	padding: 60px 0 30px 0;
+  }
+  
+  #footer .footer-top .footer-info {
+	margin-bottom: 30px;
+  }
+  
+  #footer .footer-top .footer-info h3 {
+	font-size: 26px;
+	margin: 0 0 20px 0;
+	padding: 2px 0 2px 0;
+	line-height: 1;
+	font-family: "Raleway", sans-serif;
+	font-weight: 700;
+	color: #fff;
+  }
+  
+  #footer .footer-top .footer-info img {
+	height: 40px;
+	margin-bottom: 10px;
+  }
+  
+  #footer .footer-top .footer-info p {
+	font-size: 14px;
+	line-height: 24px;
+	margin-bottom: 0;
+	font-family: "Raleway", sans-serif;
+	color: #fff;
+  }
+  
+  #footer .footer-top .social-links a {
+	font-size: 18px;
+	display: inline-block;
+	background: #222636;
+	color: #eee;
+	line-height: 1;
+	padding: 8px 0;
+	margin-right: 4px;
+	border-radius: 50%;
+	text-align: center;
+	width: 36px;
+	height: 36px;
+	transition: 0.3s;
+  }
+  
+  #footer .footer-top .social-links a:hover {
+	background: #f82249;
+	color: #fff;
+  }
+  
+  #footer .footer-top h4 {
+	font-size: 14px;
+	font-weight: bold;
+	color: #fff;
+	text-transform: uppercase;
+	position: relative;
+	padding-bottom: 12px;
+	border-bottom: 2px solid #f82249;
+  }
+  
+  #footer .footer-top .footer-links {
+	margin-bottom: 30px;
+  }
+  
+  #footer .footer-top .footer-links ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+  }
+  
+  #footer .footer-top .footer-links ul i {
+	padding-right: 5px;
+	color: #f82249;
+	font-size: 18px;
+  }
+  
+  #footer .footer-top .footer-links ul li {
+	border-bottom: 1px solid #262c44;
+	padding: 10px 0;
+  }
+  
+  #footer .footer-top .footer-links ul li:first-child {
+	padding-top: 0;
+  }
+  
+  #footer .footer-top .footer-links ul a {
+	color: #eee;
+  }
+  
+  #footer .footer-top .footer-links ul a:hover {
+	color: #f82249;
+  }
+  
+  #footer .footer-top .footer-contact {
+	margin-bottom: 30px;
+  }
+  
+  #footer .footer-top .footer-contact p {
+	line-height: 26px;
+  }
+  
+  #footer .footer-top .footer-newsletter {
+	margin-bottom: 30px;
+  }
+  
+  #footer .footer-top .footer-newsletter input[type="email"] {
+	border: 0;
+	padding: 6px 8px;
+	width: 65%;
+  }
+  
+  #footer .footer-top .footer-newsletter input[type="submit"] {
+	background: #f82249;
+	border: 0;
+	width: 35%;
+	padding: 6px 0;
+	text-align: center;
+	color: #fff;
+	transition: 0.3s;
+	cursor: pointer;
+  }
+  
+  #footer .footer-top .footer-newsletter input[type="submit"]:hover {
+	background: #e0072f;
+  }
+  
+  #footer .copyright {
+	text-align: center;
+	padding-top: 30px;
+  }
+  
+  #footer .credits {
+	text-align: center;
+	font-size: 13px;
+	color: #ddd;
+  }
+  .carousel,.carousel .carousel-inner,.carousel .carousel-inner .active,.carousel .carousel-inner .carousel-item,.view
+  {
+	  height:100%;
+	}
+
+	.carousel h1
+	{
+		color: #fff;
+		font-size: 4rem;
+	}
+	.carousel p
+	{
+		color: #fff;
+	}
+	.carousel .mytext,.carousel .mytext p
+	{
+		margin-top: 20vh;
+	}
+	@media screen and (max-width: 550px) {
+		.carousel  h1
+	{
+	   
+		font-size: 3rem;
+	}
+	 
+	.carousel .mytext, .carousel .mytext p
+	{
+		margin-top: 10vh;
+	}
+	}
