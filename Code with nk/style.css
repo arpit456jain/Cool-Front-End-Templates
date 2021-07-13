@@ -1,0 +1,65 @@
+.logo{
+  width: 191px;
+    margin: 5px;
+}
+.bg-theme{
+    padding: 0px;
+    background-color: #0a0a0a;
+}
+.brand-logo{
+     width: 90px;
+    margin-left: 20px;
+	display: none;
+}
+.logo-head{
+    color: white;
+    margin-top: 20px;
+    font-weight: bold;
+    font-family: emoji;
+}
+.navbar-light .navbar-nav .nav-link{
+    color: #fff;
+    margin-right: 150px;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+   
+    color: black;
+    background-color: #ffb516;
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: black;
+    background-color: #ffb516;
+}
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+.outer-right{
+    text-align: center;
+    padding: 66px;
+    background-image: url(../images/blue-back-bg.jpg);
+    background-color: #13305d;
+}
+.outer-right h4{
+    color: #ff992f;
+    
+}
+.outer-right h5{
+    color: #4bff00;
+    
+}
+.footer{
+    margin-top: 50px;
+    background-color: #132f57;
+    text-align: center;
+    color: #fff;
+    padding: 20px 230px;
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: black;
+    background-color: #ffb516;
+}
+.dropdown:hover .dropdown-menu{
+    display: block
+
