@@ -4,15 +4,25 @@
     "link": "Admin Dashboard/index.html"
   },
   {
+    "name": "Artica",
+    "link": "Artica/index.html"
+  },
+  {
     "name": "Chinese Restaurant",
     "link": "Chinese Restaurant/index.html"
   },
-
+  {
+    "name": "Code with nk",
+    "link": "Code with nk/index.html"
+  },
   {
     "name": "Coming Soon",
-    "link": "ComingSoon/index.html"
+    "link": "Coming Soon/index.html"
   },
-  
+  {
+    "name": "engineers copied web",
+    "link": "engineers copied web/index.html"
+  },
   {
     "name": "Covid-19",
     "link": "Covid-19/index.html"
@@ -22,8 +32,20 @@
     "link": "Food Ordering/index.html"
   },
   {
+    "name": "Game zone",
+    "link": "Game zone/source.html"
+  },
+  {
     "name": "Gym",
     "link": "Gym/gym.html"
+  },
+  {
+    "name": "Mmm Collections",
+    "link": "Mmm Collections/site_ex.html"
+  },
+  {
+    "name": "online grocery- store",
+    "link": "online grocery- store/index.html"
   },
   {
     "name": "Pizza Corner",
@@ -34,12 +56,16 @@
     "link": "Portfolio/index.html"
   },
   {
-    "name": "Tribute Page",
-    "link": "Tribute Page/index.html"
+    "name": "portfolio Avinash",
+    "link": "portfolio Avinash/index.html"
   },
   {
-    "name": "Yoga template",
-    "link": "Yoga template/index.html"
+    "name": "project@abhijeet1312",
+    "link": "project@abhijeet1312/index.html"
+  },
+  {
+    "name": "Responsive Imaginative",
+    "link": "Responsive Imaginative/index.html"
   },
   {
     "name": "Simple portfolio template",
@@ -54,16 +80,23 @@
     "link": "Tailwind Portfolio/index.html"
   },
   {
-    "name": "Responsive Imaginative",
-    "link": "Responsive Imaginative/index.html"
+    "name": "Technology Page",
+    "link": "Technology Page/index.html"
+  },
+  {
+    "name": "Tribute Page",
+    "link": "Tribute Page/index.html"
   },
   {
     "name": "We design and develop",
     "link": "We design and develop/index.html"
-  }
-  ,
+  },
   {
-    "name": "Artica",
-    "link": "Artica/index.html"
+    "name": "Welcome to lucknow",
+    "link": "Welcome to lucknow/index.html"
+  },
+  {
+    "name": "Yoga template",
+    "link": "Yoga template/index.html"
   }
 ]
