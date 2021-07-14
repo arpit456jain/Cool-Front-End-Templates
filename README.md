@@ -110,5 +110,8 @@ Thanks go to these **Wonderful People** 👨🏻‍💻:      🚀 **Contributio
 <hr>
 
 <h1 align=center>Happy Coding 👨‍💻 </h1>
+## 💬Join Our CES Community
+
+Join - https://discord.gg/FVPvDUXfRR
 
 show some ❤️&nbsp; by giving the star to this repo
