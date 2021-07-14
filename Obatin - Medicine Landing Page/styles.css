@@ -1,0 +1,376 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+}
+
+/* CSS Variables */
+:root {
+  --primary: #4f3ff0;
+  --secondary: #f53b57;
+  --primary-btn-shadow: #4e3ff080;
+  --secondary-btn-shadow: #f53b5777;
+  --primary-shadow: #4e3ff041;
+  --white-shadow: #00000028;
+}
+
+/* Navigation Bar */
+.navbar {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.navbar .fa-capsules {
+  color: var(--primary);
+}
+
+.navbar .navbar-brand {
+  font-weight: 600;
+}
+
+.navbar .nav-item .nav-link {
+  font-weight: 500;
+}
+
+.navbar .nav-item .btn {
+  padding: 10px 20px;
+  font-weight: 600;
+}
+
+.navbar .nav-item .btn-white {
+  box-shadow: 0 1px 10px 1px var(--white-shadow);
+}
+
+.navbar .nav-item .btn-primary {
+  border-radius: 5px;
+  border: none;
+  background-color: var(--primary);
+  box-shadow: 0 2.5px 10px 1px var(--primary-btn-shadow);
+}
+
+/* Landing Page */
+.badge {
+  color: var(--primary);
+  font-weight: 500;
+  background-color: var(--primary-shadow);
+}
+
+.fa-circle {
+  font-size: 4px;
+  vertical-align: middle;
+  margin: 0 10px;
+}
+
+.main-content .main-text {
+  font-size: clamp(2.25rem, 5vw, 3.5rem);
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.main-content .main-desc {
+  font-size: clamp(1rem, 2vw, 1.15rem);
+}
+
+.main-content p span {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.btns-group .btn {
+  font-weight: 600;
+  padding: 20px;
+}
+
+.btns-group .btn-secondary {
+  border: none;
+  color: white;
+  background-color: var(--secondary);
+  box-shadow: 0 1px 10px 1px var(--secondary-btn-shadow);
+}
+
+.btns-group .btn-white {
+  box-shadow: 0 1px 10px 1px var(--white-shadow);
+}
+
+.fa-arrow-right {
+  margin-left: 10px;
+}
+
+/* Getting Started */
+#getting-started {
+  padding: 50px 0;
+  background-color: var(--primary);
+}
+
+#getting-started .main-text {
+  font-size: clamp(2rem, 3.5vw, 3rem);
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 75px;
+}
+
+.card {
+  border: none;
+}
+
+.card.card-odd {
+  border-top: 5px solid var(--secondary);
+  background-color: transparent;
+}
+
+.card.card-odd::before {
+  content: "";
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 0.25rem;
+  opacity: 0.2;
+}
+
+.card .card-title {
+  font-weight: 600;
+  color: var(--primary);
+  font-size: clamp(1.4rem, 2.25vw, 1.9rem);
+  line-height: 1.5;
+}
+
+.card.card-odd .card-title {
+  color: white;
+}
+
+.card.card-odd .card-text {
+  color: white;
+  opacity: 0.8;
+}
+
+.card .header {
+  padding: 0.5rem;
+}
+
+.card .header .card-img {
+  width: 100px;
+  height: 100px;
+}
+
+.card.card-odd .header .card-img {
+  margin-left: 10px;
+}
+
+.card .btn {
+  font-weight: 600;
+  padding: 20px;
+}
+
+.card .btn-secondary {
+  border: none;
+  color: white;
+  background-color: var(--secondary);
+  box-shadow: 0 1px 10px 1px var(--secondary-btn-shadow);
+}
+
+/* Branches */
+
+#branches .btn {
+  font-weight: 600;
+  padding: 20px;
+}
+
+#branches .btn-secondary {
+  border: none;
+  color: white;
+  background-color: var(--secondary);
+  box-shadow: 0 1px 10px 1px var(--secondary-btn-shadow);
+}
+
+#branches .branch-cards .card {
+  box-shadow: 0 1px 10px 1px var(--white-shadow);
+}
+
+#branches .branch-cards img {
+  height: 100px;
+  width: 100px;
+  margin-left: 10px;
+}
+
+#branches .branch-cards .card-title {
+  line-height: 1.5;
+  font-size: clamp(1rem, 2vw, 1.4rem);
+}
+
+#branches .branch-cards .card-text {
+  font-size: clamp(1rem, 1vw, 1.1rem);
+}
+
+/* Footer */
+#footer {
+  background-color: var(--primary);
+}
+
+#footer .btn {
+  font-weight: 600;
+  padding: 15px 25px;
+}
+
+#footer .btn-secondary {
+  border: none;
+  color: white;
+  background-color: var(--secondary);
+  box-shadow: 0 1px 10px 1px var(--secondary-btn-shadow);
+}
+
+#footer .nav-title {
+  color: var(--secondary);
+  font-size: 17.5px;
+}
+
+#footer a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  margin-top: 20px;
+  font-size: 15px;
+  opacity: 0.75;
+}
+
+#footer a:hover {
+  opacity: 1;
+}
+
+#footer .terms a {
+  opacity: 0.75;
+  margin-top: 0;
+  font-size: 15px;
+}
+
+#footer .terms a:hover {
+  opacity: 1;
+}
+
+#footer .social-icons .fab:hover {
+  cursor: pointer;
+  color: var(--secondary) !important;
+}
+
+/* Media Queries */
+@media (max-width: 991px) {
+  .navbar-nav:nth-child(2) {
+    flex-direction: row;
+  }
+  .navbar-nav:nth-child(2) .nav-item {
+    width: 100%;
+    margin: 10px 0;
+  }
+  .nav-item .btn {
+    width: 100%;
+  }
+  #landing-page .row {
+    flex-direction: column-reverse;
+    margin-bottom: 50px;
+  }
+  #landing-page .row .main-content {
+    margin-top: 50px;
+  }
+  #getting-started {
+    padding-bottom: 10px;
+  }
+  #getting-started .card {
+    margin-bottom: 50px;
+  }
+  #appointment .img-fluid {
+    margin-bottom: 50px;
+  }
+  #footer .col-lg-4,
+  #footer .col-lg-8 .col-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #footer .col-lg-8 {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 576px) {
+  #landing-page .btns-group {
+    display: flex;
+  }
+  #landing-page .btns-group .btn {
+    width: 100%;
+  }
+  #branches .branch-cards {
+    width: 100%;
+  }
+  #branches .branch-cards .row {
+    flex-direction: column;
+  }
+  #branches .branch-cards .col-6 {
+    width: 100%;
+  }
+  #branches .branch-cards .col-6:first-child {
+    margin-bottom: 50px;
+  }
+  #footer .col-lg-8 {
+    flex-direction: column;
+    align-items: center;
+  }
+  #footer .col-lg-8 .col-4 {
+    margin-bottom: 50px;
+  }
+  #footer a {
+    text-align: center;
+  }
+  #footer .rules {
+    margin-top: 0 !important;
+    flex-direction: column;
+  }
+  #footer .terms {
+    margin-bottom: 30px;
+  }
+  #appointment .btns-group {
+    display: flex;
+  }
+  #appointment .btns-group .btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 475px) {
+  #appointment .btns-group {
+    flex-direction: column;
+  }
+  #appointment .btns-group .btn-white {
+    margin-top: 20px;
+    margin-left: 0 !important;
+  }
+  #appointment .btns-group .btn-secondary {
+    margin-right: 0 !important;
+  }
+}
+
+@media (max-width: 410px) {
+  .navbar-nav:nth-child(2) {
+    flex-direction: column;
+  }
+  .navbar-nav:nth-child(2) .nav-item {
+    padding: 0 !important;
+    margin: 10px 0;
+  }
+  .nav-item .btn {
+    width: 100%;
+  }
+  #landing-page .btns-group {
+    flex-direction: column;
+  }
+  #landing-page .btns-group .btn-white {
+    margin-top: 20px;
+    margin-left: 0 !important;
+  }
+  #landing-page .btns-group .btn-secondary {
+    margin-right: 0 !important;
+  }
+}
