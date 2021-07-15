@@ -79,6 +79,11 @@
     }
 .footer {
         color: var(--white);
+     background-color: black;
+        padding: 0%;
+        border: 10%;
+        border-radius: 5%;
+        width: 100%;
     }
     
     .footer h1 {
