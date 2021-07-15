@@ -96,14 +96,19 @@
     "link": "Artica/index.html"
   },
   {
-    "name": "Obatin - Medicine Landing Page"
+    "name": "Obatin - Medicine Landing Page",
     "link": "Obatin - Medicine Landing Page/index.html"
   },
+  {
     "name": "Welcome to lucknow",
     "link": "Welcome to lucknow/index.html"
   },
   {
     "name": "Yoga template",
     "link": "Yoga template/index.html"
+  },
+  {
+    "name": "Glassmorphic Profile Card",
+    "link": "Glassmorphic Profile Card/index.html"
   }
 ]
