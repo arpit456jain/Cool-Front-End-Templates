@@ -82,13 +82,20 @@ GitHub will alert you that you can merge the two branches because there is no co
 
  <h1 align=center> Project Admin ❤️ </h1>
 <p align="center">
-
 <table>
   <tbody><tr>
- <td align="center"><a href="https://github.com/arpit456jain"><img alt="" src="https://avatars.githubusercontent.com/arpit456jain" width="130px;"><br><sub><b> Arpit Jain </b></sub></a><br><a href="https://github.com/arpit456jain/Cool-Front-End_Templates/commits?author=arpit456jain" title="Code">💻 </a></td> </a></td>
+ <td align="center"><a href="https://github.com/arpit456jain"><img alt="" src="https://avatars.githubusercontent.com/arpit456jain" width="100px;"><br><sub><b> Arpit Jain </b></sub></a><br><a href="https://github.com/arpit456jain/Cool-Front-End_Templates/commits?author=arpit456jain" title="Code">💻 </a></td> </a></td>
 
 </tbody></table>
 
+<h1 align=center> Mentor 😃 </h1>
+<p align="center">
+
+<table>
+  <tbody><tr>
+    <td align="center"><a href="https://github.com/ankitapuri"><img alt="" src="https://avatars.githubusercontent.com/ankitapuri" width="100px;"><br><sub><b> Ankita Puri</b></sub></a><br></td></a></td>
+  </tr>
+</tbody></table>
 
 <h2 align=center> ✨ Contributors </h2>
 
@@ -103,9 +110,6 @@ Thanks go to these **Wonderful People** 👨🏻‍💻:      🚀 **Contributio
 		</td>
 	</tr>
 </table>
-
-
-
 
 <hr>
 
