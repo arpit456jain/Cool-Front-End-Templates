@@ -5,6 +5,32 @@ Will Add some cool templates in it
 ### This project is a part of the following Open Source Program
   
   ![Devincept](https://user-images.githubusercontent.com/56088741/123548852-1ef59d00-d784-11eb-8e39-255e0c3e97d5.gif)
+  <hr>
+
+   <h2>Levels & Points</h2>
+<table>
+  <tr>
+    <th>Level</th>
+    <th>Points</th> 
+  </tr>
+  <tr>
+    <td>Level 0</td>
+    <td>5</td>
+  </tr>
+  <tr>
+    <td>Level 1</td>
+    <td>10</td>
+  </tr>
+  <tr>
+    <td>Level 2</td>
+    <td>20</td>
+  </tr>
+  <tr>
+    <td>Level 3</td>
+    <td>40</td>
+  </tr>
+</table>
+<hr>
 
 ### 💻 Tech Stack
 ### Front-End:
