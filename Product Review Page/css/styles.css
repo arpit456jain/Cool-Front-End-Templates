@@ -1,0 +1,158 @@
+* {
+    font-size: 15px;
+    font-family: 'Spartan';
+}
+
+h1 {
+    color:  hsl(300, 43%, 22%);
+    font-weight: 700;
+    font-size: 3.5rem;
+    line-height: 1.2;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 1rem;
+    line-height: 2.2;
+    margin: 0;
+    color: hsl(300, 24%, 96%);
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 0.9rem;
+    color: hsl(333, 80%, 67%);
+    margin: 0;
+    font-weight: 400;
+}
+
+h4 {
+    color: hsl(303, 10%, 53%);
+    font-size: 1.2rem;
+    line-height: 1.5;
+    letter-spacing: 1px;
+
+}
+
+h5 {
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+    font-size: 0.9rem;
+    margin-top: 4px;
+    margin-bottom: 0;
+    margin-left: 12px;
+}
+
+h6 {
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    line-height: 2;
+    font-weight: 400;
+}
+
+.container-fluid {
+    width: 92vw;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+.intro {
+    max-width: 45%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+}
+
+.ratings {
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.star-rating {
+    padding: 15px;
+    background-color: hsl(300, 24%, 96%);
+    margin-top: 20px;
+    border-radius: 7px;
+}
+
+.star-svg {
+    margin: 2.1px;
+}
+
+.start-star {
+    width: 90%;
+    margin-right: 10%;
+}
+
+.mid-star {
+    width: 85%;
+    margin-right: 5%;
+}
+
+.end-star {
+    width: 80%;
+}
+
+.profile-img {
+    border-radius: 50%;
+    width: 50px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.magenta-card {
+    background-color: hsl(300, 43%, 22%);
+    color: hsl(300, 24%, 96%);
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.start-card {
+    height: 300px;
+}
+
+.mid-card {
+    height: 300px;
+    margin-top: 40px;
+}
+
+.end-card {
+    height: 300px;
+    margin-top: 80px;
+}
+
+@media (max-width:  991px) { 
+
+    h5 {
+        margin-top: 10px;
+    }
+
+    .intro {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .star-rating {
+        margin-right: 0;
+        width: 100%;
+        flex-wrap: wrap;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .end-star {
+        margin-bottom: 60px;
+    }
+
+    .start-card {
+        height: fit-content;
+    }
+
+    .mid-card {
+        height: fit-content;
+    }
+
+    .end-card {
+        height: fit-content;
+        margin-top: 40px;
+    }
+}
