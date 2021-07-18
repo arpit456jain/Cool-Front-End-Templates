@@ -32,12 +32,20 @@ Will Add some cool templates in it
 </table>
 <hr>
 
+
+### 🎥 Demo
+#### GitHub Pages website for this repository : https://arpit456jain.github.io/Cool-Front-End_Templates/
+
+<hr>
+
 ### 💻 Tech Stack
 ### Front-End:
 <img alt="HTML5" src="https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white"/>  <img alt="CSS3" src="https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white"/> <img alt="JavaScript" src="https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"/> 
 <img alt="BootStrap" src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white"/> 
 
 ## 🚀 Quick Start :
+
+### Before starting kindly please read the [Code of Conduct](/CODE_OF_CONDUCT.md)
 
 #### Step 1: Forking the repository :
 
