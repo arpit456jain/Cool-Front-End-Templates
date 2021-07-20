@@ -109,7 +109,9 @@
     background-color: rgb;
     background-color: #a3d0bc;
     margin-bottom: 25px;
+	 
 }
+
 #services .box img{
     height: 150px;
     margin: auto;
@@ -142,9 +144,18 @@
 }
 #clients img{
     height: 150px;
+	
 }
 .client-item{
-    padding: 34px;
+    padding: 24px;
+	  transition: transform .2s; /* Animation */
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+	
+}
+.client-item :hover{
+	 transform: scale(1.5);
 }
 /* contact section */
 
