@@ -1,0 +1,255 @@
+* {
+	font-family: 'Inter';
+}
+
+.dark-theme {
+	padding: 50px 15px;
+	background-color: hsl(230, 17%, 14%);
+}
+
+.light-theme {
+	background-color: hsl(0, 0%, 100%);
+}
+
+h1,h2,h3,h4,h5,h6 {
+	margin: 0;
+}
+
+.intro-box {
+	margin-bottom: 30px;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+#main-heading {
+	margin: 0;
+	font-size: 2.5rem;
+	line-height: 1.5;
+}
+
+#follower-heading {
+	margin: 0;
+	font-size: 0.9rem;
+	letter-spacing: 0.7px;
+	text-transform: none;
+}
+
+.label {
+	margin-bottom: 0;
+}
+
+.mode-box {
+	display: flex;
+	align-items: stretch;
+}
+
+.form-switch {
+	margin-left: 20px;
+	font-size: 1.5rem;
+}
+
+.card-box {
+	border-radius: 8px;
+	background-color: hsl(228, 28%, 20%);
+	margin-top: 30px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.card-box-light {
+	background-color: hsl(227, 47%, 96%);
+}
+
+.card-box:hover {
+	cursor: pointer;
+	background-color: hsl(232, 19%, 15%);
+}
+
+.card-box-light:hover {
+	background-color: hsl(225, 100%, 98%);
+}
+
+
+.facebook-card {
+	border-top: 6px solid hsl(208, 92%, 53%);
+}
+
+.twitter-card {
+	border-top: 6px solid hsl(203, 89%, 53%);
+}
+
+.instagram-card {
+  	border-top: 6px solid hsl(37, 97%, 70%);
+}
+
+.youtube-card {
+	border-top: 6px solid hsl(348, 97%, 39%);
+}
+
+.profile {
+	display: flex;
+	align-items: center;
+}
+
+.followers-update {
+	display: flex;
+	align-items: center;
+}
+
+h1 {
+	font-size: 3.5rem;
+	font-weight: 700;
+	margin-top: 20px;
+	margin-bottom: 5px;
+	line-height: 1;
+	color: hsl(0, 0%, 100%);
+}
+
+.h1-light {
+	color: hsl(230, 17%, 14%);
+}
+
+h3 {
+	color: hsl(228, 34%, 66%);
+	font-size: 1rem;
+	text-transform: uppercase;
+	letter-spacing: 3.5px;
+	margin-bottom: 25px;
+
+}
+
+.h3-light {
+	color: hsl(228, 12%, 44%);
+}
+
+h4 {
+	color: hsl(228, 34%, 66%);
+	font-weight: 700;
+	line-height: 3;
+	font-size: 0.8rem;
+	margin-left: 10px;
+	letter-spacing: 0.5px;
+}
+
+.h4-light {
+	color: hsl(228, 12%, 44%);
+}
+
+h5 {
+	font-weight: 700;
+	margin-left: 10px;
+	font-size: 0.8rem;
+}
+
+#overview-text {
+	margin-bottom: 30px;
+	margin-top: 80px;
+	font-size: 1.8rem;
+}
+
+.drop {
+	color: hsl(356, 69%, 56%);
+}
+
+.up {
+	color: hsl(163, 72%, 41%);
+}
+
+.stats-box {
+	margin-bottom: 20px;
+	border-radius: 8px;
+	padding: 25px;
+	background-color: hsl(228, 28%, 20%);
+}
+
+.stats-box-light {
+	background-color: hsl(227, 47%, 96%);
+}
+
+.stats-box:hover {
+	cursor: pointer;
+	background-color: hsl(232, 19%, 15%);
+}
+
+.stats-box-light:hover {
+	background-color: hsl(225, 100%, 98%);
+}
+
+.top-content {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	margin-bottom: 15px;
+}
+
+.bottom-content {
+	margin-top: 15px;
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+}
+
+.stats-desc {
+	text-transform: none;
+	letter-spacing: 0.5px;
+	font-size: 0.9rem;
+	margin-bottom: 0;
+	font-weight: 700;
+}
+
+.stats-count {
+	font-size: 2.7rem;
+	color: hsl(0, 0%, 100%);
+	font-weight: 700;
+}
+
+.stats-count-light {
+	color:  hsl(230, 17%, 14%);
+}
+
+
+@media (max-width:  768px) {
+	.intro-box {
+		flex-direction: column;
+		align-items: stretch;
+		margin-bottom: 10px;
+	}
+
+	.intro {
+
+		margin-bottom: 20px;
+	}
+
+	#main-heading {
+		font-size: 1.6rem;
+	}
+
+	#follower-heading {
+		font-size: 0.8rem;
+	}
+
+	.mode-box {
+		border-top: 2px solid hsl(228, 28%, 20%);
+		justify-content: space-between;
+		padding: 7px 0 10px;
+	}
+
+	.mode-box-light {
+		border-top: 2px solid hsl(227, 47%, 96%);
+	}
+
+	.label {
+		font-size: 1rem;
+		margin-left: 0;
+	}
+
+	.form-switch {
+		align-items: center;
+		display: flex;
+		justify-content: flex-end;
+	}
+}
