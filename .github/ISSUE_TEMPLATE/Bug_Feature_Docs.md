@@ -8,9 +8,9 @@ assignees: ""
 
 ## Issue Type:
 
-[ ] Bug Report
-[ ] Feature Request
-[ ] Documentaion
+- [ ] Bug Report
+- [ ] Feature Request
+- [ ] Documentaion
 
 ## **Describe the bug**
 
