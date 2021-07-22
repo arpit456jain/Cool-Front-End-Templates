@@ -34,7 +34,7 @@ Will Add some cool templates in it
 
 
 ### 🎥 Demo
-#### GitHub Pages website for this repository : https://arpit456jain.github.io/Cool-Front-End_Templates/
+#### GitHub Pages website for this repository : https://cool-front-end-templates.netlify.app/
 
 <hr>
 
