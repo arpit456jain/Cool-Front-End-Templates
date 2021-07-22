@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Cambria;
+    background-size: cover;
+    background-position: top center;
+}
+
+h2 {
+    color: aqua;
+    border-style: solid;
+    background-color: darkblue;
+}
+
+h1 {
+    background-color: grey;
+    text-align: center;
+    color: darkblue;
+}
+
+h3 {
+    color: grey;
+    border-style: solid;
+    background-color: darkblue;
+    text-align: center;
+}
+
+.title {
+    background-color: grey;
+    color: white;
+    font-size: 60px;
+    text-align: center;
+}
+
+.searchbar {
+    display: flex;
+    flex-direction: column;
+    min-height: 101vh;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.493), rgba(0, 0, 0, 0.699));
+    text-align: center;
+}
+
+img {
+    max-width: 275px;
+    height: 270px;
+}
+
+header {
+    justify-content: center;
+    align-items: center;
+    padding: 49px 15px 15px;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    height: 51px;
+    width: 51px;
+}
+
+header input {
+    width: 100%;
+    max-width: 281px;
+    padding: 10px 16px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 16px 0px 16px 0px;
+    border-bottom: 3px solid #d3911e;
+    color: #3d3d3d;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+header input:focus {
+    background-color: rgb(247, 247, 247);
+}
+
+main {
+    flex: 1 1 100%;
+    padding: 25px 25px 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.location .city {
+    color: brown;
+    font-size: 32px;
+    font-weight: 6000;
+    margin-bottom: 5px;
+}
+
+.curr .temp {
+    color: brown;
+    font-size: 102px;
+    font-weight: 900;
+    margin: 30px 0px;
+}
+
+.curr .temp span {
+    font-weight: 500;
+}
+
+.curr .currweather {
+    color: brown;
+    font-size: 32px;
+    font-weight: 500;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.curr .min-max {
+    color: brown;
+    font-size: 24px;
+}
+
+.curr .wind-speed {
+    color: brown;
+    font-size: 26px;
+}
+
+.curr .air-quality {
+    color: brown;
+    font-size: 26px;
+}
+
+.about {
+    background-color: grey;
+}
