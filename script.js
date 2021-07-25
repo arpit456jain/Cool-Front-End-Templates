@@ -6,9 +6,12 @@ fetch('style_links.json')
         for (let i = 0; i < links.length; i++) {
             let StyleBoxDiv = document.createElement('div');
             StyleBoxDiv.innerHTML = `<div class="stylebox">
-        <p>${links[i].name}</p>
-        <a target="_blank" href="${links[i].link}">View</a>
-    </div>`;
+            <div class="image">
+                 <img src="${links[i].preview}" alt="">
+             </div>
+            <p>${links[i].name}</p>
+            <a target="_blank" href="${links[i].link}">View</a>
+            </div>`;
             document.getElementById('styles').appendChild(StyleBoxDiv);
         };
 
