@@ -4,6 +4,7 @@ fetch('style_links.json')
         let links = data;
 
         for (let i = 0; i < links.length; i++) {
+            console.log(links.length);
             let StyleBoxDiv = document.createElement('div');
             StyleBoxDiv.innerHTML = `<div class="stylebox">
             <div class="image">

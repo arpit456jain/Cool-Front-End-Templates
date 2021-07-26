@@ -12,36 +12,48 @@
     "link": "Chinese Restaurant/index.html"
   },
   {
-    "name": "Code with nk",
-    "link": "Code with nk/index.html"
-  },
-  {
-    "name": "Coming Soon",
-    "link": "Coming Soon/index.html"
-  },
-  {
-    "name": "engineers copied web",
-    "link": "engineers copied web/index.html"
+    "name": "ComingSoon",
+    "link": "ComingSoon/index.html"
   },
   {
     "name": "Covid-19",
     "link": "Covid-19/index.html"
   },
   {
+    "name": "engineers copied web",
+    "link": "engineers copied web/index.html"
+  },
+  {
     "name": "Food Ordering",
     "link": "Food Ordering/index.html"
+  },
+  {
+    "name": "Food Website Template",
+    "link": "Food Website Template/index.html"
   },
   {
     "name": "Game zone",
     "link": "Game zone/source.html"
   },
   {
-    "name": "Gym",
-    "link": "Gym/gym.html"
+    "name": "Glassmorphic Profile Card",
+    "link": "Glassmorphic Profile Card/index.html"
+  },
+  {
+    "name": "Glassmorphism Form",
+    "link": "glassmorphism-form/index.html"
+  },
+  {
+    "name": "Maroom - Interior Design Landing Page",
+    "link": "Maroom - Interior Design Landing Page/index.html"
   },
   {
     "name": "Mmm Collections",
     "link": "Mmm Collections/site_ex.html"
+  },
+  {
+    "name": "Obatin - Medicine Landing Page",
+    "link": "Obatin - Medicine Landing Page/index.html"
   },
   {
     "name": "online grocery- store",
@@ -60,8 +72,8 @@
     "link": "portfolio Avinash/index.html"
   },
   {
-    "name": "project@abhijeet1312",
-    "link": "project@abhijeet1312/index.html"
+    "name": "Product Review Page",
+    "link": "Product Review Page/index.html"
   },
   {
     "name": "Responsive Imaginative",
@@ -70,6 +82,10 @@
   {
     "name": "Simple portfolio template",
     "link": "Simple portfolio template/index.html"
+  },
+  {
+    "name": "Social Media Dashboard",
+    "link": "Social Media Dashboard/index.html"
   },
   {
     "name": "Stationary website",
@@ -92,12 +108,8 @@
     "link": "We design and develop/index.html"
   },
   {
-    "name": "Artica",
-    "link": "Artica/index.html"
-  },
-  {
-    "name": "Obatin - Medicine Landing Page",
-    "link": "Obatin - Medicine Landing Page/index.html"
+    "name": "Weather",
+    "link": "Weather/weather.html"
   },
   {
     "name": "Welcome to lucknow",
@@ -106,25 +118,5 @@
   {
     "name": "Yoga template",
     "link": "Yoga template/index.html"
-  },
-  {
-    "name": "Glassmorphic Profile Card",
-    "link": "Glassmorphic Profile Card/index.html"
-  },
-  {
-    "name": "Maroom - Interior Design Landing Page",
-    "link": "Maroom - Interior Design Landing Page/index.html"
-  },
-  {
-    "name": "Product Review Page",
-    "link": "Product Review Page/index.html"
-  },
-  {
-    "name": "Glassmorphism Form",
-    "link": "glassmorphism-form/index.html"
-  },
-  {
-    "name": "Social Media Dashboard",
-    "link": "Social Media Dashboard/index.html"
   }
 ]
