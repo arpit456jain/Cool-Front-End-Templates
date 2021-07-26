@@ -7,7 +7,7 @@ fetch('style_links.json')
             let StyleBoxDiv = document.createElement('div');
             StyleBoxDiv.innerHTML = `<div class="stylebox">
             <div class="image">
-                 <img src="${links[i].preview}" alt="">
+                 <img src="https://raw.githubusercontent.com/arpit456jain/Cool-Front-End_Templates/master/${links[i].preview}/preview.png" alt="">
              </div>
             <p>${links[i].name}</p>
             <a target="_blank" href="${links[i].link}">View</a>
