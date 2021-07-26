@@ -44,6 +44,7 @@ h1 {
 .stylebox {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   background-color: rgb(245, 217, 217);
   padding: 1rem;
   text-align: center;
@@ -96,6 +97,7 @@ a:hover {
 @media only screen and (max-width: 600px) {
   .styles {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-around;
     margin: 0 auto;
@@ -104,12 +106,12 @@ a:hover {
   .stylebox {
     padding: .5rem;
     margin: auto;
-    width: 15rem;
+    width: 18rem;
     margin-bottom: 1.5rem;
   }
   .stylebox .image{
-    width: 15rem;
-    height: 10rem;
+    width: 18rem;
+    height: 12rem;
     border-radius: .5rem;
   }
 }
