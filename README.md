@@ -1,44 +1,16 @@
-# Cool-Front-End_Templates
+# Cool Front-End Templates
 
-Will Add some cool templates in it
+Will Add some cool templates in it.
 
-### This project is a part of the following Open Source Program
-  
-  ![Devincept](https://user-images.githubusercontent.com/56088741/123548852-1ef59d00-d784-11eb-8e39-255e0c3e97d5.gif)
-  <hr>
-
-   <h2>Levels & Points</h2>
-<table>
-  <tr>
-    <th>Level</th>
-    <th>Points</th> 
-  </tr>
-  <tr>
-    <td>Level 0</td>
-    <td>5</td>
-  </tr>
-  <tr>
-    <td>Level 1</td>
-    <td>10</td>
-  </tr>
-  <tr>
-    <td>Level 2</td>
-    <td>20</td>
-  </tr>
-  <tr>
-    <td>Level 3</td>
-    <td>40</td>
-  </tr>
-</table>
-<hr>
-
-
-### 🎥 Demo
+## 🎥 Demo
 #### GitHub Pages website for this repository : https://cool-front-end-templates.netlify.app/
 
+![frontendtemp](https://user-images.githubusercontent.com/64949957/127105392-7f68bad1-8ff0-4691-87d6-43f6f354c3fb.gif)
+
+
 <hr>
 
-### 💻 Tech Stack
+## 💻 Tech Stack
 ### Front-End:
 <img alt="HTML5" src="https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white"/>  <img alt="CSS3" src="https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white"/> <img alt="JavaScript" src="https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"/> 
 <img alt="BootStrap" src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white"/> 
@@ -109,13 +81,40 @@ You should navigate to your forked repository, and press the "Compare & pull req
 
 GitHub will alert you that you can merge the two branches because there is no competing code. You should add in a title, a comment, and then press the “Create pull request” button.
 
-
-
-
 <br>
 
  ## 📌Till Then 
 <p align="center"><img src="http://www.gurpreetsaluja.com/wp-content/uploads/2016/05/always-keep-learning.png" width=30%></p>
+<hr>
+
+### This project is a part of the following Open Source Program
+  
+  ![Devincept](https://user-images.githubusercontent.com/56088741/123548852-1ef59d00-d784-11eb-8e39-255e0c3e97d5.gif)
+  <hr>
+
+   <h2>Levels & Points</h2>
+<table>
+  <tr>
+    <th>Level</th>
+    <th>Points</th> 
+  </tr>
+  <tr>
+    <td>Level 0</td>
+    <td>5</td>
+  </tr>
+  <tr>
+    <td>Level 1</td>
+    <td>10</td>
+  </tr>
+  <tr>
+    <td>Level 2</td>
+    <td>20</td>
+  </tr>
+  <tr>
+    <td>Level 3</td>
+    <td>40</td>
+  </tr>
+</table>
 <hr>
 
  <h1 align=center> Project Admin ❤️ </h1>
@@ -156,4 +155,4 @@ Thanks go to these **Wonderful People** 👨🏻‍💻:      🚀 **Contributio
 
 Join -  https://discord.gg/gtYUZQSjTt
 
-show some ❤️&nbsp; by giving the star to this repo
+Show some ❤️&nbsp; by giving the star to this repo
