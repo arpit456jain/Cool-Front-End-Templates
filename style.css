@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
 
+html{
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0 auto;
   padding: auto;
@@ -117,3 +122,26 @@ a:hover {
   }
 }
 
+/* scroll top starts */
+#scroll-top{
+  position: fixed;
+  bottom: -140%;
+  right: 1rem;
+  padding: .6rem 1rem;
+  font-size: 2rem;
+  background: #00ff37;
+  color: rgb(13, 0, 44);
+  border-radius: 50%;
+  transition: 1s linear;
+  z-index: 1000;
+  text-decoration: none;
+}
+#scroll-top:hover{
+  -webkit-box-shadow: 0 0 10px 2px rgba(26, 1, 253, 0.42);
+  -moz-box-shadow: 0 0 10px 2px rgba(26, 1, 253, 0.42);
+  box-shadow: 0 0 10px 2px rgba(26, 1, 253, 0.42);
+}
+#scroll-top.active{
+  bottom: calc(100% - 36rem);
+}
+/* scroll top ends */
