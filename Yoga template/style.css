@@ -228,4 +228,34 @@ footer .center{
     }
 }
 
+.aboutp{
+    padding-top:20px;
+    text-align:right;
+    padding-right:5px;
+    padding-top:50px;
+}
+
+.abouth{
+    font-size: 3rem;
+ 
+    text-align: right;
+}
+
+.aboutasan{
+    display:right;
+    padding-left:20px;
+}
+
+.aboutdiv{
+    display:flex;
+    justify-content:space-between;
+  
+}
+
+.aboutasan{
+    padding:30px;
+    padding-top:2px;
+    width:30%;
+    height:30%;
+}
 
