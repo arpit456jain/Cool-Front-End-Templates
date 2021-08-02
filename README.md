@@ -84,10 +84,10 @@ GitHub will alert you that you can merge the two branches because there is no co
 <br>
 
  ## 📌Till Then 
+ ### Need Some Help in this Repo -> [Web Development And Resourcses](https://github.com/arpit456jain/Web-Development-Path-And-Resources)
+
 <p align="center"><img src="http://www.gurpreetsaluja.com/wp-content/uploads/2016/05/always-keep-learning.png" width=30%></p>
 <hr>
-## 📌 Need some Help in this [Web Development path And Rsources](https://github.com/arpit456jain/Web-Development-Path-And-Resources)
-
 ### This project is a part of the following Open Source Program
   
   ![Devincept](https://user-images.githubusercontent.com/56088741/123548852-1ef59d00-d784-11eb-8e39-255e0c3e97d5.gif)
