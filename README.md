@@ -1,5 +1,22 @@
 # Cool Front-End Templates
 
+<div align="center">
+
+<a href="https://github.com/arpit456jain/Cool-Front-End_Templates"><img src="https://badges.frapsoft.com/os/v1/open-source.svg?v=103"></a>
+<a href="https://github.com/arpit456jain/Cool-Front-End_Templates"><img src="https://img.shields.io/badge/Built%20by-developers%20%3C%2F%3E-0059b3"></a>
+<a href="https://github.com/arpit456jain/Cool-Front-End_Templates"><img src="https://img.shields.io/static/v1.svg?label=Contributions&message=Welcome&color=yellow"></a>
+<a href="https://github.com/arpit456jain/"><img src="https://img.shields.io/badge/Maintained%3F-yes-brightgreen.svg?v=103"></a>
+<a href="https://github.com/arpit456jain/Cool-Front-End_Templates/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg?v=103"></a>
+
+<a href="https://github.com/arpit456jain/Cool-Front-End_Templates/graphs/contributors"><img src="https://img.shields.io/github/contributors/arpit456jain/Cool-Front-End_Templates?color=brightgreen"></a>
+<a href="https://github.com/arpit456jain/Cool-Front-End_Templates/stargazers"><img src="https://img.shields.io/github/stars/arpit456jain/Cool-Front-End_Templates?color=0059b3"></a>
+<a href="https://github.com/arpit456jain/Cool-Front-End_Templates/network/members"><img src="https://img.shields.io/github/forks/arpit456jain/Cool-Front-End_Templates?color=yellow"></a>
+<a href="https://github.com/arpit456jain/Cool-Front-End_Templates/issues"><img src="https://img.shields.io/github/issues/arpit456jain/Cool-Front-End_Templates?color=0059b3"></a>
+<a href="https://github.com/arpit456jain/Cool-Front-End_Templates/issues?q=is%3Aissue+is%3Aclosed"><img src="https://img.shields.io/github/issues-closed-raw/arpit456jain/Cool-Front-End_Templates?color=yellow"></a>
+<a href="https://github.com/arpit456jain/Cool-Front-End_Templates/pulls"><img src="https://img.shields.io/github/issues-pr/arpit456jain/Cool-Front-End_Templates?color=brightgreen"></a>
+<a href="https://github.com/arpit456jain/Cool-Front-End_Templates/pulls?q=is%3Apr+is%3Aclosed"><img src="https://img.shields.io/github/issues-pr-closed-raw/arpit456jain/Cool-Front-End_Templates?color=0059b3"></a> 
+</div>
+
 Will Add some cool templates in it.
 
 ## 🎥 Demo
@@ -84,9 +101,10 @@ GitHub will alert you that you can merge the two branches because there is no co
 <br>
 
  ## 📌Till Then 
+ ### Need Some Help in this Repo -> [Web Development And Resourcses](https://github.com/arpit456jain/Web-Development-Path-And-Resources)
+
 <p align="center"><img src="http://www.gurpreetsaluja.com/wp-content/uploads/2016/05/always-keep-learning.png" width=30%></p>
 <hr>
-
 ### This project is a part of the following Open Source Program
   
   ![Devincept](https://user-images.githubusercontent.com/56088741/123548852-1ef59d00-d784-11eb-8e39-255e0c3e97d5.gif)
