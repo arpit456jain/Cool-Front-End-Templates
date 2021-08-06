@@ -118,7 +118,14 @@
   {
     "name": "Yoga template",
     "link": "Yoga template/index.html"
-  },{
+  },
+  
+  {
+    "name": "Yoga Template 2",
+    "link": "Yoga Template 2/index.html"
+  },
+  
+  {
     "name": "Login form",
     "link": "Login form/index.html"
   }
