@@ -1,7 +1,6 @@
 :root{
     --hovcol:rgb(238, 238, 238);
-    --bgcol:rgb(181, 181, 181);
-    --outline:rgb(121, 105, 105);
+    --bgcol:transparent;
 }
 body{
     top:0px;
@@ -13,68 +12,88 @@ body{
     margin:0px;
     padding:0px;
     height: 6rem;
-    /* background-color: rgb(9, 9, 9); */
      display: flex;
     justify-content: space-between;
-    width:100vw;
+    width:100%;
 }
 .top .logo img{
-    width: 12rem;
-    height: 15rem;
-    margin: -1rem -1rem;
+    width: 8rem;
+    height: 13rem;
+    margin: -1rem 0rem;
     filter: invert();
     opacity: 0.9;
     cursor: pointer;
 }
 .top-1{
     height: 50px;
-    /* border: 2px solid black; */
+    
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 15px 0rem;
-    width:1500px
-    /* max-width: 300rem; */
+    margin: 19px 0rem;
+    width:855px;
+}
+.home{
+    width: 4.5rem;
+}
+.vector{
+    width: 5rem;
+}
+.animation{
+    width: 7rem;
+}
+.photography{
+    width: 9rem;
+}
+.painting{
+    width: 5.8rem;
+}
+.videos{
+    width: 5rem;
+}
+.graphic-design{
+    width: 10.2rem;
 }
 .top-1 .opt{
-    margin:4px 10px;
+    margin:4px 8px;
     align-self: center;
-    width: 13rem;
+    font-size: 1.4rem;
+    
     height: 3rem;
     cursor: pointer;
-    border-radius: 50px;
+    border-radius: 40px;
     background-color: var(--bgcol);
     box-shadow: 0px 4px 3px var(--outline);
+    
 }
-.top-1 .opt:hover, #curr{
-    background-color: var(--hovcol);
-    transform: translate(0rem, 1rem);
-    text-decoration: underline;
-    color:rgb(22, 22, 22);
-    box-shadow: inset  0px 6px 3px var(--outline);
+.top-1 .opt a:hover{
+    
+    color:#05eae0;
+    font-size: 1.5rem;
 }
 
 .top-1 .opt p{
-    font-size: 25px;
+    
     text-align: center;
     vertical-align: middle;
-    margin : .5rem auto;
+    margin : .6rem auto;
 }
 .top-1 .opt a{
-    font-size: 1.75rem;
-    color:rgb(75, 75, 75);
+    
+    color:white;
     font-weight: bold;
-   
+   text-decoration: none;
 }
 .top .side{
     display: flex;
     width: 20rem;
-    justify-content: center;
+  
     margin-top: 15px;
+   
 
 }
 .top .side .login,.top .side .signup{
-    background-color:rgb(77, 77, 77);
+    background-color:transparent;
     width: 100px;
     height: 3rem;
     color: white;
@@ -83,15 +102,14 @@ body{
     border-radius: 15px;
     font-size: 1.5rem;
     cursor: pointer;
-   
+   margin-left: 34px;
 }
 .top .side .login p, .top .side .signup p{
     margin: .5rem auto;
 }
 .top .side .login:hover,.top .side .signup:hover{
    background-color: rgb(36, 36, 36);
-   text-decoration: underline;
-   transform: translate(3px, 3px);
+  
 }
 .top .side .menu{
     width: 50px;
@@ -105,9 +123,7 @@ body{
     opacity: 1;
 }
 
-.slider{
-    
-}
+.
 .slide .heading{
     color: blue;
     
@@ -122,7 +138,7 @@ body{
     background-clip: border-box;
     height:50rem;
     min-height:40rem;
-    /* z-index: -1; */
+    
     top:0px;
     opacity:0.9;
 } 
@@ -149,14 +165,13 @@ h2{
 }
 
 .about{
-    width: 100vw;
+    width: 90vw;
     display: flex;
     justify-content: center;
     align-items: center;
     vertical-align: middle;
     margin-top: -120px;
     margin-bottom: 50px;
-    background:
 }
 .about .image{
     border-right: 3px dashed rgb(70, 0, 0);
@@ -193,11 +208,14 @@ h2{
 
 
 #Contact{
-    width:100vw;
+    width:100%;
     display: flex;
     flex-direction: column;
     background-color: rgba(3, 0, 15, 0.9);
-    /* border:2px solid red; */
+   
+}
+.tweet{
+    height: 94%;
 }
 #Contact .contact{
     align-self: center;
@@ -208,13 +226,13 @@ h2{
 }
 #Contact .contact-icon .item-icon-1, #Contact .contact-icon .item-icon-2{
     display: flex;
-    /* border:2px solid rgb(255, 0, 183); */
+   
     
 }
 
 #Contact .contact-icon{
     display: flex;
-    /* border:2px solid blue; */
+   
     justify-content: center;
     align-items: center;
     
@@ -224,8 +242,7 @@ h2{
     margin : 5px 10px;
     padding : 5px 10px;
     
-    /* border:2px solid rgb(238, 255, 0); */
-    /* align-self:center; */
+   
 }
 
 #Contact .contact-icon .item-icon-1 .item-icon a:hover{
