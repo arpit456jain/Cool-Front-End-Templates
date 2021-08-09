@@ -4,21 +4,22 @@ body {
     top:0px;
     background-image: url("https://wallpapercave.com/wp/wp2533041.jpg");
     background-position: center;
-    background-size: cover;
+    background-size: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 :root{
     --hovcol:rgb(210, 210, 210);
-    --bgcol:rgb(168, 168, 168);
-    --outline:rgb(121, 105, 105);
+    --bgcol:transparent;
+  
 }
 .top{
     height: 6rem;
-    background-color: rgb(9, 9, 9);
+  
     display: flex;
     flex-basis: 4fr 2fr 1fr;
     justify-content: space-between;
+    width: 100%;
     
 }
 .top .logo img{
@@ -28,6 +29,7 @@ body {
     filter: invert();
     opacity: 0.6;
 }
+
 .top .side{
     display: flex;
     width: 50rem;
@@ -47,13 +49,14 @@ body {
     cursor: pointer;
    
 }
+
 .top .side .login p, .top .side .signup p{
     margin: .5rem auto;
 }
 .top .side .login:hover,.top .side .signup:hover{
    background-color: rgb(36, 36, 36);
-   text-decoration: underline;
-   transform: translate(3px, 3px);
+   text-decoration: none;
+  
 }
 .top .side .menu{
     width: 50px;
@@ -69,72 +72,71 @@ body {
 }
 .top-1{
     height: 50px;
-    /* border: 2px solid black; */
+   
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 15px auto;
+    margin: 12px auto 50px auto
 }
 .top-1 .opt{
-    margin:4px 15px;
+    margin:4px 2px;
     align-self: center;
-    width: 13rem;
+    width: 11rem;
     height: 3rem;
     cursor: pointer;
-    border-radius: 50px;
+    border-radius: 40px;
+    z-index: 2;
     background-color: var(--bgcol);
-    box-shadow: 0px 4px 3px var(--outline);
+   
 }
-.top-1 .opt:hover, #curr{
-    background-color: var(--hovcol);
-    transform: translate(1rem, 1rem);
-    text-decoration: underline;
+.top-1 .opt:hover{
+    background-color: rgb(198 62 62 / 1);
+    text-decoration: none;
     color:rgb(22, 22, 22);
-    box-shadow: inset  0px 6px 3px var(--outline);
+   
 }
 
 .top-1 .opt p{
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     text-align: center;
     vertical-align: middle;
     margin : .5rem auto;
 }
 .top-1 .opt a{
-    font-size: 1.75rem;
-    color:rgb(75, 75, 75);
+    
+    color:white;
     font-weight: bold;
-   
+   text-decoration: none;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.home{
+    width: 4.5rem;
+}
+.vector{
+    width: 5rem;
+}
+.animation{
+    width: 7rem;
+}
+.photography{
+    width: 9rem;
+}
+.painting{
+    width: 5.8rem;
+}
+.videos{
+    width: 5rem;
+}
+.graphic-design{
+    width: 10.2rem;
+}
 .content{
     display:flex;
+    
     background-color: rgba(255, 255, 255, 0.4);
     border:5px solid var(--outline);
     border-top:1px solid var(--outline);
-    width: 100%rem;
-    max-width: 120rem;
+    width: 100%;
+    height: auto;
     padding: 1rem 1.5rem;
     margin: 0rem auto;
     border-radius: 15px;
@@ -349,7 +351,7 @@ iframe{
 
 }
 #curr{
-    border-bottom: 1px solid var(--hovcol);
+    border-bottom: 1px solid var(--bgcol);
 }
 .msg h1{
     margin:20rem 0rem 0rem 0rem; 
