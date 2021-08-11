@@ -11,4 +11,4 @@ jobs:
       - name: initial labeling
         uses: andymckay/labeler@master
         with:
-          add-labels: 'DCP21'
+          add-labels: 'up for grab'
