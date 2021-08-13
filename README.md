@@ -22,7 +22,14 @@ Will Add some cool templates in it.
 
 ## 🎥 Demo
 
-#### GitHub Pages website for this repository : https://cool-front-end-templates.netlify.app/
+#### Website for this repository : https://cool-front-end-templates.netlify.app/
+
+# Must Check These Repos Also
+- [Cool Front-End Templates ](https://github.com/arpit456jain/Cool-Front-End_Templates)
+- [Amazing Css effects](https://github.com/arpit456jain/Amazing-Css-Effects)
+- [Amazing Js Projects](https://github.com/arpit456jain/Amazing-Js-Projects)
+- [Web-Development-Path-And-Resources](https://github.com/arpit456jain/Web-Development-Path-And-Resources)
+- [Open-Source-Programs](https://github.com/arpit456jain/Open-Source-Programs)
 
 ![frontendtemp](https://user-images.githubusercontent.com/64949957/127105392-7f68bad1-8ff0-4691-87d6-43f6f354c3fb.gif)
 
