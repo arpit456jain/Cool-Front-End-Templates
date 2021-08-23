@@ -1,0 +1,34 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+/* navbar*/
+/* logo*/
+
+.logo{
+    max-width:10%;
+    margin:auto;
+    padding-left:20px;
+}
+
+/* nav items*/
+.nav-items{
+    list-style-type:none;
+    display:flex;
+    gap:2%;
+}
+/* nav list links*/
+.nav-list{
+    text-decoration:none;
+}
+
+/* navlist-items*/
+.nav-list-item{
+    text-decoration:none;
+    color:black;
+}
+
+.nav-list-item:hover{
+    color:orangered;
+}
