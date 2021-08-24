@@ -27,6 +27,12 @@
     "name": "Food Ordering",
     "link": "Food Ordering/index.html"
   },
+
+  {
+    "name": "Food Template New",
+    "link": "Food_Template/index.html"
+  },
+  
   {
     "name": "Food Website Template",
     "link": "Food Website Template/index.html"
@@ -125,11 +131,6 @@
     "link": "Yoga Template 2/index.html"
   },
 
-  {
-    "name": "Food Template New",
-    "link": "Food_Template/index.html"
-  },
-  
   {
     "name": "Login form",
     "link": "Login form/index.html"
