@@ -4,19 +4,27 @@
 }
 
 /* navbar*/
+.navbar{
+    display:flex;
+    gap:25%;
+    width:100%;
+    padding-left:2%;
+    
+}
 /* logo*/
 
 .logo{
-    max-width:10%;
+    max-width:100%;
     margin:auto;
     padding-left:20px;
 }
 
 /* nav items*/
 .nav-items{
+    margin-top:20%;
     list-style-type:none;
     display:flex;
-    gap:2%;
+    gap:20%;
 }
 /* nav list links*/
 .nav-list{
@@ -31,4 +39,37 @@
 
 .nav-list-item:hover{
     color:orangered;
+}
+
+/* Navbar Login div*/
+.nav-login{
+    display:inline-flex;
+    gap:10%;
+    margin-top:1.8%;
+}
+/*Login*/
+.Login{
+    text-decoration:none;
+    padding-left:20px;
+    padding-right:20px;
+    border-radius:15px;
+    color:white;
+    background-color:rgb(214, 23, 97);
+   text-align:center;
+   padding:10px !important;
+   height:fit-content;
+   margin-top:2%;
+}
+
+.Login:hover{
+    border:2px solid;
+    border-color:rgb(214, 23, 97);
+    background-color:white;
+    color:rgb(214, 23, 97);
+}
+
+.nav-login-icons{
+    margin-top:10%;
+    display:flex;
+    gap:50%;
 }
