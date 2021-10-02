@@ -17,16 +17,18 @@ main {
 	flex-direction: column;
 	width: 100%;
 	min-height: 100vh;
+	margin-block: 2em;
 }
 
 .title {
 	color: #fff;
+	margin-bottom: 1em;
 }
 
 .weather-container {
 	min-height: 90%;
 	width: 90%;
-	max-width: 800px;
+	max-width: 1000px;
 	background-color: rgb(255 255 255 / 0.6);
 	border-radius: 2rem;
 	padding: 1rem;
@@ -35,12 +37,14 @@ main {
 	align-items: center;
 	flex-direction: column;
 	backdrop-filter: blur(0.5rem);
+	-webkit-backdrop-filter: blur(0.5rem);
 	margin-inline: 1em;
 	color: #2a456c;
 }
 
 .top-section {
-	display: grid;
+	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
@@ -93,4 +97,39 @@ main {
 
 .info .big {
 	font-size: 1.5rem;
+}
+
+@media screen and (min-width: 800px) {
+	main {
+		margin-block: 0;
+	}
+
+	.weather-container {
+		min-height: 500px;
+	}
+
+	.top-section {
+		display: grid;
+		grid-template-areas: 'temp condition';
+		justify-content: space-between;
+		width: 70%;
+	}
+
+	.temp h1 {
+		font-size: 6rem;
+	}
+
+	.condition img {
+		height: 160px;
+	}
+
+	.condition {
+		flex-direction: row;
+	}
+
+	.extra-info {
+		grid-template-areas:
+			'rise wind humidity'
+			'set aqi pressure';
+	}
 }
