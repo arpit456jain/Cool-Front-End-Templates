@@ -1,5 +1,8 @@
 # Cool Front-End Templates
 
+### This project is part of Hacktoberfest'21
+![Hacktoberfest](https://user-images.githubusercontent.com/59393136/135566614-5635902f-2907-4e01-8baf-3cb1b43a6b20.png)
+
 <div align="center">
 
 <a href="https://github.com/arpit456jain/Cool-Front-End_Templates"><img src="https://badges.frapsoft.com/os/v1/open-source.svg?v=103"></a>
