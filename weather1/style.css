@@ -6,7 +6,7 @@
 
 body {
 	background: linear-gradient(#599afa 50%, #4169a5 50%);
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	min-height: 100vh;
 }
 
@@ -26,6 +26,7 @@ main {
 }
 
 .weather-container {
+	position: relative;
 	min-height: 90%;
 	width: 90%;
 	max-width: 1000px;
@@ -40,6 +41,11 @@ main {
 	-webkit-backdrop-filter: blur(0.5rem);
 	margin-inline: 1em;
 	color: #2a456c;
+}
+
+.date {
+	position: relative;
+	font-size: 1.3rem;
 }
 
 .top-section {
@@ -106,6 +112,12 @@ main {
 
 	.weather-container {
 		min-height: 500px;
+		gap: 2em;
+	}
+
+	.date {
+		position: absolute;
+		top: 0.2em;
 	}
 
 	.top-section {
@@ -113,6 +125,10 @@ main {
 		grid-template-areas: 'temp condition';
 		justify-content: space-between;
 		width: 70%;
+	}
+
+	.hilo {
+		font-size: 1.4rem;
 	}
 
 	.temp h1 {
