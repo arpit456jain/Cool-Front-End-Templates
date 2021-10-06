@@ -1,0 +1,365 @@
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
+/* Reset CSS */
+html{
+    font-size: 15px;
+    box-sizing: border-box;
+}
+:root{
+    --dark-blue: hsl(233, 26%, 24%);
+--lime-green: hsl(136, 65%, 51%);
+--bright-cyan: hsl(192, 70%, 51%);
+--grayish-blue: hsl(233, 8%, 62%);
+--light-grayish-blue: hsl(220, 16%, 96%);
+--light-gray: hsl(0, 0%, 98%);
+--white: hsl(0, 0%, 100%);
+
+}
+body,h1,h2,h3,h4,h5,h6,p,ol,ul{
+    margin: 0;
+    padding:0;
+    font-weight: normal;
+    font-family: 'Public Sans', sans-serif;
+    -webkit-font-smoothing:antialiased;
+}
+body{
+    /* So that the image overflow wil get hidden in x direction */
+    overflow-x: hidden;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+/* Styling Nav */
+nav{
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    /* padding: 15px 0px; */
+    height: 52px;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+nav ul li{
+    margin-left: 18px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: var(--grayish-blue);
+    transition: all .3s ease-in-out;
+}
+nav ul li a:hover{
+color: var(--dark-blue);
+}
+.container{
+    width: 1120px;
+    margin: 0 auto;
+    max-width: 90%;
+}
+.btn{
+    background: linear-gradient(to right,var(--lime-green),var(--bright-cyan));
+    padding: 12px 20px;
+    border-radius: 50px;
+    border: none;
+    color: var(--white);
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.btn:hover{
+    background: linear-gradient(to right,var(--bright-cyan),var(--lime-green));
+}
+.nav-section{
+    /* Sometimes z-index will not work so for this we have to use position:relative */
+    position: relative;
+    z-index: 1;
+    background-color: var(--white);
+}
+.hamburger-btn{
+    display: none;
+}
+/* Styling Header */
+.header-wrap{
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-bottom: 24px;
+}
+.header-section{
+    background-color: var(--light-gray);
+}
+.header-text{
+    flex: 1 0 40%;
+}
+.header-images{
+    flex: 1 0 60%;
+    position: relative;
+}
+.header-images img:first-child{
+    position: relative;
+    top: -60px;
+    right: -160px;
+    bottom: 0;
+    transform: scale(1.5);
+}
+.header-images img:last-child{
+position: absolute;
+right: -152px;
+top: -142px;
+transform: scale(.9);
+}
+.header-text h1{
+    font-size: 42px;
+    line-height: 1.1;
+    font-weight: 280;
+    margin-bottom: 20px;
+}
+.header-text p{
+    line-height: 1.4;
+    margin-bottom: 34px;
+    color: var(--grayish-blue);
+}
+/* Pro-Section */
+.pro-section{
+    background-color: var(--light-grayish-blue);
+    padding: 100px 0px;
+}
+.pro-section h1{
+    margin-bottom: 20px;
+}
+.pro-section .section-text{
+    line-height: 1.5;
+    margin-bottom: 52px;
+    color: var(--grayish-blue);
+}
+.pro-section .card-wrapper{
+    display: flex;
+}
+/* > Means direct child */
+/* > * means all the direct child */
+/*   > * + *  It means except first card all the card will be selected  */
+.pro-section .card-wrapper > * + *{
+    margin-left: 40px;
+}
+.card-wrapper .card img{
+    margin-bottom: 24px;
+}
+.card-wrapper .card h2{
+    font-size: 20px;
+    margin-bottom: 18px;
+}
+.card-wrapper .card p{
+    font-size: 15px;
+    line-height: 1.4;
+}
+/* Article Section */
+.articles-section{
+    padding: 100px 0;
+    background-color: var(--light-gray);
+}
+.article-wrapper{
+    display: flex;
+}
+.articles-section h1{
+    margin-bottom: 30px;
+}
+.article-wrapper > * + *{
+    margin-left: 30px;
+}
+.article-wrapper img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.article-wrapper .content{
+    background-color: var(--white);
+    padding: 20px;
+}
+.article-wrapper .content a{
+    padding: 10px 0;
+    display: inline-block;/* anchor tag is an inline element so that's why we can't apply padding so we have to change it to inline-block */
+    color: var(--dark-blue);
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+}
+.article-wrapper .content a:hover{
+    color: var(--lime-green);
+}
+.article-wrapper .content p{
+    color: var(--grayish-blue);
+    font-size: 15px;
+}
+.article-card{
+    background-color: white;
+}
+/* Footer */
+footer{
+    background-color: var(--dark-blue);
+    padding: 30px;
+}
+footer ul {
+    list-style: none;
+}
+footer ul.socials{
+    display: flex;
+    margin-top: 60px;
+}
+footer ul.socials > * + *{
+    margin-left: 14px;
+}
+footer .content{
+    display: flex;
+    justify-content: space-between;
+    
+}
+footer .content a{
+    color: var(--light-gray);
+    text-decoration: none;
+    transition:all .3s ease-in-out;
+}
+footer .content a:hover{
+    color: var(--grayish-blue);
+}
+footer .content li{
+    margin-bottom: 12px;
+}
+footer .footer-cta{
+    text-align: right;
+}
+footer .copyright{
+    font-size: 14px;
+    color: var(--grayish-blue);
+    margin-top: 20px;
+}
+/* Responsive */
+@media(max-width:1215px){
+    .card-wrapper,.article-wrapper{
+        flex-wrap: wrap;
+    }
+    .card-wrapper .card{
+        flex:1 0 40%;
+    }
+    .card-wrapper .card:nth-child(odd){
+        margin-left: 0;
+        margin-bottom: 40px;
+    }
+    .article-wrapper .article-card{
+        flex: 1 0 40%;
+        margin-bottom: 20px;
+    }
+    .article-wrapper .article-card:nth-child(odd){
+        margin-left: 0;
+    }
+}
+@media (max-width:782px){
+    footer .content{
+        flex-wrap: wrap;
+    }
+    footer .content > *{
+        flex: 1 0 30%;
+        margin-bottom: 24px;
+        text-align: left;
+    }
+    footer ul.socials{
+        margin-top: 24px;
+    }
+    footer .footer-cta{
+        margin-bottom: 0;
+    }
+}
+@media(max-width:689px){
+.nav-links{
+    position: fixed;
+    /* top: 80px; */
+    top: -700px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 20px 0px;
+    box-shadow: 0px 30px 50px 5px #a0a0a0;
+    border-radius: 20px;
+    transition: all .3s ease-in-out;
+    transform: translateX(50%);
+}
+.nav-links.open{
+    top: 20%;
+}
+.navbar-cta{
+    display: none;
+}
+.hamburger-btn{
+    outline: none;
+    border: none;
+    display: block;
+}
+.nav-links a{
+    color: var(--dark-blue);
+}
+.nav-links li{
+padding-bottom: 10px;
+}
+.nav-links li:last-child{
+    padding-bottom: 0;
+} 
+/* Header */
+.header-text{
+    flex: 1 0 70%;
+}
+.header-images{
+    flex: 1 0 30%;
+}
+.header-wrap{
+    padding-top: 20px;
+}
+.header-images img:first-child{
+    right: -50px;
+    top: -85px;
+}
+.header-images img:last-child{
+    right: -50px;
+    top: -105px;
+}
+.header-text h1{
+    font-size: 24px;
+}
+.header-text p{
+    font-size: 14px;
+}
+/* Pro Section */
+.pro-section,.articles-section{
+padding-top: 24px;
+}
+.pro-section h1{
+    font-size: 20px;
+}
+.pro-section .section-text{
+    font-size: 14px;
+}
+/* Footer Section */
+footer .content > *{
+    flex: 1 0 100%;
+    text-align: center;
+}
+footer .socials{
+    justify-content: center;
+}
+}
+@media(max-width:580px){
+    .card-wrapper .card{
+        flex:1 0 100%;
+    }
+    .card-wrapper .card:nth-child(even){
+        margin-left: 0;
+        margin-bottom: 40px;
+    }
+    .article-wrapper .article-card{
+        flex: 1 0 100%;
+        margin-left: 0;
+    }
+    .article-card:last-child{
+        margin-bottom: 0;
+    }
+}
