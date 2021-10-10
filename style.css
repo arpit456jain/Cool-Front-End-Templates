@@ -286,3 +286,18 @@ a:hover {
 .footer-project-heading{
   font-size:1.5rem;
 }
+.fa-facebook-square:hover {
+    transform: scale(1.5);
+}
+
+.fa-github-square:hover {
+    transform: scale(1.5);
+}
+
+.fa-linkedin:hover {
+    transform: scale(1.5);
+}
+
+.fa-instagram-square:hover {
+    transform: scale(1.5);
+}
