@@ -1,0 +1,248 @@
+body{
+    background-color: #fafafa;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+/*Navbar*/
+
+.Nav{
+    border-bottom: 1px solid #dcdada;
+    background-color: #fff;
+}
+.Navbar{
+    background-color: #fff;
+    display: flex;
+    height: 25px;
+    justify-content: space-between;
+    margin: 10px 280px;
+}
+
+img{
+    padding: 0 5px;
+}
+/*Navbar - Search*/
+.NavSearch{
+    border: 1px solid #dcdada;
+    background-color: #fafafa;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/*Navbar - Profile*/
+.profileImage{
+    border-radius: 50%;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  border-radius: 10px;
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/*Home Posts*/
+.home{
+    margin: 0px 280px;
+    display: flex;
+    background-color: #fafafa;
+}
+
+/*div-left*/
+.div-left{
+    width: 65%;
+}
+
+/*Story*/
+.story{
+    display: flex;
+    background-color: #fff;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #dcdada;
+}
+
+.img{
+  border: double 3px transparent;
+  border-radius: 50%;
+  background-image: linear-gradient(white, white), radial-gradient(circle at top left, #ffba20,#f00);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  padding: 0;
+  margin: 0 8px; 
+}
+
+.story .Name{
+    margin: 0;
+    text-align: center;
+    font-size: 10px;
+}
+
+/*Home-Post*/
+.posts{
+    padding: 0;
+    margin: 0;
+}
+.post{
+    background-color: #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 10px;
+    border: 1px solid #dcdada;
+}
+
+.userPostNav{
+    display: flex;
+    padding-top: 10px;
+    /* border: 1px solid #dcdada; */
+    
+}
+
+.postImg{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+/*div-right*/
+.div-right{
+    margin: 10px;
+    width: 35%;
+}
+
+.suggestion{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.sfy{
+    color: grey;
+    font-weight: bold;
+}
+
+.suggestion img{
+    border-radius: 50%;
+}
+
+.user p{
+    margin: 0;
+    top: 10px;
+    position: relative;
+    left: -25px;
+    font-size: 15px;
+}
+
+.user .name{
+    font-weight: bold;
+}
+
+.follows{
+    color: grey;
+    font-size: 12px;
+}
+
+.follow{
+    top: 20px;
+    position: relative;
+    color: skyblue;
+}
+
+/*Like share comment*/
+.lscs, .comment{
+    display: flex;
+    justify-content: space-between;
+}
+
+.lsc, .nameDesc, .comment-left{
+    display: flex;
+}
+
+.nameDesc{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.nameDesc .name{
+    font-size: 15px;
+    font-weight: bolder;
+    padding-right: 10px;
+    padding-left: 5px;
+}
+
+.nameDesc .desc{
+    color: grey;
+    font-size: 15px;
+}
+
+.comment .addComment{
+    color: grey;
+    margin: 0;
+    padding-left: 10px;
+}
+
+.comment .commentPost{
+    color: skyblue;
+    font-weight: bold;
+    margin: 0;
+    padding-right: 5px;
+}
+
+/*Mobile View*/
+@media screen and (max-width: 800px) {
+    .Navbar{
+        margin: 20px;
+        justify-content: space-between;
+    }
+    .home, .story, .post{
+        margin: 0px;
+    }
+    .div-left{
+        width: 100%;
+    }
+    .NavSearch{
+        display: none;
+    }
+    .div-right {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .Navbar{
+        margin: 20px;
+        justify-content: space-between;
+    }
+    .home, .story, .post{
+        margin: 0px;
+    }
+    .div-left{
+        width: 100%;
+    }
+    .NavSearch{
+        display: none;
+    }
+    .div-right {
+        display: none;
+    }
+}
+
