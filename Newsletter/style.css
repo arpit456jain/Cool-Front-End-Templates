@@ -147,7 +147,7 @@ h1 {
     visibility:hidden;
   }
   .slideshow-container{
-    transform:translateY(120%);
+    transform:translateY(520%);
   }
   .card-dots{
     visibility:hidden;
@@ -155,6 +155,9 @@ h1 {
   .news-body{
     transform:translateY(-20%);
   }
+  .past-news{
+    transform:translateY(10%);
+}
 }
 
 * {box-sizing:border-box}
