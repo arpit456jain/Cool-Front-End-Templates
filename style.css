@@ -169,7 +169,7 @@ a:hover {
 }
 
 .topnav a.active {
-  background-color: #04AA6D;
+  background-color: rgb(33,2,88);
   color: white;
 }
 
@@ -209,8 +209,29 @@ a:hover {
   padding-left:5%;
   padding-right:5%;
   padding-bottom:2%;
-  background-color:rgb(89, 0, 131);
+  background-image:url(images/danny-lines-TTRNdWfY8TY-unsplash.jpg);
   display:flex;
+  gap:2%;
+}
+
+.contact-us{
+  margin-top:2%;
+  padding-top:2%;
+  padding-left:5%;
+  padding-right:5%;
+  padding-bottom:2%;
+  background-image:url(images/danny-lines-TTRNdWfY8TY-unsplash.jpg);
+  gap:2%;
+}
+
+.projects{
+  margin-top:2%;
+  padding-top:2%;
+  padding-left:5%;
+  padding-right:5%;
+  padding-bottom:2%;
+  background-color:black;
+  text-align: justify;
   gap:2%;
 }
 
