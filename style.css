@@ -84,17 +84,30 @@ h1 {
   font-weight: 600;
   text-transform: capitalize;
 }
+.stylebox .btn-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
 .stylebox a {
   background-color: white;
   border: none;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   padding: 1vmin;
   font-size: 1.2rem;
   background-color: rgb(89, 0, 131);
   color: rgb(255, 255, 255);
   text-decoration: none;
-  transition: .2s;
+  transition: 0.2s;
+  width: 100%;
 }
+.stylebox a.code {
+  background-color: rgb(47, 128, 0);
+}
+.stylebox a.code:hover {
+  background-color: rgb(39, 105, 0);
+}
+
 a:hover {
   background-color: rgb(44, 1, 65);
   cursor: pointer;
