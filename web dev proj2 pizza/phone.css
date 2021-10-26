@@ -1,0 +1,35 @@
+
+#navbar{
+    flex-direction: column;
+}
+#navbar ul  li a{
+    padding:5px 5px;
+}
+.home{
+    height:390px;
+    padding:10px 10px;
+}
+.home h2{
+    font-size: 24px;
+}
+.home para1{
+    font-size: 12px;
+}
+.home para2{
+    font-size: 12px;
+}
+.btn{
+    margin:0px 0px;
+}
+.services{
+    flex-wrap: wrap;
+}
+@media only screen and (max-width:700px){
+.container{
+
+    padding-left: 12px;
+}
+.home {
+    height:450px;
+}
+}

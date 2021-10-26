@@ -1,0 +1,158 @@
+body{
+    margin:0;
+    padding: 0;
+}
+#navbar{
+  /*  position: sticky;*/ 
+  /* z-index: 10;*/
+    display: flex;
+    text-align: center;
+    background-color:black;
+  opacity:1;
+  
+}
+#logo{
+   margin: -2px 11px;
+}
+#logo img{
+    height: 91px;
+    width: 185px;
+}
+#navbar ul{
+    display: flex;
+    
+}
+#navbar ul li{
+    list-style: none;
+}
+#navbar ul li a{
+    text-decoration: none;
+    display:block;
+   padding: 14px 22px;
+    font-size:18px;
+    color:white;
+    font-family: 'Rubik Beastly', cursive;
+}
+/*#navbar::before{
+    content:"";
+    background-color: black;
+    display: absolute;
+    height: 100%;
+    width: 100%;
+    z-index:1;
+}
+*/
+#navbar ul li a:hover{
+    background-color:sandybrown;
+    color:rgb(97, 95, 95);
+    border-radius: 14px;
+}
+.home{
+  /* display: flex;
+  
+  flex-direction: column;
+   
+   justify-content: center;
+   align-items: center; */
+  padding: 24px 34px;
+  padding: 41px 7px;
+  background: url('images/new\ image.webp') no-repeat center center/cover;
+ 
+ opacity: 0.92;
+}
+.home h2{
+    color: rgb(110, 105, 190);
+    font-size: 38px;
+    padding-left:149px;
+    font-family: 'Ultra', serif;
+font-family: 'Yellowtail', cursive;
+}
+#para1{
+    
+    color:rgb(24, 122, 146);
+    width:50%;
+    font-size: 18px;
+    padding-left: 11px;
+    font-family: 'Pacifico', cursive;
+}
+#para2{
+    color:rgb(24, 122, 146);
+    width:50%;
+    font-size: 18px;
+    padding-left: 213px;
+    font-family: 'Pacifico', cursive;
+}
+.container{
+   padding-left: 400px;
+}
+.btn{
+    color:rgb(214, 211, 197);
+    background-color: rgb(29, 28, 39);
+    border: 2px solid rgb(102, 233, 63);
+    border-radius: 10px;
+   font-weight: bold; 
+   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding :3px 15px;
+}
+.btn:hover{
+    background-color:black;
+    cursor: pointer;
+}
+#service-heading{
+    text-align: center;
+    margin: 22px 17px;
+    font-size: 40px;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+.services{
+    display: flex;
+}
+.box{
+    border: 2px solid red;
+    padding: 25px 27px;
+    margin: 20px 6px;
+    border-radius: 35px;
+    background-color: #ffecd6;
+}
+.box img{
+    height: 188px;
+    width: 273px;
+    padding-left: 50px;
+}
+
+.box-heading{
+    text-align: center;
+    font-size: 28px;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+.box p{
+    font-family: 'Pacifico', cursive;
+}
+.clients{
+    background: url('images/pizza-386717_960_720.webp') no-repeat center center/cover;
+  /*  background-repeat: no-repeat;
+   background-size: 100%; 
+  */
+  
+    height:300px;
+    opacity:0.89;
+}
+#clients-heading{
+    text-align: center;
+    font-size: 45px;
+    margin: 6px 10px;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+.item{
+    display:flex;
+    justify-content: center; 
+    
+}
+
+
+.logos img{
+    height: 90px;
+    width: 96px;
+    padding:38px 18px;
+}
+
