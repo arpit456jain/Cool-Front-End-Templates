@@ -335,3 +335,34 @@ a:hover {
 .fa-instagram-square:hover {
     transform: scale(1.5);
 }
+
+/* Media queries */
+@media screen and (max-width: 445px) {
+  .footer-description-heading {
+    font-size: 1.3rem;
+    width: 101%;
+  }
+  .footer {
+    display: flex;
+    flex-direction: row;
+    font-family: "Poppins", sans-serif;
+  }
+  .footer-description {
+    width: 85%;
+  }
+  .footer-projects-links {
+    width: 80%;
+    font-family: "Poppins", sans-serif;
+  }
+  .footer-contact {
+    width: 80%;
+    font-family: "Poppins", sans-serif;
+  }
+  .contact-h4 {
+    font-size: 1.5rem;
+    font-family: "Poppins", sans-serif;
+  }
+  .contact-p {
+    font-size: 1rem;
+  }
+}
