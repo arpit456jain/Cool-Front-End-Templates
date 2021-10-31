@@ -1,0 +1,33 @@
+h1{
+    text-align: center;
+    text-decoration: lightcoral;
+    text-decoration-line: underline;
+}
+
+body{
+    padding: 50px 100px;
+}
+
+
+#container{
+    text-align: center;
+    background-color: lightblue;
+    padding: 50px; 
+}
+
+label{
+    font-size: 32px;
+}
+
+.input-div{
+    display: inline-block;
+}
+
+.input-box{
+    padding: 5px 0px;
+    margin: 15px;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    
+}
