@@ -32,7 +32,7 @@ fetch('style_links.json')
             
             <div class="btn-group">
             <a target="_blank" href="${links[i].link}">View</a>
-            <a target="_blank" href="https://github.com/arpit456jain/Cool-Front-End-Templates/tree/master/${links[i].name}" class="code">Code</a>
+
             </div>
 
             </div>`;
@@ -40,3 +40,5 @@ fetch('style_links.json')
         };
 
 });
+
+//<a target="_blank" href="https://github.com/arpit456jain/Cool-Front-End-Templates/tree/master/${links[i].name}" class="code">Code</a>
