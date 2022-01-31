@@ -1,13 +1,5 @@
 [
   {
-    "name": "Admin Dashboard",
-    "link": "Admin Dashboard/index.html"
-  },
-  {
-    "name": "Artica",
-    "link": "Artica/index.html"
-  },
-  {
     "name": "Chinese Restaurant",
     "link": "Chinese Restaurant/index.html"
   },
@@ -151,5 +143,13 @@
   {
     "name": "Rural Art Template",
     "link": "Rural Art Template/index.html"
-  }
+  },
+  {
+      "name": "Admin Dashboard",
+      "link": "Admin Dashboard/index.html"
+    },
+    {
+      "name": "Artica",
+      "link": "Artica/index.html"
+    }
 ]
