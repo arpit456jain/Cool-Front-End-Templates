@@ -1,7 +1,8 @@
 # Cool Front-End Templates
 
-### This project was part of Hacktoberfest'21
-![Hacktoberfest](https://user-images.githubusercontent.com/59393136/135566614-5635902f-2907-4e01-8baf-3cb1b43a6b20.png)
+### This project is part of Girl script Summer of code 2022
+
+![Gssoc'2022](https://i.postimg.cc/k40ntsV4/1500x500.jpg)
 
 <div align="center">
 
@@ -28,6 +29,7 @@ Will Add some cool templates in it.
 #### Website for this repository : https://cool-front-end-templates.netlify.app/
 
 # Must Check These Repos Also
+
 - [Cool Front-End Templates ](https://github.com/arpit456jain/Cool-Front-End_Templates)
 - [Amazing Css effects](https://github.com/arpit456jain/Amazing-Css-Effects)
 - [Amazing Js Projects](https://github.com/arpit456jain/Amazing-Js-Projects)
@@ -130,6 +132,8 @@ GitHub will alert you that you can merge the two branches because there is no co
 
 ![Devincept](https://user-images.githubusercontent.com/56088741/123548852-1ef59d00-d784-11eb-8e39-255e0c3e97d5.gif)
 
+![HacktoberFest'21](https://user-images.githubusercontent.com/59393136/135566614-5635902f-2907-4e01-8baf-3cb1b43a6b20.png)
+
 <hr>
 
  <h1 align=center> Project Admins ❤️ </h1>
@@ -158,7 +162,7 @@ Thanks go to these **Wonderful People** 👨🏻‍💻: 🚀 **Contributions** 
 
 <h1 align=center>Happy Coding 👨‍💻 </h1>
 
-##  💬Join Our CodeSmashers Community
+## 💬Join Our CodeSmashers Community
 
 Join - https://discord.gg/gtYUZQSjTt
 
