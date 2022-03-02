@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
 
-html{
+html {
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
@@ -8,9 +8,9 @@ html{
 body {
   margin: 0 auto;
   padding: auto;
-  background-color: rgb(19, 24, 44);
+  background-color: #22223a;
 }
-  /* heading */
+/* heading */
 h1 {
   color: #fff;
   text-transform: uppercase;
@@ -19,27 +19,27 @@ h1 {
   text-align: center;
   padding: 15px 20px;
   position: relative;
-    }
-    h1:after {    
-      background: none repeat scroll 0 0 transparent;
-      bottom: 0;
-      content: "";
-      display: block;
-      height: 2px;
-      left: 50%;
-      position: absolute;
-      background: #fff;
-      transition: width 0.3s ease 0s, left 0.3s ease 0s;
-      width: 0;
-    }
-    h1:hover:after { 
-      width: 100%; 
-      left: 0; 
-    }  
-   
+}
+h1:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+h1:hover:after {
+  width: 100%;
+  left: 0;
+}
+
 .styles {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   margin: 0 auto;
   margin-top: 4vmin;
   flex-wrap: wrap;
@@ -50,38 +50,55 @@ h1 {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  background-color: rgb(245, 217, 217);
-  padding: 1rem;
-  text-align: center;
-  font-family: 'Poppins', sans-serif;
-  margin: 1.5rem;
-  border-radius: .5rem;
+  font-family: "Poppins", sans-serif;
   border: none;
-  width: 20rem;
+  margin: 9px;
+  margin-bottom: 30px;
   justify-content: center;
-  transition: .2s;
+  background: #2f2d44;
+  color: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease-in-out;
 }
-.stylebox:hover{
-  transform: scale(1.02);
-  -webkit-box-shadow: 0 0 10px 2px rgba(26, 1, 253, 0.42);
-  -moz-box-shadow: 0 0 10px 2px rgba(26, 1, 253, 0.42);
-  box-shadow: 0 0 10px 2px rgba(26, 1, 253, 0.42);
+.stylebox:after {
+  display: block;
+  content: "";
+  border-bottom: solid 3px #019fb6;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
 }
-.stylebox .image{
+.stylebox:after {
+  transform-origin: 0% 50%;
+}
+.stylebox:hover:after {
+  transform: scaleX(1);
+}
+.stylebox:hover {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+.stylebox .image {
   width: 20rem;
   height: 13rem;
 }
-.stylebox .image img{
-  background-size: cover;
+.stylebox .image img {
+  background-size: contain;
   width: 100%;
   height: 100%;
-  border-radius: .5rem;
-  image-rendering:pixelated;
+
+  image-rendering: pixelated;
 }
-.stylebox p{
-  text-align: left;
-  font-size: 1.2rem;
-  font-weight: 600;
+.stylebox p {
+  margin: 1.5rem 0 1.5rem;
+  font-weight: 700;
+  line-height: 1.5;
+  font-family: "Inter", sans-serif;
+  color: #fff;
+  padding-left: 15px;
   text-transform: capitalize;
 }
 .stylebox .btn-group {
@@ -90,17 +107,20 @@ h1 {
   gap: 1rem;
 }
 .stylebox a {
-  background-color: white;
   border: none;
-  border-radius: 0.5rem;
   padding: 1vmin;
-  font-size: 1.2rem;
-  background-color: rgb(89, 0, 131);
-  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  background-color: transparent;
+  color: #38beea;
   text-decoration: none;
   transition: 0.2s;
-  width: 100%;
+  text-align: center;
+  margin-left: 15px;
+  border: 2px solid #38beea;
+  width: 30%;
+  margin-bottom: 20px;
 }
+
 .stylebox a.code {
   background-color: rgb(47, 128, 0);
 }
@@ -109,7 +129,8 @@ h1 {
 }
 
 a:hover {
-  background-color: rgb(44, 1, 65);
+  background-color: #38beea;
+  color: #fff;
   cursor: pointer;
 }
 
@@ -123,24 +144,24 @@ a:hover {
     margin-top: 4vmin;
   }
   .stylebox {
-    padding: .5rem;
+    padding: 0.5rem;
     margin: auto;
     width: 18rem;
     margin-bottom: 1.5rem;
   }
-  .stylebox .image{
+  .stylebox .image {
     width: 18rem;
     height: 12rem;
-    border-radius: .5rem;
+    border-radius: 0.5rem;
   }
 }
 
 /* scroll top starts */
-#scroll-top{
+#scroll-top {
   position: fixed;
   bottom: -140%;
   right: 1rem;
-  padding: .6rem 1rem;
+  padding: 0.6rem 1rem;
   font-size: 2rem;
   background: #00ff37;
   color: rgb(13, 0, 44);
@@ -149,16 +170,15 @@ a:hover {
   z-index: 1000;
   text-decoration: none;
 }
-#scroll-top:hover{
+#scroll-top:hover {
   -webkit-box-shadow: 0 0 10px 2px rgba(26, 1, 253, 0.42);
   -moz-box-shadow: 0 0 10px 2px rgba(26, 1, 253, 0.42);
   box-shadow: 0 0 10px 2px rgba(26, 1, 253, 0.42);
 }
-#scroll-top.active{
+#scroll-top.active {
   bottom: calc(100% - 36rem);
 }
 /* scroll top ends */
-
 
 /* CSS for NavBar starts */
 .topnav {
@@ -191,7 +211,9 @@ a:hover {
 }
 
 @media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
+  .topnav a:not(:first-child) {
+    display: none;
+  }
   .topnav a.icon {
     float: right;
     display: block;
@@ -199,7 +221,9 @@ a:hover {
 }
 
 @media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
+  .topnav.responsive {
+    position: relative;
+  }
   .topnav.responsive a.icon {
     position: absolute;
     right: 0;
@@ -216,124 +240,125 @@ a:hover {
 
 /* Footer starts */
 
-.footer{
-  margin-top:2%;
-  padding-top:2%;
-  padding-left:5%;
-  padding-right:5%;
-  padding-bottom:2%;
-  background-image:url(images/danny-lines-TTRNdWfY8TY-unsplash.jpg);
-  display:flex;
-  gap:2%;
+.footer {
+  margin-top: 2%;
+  padding-top: 2%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 2%;
+  background-image: url(images/danny-lines-TTRNdWfY8TY-unsplash.jpg);
+  display: flex;
+  gap: 2%;
 }
 
-.contact-us{
-  margin-top:2%;
-  padding-top:2%;
-  padding-left:5%;
-  padding-right:5%;
-  padding-bottom:2%;
-  background-image:url(images/danny-lines-TTRNdWfY8TY-unsplash.jpg);
-  gap:2%;
+.contact-us {
+  margin-top: 2%;
+  padding-top: 2%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 2%;
+  background-image: url(images/danny-lines-TTRNdWfY8TY-unsplash.jpg);
+  gap: 2%;
 }
 
-.projects{
-  margin-top:2%;
-  padding-top:2%;
-  padding-left:5%;
-  padding-right:5%;
-  padding-bottom:2%;
-  background-color:black;
+.projects {
+  margin-top: 2%;
+  padding-top: 2%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 2%;
+  background-color: black;
   text-align: justify;
-  gap:2%;
+  gap: 2%;
 }
 
-.footer-description{
+.footer-description {
   color: rgb(245, 217, 217);
-  width:40%;
+  width: 40%;
 }
 
-.footer-description-heading{
-  font-size:2rem;
+.footer-description-heading {
+  font-size: 2rem;
 }
 
-.footer-projects-links{
-  color:rgb(245, 217, 217);
-  text-align:left;
-  width:30%;
-  margin-top:1.5%;
+.footer-projects-links {
+  color: rgb(245, 217, 217);
+  text-align: left;
+  width: 30%;
+  margin-top: 1.5%;
 }
 
-.footer-ul{
-  margin-top:5%;
-  list-style-type:none;
-  font-size:1rem;
-  padding:0px;
+.footer-ul {
+  margin-top: 5%;
+  list-style-type: none;
+  font-size: 1rem;
+  padding: 0px;
 }
 
-.footer-alink{
-  text-decoration:none;
-  color:rgb(245, 217, 217);
+.footer-alink {
+  text-decoration: none;
+  color: rgb(245, 217, 217);
 }
 
-.footer-ul-li{
-  margin-bottom:2%;}
-.footer-alink:hover{
-  background-color:transparent;
-  text-decoration:underline;
+.footer-ul-li {
+  margin-bottom: 2%;
+}
+.footer-alink:hover {
+  background-color: transparent;
+  text-decoration: underline;
 }
 
-.footer-contact{
-  color:rgb(245, 217, 217);
-  width:30%;
+.footer-contact {
+  color: rgb(245, 217, 217);
+  width: 30%;
 }
 
-.contact-p{
-  font-size:0.8rem;
+.contact-p {
+  font-size: 0.8rem;
 }
 
-.socials{
-  padding:0px;
-  list-style-type:none;
-  display:flex;
-  gap:2%;
-  font-size:50x;
+.socials {
+  padding: 0px;
+  list-style-type: none;
+  display: flex;
+  gap: 2%;
+  font-size: 50x;
 }
 
-.fa fa-facebook{
-  size:5x;
+.fa fa-facebook {
+  size: 5x;
 }
-.social-icon{
-  font-size:30px;
-  color:rgb(245, 217, 217);
-}
-
-.social-icon:hover{
-  background-color:transparent;
+.social-icon {
+  font-size: 30px;
+  color: rgb(245, 217, 217);
 }
 
-.contact-h4{
-  font-size:1.5rem;
-  margin-bottom:0;
+.social-icon:hover {
+  background-color: transparent;
 }
 
-.footer-project-heading{
-  font-size:1.5rem;
+.contact-h4 {
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+
+.footer-project-heading {
+  font-size: 1.5rem;
 }
 .fa-facebook-square:hover {
-    transform: scale(1.5);
+  transform: scale(1.5);
 }
 
 .fa-github-square:hover {
-    transform: scale(1.5);
+  transform: scale(1.5);
 }
 
 .fa-linkedin:hover {
-    transform: scale(1.5);
+  transform: scale(1.5);
 }
 
 .fa-instagram-square:hover {
-    transform: scale(1.5);
+  transform: scale(1.5);
 }
 
 /* Media queries */
