@@ -1,6 +1,6 @@
 # Cool Front-End Templates
 
-### This project is part of Hacktoberfest'21
+### This project was part of Hacktoberfest'21
 ![Hacktoberfest](https://user-images.githubusercontent.com/59393136/135566614-5635902f-2907-4e01-8baf-3cb1b43a6b20.png)
 
 <div align="center">
@@ -70,14 +70,14 @@ $ git clone https://github.com/<your-github-username>/Cool-Front-End_Templates
 
 #### Step 3: Creating a new branch (IMP)
 
-This is one of the very important step that you should follow to contribute in Open Source. A branch helps to manage the workflow, isolate your code and does not creates a mess. To create a new branch:
+This is one of the very important step that you should follow to contribute to Open Source. A branch helps to manage the workflow, isolate your code and does not create a mess. To create a new branch:
 
 ```bash
 $ git branch <name_of_branch>
 $ git checkout -b <name_of_branch>
 ```
 
-Keep your cloned repo upto date by pulling from upstream (this will also avoid any merge conflicts while committing new changes)
+Keep your cloned repo up-to date by pulling from upstream (this will also avoid any merge conflicts while committing new changes)
 
 ```bash
 git pull origin main
@@ -87,7 +87,7 @@ git pull origin main
 
 Make relevant changes according to the issue that you were assigned on. Contribute in any way you feel like :)
 
-#### Step 6: Commiting and Pushing
+#### Step 6: Committing and Pushing
 
 Once you have modified an existing file or added a new file to the project, you can add it to your local repository, which we can do with the git add command.
 
