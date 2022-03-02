@@ -20,9 +20,6 @@ img {
     max-width: 100%;
 }
 
-h1 {
-    padding-top: 60px;
-}
 
 .wrapper {
     margin: 0;
@@ -32,12 +29,16 @@ h1 {
 p8 {
     color: antiquewhite;
 }
+h1 {
+    padding-top: 60px;
+}
+
 
 
 /* HEADER */
 
 header {
-    padding: 20px 20px 0 20px;
+    padding : 20px 20px 0px 18px;
     position: fixed;
     top: 0;
     display: grid;
@@ -123,7 +124,7 @@ header {
 }
 
 .box img {
-    border-radius: 2px;
+    border-radius: 1.8px;
 }
 
 
