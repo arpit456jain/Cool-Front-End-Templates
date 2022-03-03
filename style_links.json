@@ -16,6 +16,10 @@
     "link": "engineers copied web/index.html"
   },
   {
+    "name": "E commerce shopping website template",
+    "link": "E commerce shopping website template/index.html"
+  },
+  {
     "name": "Food Ordering",
     "link": "Food Ordering/index.html"
   },
@@ -156,8 +160,20 @@
       "name": "Artica",
       "link": "Artica/index.html"
     },
+
+  {
+    "name": "Netflix clone",
+    "link": "netflixclone/index.html"
+  },
+
     {
+      "name": "Gym Website",
+      "link": "gymWebsite/index.html"
+    },
+  {
       "name": "Art Gallery Website",
       "link": "ArtGalleryWebsite/index.html"
+
     }
+
 ]
