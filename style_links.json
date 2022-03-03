@@ -156,8 +156,15 @@
       "name": "Artica",
       "link": "Artica/index.html"
     },
+
+  {
+    "name": "Netflix clone",
+    "link": "netflixclone/index.html"
+  },
+
     {
       "name": "Art Gallery Website",
       "link": "ArtGalleryWebsite/index.html"
     }
+
 ]
