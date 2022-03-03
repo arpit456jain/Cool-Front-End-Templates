@@ -2,6 +2,8 @@
 
 ### This project is part of Girl script Summer of code 2022
 
+### Mentors : [Astha](https://github.com/astha2412) [Vidhi](https://github.com/VidhiBhatt01)
+
 ![Gssoc'2022](https://i.postimg.cc/k40ntsV4/1500x500.jpg)
 
 <div align="center">
