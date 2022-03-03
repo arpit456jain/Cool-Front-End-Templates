@@ -136,7 +136,17 @@ GitHub will alert you that you can merge the two branches because there is no co
 
 <hr>
 
- <h1 align=center> Project Mentors ❤️ </h1>
+ <h1 align=center> Project Admins ❤️ </h1>
+<p align="center">
+<table>
+  <tbody><tr>
+     <td align="center"><a href="https://github.com/arpit456jain"><img alt="" src="https://avatars.githubusercontent.com/arpit456jain" width="100px;"><br><sub><b> Arpit Jain </b></sub></a><br></td> </a></td>
+     <td align="center"><a href="https://github.com/ankitapuri"><img alt="" src="https://avatars.githubusercontent.com/ankitapuri" width="100px;"><br><sub><b> Ankita Puri</b></sub></a><br></td></a></td>
+
+</tbody></table>
+
+
+ <h1 align=center> Project Mentors 👩‍🏫 </h1>
 <p align="center">
 <table>
   <tbody><tr>
@@ -144,6 +154,7 @@ GitHub will alert you that you can merge the two branches because there is no co
      <td align="center"><a href="https://github.com/VidhiBhatt01"><img alt="" src="https://avatars.githubusercontent.com/u/83345228?v=4" width="100px;"><br><sub><b> Vidhi Bhatt</b></sub></a><br></td></a></td>
 
 </tbody></table>
+
 <h2 align=center> ✨ Contributors </h2>
 
 Thanks go to these **Wonderful People** 👨🏻‍💻: 🚀 **Contributions** of any kind are welcome!
