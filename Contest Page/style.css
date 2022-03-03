@@ -1,0 +1,464 @@
+@font-face {
+    font-family: "Gilroy";
+    font-weight: 800;
+    src: url(../static/fonts/Gilroy-Black.otf);
+}
+
+@font-face {
+    font-family: "Gilroy";
+    font-weight: 300;
+    src: url(../static/fonts/Gilroy-Light.otf);
+}
+
+@font-face {
+    font-family: "Gilroy";
+    font-weight: 500;
+    src: url(../static/fonts/Gilroy-Regular.otf);
+}
+
+@font-face {
+    font-family: "Gilroy";
+    font-weight: 600;
+    src: url(../static/fonts/Gilroy-Semibold.otf);
+}
+
+@font-face {
+    font-family: "Gilroy";
+    font-weight: 400;
+    src: url(../static/fonts/Gilroy-Medium.otf);
+}
+
+@font-face {
+    font-family: "Ogg";
+    font-weight: 900;
+    src: url(../static/fonts/OggBold.ttf);
+}
+
+@font-face {
+    font-family: "Ogg";
+    font-weight: 400;
+    src: url(../static/fonts/OggThin.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: "Product sans";
+}
+
+#back {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+}
+
+#section1 {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+}
+
+#nav1 {
+    position: relative;
+    width: 100%;
+    /* height: 60px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.26);
+
+}
+
+#nav1 a {
+    color: black;
+    font-weight: 400;
+    font-family: "Poppins";
+}
+
+#nav1 h2 {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-family: "Ogg";
+    font-weight: 100;
+}
+
+#icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav1 #icons a {
+    margin-left: 30px;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    font-weight: 100;
+}
+
+#icons a:nth-child(1) {
+    margin-left: 0;
+}
+
+#nav2 {
+    width: 100%;
+    padding-left: 30px;
+    display: flex;
+}
+
+#nav2 #menu {
+    width: 10%;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    /* background-color: blue; */
+}
+
+#menu a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+
+#nav2 #search {
+    position: relative;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#search img {
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+
+}
+
+#btn {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: tomato; */
+}
+
+#btn button {
+    border: none;
+    background-color: transparent;
+}
+
+#btn button a {
+    text-decoration: none;
+    font-size: 14px;
+    color: black;
+}
+
+#btn #visit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 80px;
+    background-color: rgb(208, 226, 238);
+}
+
+#visit a {
+    text-decoration: none;
+    font-size: 14px;
+    color: black;
+}
+
+#mainpic {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    background-image: url("bg.png");
+    background-position: center;
+    background-size: cover;
+}
+
+#text {
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%, 0);
+    text-align: center;
+    opacity: 0.7;
+}
+
+#text h1 {
+    font-size: 100px;
+    font-family: "Voyage";
+    font-weight: 100;
+}
+
+#text h1:nth-child(1) {
+    margin-left: 30px;
+}
+
+#text h1:nth-child(2) {
+    position: absolute;
+    left: -10%;
+}
+
+#text h1:nth-child(3) {
+    position: absolute;
+    top: 200%;
+    left: 40%;
+}
+
+#section1 #button3 {
+    padding: 10px 20px;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#section1 #button3:hover {
+    background-color: #D0E2EE;
+}
+
+#section2 {
+    position: absolute;
+    width: 100%;
+    min-height: 100vh;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    display: none;
+
+}
+
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    width: 400px;
+    max-width: 100%;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #f0f0f0;
+    background-color: black;
+    color: #fff;
+    padding: 20px 40px;
+
+}
+
+.header i {
+    font-size: 50px;
+}
+
+.header h2 {
+    margin: 0;
+    font-weight: 500;
+}
+
+.form {
+    padding: 30px 40px;
+}
+
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-control label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.form-control input {
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    font-family: inherit;
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+}
+
+.form-control input:focus {
+    outline: 0;
+    border-color: #777;
+}
+
+.form-control.success input {
+    border-color: #2ecc71;
+}
+
+.form-control.error input {
+    border-color: #e74c3c;
+}
+
+.form-control i {
+    visibility: hidden;
+    position: absolute;
+    top: 40px;
+    right: 10px;
+}
+
+.form-control.success i.fa-check-circle {
+    color: #2ecc71;
+    visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle {
+    color: #e74c3c;
+    visibility: visible;
+}
+
+.form-control small {
+    color: #e74c3c;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.form-control.error small {
+    visibility: visible;
+}
+
+.form button {
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 4px;
+    color: #fff;
+    display: block;
+    font-family: inherit;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.form h5 {
+    text-align: center;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+#back2 {
+    width: 100%;
+    min-height: 100vh;
+    background-color: white;
+    position: relative;
+}
+
+#heading h1 {
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%, 0);
+    font-family: "Ogg";
+    font-size: 40px;
+}
+
+#line {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: 18%;
+    width: 0%;
+    height: 2px;
+    background-color: black;
+    transition: cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+
+#heading:hover #line {
+    width: 10%;
+}
+
+#row {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 100px;
+}
+
+#row a {
+    text-decoration: none;
+}
+
+#row .row-pic {
+    width: 30%;
+    height: 100%;
+    background-color: #ffff;
+    /* border-radius: 10px; */
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.pic {
+    width: 100%;
+    height: 80%;
+}
+
+#pic-one {
+    background-image: url("https://images.unsplash.com/photo-1595422656857-ced3a4a0ce25?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1416&q=80");
+    background-position: center;
+    background-size: cover;
+}
+
+#pic-two {
+    background-image: url("https://images.unsplash.com/photo-1520420097861-e4959843b682?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80");
+    background-position: center;
+    background-size: cover;
+}
+
+#pic-three {
+    background-image: url("https://images.unsplash.com/photo-1542038784456-1ea8e935640e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80");
+    background-size: cover;
+    background-position: center;
+}
+
+.text {
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    text-transform: uppercase;
+}
+
+
+.text h3 {
+    font-weight: 500;
+}
