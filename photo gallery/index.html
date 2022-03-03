@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+        <h1 class="quote">Image Gallery - <span>All your memories on the fingertips.</span>  </h1>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function thumbnailchange(n)
+        {
+            var thumbnail = 'images/image'+ n + '.jpeg';
+            document.getElementById("img-galleryImgid").src = thumbnail;
+        }
+    </script>
+</head>
+<body>
+        <ul class ="thumbnails">
+            <li onclick="thumbnailchange(1)"><img src="images/image1.jpeg" width="120" height="70"></li>
+            <li onclick="thumbnailchange(2)"><img src="images/image2.jpeg" width="120" height="70"></li>
+            <li onclick="thumbnailchange(3)"><img src="images/image3.jpeg" width="120" height="70"></li>
+            <li onclick="thumbnailchange(4)"><img src="images/image4.jpeg" width="120" height="70"></li>
+            <li onclick="thumbnailchange(5)"><img src="images/image5.jpeg" width="120" height="70"></li>
+            <li onclick="thumbnailchange(6)"><img src="images/image6.jpeg" width="120" height="70"></li>
+            <li onclick="thumbnailchange(7)"><img src="images/image7.jpeg" width="120" height="70"></li>
+            <li onclick="thumbnailchange(8)"><img src="images/image8.jpeg" width="120" height="70"></li>
+            <li onclick="thumbnailchange(9)"><img src="images/image9.jpeg" width="120" height="70"></li>
+          <li onclick="thumbnailchange(10)"><img src="images/image10.jpeg" width="120" height="70"></li>
+        </ul>
+        <div class ="img-gallery">
+            <img src="images/image1.jpeg" class="img-galleryImg" id="img-galleryImgid">
+            </div>
+            <button class="btn1" onclick="prev()">Prev</button>
+            <button class="btn2" onclick="next()">Next</button>
+        <script src="index.js"></script>
+</body>
+</html>
