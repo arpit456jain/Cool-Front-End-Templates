@@ -163,8 +163,13 @@
   },
 
     {
+      "name": "Gym Website",
+      "link": "gymWebsite/index.html"
+    },
+  {
       "name": "Art Gallery Website",
       "link": "ArtGalleryWebsite/index.html"
+
     }
 
 ]
