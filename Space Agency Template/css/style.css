@@ -1,0 +1,472 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&display=swap');
+@import './utilities.css';
+@import './variables.css';
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--pure);
+    height: auto;
+    background: var(--primary);
+}
+
+header {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2)), url('../img/sunrise.jpg');
+    min-height: 100vh;
+    background-size: cover;
+}
+
+header nav {
+    padding: 20px 40px 20px 100px;
+    /*top right bottom left*/
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    border-bottom: 1px solid var(--gray);
+}
+
+header nav .nav-right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav .nav-right a {
+    text-decoration: none;
+    color: var(--pure);
+    margin-right: 30px;
+    position: relative;
+}
+
+header nav .nav-right a:after {
+    /*after sudo element */
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -30px;
+    width: 0;
+    height: 2px;
+    background-color: var(--pure);
+    transition: width .3s ease-in-out;
+}
+
+header nav .nav-right a:hover:after {
+    width: 70%;
+}
+
+header nav .nav-right a.active:after {
+    width: 70%;
+}
+
+header nav .nav-right .search {
+    /*direct div selection*/
+    background: var(--dark);
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 50px;
+}
+
+header nav .nav-right .search input {
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #fff;
+}
+
+header nav .nav-right .search img {
+    padding-right: 16px;
+}
+
+.social div {
+    border: 2px solid var(--pure);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    opacity: 0;
+    /* animation: movein 1s ease-in-out forwards; */
+}
+
+@keyframes movein {
+    from {
+        transform: translateX(-100px);
+    }
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+.social svg path {
+    /* coming from fontawesome */
+    fill: var(--pure);
+}
+
+.social div:hover svg path {
+    fill: var(--dark);
+    transition: all .5s ease-in-out;
+}
+
+.social div:hover {
+    background: var(--pure);
+}
+
+.hero {
+    position: relative;
+}
+
+.social {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-right: 1px solid var(--gray);
+    min-height: 90vh;
+}
+
+.hero .cta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: calc(100vh - 80px);
+}
+
+.hero .cta h1 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.hero .cta {
+    flex: 1;
+}
+
+.hero .cta .left-section {
+    padding: 30px 60px 0 60px;
+}
+
+.hero .cta .right-section img {
+    height: 70vh;
+    transform: rotate(20deg);
+    animation: moveinspace 12s ease-in-out infinite alternate;
+}
+
+@keyframes moveinspace {
+    /* 50% {} we use this type of single animation to callback an object to its 
+original position after animation */
+    50% {
+        transform: translateY(100px) rotate(-30deg) scale(0.8);
+        /*scale is used to resized the image*/
+    }
+}
+
+section.strip {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: var(--dark);
+    padding: 50px 0;
+}
+
+section.rocket {
+    display: grid;
+    grid-template-columns: 1fr 100px 1fr;
+    grid-gap: 80px;
+    padding: 100px 0;
+}
+
+section.rocket .rocket-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section.rocket .rocket-body span {
+    font-size: 0;
+    position: relative;
+}
+
+section.rocket .rocket-body span img {
+    width: 100%;
+}
+
+section.rocket .block {
+    width: 70%;
+}
+
+section.rocket .block h1 {
+    font-size: 32px;
+    font-weight: 400;
+}
+
+section.rocket .block .with-underline {
+    position: relative;
+    margin-bottom: 38px;
+}
+
+section.rocket .block .with-underline:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    display: block;
+    width: 38%;
+    height: 2px;
+    background: var(--pure);
+}
+
+section.rocket .block h1.with-underline:before {
+    width: 22%;
+}
+
+section.rocket p {
+    line-height: 1.6;
+}
+
+section.rocket .block h2 {
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+section.rocket .block.payload {
+    padding-top: 130px;
+}
+
+section.rocket .block.payload h2 {
+    padding-left: 80px;
+}
+
+section.rocket .block.dragon {
+    padding-top: 120px;
+}
+
+section.rocket .block button {
+    margin-top: 30px;
+}
+
+section.rocket .block.composite {
+    padding-top: 60px;
+}
+
+section.rocket .block.first-stage {
+    padding-top: 60px;
+}
+
+section.rocket .block.capacity {
+    display: flex;
+    align-items: cneter;
+    padding-top: 40px;
+}
+
+section.rocket .block.capacity>div:first-child {
+    margin-right: 40px;
+}
+
+section.rocket .block.capacity h4 {
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+section.rocket .block.capacity h6 {
+    font-size: 35px;
+    font-weight: 400;
+}
+
+section.rocket .block.capacity h6 small {
+    font-size: 14px;
+}
+
+section.rocket .block.second-stage {
+    padding-top: 60px;
+}
+
+section.rocket .right-body .block.capacity {
+    padding-top: 120px;
+}
+
+section.rocket .right-body .block.capacity.single {
+    padding-top: 40px;
+}
+
+section.rocket .right-body .block.engines {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+section.rocket .right-body .block.engines img {
+    width: 180px;
+}
+
+section.rocket .right-body .block.marine {
+    padding-top: 100px;
+    width: 70%;
+}
+
+section.rocket .right-body .block.marine h2 {
+    font-size: 14px;
+    padding-left: 100px;
+    margin-bottom: 26px;
+}
+
+section.rocket .right-body .floating-graphics {
+    position: sticky;
+    float: right;
+    top: 60px;
+    margin-right: -70px;
+}
+
+section.rocket .right-body .floating-graphics img {
+    height: 350px;
+}
+
+
+/* Animation on scroll */
+
+section.rocket .rocket-body span:after,
+section.rocket .rocket-body span:nth-child(3):before {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 0px;
+    background: var(--pure);
+    transition: width 1s ease-in-out;
+}
+
+section.rocket .rocket-body span:nth-child(1):after {
+    bottom: 16px;
+    left: 96%;
+}
+
+section.rocket .rocket-body span:nth-child(2):after {
+    bottom: 62%;
+    right: 100%;
+}
+
+section.rocket .rocket-body span:nth-child(3):after {
+    bottom: 64%;
+    right: 90%;
+}
+
+section.rocket .rocket-body span:nth-child(3):before {
+    bottom: 36%;
+    left: 90%;
+}
+
+
+/* Applying width */
+
+section.rocket .rocket-body span.active:nth-child(1):after {
+    width: 120px;
+}
+
+section.rocket .rocket-body span.active:nth-child(2):after {
+    width: 180px;
+}
+
+section.rocket .rocket-body span.active:nth-child(3):after {
+    width: 200px;
+}
+
+section.rocket .rocket-body span.active:nth-child(3):before {
+    width: 160px;
+}
+
+
+/* for image of rocket animation */
+
+@keyframes jump {
+    50% {
+        transform: translateY(-50px);
+    }
+}
+
+section.rocket .rocket-body span.active:nth-child(1) {
+    animation: jump 1s ease-in-out forwards;
+}
+
+
+/* Footer */
+
+footer {
+    background: var(--dark);
+    padding: 60px 0;
+}
+
+footer>div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+footer .copyright span {
+    font-size: 12px;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+footer .copyright img {
+    height: 30px;
+}
+
+footer h1 {
+    font-size: 18px;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+footer h1:after {
+    content: '';
+    left: 0;
+    position: absolute;
+    bottom: -8px;
+    display: block;
+    width: 60px;
+    height: 2px;
+    background: var(--pure);
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer ul li:nth-child(even) {
+    margin: 10px 0;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: var(--mild);
+    font-size: 14px;
+    transition: all .3s ease-in-out;
+}
+
+footer ul li a:hover {
+    color: var(--pure);
+}
+
+footer .footer-socials a {
+    margin-right: 20px;
+    font-size: 25px;
+    color: var(--mild);
+}
+
+footer .footer-socials a:hover {
+    color: var(--pure);
+}
