@@ -71,7 +71,7 @@ header
     top: 0;
     left: 0;/*hide header by background img*/
     width: 100%;
-    padding: 40px 100px;
+    padding: 40px 50px;
     z-index: 10000;
     display: flex;
     justify-content: space-between;
@@ -88,10 +88,12 @@ header.sticky
 }
 header .logo
 {
+   
     color: #fff;
     font-weight: 700;
     font-size: 2em;
     text-decoration: none;
+    left: 10px;
     
 }
  header.sticky .logo
