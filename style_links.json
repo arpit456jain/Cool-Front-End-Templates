@@ -160,6 +160,10 @@
       "name": "Artica",
       "link": "Artica/index.html"
     },
+    {
+      "name": "Moninfo:Indian Monuments Template",
+      "link": "Moninfo/index.html"
+    },
 
   {
     "name": "Netflix clone",
@@ -179,7 +183,6 @@
   {
       "name": "Art Gallery Website",
       "link": "ArtGalleryWebsite/index.html"
-
     }
 
 ]
