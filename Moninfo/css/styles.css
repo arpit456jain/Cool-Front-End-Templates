@@ -1,0 +1,212 @@
+body{
+  font-family: 'Montserrat', sans-serif;
+  padding-left: 0;
+}
+section{
+  text-align: center;
+  background-color: #F2FFE9;
+}
+p{
+  padding:20px 100px;
+  font-size: 20px;
+}
+h3{
+  padding-top:30px;
+}
+form{
+  margin-left: 210px;
+}
+ul{
+  margin-left: 270px;
+}
+/* home */
+
+.home-div{
+  background-color: #B4CFB0;
+  padding-top: 80px;
+  margin-left: 0;
+  margin-top: 0;
+  color:#395B64;
+}
+.home-heading{
+  font-weight: bold;
+  font-size: 3.5rem;
+
+}
+.home-col-1{
+  padding: 100px 50px  ;
+}
+.home-col-2{
+  padding: 100px 50px  ;
+}
+.home-p{
+  text-align: left;
+  line-height: 1.5;
+  font-size: 1.5rem;
+  padding: 0;
+
+}
+.home-image{
+
+  width: 70%;
+  height: 70%;
+  padding-left: 20px;
+  padding-top: 30px;
+}
+
+a:hover{
+   color: purple;
+   text-decoration: none;
+
+}
+
+
+.content-heading{
+  text-align: center;
+    margin: 3rem auto;
+    font-weight: 600;
+    font-size: 3rem;
+    color: #2C3333;
+}
+h1{
+  text-align: center;
+  margin: 1rem auto;
+
+}
+h3{
+  color: #32542e;
+  font-weight: bold;
+
+}
+h3:hover{
+  color: #76a37a;
+
+}
+
+
+img {
+  width: 507px;
+  height: 340;
+  margin:0 0  2rem;
+}
+
+hr {
+  border-style: dotted none none;
+  width: 4%;
+  border-width: 5px;
+  margin: 2rem auto;
+}
+.div-2,.div-4,.div-6,.div-8,.div-10{
+  background-color: #fff;
+}
+
+/* navbar */
+nav {
+  background-color: #4b6b4f;
+  position: fixed-top;
+}
+
+
+.navbar-brand{
+  color: #fff;
+  font-size: 1.5rem;
+}
+.blue{color: #fff;}
+.saffron{color: #FF9933;}
+.green{color: #06FF00;}
+
+.nav-link{
+  color: #fff;
+  margin: 0 2rem;
+}
+
+/* button */
+.btn{
+  border-color: #fff;
+  color: #fff;
+
+}
+.search{
+  width: 200px;
+}
+
+
+
+#footer{
+  background-color: #4b6b4f;
+  padding: 2.5rem auto 0;
+  text-align: center;
+  color: #fff;
+  margin-top: 100px;
+}
+
+footer{
+  padding-top: 30px;
+  padding-bottom: 20px;
+
+}
+.linked-in i:hover{
+  color: #0e76a8;
+  background-color: #fff;
+  border:0;
+
+}
+.twitter i:hover{
+  color: #00acee;
+}
+.instagram i:hover{
+  background-color:  #bc2a8d;
+
+  border-radius: 25%;
+
+}
+.facebook i:hover{
+  color:#3b5998 ;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.social-icon{
+  color: #fff;
+  margin-left: 15px;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+@media(max-width:991px){
+
+
+p{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+img{
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.navbar-brand{
+font-size: 3rem;
+padding: 0 auto;
+}
+.navbar-nav{
+  margin-left: 0;
+}
+.nav-link{
+  margin-left: 0;
+}
+form{
+  margin-left: 0;
+}
+.home-col-1{
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.home-col-2{
+  padding-top: 0;
+}
+.home-p{
+  text-align: center;
+}
+.home-div{
+  padding-top: 20px;
+}
+}
