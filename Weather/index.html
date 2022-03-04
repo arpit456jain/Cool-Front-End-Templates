@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+   
+    <title>Weather Card</title>
+</head>
+<body>
+    <div class="container">
+        <div 
+            class="card">
+            <h4>NEW DELHI</h4>
+            <h6>SUNNY</h6>
+            <img src="sun.png" alt="icon">
+            
+            <h1>32<sup>&deg;</sup></h1>
+            <div class="smallcontainer">
+                
+                <div class="details">
+                    <p>Max</p>
+                    <span>32<sup>&deg</sup></span>
+                </div>
+                
+                <div class="details">
+                    <p>Min</p>
+                    <span>35<sup>&deg</sup></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        window.addEventListener('scroll',function(){
+            const header = document.querySelector('header');
+            header.classList.toggle("sticky" , window.scrollY > 0);
+        });
+        </script>
+        <script type="text/javascript" src="vanilla-tilt.js"></script>
+        <script >
+            VanillaTilt.init(document.querySelectorAll(".card"), {
+                max: 25,
+                speed: 400,
+                galre: false,
+                "max-glare":1,
+    
+            });
+            
+            
+        
+        </script>
+</body>
+</html>
