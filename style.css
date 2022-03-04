@@ -74,7 +74,7 @@ h1 {
   box-shadow: 0 0 10px 2px black;
 }
 .stylebox .image{
-  width: 20rem;
+  width: 18rem;
   height: 13rem;
 }
 .stylebox .image img{
@@ -134,7 +134,7 @@ h1 {
     margin-bottom: 1.5rem;
   }
   .stylebox .image{
-    width: 18rem;
+    width: 17rem;
     height: 12rem;
     border-radius: .5rem;
   }
@@ -241,6 +241,8 @@ a {
   align-items: center;
   justify-content: space-evenly;
   padding: 20px;
+  box-shadow: none;
+  -webkit-box-shadow:none
   background-color: #1d1d1d;
   color: #fff;
  }
@@ -260,15 +262,18 @@ a {
 
  .menu li:hover {
   background-color: #fff;
-  
+  border-radius: 1em;
   transition: 0.3s ease;
+  box-shadow: 0 0 10px 2px rgba(26,1,253,0.42);
  }
  a:hover{
    color: #1d1d1d;
+   background-color: #fff;
  }
 
  .menu li {
   padding: 5px 14px;
+  border-radius:1em ;
  }
 
  input[type=checkbox]{
