@@ -160,6 +160,10 @@
       "name": "Artica",
       "link": "Artica/index.html"
     },
+    {
+      "name": "Moninfo:Indian Monuments Template",
+      "link": "Moninfo/index.html"
+    },
 
   {
     "name": "Netflix clone",
@@ -167,13 +171,23 @@
   },
 
     {
+      "name": "Hotel Website",
+      "link": "Hotel Website/index.html"
+    },
+  
+  {
       "name": "Gym Website",
       "link": "gymWebsite/index.html"
     },
+  
   {
       "name": "Art Gallery Website",
       "link": "ArtGalleryWebsite/index.html"
+    },
 
+    {
+      "name": "Sneaker Storefront",
+      "link": "sneaker-storefront/index.html"
     }
 
 ]
