@@ -1,0 +1,53 @@
+body{
+    overflow-x: hidden;
+}
+
+
+@media all and (min-width: 50px)   {  body  { font-size:0.1em;  } }
+@media all and (min-width: 100px)  {  body  { font-size:0.2em;  } }
+@media all and (min-width: 200px)  {  body  { font-size:0.4em;  } }
+@media all and (min-width: 300px)  {  body  { font-size:0.6em;  } }
+@media all and (min-width: 400px)  {  body  { font-size:0.8em;  } }
+@media all and (min-width: 500px)  {  body  { font-size:1.0em;  } }
+@media all and (min-width: 600px)  {  body  { font-size:1.2em;  } }
+
+
+.box{
+    padding:5px;
+    background-color:#efefef;
+    box-shadow: 0px 0px 30px 0px #00000040;
+    border-radius: 15px;
+}
+
+@media only screen and (min-width: 640px) {
+    .icpclogo{
+        width: 30%;
+        position: inherit;
+        margin-top:7%;
+    }
+
+    .header{
+        margin-top:6%;
+    }
+
+    .handle{
+        font-size: medium;
+        color: rgba(84, 15, 125, 0.6) !important;
+    }
+}
+@media only screen and (max-width: 640px) {
+    .icpclogo{
+        width: 85%;
+        position: inherit;
+        margin-top:7%;
+    }
+
+    .header{
+        margin-top:8%;
+    }
+
+    .handle{
+        font-size: xx-small;
+        color: rgba(84, 15, 125, 0.6) !important;
+    }
+}
