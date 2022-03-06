@@ -1,0 +1,38 @@
+.nav-tabs-primary .nav-tabs > .nav-item > .nav-link.active {
+  border-color: $primary;
+  color: $primary;
+}
+.nav-tabs-neutral .nav-tabs > .nav-item > .nav-link.active {
+  border-color: $opacity-5;
+  color: $white;
+}
+.nav-tabs-info .nav-tabs > .nav-item > .nav-link.active {
+  border-color: $info;
+  color: $info;
+}
+.nav-tabs-danger .nav-tabs > .nav-item > .nav-link.active {
+  border-color: $danger;
+  color: $danger;
+}
+.nav-tabs-warning .nav-tabs > .nav-item > .nav-link.active {
+  border-color: $warning;
+  color: $warning;
+}
+.nav-tabs-success .nav-tabs > .nav-item > .nav-link.active {
+  border-color: $success;
+  color: $success;
+}
+
+tabset .tab-content {
+  padding: 20px 0 0;
+}
+.justify-content-center .nav-tabs {
+  justify-content: center !important;
+}
+.tab-subcategories {
+  .tab-content {
+    background-color: transparent;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
