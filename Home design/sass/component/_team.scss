@@ -1,0 +1,43 @@
+.section-teams{
+
+
+  &__img{
+      
+    margin-left:2rem;
+
+}
+.col-1-of-3 img{
+  border: 2px solid $color-blue-dark;
+}
+  &__text{
+    width: 16rem;
+    height: 3rem;
+    padding: 0.5rem ;
+  font-size: 1.6rem;
+ display: flex;
+ justify-content: space-around;
+ margin: auto;
+ clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);;
+  background-color:$color-blue;
+  color: white;
+  text-decoration: none;
+  &:hover{
+    background-color:$color-blue-dark;
+    cursor: pointer;
+  }
+  }
+
+  .col-1-of-3 {
+    transition: transform .5s, ;
+  
+    margin-left: 5rem; 
+  
+  /* The Transformation */
+  :hover {
+    transform: scale(1.1);
+  }
+}
+}
+         
+         
+        

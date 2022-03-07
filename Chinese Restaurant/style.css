@@ -187,11 +187,18 @@ height: 30vh;
 
 
 /*footer*/
+.myfooter{
+	margin-block-start: 2rem;
+}
+
 .myfooter ul
 {
 	display: flex;
+	align-items: center;
+	justify-content: center;
 	padding: 0;
 }
+
 .myfooter ul li
 {
 	list-style: none;
@@ -199,17 +206,18 @@ height: 30vh;
 	font-size: 2rem;
 	padding: 10px;
 }
+
 .myfooter ul li a i
 {
 	color:black;
 	border-radius: 50%;
-	 padding: 8px;
-	 background-color: #fff;
+	padding: 8px;
+	background-color: #fff;
 }
 
-.fa:hover {
+.myfooter ul li:hover {
     opacity: 0.9;
-    font-size: 2.7rem;
+    transform: scale(1.2);
 }
 /*footer end*/
 
