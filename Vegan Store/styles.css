@@ -1,0 +1,555 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+
+/* section1 */
+#title {
+  background-image: url(https://edyoda.s3.ap-south-1.amazonaws.com/public/landing-background.png);
+  background-size: cover;
+  width: 100%;
+}
+.logo {
+  width: 40px;
+  height: 40px;
+}
+
+.navbar {
+  background-color: white;
+  position: sticky;
+  top: 0px;
+  padding: 20px 28px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.dropdown {
+  display: block;
+}
+.dropdown-content {
+  padding: 22px;
+  display: none;
+  position: absolute;
+  border-top: 2px solid rgb(170, 210, 54);
+  background-color: white;
+  box-shadow: 0 2px 5px #ccc;
+  width: 140px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-links {
+  display: block;
+  padding: 4px;
+  border-bottom: 0.5px solid gray;
+  color: black;
+  letter-spacing: 0.5px;
+  font-size: 15px;
+}
+
+.dropdown-links:last-of-type {
+  border-bottom: none;
+}
+
+.dropdown-anchor-tags {
+  color: black;
+  font-weight: 600;
+  font-size: 14px;
+  margin-right: 16px;
+  padding: 0px 10px 0px 0px;
+}
+.expand-more {
+  transform: translateY(5px);
+  width: 20px;
+  height: 20px;
+  padding: 0px;
+}
+.buy-now-button {
+  height: 40px;
+  font-size: 12px;
+  font-weight: 600;
+  color: white;
+  background-color: rgb(170, 210, 54);
+  padding: 9px 34px;
+  border: none;
+  border-radius: 4px;
+}
+
+.home {
+  padding: 100px 100px 200px 100px;
+}
+.heading-text {
+  font-size: 44px;
+  font-weight: 600;
+  letter-spacing: 8.8px;
+  line-height: 1.2;
+  width: 100%;
+  text-align: center;
+}
+
+.text-desription {
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+  color: #8b8b99;
+  width: 100%;
+  text-align: center;
+  padding: 16px;
+  margin: 0px;
+}
+
+/* steps */
+
+#steps {
+  display: flex;
+}
+
+.step1,
+.step2,
+.step3,
+.step4 {
+  text-align: center;
+  width: 25%;
+  padding: 4% 2% 4%;
+  color: white;
+}
+
+.step1 {
+  background-color: #5acda6;
+}
+
+.step2 {
+  background-color: #91ac41;
+}
+
+.step3 {
+  background-color: #e4b476;
+}
+
+.step4 {
+  background-color: #f69dad;
+}
+
+.step-icon {
+  font-size: 96px;
+}
+.step-label {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.step-description {
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  line-height: 1.6;
+}
+
+.step-div:hover .step-icon {
+  transform: scale(1.1);
+  transition: ease 0.3s;
+}
+
+/* quality */
+
+#qualities {
+  background-color: #f7eee2;
+  width: 100%;
+}
+.quality-caption,
+.quality-description,
+.quality-heading {
+  text-align: center;
+  margin: 0;
+}
+
+.quality-caption {
+  color: #91ac41;
+  font-size: 24px;
+  font-family: "Caveat", cursive;
+  padding-top: 100px;
+}
+
+.quality-heading {
+  font-size: 44px;
+  font-weight: 600;
+}
+
+.quality-description {
+  font-size: 16px;
+  font-weight: 500;
+  color: #8b8b99;
+  letter-spacing: 0.5px;
+  margin-bottom: 60px;
+  margin-top: 10px;
+}
+
+.qualities-wrapper {
+  display: flex;
+  padding: 0px 100px 100px 100px;
+}
+
+.grid-div {
+  text-align: center;
+  width: 25%;
+}
+
+.quality-icon {
+  background-color: #e3b375;
+  font-size: 60px;
+  padding: 40px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 100%;
+  color: white;
+}
+
+.quality-feature {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.quality-paragraph {
+  padding: 0px 20px 0px;
+
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  color: #8b8b99;
+}
+
+.grid-div:hover .quality-icon {
+  transform: scale(1.1);
+  transition: ease 0.3s;
+}
+
+/* testimonials */
+#testimonials {
+  padding-bottom: 50px;
+}
+.testimonial-div {
+  display: flex;
+  margin: 50px;
+}
+
+.testimonial-content {
+  margin: auto 20px auto;
+  text-align: center;
+  background-color: #f5f6fb;
+  border-top-left-radius: 45px;
+  border-bottom-left-radius: 45px;
+  border-bottom-right-radius: 45px;
+  padding: 40px;
+  width: fit-content;
+  height: auto;
+}
+
+.testimonial-image {
+  border-radius: 50%;
+  width: 80px;
+}
+
+.testimonial-paragraph {
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  font-style: Italic;
+  color: #8b8b99;
+}
+
+.testimonial-name {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.testimonial-work {
+  font-size: 12px;
+  color: #8b8b99;
+  font-style: Italic;
+}
+
+.testimonial-content:hover {
+  box-shadow: 0.5px 0.5px 10px #e5e9fa;
+}
+
+/* subscription */
+
+#subscribe {
+  display: flex;
+  justify-content: space-between;
+}
+.subscribe-heading {
+  font-size: 45px;
+  font-weight: 600;
+  margin: 0px;
+}
+.subscribe-para {
+  font-size: 16px;
+  color: #8b8b99;
+}
+.left-div {
+  background-image: url(https://mobirise.com/extensions/organicamp/assets/images/19.jpg);
+  background-size: cover;
+  width: 100%;
+}
+.right-div-container {
+  width: 200px;
+  text-align: left;
+}
+.right-div {
+  float: right;
+  background-image: url(https://edyoda.s3.ap-south-1.amazonaws.com/public/strawberry-white.png);
+  background-size: cover;
+  padding: 110px;
+}
+.email-textarea {
+  width: 100%;
+  height: 50px;
+  margin-top: 50px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+
+  font-size: 18px;
+  color: #8b8b99;
+}
+
+.subscribe-button {
+  margin: 10px 10px auto auto;
+  width: 80%;
+  height: 50px;
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+  background-color: #f69dad;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+.subscribe-button:hover {
+  color: #f69dad;
+  background: transparent;
+  border: 1px solid #f69dad;
+}
+
+/* stats */
+
+.main-stat-div {
+  display: flex;
+  padding: 100px;
+  justify-content: space-evenly;
+  text-align: center;
+  background-color: rgb(246, 252, 248);
+}
+
+.stat-div {
+  margin: auto 20px auto 20px;
+}
+.stat-heading {
+  margin: 0px;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.stat-para {
+  color: #57e3b5;
+  font-style: italic;
+  margin: 0px;
+}
+
+/* video */
+
+#video {
+  text-align: center;
+}
+
+.video-heading {
+  color: #8b8b99;
+  font-size: 50px;
+  font-weight: 100;
+  margin-bottom: 30px;
+}
+hr {
+  background-color: none;
+  border-style: none;
+  width: 96px;
+  height: 1px;
+  background-color: #e4b476;
+}
+
+.video-content {
+  width: 700px;
+  height: 500px;
+}
+
+/* contact */
+#contact-info {
+  display: flex;
+  text-align: left;
+}
+.address-info,
+.get-in-touch {
+  width: 50%;
+  margin: 70px;
+}
+.italicised-text {
+  color: #91ac41;
+  font-size: 24px;
+  font-family: "Caveat", cursive;
+  margin: 0px;
+}
+
+.contact-heading {
+  font-size: 44px;
+  font-weight: 700;
+  margin: 0px;
+  margin-bottom: 15px;
+}
+.contact-para,
+.adderss-description {
+  color: #8b8b99;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 2;
+  letter-spacing: 1px;
+  margin: 0px;
+  margin-bottom: 50px;
+}
+
+.address-name {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0px;
+}
+
+.get-in-touch-inputs {
+  width: 100%;
+  padding: 16px;
+  font-size: 16px;
+  color: #8b8b99;
+  border-radius: 6px;
+  border: 1px solid #e5e6ec;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.submit-button {
+  background-color: rgb(170, 210, 54);
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  width: 170px;
+  height: 45px;
+}
+
+.submit-button:hover {
+  cursor: pointer;
+}
+.para {
+  color: #8b8b99;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 2;
+  letter-spacing: 1px;
+  margin: 0px;
+}
+
+/* footer */
+
+footer {
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  margin: opx;
+  padding: 20px;
+}
+footer a {
+  text-decoration: none;
+  color: red;
+}
+
+@media (max-width: 900px) {
+  .dropdown {
+    visibility: hidden;
+  }
+  .home {
+    margin-top: 0px;
+    padding: 100px 0px 100px;
+    width: 100%;
+    height: 100%;
+  }
+  .heading-text {
+    font-size: 25px;
+  }
+  .text-desription {
+    width: auto;
+  }
+  #steps,
+  .qualities-wrapper,
+  .testimonial-div,
+  #subscribe,
+  .main-stat-div,
+  #contact-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .step-div {
+    width: 100%;
+    padding: 100px;
+    box-sizing: border-box;
+  }
+  .qualities-wrapper {
+    padding: 20px;
+  }
+  #testimonials {
+    padding: 0px;
+  }
+  .testimonial-content {
+    margin: 20px auto 20px;
+  }
+  .testimonial-content:last-of-type {
+    margin-bottom: 20px;
+  }
+  .testimonial-div {
+    margin: 20px;
+  }
+  .grid-div {
+    width: 100%;
+  }
+  .left-div {
+    margin: 0px;
+  }
+  .right-div {
+    padding: 20px;
+  }
+  .right-div-container {
+    width: 100%;
+  }
+  .subscribe-button,
+  .submit-button {
+    width: 150px;
+  }
+  .video-content {
+    width: 100%;
+    margin-bottom: 0px;
+  }
+  .address-info,
+  .get-in-touch {
+    margin: 20px;
+    width: auto;
+  }
+}
