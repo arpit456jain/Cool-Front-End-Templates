@@ -1,0 +1,28 @@
+.row {
+    max-width: $grid-width;
+    margin: 0 auto;
+
+    [class^="col-"] {
+        float: left;
+
+        &:not(:last-child) {
+            margin-right: $gutter-horizontal;
+        }
+    }
+
+    .col-1-of-2 {
+        width: calc((100% - #{$gutter-horizontal}) / 2);
+        
+    }
+    
+    
+    .paragraph{
+        font-size: 1.2rem;
+        font-family: "Poppins", Helvetica, Arial, sans-serif;
+        padding: 0;
+        margin: 2rem;
+        width: 37rem;
+        line-height: 1.5rem;
+    }
+}
+
