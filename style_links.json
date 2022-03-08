@@ -208,6 +208,11 @@
       "name": "Sneaker Storefront",
       "link": "sneaker-storefront/index.html"
     }
+    ,
+    {
+      "name": "Price Template",
+      "link": "Price/price.html"
+    }
 
 
 ]
