@@ -1,0 +1,263 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+    margin:0px;
+    padding:0px;
+}
+
+body{
+ 
+    background-color: rgb(230, 230, 230);
+    font-family: 'Montserrat', sans-serif;
+}
+.content{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+  
+   
+
+}
+
+.container{
+    margin:20px auto;
+    width:800px;
+   height:600px;
+   
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   
+    
+}
+
+.main1{
+ 
+   text-align: left;
+  
+     padding:30px;
+     text-align: left;
+     border-radius: 10px 10px 10px 10px ;
+   
+ 
+   line-height:2;
+  
+
+}
+
+.main1 h1{
+   
+ font-size: 30px;
+    
+    color:rgb(6, 189, 189);
+}
+
+
+#h2{
+    color:#9edd0b;
+   
+}
+
+#money{
+    font-size: 35px;;
+}
+.main1 h3{
+ 
+  
+    color:rgb(152, 165, 165);
+    
+}
+
+#month{
+
+    text-transform: lowercase;
+    font-size: 20px;
+    color:rgb(184, 199, 199);
+    word-spacing:1;
+    
+}
+
+.main2{
+    background-color:#1a99a0;
+    
+
+border-radius: 0px 0px 0px 10px ;
+color:white;
+width:600px;
+height:300px;
+padding:20px;
+
+
+}
+
+.main2  h2,button{
+    padding:20px;
+    font-size:20px;
+}
+
+.main2 .padding{
+    margin-top: -30px;
+    word-spacing:0.1rem;
+
+}
+
+button{
+   
+width:80%;
+cursor:pointer;
+background-color:#a2e20c;
+border:none;
+outline: none;
+border-radius: 8px;
+
+font-weight:bold;
+color:white;
+margin:10px;
+  
+}
+
+
+.main3{
+    background-color:#23c0c0;
+    
+    border-radius: 0px 0px 10px ;
+    width:600px;
+  
+    color: white;
+    padding:20px;
+    
+}    
+.main3 h1{
+    font-size:20px;
+}
+
+.main3 h1 , p{
+    padding:20px;
+}
+
+
+.main3 p{
+
+    line-height:1.5;
+    color:rgb(240, 234, 234);
+}
+
+
+@media screen and (max-width: 768px)
+{.container{
+    width:500px;
+    height:500px;
+}
+
+.main{
+    padding:20px;
+}
+.main1 h3, h1,p{
+   font-size:10px;
+
+
+}
+
+.main2 h2, .padding, #money , button{
+    font-size:10px;
+
+}
+.main2 span{
+ font-size: 20px;
+}
+
+.main2 h2{
+    padding:px;
+    font-size: 15px;
+}
+.main2{
+    padding:0px;
+}
+button {
+    padding:10px;
+
+}
+.main2{
+    width:500px;
+
+
+
+}
+.main3{
+  width:500px;
+}
+}
+
+@media screen and (max-width: 380px)
+{ 
+    .container{
+    width:300px;
+    height:500px;
+}
+    .content{
+
+        flex-direction: column;
+    }
+    
+.main{
+    padding:10px;
+}
+
+.main1 h3,p{
+   font-size:9px;
+   padding:10px;
+
+
+}
+#h2{
+    font-size:10px;
+}
+.main1 h1{
+    font-size:15px;
+}
+
+.main2 .padding, #money , button{
+    font-size:10px;
+    padding: 0px;
+}
+
+.main2 h2{
+    padding:0px;
+
+}
+
+    .main2{
+        width:300px;
+        height:200px;
+        padding:0px;
+        border-radius: unset;
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+
+    button{
+        padding:10px;
+        font-size: 10px;
+    }
+    .main3{
+      width:300px;
+      height:200px;
+      border-radius: unset;
+      padding:0px;
+         display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    }
+    
+    .main2 .padding{
+        margin-top:-8px;
+    }
+
+    .main2 .span{
+        margin-top: -10px;
+        padding:10px;
+    }
+  
+}
