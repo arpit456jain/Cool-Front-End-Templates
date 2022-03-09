@@ -1,1 +1,212 @@
-
+@keyframes slidy {
+            0% {
+                left: 0%;
+            }
+            20% {
+                left: 0%;
+            }
+            25% {
+                left: -100%;
+            }
+            45% {
+                left: -100%;
+            }
+            50% {
+                left: -200%;
+            }
+            70% {
+                left: -200%;
+            }
+            75% {
+                left: -300%;
+            }
+            95% {
+                left: -300%;
+            }
+            100% {
+                left: -400%;
+            }
+        }
+        
+        body {
+            margin: 0;
+        }
+        
+        div#slider {
+            overflow: hidden;
+            cursor: pointer;
+        }
+        
+        div#slider figure img {
+            width: 15%;
+            float: left;
+        }
+        
+        div#slider figure {
+            position: relative;
+            margin: 0;
+            width: 400%;
+            left: 0;
+            text-align: left;
+            font-size: 0;
+            animation: 10s slidy infinite;
+        }
+        
+        .slider {
+            width: 200px;
+            height: 150px;
+        }
+        
+        body {
+            background-color: antiquewhite;
+            color: black;
+        }
+        
+        .mySlides {
+            display: none
+        }
+        
+        img {
+            vertical-align: middle;
+        }
+        
+        .slideshow-container {
+            max-width: 600px;
+            height: 300hx;
+            position: relative;
+            margin: auto;
+        }
+        /* Next & previous buttons */
+        
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+        /* Position the "next button" to the right */
+        
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+        /* On hover, add a black background color with a little bit see-through */
+        
+        .prev:hover,
+        .next:hover {
+            background-color: antiquewhite;
+        }
+        
+        .text {
+            color: rgb(51, 14, 14) font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+        /* Number text (1/3 etc) */
+        
+        .numbertext {
+            color: #ffffff;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+        /* The dots/bullets/indicators */
+        
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #999999;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+        
+        .dot:hover {
+            color: black;
+        }
+        
+        h1 {
+            padding-left: 450px;
+            padding-top: 5px;
+        }
+        
+        h1::after:hover {
+            font-size: large;
+        }
+        
+        h3 {
+            padding-left: 460px;
+            padding-top: 5px;
+        }
+        
+        p {
+            padding-left: 500px;
+            padding-top: 6px;
+        }
+        
+        p1 {
+            width: 100%;
+            padding-top: 6px;
+            padding-left: 5px;
+        }
+        
+        p2 {
+            padding-left: 5px;
+            padding-top: 2px;
+        }
+        
+        .card1 {
+            padding-left: 30px;
+        }
+        
+        .card2 {
+            padding-left: 30px;
+            padding-top: 8px;
+        }
+        
+        .card3 {
+            padding-left: 30px;
+            padding-top: 8px;
+        }
+        
+        h4 {
+            padding-left: 9px;
+        }
+        
+        p3 {
+            padding-top: 4px;
+            padding-left: 7px;
+        }
+        
+        end {
+            width: 100%;
+            height: 5px;
+            padding: 8px;
+        }
+        
+        @media only screen (max-width:500px) {
+            h1 {
+                padding-left: 150px;
+            }
+            h3 {
+                padding-left: 160px;
+            }
+            p {
+                padding-left: 200px;
+            }
+        }
