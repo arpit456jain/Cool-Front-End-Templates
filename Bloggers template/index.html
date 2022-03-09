@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogger's template</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/6e9f98b598.js" crossorigin="anonymous"></script>
+    </head>
+
+<body>
+    <nav>
+        &nbsp;
+        <div class="navbar">
+
+            Home &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; About&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Latest blogs&nbsp;&nbsp;&nbsp;&nbsp; Contact&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" placeholder="Search for specific blog">
+
+
+        </div>
+        <div class="logo">
+            <img src="https://github.com/Girlwithasmile/Cool-Front-End-Templates/blob/Blogger's-template/Bloggers%20template/Screenshot_20220303-190732_Instagram.jpg?raw=true">
+        </div>
+
+        <div class="card">
+            <h3>Follow Me</h3> &nbsp;
+
+            <i class="fa-brands fa-instagram"></i> &nbsp;&nbsp;
+            <i class="fa-brands fa-facebook"></i>&nbsp;&nbsp;
+            <i class="fa-brands fa-youtube"></i> <br>
+            
+            <p7>Some text..</p7>
+        </div>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="https://github.com/Girlwithasmile/Cool-Front-End-Templates/blob/Blogger's-template/Bloggers%20template/desertsafari.png?raw=true" style="width:100%">
+                <div class="text"></div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="https://github.com/Girlwithasmile/Lapstore/blob/main/Screenshot%202022-02-12%20181007.png?raw=true" style="width:100%">
+                <div class="text">
+                    <h4>New Laptop</h4>
+                </div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="https://github.com/Girlwithasmile/Cool-Front-End-Templates/blob/master/netflixclone/13%20reasons%20why.png?raw=true" style="width:100%">
+                <div class="text">
+                    <h4>Movie Review</h4>
+                </div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {
+                    slideIndex = 1
+                }
+                if (n < 1) {
+                    slideIndex = slides.length
+                }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
+        </script>
+        <div class="latest">
+            <p8><i>~Latest Blog~</i></p8>
+            <h1>My Desert Safari</h1>
+            <div class="desert">
+                <img src="https://github.com/Girlwithasmile/Cool-Front-End-Templates/blob/Blogger's-template/Bloggers%20template/desert%20collage%20.png?raw=true">
+            </div><br>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia odit, voluptatem quod deleniti beatae aut pariatur quos ducimus sapiente eligendi repudiandae dolorem, perferendis saepe necessitatibus dolorum dolores ab nulla quasi?</p>
+            <br>
+            <p1>~ Blog by The Blogger ~</p1>
+            <footer>
+                <div class="icons">
+                    <i class="fa-brands fa-instagram"></i> &nbsp;&nbsp;
+                    <i class="fa-brands fa-facebook"></i>&nbsp;&nbsp;
+                    <i class="fa-brands fa-youtube"></i>&nbsp;&nbsp;&nbsp;
+                    <p2>Follow me on my social media handles..!</p2>
+                </div>
+                <div class="Logo">
+                    <img src="https://github.com/Girlwithasmile/Cool-Front-End-Templates/blob/Blogger's-template/Bloggers%20template/Screenshot_20220303-190732_Instagram.jpg?raw=true">
+                </div>
+        </div>
+        </footer>
+</body>
+
+</html>
+   

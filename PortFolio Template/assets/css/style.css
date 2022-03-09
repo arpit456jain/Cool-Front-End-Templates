@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-nav{
+    font-size: 20px;
+    padding: 2%;
+    padding-bottom: 5%;
+}
+
+.progress{
+    height: 30px;
+    border-radius: 50px;
+    transition: all 0.5s ease;
+}
+
+.progress:hover{
+    transform: scale(1.1);
+}
+
+.card{
+    transition: all 0.5s ease;
+}
+
+.card img{
+    height: 100px;
+    width: 100px;
+    margin: auto;
+}
+
+.card:hover{
+    transform: scale(1.1);
+box-shadow: 1px 2px 10px burlywood;
+}
+

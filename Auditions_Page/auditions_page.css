@@ -1,0 +1,173 @@
+/*
+Background Image Urls
+    https://i.pinimg.com/originals/4e/30/c9/4e30c95dc885f880a2c2797fdee0e042.gif
+    https://i.pinimg.com/originals/bc/55/51/bc5551ac237a9ef4d8e9575662f2e106.gif
+    https://i.pinimg.com/originals/30/2b/df/302bdf53ac8fb5022480fd2fe37f1904.gif
+    https://i.pinimg.com/originals/30/b8/17/30b8174c6f1a07e0af9bcf41fec3a5f5.gif
+    https://i.pinimg.com/originals/88/15/c1/8815c1530ba8b997d50d365e5875d1d7.gif
+    https://i.pinimg.com/originals/7d/3d/f2/7d3df21a320ecac33bfedce6d85ec42c.gif
+    https://i.pinimg.com/originals/be/b2/61/beb261df0f3be74622ef82adecaf461d.gif
+
+    org https://png.pngtree.com/thumb_back/fh260/back_pic/03/80/06/3757c30a762387b.jpg 
+
+    can be used for bigger viewports -> https://i.pinimg.com/originals/c5/3f/60/c53f60a4b9b160ffa3e79fbcbfb4e2a4.gif 
+*/
+
+/* Importing Manrope Font From Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+    
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background-image:url('https://i.pinimg.com/originals/0f/88/3e/0f883e6f5db348671c1e26a7dfd2e5f3.gif');
+        background-repeat: no-repeat;
+        background-size: cover;      
+        background-attachment: fixed;
+        font-family: 'Manrope', sans-serif;
+    }
+    main{
+        background-color: rgba(0,1,26,0.818);
+        color:white;
+        margin: 40px auto 20px auto;
+        max-width:40%;
+        padding:40px 50px 20px 50px;
+        font-size: 1.5rem;
+        border: 1px solid purple;
+    }
+    @media(max-width:1300px){
+        main{
+        margin: 40px auto 20px auto;
+        max-width:60%;
+    }
+    }
+    header{
+        background-color: rgba(0,1,26,0.818);
+        color:white;
+        margin: 40px 0 20px 0;
+        padding: 25px 0;
+    }
+    #title,#description{
+        text-align: center;
+    }
+    #name,#email,#number,#dropdown{
+        width:95%;
+        height:40px;
+    }
+    input{
+        margin-top:8px;
+        padding-left:6px;
+    }
+    #description{
+        font-size: 1.5rem;
+    }
+    #title{
+        font-size: 3rem;
+    }
+    textarea{
+        width:95%;
+        height:140px;
+        margin-top:8px;
+        padding:6px;
+    }
+    button{
+        background-color: rgb(20, 20, 138);
+        width:95%;
+        margin:10px;
+        color:white;
+        font-size: 1.5rem;
+        padding: 10px;
+        font-weight: 400;
+        letter-spacing: 2px;
+    }
+    button:hover{
+        background-color: rgba(20, 20, 138, 0.829);
+    }
+
+    .responseHeading{
+        color: aqua;
+    }
+    .options{
+        font-size: 20px;
+    }
+    input[type="radio"]{
+        height: 15px;
+        width:  15px;
+    }
+    .Always-Display-On-A-Seperate-Line{
+        display: block;
+        font-size: 16px;
+    }
+    textarea,input,select,option{
+        outline: none; /* removes the onclick black border */
+        background-color: black;
+        color: chartreuse;
+        font-weight: 500;
+        border: 1px solid purple;
+    }
+    textarea::placeholder,
+    input::placeholder,
+    select::placeholder{
+        color: #ddd;
+        letter-spacing: 1.56px;
+        font-weight: 600;
+        text-transform: capitalize;
+    }
+
+
+    .changeButton{
+        display: none;
+    }
+
+    /* Responsive Part -> */
+    @media(max-width:600px){
+        body{
+        background-position: center; /* to vertically align the background image */
+        }
+        main{
+            max-width: unset;
+            margin:  40px 0 20px 0;
+            padding: 40px 18px 30px 18px;
+            background-color: rgba(0,1,26,0.4);
+        }
+        header{
+            background-color: rgba(0,1,26,0.7);
+        }
+        .changeButton{
+            display: unset;
+        }
+    }
+
+    /* Extra Feature Part Changing Bckgrounds Made Only For Mobiles Having With Less Than 600px ->*/
+    
+    .changeButton{
+        position: fixed;
+
+        outline: none;
+        border: none;
+
+        margin: 0;
+        padding: 8px 0 px 0;
+        right: 0;
+        bottom: 5%;
+
+        background-color: rgb(0,1,46);
+        color: yellow;
+
+        width: 140px;
+        font-size: 20px;
+        font-weight: 400;
+        
+        border-top-left-radius:    30px;
+        border-bottom-left-radius: 30px;
+
+        z-index: 100; 
+
+        box-shadow: 0 0 5px 3px rgba(255, 255, 0, 0.377);
+    }
+    .changeButton:hover{
+        color: #fff !important;
+        background-color: rgb(0,1,46);
+    }

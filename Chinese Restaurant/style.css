@@ -1,12 +1,21 @@
+body{
+	overflow-x: hidden;
+	font-family: 'Overpass', sans-serif;
+}
+
 .myfont
 {
 	font-family: 'Dancing Script';
 }
 
 /*nav*/
+
+
 .navsec
 {
 	height: 100vh;
+	max-height: 700px;
+	
 }
 .navsec::before
 {
@@ -18,12 +27,52 @@
 	background-size: 100% 100%;
 	position: absolute;
 	z-index: -1;
+	background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .mynavbar a 
 {
 /*color: #c3ce57;*/
-font-size: 2rem;
+font-size: 1.3rem;
 }
+
+.navbar-toggler{
+	font-size: inherit;
+	line-height: inherit;
+}
+
+.t-name{
+		-webkit-animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+				animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+@-webkit-keyframes tracking-in-expand {
+	0% {
+	  letter-spacing: -0.5em;
+	  opacity: 0;
+	}
+	40% {
+	  opacity: 0.6;
+	}
+	100% {
+	  opacity: 1;
+	}
+  }
+  @keyframes tracking-in-expand {
+	0% {
+	  letter-spacing: -0.5em;
+	  opacity: 0;
+	}
+	40% {
+	  opacity: 0.6;
+	}
+	100% {
+	  opacity: 1;
+	}
+  }
+  
 
 section .mybtn1
 {
@@ -32,18 +81,17 @@ section .mybtn1
 		opacity: 0.6;
 		margin: 20px;
 		padding: 10px 40px;
-		font-size: 2rem;
+		font-size: 1rem;
+		outline-style: none;
+		border: 1px solid #393d12;
+		border-radius: 5px;
 }
 section .mybtn1:hover
 {
-		color: #393d12;
+		color: #cfdf43;
 		background-color: #c3ce57;
 		opacity: 0.6;
 		margin: 20px;
-		padding: 20px 50px;
-		border-radius: 20px;
-		border:none;
-		font-size: 2rem;
 }
 .navsec .mydiv
 {
@@ -53,10 +101,13 @@ section .mybtn1:hover
 }  
 .sectwo
 {
-	height: 40vh;
+	height: auto;
 	color: #c3ce57;
 	background-image: url("img/9.jpg");
-	background-repeat:no-repeat;
+	background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .sectwo p
 {
@@ -105,17 +156,12 @@ section .mybtn1:hover
 }
 .secfour .mycard
 {
-height: 30vh;
+height: auto;
 border: none;
 /*background-color:#474c16;*/
 }
-.secfour .mycard:hover
-{
-height: 30vh;
-border: none;
-margin:20px;
-padding: 5px;
-/*background-color:#474c16;*/
+.secfour .mycard:hover{
+	cursor: pointer;
 }
 
 .secfour .mycard h5
@@ -133,16 +179,16 @@ height: 30vh;
 	width: 100vw;
 	height: 30vh;	
 }
-.secseven
-{
-	/*background-color: green;*/
-}
 
 .seceight
 {
 	background-image: url("img/9.jpg");
 	width: 100vw;
 	height: 100vh;	
+	background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .secnine,.secnine input,.mycolor
 {
@@ -176,6 +222,10 @@ height: 30vh;
 	background-image: url("img/8.jpg");
 	width: 100vw;
 	height: 100vh;	
+	background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .seceleven .mybtn3
@@ -183,15 +233,23 @@ height: 30vh;
 	color: black;
 	text-transform: capitalize;
     border-bottom: 3px solid green;
+	text-decoration: none;
 }
 
 
 /*footer*/
+.myfooter{
+	margin-block-start: 2rem;
+}
+
 .myfooter ul
 {
 	display: flex;
+	align-items: center;
+	justify-content: center;
 	padding: 0;
 }
+
 .myfooter ul li
 {
 	list-style: none;
@@ -199,17 +257,18 @@ height: 30vh;
 	font-size: 2rem;
 	padding: 10px;
 }
+
 .myfooter ul li a i
 {
 	color:black;
 	border-radius: 50%;
-	 padding: 8px;
-	 background-color: #fff;
+	padding: 8px;
+	background-color: #fff;
 }
 
-.fa:hover {
+.myfooter ul li:hover {
     opacity: 0.9;
-    font-size: 2.7rem;
+    transform: scale(1.2);
 }
 /*footer end*/
 
@@ -218,10 +277,33 @@ height: 30vh;
 	list-style: none;
 }
 
+@media(min-width:992px){
+	.navbar-expand-lg .navbar-nav .nav-link {
+		padding-right: 1rem;
+	}
+
+	.navbar{
+		padding: 0.5rem 2rem;
+	}
+
+	.nav-link:hover{
+		border-bottom: 1px solid #19692c;
+	}
+}
+
+@media(max-width:992px){
+
+	.navbar{
+		background-color: black;
+	}
+
+	.collapsed + .navbar{
+		background-color: transparent;
+	}
+}
+
 @media screen and (max-width: 452px) {
-  body {
-    /*background-color: blue;*/
-  }
+ 
   .myfooter ul li
 {
 	list-style: none;

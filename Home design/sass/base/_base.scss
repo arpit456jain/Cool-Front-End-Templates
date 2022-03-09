@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; }
+  
+    html {
+      // This defines what 1rem is
+      font-size: 90.5%;
+  }
+
+  .text{
+    position: absolute;
+    top: 80%;
+    left: 7%;
+    font-size: 3.5rem;
+    color: #ffff;
+    font-family: "Playfair Display";
+    font-style: italic;
+    text-shadow: rgba(0, 0, 0, 1) .2rem .2rem .5rem;
+    transition: none 0s ease 0s; 
+    visibility: visible;
+    opacity: 1;
+
+    &--main{
+    display: block;
+    line-height: 3.5rem;
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    visibility: visible;
+    }
+
+    &--sub{
+      animation: moveInRight 1s ease-out;
+      display: block;
+      visibility: visible;
+
+    }
+  }

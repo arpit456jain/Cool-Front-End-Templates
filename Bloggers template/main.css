@@ -1,0 +1,170 @@
+* {
+            background-color: antiquewhite;
+        }
+        
+        .navbar {
+            text-decoration: none;
+            display: inline-block;
+            padding-top: 20px;
+            margin: 60px;
+            padding: 50px;
+            padding-left: 700px;
+            width: 100%;
+            background-color: rgb(19, 124, 124);
+            color: antiquewhite;
+        }
+        
+        .navbar::after:hover {
+            background-color: azure;
+            color: rgb(19, 124, 124);
+            width: 100%;
+        }
+        
+        .navbar:hover {
+            cursor: pointer;
+        }
+        
+        .logo {
+            width: 550px;
+            height: 300px;
+            padding-left: 70px;
+            position: absolute;
+        }
+        
+        body {
+            margin: 0;
+        }
+        
+        .card {
+            background-color: antiquewhite;
+            padding: 20px;
+            margin-top: 20px;
+            padding-left: 1300px;
+        }
+        
+        .mySlides {
+            display: none
+        }
+        
+        img {
+            vertical-align: middle;
+        }
+        
+        .slideshow-container {
+            max-width: 600px;
+            height: 300hx;
+            position: relative;
+            margin: auto;
+        }
+        
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: grey font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+        
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+        
+        .prev:hover,
+        .next:hover {
+            background-color: antiquewhite;
+        }
+        
+        .blogs {
+            width: 100%;
+            padding-left: 350px;
+            padding-top: 400px;
+        }
+        
+        h1 {
+            color: black;
+            padding-top: 200px;
+            padding-left: 500px;
+        }
+        
+        .desert {
+            height: 350px;
+            width: 400px;
+            padding-left: 250px;
+        }
+        
+        p {
+            color: black;
+            padding-left: 100px;
+            padding-top: 500px;
+        }
+        
+        p1 {
+            color: rgb(48, 133, 133);
+            padding-top: 50px;
+            padding-left: 500px;
+        }
+        
+        p2 {
+            color: rgb(48, 133, 133);
+        }
+        
+        .icons {
+            color: rgb(48, 133, 133);
+            padding-top: 60px;
+            padding-left: 200px;
+            margin: 60px;
+        }
+        
+        .Logo {
+            padding-left: 200px;
+        }
+        
+        p8 {
+            color: rgb(48, 133, 133);
+            padding-left: 300px;
+        }
+        
+        .latest {
+            border: 0.5px solid black;
+        }
+        
+        
+        
+        @media only screen and (max-width:500px) {
+            .desert {
+                height: 80px;
+                width: 100px;
+                padding-left: 70px;
+            }
+            h1 {
+                padding-left: 100px;
+            }
+            .icons {
+                padding-left: 80px;
+            }
+            p1 {
+                padding-left: 80px;
+            }
+            p {
+                padding-left: 80px;
+                padding-top: 100px;
+            }
+        }
+        
+        @media only screen (max-width: 2000px) {
+            .navbar {
+                padding: 80px;
+                margin: 70px;
+            }
+            .logo {
+                padding-left: 450px;
+            }
+        }

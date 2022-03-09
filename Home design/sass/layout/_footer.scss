@@ -1,0 +1,73 @@
+.section-footer{
+    background-color: $color-blue-dark;
+padding: 2rem;
+
+
+   .col-1-of-4{
+      
+       padding: 3.5rem;
+       margin-left: 6rem;
+       & img{
+          height: 10rem;
+         
+        
+        
+       }
+       & p{
+           color: white;
+           font-size: 1.4rem;
+           font-family: inherit;
+           font-style: italic;
+           font-weight: bold; 
+          
+       }
+       .social-icons{
+        .fa {
+            padding: 1rem;
+            font-size: 2rem;
+            width: 4rem;
+            height: 4rem;
+            border-radius: 4rem;
+            text-align: center;
+            text-decoration: none;
+            &:hover{
+                background-color: $color-blue;
+            }
+           
+          }
+             .fa-facebook {
+               
+                color: white;
+                text-decoration: none;
+              }
+              
+              .fa-twitter {
+                
+                color: white;
+              }
+              .fa-instagram {
+                
+                color: white;
+              }
+       }
+   }
+   
+   &__menu{
+       
+    border-left: 1px solid white;
+    
+       a{
+           text-decoration: none;
+       color: white;
+       font-size: 1.2rem;
+       display: block;
+       
+     padding: 1rem;
+     
+       }
+   }
+
+}
+
+
+
