@@ -108,7 +108,7 @@
 }
 #services .box img{
     height: 20vh;
-    
+    margin: 23px 63px;
 }
 #services .box p{
     font-family: 'Bree Serif', serif;
@@ -159,6 +159,24 @@
     opacity: 0.8;
     background: url('../Contact.jpg') no-repeat center center/cover;
 }
+
+/*  */
+.form-group input#name:hover{
+    background-color:lightgrey;
+}
+
+.form-group input#email:hover{
+    background-color:lightgrey;
+}
+
+.form-group input#phone:hover{
+    background-color:lightgrey;
+}
+
+.form-group textarea#message:hover{
+    background-color:lightgrey;
+}
+
 #contact-box{
     display: flex;
     justify-content: center;
