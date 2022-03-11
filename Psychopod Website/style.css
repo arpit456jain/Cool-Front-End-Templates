@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Arbutus+Slab&family=Architects+Daughter&family=Sora:wght@100;200;300;400&family=Ubuntu:ital,wght@0,400;1,300&display=swap');
+
+:root{
+    --dark-blue: #023047;
+    --mid-blue: #8ECAE6;
+    --yellow: #FFB703;
+    --off-white: #F5F5F5;
+    --grey: #999999;
+    --top-margin : 60px;
+    --dark-grey: #525252;
+}
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+font-family: 'Sora', sans-serif;
+}
+.header .navbar{
+    background-color: var(--dark-blue);
+    height: 80px;
+    width: 100%;
+
+}
+.header .navbar .logo{
+    line-height: 80px;
+    padding: 0 54px;
+}
+#fname{
+    font-size: 35px;
+    color: var(--mid-blue);
+    font-family: 'Arbutus Slab', serif;
+}
+span#symbol{
+    color: var(--off-white);
+}
+span#symbol1{
+    color: var(--dark-blue);
+}
+span.lname{
+    color: var(--yellow);
+}
+.header .navbar ul{
+    float: right;
+    margin-right: 20px;
+}
+.header .navbar ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 20px;
+}
+.navbar ul li a{
+    color: var(--off-white);
+    font-size: 15px;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+.navbar ul li a:hover{
+    color: var(--mid-blue);
+}
+.header .main-img{
+    background-image: url(psycology2.png);
+    width: 100%;
+    height: 75vh ;
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+.header .main-img .main-text{   
+    margin-top: 0;
+    color: white;
+    font-size: 300%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    height: 62vh;
+    width: 54vw;
+}
+.header .main-img .main-text #learn-more{
+    margin-left: 7px;
+}
+.buttons{
+    padding: 8px 13px;
+    background-color: var(--yellow);
+    color: var(--dark-blue);
+    font-size: 17px;
+    border: 2px solid var(--yellow);
+    border-radius: 10px;
+    cursor: pointer;
+}
+.header .main-img .main-text #tagline{
+    font-style: italic;
+    font-size: 17px;
+    width: 40vh;
+    color: var(--dark-blue);
+}
+.buttons:hover{
+    background-color: var(--dark-blue);
+    color: var(--yellow);
+    border: 2px solid var(--dark-blue);
+}
+.main{
+    margin-top: var(--top-margin);
+}
+.main .section{
+    background-color: var(--off-white);
+    height: 65vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main .section .quote{
+    height: 65%;
+    width: 40%;
+    margin-right: 30px;
+   color: var(--dark-blue);
+   font-size: 267%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   box-shadow: 0 0 15px var(--grey);
+   background-color: var(--yellow);
+   border-right: 9px solid var(--dark-blue);
+}
+.main .section .quote-explain{
+    font-family: 'Architects Daughter', cursive;
+    font-size: 19px;
+    width: 38%;
+}
+.main .heading{
+    margin-top: var(--top-margin);
+    text-align: center;
+    color: var(--dark-blue);
+    font-weight: bold;
+}
+.main .latest-show{
+    padding-bottom: var(--top-margin);
+    background-color: var(--off-white);
+}
+.trending{
+    margin-left: 10px;
+    padding-top: 10px;
+}
+.main .latest-show .show-description{
+    display: flex;
+}
+.main .latest-show .show-description .description-box{
+    padding: 10px 10px;
+    width: 263px;
+    height: 378px;
+    border-radius: 10px;
+    margin: 10px 20px; 
+    box-shadow: 0 0 15px var(--grey);
+    background-color: white;
+}
+.main .latest-show .show-description .description-box img{
+    border: 2px solid white;
+    width: 55%;
+    height: 145px;
+    border-radius: 10px;
+}
+.main .latest-show .show-description .description-box img,.main .latest-show .show-description .description-box p,.main .latest-show .show-description .description-box h4, #listen-now{
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.main .latest-show .show-description .description-box #listen-now{
+    font-weight: 550;
+    font-size: small;
+    padding: 5px 5px;
+}
+.main .latest-show .show-description .description-box:hover{
+    background-color: var(--mid-blue);
+}
+.main .latest-show .show-description .description-box:hover > p{
+    color: black;
+}
+.main .latest-show .show-description .description-box:hover >  #listen-now{
+    background-color: var(--dark-blue);
+    color: var(--off-white);
+    border: 2px solid var(--off-white);
+}
+.main .latest-show .show-description .description-box #host-name{
+    color: var(--dark-grey);
+}
+.main .latest-show .show-description .description-box h4{
+    color: var(--dark-blue);
+}
+.main .about-us{
+    height: 70vh;
+    background-color: var(--off-white);
+    padding-bottom: var(--top-margin);
+}
+.main .about-us .about-logo{
+    text-align: center;
+    margin-top: 20px;
+}
+.main .about-us .about-us-description{
+    display: block;
+    margin: 30px auto;
+    width: 60%;
+}
+.main .subscription{
+    background: var(--off-white);
+    display: block;
+    padding-bottom: 30px;
+}
+.main .subscription .plans{
+    display: flex;
+    margin-top: 10px;
+}
+.main .subscription .plans .plans-box{
+    margin : 0 auto;
+    border-radius: 10px;
+    padding-top: 10px;
+    width: 20%;
+    height: 420px;
+    background-color: white;
+    box-shadow: 0 0 15px var(--grey);
+}
+.main .subscription .plans .plans-box img{
+    width: 50%;
+    border-radius: 10px;
+}
+.main .subscription .plans .plans-box img,.main .subscription .plans .plans-box h2, .main .subscription .plans .plans-box p, .main .subscription .plans .plans-box button,.main .subscription .plans .plans-box h1 {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.main .subscription .plans .plans-box button{
+    font-weight: 550;
+    font-size: small;
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: var(--yellow);
+}
+.main .subscription .plans .plans-box .plan-name{
+    color: var(--dark-grey);
+    font-style: italic;
+}
+.main .subscription .plans .plans-box:hover{
+    box-shadow: 0 0 15px black;
+}
+.main .subscription .plans .plans-box:hover >button{
+    background-color: var(--dark-blue);
+    color: var(--off-white);
+}
+.main .contact-us{
+    background-color: var(--off-white);
+    padding-bottom: 30px;  
+}
+.main .contact-us .contact-us-details{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    color: var(--dark-blue);
+}
+.main .contact-us .contact-us-details .social{
+    width: 60%;
+    background-color: var(--mid-blue);
+    box-shadow: 0 0 15px var(--grey);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.social i{
+    margin-right: 20px;
+    cursor: pointer;
+}
+.social #social-heading{
+    font-family: 'Arbutus Slab', serif;
+    font-size: 200%;
+}
+.social .social-links i{
+    margin: 0 40px;
+}
+.social .social-links i:hover{
+    background-color: var(--dark-blue);
+    color: var(--mid-blue);
+    border-radius: 50px;
+    padding: 20px 20px;
+}
+.more p{
+    margin: 30px 0;
+    cursor: pointer;
+}
+.more p:hover{
+    border: 2px solid var(--dark-blue);
+    border-radius: 10px;
+    padding: 15px 10px ;
+}
+
+.main .contact-us .contact-us-details .contact-form{
+    background-color: white;
+    width: 30%;
+    box-shadow: 0 0 15px var(--grey);
+    border-radius: 10px;
+    padding: 30px 30px;
+}
+.main .contact-us .contact-us-details .contact-form input{
+    padding: 10px 10px;
+    margin-top: 3px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.main .contact-us .contact-us-details .contact-form textarea{
+    padding: 10px 10px;
+    margin-top: 3px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.main .contact-us .contact-us-details .contact-form p{
+    text-align: right;
+}
+.main .contact-us .contact-us-details .contact-form textarea:hover{
+    border: 3px solid var(--mid-blue);
+}
+.main .contact-us .contact-us-details .contact-form input:hover{
+    border: 3px solid var(--mid-blue);
+}
+#submit{
+    background-color: var(--mid-blue);
+    border-color: black;
+}
+#submit:hover{
+    background-color: var(--dark-blue);
+    color: white;
+}
+.footer{
+    padding-top: 8px;
+    color: var(--off-white);
+    margin-top: 30px;
+    height: 80px;
+    background-color: var(--dark-blue);
+    text-align: center;
+}
+.footer p{
+    font-family: cursive;
+    font-size: 120%;
+    margin: 7px 0;
+}
+.footer i{
+    cursor: pointer;
+    margin: 0 20px;
+}
+.footer a:link{
+    color: var(--off-white);
+}
+.footer a:visited{
+    color: var(--off-white);
+}
+.footer a:hover{
+    color: var(--mid-blue);
+}
+#credit{   
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--yellow);
+}
