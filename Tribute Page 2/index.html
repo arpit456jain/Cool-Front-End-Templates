@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lata Mangeshkar Tribute Page</title>
+    <script src="https://kit.fontawesome.com/6e9f98b598.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <h1>Lata Mangeshkar</h1>
+    <h3><i>The Nightingale of India</i></h3>
+    <p>(1929 - 2022)</p>
+    <!--For image slider-->
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="https://github.com/Girlwithasmile/Cool-Front-End-Templates/blob/lata/Tribute%20Page%202/Screenshot%202022-03-07%20214418.png?raw=true">
+            <div class="text"></div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="https://github.com/Girlwithasmile/Cool-Front-End-Templates/blob/lata/Tribute%20Page%202/Screenshot%202022-03-07%20214059.png?raw=true">
+            <div class="text"></div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="https://github.com/Girlwithasmile/Cool-Front-End-Templates/blob/lata/Tribute%20Page%202/Screenshot%202022-03-07%20214521.png?raw=true">
+            <div class="text"></div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+
+    <p1>Lata Mangeshkar was an Indian playback singer, music composer and philanthropist. She is widely considered to have been one of the greatest and most influential singers in India. Her contribution to the Indian music industry in a career spanning seven
+        decades gained her honorific titles such as the "Queen of Melody", "Nightingale of India", and "Voice of the Millennium". Lata recorded songs in over thirty-six Indian languages and a few foreign languages, though primarily in Marathi, Hindi,
+        and Bengali. Her foreign languages included English, Russian, Dutch, and Swahili. She received several accolades and honors throughout her career. In 1989, the Dadasaheb Phalke Award was bestowed on her by the Government of India. In 2001, in
+        recognition of her contributions to the nation, she was awarded the Bharat Ratna, India's highest civilian honour; she is only the second female singer, after M.S. Subbulakshmi, to receive this honour. France conferred on her its highest civilian
+        award, Officer of the National Order of the Legion of Honour, in 2007. She was the recipient of three National Film Awards, 15 Bengal Film Journalists' Association Awards, four Filmfare Best Female Playback Awards, two Filmfare Special Awards,
+        the Filmfare Lifetime Achievement Award and many more. In 1974, she was one of the first Indian playback singers to perform at Royal Albert Hall in London, UK. Her last recorded song was "Saugandh Mujhe Is Mitti ki" released on 30 March 2019 as
+        a tribute to the Indian Army and the Nation. At one point, she appeared in the Guinness World Records which listed her as the most recorded artist in history between 1948 and 1987.</p1>
+
+
+    <div id="slider">
+        <figure>
+            <img src="https://github.com/Girlwithasmile/Cool-Front-End-Templates/blob/lata/Tribute%20Page%202/Screenshot%202022-03-07%20214603.png?raw=true" alt>
+            <img src="https://github.com/Girlwithasmile/Cool-Front-End-Templates/blob/lata/Tribute%20Page%202/Screenshot%202022-03-07%20214059.png?raw=true" alt>
+            <img src="https://github.com/Girlwithasmile/Cool-Front-End-Templates/blob/lata/Tribute%20Page%202/Screenshot%202022-03-07%20214858.png?raw=true" alt>
+            <img src="https://github.com/Girlwithasmile/Cool-Front-End-Templates/blob/lata/Tribute%20Page%202/Screenshot%202022-03-07%20214650.png?raw=true" alt>
+
+        </figure>
+    </div>
+    <p2>On 8 January 2022, Lata Mangeshkar tested positive for COVID-19 with mild symptoms and was admitted to Breach Candy Hospital's intensive care unit in Mumbai. She remained in the ICU with signs of "marginal improvement" in her health. The doctors treating
+        her had taken her off the ventilator on 28 January after her health "improved marginally"; however, she was back on the ventilator on 5 February, after her health deteriorated, and was undergoing "aggressive therapy". Mangeshkar died from multiple
+        organ dysfunction syndrome on 6 February 2022, at the age of 92. She had undergone 28 days of constant treatment for pneumonia and COVID-19. The Government of India announced a two-day period of national mourning and that the national flag will
+        fly at half-mast from 6 to 7 February throughout India out of respect for her</p2>
+    <hr>
+    <div class="card1">
+        <i class="fa-solid fa-quote-left"></i>
+        <h4>PrimeMinister Narendra Modi</h4>
+        <p3>I am anguished beyond words. The kind and caring Lata Didi has left us. She leaves a void in our nation that cannot be filled. The coming generations will remember her as a stalwart of Indian culture, whose melodious voice had an unparalleled
+            ability to mesmerise people.</p3>
+    </div>
+    <hr>
+    <div class="card2">
+        <i class="fa-solid fa-quote-left"></i>
+        <h4>TimesofIndia</h4>
+        <p3>Lata Mangeshkar passes away at 8.12 am. Body to be taken to Shivaji Park for people to pay homage </p3>
+    </div>
+    <hr>
+    <div class="card3">
+        <i class="fa-solid fa-quote-left"></i>
+        <h4>Akshay Kumar</h4>
+        <p3>Meri Awaaz Hi Pehchaan Hain, Gar Yaad Rahe…and how can one forget such a voice! Deeply saddened by the passing away of Lata Mangeshkar ji, my sincere condolences and prayers. Om Shanti </p3>
+    </div>
+    <hr>
+    <hr>
+    <div class="end">
+        <img src="https://github.com/Girlwithasmile/Cool-Front-End-Templates/blob/tribute-page-2/Tribute%20Page%202/page%20end.png?raw=true" width="100%" height="1.2px">
+    </div>
+
+
+</body>
+
+</html>
