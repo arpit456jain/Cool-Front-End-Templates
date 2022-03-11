@@ -2,130 +2,338 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    -webkit-touch-callout: none;
+  -webkit-user-select: none;
+   -khtml-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
-body {
-    font-family: Cambria;
-    background-size: cover;
-    background-position: top center;
+.body{
+    overflow: hidden;
 }
 
-h2 {
-    color: aqua;
-    border-style: solid;
-    background-color: darkblue;
+.main-background{
+    background-color: black;
+    width: 100%;
+    height: 100vh;
 }
-
-h1 {
-    background-color: grey;
-    text-align: center;
-    color: darkblue;
+.top-div{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    position: relative;
+    height: 65vh;
+    border-bottom-left-radius: 50% 27%;
+    border-bottom-right-radius: 50% 27%;
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(45,73,207,1) 0%, rgba(0,212,255,1) 100%);
 }
-
-h3 {
-    color: grey;
-    border-style: solid;
-    background-color: darkblue;
-    text-align: center;
-}
-
-.title {
-    background-color: grey;
-    color: white;
-    font-size: 60px;
-    text-align: center;
-}
-
-.searchbar {
+.bottom-div{
+    position: relative;
+    height: 35vh;
     display: flex;
     flex-direction: column;
-    min-height: 101vh;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.493), rgba(0, 0, 0, 0.699));
-    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
-
-img {
-    max-width: 275px;
-    height: 270px;
-}
-
-header {
+.primary-info{
+    position: relative;
+    width: 90%;
+    height: 95%;
+    border-bottom-left-radius: 20% 20%;
+    border-bottom-right-radius: 20% 20%;
+    display: flex;
     justify-content: center;
     align-items: center;
-    padding: 49px 15px 15px;
-}
-
-button {
-    background-color: blue;
-    color: white;
-    height: 51px;
-    width: 51px;
-}
-
-header input {
-    width: 100%;
-    max-width: 281px;
-    padding: 10px 16px;
-    background-color: rgb(255, 255, 255);
-    border-radius: 16px 0px 16px 0px;
-    border-bottom: 3px solid #d3911e;
-    color: #3d3d3d;
-    font-size: 20px;
-    font-weight: 300;
-}
-
-header input:focus {
-    background-color: rgb(247, 247, 247);
-}
-
-main {
-    flex: 1 1 100%;
-    padding: 25px 25px 50px;
-    display: flex;
     flex-direction: column;
 }
+.image-temperature{
+    position: relative;
+    width: 50%;
+    height: 55%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.location-search{
+    position: relative;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-.location .city {
-    color: brown;
-    font-size: 32px;
-    font-weight: 6000;
-    margin-bottom: 5px;
+}
+.input > input{
+    border: 0;
 }
 
-.curr .temp {
-    color: brown;
-    font-size: 102px;
-    font-weight: 900;
-    margin: 30px 0px;
+.icon{
+    position: relative;
+    filter: invert(100%);
+    margin-right: 10px;
+    width: 6%;
+    height: 50%;
+    top: -2px;
 }
 
-.curr .temp span {
-    font-weight: 500;
+
+.image{
+    position: relative;
+    width: 17vw;
+    height: 33vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
-.curr .currweather {
-    color: brown;
-    font-size: 32px;
-    font-weight: 500;
-    font-style: italic;
-    margin-bottom: 15px;
+.image > img{
+    position: relative;
+    width: 17vw;
+    height: 37vh;
 }
 
-.curr .min-max {
-    color: brown;
-    font-size: 24px;
+.temperature{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    padding-left: 10%;
+    padding-bottom: 2%;
+    padding-top: 2%;
+
+
+}
+.secondary-info{
+    position: relative;
+    width: 60%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.line{
+    position: relative;
+    width: 50%;
+    height: 1.5px;
+}
+.items{
+    position: relative;
+    width: 70%;
+    height: 85%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+.wind{
+    position: relative;
+    width: 20%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.humidity{
+    position: relative;
+    width: 20%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.rain {
+    position: relative;
+    width: 20%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.items img{
+    position: relative;
+    width: 45%;
+    height: 50%;
+    filter: invert(100%);
+
 }
 
-.curr .wind-speed {
-    color: brown;
-    font-size: 26px;
+.heading{
+    position: relative;
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2%;
+    padding-right: 2%;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+}
+.timeline{
+    position: relative;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.curr .air-quality {
-    color: brown;
-    font-size: 26px;
+.timeline > .box{
+    position: relative;
+    width: 12%;
+    height: 80%;
+    background-color: rgb(17, 16, 16);
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 15px;
+
+}
+.timeline-img{
+    position: relative;
+    width: 60%;
+    height: 50%;
 }
 
-.about {
-    background-color: grey;
+
+
+/* Text  */
+
+.degree-span{
+    font-size: 6rem;
 }
+.temperature > h1{
+    font-size: 1.1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.temperature > h5{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-weight: bold;
+}
+
+.box > h4{
+    font-size: 1.5vw;
+}
+.box > h6{
+    font-size: 1.3vw;
+}
+
+/* Media query  */
+
+@media only screen and (max-width: 950px) {
+    .image > img{
+        position: relative;
+        width: 20vw;
+        height: 30vh;
+    }
+
+    .degree-span{
+        font-size: 5rem;
+    }
+    .temperature > h1{
+        font-size: 1rem;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .temperature > h4{
+        font-size: 1rem;
+    }
+    
+    .temperature > h5{
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 100;
+        font-weight: bold;
+    }
+    .image-temperature{
+        width: 70%;
+        height: 50%;
+    }
+    .secondary-info{
+        width: 70%;
+        height: 30%;
+
+    }
+    .line{
+
+        width: 50%;
+        height: 1.5px;
+
+    }
+    .timeline{
+        width: 90%;
+        height: 50%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .primary-info{
+
+        justify-content: space-around;
+    }
+    .image-temperature{
+
+        flex-direction: column;
+    }
+
+    .image{
+
+        width: 100%;
+        height: 100%;
+    }
+    .temperature{
+
+        width: 100%;
+        height: 60%;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .image > img{
+        position: relative;
+        width: 30vw;
+        height: 20vh;
+    }
+    .degree-span{
+        font-size: 3rem;
+    }
+    .temperature > h1{
+        font-size: 0.5rem;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .temperature > h4{
+        font-size: 1rem;
+    }
+    
+    .temperature > h5{
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 100;
+        font-weight: bold;
+    }
+    .timeline> .box{
+        width: 20%;
+        height: 80%;
+
+    }
+    #last-1{
+        display: none;
+    }
+    #last-2{
+        display: none;
+    }
+
+  }

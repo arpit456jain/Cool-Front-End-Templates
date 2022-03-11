@@ -1,0 +1,64 @@
+/* header{
+    position: fixed;
+    left: 0;
+    right: 0;
+} */
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 25px;
+}
+.logo{
+    color: white;
+    font-weight: bold;
+}
+.nav_menu{
+    color: white;
+}
+.nav_menu:hover{
+    font-size: medium;
+    font-weight: bold;
+    color: white;
+}
+.main_img{
+    object-fit: cover;
+}
+.heading{
+    text-transform: capitalize;
+    text-align: center;
+    color: #1261A0;
+    font-weight: bold;
+    margin-top: 25px;
+
+}
+.sub_text{
+    text-transform: capitalize;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.ceo_img{
+    object-fit: fill;
+}
+.sub_head{
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.footer{
+    padding-top: 20px;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.foot_head{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+}
+p{
+    color: black;
+}
+li .anc{
+    color: white;
+}

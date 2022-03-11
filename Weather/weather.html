@@ -13,37 +13,96 @@
 </head>
 
 <body>
-    <div class="title">Weather Forecast</div>
-    <div class="searchbar">
-        <header>
-            <input type="text" class="search-box" placeholder="Search for city" /> <button type="button" data-toggle="dropdown">Search
-            </button>
-        </header>
+    <section class="main-background">
+        <div class="top-div">
+            <div class="primary-info">
 
-        <main class="container">
-            <h2>
-                <a href=" # ">Today</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a href="# ">Hourly</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a href="# ">Next 10 Days</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a href="# ">Monthly</a> &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp; <a href="# ">Air Quality</a> </h2>
-            <div class="card" style="width: 24rem;">
-                <h3>Current Weather Forecast</h3>
-                <img src="./images/heavyrain.png" div class="card-body">
-                <p class="card-text">
-                    <section class="location">
-                        <div class="city">Mumbai, Maharashtra, India</div>
-                    </section>
-                    <div class="curr">
-                        <div class="temp">26<span>°c</span></div>
-                        <div class="currweather">Heavy Rain</div>
-                        <div class="min-max">Max 28°c &nbsp &nbsp &nbsp &nbsp; &nbsp; Min 25°c</div>
-                        <div class="wind-speed">Wind Speed &nbsp &nbsp &nbsp SE 15km/h</div>
-                        <div class="air-quality">Air Quality&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspGood</div>
+
+                <div class="image-temperature">
+
+                    <div class="image">
+                        <img src="images/cloud.png" alt="sun image">
                     </div>
-                </p>
+                    <div class="temperature">
+                        <h4>Temperature</h4>
+                        <h1><span class="degree-span">20°</span>Celsius</h1>
+                        <h5> <span class="icon" ><img src="images/map.png" alt=""></span> Lucknow</h5>
+                    </div>
+                </div>
+                <div class="secondary-info">
+                    <div class="line"></div>
+                    <div class="items">
+                        <div  class="wind box">
+                            <img  src="images/wind.png" alt="">
+                            <h4>13 km/h</h4>
+                            <h6>Wind</h6>
+                        </div>
+                        <div class="humidity box">
+                            <img src="images/humidity.png" alt="">
+                            <h4>24%</h4>
+                            <h6>Humidity</h6>
+                        </div>
+                        <div class="rain box">
+                            <img src="images/rain.png" alt="">
+                            <h4>10%</h4>
+                            <h6>Rain</h6>
+                        </div>
+                    </div>
+                    <div class="location-search">
+                        <div class="input">
+                            <input placeholder=" Search location" type="text">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="bottom-div">
+            <div class="heading">
+                <h3>Today</h3>
+                 <h6>7 days > <span></span></h6>
+            </div>
+            <div class="timeline">
+                <div class="box">
+                    <h4>24°</h4>
+                    <img class="timeline-img" src="images/Timeline-1.png" alt="">
+                    <h4>10:00</h4>
+
+                </div>
+                <div class="box">
+                    <h4>23°</h4>
+                    <img class="timeline-img" src="images/Timeline-2.png" alt="">
+                    <h4>11:00</h4>
+                </div>
+                <div class="box">
+                    <h4>19°</h4>
+                    <img class="timeline-img" src="images/Timeline-3.png" alt="">
+                    <h4>12:00</h4>
+
+                </div>
+                <div class="box">
+                    <h4>18°</h4>
+                    <img class="timeline-img" src="images/Timeline-4.png" alt="">
+                    <h4>01:00</h4>
+
+                </div>
+                <div id="last-1" class="box">
+                    <h4>23°</h4>
+                    <img class="timeline-img" src="images/Timeline-1.png" alt="">
+                    <h4>02:00</h4>
+
+                </div>
+                <div id="last-2" class="box">
+                    <h4>20°</h4>
+                    <img class="timeline-img" src="images/Timeline-3.png" alt="">
+                    <h4>03:00</h4>
+
+                </div>
 
             </div>
-    </div>
-    </main>
-    </div>
+        </div>
+
+    </section>
 </body>
 
 </html>

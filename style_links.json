@@ -1,4 +1,5 @@
 [
+  
   {
     "name": "Chinese Restaurant",
     "link": "Chinese Restaurant/index.html"
@@ -14,6 +15,10 @@
   {
     "name": "engineers copied web",
     "link": "engineers copied web/index.html"
+  },
+  {
+    "name": "E commerce shopping website template",
+    "link": "E commerce shopping website template/index.html"
   },
   {
     "name": "Food Ordering",
@@ -102,6 +107,10 @@
     "link": "Technology Page/index.html"
   },
   {
+    "name": "Travel website template-1",
+    "link": "Travel website template-1/index.html"
+  },
+  {
     "name": "Tribute Page",
     "link": "Tribute Page/index.html"
   },
@@ -167,8 +176,48 @@
   },
 
     {
+      "name": "Moninfo:Indian Monuments Template",
+      "link": "Moninfo/index.html"
+    },
+
+  {
+    "name": "Netflix clone",
+    "link": "netflixclone/index.html"
+  },
+
+    {
+      "name": "Hotel Website",
+      "link": "Hotel Website/index.html"
+    },
+  
+  {
+      "name": "Gym Website",
+      "link": "gymWebsite/index.html"
+    },
+  
+  {
       "name": "Art Gallery Website",
       "link": "ArtGalleryWebsite/index.html"
+    },
+
+  
+  {
+    "name": "Blogger's Template",
+    "link": "Blogger's template/index.html
+  },
+   
+
+
+    {
+      "name": "Sneaker Storefront",
+      "link": "sneaker-storefront/index.html"
+    },
+    
+    {
+      "name": "Price Template",
+      "link": "Price/price.html"
     }
+
+
 
 ]
