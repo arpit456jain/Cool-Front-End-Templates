@@ -61,6 +61,7 @@ p {
   width: 400px;
   position: relative;
   left: 120px;
+  border-radius: 10%;
 }
 
 .image-height {
@@ -171,12 +172,20 @@ p {
   text-align: center;
   padding: 7% 15%;
 }
-
+#footer a{
+  color: black;
+}
+.btn-close1 {
+  border: 0;
+    border-radius: 10%;
+    color: #ff4c68;
+}
 @media (max-width:992px) {
   .title-image {
-    width: 70%;
+    width: 40%;
     position: relative;
     left: 0;
+    border-radius: 10%;
   }
   #title {
     text-align: center;
