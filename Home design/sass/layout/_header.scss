@@ -1,0 +1,90 @@
+header {
+  
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  
+  
+  }
+  .header{
+    display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+ backface-visibility: hidden;
+  }
+  
+  .header-primary {
+    height: 2rem;
+    text-decoration: none;
+    margin-left: 5rem;
+    margin-top: 1rem;
+    animation: moveInRight 1s ease-out;
+    
+    & a{
+      font-size: 1.1rem;
+      font-weight: 400;
+      font-family: Georgia;
+      text-decoration: none;
+      color: $color-blue-dark;
+      padding: 1rem;
+
+      &:hover{
+         background-color: $color-blue;
+         color: white;
+      }
+    }
+   }
+  
+  
+   
+   
+   .heading-secondary{
+     font-size: 2.3rem;
+     font-weight:bolder;
+     
+     font-family: "Playfair Display";
+     font-style: italic;
+     letter-spacing: 1rem;
+     text-transform: uppercase;
+
+     background-image: linear-gradient(to right bottom,$color-blue-dark,#2E9CCA);
+     -webkit-background-clip: text;
+     color: transparent;
+    
+     
+     animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+   
+   }
+
+   .heading-tertiary{
+     font-size: 1.9rem;
+     text-transform: capitalize;
+     font-family: "Playfair Display";
+     font-style: italic;
+    color: $color-blue;
+     font-weight: 700;
+     padding: 0;
+    margin: 0 0 20px 2rem;
+    width: 40rem;
+    line-height: 1.2;
+   }
+   .heading-primary{
+    font-family: "Playfair Display";
+    font-style: italic;
+     font-size: 3rem;
+     padding:  6rem 0;
+     margin-left: 5rem;
+     color: white;
+   }
+
+   .heading-teams{
+
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    font-weight: 700;
+    text-align: center;
+    padding: 5rem 0;
+    color: $color-blue;
+   }

@@ -1,0 +1,32 @@
+.btn-text {
+    &:link,
+    &:visited {
+        font-size: 1.6rem;
+        color: white;
+        display: inline-block;
+        text-decoration: none;
+        
+        padding: 10px 20px;
+        transition: all .2s;
+        margin-left: 2.5rem;
+        background-color: $color-blue;
+        
+    }
+
+    
+
+    &:hover {
+        background: transparent;
+        color: #3A5199;
+        box-shadow: 0 1rem 2rem rgba($color-black, .15);
+        transform: translateY(-2px);
+        border: 1px solid $color-blue-dark;
+        font-weight: bolder;
+       
+    }
+
+    &:active {
+        box-shadow: 0 .5rem 1rem rgba($color-black, .15);
+        transform: translateY(0);
+    }
+}
