@@ -14,7 +14,9 @@
 
     <!-- for font style -->
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300&display=swap" rel="stylesheet">
   </head>
   <body>
     <section class="navsec">
@@ -22,22 +24,22 @@
        <nav class="navbar navbar-expand-lg mynavbar">
   <a class="navbar-brand myfont" href="#"><span style="color:#fff;">ARPIT JAIN</span></a>
   <button class="navbar-toggler bg-success" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"><i class="fa fa-bars"  style="font-size: 2rem;" aria-hidden="true"></i></span>
+    <span class="navbar-toggler-icon"><i class="fa fa-bars"  style="font-size: 1rem;" aria-hidden="true"></i></span>
   </button>
 
   <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
-        <a class="nav-link text-success" href="#">WELCOME</a>
+        <a class="nav-link text-success" href="#">Welcome</a>
       </li> 
        <li class="nav-item">
-        <a class="nav-link  text-success" href="#">MENU</a>
+        <a class="nav-link  text-success" href="#">Menu</a>
       </li> 
        <li class="nav-item">
-        <a class="nav-link text-success" href="#">EVENTS</a>
+        <a class="nav-link text-success" href="#">Events</a>
       </li> 
        <li class="nav-item">
-        <a class="nav-link text-success" href="#">CONTACT</a>
+        <a class="nav-link text-success" href="#">Contact</a>
       </li> 
     </ul>
   </div>
@@ -48,12 +50,13 @@
       <div class="col-lg-6 col-md-6 col-1">
         
       </div>
-      <div class="col-lg-6 col-md-6 col-10">
+      <div class="col-lg-6 col-md-6 col-10 mt-3">
         <div class="text-center mydiv">
-          <i class="fa fa-cutlery fa-5x text-success" aria-hidden="true"></i>
-          <h1 class="text-success">NEW OPENING</h1>
-          <h1 class="text-success">23RD SEPT</h1>
-          <button class="mybtn1 text-success">LEARN MORE</button>
+          <i class="fa fa-cutlery fa-5x text-success mb-4" aria-hidden="true"></i>
+          <h1 class="text-white myfont font-lg mb-3 font-weight-bold text-success t-name">Arpit Jain</h1>
+          <h3 class="text-white">Home to all kinds of chinese dishes</h3>
+          <h5 class="text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis ex error eveniet accusantium quis quia consequatur modi laudantium? Nulla, rem iure nisi exercitationem assumenda perferendis ullam est dolorum illo veniam.</h5>
+          <button type="button" class="btn btn-outline-success btn-lg mt-3">Learn more</button>
         </div>
       </div>
     </div>
@@ -64,8 +67,8 @@
     <div class="container pt-5">
       <div class="row">
         <div class="col-lg-6 col-md-6 col-10">
-            <h3 style="font-family: 'Dancing Script'">What do we actually cook</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            <h2 style="font-family: 'Dancing Script'" class="font-weight-bold">What do we actually cook</h2>
+              <p class="font-weight-bold mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
               quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\</p>    
         </div>
@@ -113,14 +116,14 @@
     </div>
   </section>
 
-  <section class="secfour py-5 text-center ">
+  <section class="secfour py-1 text-center ">
       <div class="container bg-success pt-5">
-        <h3 style="font-family: 'Dancing Script'">We Brings tradition</h3>
+        <h3 style="font-family: 'Dancing Script'">We bring tradition</h3>
         <h1 class="myfont mb-5">TO  YOUR PLATE</h1>
         <!-- 1st row -->
         <div class="row">
             <!-- 1st image -->
-          <div class="col-lg-3 col-md-4 p-0">
+          <div class="col-lg-3 col-md-4 p-0 ">
             <div class="card mycard ">
                 <img src="img/1.jpg" class="card-img-top" alt="...">
               </div>
@@ -249,51 +252,69 @@
 
   </section>
 
-  <section class="secsix">
-  </section>
+  <!-- <section class="secsix">
+  </section> -->
 
 
-  <section class="secseven bg-success py-5">
+  <section class="secseven bg-success py-5 mt-1" >
     <div class="container text-center">
       <h1 class="myfont">Discover</h1>
       <h1 class="myfont">OUR NEW MENU</h1>
-      <div class="row rowpage4">
-            <div class="col-lg-6 col-md-6 col-12">
-                <h5 class="page4h4-2"><img src="img\circle-cropped (2).png" alt=""><span style="margin-left: 5%;">NIGRI WITH OUR BEST FISH</span></h5>
-                <p class="page4p2">Lorem ipsum dolor sit
-                    sed do eiusmod tempor incididunt<br>
-                    labore et dolore magna aliqua.</p>
+      <div class="d-flex justify-content-center flex-wrap mt-5">
+            <div class="d-flex mr-5 mb-2">
+                <h5 class="page4h4-2"><img src="img\circle-cropped (2).png" alt=""></h5>
+                <div class="ml-3">
+                  <span style="margin-left: 5%;" class="font-weight-bold">NIGRI WITH OUR BEST FISH</span>
+                  <p class="page4p2 ">Lorem ipsum dolor sit
+                      sed do <br>eiusmod tempor incididunt
+                      labore<br> et dolore magna aliqua.</p>
+                </div>
             </div>
-            <div class="col-lg-6 col-md-6 col-12">
-                <h5 class="page4h4-2"><img src="img\circle-cropped (3).png" alt=""><span style="margin-left: 5%;">NIGRI WITH OUR BEST FISH</span></h5>
-                <p class="page4p2">Lorem ipsum dolor sit
-                    sed do eiusmod tempor incididunt<br>
-                    labore et dolore magna aliqua.</p>
+            <div class="d-flex mr-5 mb-2">
+              <h5 class="page4h4-2"><img src="img\circle-cropped (3).png" alt=""></h5>
+              <div class="ml-3">
+                <span style="margin-left: 5%;" class="font-weight-bold">NIGRI WITH OUR BEST FISH</span>
+                <p class="page4p2 ">Lorem ipsum dolor sit
+                    sed do <br>eiusmod tempor incididunt
+                    labore<br> et dolore magna aliqua.</p>
+              </div>
+          </div>
+          <div class="d-flex mr-5 mb-2">
+            <h5 class="page4h4-2"><img src="img\circle-cropped (3).png" alt=""></h5>
+            <div class="ml-3">
+              <span style="margin-left: 5%;" class="font-weight-bold">NIGRI WITH OUR BEST FISH</span>
+              <p class="page4p2 ">Lorem ipsum dolor sit
+                  sed do <br>eiusmod tempor incididunt
+                  labore<br> et dolore magna aliqua.</p>
             </div>
-            <div class="col-lg-6 col-md-6 col-12">
-                <h5 class="page4h4-2"><img src="img\circle-cropped (3).png" alt=""><span style="margin-left: 5%;">NIGRI WITH OUR BEST FISH</span></h5>
-                <p class="page4p2">Lorem ipsum dolor sit
-                    sed do eiusmod tempor incididunt<br>
-                    labore et dolore magna aliqua.</p>
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-12">
-                <h5 class="page4h4-2"><img src="img\circle-cropped (4).png" alt=""><span style="margin-left: 5%;">NIGRI WITH OUR BEST FISH</span></h5>
-                <p class="page4p2">Lorem ipsum dolor sit
-                    sed do eiusmod tempor incididunt<br>
-                    labore et dolore magna aliqua.</p>
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-12">
-                <h5 class="page4h4-2"><img src="img\circle-cropped (1).png" alt=""><span style="margin-left: 5%;">NIGRI WITH OUR BEST FISH</span></h5>
-                <p class="page4p2">Lorem ipsum dolor sit
-                    sed do eiusmod tempor incididunt<br>
-                    labore et dolore magna aliqua.</p>
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-12">
-                <h5 class="page4h4-2"><img src="img\circle-cropped (5).png" alt=""><span style="margin-left: 5%;">NIGRI WITH OUR BEST FISH</span></h5>
-                <p class="page4p2">Lorem ipsum dolor sit
-                    sed do eiusmod tempor incididunt<br>
-                    labore et dolore magna aliqua.</p>
-            </div>
+        </div>
+        <div class="d-flex mr-5 mb-2">
+          <h5 class="page4h4-2"><img src="img\circle-cropped (4).png" alt=""></h5>
+          <div class="ml-3">
+            <span style="margin-left: 5%;" class="font-weight-bold">NIGRI WITH OUR BEST FISH</span>
+            <p class="page4p2 ">Lorem ipsum dolor sit
+                sed do <br>eiusmod tempor incididunt
+                labore<br> et dolore magna aliqua.</p>
+          </div>
+      </div>
+      <div class="d-flex mr-5 mb-2">
+        <h5 class="page4h4-2"><img src="img\circle-cropped (1).png" alt=""></h5>
+        <div class="ml-3">
+          <span style="margin-left: 5%;" class="font-weight-bold">NIGRI WITH OUR BEST FISH</span>
+          <p class="page4p2 ">Lorem ipsum dolor sit
+              sed do <br>eiusmod tempor incididunt
+              labore<br> et dolore magna aliqua.</p>
+        </div>
+    </div>
+    <div class="d-flex mr-5 mb-2">
+      <h5 class="page4h4-2"><img src="img\circle-cropped (5).png" alt=""></h5>
+      <div class="ml-3">
+        <span style="margin-left: 5%;" class="font-weight-bold">NIGRI WITH OUR BEST FISH</span>
+        <p class="page4p2 ">Lorem ipsum dolor sit
+            sed do <br>eiusmod tempor incididunt
+            labore<br> et dolore magna aliqua.</p>
+      </div>
+  </div>
 
 
         </div>
@@ -301,10 +322,9 @@
   </section>
 
 
-<section class="seceight">
-  <!-- img -->
-</section>
-
+<!-- <section class="seceight">
+  
+</section> -->
 
 <section class="secnine py-5">
   <div class="container">
@@ -374,14 +394,14 @@
 </section>
 
 
-<section class="secten" ></section>
+<!-- <section class="secten" ></section> -->
 
 <section class="seceleven py-5 bg-success">
   <div class="container  text-center">
     <h2 class="myfont">Discover</h2>
     <h1 class="myfont mb-5" >Our New Menu</h1>
     <div class="row mx-auto">
-      <div class="col-lg-4 col-md-4 col-12">
+      <div class="col-lg-4 col-md-4 col-12 mb-2">
           <div class="card">
             <img src="img/1.jpg" class="card-img-top" alt="...">
             <div class="card-body">
@@ -393,7 +413,7 @@
           </div>
       </div>
 
-      <div class="col-lg-4 col-md-4 col-12">
+      <div class="col-lg-4 col-md-4 col-12 mb-2">
       <div class="card">
           <img src="img/5.jpg" class="card-img-top" alt="...">
           <div class="card-body">
@@ -405,7 +425,7 @@
       </div>
       </div>
 
-          <div class="col-lg-4 col-md-4 col-12">
+          <div class="col-lg-4 col-md-4 col-12 mb-2">
             <div class="card">
           <img src="img/3.jpg" class="card-img-top" alt="...">
           <div class="card-body">
@@ -455,7 +475,7 @@
   </div>
 </section>
 
-<section class="sec13 py-5 my-5 bg-success text-white" >
+<section class="sec13 py-5 bg-success text-white" >
   <div class="container-fluid">
     <div class="row">
       <div class="col-lg-6 col-md-6 col-12">
