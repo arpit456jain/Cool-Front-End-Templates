@@ -1,0 +1,164 @@
+*{
+    padding: 0;
+	margin:0;
+	box-sizing: border-box;
+}
+html,body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 15px;
+    font-family: arial,sans-serif;
+}
+nav a {
+    margin-right: 20px;
+    color: black;
+    text-decoration: none;
+}
+nav a:hover{
+    text-decoration: underline;
+    opacity: .85;
+}
+.apps{
+    width: 30px;
+}
+.apps:hover{
+    opacity: .7;
+}
+#middle{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.letters{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 90px;
+    margin-top: 110px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#searchBarContainer{
+    margin-top: 20px;
+    text-align: center;
+    font-family: arial,sans-serif;
+    width: 580px;
+    position: relative;
+
+}
+.im{
+    width: 20px;
+    opacity: .4;
+    position: absolute;
+    top: 14px;
+    left: 48px;
+}
+.ig{
+    width: 14px;
+	position: absolute;
+	top: 13px;
+	right: 53px;
+}
+#searchBar{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    outline: 0;
+    width: 500px;
+    border-radius: 40px;
+    border: 2px solid #ebe2e2;
+    font-size: 14px;
+    font-family: arial,sans-serif;
+}
+#searchBar:hover{
+	box-shadow: 0 0 2px rgba(0, 0, 0, 0.05), 
+				0 0 2px rgba(0, 0, 0, 0.05),
+				0 0 3px rgba(0, 0, 0, 0.05),
+				0 0 4px rgba(0, 0, 0, 0.05), 
+				0 0 5px rgba(0, 0, 0, 0.05), 
+				0 0 4px rgba(0, 0, 0, 0.05), 
+				0 0 5px rgba(0, 0, 0, 0.05)
+}
+#buttons{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    padding: 10px 30px;
+}
+.button{
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    background: rgb(233, 233, 233);
+    font-family: arial,sans-serif;
+    height: 47px;
+    border: 1px solid transparent;
+}
+.button:hover {
+	border: 1px solid #aaa;
+}
+#links{
+    text-align: center;
+    margin-top: 20px;
+    font-family: arial,sans-serif;
+}
+#links a{
+    font-size: small;
+    margin-left:5px;
+    text-decoration: none;
+
+}
+#links a:hover{
+    text-decoration: underline;
+}
+#footer{
+background: #f2f2f2;
+height: 50px;
+position: relative;
+font-family: arial,sans-serif;
+}
+#footer-content-1 {
+  font-weight: 400;
+  position: absolute;
+  margin-top: 15px;
+    }
+#footer-content-2 {
+position: absolute;
+right: 30px;
+font-weight: 400;
+margin-top: 15px;
+
+}
+
+#footer-content-1 a{
+    font-size: 15px;
+    color: rgba(0,0,0,0.54);
+    padding-left: 20px;
+    text-decoration: none;
+
+}
+
+#footer-content-1 a:hover{
+    text-decoration: underline;
+}
+
+#footer-content-2 a{
+    font-size: 15px;
+    color: rgba(0,0,0,0.54);
+    padding-left: 20px;
+    text-decoration: none;
+
+}
+#footer-content-2 a:hover{
+    text-decoration: underline;
+}
