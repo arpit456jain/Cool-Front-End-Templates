@@ -1,0 +1,120 @@
+@font-face {
+  font-family: "GothamPro Medium";
+  src: url('./Fonts/GothamPro-Medium.woff');
+}
+
+@font-face {
+  font-family: "GothamPro";
+  src: url('./Fonts/GothamPro.woff');
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+div {
+  display: block !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+input {
+  background-color: #eef5f3;
+  color: #88908e !important;
+  width: 100%;
+  height: 48px;
+  outline: 0;
+  border: none;
+  font-family: 'GothamPro Medium', serif !important;
+  font-size: 0.875rem !important;
+  border-radius: 20px;
+  padding: 0 16px !important;
+}
+
+input::placeholder {
+  color: #88908e !important;
+}
+
+fieldset {
+  border-radius: 25px;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: none;
+  margin-bottom: 20px !important;
+}
+
+form {
+  width: 100%;
+  max-width: 460px;
+  align-items: center;
+  justify-content: center;
+}
+
+.container.right-panel-active .sign-in-container {
+	transform: translateX(100%);
+}
+
+.container.right-panel-active .sign-up-container {
+	transform: translateX(100%);
+	opacity: 1;
+	z-index: 5;
+	animation: show 0.6s;
+}
+
+@keyframes show {
+	0%, 49.99% {
+		opacity: 0;
+		z-index: 1;
+	}
+	
+	50%, 100% {
+		opacity: 1;
+		z-index: 5;
+	}
+}
+
+.container.right-panel-active .overlay-container{
+	transform: translateX(-100%);
+}
+
+.container.right-panel-active .overlay {
+  transform: translateX(50%);
+}
+
+.container.right-panel-active .overlay-left {
+	transform: translateX(0);
+}
+
+.container.right-panel-active .overlay-right {
+	transform: translateX(20%);
+}
+
+/* @media screen and (min-width: 30em) {
+  body {
+    height: auto;
+  }
+} */
+
+@media screen and (min-width: 48em) {
+  body {
+    height: 100vh;
+  }
+}
