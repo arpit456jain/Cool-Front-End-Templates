@@ -118,7 +118,6 @@
 /* Clients Styling */
 #client-section{
     height: 300px;
-    position: relative;
     margin: auto;
 }
 #client-section::before{
