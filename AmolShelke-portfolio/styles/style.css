@@ -530,6 +530,8 @@ footer p a {
   }
 
   .project {
+    justify-content: center;
+    align-items: center;
     text-align: center;
   }
 
@@ -583,6 +585,17 @@ footer p a {
 }
 
 /* for mobile  */
+
+@media screen and (max-width: 800px) {
+ .hero-section .column-2 img {
+    width: 500px;
+  } 
+  
+  .about-section .column-1 img {
+    width: 500px;
+  }
+
+}
 
 @media screen and (max-width: 700px) {
   body {
