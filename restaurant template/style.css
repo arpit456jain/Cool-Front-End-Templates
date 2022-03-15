@@ -41,6 +41,9 @@ color: #fff;
     font-weight: bold;
     color: #ffa012;
 }
+.navbar-brand :hover{
+  color: #fff;
+}
 .restaurant-navbar{
     background-color: #6c665c;
 }
@@ -66,9 +69,10 @@ color: #fff;
   font-weight: 700;
 }
 .hero-subhead{
-font-size: 1rem;
+  font-size: 1rem !important;
   font-weight: 400;
   line-height: 1.5;
+  width: 50%;
 }
 .card-title{
     font-family: 'Satisfy', cursive;
@@ -179,6 +183,9 @@ span{
 }
 .about .content p:last-child {
   margin-bottom: 0;
+}
+.why-text{
+  width: 50%;
 }
   /* menu */
 
@@ -334,7 +341,17 @@ span{
     font-family: "Poppins", sans-serif;
     margin-bottom: 5px;
 }
+.book-text{
+  width: 50%;
+}
+.gallery-text{
+    width: 50%;
 
+}
+.contact-text{
+      width: 50%;
+
+}
 /* footer */
 footer {
   background: #35322d;
@@ -366,4 +383,40 @@ footer {
 }
 .social-links a:hover {
   background: #ffb03b;
+}
+
+@media screen and (max-width:600px) {
+  .carousel-item{
+    background-size: cover;
+    background-repeat: no-repeat;
+
+  }
+  .hero-headline{
+    font-size: 28px; 
+   }
+   .hero-subhead{
+     width: 75%;
+     
+   }
+ 
+ .card-body{
+   margin-bottom: 30px;
+ }
+ .section-heading-container > p{
+   margin: 0;
+   width: 100vw;
+   padding: 10px !important;
+    font-weight: 300;
+}
+ .gallery{
+   margin-bottom: 20px;
+ }
+
+ .events{
+   height: 150vh;
+ }
+ .about-img{
+   height: 50vh;
+   background-size: cover;
+ }
 }
