@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&family=Satisfy&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;    
+}
+.bg-primary{
+    background-color: #FFB03B !important;
+    color:#fff !important;
+}
+.hero-headline{
+  font-family: 'Satisfy';
+  color: #ff9b08;
+}
+.hero-subhead{
+  font-style: italic;
+  font-size: 18px;
+}
+.navbar{
+    padding: 50px;
+    z-index: 1;
+}
+.nav-link:hover{
+  color: #ff9b08 !important;
+}
+.nav-btn{
+background-color: #ffb03b;
+color: #fff;
+}
+.nav-btn:hover{
+    color: #fff;
+    background-color: #ffa012 ;
+}
+.navbar-brand{
+    font-family: 'Satisfy',sans-serif;
+   letter-spacing: 0.1rem;
+    font-size: 28px;
+    font-weight: bold;
+    color: #ffa012;
+}
+.navbar-brand :hover{
+  color: #fff;
+}
+.restaurant-navbar{
+    background-color: #6c665c;
+}
+.nav-container{
+    background-color: transparent !important;
+    z-index: 2;
+    position: absolute;
+    top:0;
+}
+.carousel-item{
+    height: 100vh;
+    /* overflow: hidden; */
+
+}
+.carousel-item > div {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.hero-headline{
+  font-size: 48px;
+  font-weight: 700;
+}
+.hero-subhead{
+  font-size: 1rem !important;
+  font-weight: 400;
+  line-height: 1.5;
+  width: 50%;
+}
+.card-title{
+    font-family: 'Satisfy', cursive;
+}
+.number-title{
+    display: block;
+    font-size: 28px;
+    font-weight: 700;
+    color: #FFB03B
+}
+span{
+    color: #FFB03B
+
+}
+.card-title{
+    font-size: 24px;
+    font-weight: 600;
+    padding: 0;
+    margin: 20px 0;
+    color: #6c665c;
+}
+.card{
+    min-height: 300px;
+}
+.card-body{
+    color: #aaaaaa;
+    font-size: 15px;
+    padding: 50px 30px;
+    box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
+    transition: all ease-in-out 0.3s;
+    height: 100%;
+}
+.section-heading{
+    font-family: 'Satisfy', cursive !important;
+    margin: 15px 0 0 0;
+    font-size: 32px;
+    font-weight: 700;
+    color: #5f5950;
+
+}
+.section-heading-container > p{
+    margin: 15px auto 0 auto;
+    font-weight: 300;
+}
+.card-body:hover {
+    background: #ffb03b;
+    box-shadow: 10px 15px 30px rgb(0 0 0 / 18%);
+    transition: all ease-in-out 0.3s;
+    padding: 30px 30px 70px 30px;
+    color: #fff !important;
+    padding-bottom: -30px !important;
+
+}
+.card-body:hover .card-title{
+    color: #fff !important;
+}
+.card-body:hover .number-title{
+    color: #fff !important;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff !important;
+    background-color: #FFB03B;
+}
+.tab-btn{
+    color: black !important;
+}
+
+/* about */
+.about {
+  margin-top: 70px;  
+  background: #fffaf3;
+}
+.about .content {
+  padding: 0 80px;
+}
+.about .content h3 {
+  font-family: 'Satisfy',sans-serif;  
+  font-weight: 400;
+  font-size: 34px;
+  color: #5f5950;
+}
+.about .content h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 5px;
+}
+.about .content p {
+  font-size: 15px;
+  color: #848484;
+}
+.about .content ul {
+  list-style: none;
+  padding: 0;
+}
+.about .content ul li + li {
+  margin-top: 15px;
+}
+.about .content ul li {
+  position: relative;
+  padding-left: 26px;
+}
+.about .content ul i {
+  font-size: 20px;
+  color: #ffb03b;
+  position: absolute;
+  left: 0;
+  top: 2px;
+}
+.about .content p:last-child {
+  margin-bottom: 0;
+}
+.why-text{
+  width: 50%;
+}
+  /* menu */
+
+  .menu #menu-flters {
+  padding: 0;
+  margin: 0 auto 0 auto;
+  list-style: none;
+  text-align: center;
+  border-radius: 50px;
+}
+.menu #menu-flters li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 8px 16px 10px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  color: #444444;
+  margin: 0 3px 10px 3px;
+  transition: all ease-in-out 0.3s;
+  background: #fff;
+  border: 2px solid #ffb03b;
+  border-radius: 50px;
+}
+.menu .menu-content {
+  margin-top: 30px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.menu .menu-content::after {
+  content: "......................................................................" "...................................................................." "....................................................................";
+  position: absolute;
+  left: 20px;
+  right: 0;
+  top: -4px;
+  z-index: 1;
+  color: #dad8d4;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.menu .menu-content a {
+  padding-right: 10px;
+  background: #fff;
+  position: relative;
+  z-index: 3;
+  font-weight: 700;
+  color: #ff9b08;
+}
+.menu .menu-content span {
+  background: #fff;
+  position: relative;
+  z-index: 3;
+  padding: 0 10px;
+  font-weight: 600;
+}
+.menu .menu-ingredients {
+  font-style: italic;
+  font-size: 14px;
+  font-family: "Comic Neue", sans-serif;
+  color: #948c81;
+}
+
+.gallery{
+  padding-left: 2px !important;
+  padding-right: 2px !important;
+  overflow: hidden;
+  transition: all ease-in-out 0.4s;
+    transition-property: all;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+    transform: scale(1);
+
+}
+.gallery > img:hover{
+  transform: scale(1.1);
+  transition: all ease-in-out 0.4s;
+    transition-property: all;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+  overflow: hidden;
+}
+#events{
+  margin-top: 80px;
+}
+
+.events{
+  background: url(./img/events-bg.jpg) center center no-repeat;
+  position: relative;
+  background-size: cover;
+  height: 90vh;
+  box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+
+  
+}
+.events .event-item {
+  color: #fff;
+}
+.events .event-item h3 {
+  font-family: 'Satisfy';
+  font-weight: 600;
+  font-size: 26px;
+  color: #ffb03b;
+}
+.events .event-item .price {
+  font-size: 26px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.events .event-item .price span {
+  border-bottom: 2px solid #ffb03b;
+}
+.events .event-item ul {
+  list-style: none;
+  padding: 0;
+}
+.events .event-item ul li {
+  padding-bottom: 10px;
+}
+.events .event-item ul i {
+  font-size: 20px;
+  padding-right: 4px;
+  color: #ffb03b;
+}
+.events .event-item p:last-child {
+  margin-bottom: 0;
+}
+.info-item{
+  margin-left: 10px !important;
+}
+.info>i{
+    margin-top: 15px;
+    font-size: 20px;
+    color: #ffb03b;
+    float: left;
+    width: 44px;
+    height: 44px;
+    background: #fff6e8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+}
+.info-item>h4{
+  margin-top: 16px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #433f39;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 5px;
+}
+.book-text{
+  width: 50%;
+}
+.gallery-text{
+    width: 50%;
+
+}
+.contact-text{
+      width: 50%;
+
+}
+/* footer */
+footer {
+  background: #35322d;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  padding: 30px 0;
+}
+.footer-text{
+  font-style: italic ;
+}
+
+.social-links {
+  margin: 0 0 40px 0;
+}
+ .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #46423b;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+.social-links a:hover {
+  background: #ffb03b;
+}
+
+@media screen and (max-width:600px) {
+  .carousel-item{
+    background-size: cover;
+    background-repeat: no-repeat;
+
+  }
+  .hero-headline{
+    font-size: 28px; 
+   }
+   .hero-subhead{
+     width: 75%;
+     
+   }
+ 
+ .card-body{
+   margin-bottom: 30px;
+ }
+ .section-heading-container > p{
+   margin: 0;
+   width: 100vw;
+   padding: 10px !important;
+    font-weight: 300;
+}
+ .gallery{
+   margin-bottom: 20px;
+ }
+
+ .events{
+   height: 150vh;
+ }
+ .about-img{
+   height: 50vh;
+   background-size: cover;
+ }
+}
