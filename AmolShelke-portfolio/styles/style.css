@@ -15,7 +15,7 @@ html {
 body {
   font-family: "Roboto", sans-serif;
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   background-color: aliceblue;
   color: #000;
   overflow-x: hidden;
@@ -617,5 +617,113 @@ footer p a {
   .hero-section .column-1 .text {
     font-size: 18px;
     line-height: 30px;
+  }
+}
+
+/* for 350 to 400 px widths */
+
+@media screen and (max-width: 400px) {
+    .navbar .icon {
+      font-size: 40px;
+    }
+
+    .hero-section .column-2 img {
+    width: 300px;
+    }
+
+    .about-section .column-1 img {
+      width: 300px;
+    }
+
+    .skills {
+      justify-content: center;
+    }
+
+    .about-section .column-2 p {
+      font-size: 17px;
+      line-height: 40px;
+      letter-spacing: 1px;
+    }
+
+    .project {
+      margin: 2px 3px;
+      padding: 10px 30px;
+    }
+
+    .project h1 {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+
+    .project-container {
+      width: 300px;
+      height: 310px;
+      padding: 20px 20px;
+    }
+
+    .project-container h2 {
+      font-size: 18px;
+      margin-bottom: 10px;
+      padding: 4px;
+    }
+
+    .project-container img {
+      width: 250px;
+      border-radius: 4px;
+    }
+
+    .project-container .img {
+       margin-bottom: 20px;
+    }
+
+    .tech-used {
+      margin-bottom: 30px;
+    }
+
+    .source-btn, .live-btn {
+      padding: 20px 20px;
+      font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 351px) {
+  .hero-section {
+    margin: 10px 10px;
+    padding: 10px 15px;
+    width: 100%;
+  }
+ 
+  .hero-section .column-2 img {
+      width: 250px;
+  }
+
+  .column-1 {
+    padding: 20px 10px;
+    margin-top: 10px;
+  }
+  
+  .about-section {
+    width: 100%;
+  }
+
+  .project {
+    width: 100%;
+  }
+
+  .contact {
+    width: 100%;
+  }
+
+  .about-section .column-1 {
+     margin-right: 20px;
+  }
+
+  .about-section .column-2 h2 {
+     font-size: 27px;
+     margin: 20px 5px;
+  }
+
+  .about-section .column-2 p {
+      font-size: 15px;
   }
 }
