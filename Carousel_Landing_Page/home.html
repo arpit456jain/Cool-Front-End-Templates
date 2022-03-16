@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Welcome</title>
+
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/css/global_css.css">
+    <link rel="stylesheet" href="./assets/css/welcome.css">
+
+    <script src="./scripts/bootstrap.bundle.js"></script>
+    <script src="./scripts/homepage.js"></script>
+</head>
+
+<body>
+    <header class="drop-shadow" style="width: 100%; background-color: #283748; text-align: center;" class="header">
+        <div class="row">
+            <div class="col-4">
+                <img src="./assets/media/logo.png" class="logo" onclick="location.href = '#';" style="cursor: pointer;">
+            </div>
+            <div class="col-3"></div>
+            <div class="col-5" style="text-align: center;">
+                <div class="links-adjustor" style="display: inline-block; width: 70%; text-align: right; margin-top: 3vh">
+                    <a class="a" href="#">Dashboard</a>
+                    &nbsp;&nbsp;<span class="d-none d-md-inline">&nbsp;&nbsp;&nbsp;</span>
+                    <a class="a" href="#">Profile</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main style="text-align: center">
+        <div class="carousel-position-adjustor">
+            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel" data-bs-interval="false">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" id="item1">
+                        <img src="./assets/media/carousel_0.png" class="w-100 carousel-img" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <div class="carousel-caption-adjustor">
+                                <h5>Who are we?</h5>
+                                <p>We are a volunteering community that aims to provide programming content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item carousel-item-next-adjusted" id="item2">
+                        <img src="./assets/media/carousel_1.png" class="w-100 carousel-img" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <div class="carousel-caption-adjustor">
+                                <h5>Shifter v1.0</h5>
+                                <p>Core team and organizers are working together to deliver great content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item carousel-item-prev-adjusted" id="item3">
+                        <img src="./assets/media/carousel_2.png" class="w-100 carousel-img" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <div class="carousel-caption-adjustor">
+                                <h5>Want to join us?</h5>
+                                <p>Our voice was heard and many applied to join the learning journey with us.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev d-none d-md-flex" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev" onclick="Carousel_program('left')">
+                    <span class="" aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" fill="currentColor" class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+                        <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+                        </svg>
+                    </span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next d-none d-md-flex" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next" onclick="Carousel_program('right')">
+                    <span aria-hidden="true" style="float: left;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                            <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                        </svg>
+                    </span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 10%">
+            <div style="display: inline-block">
+                <a class="a" href="#" style="text-decoration: none">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" fill="#F7D775" class="bi bi-facebook" viewBox="0 0 16 16">
+                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                    </svg>
+                    <p style="color: #F7D775;">Facebook</p>
+                </a>
+            </div>
+            <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <div style="display: inline-block">
+                <a class="a" href="#" style="text-decoration: none">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" fill="#F7D775" class="bi bi-telegram" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"/>
+                    </svg>
+                    <p style="color: #F7D775;">Telegram</p>
+                </a>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="strike">
+                <h1>Timeline</h1>
+            </div>
+            <br>
+            <div class="container" style="background-color: #F7D775; border-radius: 15px; text-align: center; color: #283748B2">
+                <h1>No upcoming events</h1>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
