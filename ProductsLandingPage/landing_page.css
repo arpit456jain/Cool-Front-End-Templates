@@ -55,6 +55,9 @@
     #submit,#email,p{
     font-size: 1.6vw;
     }
+    #submit{
+        margin-top: 15px;
+    }
     #features{
         width:50%;
     }
