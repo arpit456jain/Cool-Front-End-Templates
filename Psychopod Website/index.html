@@ -11,35 +11,51 @@
 </head>
 
 <body>
+    <!-- Nav Bar -->
     <header class="header">
-        <nav class="navbar">
-            <label class="logo" id="fname">Ps<span id="symbol">&Psi;</span>cho<span class="lname">Pod</span></label>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About us</a></li>
-                <li><a href="#contact">Contact us</a></li>
-                <li><a href="#">Sign In / Sign Up</a></li>
-            </ul>
+        <nav class="nav">
+            <div class="logo_div">
+                <a href="#" class="logo">
+                    Ps<span id="symbol">&Psi;</span>cho<span class="lname">Pod</span>
+                </a>
+            </div>
+            <div class="side_navbar" id="sideNavbar">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+            <div class="nav_menu" id="navMenu">
+                <div class="nav_close" id="navClose">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </div>
+                <ul class="menu_list">
+                    <li class="menu_item"><a href="#home" class="item_link">Home</a></li>
+                    <li class="menu_item"><a href="#about-us" class="item_link">About Us</a></li>
+                    <li class="menu_item"><a href="#plans" class="item_link">Plans</a></li>
+                    <li class="menu_item"><a href="#contact-us" class="item_link">Contact Us</a></li>
+                    <li class="menu_item"><a href="#Sign Up/Sign In" class="item_link">Sign In / Sign Up</a></li>
+                </ul>
+            </div>
         </nav>
-        <div class="main-img" id="home">
-            <div class="main-text">
+    </header>
+    <main>
+
+        <!-- Home Section -->
+        <section class="home" id="home">
+            <div class="empty_box"></div>
+            <div class="box">
                 <p>
                     Human<br>Psychology<br>Podcast<br>
                     <marquee scrollamount="4" id="tagline">
                         <p>Listen to mind building Podcast</p>
                     </marquee>
                     <br>
-                    <a href="#about">
-                        <button id="learn-more" class="buttons">Learn More</button>
-                    </a>
+                    <a href="#latest-show"> <button id="learn-more" class="btn">Learn More</button> </a>
                 </p>
             </div>
-        </div>
-    </header>
-    <main class="main">
-        <section class="section" >
-            <div class="quote" >
-                <!-- quote -->
+        </section>
+
+        <!-- Quote Section -->
+        <section class="quote">
+            <div class="quote-line">
                 <p>Clear<br>Minds<br>Better<br>Lives</p>
             </div>
             <div class="quote-explain">
@@ -54,38 +70,39 @@
                 </p>
             </div>
         </section>
-        <h2 class="heading">Latest shows</h2>
-        <section class="latest-show">
-            <p class="trending">Trending</p>
-            <div class="show-description">
-                <div id="hidden-brain" class="description-box">
-                    <img src="hidden brain.png" alt="Hidden Brain">
+
+        <!-- Latest Show Section -->
+        <section class="latest-show" id="latest-show" >
+            <h1 class="heading">Latest Shows</h1>
+            <div class="show-container">
+                <div class="description-box">
+                    <img src="image/hidden brain.png" alt="Hidden Brain">
                     <br>
                     <h4>Hidden Brain</h4>
                     <p id="host-name"><i>Shankar Vedantam</i></p>
                     <br>
-                    <p>Lorem ipsum amet consectetur adipisicing elit. Esse animi sint quaerat repellendus nobis? Quia,
-                        fugiat laudantium porro.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae aliquid ipsum quod quo debitis aspernatur?</p>
                     <br>
                     <a href="https://open.spotify.com/show/20Gf4IAauFrfj7RBkjcWxh?si=4fa29004d0fe4c59" target="_blank">
-                        <button id="listen-now" class="buttons">Listen Now</button>
+                        <button id="listen-now" class="btn">Listen Now</button>
                     </a>
                 </div>
-                <div id="psych-crunch" class="description-box">
-                    <img src="psych crunch.png" alt="Psych Crunch">
+
+                <div class="description-box">
+                    <img src="image/psych crunch.png" alt="Psych Crunch">
                     <br>
                     <h4>Psych Crunch</h4>
                     <p id="host-name"><i>Dr.Christian Jarrett</i></p>
                     <br>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse animi sint quaerat repellendus
-                        nobis? Quia, fugiat laudantium porro.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum est praesentium labore explicabo velit quas?</p>
                     <br>
                     <a href="https://psychcrunch.libsyn.com/" target="_blank">
-                        <button id="listen-now" class="buttons">Listen Now</button>
+                        <button id="listen-now" class="btn">Listen Now</button>
                     </a>
                 </div>
-                <div id="tharapy-chat" class="description-box">
-                    <img src="therapy chat.png" alt="Tharapy Chat">
+
+                <div class="description-box">
+                    <img src="image/therapy chat.png" alt="Tharapy Chat">
                     <br>
                     <h4>Therapy Chat</h4>
                     <p id="host-name"><i>Laura Reagan</i></p>
@@ -94,67 +111,58 @@
                         laudantium porro.</p>
                     <br>
                     <a href="https://open.spotify.com/show/2cmAMcaKRH65JBCJ4U01XP?si=23f61bd589eb4f31" target="_blank">
-                        <button id="listen-now" class="buttons">Listen Now</button>
+                        <button id="listen-now" class="btn">Listen Now</button>
                     </a>
                 </div>
+
                 <div id="psychology-unplugged" class="description-box">
-                    <img src="psychology unplugged.png" alt="Psychology Unplugged">
+                    <img src="image/psychology unplugged.png" alt="Psychology Unplugged">
                     <br>
                     <h4>Psychology Unplugged</h4>
                     <p id="host-name"><i>Dr.Corey J.Nigro</i></p>
                     <br>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse animi sint quaerat repellendus
-                        nobis? Quia, fugporro.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel at, repudiandae fugiat soluta dolorum nisi.</p>
                     <br>
                     <a href="https://www.listennotes.com/podcasts/psychology-unplugged-dr-corey-j-nigro-nkXCLP0sJ1q/" target="_blank">
-                        <button id="listen-now" class="buttons">Listen Now</button>
+                        <button id="listen-now" class="btn">Listen Now</button>
                     </a>
                 </div>
-                <div id="shrink-rap-radio" class="description-box">
-                    <img src="shrink rap radio.png" alt="Shrink Rap Radio">
+
+                <div class="description-box">
+                    <img src="image/shrink rap radio.png" alt="Shrink Rap Radio">
                     <br>
                     <h4>Shrink Rap Radio</h4>
                     <p id="host-name"><i>Dr.David Van Nuys</i></p>
                     <br>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse animi sint quaerat nobis? Quia,Lorem ipsum sit amet.
-                        fugiat laudantium porro.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos minus nam molestiae accusamus esse fuga.</p>
                     <br>
                     <a href="https://shrinkrapradio.com/" target="_blank">
-                        <button id="listen-now" class="buttons">Listen Now</button>
+                        <button id="listen-now" class="btn">Listen Now</button>
                     </a>
                 </div>
+
+
             </div>
         </section>
-        <h2 class="heading">About Us</h2>
-        <section class="about-us" id="about">
-            <p class="trending">About us</p>
-            <h2 id="fname" class="about-logo">Ps<span id="symbol1">&Psi;</span>cho<span class="lname">Pod</span></h2>
-            <div class="about-us-description">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro omnis necessitatibus illo a culpa et
-                    repellat dolorem praesentium soluta quae asperiores consequuntur similique nsectetur adipisicing
-                    elit. Molestiae, nisi modi nemo consequuntur vitae corrupti vel quam! Adipisci, recusandae
-                    laudantium?</p>
-                <br>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis possimus nisi incidunt
-                    explicabo distinctio ab repudiandae libero accusamus ad labore?</p>
-                <br>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, cum.</p>
-                <br>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam explicabo, natus tempore quos fugit
-                    incidunt quaerat sit quibusdam obcaecati d sint esse ilm ipsum dolor sit amet consectetur
-                    adipisicing elit. Quam perspiciatis deleniti facere saepe ea pariatur dignissimos possimus nesciunt,
-                    natus sunt.</p>
-                <br>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit aliquid molestiae corporis
-                    aspernatur molestias alias, exercitationem officia minus iusto illum?</p>
+
+        <!-- About us section -->
+        <section class="about-us" id="about-us">
+            <h1 class="heading">About Us</h1>
+            <div class="about-container">
+                <a href="#" class="logo">
+                    Ps<span id="symbol">&Psi;</span>cho<span class="lname">Pod</span>
+                </a> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla cumque soluta adipisci corrupti quos! Corrupti assumenda consequatur vel illo velit! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, eveniet ipsa. Nisi deserunt possimus ratione? <br><br>
+                Et vel earum consequuntur, esse autem atque accusamus veniam necessitatibus quo Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, officia!quos. <br><br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est voluptatem nulla sunt hic iste at, officia totam quis adipisci quos? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, laborum?
             </div>
         </section>
-        <h2 class="heading">Subscription Plans</h2>
-        <secttion class="subscription">
-            <p class="trending">Subscription Plans</p>
-            <div class="plans">
+
+        <!-- Subscription Plan Section -->
+        <section class="plans" id="plans">
+            <h1 class="heading">Subscription Plans</h1>
+            <div class="plans-container">
                 <div class="plans-box">
-                    <img src="1.png" alt="Mini Plan">
+                    <img src="image/1.png" alt="Mini Plan">
                     <br>
                     <h2>Mini</h2>
                     <p class="plan-name">One Day Plan</p>
@@ -162,10 +170,11 @@
                     <br>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi, necessitatibus</p>
                     <br>
-                    <button>Buy now</button>
+                    <button class="btn">Buy now</button>
                 </div>
+
                 <div class="plans-box">
-                    <img src="2.png" alt="Mega Paln">
+                    <img src="image/2.png" alt="Mega Paln">
                     <br>
                     <h2>Mega</h2>
                     <p class="plan-name">Monthy Plan</p>
@@ -173,10 +182,11 @@
                     <br>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi, necessitatibus</p>
                     <br>
-                    <button>Buy now</button>
+                    <button class="btn">Buy now</button>
                 </div>
+
                 <div class="plans-box">
-                    <img src="3.png" alt="Macro Plan">
+                    <img src="image/3.png" alt="Macro Plan">
                     <br>
                     <h2>Macro</h2>
                     <p class="plan-name">Yearly Plan</p>
@@ -184,29 +194,31 @@
                     <br>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi, necessitatibus</p>
                     <br>
-                    <button>Buy now</button>
+                    <button class="btn">Buy now</button>
                 </div>
+
             </div>
-        </secttion>
-        <h2 class="heading">Contact Us</h2>
-        <section class="contact-us" id="contact">
-            <p class="trending">Contact Us</p>
-            <div class="contact-us-details">
-                <div class="social">
-                    <h1 id="social-heading">We'd Love to Hear from You</h1>
+        </section>
+
+        <!-- Contact us section -->
+        <section class="contact-us" id="contact-us">
+            <h1 class="heading">Contact Us</h1>
+            <div class="contact-container">
+                <div class="left">
+                    <h1>We'd Love to Hear from You</h1>
                     <div class="more">
                         <p><i class="fa fas  fa-phone"></i>+91-9827XXXXXX</p>
-                        <p><i class="fa fas  fa-envelope"></i>loremipsum@gmail.com</p>
-                        <p><i class="fa  fas fa-map-marker"></i>&nbsp; 101 Street 2175 Don</p>
+                        <p><i class="fa fas  fa-envelope"></i>lorem@gmail.com</p>
+                        <p><i class="fa  fas fa-map-marker"></i>&nbsp; 101 Street</p> 
                     </div>
+                    
                     <div class="social-links">
-                        <!-- <i class="fa fab fa-2x fa-facebook-f" id="facebook"></i> -->
                         <i class="fa fa-2x fab fa-youtube"></i>
                         <i class="fa fa-2x fab fa-twitter"></i>
                         <i class="fa fa-2x fab fa-instagram"></i>
                     </div>
                 </div>
-                <div class="contact-form">
+                <div class="right">
                     <form>
                         <label for="name">Your Name</label>
                         <br>
@@ -228,16 +240,12 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
-      <p>Created by <span id="credit"> Priyanshi Agrawal</span></p>
-      <p>
-        <a target="_blank" href="https://www.linkedin.com/in/priyanshi-agrawal-88b6341bb"><i class="fa fab fa-linkedin"></i></a>
-        <a target="_blank" href="https://github.com/priyanshi1282"><i class="fa fab fa-github"></i></a>
-        <a target="_blank" href="https://www.instagram.com/priyanshiagrawal1282/"><i class="fa fab fa-instagram"></i></a>
-        <a target="_blank" href="https://twitter.com/priyanshi1282"><i class="fa fab fa-twitter"></i></a>
-        <a target="_blank" href="mailto:priyanshiagrawal1282@gmail.com"><i class="fa fas fa-envelope"></i></i></a>
-    </p>
+
+    <!-- Footer section -->
+    <footer>
+        <p>Created By <span>Priyanshi Agrawal</span> | <a href="https://priyanshi.co/"><i class="fa fa-external-link" aria-hidden="true"></i> </a></p>
     </footer>
+
     <script src="script.js"></script>
 </body>
 
