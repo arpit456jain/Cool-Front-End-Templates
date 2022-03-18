@@ -108,7 +108,7 @@
 }
 #services .box img{
     height: 20vh;
-    
+    margin: 23px 63px;
 }
 #services .box p{
     font-family: 'Bree Serif', serif;
@@ -118,7 +118,6 @@
 /* Clients Styling */
 #client-section{
     height: 300px;
-    position: relative;
     margin: auto;
 }
 #client-section::before{
@@ -147,18 +146,34 @@
 }
 
 /* Contact Section */
-#contact{
-    position: relative;
-}
+
 #contact::before{
     content: "";
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 88%;
     z-index: -1;
     opacity: 0.8;
     background: url('../Contact.jpg') no-repeat center center/cover;
 }
+
+/*  */
+.form-group input#name:hover{
+    background-color:lightgrey;
+}
+
+.form-group input#email:hover{
+    background-color:lightgrey;
+}
+
+.form-group input#phone:hover{
+    background-color:lightgrey;
+}
+
+.form-group textarea#message:hover{
+    background-color:lightgrey;
+}
+
 #contact-box{
     display: flex;
     justify-content: center;
@@ -196,7 +211,6 @@ footer{
 }
 input{
     margin: 10px;
-    position: relative;
     left: -8px;
     height: 30px;
 }
