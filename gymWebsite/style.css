@@ -35,7 +35,7 @@ body{
 <<<<<<< HEAD
     background-image: url(img/img3.jpg);
 =======
-    background-image: url(images/pic.jpeg);
+    background-image: url(img/pic.jpeg);
     opacity: 0.9;
     background-color: rgb(28 26 26 / 25%);
     background-blend-mode: darken;
@@ -234,7 +234,7 @@ body{
     }
     .homePage{
         height: 600px;
-        background-image: url(images/pic.jpeg);
+        background-image: url(img/pic.jpeg);
         opacity: 0.9;
         background-color: rgb(28 26 26 / 25%);
         background-blend-mode: darken;
