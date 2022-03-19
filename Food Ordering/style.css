@@ -64,15 +64,14 @@ html{
  	text-decoration: none;
  	padding: 10px 0px;
  	border-radius: 30px; 
- 	color: white;
-	 transition: all 0.5s ease-in-out;	
+ 	color: white;	
  }
- #navbar ul li a:hover
+ ul li a:hover
  {
-	color: black;
- 	background-color:white;
- 	border-radius: 30px 0px 30px 0px;
- 	padding: 8px 17px;		
+ 	padding: 8px 12px;
+ 	border-radius:30px 0px 30px 0px; 
+ 	color: black;
+	background-color: aliceblue;	
  }
 
  #home
@@ -101,19 +100,18 @@ html{
  #home p
  {
  	text-align: center;
- 	font-size: 1.4rem;
-	 font-family:ui-monospace;
+ 	font-size: 1.3rem;
 	 margin: 30px;
  }
 
  .btn
  {
- 	
+ 	padding: 6px 20px;
  	border:2px solid white;
  	background-color: red;
  	color: white;
  	margin:10px;
- 	border-radius: 30px 0px 30px 0px;
+ 	border-radius: 20px;
  	padding: 10px 20px;		
  	font-size: 1.2rem;
  	cursor: pointer;	
@@ -121,7 +119,6 @@ html{
  
  .btn:hover
  {
-	 background-color: green;
 	 transform: scale(1.2);
 	transition: all 0.5s ease-in-out;
  }
@@ -139,40 +136,30 @@ html{
  	height: 80vh;
  	width: 100%;
  }
- #services p{
-	 font-family: ui-monospace;
-	 font-weight: 500;
- }
  #services .box
  {
- 	border:3px solid red;
- 	border-radius: 30px;
+ 	border:2px solid red;
+ 	border-radius: 20px;
  	width: 28%;
-	 box-shadow: 6px 6px 2px rgb(236, 122, 122) ;
  	height: 60vh;
  	padding:20px;
  	margin: 16px;
-	 transition: all 0.5s ease-in-out;
- }
- #services .box:hover{
-	transform: translateY(-30px);
-	
  }
  h1
  {
  	text-align: center;
  	padding:20px;
- 	font-size: 2.8rem;
+ 	font-size: 2.1rem;
  }
  h2
  {
  	text-align: center;
- 	padding:10px;
+ 	padding:8px;
  	font-size: 1.5rem;
  }
  #services .box img
  {
- 	width: 50%;
+ 	width: 40%;
  	margin:auto;
  	display: block;
  	border-radius: 20px;
@@ -213,11 +200,10 @@ html{
  }
  .client
  {
- 	padding: 30px;
+ 	padding: 20px;
  }
  .client img
  {
-	
  	height: 200px;
  	width: 200px;
  }
@@ -230,7 +216,7 @@ html{
 	 align-items: center;
  	position: relative;
  	width: 100%;
- 	height: 80vh;
+ 	height: 70vh;
  }
  #contact::before
  {
@@ -313,4 +299,3 @@ html{
     padding:.5rem 0;
     display: block;
 }
-
