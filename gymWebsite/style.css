@@ -1,7 +1,7 @@
 body{
     margin: 1%;
     overflow-x: hidden;
-    /* background-image: url(images/img3.jpg); */
+    /* background-image: url(img/img3.jpg); */
 }
 
 .navbar{
@@ -16,7 +16,7 @@ body{
 
 .homePage{
     height: 800px;
-    background-image: url(images/img3.jpg);
+    background-image: url(img/img3.jpg);
 }
 .homePage h2 {
     color: #fff;

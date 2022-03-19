@@ -19,7 +19,7 @@ span
     display: flex;
     justify-content: center;
     align-items: center;
-    background:url(bg2.jpg);
+    background:url(img/bg2.jpg);
     background-size: cover;
     background-attachment: fixed;
 }
@@ -424,7 +424,7 @@ font-family: "Sofia";
 }
 .experts 
 {
-    background-image: url(bg2.jpg);
+    background-image: url(img/bg2.jpg);
     background-size: cover;
 }
 .experts h3{

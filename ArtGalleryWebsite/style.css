@@ -23,7 +23,7 @@ p#footer {
 /* .container{
     height: 600px;
     width: 100%;
-    background-image: url(images/background.jpg.jpg);
+    background-image: url(img/background.jpg.jpg);
     background-position: center;
     background-size: cover;
     padding-left: 0%;
@@ -247,21 +247,21 @@ a:hover{
 }
 .cardimage1{
     grid-area: image;
-    background: url(images/event3.jpg); 
+    background: url(img/event3.jpg); 
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     background-size: cover;
 }
 .cardimage2{
     grid-area: image;
-    background: url(images/event2.jpg); 
+    background: url(img/event2.jpg); 
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     background-size: cover;
 }
 .cardimage3{
     grid-area: image;
-    background: url(images/event1.jpg); 
+    background: url(img/event1.jpg); 
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     background-size: cover;
@@ -312,34 +312,34 @@ p{
     left: 50%;
     right: 50%;
     transform: translate(-50%,-50%);
-    background-image: url(images/slide1.jpg);
+    background-image: url(img/slide1.jpg);
     background-size: 100% 100%;
     box-shadow: 1px 2px 10px 5px black;
     animation: slider 15s infinite linear;
 }
 @keyframes slider{
     0%{
-        background-image: url(images/slide1.jpg);
+        background-image: url(img/slide1.jpg);
         background-size: 100% 100%;
     }
     15%{ 
-        background-image: url(images/slide2.jpg);
+        background-image: url(img/slide2.jpg);
         background-size: 100% 100%;
     }
     30%{ 
-        background-image: url(images/slide3.jpg);
+        background-image: url(img/slide3.jpg);
         background-size: 100% 100%;
     }
     45%{ 
-        background-image: url(images/slide4.jpg);
+        background-image: url(img/slide4.jpg);
         background-size: 100% 100%;
     }
     60%{ 
-        background-image: url(images/slide5.jpg);
+        background-image: url(img/slide5.jpg);
         background-size: 100% 100%;
     }
     75%{ 
-        background-image: url(images/slide6.jpg);
+        background-image: url(img/slide6.jpg);
         background-size: 100% 100%;
     }
 }

@@ -71,7 +71,7 @@ h3.logo:hover {
 
 /* HOME SECTION STYLING*/
 .home {
-    background-image: url("images/E30.jpg");
+    background-image: url("Img/E30.jpg");
     height: 100vh;
     background-size: cover;
     background-attachment: fixed;
@@ -782,7 +782,7 @@ h2.about-title {
 
      /* HOME SECTION */
     .home {
-        background-image: url("images/E30.jpg");
+        background-image: url("Img/E30.jpg");
         height: 105vh;
     }
     
