@@ -2,24 +2,36 @@
 	margin: 0;
 	padding: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
 body
 {
 	background:black;
+}
+#logo img{
+	width: 75px;
+	height: 75px;
 }
  #imgbox img
 {
 	width: 15vw;
 	height: 13vh;
-	/*background-color: red;*/
 }
 
 #firsthead a
 {
-	color: #fff;
+   color: #fff;
 	text-decoration: none;
-	font-size: 1.2rem;
+	font-family: serif;
+	font-size: 1.25rem;
 	padding: 10px;
 	margin: 10px;
+    transition: all 0.3s ease-in-out;
+}
+#firsthead a:hover{
+   transform: scale(1.2);
+    color: orange;
 }
 #firsthead::before
 {
@@ -44,7 +56,6 @@ body
 
 .main
 {
-	/*border:2px solid green;*/
 	height:80vh;
 	width: 100%; 
 	display: flex;
@@ -58,29 +69,91 @@ section img
 	height: 30rem;
 	opacity: .5;	
 }
+section .wed{
+	font-family: serif;
+}
 section .heading
 {
+	font-family: 'FontAwesome';
 	color:orange;
 }
 section p 
 {
 	margin: 50px;
-	margin-top: 5px: 
+	font-size: 1.15rem;
+	font-family: serif;
+	margin-top: 5px;
 }
 span
 {
-	color: orange;
+	color: red;
 }
 .mybtn
 {
-	padding: 20px;
+	padding: 18px 8px;
 	margin: 20px;
 	font-size: 1.1rem;
 	background-color: orange;	
 	border:none;
+	border-radius: 35px 0px 35px 0px;
+   	transition: all 0.5s ease-in-out;
+}
+#btndiv .mybtn a{
+	font-family: serif;
+	text-align: center;
+	text-decoration: none;
+	font-size: 1.2rem;
+	color: black;
+}
+.mybtn:hover{
+    background-color: white;
+    transform: scale(1.2);
+}
+#back {
+	z-index: 3;
+	position: sticky;
+	bottom: 12px;
+}
+#back button{
+	outline: none;
+	border: none;
+	position: relative;
 	border-radius: 5px;
+	left: 95%;
+	width: 50px;
+	height: 50px;
+	background-color:#607d8b;
+	transition: all 0.3s ease-in-out;
 }
 
+#back button:hover{
+	background-color:red	
+}
+#back i{
+	color: white;
+	font-size: 1.2rem;
+}
+
+.about p{
+	font-family: serif;
+	font-size: 1.15rem;
+}
+
+.about h2{
+	color: orange;
+	font-family: 'FontAwesome';
+}
+.food-quality p{
+	font-family: serif;
+	font-size: 1.15rem;
+}
+.food-quality h2{
+	color: black;
+	font-family: 'FontAwesome';
+}
+#food-gallery h1{
+	font-family: 'FontAwesome';
+}
 #third div
 {
 	width: 30%;
@@ -89,21 +162,32 @@ span
 	top:15vh;
 	margin: 50px;
 	color: #fff;	
-	/*border:2px solid yellow;*/
 }
+
 #third div h3
 {
 	font-size: 2rem;
 	margin: 15px;
 }
 
-
 .myimg img
 {
-	height: 30vh;
+	height: 30vh;	
 }
 
-
+#food-gallery .card:hover{
+	transition: all 0.6s ease-in-out;
+	transform: scale(1.2);
+	z-index: 2;
+	cursor: pointer;
+}
+#five p{
+	font-family: serif;
+	font-size: 1.15rem;
+}
+#five h1{
+	font-family: 'FontAwesome';
+}
 #five::before
 {
 	content: "";
@@ -113,7 +197,6 @@ span
 	background-image: url(img/b3.jpg);
 	z-index: -1;
 	opacity: .3;
-	/*background-size: 100% 100%;*/
 }
 #seven
 {
@@ -125,13 +208,40 @@ span
 	width: 100%;
 	height: 60vh;
 }
-
-
+#menu h1{
+	font-family: 'FontAwesome';
+}
+#menu h3{
+	font-family: 'FontAwesome';
+}
+#menu p{
+	font-family: serif;
+	font-size: 1.15rem;
+}
+#menu .card:hover{
+	color: white;
+	background-color: orange;
+	transition: all 0.3s ease-in-out;
+	transform: translateY(-26px);
+}
+#menu .card img{
+	height: 40vh;
+}
+#eight h3{
+	padding: 30px;
+	font-family: 'FontAwesome';
+}
 #etwo a 
 {
 	color: #fff;
+	font-family: serif;
+	font-size: 1.25rem;
+	transition: all 0.3s ease-in-out;
 }
-
+#etwo a:hover{
+	transform: scale(1.2);
+	color: orange;
+}
 #ethree
 {
 	width: 100%;
@@ -142,8 +252,6 @@ span
 	margin: 10px 50px;
 	display: flex;
 	justify-content: center;
-	
-	/*padding: 20px 20px;*/
 	color: #fff;
 
 }
@@ -153,11 +261,54 @@ span
 	margin-right:30px;
 	padding: 10px;
 }
+#ethree ul li i:hover{
+	transition: all 0.2s ease-in-out;
+	color: orange;
+	cursor: pointer;
+}
+#contact-form  h1{
+	font-family: 'FontAwesome';
+	color: orange;
+}
+#contact-form  label{
+	font-family: 'FontAwesome';
+	font-weight: 500;
+	font-size: 1.1rem;
+	color: orange;
+}
+#contact-form  button{
+	font-family: serif;
+	font-size: 1.2rem;
+	color: black;
+	padding: 10px 20px;
+	margin: 20px;
+	font-size: 1.1rem;
+	background-color: orange;	
+	border:none;
+	border-radius: 35px 0px 35px 0px;
+   	transition: all 0.5s ease-in-out;
+}
+
+#contact-form button:hover{
+    background-color: white;
+    transform: scale(1.2);
+}
+#contact-form {
+	width: 80%;
+    border-radius: 60px 0px 60px 0px;
+}
+#contact-form .form-label{
+	margin: 12px 0px;
+}
+
 @media screen and (max-width:400px)
 {
 	#bg-img
 	{
 		display: none;
+	}
+	#contact-form {
+		width: 100%;	
 	}
 	#five::before
 	{
@@ -168,6 +319,5 @@ span
 	background-image: url(img/b3.jpg);
 	z-index: -1;
 	opacity: .3;
-	/*background-size: 100% 100%;*/
 	}
 }
