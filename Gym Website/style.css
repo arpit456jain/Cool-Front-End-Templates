@@ -1,10 +1,9 @@
 body{
     margin: 1%;
     overflow-x: hidden;
-<<<<<<< HEAD
+
     /* background-image: url(img/img3.jpg); */
-=======
->>>>>>> f5b907ef55945c0ba8afb34c5d31296875bb5ffa
+
 }
 
 .navbar{
@@ -32,15 +31,13 @@ body{
 }
 .homePage{
     height: 800px;
-<<<<<<< HEAD
+
     background-image: url(img/img3.jpg);
-=======
-    background-image: url(img/pic.jpeg);
     opacity: 0.9;
     background-color: rgb(28 26 26 / 25%);
     background-blend-mode: darken;
     
->>>>>>> f5b907ef55945c0ba8afb34c5d31296875bb5ffa
+
 }
 .homePage h1 {
     color: #fff;
