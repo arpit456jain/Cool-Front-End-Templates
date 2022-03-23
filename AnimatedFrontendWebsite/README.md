@@ -1,2 +1,0 @@
-# GSSOC
-Creating sample templates
