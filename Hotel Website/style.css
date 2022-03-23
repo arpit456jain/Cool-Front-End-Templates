@@ -1,19 +1,35 @@
 html{
     scroll-behavior: smooth;
 }
+table
+{
+    border-color:black;
+    width:100%;
+}
 body{
-    background-color: #fff;
+    background-color:rgb(241, 197, 115);
     padding: 0px;
     margin: 0px;
 }
+
 .navbar{
     margin-top: 0px;
+    position:sticky;
 }
 .navbarList{
     list-style-type: none;
     text-align: center;
-    background-color: #F5692E;
+    background-color:rgb(241, 197, 115);
     margin: 0px;
+    height:80px;
+    width:480px;
+    font-size:25px;
+}
+.navbar:hover{
+    opacity:0.6;
+}
+.navbarlist:hover{
+    opacity:0.6;
 }
 ul li{
     display: inline-block;
@@ -34,7 +50,7 @@ ul li{
 }
 .home{
     height: 440px;
-    background-color: #1FFFE1;
+    background-color: #75096c;
     margin-top: 0px;
 }
 .innerBox{
@@ -46,6 +62,8 @@ ul li{
     display: inline-block;
     margin: 20px 40px 20px 40px;
     padding-top:30px ;
+    height:200px;
+    width:200px;
 }
 
 .selection h2{
@@ -216,6 +234,7 @@ ul li{
     background-image: url(images/img1.jpg);
     background-size: cover;
     padding-bottom: 30px;
+    
     /* display: flex;
     margin: 10px auto 10px auto; */
 }
@@ -243,7 +262,168 @@ ul li{
     display: inline;
 }
 
+.mydiv{
+position: absolute;
+top:550px;
+  height:100px;
+  width:400px;
+  left:-270px;
+  background-color: yellow;
+    border: 1px solid black;
+   transition: .8s;
+   border-top-right-radius:80px;
+   border-bottom-right-radius:80px;
+   color:rgb(241, 197, 115);
+  }
+  .mydiv:hover{
+  height:100px;
+  width:400px;
+  left:0px;
+  background-color: yellow;
+  color:black;
+  
+    
 
+  }
+  .im{
+      position:relative;
+      right:0px;
+  }
+  
+@media (min-width:1120px)
+{
+
+}
+
+@media (max-width:1138px)
+{
+    .selection{
+        text-align: center;
+        display: inline-block;
+        margin: 20px 40px 20px 40px;
+        padding-top:30px ;
+        height:200px;
+        width:350px;
+    } 
+}
+@media (max-width:1126px)
+{
+    .navbarList{
+        list-style-type: none;
+        text-align: center;
+        background-color:rgb(241, 197, 115);
+        margin: 0px;
+        height:150px;
+        width:371px;
+    }
+}
+@media (max-width:870px)
+{
+    .selection{
+        text-align: center;
+        display: inline-block;
+        margin: 0px 0px 0px 0px;
+        padding-top:30px ;
+        height:20px;
+        width:270px;
+    } 
+    .home{
+        height: 700px;
+        background-color:  #75096c;
+        margin-top: 0px;
+    }
+    .innerBox{
+        text-align: center;
+        width:800px;
+    }
+ }
+@media (max-width:869px)
+{.navbarList{
+    list-style-type: none;
+    text-align: center;
+    background-color:rgb(241, 197, 115);
+    margin: 0px;
+    height:150px;
+    width:60px;
+
+}
+.navbar{
+    margin-top: 0px;
+    color:black;
+    width:800px;
+}
+    .selection{
+        text-align: center;
+        display: inline-block;
+        margin: 0px 0px 0px 0px;
+        padding-top:30px ;
+        height:20px;
+        width:700px;
+    } 
+    .home{
+        height: 700px;
+        background-color: #75096c;
+        margin-top: 0px;
+        width:850px;
+      
+    }  
+    .innerBox{
+        text-align: center;
+        width:800px;
+    }
+    .luxary{
+        margin-bottom: 30px;
+        background-color: #1FFFE1;
+        text-align: center;
+        margin-top: 30px;
+        padding-bottom: 30px;
+        margin-bottom: 0px;
+        width:800px;
+        /* font-family: 'Italianno', cursive; */
+    }
+}
+@media (max-width:852px)
+{.discount{
+  
+  
+    background-image: url(images/img1.jpg);
+ 
+    height:500px;
+  
+    width:850px;
+    /* display: flex;
+    margin: 10px auto 10px auto; */
+}
+
+.dCard{
+    background-color: #1FFFE1;
+  
+    text-align: center;
+    height: 230px;
+    width:500px;
+    margin-right: 0px;
+    opacity: 0.8;
+    transition: 0.3s;
+    border-radius: 15px;
+    
+  
+}
+    
+} 
+@media (max-width:875px)
+{
+    .luxary{
+        margin-bottom: 30px;
+        background-color: #1FFFE1;
+        text-align: center;
+        margin-top: 30px;
+        padding-bottom: 30px;
+        margin-bottom: 0px;
+        /* font-family: 'Italianno', cursive; */
+        width:850px;
+    }
+    
+}
 
 
 
