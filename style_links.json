@@ -212,6 +212,10 @@
     {
       "name": "Price Template",
       "link": "Price/price.html"
+    },
+    {
+      "name":"Animated Frontend Website",
+      "link": "AnimatedFrontendWebsite/index.html"
     }
 
 
