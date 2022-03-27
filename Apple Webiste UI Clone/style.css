@@ -78,8 +78,12 @@ a:hover{
 }
 
 #poster1, #poster2, #poster3 {
-    background-image: url("./images/pic1.jpg");
-    background-size: 100% 100%;
+
+    background-image: url("./img/pic1.jpg");
+    background-size: cover;
+
+    /*background-size: 100% 100%;*/
+
     height: 100vh;
     padding-top: 20px;
     background-position: 50px; 
@@ -120,8 +124,11 @@ h6{
 }
 
 #poster2{
+
+    background-image: url("./img/pic2.jpg");
+
     background-image: url("./images/pic2.jpg");
-    background-size: 100% 100%;;
+    /*background-size: 100% 100%;;*/
 
 }
 
@@ -140,7 +147,7 @@ i{
 }
 
 #poster3{
-    background-image: url("./images/pic3.jpg");
+    background-image: url("./img/pic3.jpg");
     background-size: 1010px;
     background-repeat: no-repeat;
     /* background-position: 100px; */
@@ -187,32 +194,32 @@ i{
 }
 
 #box1{
-    background-image: url("./images/pic4.jpg");
+    background-image: url("./img/pic4.jpg");
     color: white;
 }
 
 #box2{
-    background-image: url("./images/pic5.jpg");
+    background-image: url("./img/pic5.jpg");
     color: white;
     padding-top: 48px;
 }
 
 #box3{
-    background-image: url("./images/pic6.jpg");
+    background-image: url("./img/pic6.jpg");
 }
 
 
 #box4{
-    background-image: url("./images/pic7.jpg");
+    background-image: url("./img/pic7.jpg");
 
 }
 
 #box5{
-    background-image: url("./images/pic8.jpg");
+    background-image: url("./img/pic8.jpg");
 }
 
 #box6{
-    background-image: url("./images/pic9.jpg");
+    background-image: url("./img/pic9.jpg");
 }
 
 #box1 h1{
@@ -416,7 +423,7 @@ nav .menu-btn i{
         overflow-x: hidden;
     }
     #poster1{
-        background-image: url("./images/pic14.jpg");
+        background-image: url("./img/pic14.jpg");
         background-position: 10px;
         background-size: 100% 100%;
         display: block;
@@ -489,28 +496,24 @@ nav .menu-btn i{
 
     }
     #box2{
-        background-image: url("./images/pic10.jpg");
-        background-size: 100% 100%;
-
-        
+        background-image: url("./img/pic10.jpg");
     }
     #box3{
-        background-image: url("./images/pic11.jpg");
-        background-size: 100% 100%;
-
-
+        background-image: url("./img/pic11.jpg");
     }
     #box4{
-        background-image: url("./images/pic12.jpg");
-        background-size: 100% 100%;
-
-
+        background-image: url("./img/pic12.jpg");
     }
     #box5{
-        background-image: url("./images/pic13.jpg");
-        background-size: 100% 100%;
-        margin-bottom: 0;
-   }
+        background-image: url("./img/pic13.jpg");
+    }
+
+        /*background-size: 100% 100%;*/
+        /*background-size: 100% 100%;*/
+        /*background-size: 100% 100%;*/
+        /*background-size: 100% 100%;*/
+        /*margin-bottom: 0;*/
+
 
     .details{
         padding: 18px 14px;

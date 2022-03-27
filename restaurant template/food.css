@@ -1,0 +1,559 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    
+}
+span
+{
+    color: #e91e63;
+}
+
+.banner
+{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:url(img/bg2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.banner .content h1
+{
+    font-size: 5em;
+    color: #fff;
+    text-shadow: 3px 5px 10px black;
+    margin-top: 100px;
+    
+    
+}
+div
+{
+    text-align: center;
+}
+.banner .content p
+{
+    font-size: 1em;
+    color: #fff;
+    margin-top: 10px;
+    font-weight: 300;
+}
+
+.btn
+{
+    font-size: 1em;
+    display: inline-block;
+    background:#e91e63 ;
+    color: #fff;
+    padding: 10px 30px;
+    margin-top: 20px;
+    transition: 0.5s;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 40px;
+   
+}
+.btn:hover
+{
+    letter-spacing: 6px;
+    transition: 0.5s;
+    font-family: "Sofia";
+}
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;/*hide header by background img*/
+    width: 100%;
+    padding: 40px 50px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    /* here we can use position: absolute; to fix the nav bar with header at top     */
+    
+}
+header.sticky
+{
+    background: #24262b;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0,0, 0.0.5);
+}
+header .logo
+{
+   
+    color: #fff;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+    left: 10px;
+    
+}
+ header.sticky .logo
+ {
+     color: white;
+ }
+header ul
+{
+    display: flex;
+    position: relative;
+}
+header ul li
+{
+    list-style: none;
+    margin-left: 30px;
+   
+}
+header ul li a
+{
+    color: #fff;
+    text-decoration: none;
+
+}
+header.sticky ul li a
+{
+    color: #fff;
+}
+header ul li a:hover
+{
+    letter-spacing: 6px;
+    transition: 0.5s;
+   
+    color:#e91e63 ;
+    text-decoration: underline;
+}
+
+.search-box
+
+{
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    transform: translate(-50%,-50%);
+    height: 20px;
+    border-radius: 40px;
+    padding: 10px;
+    margin-left: 30px;
+
+}
+
+head.sticky .search-box
+{
+    margin-top: 10px;
+}
+.search-btn
+{
+    color: white;
+    float: right;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #e91e63;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   transition: 0.5s;
+  
+    
+
+}
+.search-txt
+{   
+    background: none;
+    border: none;
+    outline: none;
+    float: right;
+    padding: 0 20px;
+    color: white;
+    font-size: 16px;
+    transition: 0.5s;
+    line-height: 40px;
+    width: 0;
+    position: fixed;
+    margin-left:55px ;
+    width: 240px;
+    border: 2px solid white;
+    border-radius: 40px;
+}
+header.sticky .search-txt
+{
+    border: 2px solid #fff;
+    color:#fff;
+}
+  .carousel-cell {
+    width: 90%;
+    height: 68vh;
+    margin-right: 10px;
+     border-radius: 5px;
+     background-attachment: fixed;
+     }
+  .carousel-cell img
+  {
+    width: 100%;
+    border: 3px solid #e91e63;
+}
+.highlights
+{
+    text-align: center;
+    font-weight: 300;
+    font-size: 3em;
+    color: #111;
+}
+.highlights span
+{
+    color: #e91e63;
+}
+section
+{
+    padding:50px;
+}
+.row
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.row .col50
+{
+    position:relative;
+    width: 48%;
+    
+}
+
+.titletxt
+{
+    color: #111;
+    font-size: 2em;
+    font-weight: 300;
+
+}
+.titletxt span
+{
+    color: #e91e63;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+h2+p
+{
+    margin-top: 20px;
+    font-size: 1.3em;
+    word-spacing: 10px;
+    font-weight: 900;
+    text-align: left;
+    
+}
+.row .col50 .imgbx
+{
+   
+    width: 340px;
+    margin: 20px;
+   
+   
+    transition: width 1s ease;
+    
+}
+.row .col50 .imgbx img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border:15px solid #e91e63 ;
+}
+.footer
+{
+    background-color: #24262b;
+    padding: 50px;
+}
+ul
+{
+    list-style: none;
+   
+}
+.row
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.container
+
+{
+    margin: auto;
+    max-width: 1170px;
+}
+.col
+{
+    width: 25%;
+    padding: 0 15px;
+}
+.col h4
+{
+    font-size: 25px;
+    color: #ffffff;
+    margin-bottom: 30px;
+    position: relative;
+    text-shadow: 3px 5px 5px black;
+}
+.col h4::before
+{
+    content: " ";
+    position: absolute;
+    left:80px;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 100px;
+}
+
+.col ul li a
+{
+    font-size: 16px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+    text-align: left;
+    margin-left: 80px;
+    text-shadow: 3px 5px 5px black;
+}
+.col ul li a:hover
+{
+    padding-left: 8px;
+    color: #e91e63;
+}
+.menu h2{
+    text-align: center;
+    font-size: 2em;
+    font-weight: 300;
+    width: 100%;
+   
+}
+.menu .content
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    
+}
+.menu .content .box
+{
+    width: 340px;
+    margin: 20px;
+    border: 15px solid #e91e63;
+    box-shadow:3px 5px 5px  black;
+    transition: width 1s ease;
+    
+}
+.menu .content .box:hover
+{
+    width: 400px;
+    cursor: pointer;
+    transform: 0.5s;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    font-family: "Popins";
+}
+
+.menu .content .box .text:hover
+{
+    color: #e91e63;
+}
+.menu .content .box .imgbox
+{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+.menu .content .box .imgbox img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.menu .content .box .text
+
+{
+    color: #666;
+    
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.menu .viewbtn
+{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    display: inline-block;
+    background:#e91e63 ;
+    color: #fff;
+    padding: 10px 30px;
+    margin-top: 20px;
+    transition: 0.5s;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 40px;
+   
+}
+.menu .viewbtn:hover
+{
+
+
+letter-spacing: 6px;
+transition: 0.5s;
+font-family: "Sofia";
+}
+.experts 
+{
+    background-image: url(img/bg2.jpg);
+    background-size: cover;
+}
+.experts h3{
+    color: #fff;
+    font-size: 2em;
+    text-align: center;
+}
+.experts .area 
+   
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.experts .area .box
+{
+    width: 340px;
+    margin: 20px;
+    padding: 40px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.experts .area .box .imgbox
+{
+   position: relative;
+   width: 80px;
+   height: 80px;
+   margin-bottom: 20%;
+   border-radius: 50%;
+   overflow: hidden; 
+}
+.experts .area .box .imgbox img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.experts .area .box .text
+{
+    color: #666;
+    font-style: italic;
+}
+.contactus h2
+{
+   
+    text-align: center;
+    font-size: 3em;
+    font-weight: 300;
+
+}
+.contact-form
+{
+   
+    
+    padding: 75px 50px;
+    background: #fff;
+    max-width: 500px;
+    margin-top: 50px;
+    border: 5px solid #e91e63;
+    border-radius: 10px;
+}
+.contact-form .inputbox
+
+{
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.contact-form .inputbox input,
+.contact-form .inputbox textarea
+{
+    width: 100%;
+    border: 1px solid #555;
+    padding: 10px;
+    color: #111;
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+    resize: none;
+    border-radius: 30px;
+}
+.contact-form .inputbox input[type="submit"]
+{
+    font-size: 1em;
+    color: #fff;
+    background-color:#e91e63 ;
+    border: none;
+    width: 30%;
+    transition: 0.5s ease ; 
+    text-transform: uppercase;
+    letter-spacing: 6px;
+}
+.contact-form .inputbox input[type="submit"]:hover
+{
+    cursor: pointer;
+    
+}
+.contactus .imgbox
+{
+    position: relative;
+   width: 50%;
+   height: 80%;
+   margin-bottom: 20%;
+   float: right;
+   overflow: hidden; 
+   margin-top: 50px;
+}
+.contactus .imgbox img
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.footer .copyright
+
+{
+    color: #fff;
+    text-align: center;
+}

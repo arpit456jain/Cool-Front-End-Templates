@@ -36,7 +36,7 @@ h1 a {
     padding: 5px;
     font-size: 15px;
     color: #E36A0C;
-    background: white url(Images/search.png) right center no-repeat;
+    background: white url(img/search.png) right center no-repeat;
     border: 1px solid #C8D03E;
 }
 
@@ -136,12 +136,12 @@ ul{
 
 #leftsidebar ul li {
     padding: 4px 0 4px 10px;
-    list-style-image: url(Images/right\ arrow.png);
+    list-style-image: url(img/right\ arrow.png);
 }
 
 #rightsidebar ul li {
     padding: 10px 0 10px 45px;
-    background: url(Images/tick.png) no-repeat left;
+    background: url(img/tick.png) no-repeat left;
 }
 
 .sidebar ul li a {

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guardian Gym</title>
+  
+    <link rel="stylesheet" href="style.css">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark  bg-dark sticky-top" >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">
+              <img src="img/logo3.jpg" alt="logo"  class="d-inline-block align-text-top mx-4">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2  mb-lg-0">
+              <li class="nav-item mx-3">
+                <a class="nav-link " aria-current="page" href="./index.html"style="color: white;">Home</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link " aria-current="page" href="./index.html#about"style="color: white;">About US</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="./index.html#gallery"style="color: white;">Gallery</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="./index.html#pricing"style="color: white;">Membership Plans</a>
+              </li>
+              <li class="nav-item mx-3" >
+                <a class="nav-link active" href="#"style="color: white;">Contact Us</a>
+              </li>
+          </div>
+        </div>
+    </nav>
+  
+  <div class="container my-5  w-50" id="contact" >
+    <form>
+        <h1 class="py-3 cont-head">Contact Now</h1>
+        <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" aria-describedby="emailHelp">
+            
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="address" class="form-label">Address</label>
+            <input type="text" class="form-control" id="address" aria-describedby="emailHelp">
+            
+          </div>
+        <div class="mb-3">
+          <label for="phone" class="form-label">Phone Number</label>
+          <input type="number" class="form-control" id="phone" aria-describedby="emailHelp">
+        </div>
+
+        <select class="form-select my-5" aria-label="Default select example">
+            <option selected>What is your Membership Plan?</option>
+            <option value="1">Silver</option>
+            <option value="2">Gold</option>
+            <option value="3">Platinum</option>
+          </select>
+        <button type="submit" class="btn btn-primary my-2">Submit</button>
+    </form>
+  </div>
+   
+ <hr>
+  
+
+  <!-- Footer Section -->
+  <div class="container" id="footer">
+    <footer class="pt-5">
+      <div class="row">
+        <div class="col-2">
+          <h5>Company</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="./index.html" class="nav-link p-0 text-muted">Home</a></li>
+            <li class="nav-item mb-2"><a href="./index.html#about" class="nav-link p-0 text-muted">About Us</a></li>
+            <li class="nav-item mb-2"><a href="./index.html#gallery" class="nav-link p-0 text-muted">Gallery</a></li>
+            <li class="nav-item mb-2"><a href="./index.html#pricing" class="nav-link p-0 text-muted">Membership</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Contact</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-2">
+            <h5>Services</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a class="nav-link p-0 text-muted">Personal Trainer</a></li>
+              <li class="nav-item mb-2"><a class="nav-link p-0 text-muted">Spa Service</a></li>
+              <li class="nav-item mb-2"><a class="nav-link p-0 text-muted">Childcare</a></li>
+              <li class="nav-item mb-2"><a class="nav-link p-0 text-muted">Aquatic Pool</a></li>
+              <li class="nav-item mb-2"><a class="nav-link p-0 text-muted">Court</a></li>
+            </ul>
+          </div>
+  
+        <div class="col-2">
+          <h5>Location</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a  class="nav-link p-0 text-muted">Delhi</a></li>
+            <li class="nav-item mb-2"><a  class="nav-link p-0 text-muted">Mumbai</a></li>
+            <li class="nav-item mb-2"><a  class="nav-link p-0 text-muted">Bengaluru</a></li>
+            <li class="nav-item mb-2"><a  class="nav-link p-0 text-muted">Kolkata</a></li>
+            <li class="nav-item mb-2"><a  class="nav-link p-0 text-muted">Lucknow</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-4 offset-1 subscribe">
+          <form>
+            <h5>Subscribe to our newsletter</h5>
+            <p>Monthly digest of whats new and exciting from us.</p>
+            <div class="d-flex w-100 gap-2">
+              <label for="newsletter1" class="visually-hidden">Email address</label>
+              <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+              <button class="btn btn-primary" type="button">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+  
+      <div class="d-flex justify-content-between pt-4 mt-4 border-top icon">
+        <p>© 2022 Guardian Gym, Inc. All rights reserved.</p>
+        <ul class="list-unstyled d-flex">
+          <li class="ms-3"><a class="link-dark" href="#"><i class="fa fa-twitter"></i></a></li>
+          <li class="ms-3"><a class="link-dark" href="#"><i class="fa fa-instagram"></i></a></li>
+          <li class="ms-3"><a class="link-dark" href="#"><i class="fa fa-facebook-square"></i></a></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+
+  </section>
+  <div id="back">
+		<a href="#"><button ><i class="fa fa-chevron-up"></i></button></a>
+	</div>
+</body>
+</html>
