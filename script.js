@@ -57,12 +57,11 @@ const getProject = fetch('style_links.json')
 });
 
  const displayProjects = (projects) => {
-
-    const htmlString = projects
+        const htmlString = projects
     .map((project) => {
         return`<div class="stylebox">
              <div class="image">
-                 <img src="https://raw.githubusercontent.com/arpit456jain/Cool-Front-End_Templates/master/${project.name}/preview.png" alt="">
+                 <img src="./${project.name}/preview.png" alt="">
               </div>
               <div class="card-data">
                   <p class="card-heading">${project.name}</p>
