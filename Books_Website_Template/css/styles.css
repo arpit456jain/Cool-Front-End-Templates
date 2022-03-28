@@ -52,7 +52,7 @@ body {
 }
 
 .container .navbar .nav-item .nav-link {
-  color: rgb(84, 83, 146);
+  color: rgb(140, 139, 184);
 }
 
 .container .navbar .navbar-brand {
@@ -250,8 +250,10 @@ form label {
     margin: auto;
   }
 
-  .nav-link {
+  .container .navbar .nav-item .nav-link {
     font-size: 30px;
+    color: white;
+    background: rgba(100, 100, 100, 0.3);
   }
 
   .dropdown-item {
