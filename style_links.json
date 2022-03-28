@@ -547,8 +547,11 @@
     "link": "Whatsapp/index.html"
 
   },
-   {
-
+    {
+      "name":"Animated Frontend Website",
+      "link": "AnimatedFrontendWebsite/index.html"
+    },
+  {
      "name": "ZomatoClone",
     "link": "ZomatoClone/index.html"
 
