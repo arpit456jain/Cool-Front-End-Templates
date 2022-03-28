@@ -272,45 +272,34 @@ html{
  	font-size: 1.1rem;
  }
 
- .footer{
-  background: url("img/footer.jpg") no-repeat;
+ hr{
+	border: 0.2px solid rgb(255, 255, 255,0.25);
+	margin-bottom: 13px ;
+	margin-top: 10px;
+	
+  }
+  .footer {
+	background-color: rgb(15, 150, 204);
+	color: #fff;
+	text-align: center;
+	font-weight:bold;
+	padding: 2rem 0;
+  }
   
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-}
-
-.footer .box-container{
-    display: flex;
-	align-items: center;
-	justify-content: center;
-    flex-wrap: wrap;
-}
-
-.footer .box-container .box{
-    flex:1 1 25rem;
-    margin:2rem;
-}
-
-.footer .box-container .box h3{
-
-    font-size: 2.5rem;
-    color: darkblue;
-    padding:1rem 0;
-}
-
-.footer .box-container .box p{
-	text-decoration: none;
-    font-size: 1.5rem;
-    color: black;
-    padding:.5rem 0;
-}
-
-.footer .box-container .box a{
-	text-decoration: none;
-    font-size: 1.5rem;
-    color: black;
-    padding:.5rem 0;
-    display: block;
-}
+  .footer_title {
+	font-size: 2rem;
+	margin-bottom:5px;
+  }
+  
+  .footer_socials {
+	margin-bottom: 5px;
+  }
+  .footer_subject{
+	  font-size: 1.2rem;
+  }
+  .footer_icon {
+	font-size: 1.6rem;
+	color: #fff;
+	margin: 5px;
+  }
 

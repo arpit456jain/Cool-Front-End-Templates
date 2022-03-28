@@ -8,7 +8,7 @@
 .header{
   min-height: 100vh;
   width: 100%;
-  background-image: linear-gradient(rgba(4, 9, 30, 0.7),rgba(4,9,30,0.7)),url('images/pic2.jpg');
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7),rgba(4,9,30,0.7)),url('img/pic2.jpg');
   background-position: center;
   background-size: cover;
   position: relative;
@@ -275,7 +275,7 @@ li a {
   .about1{
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4, 9, 30, 0.7),rgba(4,9,30,0.7)),url('images/pic5.jpg');
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7),rgba(4,9,30,0.7)),url('img/pic5.jpg');
     background-position: center;
     background-size: cover;
     position: relative;
@@ -387,7 +387,7 @@ li a {
 .contact{
   margin: 100px auto;
   width: 90%;
-  background-image: /*linear-gradient(rgba(0,0,0,0.7)),*/ url(images/pic10.jpg);
+  background-image: /*linear-gradient(rgba(0,0,0,0.7)),*/ url(img/pic10.jpg);
   background-position: center;
   background-size: cover;
   border-radius: 10px;

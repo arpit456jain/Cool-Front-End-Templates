@@ -152,6 +152,8 @@ GitHub will alert you that you can merge the two branches because there is no co
   <tbody><tr>
      <td align="center"><a href="https://github.com/astha2412"><img alt="" src="https://avatars.githubusercontent.com/u/87020129?v=4" width="100px;"><br><sub><b>Kumari Astha Rani </b></sub></a><br></td> </a></td>
      <td align="center"><a href="https://github.com/VidhiBhatt01"><img alt="" src="https://avatars.githubusercontent.com/u/83345228?v=4" width="100px;"><br><sub><b> Vidhi Bhatt</b></sub></a><br></td></a></td>
+		 <td align="center"><a href="https://github.com/DEEPALI-SUK"><img alt="" src="https://avatars.githubusercontent.com/u/64724041?v=4" width="100px;"><br><sub><b> DEEPALI-SUK</b></sub></a><br></td></a></td>
+		 <td align="center"><a href="https://github.com/DEEPIKA-SUK"><img alt="" src="https://avatars.githubusercontent.com/u/64724039?v=4" width="100px;"><br><sub><b> DEEPIKA-SUK</b></sub></a><br></td></a></td>
 
 </tbody></table>
 

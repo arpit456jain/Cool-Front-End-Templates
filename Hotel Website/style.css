@@ -138,7 +138,7 @@ ul li{
 
 }
 .card-1{
-    background-image: url(images/header4.jpg);
+    background-image: url(./img/header4.jpg);
     background-size: contain;
     font-family: 'Italianno', cursive;
     font-size: 40px;
@@ -152,7 +152,7 @@ ul li{
 }
 
 .card-2{
-    background-image: url(images/img11.jpg);
+    background-image: url(./img/img11.jpg);
     background-size: cover;
     font-family: 'Italianno', cursive;
     font-size: 40px;
@@ -164,7 +164,7 @@ ul li{
     opacity: 0.8;
 }
 .card-3{
-    background-image: url(images/img5.jpg);
+    background-image: url(./img/img5.jpg);
     background-size: cover;
     font-family: 'Italianno', cursive;
     font-size: 40px;
@@ -213,7 +213,7 @@ ul li{
 .discount{
     text-align: center;
     padding-top: 30px;
-    background-image: url(images/img1.jpg);
+    background-image: url(./img/img1.jpg);
     background-size: cover;
     padding-bottom: 30px;
     /* display: flex;
