@@ -38,7 +38,7 @@ h1 {
 }
 #header {
     width: 100%;
-     background-image:url("../images/head-3-new1.png");
+     background-image:url("../img/head-3-new1.png");
     position: sticky;
     top: 0px;  
     /* background-color:gray; */
@@ -495,7 +495,7 @@ h1 {
     }
     #header {
         width: 100%;
-         background-image:url("../images/head-3-new1.png");
+         background-image:url("../img/head-3-new1.png");
         /* position: sticky;
         top: 0px;  */
         /* background-color:gray; */

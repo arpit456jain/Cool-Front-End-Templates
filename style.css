@@ -43,6 +43,51 @@ h1 {
       left: 0; 
     }  
    
+
+.SearchBox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchBar{
+  outline: none;
+  border: 3px solid #222636;
+  font-family: 'Space Mono';
+  font-size: 13px;
+  padding: .5em 2em .5em .3em;
+  text-align: left;
+  width: 250px;
+}
+
+.searchIcon{
+  color: black;
+  position: absolute;
+  right: 37em;
+
+}
+
+@media only screen and (max-width: 600px){
+  .searchIcon{
+    color: #000;
+    right: 7em;
+  }
+}
+
+@media only screen and (max-width: 400px){
+  .searchIcon{
+    color: #000;
+    right: 5em;
+  }
+}
+
+/* @media only screen and (max-width: 768px){
+  .searchIcon{
+    color: #000;
+    right: 18em;
+  }
+} */
+
 .styles {
   display: flex;
   justify-content: space-around;
@@ -94,7 +139,7 @@ h1 {
   justify-content: space-between;
   gap: 1rem;
 }
-.stylebox a {
+/* .stylebox a {
   
   border: 2px solid #1d1d1d;
   padding: 1vmin;
@@ -109,7 +154,19 @@ h1 {
 {
   background-color: #1d1d1d;
   color: white;
-}.stylebox a.code {
+} */
+
+.btnn{
+  border: 2px solid #101522;
+  width: 100%;
+  padding: .5em;
+  transition: 0.3s;
+}
+.btnn:hover{
+  background-color: #101522;
+  color: white;
+}
+.stylebox a.code {
   background-color: rgb(47, 128, 0);
 }
 .stylebox a.code:hover {

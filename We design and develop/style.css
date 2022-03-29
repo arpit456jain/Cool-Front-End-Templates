@@ -7,12 +7,12 @@
 }
 .mybg
 {
-	background:url("bg.jpg");
+	background:url("img/bg.jpg");
 	height: 100vh;
 }
 .mybg2
 {
-	background:url("bg2.jpg");
+	background:url("img/bg2.jpg");
 	background-repeat: no-repeat;
 	height: 60vh;
 }
@@ -62,7 +62,7 @@ border: none;
 @media screen and (max-width:1100px) {
    .mybg
 {
-	background:url("bg3.jpg");
+	background:url("img/bg3.jpg");
 	height: 100vh;
 }
 

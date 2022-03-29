@@ -9,6 +9,6 @@ jobs:
     - uses: actions/first-interaction@v1
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
-        issue-message: 'Hi 😄, thanks for creating your first issue at Cool-Front-End_Templates project!🚀⚡ do read and follow the [Code of Conduct](https://github.com/arpit456jain/Amazing-Css-Effects/blob/master/CODE_OF_CONDUCT.md) while contributing.'
+        issue-message: 'Hi 😄, thanks for creating your first issue at Cool-Front-End_Templates project!🚀⚡ do read and follow the [Code of Conduct](https://github.com/arpit456jain/Cool-Front-End-Templates/blob/master/CODE_OF_CONDUCT.md) while contributing.'
         pr-message: 'Thank you for your pull request and welcome to our community! We will soon be getting back to you. Your patience will be greatly appreciated!Thanks! 🥳'
 
