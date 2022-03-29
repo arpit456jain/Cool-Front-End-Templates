@@ -125,7 +125,7 @@ GitHub will alert you that you can merge the two branches because there is no co
 
 ### Need Some Help in this Repo -> [Web Development And Resources](https://github.com/arpit456jain/Web-Development-Path-And-Resources)
 
-<p align="center"><img src="https://www.gurpreetsaluja.com/wp-content/uploads/2016/05/always-keep-learning.png" width=100% height=></p>
+<p align="center"><img src="https://www.gurpreetsaluja.com/wp-content/uploads/2016/05/always-keep-learning.png" width=100%></p>
 <hr>
 
 ### This project was a part of the following Open Source Program
