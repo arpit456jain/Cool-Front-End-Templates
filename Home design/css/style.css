@@ -361,6 +361,7 @@ header {
   letter-spacing: 1rem;
   text-transform: uppercase;
   background-image: linear-gradient(to right bottom, #24264c, #2E9CCA);
+  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   animation-name: moveInLeft;
