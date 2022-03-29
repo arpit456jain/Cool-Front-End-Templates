@@ -8,12 +8,18 @@ body{
 }
 .navbar{
     margin-top: 0px;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 50;
+    height: 90px;
 }
 .navbarList{
     list-style-type: none;
     text-align: center;
     background-color: #F5692E;
     margin: 0px;
+    height: 100%;
 }
 ul li{
     display: inline-block;
@@ -22,6 +28,7 @@ ul li{
     padding: 10px;
     font-family: 'PT Sans', sans-serif;
     font-size: 30px;
+    height: 100%;
 }
 .navbar a{
     text-decoration: none;
@@ -35,10 +42,12 @@ ul li{
 .home{
     height: 440px;
     background-color: #1FFFE1;
-    margin-top: 0px;
+    margin-top: 90px;
+    
 }
 .innerBox{
     text-align: center;
+    
 }
 
 .selection{
