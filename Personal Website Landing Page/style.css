@@ -11,7 +11,7 @@ html{
 header{
     width: 100%;
     height: 100vh;
-    background:url(bg1.jpg) no-repeat center center/cover;
+    background:url(img/bg1.jpg) no-repeat center center/cover;
 }
 .header_menu{
     color: white;

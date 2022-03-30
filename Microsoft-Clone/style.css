@@ -15,7 +15,7 @@ li > a {
   height: 70vh;
   background-repeat: no-repeat;
   background-size: contain;
-  background-image: url(./assets/header.jpg);
+  background-image: url(./img/header.jpg);
   background-color: #e6e6e6;
 }
 .hero-text > p {
@@ -40,7 +40,7 @@ li > a {
     height: 100vh;
     background-repeat: no-repeat;
     background-size: contain;
-    background-image: url(./assets/hero-sm.png);
+    background-image: url(./img/hero-sm.png);
   }
   .hero-text {
     margin-top: 150px;
@@ -70,7 +70,7 @@ li > a {
   }
 }
 #banner {
-  background-image: url(./assets/banner.png) !important;
+  background-image: url(./img/banner.png) !important;
 }
 h5 {
   font-size: 15px;
