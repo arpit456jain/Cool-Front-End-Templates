@@ -64,9 +64,14 @@ svg{
     position: absolute;
     left:70px;
     padding: 15px 30px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 .main > div > svg{
     width: auto;
+}
+.main::-webkit-scrollbar {
+  display: none;
 }
 
 button{
