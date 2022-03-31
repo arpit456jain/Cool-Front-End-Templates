@@ -123,16 +123,16 @@ GitHub will alert you that you can merge the two branches because there is no co
 
 ## 📌Till Then
 
-### Need Some Help in this Repo -> [Web Development And Resourcses](https://github.com/arpit456jain/Web-Development-Path-And-Resources)
+### Need Some Help in this Repo -> [Web Development And Resources](https://github.com/arpit456jain/Web-Development-Path-And-Resources)
 
-<p align="center"><img src="http://www.gurpreetsaluja.com/wp-content/uploads/2016/05/always-keep-learning.png" width=30%></p>
+<p align="center"><img src="https://www.gurpreetsaluja.com/wp-content/uploads/2016/05/always-keep-learning.png" width=100%></p>
 <hr>
 
 ### This project was a part of the following Open Source Program
 
-![Devincept](https://user-images.githubusercontent.com/56088741/123548852-1ef59d00-d784-11eb-8e39-255e0c3e97d5.gif)
+[<img alt="Devincept" width=100% src="https://user-images.githubusercontent.com/56088741/123548852-1ef59d00-d784-11eb-8e39-255e0c3e97d5.gif">](https://user-images.githubusercontent.com/56088741/123548852-1ef59d00-d784-11eb-8e39-255e0c3e97d5.gif)
 
-![HacktoberFest'21](https://user-images.githubusercontent.com/59393136/135566614-5635902f-2907-4e01-8baf-3cb1b43a6b20.png)
+[<img alt="HacktoberFest'21" width=100% src="https://user-images.githubusercontent.com/59393136/135566614-5635902f-2907-4e01-8baf-3cb1b43a6b20.png">](https://user-images.githubusercontent.com/59393136/135566614-5635902f-2907-4e01-8baf-3cb1b43a6b20.png)
 
 <hr>
 
