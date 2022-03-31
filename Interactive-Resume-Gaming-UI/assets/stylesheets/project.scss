@@ -1,0 +1,333 @@
+/* Project Banner and Frames */
+
+.project-container {
+  left: 4300px;
+}
+
+.project-banner {
+  background-image: url('../images/projects-banner.png');
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.project-frame-1-cont {
+  width: 290px;
+  height: 400px;
+  bottom: 32%;
+  left: 4900px;
+  z-index: 998;
+  position: relative;
+}
+
+.project-frame-1 {
+  background-image: url('../images/frame-1.png');
+  height: 100%;
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+.portrait-1-cont {
+  height: 332px;
+  width: 208px;
+  bottom: 83.5%;
+  left: 38px;
+  z-index: 999;
+  position: relative;
+}
+
+.portrait-1 {
+  background-image: url('../images/portrait-1.png');
+  min-height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+}
+
+.project-frame-2-cont {
+  width: 600px;
+  height: 450px;
+  bottom: 32.5%;
+  left: 5400px;
+  z-index: 998;
+  position: relative;
+}
+
+.project-frame-2 {
+  background-image: url('../images/frame-2.png');
+  height: 100%;
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+.portrait-2-cont {
+  height: 130px;
+  width: 390px;
+  top: 20.5%;
+  left: 101px;
+  z-index: 999;
+  position: relative;
+}
+
+.portrait-2 {
+  background-image: url('../images/portrait-2.png');
+  min-height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+}
+
+.project-frame-3-cont {
+  width: 600px;
+  height: 450px;
+  bottom: 25%;
+  left: 5200px;
+  z-index: 998;
+  position: relative;
+}
+
+.project-frame-3 {
+  background-image: url('../images/frame-2.png');
+  height: 100%;
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+.portrait-3-cont {
+  height: 130px;
+  width: 390px;
+  top: 20.45%;
+  left: 101px;
+  z-index: 999;
+  position: relative;
+}
+
+.portrait-3 {
+  background-image: url('../images/portrait-3.png');
+  min-height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+}
+
+.project-frame-4-cont {
+  width: 290px;
+  height: 400px;
+  bottom: 32%;
+  left: 6000px;
+  z-index: 998;
+  position: relative;
+}
+
+.project-frame-4 {
+  background-image: url('../images/frame-1.png');
+  height: 100%;
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+.portrait-4-cont {
+  height: 332px;
+  width: 208px;
+  top: 8.5%;
+  left: 38px;
+  z-index: 999;
+  position: relative;
+}
+
+.portrait-4 {
+  background-image: url('../images/portrait-4.png');
+  min-height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+}
+
+.project-frame-5-cont {
+  width: 600px;
+  height: 450px;
+  bottom: 35%;
+  left: 6300px;
+  z-index: 998;
+  position: relative;
+}
+
+.project-frame-5 {
+  background-image: url('../images/frame-2.png');
+  height: 100%;
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+.portrait-5-cont {
+  height: 130px;
+  width: 390px;
+  top: 20.5%;
+  left: 101px;
+  z-index: 999;
+  position: relative;
+}
+
+.portrait-5 {
+  background-image: url('../images/portrait-5.png');
+  min-height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+}
+
+.project-frame-6-cont {
+  width: 600px;
+  height: 450px;
+  bottom: 29%;
+  left: 6450px;
+  z-index: 998;
+  position: relative;
+}
+
+.project-frame-6 {
+  background-image: url('../images/frame-2.png');
+  height: 100%;
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+.portrait-6-cont {
+  height: 130px;
+  width: 390px;
+  top: 20.5%;
+  left: 101px;
+  z-index: 999;
+  position: relative;
+}
+
+.portrait-6 {
+  background-image: url('../images/portrait-6.png');
+  min-height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+}
+
+.project-frame-7-cont {
+  width: 600px;
+  height: 450px;
+  bottom: 23%;
+  left: 6600px;
+  z-index: 998;
+  position: relative;
+}
+
+.project-frame-7 {
+  background-image: url('../images/frame-2.png');
+  height: 100%;
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+.portrait-7-cont {
+  height: 131px;
+  width: 390px;
+  top: 20.25%;
+  left: 101px;
+  z-index: 999;
+  position: relative;
+}
+
+.portrait-7 {
+  background-image: url('../images/portrait-7.png');
+  min-height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+}
+
+.project-frame-8-cont {
+  width: 290px;
+  height: 400px;
+  bottom: 32%;
+  left: 7200px;
+  z-index: 998;
+  position: relative;
+}
+
+.project-frame-8 {
+  background-image: url('../images/frame-1.png');
+  height: 100%;
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+.portrait-8-cont {
+  height: 332px;
+  width: 208px;
+  top: 8.5%;
+  left: 38px;
+  z-index: 999;
+  position: relative;
+}
+
+.portrait-8 {
+  background-image: url('../images/portrait-8.png');
+  min-height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+}
+
+.always-ribbon-cont {
+  height: 300px;
+  width: 436px;
+  top: -21.5%;
+  left: -82px;
+  z-index: 1000;
+  position: absolute;
+}
+
+.always-ribbon {
+  background-image: url('../images/always-ribbon.png');
+  opacity: 1;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.project-content {
+  padding: 45px 50px;
+}
+
+.project-content h4 {
+  font-size: 30px;
+}
+
+.project-content p {
+  font-family: 'Patrick Hand SC', cursive;
+  font-size: 20px;
+}

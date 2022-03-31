@@ -1,0 +1,21 @@
+.door-container {
+  height: 800px;
+  width: 500px;
+  z-index: 998;
+  position: relative;
+  bottom: 28.25%;
+  left: 600px;
+  display: flex;
+  justify-content: center;
+}
+
+
+.door {
+  background-image: url('../images/door.png');
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  position: relative;
+  background-position: -128px -76px;
+}

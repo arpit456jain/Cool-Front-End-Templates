@@ -1,0 +1,73 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $londrina;
+}
+
+ul, li, p {
+  font-family: $patrick;
+}
+
+/* Floor */
+.floor-container {
+  height: 100%;
+  width: 11000px;
+  top: 71.75%;
+  left: 0;
+  // right: 25%;
+  z-index: 998;
+}
+
+.basement-container {
+  height: 100%;
+  width: 100%;
+  top: 96.75%;
+  left: 50%;
+  z-index: 998;
+}
+
+.floor {
+  background-image: url('../images/castle-bricks-brown.png');
+  background-size: 150px 150px;
+  height: 100%;
+  width: 100%;
+}
+
+/* Background */
+
+.content-wrapper {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.content {
+  top: 0;
+  left: 0;
+  height: 400%;//3072px;
+  width: 16000px; //1100%; 15026px;
+  position: relative;
+}
+
+.content > div {
+  position: absolute;
+}
+
+.background {
+  background-image: url('../images/castle-dark-bricks-brown.png');
+  height: 100%;
+  width: 100%;
+  top: 0%;
+  left: 0%;
+  background-size: 150px 150px;
+}

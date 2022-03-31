@@ -1,0 +1,18 @@
+.spacebar-container {
+  height: 50px;
+  width: 450px;
+  top: auto;
+  bottom: 0.25%;
+  left: 13400px;
+  z-index: 999;
+}
+
+.spacebar {
+  background-image: url('../images/spacebar.png');
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  background-size: contain;
+  opacity: 0;
+}

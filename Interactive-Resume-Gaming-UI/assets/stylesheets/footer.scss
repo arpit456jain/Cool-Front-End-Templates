@@ -1,0 +1,67 @@
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 0%;
+  width: 100vw;
+  height: 50px;
+  z-index: 10000;
+  background: rgb(255, 255, 255);
+  background: rgba(255, 255, 255, .3);
+}
+
+.links-container {
+  height: 80%;
+  width: 400px;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 10px;
+  top: 5%;
+
+  a {
+    height: 100%;
+    width: auto;
+
+    div {
+      height: 80%;
+      width: 100px;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.resume {
+  background-image: url('../images/resume-text.png');
+}
+.github-repo {
+  background-image: url('../images/github-text.png');
+}
+.portfolio-website {
+  background-image: url('../images/portfolio-text.png');
+}
+
+.icons-container {
+  height: 100%;
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  div {
+    height: auto;
+    width: 80%;
+
+    a {
+      height: 100%;
+      width: 100%;
+
+      i {
+        height: 100%;
+        width: 100%;
+        color: black;
+      }
+    }
+  }
+}

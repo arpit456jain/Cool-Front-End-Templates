@@ -1,0 +1,34 @@
+/* Title */
+
+.title-container {
+  display: flex;
+  justify-content: center;
+  min-width: 100vw;
+  height: 100%;
+  z-index: 998;
+}
+
+.title {
+  background-image: url('../images/title-page.png');
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* Down Arrow Key */
+
+.down-arrow-cont {
+  position: absolute;
+  top: 3%;
+  height: 50px;
+  width: 400px;
+  z-index: 999;
+}
+
+.down-arrow {
+  background-image: url('../images/down-arrow-no-outline.png');
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+}

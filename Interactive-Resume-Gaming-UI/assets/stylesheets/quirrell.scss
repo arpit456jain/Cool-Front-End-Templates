@@ -1,0 +1,26 @@
+.quirrell-container {
+  height: 242px;
+  width: 200px;
+  position: fixed;
+  top: auto;
+  bottom: 3.25%;
+  left: 13700px;
+  z-index: 998;
+}
+
+.quirrell {
+  background-image: url('../images/quirrell.png');
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-repeat: no-repeat;
+}
+
+.quirrell-left {
+  background-position: -50px -22px;
+}
+
+.dust {
+  background-position: -254px -22px;
+
+}

@@ -1,0 +1,30 @@
+/* Fluffy */
+
+.fluffy-container {
+  height: 1000px;
+  width: 1500px;
+  left: 9500px;
+  bottom: 28.25%;
+  z-index: 998;
+  position: relative;
+
+  div {
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+  }
+}
+
+.fluffy {
+  background-image: url('../images/fluffy-main.png');
+  background-position-y: 294px;
+  z-index: 998;
+}
+
+.fluffy-body {
+  background-image: url('../images/fluffy-body.png');
+  background-position-y: 294px;
+  z-index: 997;
+}

@@ -1,0 +1,211 @@
+/* ANIMATIONS */
+
+@keyframes breathe {
+  0%, 100% {
+    top: 0%;
+  }
+
+  50% {
+    top: 2%;
+  }
+}
+
+.breathe {
+  animation: breathe 4s infinite;
+}
+
+@keyframes bounce-master {
+  0%, 60% {
+    top: 100%;
+  }
+
+  75% {
+    top: 5%;
+  }
+
+  90% {
+    top: 25%;
+  }
+
+  95% {
+    top: 10%;
+  }
+
+  97% {
+    top: 20%;
+  }
+
+  100% {
+    top: 15%;
+  }
+}
+
+.bounce-master {
+  animation: bounce-master 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes bounce-expert {
+  0%, 60% {
+    top: 100%;
+  }
+
+  75% {
+    top: 20%;
+  }
+
+  90% {
+    top: 40%;
+  }
+
+  95% {
+    top: 25%;
+  }
+
+  97% {
+    top: 35%;
+  }
+
+  100% {
+    top: 30%;
+  }
+}
+
+.bounce-expert {
+  animation: bounce-expert 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes bounce-proficient {
+  0%, 60% {
+    top: 100%;
+  }
+
+  75% {
+    top: 35%;
+  }
+
+  90% {
+    top: 55%;
+  }
+
+  95% {
+    top: 40%;
+  }
+
+  97% {
+    top: 50%;
+  }
+
+  100% {
+    top: 45%;
+  }
+}
+
+.bounce-proficient {
+  animation: bounce-proficient 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes drop-down {
+  0% {
+    bottom: 100%;
+  }
+
+  100% {
+    bottom: 33%;
+  }
+}
+
+.drop-down {
+  animation-name: drop-down;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes float {
+  0%, 100% {
+    bottom: 38%;
+  }
+
+  50% {
+    bottom: 37.5%;
+  }
+}
+
+.float {
+  animation: float 4s infinite;
+}
+
+@keyframes always-float {
+  0%, 100% {
+    top: -20.5%;
+  }
+
+  50% {
+    top: -22.5%;
+  }
+}
+
+.always-float {
+  animation: always-float 4s infinite;
+}
+
+@keyframes flash {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.flash {
+  animation: flash 3s infinite;
+}
+
+@keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.fadeout {
+  animation: fadeout 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes skills-float-1 {
+  0%, 100% {
+    top: -20%;
+  }
+
+  50% {
+    top: -18%;
+  }
+}
+
+.skills-float-1 {
+  animation: skills-float-1 3s infinite;
+}
+
+@keyframes spell-fire {
+  0% {
+    left: -100px;
+  }
+
+  100% {
+    left: 400px;
+  }
+}
+
+.spell-fire {
+  animation: spell-fire 1s;
+}

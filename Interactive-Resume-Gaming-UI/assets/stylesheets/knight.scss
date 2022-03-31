@@ -1,0 +1,20 @@
+/* Knight Entity */
+
+.knight-container {
+  height: 500px;
+  width: 200px;
+  z-index: 998;
+  position: relative;
+  bottom: 28.25%;
+  left: 1900px;
+}
+
+.knight {
+  background-image: url('../images/knight.png');
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  position: relative;
+  background-position: -145px -117px;
+}

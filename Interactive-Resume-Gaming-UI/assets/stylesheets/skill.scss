@@ -1,0 +1,227 @@
+/* Skills Banner and Container */
+
+.skills-container {
+  left: 7700px;
+}
+
+.skills-banner {
+  background-image: url('../images/projects-banner.png');
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.outer-skills-container {
+  height: 600px;
+  width: 1000px;
+  z-index: 998;
+}
+
+.skills-set-container {
+  height: 600px;
+  width: 1000px;
+  z-index: 998;
+  position: relative;
+  overflow: hidden;
+}
+
+.skills-set-1 {
+  left: 8400px;
+  bottom: 28.25%;
+}
+
+.skills-set-2 {
+  left: 12000px;
+  bottom: 3.25%;
+}
+
+.skills-banner-container {
+  height: 300px;
+  width:  500px;
+  left: 250px;
+  position: absolute;
+  z-index: 999;
+}
+
+.skills-set-banner {
+  height: 100%;
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative
+}
+
+.skill-set-1-banner {
+  background-image: url('../images/projects-banner.png');
+}
+
+.skills-set-2-banner {
+  background-image: url('../images/skills-banner.png');
+}
+
+.skill-name-cont {
+  height: 200px;
+  width: 300px;
+  top: -5%;
+  position: absolute;
+  z-index: 998;
+}
+
+.skill-banner {
+  height: 100%;
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.skill-name-1, .skill-name-5 {
+  left: 12%;
+}
+
+.skill-name-2, .skill-name-6 {
+  left: 32%;
+}
+
+.skill-name-3, .skill-name-7 {
+  left: 52%;
+}
+
+.skill-name-4, .skill-name-8 {
+  left: 72%;
+}
+
+.line {
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  position: absolute;
+}
+
+.master-line {
+  bottom: 80%;
+}
+
+.expert-line {
+  bottom: 65%;
+}
+
+.proficient-line {
+  bottom: 50%;
+}
+
+.familiar-line {
+  bottom: 35%;
+}
+
+.beginner-line {
+  bottom: 20%;
+}
+
+.text {
+  font-family: 'Londrina Solid', cursive;
+  font-size: 30px;
+  color: white;
+  position: absolute;
+}
+
+.master-text {
+  bottom: 80%;
+}
+
+.expert-text {
+  bottom: 65%;
+}
+
+.proficient-text {
+  bottom: 50%;
+}
+
+.familiar-text {
+  bottom: 35%;
+}
+
+.beginner-text {
+  bottom: 20%;
+}
+
+.skills-hoop-container {
+  width: 250px;
+  height: 600px;
+  top: 100%;
+  position: absolute;
+}
+
+.skills-hoop {
+  background-image: url('../images/hoops.png');
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.snare-container {
+  width: 150px;
+  height: 650px;
+  top: 7%; //change to 100%
+  position: absolute;
+}
+
+.snare {
+  background-image: url('../images/snare.png');
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.snare-1 {
+ background-position: -55px 0px;
+}
+
+.snare-2 {
+  background-position: -180px 0px;
+}
+
+.snare-3 {
+  background-position: -305px 0px;
+}
+
+.snare-4 {
+  background-position: -435px 0px;
+}
+
+
+
+.skill-1 {
+  left: 15%
+}
+
+.skill-2 {
+  left: 35%;
+}
+
+.skill-3 {
+  left: 55%;
+}
+
+.skill-4 {
+  left: 75%;
+}
+
+.skill-5 {
+  left: 18%;
+}
+
+.skill-6 {
+  left: 38%;
+}
+
+.skill-7 {
+  left: 60%;
+}
+
+.skill-8 {
+  left: 80%
+}

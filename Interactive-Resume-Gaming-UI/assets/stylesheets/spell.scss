@@ -1,0 +1,18 @@
+.spell-container {
+  height: 200px;
+  width: 400px;
+  top: auto;
+  bottom: 3.25%;
+  left: 13426px;
+  z-index: 999;
+  overflow: hidden;
+}
+
+.spell {
+  background-color: red;
+  top: 38.5%;
+  left: -80px;
+  height: 2px;
+  width: 20%;
+  position: absolute;
+}

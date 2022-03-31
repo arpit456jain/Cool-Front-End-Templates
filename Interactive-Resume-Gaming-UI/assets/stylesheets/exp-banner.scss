@@ -1,0 +1,106 @@
+/* Work Experience Banners */
+
+.banner-container {
+  height: 300px;
+  width: 500px;
+  z-index: 998;
+  position: relative;
+}
+
+.exp-container {
+  left: 2150px;
+}
+
+.exp-banner {
+  background-image: url('../images/experience-banner.png');
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.g-banner-container {
+  height: 500px;
+  width: 350px;
+  z-index: 998;
+  position: relative;
+  bottom: 100%;
+  left: 2700px;
+}
+
+.h-banner-container {
+  height: 500px;
+  width: 350px;
+  z-index: 998;
+  position: relative;
+  bottom: 100%;
+  left: 3100px;
+}
+
+.r-banner-container {
+  height: 500px;
+  width: 350px;
+  z-index: 998;
+  position: relative;
+  bottom: 100%;
+  left: 3500px;
+}
+
+.s-banner-container {
+  height: 500px;
+  width: 350px;
+  z-index: 998;
+  position: relative;
+  bottom: 100%;
+  left: 3900px;
+}
+
+.banner {
+  background-image: url('../images/banners.png');
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.gryffindor-banner {
+  background-position: -55px 0px;
+}
+
+.hufflepuff-banner {
+  background-position: -432px 0px;
+}
+
+.ravenclaw-banner {
+  background-position: -812px 0px;
+}
+
+.slytherin-banner {
+  background-position: -1181px 0px;
+}
+
+.work-exp {
+  margin: 100px 50px;
+}
+
+.work-exp ul {
+  font-size: 20px;
+}
+
+.one-1 {
+  color: orange;
+}
+
+.one-2 {
+  color: black;
+}
+
+.two-1 {
+  color: #C9AE87;
+}
+
+.two-2 {
+  color: #D3D3D3;
+}

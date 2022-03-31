@@ -1,0 +1,57 @@
+.harry-container {
+  height: 242px;
+  width: 190px;
+  position: fixed;
+  top: auto;
+  bottom: 28.25%;
+  left: 300px;
+  z-index: 999;
+}
+
+.harry {
+  background-image: url('../images/harry-sprites.png');
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-repeat: no-repeat;
+}
+
+.face-right {
+  background-position: -580px -386px;
+}
+
+.face-left {
+  background-position: -570px -127px;
+}
+
+.walk-face-right-1 {
+  background-position: -400px -386px;
+}
+
+.walk-face-right-2 {
+  background-position: -775px -386px;
+}
+
+.walk-face-left-1 {
+  background-position: -380px -127px;
+}
+
+.walk-face-left-2 {
+  background-position: -775px -127px;
+}
+
+.fall-right {
+  background-position: -188px -390px;
+}
+
+.fall-left {
+  background-position: -188px -127px;
+}
+
+.spell-right {
+  background-position: -1047px -386px;
+}
+
+.spell-left {
+  background-position: -976px -127px;
+}
