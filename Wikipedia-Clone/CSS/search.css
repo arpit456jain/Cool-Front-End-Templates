@@ -1,0 +1,43 @@
+.search-container {
+    width: 95%;
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #a2a9b1;
+    border-radius: 2px 0 0 2px;
+    width: 80%;
+    max-width: 335px;
+}
+
+.search-input {
+    height: 44px;
+    padding: 0.8rem 0.8rem 0.8rem 1.2rem;
+    border: none;
+    outline: none;
+}
+
+.search-select {
+    width: 40px;
+    height: 24px;
+    margin-right: 10px;
+    border: none;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    padding: 0.2rem;
+}
+
+.search-button {
+    width: 56px;
+    height: 46px;
+    background-color: #3366cc;
+    background-image: url("https://raw.githubusercontent.com/wikimedia/portals/a53d8b9f468f3754fe9f8e2eb6f57d5bcf399269/dev/wikipedia.org/assets/img/sprite_assets/search-icon.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    cursor: pointer;
+}

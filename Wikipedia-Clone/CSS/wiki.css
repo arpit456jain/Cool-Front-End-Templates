@@ -1,0 +1,14 @@
+.wiki-name {
+    text-align: center;
+}
+  
+.wiki-name-title {
+    font-size: 3.2rem;
+    font-weight: 300;
+    color: black;
+}
+  
+.wiki-name-detail {
+    font-size: 1.4rem;
+    color: black;
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 1024 1024">
+	<title>
+		Wikimedia Foundation
+	</title>
+	<clipPath id="a">
+		<path d="M0-33l471 471v363h82V438l471-471v1057H0"/>
+	</clipPath>
+	<g clip-path="url(#a)">
+		<path d="M511 224a288 288 0 1 0 2 0"/>
+		<path fill="none" stroke="#000" stroke-width="116" d="M511 102a410 410 0 1 0 2 0"/>
+	</g>
+	<path d="M511 28a158 158 0 1 0 2 0z"/>
+</svg>

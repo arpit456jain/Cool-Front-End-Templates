@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="-64.5 -177.5 300 355">
+	<title>
+		Wikiquote
+	</title>
+	<desc>
+		Wikiquote logo - © and ™ All rights reserved, Wikimedia Foundation, Inc.
+	</desc>
+	<defs>
+		<radialGradient id="a" gradientUnits="userSpaceOnUse" r="59.1" cx="0" cy="0">
+			<stop offset="0%" stop-color="#00003b"/>
+			<stop offset="100%" stop-color="#002f64"/>
+		</radialGradient>
+		<clipPath id="b">
+			<path d="M-25 0l300 300L575 0 275-300z"/>
+		</clipPath>
+	</defs>
+	<circle r="59.1" fill="url(#a)"/>
+	<g clip-path="url(#b)" fill="none">
+		<circle r="101" stroke="#003b6f" stroke-width="29"/>
+		<circle r="156.5" stroke="#3b6fa0" stroke-width="30.4"/>
+		<circle r="215.7" stroke="#6fa0d0" stroke-width="31.4"/>
+	</g>
+</svg>
