@@ -245,3 +245,386 @@ grass:before {
     left: 0;
     top: 1.5rem;
 }
+
+@keyframes grass {
+    100% {
+        transform: skewX(5deg);
+    }
+}
+
+input:focus~div>div {
+    animation: thud 0.1s linear;
+}
+
+@keyframes thud {
+    0% {
+        transform: translate3d(0, 1rem, 0);
+    }
+    60% {
+        transform: translate3d(0, -0.5rem, 0);
+    }
+    80% {
+        transform: translate3d(0, 0.25rem, 0);
+    }
+}
+
+sig {
+    z-index: 500;
+    opacity: 0.2;
+    font-size: 0.5rem;
+    color: #000;
+    width: 10em;
+    top: auto;
+    left: auto;
+    bottom: 1em;
+    right: 1em;
+    transform: skewX(10deg) scaleY(0.45) rotate(2deg);
+}
+
+sig,
+sig * {
+    height: 9.25em;
+    overflow: hidden;
+    border-radius: 0.5em;
+}
+
+sig:before,
+sig *:before {
+    width: 5em;
+    height: 5em;
+    background: currentColor;
+    transform: translate3d(-2.5em, 0, 0) rotate(-45deg);
+    box-shadow: -3em 3em 0 0 currentColor;
+    border-radius: 0.5em 2em 0.5em 2em;
+}
+
+sig * {
+    width: 5em;
+    transform: translate3d(3.75em, 0, 0) scaleY(0.95);
+    display: block !important;
+}
+
+sig *:before {
+    transform: translate3d(-3em, -2em, 0) rotate(-45deg);
+    box-shadow: -3em 3em 0 0 currentColor, -6em 6em 0 0 currentColor;
+    border-radius: 0.5em;
+}
+
+text {
+    width: 95%;
+    max-width: 70rem;
+    bottom: 25%;
+    color: #e7be9d;
+    right: 0;
+    margin: auto;
+    height: 1rem;
+    font-size: 2.5rem;
+    text-align: center;
+    font-family: Telefon, Sans-Serif;
+    z-index: -1;
+    transform: scale(0);
+    font-weight: 100;
+    letter-spacing: 0.1rem;
+    opacity: 0;
+}
+
+text welldone,
+text gameover {
+    box-shadow: 0 0 5rem #ff7700, inset 0 0 0 0.5rem #fff;
+    background: rgba(32, 17, 42, 0.95);
+    padding: 5rem;
+    border-radius: 5rem;
+    border: 1rem solid #20112a;
+}
+
+text welldone {
+    display: none;
+}
+
+text * {
+    position: static;
+}
+
+text p:nth-of-type(1) {
+    font-size: 4rem;
+}
+
+text p:nth-of-type(odd) {
+    color: #bc2f59;
+}
+
+text label {
+    position: absolute;
+    left: auto;
+    right: 3rem;
+    top: 3rem;
+    color: #bc2f59;
+    padding: 2rem;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem rgba(255, 255, 255, 0);
+    cursor: pointer;
+    transition: box-shadow 0.25s ease-in-out;
+    box-sizing: border-box;
+    line-height: 1;
+}
+
+text label:hover,
+text label:focus {
+    box-shadow: 0 0 0.15rem #fff;
+}
+
+text a {
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    text-decoration: none;
+    background: #bc2f59;
+    color: #20112a;
+    box-shadow: 0 0 0 1rem rgba(255, 255, 255, 0), inset 0 0 0 0 rgba(255, 255, 255, 0.2);
+    transition: all 0.2s ease-in-out;
+}
+
+text a:hover,
+text a:focus {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.2), inset 0 0 0 3rem rgba(255, 255, 255, 0.2);
+}
+
+#done:checked~text {
+    transform: scale(0) !important;
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+}
+
+colour>*:not(.lh):not(text) {
+    filter: hue-rotate(0deg) brightness(100%);
+    animation: set 400s linear infinite;
+}
+
+@media screen and (max-device-width: 480px) {
+    colour>*:not(.lh):not(text) {
+        animation: none;
+    }
+}
+
+@keyframes set {
+    15%,
+    85% {
+        filter: hue-rotate(0deg) brightness(100%);
+    }
+    30%,
+    70% {
+        filter: hue-rotate(-20deg) brightness(10%);
+    }
+    40%,
+    60% {
+        filter: hue-rotate(-40deg) brightness(50%);
+    }
+}
+
+stars {
+    width: 220rem;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    animation: stars 400s linear infinite;
+    -webkit-box-reflect: below -50rem;
+    opacity: 0;
+    z-index: 0;
+}
+
+stars:before {
+    width: 0.5rem;
+    height: 0.5rem;
+    box-shadow: 68vmin 7vmin 0 -.1rem #f9b9c8, 193vmin 24vmin 0 -.2rem #8bfce0, 88vmin 16vmin 0 -.1rem #c4fc8b, 37vmin 10vmin 0 -.2rem #cbfc8b, 110vmin 11vmin 0 -.1rem #9e8bfc, 24vmin 15vmin 0 -.2rem #8bfcf4, 64vmin 52vmin 0 -.2rem #fca38b, 129vmin 2vmin 0 -.2rem #fc8ba2, 111vmin 6vmin 0 -.2rem #8bfc8b, 133vmin 42vmin 0 -.1rem #908bfc, 46vmin 36vmin 0 -.2rem #8ba0fc, 171vmin 46vmin 0 -.1rem #effc8b, 70vmin 57vmin 0 -.2rem #fc8bd5, 22vmin 40vmin 0 -.1rem #a6fc8b, 29vmin 9vmin 0 -.1rem #8bedfc, 62vmin 52vmin 0 -.1rem #d5fc8b, 91vmin 24vmin 0 -.1rem #fc8beb, 106vmin 9vmin 0 -.2rem #d7fc8b, 164vmin 31vmin 0 -.1rem #8b8dfc, 97vmin 7vmin 0 -.2rem #fc8bd5, 176vmin 59vmin 0 -.2rem #fc8bfc, 12vmin 57vmin 0 -.1rem #a0fc8b, 102vmin 50vmin 0 -.1rem #8ffc8b, 185vmin 28vmin 0 -.2rem #e38bfc, 61vmin 38vmin 0 -.2rem #8bdafc, 147vmin 31vmin 0 -.1rem #8bfced, 42vmin 35vmin 0 -.1rem #fccd8b, 41vmin 9vmin 0 -.1rem #fcad8b, 20vmin 23vmin 0 -.1rem #8bfcc3, 153vmin 56vmin 0 -.1rem #fca18b, 43vmin 34vmin 0 -.2rem #8bfcda, 96vmin 4vmin 0 -.2rem #fce08b, 109vmin 45vmin 0 -.1rem #f1fc8b, 166vmin 31vmin 0 -.1rem #8bfca7, 1vmin 11vmin 0 -.2rem #8bfccb, 91vmin 40vmin 0 -.2rem #8bcdfc, 123vmin 9vmin 0 -.2rem #fa8bfc, 81vmin 4vmin 0 -.1rem #fce58b, 141vmin 18vmin 0 -.2rem #8bd5fc, 170vmin 27vmin 0 -.2rem #fcc98b, 68vmin 52vmin 0 -.1rem #8bc4fc, 172vmin 44vmin 0 -.2rem #fcc78b, 160vmin 55vmin 0 -.1rem #fc8bad, 81vmin 45vmin 0 -.2rem #fc8be4, 66vmin 26vmin 0 -.1rem #8bfcaf, 67vmin 5vmin 0 -.2rem #8bfce7, 31vmin 28vmin 0 -.1rem #8bfce3, 154vmin 16vmin 0 -.1rem #8ba6fc, 12vmin 43vmin 0 -.2rem #fc8ba2, 161vmin 35vmin 0 -.2rem #fc948b;
+    border-radius: 50%;
+    content: "";
+    position: absolute;
+    top: 5rem;
+    left: 5rem;
+}
+
+stars i:before,
+stars i:after {
+    width: 0.5rem;
+    height: 0.5rem;
+    top: 40rem;
+    left: 40rem;
+    background: #fff;
+    border-radius: 50%;
+    animation: stars 1s linear infinite;
+    opacity: 0.5;
+    box-shadow: 0 0 1rem #fff;
+}
+
+stars i:after {
+    top: 20rem;
+    left: 180rem;
+    animation: stars 1s 0.5s linear infinite;
+    background: #f9b9c8;
+}
+
+sky {
+    width: 100%;
+    height: 78.5rem;
+    overflow: hidden;
+    -webkit-box-reflect: below 0;
+    z-index: 0;
+}
+
+sky:before,
+sky:after {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#323248 10%, #fbd447, #d8480f);
+    opacity: 0;
+    animation: sky 400s linear infinite;
+}
+
+sky:after {
+    background: linear-gradient(#19043f, #1a0f6c);
+}
+
+time {
+    pointer-events: none;
+}
+
+time,
+time sun {
+    width: 170rem;
+    height: 170rem;
+    left: -100%;
+    right: -100%;
+    top: -100%;
+    bottom: -170%;
+    margin: auto;
+}
+
+time sun {
+    bottom: -100%;
+    transform: rotate(0deg);
+    z-index: 1;
+    animation: sun 400s linear infinite;
+    filter: blur(1rem) brightness(400%);
+}
+
+time sun:before {
+    width: 25rem;
+    height: 25rem;
+    border-radius: 50%;
+    background: radial-gradient(#bc6e2f, #bc2f2f);
+    right: 0;
+    margin: auto;
+    transform: rotate(0deg);
+}
+
+time sun:after {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    box-shadow: inset 0 2rem 0 #5a4e38;
+    background: rgba(0, 0, 0, 0.1);
+    left: 60%;
+    top: auto;
+    bottom: 0;
+    transform: rotate(0deg);
+    z-index: 1;
+}
+
+@media (max-width: 500px) {
+    time,
+    input {
+        display: none;
+    }
+}
+
+div.ss lens {
+    top: 20rem;
+    left: 70rem;
+    animation: lensflair 400s linear infinite;
+    width: 60rem;
+    height: 60rem;
+    filter: brightness(150%);
+    transform: rotate(0);
+    opacity: 0;
+}
+
+div.ss lens:before {
+    width: 60rem;
+    height: 60rem;
+    border-radius: 50%;
+    top: 0;
+    right: -50%;
+    left: -50%;
+    margin: auto;
+    box-shadow: 0 70rem 0 -20rem yellow, 0 50rem 0 -25rem yellow, 0 100rem 0 5rem #f437c5, inset 0 0 3rem #ff7700;
+    border: 1rem solid #ff7700;
+}
+
+div.ss lens:after {
+    width: 100rem;
+    height: 100rem;
+    border-radius: 50%;
+    top: 140rem;
+    right: -50%;
+    left: -50%;
+    margin: auto;
+    border: 1rem solid yellow;
+    box-shadow: 0 0 3rem red, inset 0 0 3rem blue;
+}
+
+@keyframes lensflair {
+    20%,
+    30%,
+    70%,
+    80% {
+        opacity: 0;
+    }
+    25%,
+    75% {
+        opacity: 0.05;
+    }
+    100% {
+        transform: rotate(360deg);
+        opacity: 0;
+    }
+}
+
+@keyframes sun {
+    20%,
+    80% {
+        filter: blur(1rem) brightness(390%);
+    }
+    27%,
+    73% {
+        filter: blur(1rem) brightness(200%);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes stars {
+    50% {
+        opacity: 1;
+    }
+}
+
+@keyframes sky {
+    20%,
+    85% {
+        filter: brightness(100%);
+        opacity: 0;
+    }
+    30%,
+    70% {
+        filter: brightness(100%);
+        opacity: 1;
+    }
+    40%,
+    60% {
+        filter: brightness(20%);
+        opacity: 1;
+    }
+}
