@@ -1,0 +1,32 @@
+@charset "UTF-8";
+.house.row3:checked~div,
+.shed.row3:checked~div {
+    filter: hue-rotate(-20deg);
+}
+
+.house.row2:checked~div,
+.shed.row2:checked~div {
+    filter: hue-rotate(-35deg);
+}
+
+.house.row1:checked~div,
+.shed.row1:checked~div {
+    filter: hue-rotate(-50deg);
+}
+
+html {
+    font-size: 0.97vh;
+    width: 100%;
+    height: 100%;
+    background: #f3cece;
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(96, 139, 136, 0.5), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+    box-shadow: inset 0 0 5rem 0 #252529;
+}
