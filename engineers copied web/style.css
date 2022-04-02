@@ -3,7 +3,34 @@
   padding: 0px;
 }
 
+input[type=text] {
+  width: 70%;
+  padding: 12px 20px;
+  margin: 8px 200px;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
 
+input[type=email] {
+  width: 70%;
+  padding: 12px 20px;
+  margin: 8px 200px;
+  box-sizing: border-box;border-radius: 20px;
+}
+input[type=tel] {
+  width: 70%;
+  padding: 12px 20px;
+  margin: 8px 200px;
+  box-sizing: border-box;border-radius: 20px;
+}
+input[type=submit] {
+  width: 70%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;border-radius: 20px;
+  background-color: black;
+  color:white;
+}
 
 .header{
   min-height: 100vh;
@@ -313,12 +340,14 @@ li a {
 }
 
 .register{
-  min-height: 30vh;
-  width: 100%;
-
-  background-position: center;
-  background-size: cover;
-  position: relative;
+ 
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(74, 78, 92, 0.43),rgba(21, 20, 21, 0.7)),url('try.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  
 }
 
 .register{
