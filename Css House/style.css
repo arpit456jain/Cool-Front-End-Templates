@@ -1399,3 +1399,992 @@ shed>label:nth-of-type(even)>i:nth-of-type(5):after {
     border-radius: 0.5rem;
     box-shadow: 0 0.5rem 0 0 #20112a;
 }
+
+.hs.row1.col3:checked~div>div>shed>.row1.col3:after {
+    width: 105%;
+    height: 5rem;
+    background: repeating-linear-gradient(to right, #683f44 1rem, #20112a 2.1rem);
+    top: -2rem;
+    border-bottom: solid 0.5rem #252529;
+    box-shadow: 0 1.5rem 0.5rem -1rem rgba(79, 1, 14, 0.9);
+    border-radius: 0.5rem;
+    left: auto;
+    right: -1rem;
+}
+
+.hs.row1.col3:checked~div>div>shed>.row1.col3>i:nth-of-type(4) {
+    width: 4rem;
+    height: 4rem;
+    right: 0;
+    margin: auto;
+    background: rgba(79, 1, 14, 0.3);
+    top: 3rem;
+    border-radius: 0.5rem;
+    box-shadow: inset 0 0.5rem 1rem rgba(79, 1, 14, 0.75);
+    transform: scale(0.5);
+}
+
+.hs.row1.col3:checked~div>div>shed>.row1.col3>i:nth-of-type(4):before {
+    width: 3.4rem;
+    height: 0.5rem;
+    background: #252529;
+    left: 0.3rem;
+    top: 0.4rem;
+    border-radius: 0.25rem;
+    box-shadow: 0 1.5rem 0 #252529, 0 3rem 0 #252529, 0 0.5rem 0 #000, 0 1rem 0 rgba(79, 1, 14, 0.9), 0 2rem 0 rgba(79, 1, 14, 0.9), 0 2.5rem 0 rgba(79, 1, 14, 0.75);
+}
+
+.hs.row1.col3:checked~div>div>shed>.row1.col3>i:nth-of-type(4):after {
+    width: 0.5rem;
+    height: 3.4rem;
+    background: #252529;
+    left: 0.3rem;
+    top: 0.4rem;
+    border-radius: 0.25rem;
+    box-shadow: 1.5rem 0 0 #252529, 3rem 0 0 #252529;
+}
+
+.hs.row1.col3:checked~div>div>shed>.row1.col3>i:nth-of-type(3) {
+    width: 4rem;
+    height: 9rem;
+    right: 0;
+    margin: auto;
+    background: #bc6e2f;
+    top: 3rem;
+    border-radius: 0.5rem;
+    box-shadow: inset 0 0.5rem 1rem rgba(79, 1, 14, 0.75);
+}
+
+.hs.row1.col3:checked~div>div>shed>.row1.col3>i:nth-of-type(3):after {
+    left: -4rem;
+    border: 1rem solid rgba(255, 255, 255, 0);
+    top: -11rem;
+    border-bottom-color: #252529;
+    transform: rotate(-3deg);
+    height: 4rem;
+    box-shadow: 0 3.7rem 0 -0.5rem #252529;
+    border-radius: 0 0 1rem 1rem;
+}
+
+.hs.row1.col3:checked~div>div>shed>.row1.col3>i:nth-of-type(3):before {
+    width: 14.5rem;
+    height: 4.5rem;
+    border-top: 0.5rem solid #20112a;
+    border-bottom: 0.5rem solid #20112a;
+    top: 5rem;
+    left: -5rem;
+    background: repeating-linear-gradient(to right, #683f44, #20112a 0.5rem, rgba(255, 255, 255, 0) 0.5rem, rgba(255, 255, 255, 0) 1.4rem);
+    border-radius: 0.5rem;
+}
+
+.hs.row1.col3:checked~div>div>shed>.row1.col3>i:nth-of-type(2):before {
+    width: 1rem;
+    height: 9rem;
+    background: #20112a;
+    top: -7rem;
+}
+
+.hs.row1.col3:checked~div>div>shed>.row1.col3:nth-of-type(odd)>i:nth-of-type(2) {
+    width: 1rem;
+    background: #20112a;
+    height: 3rem;
+    border-radius: 0.25rem;
+    top: 18.5rem;
+    left: 10rem;
+    transform: rotate(5deg);
+}
+
+.hs.row1.col3:checked~div>div>shed>.row1.col3:nth-of-type(odd)>i:nth-of-type(2):before {
+    transform: rotate(-45deg);
+    left: -3rem;
+    border-radius: 0 1rem 0 0;
+}
+
+.hs.row1.col3:checked~div>div>shed>.row1.col3:nth-of-type(odd)>i:nth-of-type(2):after {
+    width: 1rem;
+    height: 4rem;
+    transform: rotate(45deg);
+    background: #20112a;
+    top: -6.5rem;
+    left: -2rem;
+    border-radius: 1rem 0 0 0;
+}
+
+.hs.row1.col3:checked~div>div>shed>.row1.col3:nth-of-type(even)>i:nth-of-type(3):after {
+    left: 7rem;
+    transform: rotate(3deg);
+}
+
+.hs.row1.col3:checked~div>div>shed>.row1.col3:nth-of-type(even)>i:nth-of-type(1) {
+    left: 11rem;
+}
+
+.hs.row1.col3:checked~div>div>shed>.row1.col3:nth-of-type(even)>i:nth-of-type(2):before {
+    transform: rotate(45deg);
+    left: 5rem;
+    border-radius: 1rem 0 0 0;
+    top: 11rem;
+}
+
+.hs.row1.col3:checked~div>div>shed>.row1.col3>i:nth-of-type(1):before,
+.hs.row1.col3:checked~div>div>shed>.row1.col3>i:nth-of-type(1):after {
+    top: -7.5rem;
+    left: -1rem;
+    animation: smoke 8s linear infinite;
+}
+
+.hs.row1.col3:checked~div>div>shed>.row1.col3>i:nth-of-type(1):before {
+    animation: smoke 7.25s 3.75s linear infinite;
+}
+
+.hs.row1.col3:checked~div>div>shed>.row1.col3>i:nth-of-type(5):after {
+    display: block;
+}
+
+.hs.row1.col3:checked~div>div>shed>.row2.col3:after,
+.hs.row1.col3:checked~div>div>shed>.row2.col3>i:nth-of-type(3):after,
+.hs.row1.col3:checked~div>div>shed>.row2.col3>i:nth-of-type(1) {
+    display: none;
+}
+
+.hs.row1.col3:checked~div>div>shed>.row0.col3>i:nth-of-type(3):before,
+.hs.row1.col3:checked~div>div>shed>.row0.col3>i:nth-of-type(2),
+.hs.row1.col3:checked~div>div>shed>.row0.col3>i:nth-of-type(5):after {
+    display: none;
+}
+
+.hs.row1.col3:checked~div>div>shed>.row0.col3>i:nth-of-type(3) {
+    height: 0;
+}
+
+.hs.row1.col3:checked~div>div>shed>.row0.col3>i:nth-of-type(4) {
+    transform: scale(1);
+    right: 2rem;
+    left: 2rem;
+}
+
+.hs.shed.row1.col0:not(:checked)~.hs.row1.col3:checked~.shed.hs.row1.col4:not(:checked)~.hs.row-1.col3:checked~div>div>shed>.row1.col3>i:nth-of-type(3):after {
+    left: 7rem;
+    transform: rotate(3deg);
+}
+
+.hs.shed.row1.col0:not(:checked)~.hs.row1.col3:checked~.shed.hs.row1.col4:not(:checked)~.hs.row-1.col3:checked~div>div>shed>.row1.col3>i:nth-of-type(1) {
+    left: 11rem;
+}
+
+.hs.row1.col3:checked~.hs.row0.col3:checked~div>div>shed>.row1.col3:before {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.hs.row1.col3:checked~.hs.row0.col3:checked~div>div>shed>.row0.col3:before {
+    height: 12.5rem;
+    box-shadow: none;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.hs.row1.col3:checked~.hs.row1.col4:checked~div>div>shed>.row1.col3>i:nth-of-type(3) {
+    height: 0;
+}
+
+.hs.row1.col3:checked~.hs.row1.col4:checked~div>div>shed>.row1.col3>i:nth-of-type(4) {
+    transform: scale(1);
+    right: 2rem;
+    left: 2rem;
+}
+
+.hs.row1.col3:checked~.hs.row1.col4:checked~div>div>shed>.row1.col3>i:nth-of-type(5):after {
+    display: none;
+}
+
+.hs.row3.col3:checked~.hs.row1.col3:checked~div>div>shed>.row1.col3>i:nth-of-type(5):after {
+    display: none;
+}
+
+.hs.row2.col3:checked~.hs.row1.col2:checked~div>div>shed>.row1.col2>i:nth-of-type(5):after {
+    display: none;
+}
+
+.hs.row2.col2:checked~.hs.row1.col3:checked~div>div>shed>.row1.col3>i:nth-of-type(5):after {
+    display: none !important;
+}
+
+.hs.row1.col3:checked~.hs.row0.col4:checked~div>div>shed>.row1.col3>i:nth-of-type(1),
+.hs.row1.col3:checked~.hs.row0.col4:checked~div>div>shed>.row1.col3>i:nth-of-type(3):after {
+    display: none;
+}
+
+.hs.row1.col3:checked~.hs.row0.col4:checked~div>div>shed>.row1.col3:after,
+.hs.row1.col4:checked~.hs.row0.col4:checked~div>div>shed>.row1.col3:after {
+    width: 110%;
+    right: -1.25rem;
+}
+
+.hs.row1.col4:checked~div>div>shed>.row1.col4:before {
+    background: repeating-linear-gradient(#bc6e2f 1rem, #683f44 2.3rem);
+    width: 90%;
+    height: 98%;
+    left: 1.25rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 0 0 #20112a;
+}
+
+.hs.row1.col4:checked~div>div>shed>.row1.col4:after {
+    width: 105%;
+    height: 5rem;
+    background: repeating-linear-gradient(to right, #683f44 1rem, #20112a 2.1rem);
+    top: -2rem;
+    border-bottom: solid 0.5rem #252529;
+    box-shadow: 0 1.5rem 0.5rem -1rem rgba(79, 1, 14, 0.9);
+    border-radius: 0.5rem;
+    left: auto;
+    right: -1rem;
+}
+
+.hs.row1.col4:checked~div>div>shed>.row1.col4>i:nth-of-type(4) {
+    width: 4rem;
+    height: 4rem;
+    right: 0;
+    margin: auto;
+    background: rgba(79, 1, 14, 0.3);
+    top: 3rem;
+    border-radius: 0.5rem;
+    box-shadow: inset 0 0.5rem 1rem rgba(79, 1, 14, 0.75);
+    transform: scale(0.5);
+}
+
+.hs.row1.col4:checked~div>div>shed>.row1.col4>i:nth-of-type(4):before {
+    width: 3.4rem;
+    height: 0.5rem;
+    background: #252529;
+    left: 0.3rem;
+    top: 0.4rem;
+    border-radius: 0.25rem;
+    box-shadow: 0 1.5rem 0 #252529, 0 3rem 0 #252529, 0 0.5rem 0 #000, 0 1rem 0 rgba(79, 1, 14, 0.9), 0 2rem 0 rgba(79, 1, 14, 0.9), 0 2.5rem 0 rgba(79, 1, 14, 0.75);
+}
+
+.hs.row1.col4:checked~div>div>shed>.row1.col4>i:nth-of-type(4):after {
+    width: 0.5rem;
+    height: 3.4rem;
+    background: #252529;
+    left: 0.3rem;
+    top: 0.4rem;
+    border-radius: 0.25rem;
+    box-shadow: 1.5rem 0 0 #252529, 3rem 0 0 #252529;
+}
+
+.hs.row1.col4:checked~div>div>shed>.row1.col4>i:nth-of-type(3) {
+    width: 4rem;
+    height: 9rem;
+    right: 0;
+    margin: auto;
+    background: #bc6e2f;
+    top: 3rem;
+    border-radius: 0.5rem;
+    box-shadow: inset 0 0.5rem 1rem rgba(79, 1, 14, 0.75);
+}
+
+.hs.row1.col4:checked~div>div>shed>.row1.col4>i:nth-of-type(3):after {
+    left: -4rem;
+    border: 1rem solid rgba(255, 255, 255, 0);
+    top: -11rem;
+    border-bottom-color: #252529;
+    transform: rotate(-3deg);
+    height: 4rem;
+    box-shadow: 0 3.7rem 0 -0.5rem #252529;
+    border-radius: 0 0 1rem 1rem;
+}
+
+.hs.row1.col4:checked~div>div>shed>.row1.col4>i:nth-of-type(3):before {
+    width: 14.5rem;
+    height: 4.5rem;
+    border-top: 0.5rem solid #20112a;
+    border-bottom: 0.5rem solid #20112a;
+    top: 5rem;
+    left: -5rem;
+    background: repeating-linear-gradient(to right, #683f44, #20112a 0.5rem, rgba(255, 255, 255, 0) 0.5rem, rgba(255, 255, 255, 0) 1.4rem);
+    border-radius: 0.5rem;
+}
+
+.hs.row1.col4:checked~div>div>shed>.row1.col4>i:nth-of-type(2):before {
+    width: 1rem;
+    height: 9rem;
+    background: #20112a;
+    top: -7rem;
+}
+
+.hs.row1.col4:checked~div>div>shed>.row1.col4:nth-of-type(odd)>i:nth-of-type(2) {
+    width: 1rem;
+    background: #20112a;
+    height: 3rem;
+    border-radius: 0.25rem;
+    top: 18.5rem;
+    left: 10rem;
+    transform: rotate(5deg);
+}
+
+.hs.row1.col4:checked~div>div>shed>.row1.col4:nth-of-type(odd)>i:nth-of-type(2):before {
+    transform: rotate(-45deg);
+    left: -3rem;
+    border-radius: 0 1rem 0 0;
+}
+
+.hs.row1.col4:checked~div>div>shed>.row1.col4:nth-of-type(odd)>i:nth-of-type(2):after {
+    width: 1rem;
+    height: 4rem;
+    transform: rotate(45deg);
+    background: #20112a;
+    top: -6.5rem;
+    left: -2rem;
+    border-radius: 1rem 0 0 0;
+}
+
+.hs.row1.col4:checked~div>div>shed>.row1.col4:nth-of-type(even)>i:nth-of-type(3):after {
+    left: 7rem;
+    transform: rotate(3deg);
+}
+
+.hs.row1.col4:checked~div>div>shed>.row1.col4:nth-of-type(even)>i:nth-of-type(1) {
+    left: 11rem;
+}
+
+.hs.row1.col4:checked~div>div>shed>.row1.col4:nth-of-type(even)>i:nth-of-type(2):before {
+    transform: rotate(45deg);
+    left: 5rem;
+    border-radius: 1rem 0 0 0;
+    top: 11rem;
+}
+
+.hs.row1.col4:checked~div>div>shed>.row1.col4>i:nth-of-type(1):before,
+.hs.row1.col4:checked~div>div>shed>.row1.col4>i:nth-of-type(1):after {
+    top: -7.5rem;
+    left: -1rem;
+    animation: smoke 8s linear infinite;
+}
+
+.hs.row1.col4:checked~div>div>shed>.row1.col4>i:nth-of-type(1):before {
+    animation: smoke 7.25s 3.75s linear infinite;
+}
+
+.hs.row1.col4:checked~div>div>shed>.row1.col4>i:nth-of-type(5):after {
+    display: block;
+}
+
+.hs.row1.col4:checked~div>div>shed>.row2.col4:after,
+.hs.row1.col4:checked~div>div>shed>.row2.col4>i:nth-of-type(3):after,
+.hs.row1.col4:checked~div>div>shed>.row2.col4>i:nth-of-type(1) {
+    display: none;
+}
+
+.hs.row1.col4:checked~div>div>shed>.row0.col4>i:nth-of-type(3):before,
+.hs.row1.col4:checked~div>div>shed>.row0.col4>i:nth-of-type(2),
+.hs.row1.col4:checked~div>div>shed>.row0.col4>i:nth-of-type(5):after {
+    display: none;
+}
+
+.hs.row1.col4:checked~div>div>shed>.row0.col4>i:nth-of-type(3) {
+    height: 0;
+}
+
+.hs.row1.col4:checked~div>div>shed>.row0.col4>i:nth-of-type(4) {
+    transform: scale(1);
+    right: 2rem;
+    left: 2rem;
+}
+
+.hs.shed.row1.col1:not(:checked)~.hs.row1.col4:checked~.shed.hs.row1.col5:not(:checked)~.hs.row-1.col4:checked~div>div>shed>.row1.col4>i:nth-of-type(3):after {
+    left: 7rem;
+    transform: rotate(3deg);
+}
+
+.hs.shed.row1.col1:not(:checked)~.hs.row1.col4:checked~.shed.hs.row1.col5:not(:checked)~.hs.row-1.col4:checked~div>div>shed>.row1.col4>i:nth-of-type(1) {
+    left: 11rem;
+}
+
+.hs.row1.col4:checked~.hs.row0.col4:checked~div>div>shed>.row1.col4:before {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.hs.row1.col4:checked~.hs.row0.col4:checked~div>div>shed>.row0.col4:before {
+    height: 12.5rem;
+    box-shadow: none;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.hs.row1.col4:checked~.hs.row1.col5:checked~div>div>shed>.row1.col4>i:nth-of-type(3) {
+    height: 0;
+}
+
+.hs.row1.col4:checked~.hs.row1.col5:checked~div>div>shed>.row1.col4>i:nth-of-type(4) {
+    transform: scale(1);
+    right: 1rem;
+    left: 2rem;
+}
+
+.hs.row1.col4:checked~.hs.row1.col5:checked~div>div>shed>.row1.col4>i:nth-of-type(5):after {
+    display: none;
+}
+
+.hs.row3.col4:checked~.hs.row1.col4:checked~div>div>shed>.row1.col4>i:nth-of-type(5):after {
+    display: none;
+}
+
+.hs.row2.col3:checked~.hs.row1.col2:checked~div>div>shed>.row1.col2>i:nth-of-type(5):after {
+    display: none;
+}
+
+.hs.row2.col3:checked~.hs.row1.col4:checked~div>div>shed>.row1.col4>i:nth-of-type(5):after {
+    display: none !important;
+}
+
+.hs.row1.col4:checked~.hs.row0.col5:checked~div>div>shed>.row1.col4>i:nth-of-type(1),
+.hs.row1.col4:checked~.hs.row0.col5:checked~div>div>shed>.row1.col4>i:nth-of-type(3):after {
+    display: none;
+}
+
+.hs.row1.col4:checked~.hs.row0.col5:checked~div>div>shed>.row1.col4:after,
+.hs.row1.col5:checked~.hs.row0.col5:checked~div>div>shed>.row1.col4:after {
+    width: 110%;
+    right: -1.25rem;
+}
+
+.hs.row1.col1:checked~.hs.row1.col2:checked~div>div>shed>.row1.col1:before {
+    width: 110%;
+}
+
+.hs.row1.col1:checked~.hs.row1.col2:checked~div>div>shed>.row1.col2:after {
+    width: 120%;
+    left: -1.25rem;
+}
+
+.hs.row1.col2:checked~.hs.row1.col3:checked~div>div>shed>.row1.col2:before {
+    width: 110%;
+}
+
+.hs.row1.col2:checked~.hs.row1.col3:checked~div>div>shed>.row1.col3:after {
+    width: 120%;
+    left: -1.25rem;
+}
+
+.hs.row1.col3:checked~.hs.row1.col4:checked~div>div>shed>.row1.col3:before {
+    width: 110%;
+}
+
+.hs.row1.col3:checked~.hs.row1.col4:checked~div>div>shed>.row1.col4:after {
+    width: 120%;
+    left: -1.25rem;
+}
+
+.hs.row1.col2:checked~.hs.shed.row1.col3:not(:checked)~div>div>shed>.row1.col2>i:nth-of-type(3):after {
+    left: 7rem;
+    transform: rotate(3deg);
+}
+
+.hs.row1.col2:checked~.hs.shed.row1.col3:not(:checked)~div>div>shed>.row1.col2>i:nth-of-type(1) {
+    left: 11rem;
+}
+
+.hs.row1.col4:checked~.hs.shed.row1.col5:not(:checked)~div>div>shed>.row1.col4>i:nth-of-type(3):after {
+    left: 7rem;
+    transform: rotate(3deg);
+}
+
+.hs.row1.col4:checked~.hs.shed.row1.col5:not(:checked)~div>div>shed>.row1.col4>i:nth-of-type(1) {
+    left: 11rem;
+}
+
+.hs.row1.col2:checked~.hs.row1.col3:checked~div>div>shed>.row1.col2>i:nth-of-type(3):after,
+.hs.row1.col2:checked~.hs.row1.col3:checked~div>div>shed>.row1.col2>i:nth-of-type(1) {
+    display: none;
+}
+
+.hs.row1.col2:checked~.hs.row1.col3:checked~div>div>shed>.row1.col2>i:nth-of-type(3):before {
+    width: 10.25rem;
+}
+
+.hs.row1.col2:checked~.hs.row1.col1:checked~div>div>shed>.row1.col2>i:nth-of-type(3):after {
+    left: 6rem;
+    transform: rotate(3deg);
+}
+
+.hs.row1.col2:checked~.hs.row1.col1:checked~div>div>shed>.row1.col2>i:nth-of-type(1) {
+    left: 10rem;
+}
+
+.hs.row1.col2:checked~.hs.row1.col1:checked~div>div>shed>.row1.col2>i:nth-of-type(5):after {
+    left: -2.5rem;
+    transform: rotate(-3deg);
+}
+
+.hs.row1.col2:checked~.hs.row1.col-1:checked~div>div>shed>.row1.col2>i:nth-of-type(3):after,
+.hs.row1.col2:checked~.hs.row1.col-1:checked~div>div>shed>.row1.col2>i:nth-of-type(1),
+.hs.row1.col2:checked~.hs.row1.col-3:checked~div>div>shed>.row1.col2>i:nth-of-type(3):after,
+.hs.row1.col2:checked~.hs.row1.col-3:checked~div>div>shed>.row1.col2>i:nth-of-type(1) {
+    display: none;
+}
+
+.hs.row1.col2:checked~.hs.row1.col-1:checked~div>div>shed>.row1.col2>i:nth-of-type(5):after {
+    left: 10rem;
+    transform: rotate(2deg);
+}
+
+.hs.row1.col3:checked~.hs.row1.col4:checked~div>div>shed>.row1.col3>i:nth-of-type(3):after,
+.hs.row1.col3:checked~.hs.row1.col4:checked~div>div>shed>.row1.col3>i:nth-of-type(1) {
+    display: none;
+}
+
+.hs.row1.col3:checked~.hs.row1.col4:checked~div>div>shed>.row1.col3>i:nth-of-type(3):before {
+    width: 10.25rem;
+}
+
+.hs.row1.col3:checked~.hs.row1.col2:checked~div>div>shed>.row1.col3>i:nth-of-type(3):after {
+    left: 6rem;
+    transform: rotate(3deg);
+}
+
+.hs.row1.col3:checked~.hs.row1.col2:checked~div>div>shed>.row1.col3>i:nth-of-type(1) {
+    left: 10rem;
+}
+
+.hs.row1.col3:checked~.hs.row1.col2:checked~div>div>shed>.row1.col3>i:nth-of-type(5):after {
+    left: -2.5rem;
+    transform: rotate(-3deg);
+}
+
+.hs.row1.col3:checked~.hs.row1.col0:checked~div>div>shed>.row1.col3>i:nth-of-type(3):after,
+.hs.row1.col3:checked~.hs.row1.col0:checked~div>div>shed>.row1.col3>i:nth-of-type(1),
+.hs.row1.col3:checked~.hs.row1.col-2:checked~div>div>shed>.row1.col3>i:nth-of-type(3):after,
+.hs.row1.col3:checked~.hs.row1.col-2:checked~div>div>shed>.row1.col3>i:nth-of-type(1) {
+    display: none;
+}
+
+.hs.row1.col3:checked~.hs.row1.col0:checked~div>div>shed>.row1.col3>i:nth-of-type(5):after {
+    left: 10rem;
+    transform: rotate(2deg);
+}
+
+.hs.shed.row1.col1:checked~.hs.shed.row1.col2:not(:checked)~.hs.shed.row1.col3:not(:checked)~.hs.shed.row1.col4:checked~div>div>shed>.row1.col1>i:nth-of-type(5):before {
+    display: block;
+    width: 210%;
+}
+
+.hs.shed.row1.col1:checked~.hs.shed.row1.col2:not(:checked)~.hs.shed.row1.col3:checked~div>div>shed>.row1.col1>i:nth-of-type(5):before,
+.hs.shed.row1.col2:checked~.hs.shed.row1.col3:not(:checked)~.hs.shed.row1.col4:checked~div>div>shed>.row1.col2>i:nth-of-type(5):before {
+    display: block;
+    width: 110%;
+}
+
+.hs.row2.col2:checked~.hs.shed.row1.col1:checked~.hs.shed.row1.col2:not(:checked)~.hs.shed.row1.col3:checked~div>div>shed>.row1.col1>i:nth-of-type(5):before,
+.hs.row2.col3:checked~.hs.shed.row1.col2:checked~.hs.shed.row1.col3:not(:checked)~.hs.shed.row1.col4:checked~div>div>shed>.row1.col2>i:nth-of-type(5):before,
+.hs.row2.col3:checked~.hs.shed.row1.col1:checked~.hs.shed.row1.col2:not(:checked)~.hs.shed.row1.col3:not(:checked)~.hs.shed.row1.col4:checked~div>div>shed>.row1.col1>i:nth-of-type(5):before,
+.hs.row2.col2:checked~.hs.shed.row1.col1:checked~.hs.shed.row1.col2:not(:checked)~.hs.shed.row1.col3:not(:checked)~.hs.shed.row1.col4:checked~div>div>shed>.row1.col1>i:nth-of-type(5):before,
+.hs.shed.row2.col1:checked~.hs.shed.row1.col1:checked~.hs.shed.row1.col2:not(:checked)~.hs.shed.row1.col3:checked~div>div>shed>.row1.col1>i:nth-of-type(5):before,
+.hs.shed.row2.col2:checked~.hs.shed.row1.col2:checked~.hs.shed.row1.col3:not(:checked)~.hs.shed.row1.col4:checked~div>div>shed>.row1.col2>i:nth-of-type(5):before {
+    top: 1rem;
+    border: none;
+}
+
+.hs.row2.col1:checked~div>div>shed>.row2.col1:before {
+    background: repeating-linear-gradient(#bc6e2f 1rem, #683f44 2.3rem);
+    width: 90%;
+    height: 98%;
+    left: 1.25rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 0 0 #20112a;
+}
+
+.hs.row2.col1:checked~div>div>shed>.row2.col1:after {
+    width: 105%;
+    height: 5rem;
+    background: repeating-linear-gradient(to right, #683f44 1rem, #20112a 2.1rem);
+    top: -2rem;
+    border-bottom: solid 0.5rem #252529;
+    box-shadow: 0 1.5rem 0.5rem -1rem rgba(79, 1, 14, 0.9);
+    border-radius: 0.5rem;
+    left: auto;
+    right: -1rem;
+}
+
+.hs.row2.col1:checked~div>div>shed>.row2.col1>i:nth-of-type(4) {
+    width: 4rem;
+    height: 4rem;
+    right: 0;
+    margin: auto;
+    background: rgba(79, 1, 14, 0.3);
+    top: 3rem;
+    border-radius: 0.5rem;
+    box-shadow: inset 0 0.5rem 1rem rgba(79, 1, 14, 0.75);
+    transform: scale(0.5);
+}
+
+.hs.row2.col1:checked~div>div>shed>.row2.col1>i:nth-of-type(4):before {
+    width: 3.4rem;
+    height: 0.5rem;
+    background: #252529;
+    left: 0.3rem;
+    top: 0.4rem;
+    border-radius: 0.25rem;
+    box-shadow: 0 1.5rem 0 #252529, 0 3rem 0 #252529, 0 0.5rem 0 #000, 0 1rem 0 rgba(79, 1, 14, 0.9), 0 2rem 0 rgba(79, 1, 14, 0.9), 0 2.5rem 0 rgba(79, 1, 14, 0.75);
+}
+
+.hs.row2.col1:checked~div>div>shed>.row2.col1>i:nth-of-type(4):after {
+    width: 0.5rem;
+    height: 3.4rem;
+    background: #252529;
+    left: 0.3rem;
+    top: 0.4rem;
+    border-radius: 0.25rem;
+    box-shadow: 1.5rem 0 0 #252529, 3rem 0 0 #252529;
+}
+
+.hs.row2.col1:checked~div>div>shed>.row2.col1>i:nth-of-type(3) {
+    width: 4rem;
+    height: 9rem;
+    right: 0;
+    margin: auto;
+    background: #bc6e2f;
+    top: 3rem;
+    border-radius: 0.5rem;
+    box-shadow: inset 0 0.5rem 1rem rgba(79, 1, 14, 0.75);
+}
+
+.hs.row2.col1:checked~div>div>shed>.row2.col1>i:nth-of-type(3):after {
+    left: -4rem;
+    border: 1rem solid rgba(255, 255, 255, 0);
+    top: -11rem;
+    border-bottom-color: #252529;
+    transform: rotate(-3deg);
+    height: 4rem;
+    box-shadow: 0 3.7rem 0 -0.5rem #252529;
+    border-radius: 0 0 1rem 1rem;
+}
+
+.hs.row2.col1:checked~div>div>shed>.row2.col1>i:nth-of-type(3):before {
+    width: 14.5rem;
+    height: 4.5rem;
+    border-top: 0.5rem solid #20112a;
+    border-bottom: 0.5rem solid #20112a;
+    top: 5rem;
+    left: -5rem;
+    background: repeating-linear-gradient(to right, #683f44, #20112a 0.5rem, rgba(255, 255, 255, 0) 0.5rem, rgba(255, 255, 255, 0) 1.4rem);
+    border-radius: 0.5rem;
+}
+
+.hs.row2.col1:checked~div>div>shed>.row2.col1>i:nth-of-type(2):before {
+    width: 1rem;
+    height: 9rem;
+    background: #20112a;
+    top: -7rem;
+}
+
+.hs.row2.col1:checked~div>div>shed>.row2.col1:nth-of-type(odd)>i:nth-of-type(2) {
+    width: 1rem;
+    background: #20112a;
+    height: 3rem;
+    border-radius: 0.25rem;
+    top: 18.5rem;
+    left: 10rem;
+    transform: rotate(5deg);
+}
+
+.hs.row2.col1:checked~div>div>shed>.row2.col1:nth-of-type(odd)>i:nth-of-type(2):before {
+    transform: rotate(-45deg);
+    left: -3rem;
+    border-radius: 0 1rem 0 0;
+}
+
+.hs.row2.col1:checked~div>div>shed>.row2.col1:nth-of-type(odd)>i:nth-of-type(2):after {
+    width: 1rem;
+    height: 4rem;
+    transform: rotate(45deg);
+    background: #20112a;
+    top: -6.5rem;
+    left: -2rem;
+    border-radius: 1rem 0 0 0;
+}
+
+.hs.row2.col1:checked~div>div>shed>.row2.col1:nth-of-type(even)>i:nth-of-type(3):after {
+    left: 7rem;
+    transform: rotate(3deg);
+}
+
+.hs.row2.col1:checked~div>div>shed>.row2.col1:nth-of-type(even)>i:nth-of-type(1) {
+    left: 11rem;
+}
+
+.hs.row2.col1:checked~div>div>shed>.row2.col1:nth-of-type(even)>i:nth-of-type(2):before {
+    transform: rotate(45deg);
+    left: 5rem;
+    border-radius: 1rem 0 0 0;
+    top: 11rem;
+}
+
+.hs.row2.col1:checked~div>div>shed>.row2.col1>i:nth-of-type(1):before,
+.hs.row2.col1:checked~div>div>shed>.row2.col1>i:nth-of-type(1):after {
+    top: -7.5rem;
+    left: -1rem;
+    animation: smoke 8s linear infinite;
+}
+
+.hs.row2.col1:checked~div>div>shed>.row2.col1>i:nth-of-type(1):before {
+    animation: smoke 7.25s 3.75s linear infinite;
+}
+
+.hs.row2.col1:checked~div>div>shed>.row2.col1>i:nth-of-type(5):after {
+    display: block;
+}
+
+.hs.row2.col1:checked~div>div>shed>.row3.col1:after,
+.hs.row2.col1:checked~div>div>shed>.row3.col1>i:nth-of-type(3):after,
+.hs.row2.col1:checked~div>div>shed>.row3.col1>i:nth-of-type(1) {
+    display: none;
+}
+
+.hs.row2.col1:checked~div>div>shed>.row1.col1>i:nth-of-type(3):before,
+.hs.row2.col1:checked~div>div>shed>.row1.col1>i:nth-of-type(2),
+.hs.row2.col1:checked~div>div>shed>.row1.col1>i:nth-of-type(5):after {
+    display: none;
+}
+
+.hs.row2.col1:checked~div>div>shed>.row1.col1>i:nth-of-type(3) {
+    height: 0;
+}
+
+.hs.row2.col1:checked~div>div>shed>.row1.col1>i:nth-of-type(4) {
+    transform: scale(1);
+    right: 1rem;
+    left: 2rem;
+}
+
+.hs.shed.row2.col-2:not(:checked)~.hs.row2.col1:checked~.shed.hs.row2.col2:not(:checked)~.hs.row0.col1:checked~div>div>shed>.row2.col1>i:nth-of-type(3):after {
+    left: 7rem;
+    transform: rotate(3deg);
+}
+
+.hs.shed.row2.col-2:not(:checked)~.hs.row2.col1:checked~.shed.hs.row2.col2:not(:checked)~.hs.row0.col1:checked~div>div>shed>.row2.col1>i:nth-of-type(1) {
+    left: 11rem;
+}
+
+.hs.row2.col1:checked~.hs.row1.col1:checked~div>div>shed>.row2.col1:before {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.hs.row2.col1:checked~.hs.row1.col1:checked~div>div>shed>.row1.col1:before {
+    height: 12.5rem;
+    box-shadow: none;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.hs.row2.col1:checked~.hs.row2.col2:checked~div>div>shed>.row2.col1>i:nth-of-type(3) {
+    height: 0;
+}
+
+.hs.row2.col1:checked~.hs.row2.col2:checked~div>div>shed>.row2.col1>i:nth-of-type(4) {
+    transform: scale(1);
+    right: 1rem;
+    left: 2rem;
+}
+
+.hs.row2.col1:checked~.hs.row2.col2:checked~div>div>shed>.row2.col1>i:nth-of-type(5):after {
+    display: none;
+}
+
+.hs.row4.col1:checked~.hs.row2.col1:checked~div>div>shed>.row2.col1>i:nth-of-type(5):after {
+    display: none;
+}
+
+.hs.row2.col3:checked~.hs.row1.col2:checked~div>div>shed>.row1.col2>i:nth-of-type(5):after {
+    display: none;
+}
+
+.hs.row3.col0:checked~.hs.row2.col1:checked~div>div>shed>.row2.col1>i:nth-of-type(5):after {
+    display: none !important;
+}
+
+.hs.row2.col1:checked~.hs.row1.col2:checked~div>div>shed>.row2.col1>i:nth-of-type(1),
+.hs.row2.col1:checked~.hs.row1.col2:checked~div>div>shed>.row2.col1>i:nth-of-type(3):after {
+    display: none;
+}
+
+.hs.row2.col1:checked~.hs.row1.col2:checked~div>div>shed>.row2.col1:after,
+.hs.row2.col2:checked~.hs.row1.col2:checked~div>div>shed>.row2.col1:after {
+    width: 110%;
+    right: -1.25rem;
+}
+
+.hs.row2.col2:checked~div>div>shed>.row2.col2:before {
+    background: repeating-linear-gradient(#bc6e2f 1rem, #683f44 2.3rem);
+    width: 90%;
+    height: 98%;
+    left: 1.25rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 0 0 #20112a;
+}
+
+.hs.row2.col2:checked~div>div>shed>.row2.col2:after {
+    width: 105%;
+    height: 5rem;
+    background: repeating-linear-gradient(to right, #683f44 1rem, #20112a 2.1rem);
+    top: -2rem;
+    border-bottom: solid 0.5rem #252529;
+    box-shadow: 0 1.5rem 0.5rem -1rem rgba(79, 1, 14, 0.9);
+    border-radius: 0.5rem;
+    left: auto;
+    right: -1rem;
+}
+
+.hs.row2.col2:checked~div>div>shed>.row2.col2>i:nth-of-type(4) {
+    width: 4rem;
+    height: 4rem;
+    right: 0;
+    margin: auto;
+    background: rgba(79, 1, 14, 0.3);
+    top: 3rem;
+    border-radius: 0.5rem;
+    box-shadow: inset 0 0.5rem 1rem rgba(79, 1, 14, 0.75);
+    transform: scale(0.5);
+}
+
+.hs.row2.col2:checked~div>div>shed>.row2.col2>i:nth-of-type(4):before {
+    width: 3.4rem;
+    height: 0.5rem;
+    background: #252529;
+    left: 0.3rem;
+    top: 0.4rem;
+    border-radius: 0.25rem;
+    box-shadow: 0 1.5rem 0 #252529, 0 3rem 0 #252529, 0 0.5rem 0 #000, 0 1rem 0 rgba(79, 1, 14, 0.9), 0 2rem 0 rgba(79, 1, 14, 0.9), 0 2.5rem 0 rgba(79, 1, 14, 0.75);
+}
+
+.hs.row2.col2:checked~div>div>shed>.row2.col2>i:nth-of-type(4):after {
+    width: 0.5rem;
+    height: 3.4rem;
+    background: #252529;
+    left: 0.3rem;
+    top: 0.4rem;
+    border-radius: 0.25rem;
+    box-shadow: 1.5rem 0 0 #252529, 3rem 0 0 #252529;
+}
+
+.hs.row2.col2:checked~div>div>shed>.row2.col2>i:nth-of-type(3) {
+    width: 4rem;
+    height: 9rem;
+    right: 0;
+    margin: auto;
+    background: #bc6e2f;
+    top: 3rem;
+    border-radius: 0.5rem;
+    box-shadow: inset 0 0.5rem 1rem rgba(79, 1, 14, 0.75);
+}
+
+.hs.row2.col2:checked~div>div>shed>.row2.col2>i:nth-of-type(3):after {
+    left: -4rem;
+    border: 1rem solid rgba(255, 255, 255, 0);
+    top: -11rem;
+    border-bottom-color: #252529;
+    transform: rotate(-3deg);
+    height: 4rem;
+    box-shadow: 0 3.7rem 0 -0.5rem #252529;
+    border-radius: 0 0 1rem 1rem;
+}
+
+.hs.row2.col2:checked~div>div>shed>.row2.col2>i:nth-of-type(3):before {
+    width: 14.5rem;
+    height: 4.5rem;
+    border-top: 0.5rem solid #20112a;
+    border-bottom: 0.5rem solid #20112a;
+    top: 5rem;
+    left: -5rem;
+    background: repeating-linear-gradient(to right, #683f44, #20112a 0.5rem, rgba(255, 255, 255, 0) 0.5rem, rgba(255, 255, 255, 0) 1.4rem);
+    border-radius: 0.5rem;
+}
+
+.hs.row2.col2:checked~div>div>shed>.row2.col2>i:nth-of-type(2):before {
+    width: 1rem;
+    height: 9rem;
+    background: #20112a;
+    top: -7rem;
+}
+
+.hs.row2.col2:checked~div>div>shed>.row2.col2:nth-of-type(odd)>i:nth-of-type(2) {
+    width: 1rem;
+    background: #20112a;
+    height: 3rem;
+    border-radius: 0.25rem;
+    top: 18.5rem;
+    left: 10rem;
+    transform: rotate(5deg);
+}
+
+.hs.row2.col2:checked~div>div>shed>.row2.col2:nth-of-type(odd)>i:nth-of-type(2):before {
+    transform: rotate(-45deg);
+    left: -3rem;
+    border-radius: 0 1rem 0 0;
+}
+
+.hs.row2.col2:checked~div>div>shed>.row2.col2:nth-of-type(odd)>i:nth-of-type(2):after {
+    width: 1rem;
+    height: 4rem;
+    transform: rotate(45deg);
+    background: #20112a;
+    top: -6.5rem;
+    left: -2rem;
+    border-radius: 1rem 0 0 0;
+}
+
+.hs.row2.col2:checked~div>div>shed>.row2.col2:nth-of-type(even)>i:nth-of-type(3):after {
+    left: 7rem;
+    transform: rotate(3deg);
+}
+
+.hs.row2.col2:checked~div>div>shed>.row2.col2:nth-of-type(even)>i:nth-of-type(1) {
+    left: 11rem;
+}
+
+.hs.row2.col2:checked~div>div>shed>.row2.col2:nth-of-type(even)>i:nth-of-type(2):before {
+    transform: rotate(45deg);
+    left: 5rem;
+    border-radius: 1rem 0 0 0;
+    top: 11rem;
+}
+
+.hs.row2.col2:checked~div>div>shed>.row2.col2>i:nth-of-type(1):before,
+.hs.row2.col2:checked~div>div>shed>.row2.col2>i:nth-of-type(1):after {
+    top: -7.5rem;
+    left: -1rem;
+    animation: smoke 8s linear infinite;
+}
+
+.hs.row2.col2:checked~div>div>shed>.row2.col2>i:nth-of-type(1):before {
+    animation: smoke 7.25s 3.75s linear infinite;
+}
+
+.hs.row2.col2:checked~div>div>shed>.row2.col2>i:nth-of-type(5):after {
+    display: block;
+}
+
+.hs.row2.col2:checked~div>div>shed>.row3.col2:after,
+.hs.row2.col2:checked~div>div>shed>.row3.col2>i:nth-of-type(3):after,
+.hs.row2.col2:checked~div>div>shed>.row3.col2>i:nth-of-type(1) {
+    display: none;
+}
+
+.hs.row2.col2:checked~div>div>shed>.row1.col2>i:nth-of-type(3):before,
+.hs.row2.col2:checked~div>div>shed>.row1.col2>i:nth-of-type(2),
+.hs.row2.col2:checked~div>div>shed>.row1.col2>i:nth-of-type(5):after {
+    display: none;
+}
+
+.hs.row2.col2:checked~div>div>shed>.row1.col2>i:nth-of-type(3) {
+    height: 0;
+}
+
+.hs.row2.col2:checked~div>div>shed>.row1.col2>i:nth-of-type(4) {
+    transform: scale(1);
+    right: 2rem;
+    left: 2rem;
+}
