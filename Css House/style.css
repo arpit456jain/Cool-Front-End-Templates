@@ -6486,3 +6486,2777 @@ div>div>house>label>i:nth-of-type(5):before {
 .hs.house.row3.col2:not(:checked)~.hs.house.row2.col2:checked~div>div>house>.row4.col2>i:nth-of-type(1) {
     left: 5rem;
 }
+
+.hs.row4.col1:checked~.hs.row4.col2:checked~.hs.house.row3.col1:not(:checked)~.hs.shed.row3.col1:not(:checked)~.hs.row3.col2:checked~div>div>house>.row4.col2 i:nth-of-type(2) {
+    display: block;
+    left: -42%;
+    width: 50%;
+}
+
+.hs.row4.col1:checked~.hs.row4.col2:checked~.hs.house.row3.col1:not(:checked)~.hs.shed.row3.col1:not(:checked)~.hs.row3.col2:checked~div>div>house>.row4.col2 i:nth-of-type(1),
+.hs.row4.col1:checked~.hs.row4.col2:checked~.hs.house.row3.col1:not(:checked)~.hs.shed.row3.col1:not(:checked)~.hs.row3.col2:checked~div>div>house>.row4.col2 i:nth-of-type(2):after {
+    display: none;
+}
+
+.row4.col2:checked~.row4.col3:checked~div>div>house>.row4.col2 i:nth-of-type(1),
+.row4.col2:checked~.row4.col3:checked~div>div>house>.row4.col2 i:nth-of-type(2):after {
+    display: none;
+}
+
+.row4.col2:checked~.row4.col3:checked~div>div>house>.row4.col3>i:nth-of-type(2):after {
+    left: -1.5rem;
+}
+
+.row4.col2:checked~.row4.col3:checked~div>div>house>.row4.col3>i:nth-of-type(1) {
+    left: -1rem;
+}
+
+.hs.row4.col3:checked~div>div>house>.row4.col3:before {
+    width: 1.5rem;
+    height: 1rem;
+    background: currentColor;
+    border-radius: 0.25rem;
+    top: -1.35rem;
+    left: 3rem;
+    box-shadow: 2rem 2rem 0 currentColor;
+    filter: hue-rotate(-10deg) brightness(1.1);
+    opacity: 0.7;
+}
+
+.hs.row4.col3:checked~div>div>house>.row4.col3:after {
+    filter: hue-rotate(-10deg) brightness(1.1);
+    width: 2rem;
+    height: 1rem;
+    background: currentColor;
+    border-radius: 0.25rem;
+    top: 0.5rem;
+    left: -0.15rem;
+    box-shadow: 0 2rem 0 currentColor, 0 4rem 0 currentColor, 0 6rem 0 currentColor, 0 8rem 0 currentColor, 0 10rem 0 currentColor, 10.75rem 0 0 currentColor, 10.75rem 2rem 0 currentColor, 10.75rem 4rem 0 currentColor, 10.75rem 6rem 0 currentColor, 10.75rem 8rem 0 currentColor, 10.75rem 10rem 0 currentColor;
+}
+
+.hs.row4.col3:checked~div>div>house>.row4.col3>i:nth-of-type(4) {
+    width: 5rem;
+    right: 0;
+    margin: auto;
+    top: 3.5rem;
+    background: rgba(79, 1, 14, 0.9);
+    height: 5rem;
+    border-radius: 0.3rem;
+    box-shadow: inset 0 0 0 0.5rem rgba(79, 1, 14, 0.3), inset 0 0 0.5rem rgba(79, 1, 14, 0.9), inset 0 0 0 0.5rem currentColor, inset 0 0 1rem 1rem rgba(79, 1, 14, 0.9), inset 1rem 0 0 #bc6e2f, inset -1.25rem 0 0 #bc6e2f, inset 0 -2rem 0 #000, inset 0 -3.5rem 0 #20112a;
+}
+
+.hs.row4.col3:checked~div>div>house>.row4.col3>i:nth-of-type(4):after {
+    width: 4.5rem;
+    height: 0.25rem;
+    left: 0.25rem;
+    top: 2.4rem;
+    background: currentColor;
+    border-radius: 0.0001rem;
+    box-shadow: inset 0 0 0 0.5rem rgba(79, 1, 14, 0.3), 0 3rem 0 0.3rem #dca775, 0 3.5rem 0.35rem 0.25rem rgba(79, 1, 14, 0.9);
+}
+
+.hs.row4.col3:checked~div>div>house>.row4.col3>i:nth-of-type(4):before {
+    width: 0.25rem;
+    height: 4.5rem;
+    left: 2.4rem;
+    top: 0.25rem;
+    background: currentColor;
+    box-shadow: inset 0 0 0 0.5rem rgba(79, 1, 14, 0.3);
+}
+
+.hs.row4.col3:checked~div>div>house>.row4.col3.col1>i:nth-of-type(4) {
+    border-radius: 2.25rem 2.25rem 0.3rem 0.3rem;
+}
+
+.hs.row4.col3:checked~div>div>house>.row4.col3>i:nth-of-type(2) {
+    border: solid rgba(255, 255, 255, 0) 1rem;
+    border-bottom: solid #6a1b33 4rem;
+    width: calc(100% + 2.1rem);
+    left: -1rem;
+    top: -2.5rem;
+    box-shadow: 0 0.25rem 0 #20112a, 0 1.5rem 1rem -1rem rgba(79, 1, 14, 0.75);
+}
+
+.hs.row4.col3:checked~div>div>house>.row4.col3>i:nth-of-type(2):before {
+    width: 100%;
+    height: 3rem;
+    border-radius: 50%;
+    background: repeating-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 0.75rem, rgba(79, 1, 14, 0.4), rgba(255, 255, 255, 0) 1rem);
+}
+
+.hs.row4.col3:checked~div>div>house>.row4.col3>i:nth-of-type(2):after {
+    width: 3rem;
+    height: 4rem;
+    border: 0.5rem solid rgba(255, 255, 255, 0);
+    border-top: 0.5rem solid #bc2f2f;
+    top: -2rem;
+    box-shadow: inset 0 4rem 0 #bc2f2f, 0 -0.5rem 0 -0.2rem #6a1b33, 0 -3rem 0 -1rem #252529;
+    border-radius: 0.5rem;
+    left: -0.25rem;
+    filter: drop-shadow(-0.25rem 2rem 0.5rem rgba(0, 0, 0, 0.15));
+}
+
+.hs.row4.col3:checked~div>div>house>.row4.col3>i:nth-of-type(1):before,
+.hs.row4.col3:checked~div>div>house>.row4.col3>i:nth-of-type(1):after {
+    top: -8.5rem;
+    left: -1rem;
+    animation: smoke 8s linear infinite;
+}
+
+.hs.row4.col3:checked~div>div>house>.row4.col3>i:nth-of-type(1):before {
+    animation: smoke 7.25s 3.75s linear infinite;
+}
+
+.hs.row4.col3:checked~div>div>house>.row4.col3:nth-of-type(even) i:nth-of-type(2):after {
+    left: 9.5rem;
+}
+
+.hs.row4.col3:checked~div>div>house>.row4.col3:nth-of-type(even)>i:nth-of-type(1) {
+    left: 10rem;
+}
+
+.hs.row4.col3:checked~div>div>house>.row5.col3 i:nth-of-type(2),
+.hs.row4.col3:checked~div>div>house>.row5.col3 i:nth-of-type(1) {
+    display: none;
+}
+
+.hs.house.row5.col3:checked~.hs.shed.row4.col3:checked~div>div>house>.row4.col3 {
+    border-bottom: 0.25rem dashed #bc2f2f;
+}
+
+.hs.house.row5.col3:checked~.hs.shed.row4.col3:checked~div>div>house>.row5.col3:before {
+    background: #bc6e2f;
+}
+
+.hs.shed.row5.col3:checked~.hs.house.row4.col3:checked~div>div>house>.row4.col3 {
+    border-bottom: 0.25rem dashed #bc6e2f;
+}
+
+.hs.shed.row5.col3:checked~.hs.house.row4.col3:checked~div>div>house>.row5.col3:before {
+    background: #bc2f2f;
+}
+
+.hs.house.row4.col0:not(:checked)~.hs.house.row4.col3:checked~.hs.house.row4.col4:not(:checked)~.hs.house.row2.col3:checked~div>div>house>.row4.col3>i:nth-of-type(2):after {
+    left: 9.5rem;
+}
+
+.hs.house.row4.col0:not(:checked)~.hs.house.row4.col3:checked~.hs.house.row4.col4:not(:checked)~.hs.house.row2.col3:checked~div>div>house>.row4.col3>i:nth-of-type(1) {
+    left: 11rem;
+}
+
+.hs.row3.col2:checked~.hs.row3.col3:not(:checked)~div>div>house>.row4.col3>i:nth-of-type(2):after,
+.hs.house.row3.col3:not(:checked)~.hs.house.row2.col3:checked~div>div>house>.row4.col3>i:nth-of-type(2):after {
+    left: 4.75rem;
+    height: 3rem;
+    box-shadow: inset 0 6rem 0 #bc2f2f, 0 -0.5rem 0 -0.2rem #6a1b33, 0 -2.25rem 0 -1rem #252529;
+    border-radius: 0 0 1rem 1rem;
+}
+
+.hs.row3.col2:checked~.hs.row3.col3:not(:checked)~div>div>house>.row4.col3>i:nth-of-type(1),
+.hs.house.row3.col3:not(:checked)~.hs.house.row2.col3:checked~div>div>house>.row4.col3>i:nth-of-type(1) {
+    left: 5rem;
+}
+
+.hs.row4.col2:checked~.hs.row4.col3:checked~.hs.house.row3.col2:not(:checked)~.hs.shed.row3.col2:not(:checked)~.hs.row3.col3:checked~div>div>house>.row4.col3 i:nth-of-type(2) {
+    display: block;
+    left: -42%;
+    width: 50%;
+}
+
+.hs.row4.col2:checked~.hs.row4.col3:checked~.hs.house.row3.col2:not(:checked)~.hs.shed.row3.col2:not(:checked)~.hs.row3.col3:checked~div>div>house>.row4.col3 i:nth-of-type(1),
+.hs.row4.col2:checked~.hs.row4.col3:checked~.hs.house.row3.col2:not(:checked)~.hs.shed.row3.col2:not(:checked)~.hs.row3.col3:checked~div>div>house>.row4.col3 i:nth-of-type(2):after {
+    display: none;
+}
+
+.row4.col2:checked~.row4.col3:checked~div>div>house>.row4.col2 i:nth-of-type(1),
+.row4.col2:checked~.row4.col3:checked~div>div>house>.row4.col2 i:nth-of-type(2):after {
+    display: none;
+}
+
+.row4.col2:checked~.row4.col3:checked~div>div>house>.row4.col3>i:nth-of-type(2):after {
+    left: -1.5rem;
+}
+
+.row4.col2:checked~.row4.col3:checked~div>div>house>.row4.col3>i:nth-of-type(1) {
+    left: -1rem;
+}
+
+.hs.row4.col4:checked~div>div>house>.row4.col4:before {
+    width: 1.5rem;
+    height: 1rem;
+    background: currentColor;
+    border-radius: 0.25rem;
+    top: -1.35rem;
+    left: 3rem;
+    box-shadow: 2rem 2rem 0 currentColor;
+    filter: hue-rotate(-10deg) brightness(1.1);
+    opacity: 0.7;
+}
+
+.hs.row4.col4:checked~div>div>house>.row4.col4:after {
+    filter: hue-rotate(-10deg) brightness(1.1);
+    width: 2rem;
+    height: 1rem;
+    background: currentColor;
+    border-radius: 0.25rem;
+    top: 0.5rem;
+    left: -0.15rem;
+    box-shadow: 0 2rem 0 currentColor, 0 4rem 0 currentColor, 0 6rem 0 currentColor, 0 8rem 0 currentColor, 0 10rem 0 currentColor, 10.75rem 0 0 currentColor, 10.75rem 2rem 0 currentColor, 10.75rem 4rem 0 currentColor, 10.75rem 6rem 0 currentColor, 10.75rem 8rem 0 currentColor, 10.75rem 10rem 0 currentColor;
+}
+
+.hs.row4.col4:checked~div>div>house>.row4.col4>i:nth-of-type(4) {
+    width: 5rem;
+    right: 0;
+    margin: auto;
+    top: 3.5rem;
+    background: rgba(79, 1, 14, 0.9);
+    height: 5rem;
+    border-radius: 0.3rem;
+    box-shadow: inset 0 0 0 0.5rem rgba(79, 1, 14, 0.3), inset 0 0 0.5rem rgba(79, 1, 14, 0.9), inset 0 0 0 0.5rem currentColor, inset 0 0 1rem 1rem rgba(79, 1, 14, 0.9), inset 1rem 0 0 #bc6e2f, inset -1.25rem 0 0 #bc6e2f, inset 0 -2rem 0 #000, inset 0 -3.5rem 0 #20112a;
+}
+
+.hs.row4.col4:checked~div>div>house>.row4.col4>i:nth-of-type(4):after {
+    width: 4.5rem;
+    height: 0.25rem;
+    left: 0.25rem;
+    top: 2.4rem;
+    background: currentColor;
+    border-radius: 0.0001rem;
+    box-shadow: inset 0 0 0 0.5rem rgba(79, 1, 14, 0.3), 0 3rem 0 0.3rem #dca775, 0 3.5rem 0.35rem 0.25rem rgba(79, 1, 14, 0.9);
+}
+
+.hs.row4.col4:checked~div>div>house>.row4.col4>i:nth-of-type(4):before {
+    width: 0.25rem;
+    height: 4.5rem;
+    left: 2.4rem;
+    top: 0.25rem;
+    background: currentColor;
+    box-shadow: inset 0 0 0 0.5rem rgba(79, 1, 14, 0.3);
+}
+
+.hs.row4.col4:checked~div>div>house>.row4.col4.col1>i:nth-of-type(4) {
+    border-radius: 2.25rem 2.25rem 0.3rem 0.3rem;
+}
+
+.hs.row4.col4:checked~div>div>house>.row4.col4>i:nth-of-type(2) {
+    border: solid rgba(255, 255, 255, 0) 1rem;
+    border-bottom: solid #6a1b33 4rem;
+    width: calc(100% + 2.1rem);
+    left: -1rem;
+    top: -2.5rem;
+    box-shadow: 0 0.25rem 0 #20112a, 0 1.5rem 1rem -1rem rgba(79, 1, 14, 0.75);
+}
+
+.hs.row4.col4:checked~div>div>house>.row4.col4>i:nth-of-type(2):before {
+    width: 100%;
+    height: 3rem;
+    border-radius: 50%;
+    background: repeating-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 0.75rem, rgba(79, 1, 14, 0.4), rgba(255, 255, 255, 0) 1rem);
+}
+
+.hs.row4.col4:checked~div>div>house>.row4.col4>i:nth-of-type(2):after {
+    width: 3rem;
+    height: 4rem;
+    border: 0.5rem solid rgba(255, 255, 255, 0);
+    border-top: 0.5rem solid #bc2f2f;
+    top: -2rem;
+    box-shadow: inset 0 4rem 0 #bc2f2f, 0 -0.5rem 0 -0.2rem #6a1b33, 0 -3rem 0 -1rem #252529;
+    border-radius: 0.5rem;
+    left: -0.25rem;
+    filter: drop-shadow(-0.25rem 2rem 0.5rem rgba(0, 0, 0, 0.15));
+}
+
+.hs.row4.col4:checked~div>div>house>.row4.col4>i:nth-of-type(1):before,
+.hs.row4.col4:checked~div>div>house>.row4.col4>i:nth-of-type(1):after {
+    top: -8.5rem;
+    left: -1rem;
+    animation: smoke 8s linear infinite;
+}
+
+.hs.row4.col4:checked~div>div>house>.row4.col4>i:nth-of-type(1):before {
+    animation: smoke 7.25s 3.75s linear infinite;
+}
+
+.hs.row4.col4:checked~div>div>house>.row4.col4:nth-of-type(even) i:nth-of-type(2):after {
+    left: 9.5rem;
+}
+
+.hs.row4.col4:checked~div>div>house>.row4.col4:nth-of-type(even)>i:nth-of-type(1) {
+    left: 10rem;
+}
+
+.hs.row4.col4:checked~div>div>house>.row5.col4 i:nth-of-type(2),
+.hs.row4.col4:checked~div>div>house>.row5.col4 i:nth-of-type(1) {
+    display: none;
+}
+
+.hs.house.row5.col4:checked~.hs.shed.row4.col4:checked~div>div>house>.row4.col4 {
+    border-bottom: 0.25rem dashed #bc2f2f;
+}
+
+.hs.house.row5.col4:checked~.hs.shed.row4.col4:checked~div>div>house>.row5.col4:before {
+    background: #bc6e2f;
+}
+
+.hs.shed.row5.col4:checked~.hs.house.row4.col4:checked~div>div>house>.row4.col4 {
+    border-bottom: 0.25rem dashed #bc6e2f;
+}
+
+.hs.shed.row5.col4:checked~.hs.house.row4.col4:checked~div>div>house>.row5.col4:before {
+    background: #bc2f2f;
+}
+
+.hs.house.row4.col1:not(:checked)~.hs.house.row4.col4:checked~.hs.house.row4.col5:not(:checked)~.hs.house.row2.col4:checked~div>div>house>.row4.col4>i:nth-of-type(2):after {
+    left: 9.5rem;
+}
+
+.hs.house.row4.col1:not(:checked)~.hs.house.row4.col4:checked~.hs.house.row4.col5:not(:checked)~.hs.house.row2.col4:checked~div>div>house>.row4.col4>i:nth-of-type(1) {
+    left: 11rem;
+}
+
+.hs.row3.col3:checked~.hs.row3.col4:not(:checked)~div>div>house>.row4.col4>i:nth-of-type(2):after,
+.hs.house.row3.col4:not(:checked)~.hs.house.row2.col4:checked~div>div>house>.row4.col4>i:nth-of-type(2):after {
+    left: 4.75rem;
+    height: 3rem;
+    box-shadow: inset 0 6rem 0 #bc2f2f, 0 -0.5rem 0 -0.2rem #6a1b33, 0 -2.25rem 0 -1rem #252529;
+    border-radius: 0 0 1rem 1rem;
+}
+
+.hs.row3.col3:checked~.hs.row3.col4:not(:checked)~div>div>house>.row4.col4>i:nth-of-type(1),
+.hs.house.row3.col4:not(:checked)~.hs.house.row2.col4:checked~div>div>house>.row4.col4>i:nth-of-type(1) {
+    left: 5rem;
+}
+
+.hs.row4.col3:checked~.hs.row4.col4:checked~.hs.house.row3.col3:not(:checked)~.hs.shed.row3.col3:not(:checked)~.hs.row3.col4:checked~div>div>house>.row4.col4 i:nth-of-type(2) {
+    display: block;
+    left: -42%;
+    width: 50%;
+}
+
+.hs.row4.col3:checked~.hs.row4.col4:checked~.hs.house.row3.col3:not(:checked)~.hs.shed.row3.col3:not(:checked)~.hs.row3.col4:checked~div>div>house>.row4.col4 i:nth-of-type(1),
+.hs.row4.col3:checked~.hs.row4.col4:checked~.hs.house.row3.col3:not(:checked)~.hs.shed.row3.col3:not(:checked)~.hs.row3.col4:checked~div>div>house>.row4.col4 i:nth-of-type(2):after {
+    display: none;
+}
+
+.row4.col2:checked~.row4.col3:checked~div>div>house>.row4.col2 i:nth-of-type(1),
+.row4.col2:checked~.row4.col3:checked~div>div>house>.row4.col2 i:nth-of-type(2):after {
+    display: none;
+}
+
+.row4.col2:checked~.row4.col3:checked~div>div>house>.row4.col3>i:nth-of-type(2):after {
+    left: -1.5rem;
+}
+
+.row4.col2:checked~.row4.col3:checked~div>div>house>.row4.col3>i:nth-of-type(1) {
+    left: -1rem;
+}
+
+.hs.row1.col1:checked~.hs.house.row1.col2:not(:checked)~.hs.row1.col3:checked~div>div>house>.row1.col2>i:nth-of-type(5) {
+    display: block;
+    width: 105%;
+}
+
+.hs.row1.col1:checked~.hs.house.row1.col2:not(:checked)~.hs.shed.row1.col3:checked~div>div>house>.row1.col2>i:nth-of-type(5) {
+    display: block;
+    width: 115%;
+}
+
+.hs.row1.col2:checked~.hs.house.row1.col3:not(:checked)~.hs.row1.col4:checked~div>div>house>.row1.col3>i:nth-of-type(5) {
+    display: block;
+    width: 105%;
+}
+
+.hs.row1.col2:checked~.hs.house.row1.col3:not(:checked)~.hs.shed.row1.col4:checked~div>div>house>.row1.col3>i:nth-of-type(5) {
+    display: block;
+    width: 115%;
+}
+
+.hs.row1.col3:checked~.hs.house.row1.col4:not(:checked)~.hs.row1.col5:checked~div>div>house>.row1.col4>i:nth-of-type(5) {
+    display: block;
+    width: 105%;
+}
+
+.hs.row1.col3:checked~.hs.house.row1.col4:not(:checked)~.hs.shed.row1.col5:checked~div>div>house>.row1.col4>i:nth-of-type(5) {
+    display: block;
+    width: 115%;
+}
+
+.hs.row1.col4:checked~.hs.house.row1.col5:not(:checked)~.hs.row1.col6:checked~div>div>house>.row1.col5>i:nth-of-type(5) {
+    display: block;
+    width: 105%;
+}
+
+.hs.row1.col4:checked~.hs.house.row1.col5:not(:checked)~.hs.shed.row1.col6:checked~div>div>house>.row1.col5>i:nth-of-type(5) {
+    display: block;
+    width: 115%;
+}
+
+.hs.row1.col1:checked~.hs.house.row1.col2:not(:checked)~.hs.house.row1.col3:not(:checked)~.hs.row1.col4:checked~div>div>house>.row1.col2>i:nth-of-type(5) {
+    display: block;
+    width: 205%;
+}
+
+.hs.row1.col1:checked~.hs.house.row1.col2:not(:checked)~.hs.house.row1.col3:not(:checked)~.hs.row1.col4:checked~div>div>house>.row1.col2>i:nth-of-type(5):after {
+    border: 0.5rem solid rgba(255, 255, 255, 0);
+    border-top: 1rem solid #bc6e2f;
+    top: 2.75rem;
+    left: 3.5rem;
+    transform: rotate(4deg);
+    z-index: -1 !important;
+    filter: drop-shadow(2.5rem 0.1rem 0 #bc2f59) drop-shadow(5rem 0 0 #bc6e2f);
+}
+
+.hs.row1.col1:checked~.hs.house.row1.col2:not(:checked)~.hs.house.row1.col3:not(:checked)~.hs.row1.col4:checked~div>div>house>.row1.col2>i:nth-of-type(5):before {
+    border: 0.5rem solid rgba(255, 255, 255, 0);
+    border-top: 1rem solid #5ebc2f;
+    top: 3.25rem;
+    left: 13.5rem;
+    transform: rotate(-4deg);
+    z-index: -1 !important;
+    filter: drop-shadow(2.5rem -0.1rem 0 #bc2f59) drop-shadow(5rem 0 0 #bc6e2f);
+}
+
+.hs.row1.col1:checked~.hs.row1.col2:checked~div>div>house>.row1.col1:after {
+    box-shadow: 0 2rem 0 currentColor, 0 4rem 0 currentColor, 0 6rem 0 currentColor, 0 8rem 0 currentColor, 0 10rem 0 currentColor;
+}
+
+.hs.row1.col0:checked~.hs.row1.col1:checked~.hs.row1.col2:checked~div>div>house>.row1.col1:after {
+    box-shadow: -2rem 4rem 0 rgba(204, 51, 51, 0.5), 0 7rem 0 currentColor;
+}
+
+.hs.row1.col0:checked~.hs.row1.col1:checked~div>div>house>.row1.col1:after {
+    box-shadow: -2rem 3rem 0 rgba(204, 51, 51, 0.5), 0 5rem 0 currentColor, 10.75rem 0 0 currentColor, 10.75rem 2rem 0 currentColor, 10.75rem 4rem 0 currentColor, 10.75rem 6rem 0 currentColor, 10.75rem 8rem 0 currentColor, 10.75rem 10rem 0 currentColor;
+}
+
+.hs.row1.col2:checked~.hs.house.row1.col3:not(:checked)~.hs.house.row1.col4:not(:checked)~.hs.row1.col5:checked~div>div>house>.row1.col3>i:nth-of-type(5) {
+    display: block;
+    width: 205%;
+}
+
+.hs.row1.col2:checked~.hs.house.row1.col3:not(:checked)~.hs.house.row1.col4:not(:checked)~.hs.row1.col5:checked~div>div>house>.row1.col3>i:nth-of-type(5):after {
+    border: 0.5rem solid rgba(255, 255, 255, 0);
+    border-top: 1rem solid #bc6e2f;
+    top: 2.75rem;
+    left: 3.5rem;
+    transform: rotate(4deg);
+    z-index: -1 !important;
+    filter: drop-shadow(2.5rem 0.1rem 0 #bc2f59) drop-shadow(5rem 0 0 #bc6e2f);
+}
+
+.hs.row1.col2:checked~.hs.house.row1.col3:not(:checked)~.hs.house.row1.col4:not(:checked)~.hs.row1.col5:checked~div>div>house>.row1.col3>i:nth-of-type(5):before {
+    border: 0.5rem solid rgba(255, 255, 255, 0);
+    border-top: 1rem solid #5ebc2f;
+    top: 3.25rem;
+    left: 13.5rem;
+    transform: rotate(-4deg);
+    z-index: -1 !important;
+    filter: drop-shadow(2.5rem -0.1rem 0 #bc2f59) drop-shadow(5rem 0 0 #bc6e2f);
+}
+
+.hs.row1.col2:checked~.hs.row1.col3:checked~div>div>house>.row1.col2:after {
+    box-shadow: 0 2rem 0 currentColor, 0 4rem 0 currentColor, 0 6rem 0 currentColor, 0 8rem 0 currentColor, 0 10rem 0 currentColor;
+}
+
+.hs.row1.col1:checked~.hs.row1.col2:checked~.hs.row1.col3:checked~div>div>house>.row1.col2:after {
+    box-shadow: -2rem 5rem 0 rgba(204, 51, 51, 0.5), 0 7rem 0 currentColor;
+}
+
+.hs.row1.col1:checked~.hs.row1.col2:checked~div>div>house>.row1.col2:after {
+    box-shadow: -2rem 3rem 0 rgba(204, 51, 51, 0.5), 0 5rem 0 currentColor, 10.75rem 0 0 currentColor, 10.75rem 2rem 0 currentColor, 10.75rem 4rem 0 currentColor, 10.75rem 6rem 0 currentColor, 10.75rem 8rem 0 currentColor, 10.75rem 10rem 0 currentColor;
+}
+
+.hs.row1.col3:checked~.hs.house.row1.col4:not(:checked)~.hs.house.row1.col5:not(:checked)~.hs.row1.col6:checked~div>div>house>.row1.col4>i:nth-of-type(5) {
+    display: block;
+    width: 205%;
+}
+
+.hs.row1.col3:checked~.hs.house.row1.col4:not(:checked)~.hs.house.row1.col5:not(:checked)~.hs.row1.col6:checked~div>div>house>.row1.col4>i:nth-of-type(5):after {
+    border: 0.5rem solid rgba(255, 255, 255, 0);
+    border-top: 1rem solid #bc6e2f;
+    top: 2.75rem;
+    left: 3.5rem;
+    transform: rotate(4deg);
+    z-index: -1 !important;
+    filter: drop-shadow(2.5rem 0.1rem 0 #bc2f59) drop-shadow(5rem 0 0 #bc6e2f);
+}
+
+.hs.row1.col3:checked~.hs.house.row1.col4:not(:checked)~.hs.house.row1.col5:not(:checked)~.hs.row1.col6:checked~div>div>house>.row1.col4>i:nth-of-type(5):before {
+    border: 0.5rem solid rgba(255, 255, 255, 0);
+    border-top: 1rem solid #5ebc2f;
+    top: 3.25rem;
+    left: 13.5rem;
+    transform: rotate(-4deg);
+    z-index: -1 !important;
+    filter: drop-shadow(2.5rem -0.1rem 0 #bc2f59) drop-shadow(5rem 0 0 #bc6e2f);
+}
+
+.hs.row1.col3:checked~.hs.row1.col4:checked~div>div>house>.row1.col3:after {
+    box-shadow: 0 2rem 0 currentColor, 0 4rem 0 currentColor, 0 6rem 0 currentColor, 0 8rem 0 currentColor, 0 10rem 0 currentColor;
+}
+
+.hs.row1.col2:checked~.hs.row1.col3:checked~.hs.row1.col4:checked~div>div>house>.row1.col3:after {
+    box-shadow: -2rem 6rem 0 rgba(204, 51, 51, 0.5), 0 6rem 0 currentColor;
+}
+
+.hs.row1.col2:checked~.hs.row1.col3:checked~div>div>house>.row1.col3:after {
+    box-shadow: -2rem 3rem 0 rgba(204, 51, 51, 0.5), 0 5rem 0 currentColor, 10.75rem 0 0 currentColor, 10.75rem 2rem 0 currentColor, 10.75rem 4rem 0 currentColor, 10.75rem 6rem 0 currentColor, 10.75rem 8rem 0 currentColor, 10.75rem 10rem 0 currentColor;
+}
+
+.hs.row1.col4:checked~.hs.house.row1.col5:not(:checked)~.hs.house.row1.col6:not(:checked)~.hs.row1.col7:checked~div>div>house>.row1.col5>i:nth-of-type(5) {
+    display: block;
+    width: 205%;
+}
+
+.hs.row1.col4:checked~.hs.house.row1.col5:not(:checked)~.hs.house.row1.col6:not(:checked)~.hs.row1.col7:checked~div>div>house>.row1.col5>i:nth-of-type(5):after {
+    border: 0.5rem solid rgba(255, 255, 255, 0);
+    border-top: 1rem solid #bc6e2f;
+    top: 2.75rem;
+    left: 3.5rem;
+    transform: rotate(4deg);
+    z-index: -1 !important;
+    filter: drop-shadow(2.5rem 0.1rem 0 #bc2f59) drop-shadow(5rem 0 0 #bc6e2f);
+}
+
+.hs.row1.col4:checked~.hs.house.row1.col5:not(:checked)~.hs.house.row1.col6:not(:checked)~.hs.row1.col7:checked~div>div>house>.row1.col5>i:nth-of-type(5):before {
+    border: 0.5rem solid rgba(255, 255, 255, 0);
+    border-top: 1rem solid #5ebc2f;
+    top: 3.25rem;
+    left: 13.5rem;
+    transform: rotate(-4deg);
+    z-index: -1 !important;
+    filter: drop-shadow(2.5rem -0.1rem 0 #bc2f59) drop-shadow(5rem 0 0 #bc6e2f);
+}
+
+.hs.row1.col4:checked~.hs.row1.col5:checked~div>div>house>.row1.col4:after {
+    box-shadow: 0 2rem 0 currentColor, 0 4rem 0 currentColor, 0 6rem 0 currentColor, 0 8rem 0 currentColor, 0 10rem 0 currentColor;
+}
+
+.hs.row1.col3:checked~.hs.row1.col4:checked~.hs.row1.col5:checked~div>div>house>.row1.col4:after {
+    box-shadow: -2rem 6rem 0 rgba(204, 51, 51, 0.5), 0 6rem 0 currentColor;
+}
+
+.hs.row1.col3:checked~.hs.row1.col4:checked~div>div>house>.row1.col4:after {
+    box-shadow: -2rem 3rem 0 rgba(204, 51, 51, 0.5), 0 5rem 0 currentColor, 10.75rem 0 0 currentColor, 10.75rem 2rem 0 currentColor, 10.75rem 4rem 0 currentColor, 10.75rem 6rem 0 currentColor, 10.75rem 8rem 0 currentColor, 10.75rem 10rem 0 currentColor;
+}
+
+.hs.row1.col1:checked~div>div>house>.row1.col1 {
+    border-bottom: 0.75rem solid #20112a;
+}
+
+.hs.row1.col1:checked~div>div>house>.row1.col1>i:nth-of-type(3) {
+    width: 2rem;
+    height: 325%;
+    border-left: 0.75rem solid #20112a;
+    border-right: 0.75rem solid #20112a;
+    top: 12rem;
+    background: repeating-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 4rem, #20112a, #20112a 4.5rem);
+    z-index: -200;
+}
+
+.hs.row1.col1:checked~div>div>house>.row1.col1>i:nth-of-type(3):before {
+    width: 12rem;
+    height: 12rem;
+    border: 1.15rem dashed rgba(255, 255, 255, 0);
+    border-bottom-color: #20112a;
+    box-shadow: 0 0.75rem 0 #20112a, inset 0 -0.75rem 0 #20112a;
+    top: 0.5rem;
+    border-radius: 5rem;
+    left: -0.5rem;
+    transform: scaleY(-1);
+}
+
+.hs.row1.col1:checked~div>div>house>.row1.col1>i:nth-of-type(3):after {
+    width: 2rem;
+    height: 100%;
+    border-left: 0.75rem solid #20112a;
+    border-right: 0.75rem solid #20112a;
+    left: 9.8rem;
+    background: repeating-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 4rem, #20112a, #20112a 4.5rem);
+}
+
+.hs.row1.col1:checked~div>div>house>.row1.col1:nth-of-type(n + 5)>i:nth-of-type(3) {
+    height: 225%;
+}
+
+.hs.row1.col1:checked~div>div>house>.row1.col1:nth-of-type(n + 9)>i:nth-of-type(3) {
+    height: 13.5rem;
+}
+
+.hs.row2.col1:checked~.hs.row1.col1:checked~div>div>house>.row1.col1 {
+    border-bottom: none;
+}
+
+.hs.row2.col1:checked~.hs.row1.col1:checked~div>div>house>.row1.col1>i:nth-of-type(3) {
+    display: none !important;
+}
+
+.hs.row1.col2:checked~div>div>house>.row1.col2 {
+    border-bottom: 0.75rem solid #20112a;
+}
+
+.hs.row1.col2:checked~div>div>house>.row1.col2>i:nth-of-type(3) {
+    width: 2rem;
+    height: 325%;
+    border-left: 0.75rem solid #20112a;
+    border-right: 0.75rem solid #20112a;
+    top: 12rem;
+    background: repeating-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 4rem, #20112a, #20112a 4.5rem);
+    z-index: -200;
+}
+
+.hs.row1.col2:checked~div>div>house>.row1.col2>i:nth-of-type(3):before {
+    width: 12rem;
+    height: 12rem;
+    border: 1.15rem dashed rgba(255, 255, 255, 0);
+    border-bottom-color: #20112a;
+    box-shadow: 0 0.75rem 0 #20112a, inset 0 -0.75rem 0 #20112a;
+    top: 0.5rem;
+    border-radius: 5rem;
+    left: -0.5rem;
+    transform: scaleY(-1);
+}
+
+.hs.row1.col2:checked~div>div>house>.row1.col2>i:nth-of-type(3):after {
+    width: 2rem;
+    height: 100%;
+    border-left: 0.75rem solid #20112a;
+    border-right: 0.75rem solid #20112a;
+    left: 9.8rem;
+    background: repeating-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 4rem, #20112a, #20112a 4.5rem);
+}
+
+.hs.row1.col2:checked~div>div>house>.row1.col2:nth-of-type(n + 5)>i:nth-of-type(3) {
+    height: 225%;
+}
+
+.hs.row1.col2:checked~div>div>house>.row1.col2:nth-of-type(n + 9)>i:nth-of-type(3) {
+    height: 13.5rem;
+}
+
+.hs.row2.col2:checked~.hs.row1.col2:checked~div>div>house>.row1.col2 {
+    border-bottom: none;
+}
+
+.hs.row2.col2:checked~.hs.row1.col2:checked~div>div>house>.row1.col2>i:nth-of-type(3) {
+    display: none !important;
+}
+
+.hs.row1.col3:checked~div>div>house>.row1.col3 {
+    border-bottom: 0.75rem solid #20112a;
+}
+
+.hs.row1.col3:checked~div>div>house>.row1.col3>i:nth-of-type(3) {
+    width: 2rem;
+    height: 325%;
+    border-left: 0.75rem solid #20112a;
+    border-right: 0.75rem solid #20112a;
+    top: 12rem;
+    background: repeating-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 4rem, #20112a, #20112a 4.5rem);
+    z-index: -200;
+}
+
+.hs.row1.col3:checked~div>div>house>.row1.col3>i:nth-of-type(3):before {
+    width: 12rem;
+    height: 12rem;
+    border: 1.15rem dashed rgba(255, 255, 255, 0);
+    border-bottom-color: #20112a;
+    box-shadow: 0 0.75rem 0 #20112a, inset 0 -0.75rem 0 #20112a;
+    top: 0.5rem;
+    border-radius: 5rem;
+    left: -0.5rem;
+    transform: scaleY(-1);
+}
+
+.hs.row1.col3:checked~div>div>house>.row1.col3>i:nth-of-type(3):after {
+    width: 2rem;
+    height: 100%;
+    border-left: 0.75rem solid #20112a;
+    border-right: 0.75rem solid #20112a;
+    left: 9.8rem;
+    background: repeating-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 4rem, #20112a, #20112a 4.5rem);
+}
+
+.hs.row1.col3:checked~div>div>house>.row1.col3:nth-of-type(n + 5)>i:nth-of-type(3) {
+    height: 225%;
+}
+
+.hs.row1.col3:checked~div>div>house>.row1.col3:nth-of-type(n + 9)>i:nth-of-type(3) {
+    height: 13.5rem;
+}
+
+.hs.row2.col3:checked~.hs.row1.col3:checked~div>div>house>.row1.col3 {
+    border-bottom: none;
+}
+
+.hs.row2.col3:checked~.hs.row1.col3:checked~div>div>house>.row1.col3>i:nth-of-type(3) {
+    display: none !important;
+}
+
+.hs.row1.col4:checked~div>div>house>.row1.col4 {
+    border-bottom: 0.75rem solid #20112a;
+}
+
+.hs.row1.col4:checked~div>div>house>.row1.col4>i:nth-of-type(3) {
+    width: 2rem;
+    height: 325%;
+    border-left: 0.75rem solid #20112a;
+    border-right: 0.75rem solid #20112a;
+    top: 12rem;
+    background: repeating-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 4rem, #20112a, #20112a 4.5rem);
+    z-index: -200;
+}
+
+.hs.row1.col4:checked~div>div>house>.row1.col4>i:nth-of-type(3):before {
+    width: 12rem;
+    height: 12rem;
+    border: 1.15rem dashed rgba(255, 255, 255, 0);
+    border-bottom-color: #20112a;
+    box-shadow: 0 0.75rem 0 #20112a, inset 0 -0.75rem 0 #20112a;
+    top: 0.5rem;
+    border-radius: 5rem;
+    left: -0.5rem;
+    transform: scaleY(-1);
+}
+
+.hs.row1.col4:checked~div>div>house>.row1.col4>i:nth-of-type(3):after {
+    width: 2rem;
+    height: 100%;
+    border-left: 0.75rem solid #20112a;
+    border-right: 0.75rem solid #20112a;
+    left: 9.8rem;
+    background: repeating-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 4rem, #20112a, #20112a 4.5rem);
+}
+
+.hs.row1.col4:checked~div>div>house>.row1.col4:nth-of-type(n + 5)>i:nth-of-type(3) {
+    height: 225%;
+}
+
+.hs.row1.col4:checked~div>div>house>.row1.col4:nth-of-type(n + 9)>i:nth-of-type(3) {
+    height: 13.5rem;
+}
+
+.hs.row2.col4:checked~.hs.row1.col4:checked~div>div>house>.row1.col4 {
+    border-bottom: none;
+}
+
+.hs.row2.col4:checked~.hs.row1.col4:checked~div>div>house>.row1.col4>i:nth-of-type(3) {
+    display: none !important;
+}
+
+.hs.row2.col1:checked~div>div>house>.row2.col1 {
+    border-bottom: 0.75rem solid #20112a;
+}
+
+.hs.row2.col1:checked~div>div>house>.row2.col1>i:nth-of-type(3) {
+    width: 2rem;
+    height: 325%;
+    border-left: 0.75rem solid #20112a;
+    border-right: 0.75rem solid #20112a;
+    top: 12rem;
+    background: repeating-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 4rem, #20112a, #20112a 4.5rem);
+    z-index: -200;
+}
+
+.hs.row2.col1:checked~div>div>house>.row2.col1>i:nth-of-type(3):before {
+    width: 12rem;
+    height: 12rem;
+    border: 1.15rem dashed rgba(255, 255, 255, 0);
+    border-bottom-color: #20112a;
+    box-shadow: 0 0.75rem 0 #20112a, inset 0 -0.75rem 0 #20112a;
+    top: 0.5rem;
+    border-radius: 5rem;
+    left: -0.5rem;
+    transform: scaleY(-1);
+}
+
+.hs.row2.col1:checked~div>div>house>.row2.col1>i:nth-of-type(3):after {
+    width: 2rem;
+    height: 100%;
+    border-left: 0.75rem solid #20112a;
+    border-right: 0.75rem solid #20112a;
+    left: 9.8rem;
+    background: repeating-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 4rem, #20112a, #20112a 4.5rem);
+}
+
+.hs.row2.col1:checked~div>div>house>.row2.col1:nth-of-type(n + 5)>i:nth-of-type(3) {
+    height: 225%;
+}
+
+.hs.row2.col1:checked~div>div>house>.row2.col1:nth-of-type(n + 9)>i:nth-of-type(3) {
+    height: 13.5rem;
+}
+
+.hs.row3.col1:checked~.hs.row2.col1:checked~div>div>house>.row2.col1 {
+    border-bottom: none;
+}
+
+.hs.row3.col1:checked~.hs.row2.col1:checked~div>div>house>.row2.col1>i:nth-of-type(3) {
+    display: none !important;
+}
+
+.hs.row2.col2:checked~div>div>house>.row2.col2 {
+    border-bottom: 0.75rem solid #20112a;
+}
+
+.hs.row2.col2:checked~div>div>house>.row2.col2>i:nth-of-type(3) {
+    width: 2rem;
+    height: 325%;
+    border-left: 0.75rem solid #20112a;
+    border-right: 0.75rem solid #20112a;
+    top: 12rem;
+    background: repeating-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 4rem, #20112a, #20112a 4.5rem);
+    z-index: -200;
+}
+
+.hs.row2.col2:checked~div>div>house>.row2.col2>i:nth-of-type(3):before {
+    width: 12rem;
+    height: 12rem;
+    border: 1.15rem dashed rgba(255, 255, 255, 0);
+    border-bottom-color: #20112a;
+    box-shadow: 0 0.75rem 0 #20112a, inset 0 -0.75rem 0 #20112a;
+    top: 0.5rem;
+    border-radius: 5rem;
+    left: -0.5rem;
+    transform: scaleY(-1);
+}
+
+.hs.row2.col2:checked~div>div>house>.row2.col2>i:nth-of-type(3):after {
+    width: 2rem;
+    height: 100%;
+    border-left: 0.75rem solid #20112a;
+    border-right: 0.75rem solid #20112a;
+    left: 9.8rem;
+    background: repeating-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 4rem, #20112a, #20112a 4.5rem);
+}
+
+.hs.row2.col2:checked~div>div>house>.row2.col2:nth-of-type(n + 5)>i:nth-of-type(3) {
+    height: 225%;
+}
+
+.hs.row2.col2:checked~div>div>house>.row2.col2:nth-of-type(n + 9)>i:nth-of-type(3) {
+    height: 13.5rem;
+}
+
+.hs.row3.col2:checked~.hs.row2.col2:checked~div>div>house>.row2.col2 {
+    border-bottom: none;
+}
+
+.hs.row3.col2:checked~.hs.row2.col2:checked~div>div>house>.row2.col2>i:nth-of-type(3) {
+    display: none !important;
+}
+
+.hs.row2.col3:checked~div>div>house>.row2.col3 {
+    border-bottom: 0.75rem solid #20112a;
+}
+
+.hs.row2.col3:checked~div>div>house>.row2.col3>i:nth-of-type(3) {
+    width: 2rem;
+    height: 325%;
+    border-left: 0.75rem solid #20112a;
+    border-right: 0.75rem solid #20112a;
+    top: 12rem;
+    background: repeating-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 4rem, #20112a, #20112a 4.5rem);
+    z-index: -200;
+}
+
+.hs.row2.col3:checked~div>div>house>.row2.col3>i:nth-of-type(3):before {
+    width: 12rem;
+    height: 12rem;
+    border: 1.15rem dashed rgba(255, 255, 255, 0);
+    border-bottom-color: #20112a;
+    box-shadow: 0 0.75rem 0 #20112a, inset 0 -0.75rem 0 #20112a;
+    top: 0.5rem;
+    border-radius: 5rem;
+    left: -0.5rem;
+    transform: scaleY(-1);
+}
+
+.hs.row2.col3:checked~div>div>house>.row2.col3>i:nth-of-type(3):after {
+    width: 2rem;
+    height: 100%;
+    border-left: 0.75rem solid #20112a;
+    border-right: 0.75rem solid #20112a;
+    left: 9.8rem;
+    background: repeating-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 4rem, #20112a, #20112a 4.5rem);
+}
+
+.hs.row2.col3:checked~div>div>house>.row2.col3:nth-of-type(n + 5)>i:nth-of-type(3) {
+    height: 225%;
+}
+
+.hs.row2.col3:checked~div>div>house>.row2.col3:nth-of-type(n + 9)>i:nth-of-type(3) {
+    height: 13.5rem;
+}
+
+.hs.row3.col3:checked~.hs.row2.col3:checked~div>div>house>.row2.col3 {
+    border-bottom: none;
+}
+
+.hs.row3.col3:checked~.hs.row2.col3:checked~div>div>house>.row2.col3>i:nth-of-type(3) {
+    display: none !important;
+}
+
+.hs.row2.col4:checked~div>div>house>.row2.col4 {
+    border-bottom: 0.75rem solid #20112a;
+}
+
+.hs.row2.col4:checked~div>div>house>.row2.col4>i:nth-of-type(3) {
+    width: 2rem;
+    height: 325%;
+    border-left: 0.75rem solid #20112a;
+    border-right: 0.75rem solid #20112a;
+    top: 12rem;
+    background: repeating-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 4rem, #20112a, #20112a 4.5rem);
+    z-index: -200;
+}
+
+.hs.row2.col4:checked~div>div>house>.row2.col4>i:nth-of-type(3):before {
+    width: 12rem;
+    height: 12rem;
+    border: 1.15rem dashed rgba(255, 255, 255, 0);
+    border-bottom-color: #20112a;
+    box-shadow: 0 0.75rem 0 #20112a, inset 0 -0.75rem 0 #20112a;
+    top: 0.5rem;
+    border-radius: 5rem;
+    left: -0.5rem;
+    transform: scaleY(-1);
+}
+
+.hs.row2.col4:checked~div>div>house>.row2.col4>i:nth-of-type(3):after {
+    width: 2rem;
+    height: 100%;
+    border-left: 0.75rem solid #20112a;
+    border-right: 0.75rem solid #20112a;
+    left: 9.8rem;
+    background: repeating-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 4rem, #20112a, #20112a 4.5rem);
+}
+
+.hs.row2.col4:checked~div>div>house>.row2.col4:nth-of-type(n + 5)>i:nth-of-type(3) {
+    height: 225%;
+}
+
+.hs.row2.col4:checked~div>div>house>.row2.col4:nth-of-type(n + 9)>i:nth-of-type(3) {
+    height: 13.5rem;
+}
+
+.hs.row3.col4:checked~.hs.row2.col4:checked~div>div>house>.row2.col4 {
+    border-bottom: none;
+}
+
+.hs.row3.col4:checked~.hs.row2.col4:checked~div>div>house>.row2.col4>i:nth-of-type(3) {
+    display: none !important;
+}
+
+.hs.row3.col1:checked~div>div>house>.row3.col1 {
+    border-bottom: 0.75rem solid #20112a;
+}
+
+.hs.row3.col1:checked~div>div>house>.row3.col1>i:nth-of-type(3) {
+    width: 2rem;
+    height: 325%;
+    border-left: 0.75rem solid #20112a;
+    border-right: 0.75rem solid #20112a;
+    top: 12rem;
+    background: repeating-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 4rem, #20112a, #20112a 4.5rem);
+    z-index: -200;
+}
+
+.hs.row3.col1:checked~div>div>house>.row3.col1>i:nth-of-type(3):before {
+    width: 12rem;
+    height: 12rem;
+    border: 1.15rem dashed rgba(255, 255, 255, 0);
+    border-bottom-color: #20112a;
+    box-shadow: 0 0.75rem 0 #20112a, inset 0 -0.75rem 0 #20112a;
+    top: 0.5rem;
+    border-radius: 5rem;
+    left: -0.5rem;
+    transform: scaleY(-1);
+}
+
+.hs.row3.col1:checked~div>div>house>.row3.col1>i:nth-of-type(3):after {
+    width: 2rem;
+    height: 100%;
+    border-left: 0.75rem solid #20112a;
+    border-right: 0.75rem solid #20112a;
+    left: 9.8rem;
+    background: repeating-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 4rem, #20112a, #20112a 4.5rem);
+}
+
+.hs.row3.col1:checked~div>div>house>.row3.col1:nth-of-type(n + 5)>i:nth-of-type(3) {
+    height: 225%;
+}
+
+.hs.row3.col1:checked~div>div>house>.row3.col1:nth-of-type(n + 9)>i:nth-of-type(3) {
+    height: 13.5rem;
+}
+
+.hs.row4.col1:checked~.hs.row3.col1:checked~div>div>house>.row3.col1 {
+    border-bottom: none;
+}
+
+.hs.row4.col1:checked~.hs.row3.col1:checked~div>div>house>.row3.col1>i:nth-of-type(3) {
+    display: none !important;
+}
+
+.hs.row3.col2:checked~div>div>house>.row3.col2 {
+    border-bottom: 0.75rem solid #20112a;
+}
+
+.hs.row3.col2:checked~div>div>house>.row3.col2>i:nth-of-type(3) {
+    width: 2rem;
+    height: 325%;
+    border-left: 0.75rem solid #20112a;
+    border-right: 0.75rem solid #20112a;
+    top: 12rem;
+    background: repeating-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 4rem, #20112a, #20112a 4.5rem);
+    z-index: -200;
+}
+
+.hs.row3.col2:checked~div>div>house>.row3.col2>i:nth-of-type(3):before {
+    width: 12rem;
+    height: 12rem;
+    border: 1.15rem dashed rgba(255, 255, 255, 0);
+    border-bottom-color: #20112a;
+    box-shadow: 0 0.75rem 0 #20112a, inset 0 -0.75rem 0 #20112a;
+    top: 0.5rem;
+    border-radius: 5rem;
+    left: -0.5rem;
+    transform: scaleY(-1);
+}
+
+.hs.row3.col2:checked~div>div>house>.row3.col2>i:nth-of-type(3):after {
+    width: 2rem;
+    height: 100%;
+    border-left: 0.75rem solid #20112a;
+    border-right: 0.75rem solid #20112a;
+    left: 9.8rem;
+    background: repeating-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 4rem, #20112a, #20112a 4.5rem);
+}
+
+.hs.row3.col2:checked~div>div>house>.row3.col2:nth-of-type(n + 5)>i:nth-of-type(3) {
+    height: 225%;
+}
+
+.hs.row3.col2:checked~div>div>house>.row3.col2:nth-of-type(n + 9)>i:nth-of-type(3) {
+    height: 13.5rem;
+}
+
+.hs.row4.col2:checked~.hs.row3.col2:checked~div>div>house>.row3.col2 {
+    border-bottom: none;
+}
+
+.hs.row4.col2:checked~.hs.row3.col2:checked~div>div>house>.row3.col2>i:nth-of-type(3) {
+    display: none !important;
+}
+
+.hs.row3.col3:checked~div>div>house>.row3.col3 {
+    border-bottom: 0.75rem solid #20112a;
+}
+
+.hs.row3.col3:checked~div>div>house>.row3.col3>i:nth-of-type(3) {
+    width: 2rem;
+    height: 325%;
+    border-left: 0.75rem solid #20112a;
+    border-right: 0.75rem solid #20112a;
+    top: 12rem;
+    background: repeating-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 4rem, #20112a, #20112a 4.5rem);
+    z-index: -200;
+}
+
+.hs.row3.col3:checked~div>div>house>.row3.col3>i:nth-of-type(3):before {
+    width: 12rem;
+    height: 12rem;
+    border: 1.15rem dashed rgba(255, 255, 255, 0);
+    border-bottom-color: #20112a;
+    box-shadow: 0 0.75rem 0 #20112a, inset 0 -0.75rem 0 #20112a;
+    top: 0.5rem;
+    border-radius: 5rem;
+    left: -0.5rem;
+    transform: scaleY(-1);
+}
+
+.hs.row3.col3:checked~div>div>house>.row3.col3>i:nth-of-type(3):after {
+    width: 2rem;
+    height: 100%;
+    border-left: 0.75rem solid #20112a;
+    border-right: 0.75rem solid #20112a;
+    left: 9.8rem;
+    background: repeating-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 4rem, #20112a, #20112a 4.5rem);
+}
+
+.hs.row3.col3:checked~div>div>house>.row3.col3:nth-of-type(n + 5)>i:nth-of-type(3) {
+    height: 225%;
+}
+
+.hs.row3.col3:checked~div>div>house>.row3.col3:nth-of-type(n + 9)>i:nth-of-type(3) {
+    height: 13.5rem;
+}
+
+.hs.row4.col3:checked~.hs.row3.col3:checked~div>div>house>.row3.col3 {
+    border-bottom: none;
+}
+
+.hs.row4.col3:checked~.hs.row3.col3:checked~div>div>house>.row3.col3>i:nth-of-type(3) {
+    display: none !important;
+}
+
+.hs.row3.col4:checked~div>div>house>.row3.col4 {
+    border-bottom: 0.75rem solid #20112a;
+}
+
+.hs.row3.col4:checked~div>div>house>.row3.col4>i:nth-of-type(3) {
+    width: 2rem;
+    height: 325%;
+    border-left: 0.75rem solid #20112a;
+    border-right: 0.75rem solid #20112a;
+    top: 12rem;
+    background: repeating-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 4rem, #20112a, #20112a 4.5rem);
+    z-index: -200;
+}
+
+.hs.row3.col4:checked~div>div>house>.row3.col4>i:nth-of-type(3):before {
+    width: 12rem;
+    height: 12rem;
+    border: 1.15rem dashed rgba(255, 255, 255, 0);
+    border-bottom-color: #20112a;
+    box-shadow: 0 0.75rem 0 #20112a, inset 0 -0.75rem 0 #20112a;
+    top: 0.5rem;
+    border-radius: 5rem;
+    left: -0.5rem;
+    transform: scaleY(-1);
+}
+
+.hs.row3.col4:checked~div>div>house>.row3.col4>i:nth-of-type(3):after {
+    width: 2rem;
+    height: 100%;
+    border-left: 0.75rem solid #20112a;
+    border-right: 0.75rem solid #20112a;
+    left: 9.8rem;
+    background: repeating-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 4rem, #20112a, #20112a 4.5rem);
+}
+
+.hs.row3.col4:checked~div>div>house>.row3.col4:nth-of-type(n + 5)>i:nth-of-type(3) {
+    height: 225%;
+}
+
+.hs.row3.col4:checked~div>div>house>.row3.col4:nth-of-type(n + 9)>i:nth-of-type(3) {
+    height: 13.5rem;
+}
+
+.hs.row4.col4:checked~.hs.row3.col4:checked~div>div>house>.row3.col4 {
+    border-bottom: none;
+}
+
+.hs.row4.col4:checked~.hs.row3.col4:checked~div>div>house>.row3.col4>i:nth-of-type(3) {
+    display: none !important;
+}
+
+.hs.row2.col1:checked~.hs.house.row2.col2:not(:checked)~.hs.row2.col3:checked~div>div>house>.row2.col2>i:nth-of-type(5) {
+    display: block;
+    width: 105%;
+}
+
+.hs.row2.col1:checked~.hs.house.row2.col2:not(:checked)~.hs.shed.row2.col3:checked~div>div>house>.row2.col2>i:nth-of-type(5) {
+    display: block;
+    width: 115%;
+}
+
+.hs.row2.col2:checked~.hs.house.row2.col3:not(:checked)~.hs.row2.col4:checked~div>div>house>.row2.col3>i:nth-of-type(5) {
+    display: block;
+    width: 105%;
+}
+
+.hs.row2.col2:checked~.hs.house.row2.col3:not(:checked)~.hs.shed.row2.col4:checked~div>div>house>.row2.col3>i:nth-of-type(5) {
+    display: block;
+    width: 115%;
+}
+
+.hs.row2.col3:checked~.hs.house.row2.col4:not(:checked)~.hs.row2.col5:checked~div>div>house>.row2.col4>i:nth-of-type(5) {
+    display: block;
+    width: 105%;
+}
+
+.hs.row2.col3:checked~.hs.house.row2.col4:not(:checked)~.hs.shed.row2.col5:checked~div>div>house>.row2.col4>i:nth-of-type(5) {
+    display: block;
+    width: 115%;
+}
+
+.hs.row2.col4:checked~.hs.house.row2.col5:not(:checked)~.hs.row2.col6:checked~div>div>house>.row2.col5>i:nth-of-type(5) {
+    display: block;
+    width: 105%;
+}
+
+.hs.row2.col4:checked~.hs.house.row2.col5:not(:checked)~.hs.shed.row2.col6:checked~div>div>house>.row2.col5>i:nth-of-type(5) {
+    display: block;
+    width: 115%;
+}
+
+.hs.row2.col1:checked~.hs.house.row2.col2:not(:checked)~.hs.house.row2.col3:not(:checked)~.hs.row2.col4:checked~div>div>house>.row2.col2>i:nth-of-type(5) {
+    display: block;
+    width: 205%;
+}
+
+.hs.row2.col1:checked~.hs.house.row2.col2:not(:checked)~.hs.house.row2.col3:not(:checked)~.hs.row2.col4:checked~div>div>house>.row2.col2>i:nth-of-type(5):after {
+    border: 0.5rem solid rgba(255, 255, 255, 0);
+    border-top: 1rem solid #bc6e2f;
+    top: 2.75rem;
+    left: 3.5rem;
+    transform: rotate(4deg);
+    z-index: -1 !important;
+    filter: drop-shadow(2.5rem 0.1rem 0 #bc2f59) drop-shadow(5rem 0 0 #bc6e2f);
+}
+
+.hs.row2.col1:checked~.hs.house.row2.col2:not(:checked)~.hs.house.row2.col3:not(:checked)~.hs.row2.col4:checked~div>div>house>.row2.col2>i:nth-of-type(5):before {
+    border: 0.5rem solid rgba(255, 255, 255, 0);
+    border-top: 1rem solid #5ebc2f;
+    top: 3.25rem;
+    left: 13.5rem;
+    transform: rotate(-4deg);
+    z-index: -1 !important;
+    filter: drop-shadow(2.5rem -0.1rem 0 #bc2f59) drop-shadow(5rem 0 0 #bc6e2f);
+}
+
+.hs.row2.col1:checked~.hs.row2.col2:checked~div>div>house>.row2.col1:after {
+    box-shadow: 0 2rem 0 currentColor, 0 4rem 0 currentColor, 0 6rem 0 currentColor, 0 8rem 0 currentColor, 0 10rem 0 currentColor;
+}
+
+.hs.row2.col0:checked~.hs.row2.col1:checked~.hs.row2.col2:checked~div>div>house>.row2.col1:after {
+    box-shadow: -2rem 4rem 0 rgba(204, 51, 51, 0.5), 0 6rem 0 currentColor;
+}
+
+.hs.row2.col0:checked~.hs.row2.col1:checked~div>div>house>.row2.col1:after {
+    box-shadow: -2rem 3rem 0 rgba(204, 51, 51, 0.5), 0 5rem 0 currentColor, 10.75rem 0 0 currentColor, 10.75rem 2rem 0 currentColor, 10.75rem 4rem 0 currentColor, 10.75rem 6rem 0 currentColor, 10.75rem 8rem 0 currentColor, 10.75rem 10rem 0 currentColor;
+}
+
+.hs.row2.col2:checked~.hs.house.row2.col3:not(:checked)~.hs.house.row2.col4:not(:checked)~.hs.row2.col5:checked~div>div>house>.row2.col3>i:nth-of-type(5) {
+    display: block;
+    width: 205%;
+}
+
+.hs.row2.col2:checked~.hs.house.row2.col3:not(:checked)~.hs.house.row2.col4:not(:checked)~.hs.row2.col5:checked~div>div>house>.row2.col3>i:nth-of-type(5):after {
+    border: 0.5rem solid rgba(255, 255, 255, 0);
+    border-top: 1rem solid #bc6e2f;
+    top: 2.75rem;
+    left: 3.5rem;
+    transform: rotate(4deg);
+    z-index: -1 !important;
+    filter: drop-shadow(2.5rem 0.1rem 0 #bc2f59) drop-shadow(5rem 0 0 #bc6e2f);
+}
+
+.hs.row2.col2:checked~.hs.house.row2.col3:not(:checked)~.hs.house.row2.col4:not(:checked)~.hs.row2.col5:checked~div>div>house>.row2.col3>i:nth-of-type(5):before {
+    border: 0.5rem solid rgba(255, 255, 255, 0);
+    border-top: 1rem solid #5ebc2f;
+    top: 3.25rem;
+    left: 13.5rem;
+    transform: rotate(-4deg);
+    z-index: -1 !important;
+    filter: drop-shadow(2.5rem -0.1rem 0 #bc2f59) drop-shadow(5rem 0 0 #bc6e2f);
+}
+
+.hs.row2.col2:checked~.hs.row2.col3:checked~div>div>house>.row2.col2:after {
+    box-shadow: 0 2rem 0 currentColor, 0 4rem 0 currentColor, 0 6rem 0 currentColor, 0 8rem 0 currentColor, 0 10rem 0 currentColor;
+}
+
+.hs.row2.col1:checked~.hs.row2.col2:checked~.hs.row2.col3:checked~div>div>house>.row2.col2:after {
+    box-shadow: -2rem 4rem 0 rgba(204, 51, 51, 0.5), 0 7rem 0 currentColor;
+}
+
+.hs.row2.col1:checked~.hs.row2.col2:checked~div>div>house>.row2.col2:after {
+    box-shadow: -2rem 3rem 0 rgba(204, 51, 51, 0.5), 0 5rem 0 currentColor, 10.75rem 0 0 currentColor, 10.75rem 2rem 0 currentColor, 10.75rem 4rem 0 currentColor, 10.75rem 6rem 0 currentColor, 10.75rem 8rem 0 currentColor, 10.75rem 10rem 0 currentColor;
+}
+
+.hs.row2.col3:checked~.hs.house.row2.col4:not(:checked)~.hs.house.row2.col5:not(:checked)~.hs.row2.col6:checked~div>div>house>.row2.col4>i:nth-of-type(5) {
+    display: block;
+    width: 205%;
+}
+
+.hs.row2.col3:checked~.hs.house.row2.col4:not(:checked)~.hs.house.row2.col5:not(:checked)~.hs.row2.col6:checked~div>div>house>.row2.col4>i:nth-of-type(5):after {
+    border: 0.5rem solid rgba(255, 255, 255, 0);
+    border-top: 1rem solid #bc6e2f;
+    top: 2.75rem;
+    left: 3.5rem;
+    transform: rotate(4deg);
+    z-index: -1 !important;
+    filter: drop-shadow(2.5rem 0.1rem 0 #bc2f59) drop-shadow(5rem 0 0 #bc6e2f);
+}
+
+.hs.row2.col3:checked~.hs.house.row2.col4:not(:checked)~.hs.house.row2.col5:not(:checked)~.hs.row2.col6:checked~div>div>house>.row2.col4>i:nth-of-type(5):before {
+    border: 0.5rem solid rgba(255, 255, 255, 0);
+    border-top: 1rem solid #5ebc2f;
+    top: 3.25rem;
+    left: 13.5rem;
+    transform: rotate(-4deg);
+    z-index: -1 !important;
+    filter: drop-shadow(2.5rem -0.1rem 0 #bc2f59) drop-shadow(5rem 0 0 #bc6e2f);
+}
+
+.hs.row2.col3:checked~.hs.row2.col4:checked~div>div>house>.row2.col3:after {
+    box-shadow: 0 2rem 0 currentColor, 0 4rem 0 currentColor, 0 6rem 0 currentColor, 0 8rem 0 currentColor, 0 10rem 0 currentColor;
+}
+
+.hs.row2.col2:checked~.hs.row2.col3:checked~.hs.row2.col4:checked~div>div>house>.row2.col3:after {
+    box-shadow: -2rem 4rem 0 rgba(204, 51, 51, 0.5), 0 6rem 0 currentColor;
+}
+
+.hs.row2.col2:checked~.hs.row2.col3:checked~div>div>house>.row2.col3:after {
+    box-shadow: -2rem 3rem 0 rgba(204, 51, 51, 0.5), 0 5rem 0 currentColor, 10.75rem 0 0 currentColor, 10.75rem 2rem 0 currentColor, 10.75rem 4rem 0 currentColor, 10.75rem 6rem 0 currentColor, 10.75rem 8rem 0 currentColor, 10.75rem 10rem 0 currentColor;
+}
+
+.hs.row2.col4:checked~.hs.house.row2.col5:not(:checked)~.hs.house.row2.col6:not(:checked)~.hs.row2.col7:checked~div>div>house>.row2.col5>i:nth-of-type(5) {
+    display: block;
+    width: 205%;
+}
+
+.hs.row2.col4:checked~.hs.house.row2.col5:not(:checked)~.hs.house.row2.col6:not(:checked)~.hs.row2.col7:checked~div>div>house>.row2.col5>i:nth-of-type(5):after {
+    border: 0.5rem solid rgba(255, 255, 255, 0);
+    border-top: 1rem solid #bc6e2f;
+    top: 2.75rem;
+    left: 3.5rem;
+    transform: rotate(4deg);
+    z-index: -1 !important;
+    filter: drop-shadow(2.5rem 0.1rem 0 #bc2f59) drop-shadow(5rem 0 0 #bc6e2f);
+}
+
+.hs.row2.col4:checked~.hs.house.row2.col5:not(:checked)~.hs.house.row2.col6:not(:checked)~.hs.row2.col7:checked~div>div>house>.row2.col5>i:nth-of-type(5):before {
+    border: 0.5rem solid rgba(255, 255, 255, 0);
+    border-top: 1rem solid #5ebc2f;
+    top: 3.25rem;
+    left: 13.5rem;
+    transform: rotate(-4deg);
+    z-index: -1 !important;
+    filter: drop-shadow(2.5rem -0.1rem 0 #bc2f59) drop-shadow(5rem 0 0 #bc6e2f);
+}
+
+.hs.row2.col4:checked~.hs.row2.col5:checked~div>div>house>.row2.col4:after {
+    box-shadow: 0 2rem 0 currentColor, 0 4rem 0 currentColor, 0 6rem 0 currentColor, 0 8rem 0 currentColor, 0 10rem 0 currentColor;
+}
+
+.hs.row2.col3:checked~.hs.row2.col4:checked~.hs.row2.col5:checked~div>div>house>.row2.col4:after {
+    box-shadow: -2rem 5rem 0 rgba(204, 51, 51, 0.5), 0 8rem 0 currentColor;
+}
+
+.hs.row2.col3:checked~.hs.row2.col4:checked~div>div>house>.row2.col4:after {
+    box-shadow: -2rem 3rem 0 rgba(204, 51, 51, 0.5), 0 5rem 0 currentColor, 10.75rem 0 0 currentColor, 10.75rem 2rem 0 currentColor, 10.75rem 4rem 0 currentColor, 10.75rem 6rem 0 currentColor, 10.75rem 8rem 0 currentColor, 10.75rem 10rem 0 currentColor;
+}
+
+.hs.row1.col1:checked~div>div>house>.row1.col1 {
+    border-bottom: 0.75rem solid #20112a;
+}
+
+.hs.row1.col1:checked~div>div>house>.row1.col1>i:nth-of-type(3) {
+    width: 2rem;
+    height: 325%;
+    border-left: 0.75rem solid #20112a;
+    border-right: 0.75rem solid #20112a;
+    top: 12rem;
+    background: repeating-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 4rem, #20112a, #20112a 4.5rem);
+    z-index: -200;
+}
+
+.hs.row1.col1:checked~div>div>house>.row1.col1>i:nth-of-type(3):before {
+    width: 12rem;
+    height: 12rem;
+    border: 1.15rem dashed rgba(255, 255, 255, 0);
+    border-bottom-color: #20112a;
+    box-shadow: 0 0.75rem 0 #20112a, inset 0 -0.75rem 0 #20112a;
+    top: 0.5rem;
+    border-radius: 5rem;
+    left: -0.5rem;
+    transform: scaleY(-1);
+}
+
+.hs.row1.col1:checked~div>div>house>.row1.col1>i:nth-of-type(3):after {
+    width: 2rem;
+    height: 100%;
+    border-left: 0.75rem solid #20112a;
+    border-right: 0.75rem solid #20112a;
+    left: 9.8rem;
+    background: repeating-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 4rem, #20112a, #20112a 4.5rem);
+}
+
+.hs.row1.col1:checked~div>div>house>.row1.col1:nth-of-type(n + 5)>i:nth-of-type(3) {
+    height: 225%;
+}
+
+.hs.row1.col1:checked~div>div>house>.row1.col1:nth-of-type(n + 9)>i:nth-of-type(3) {
+    height: 13.5rem;
+}
+
+.hs.row2.col1:checked~.hs.row1.col1:checked~div>div>house>.row1.col1 {
+    border-bottom: none;
+}
+
+.hs.row2.col1:checked~.hs.row1.col1:checked~div>div>house>.row1.col1>i:nth-of-type(3) {
+    display: none !important;
+}
+
+.hs.row1.col2:checked~div>div>house>.row1.col2 {
+    border-bottom: 0.75rem solid #20112a;
+}
+
+.hs.row1.col2:checked~div>div>house>.row1.col2>i:nth-of-type(3) {
+    width: 2rem;
+    height: 325%;
+    border-left: 0.75rem solid #20112a;
+    border-right: 0.75rem solid #20112a;
+    top: 12rem;
+    background: repeating-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 4rem, #20112a, #20112a 4.5rem);
+    z-index: -200;
+}
+
+.hs.row1.col2:checked~div>div>house>.row1.col2>i:nth-of-type(3):before {
+    width: 12rem;
+    height: 12rem;
+    border: 1.15rem dashed rgba(255, 255, 255, 0);
+    border-bottom-color: #20112a;
+    box-shadow: 0 0.75rem 0 #20112a, inset 0 -0.75rem 0 #20112a;
+    top: 0.5rem;
+    border-radius: 5rem;
+    left: -0.5rem;
+    transform: scaleY(-1);
+}
+
+.hs.row1.col2:checked~div>div>house>.row1.col2>i:nth-of-type(3):after {
+    width: 2rem;
+    height: 100%;
+    border-left: 0.75rem solid #20112a;
+    border-right: 0.75rem solid #20112a;
+    left: 9.8rem;
+    background: repeating-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 4rem, #20112a, #20112a 4.5rem);
+}
+
+.hs.row1.col2:checked~div>div>house>.row1.col2:nth-of-type(n + 5)>i:nth-of-type(3) {
+    height: 225%;
+}
+
+.hs.row1.col2:checked~div>div>house>.row1.col2:nth-of-type(n + 9)>i:nth-of-type(3) {
+    height: 13.5rem;
+}
+
+.hs.row2.col2:checked~.hs.row1.col2:checked~div>div>house>.row1.col2 {
+    border-bottom: none;
+}
+
+.hs.row2.col2:checked~.hs.row1.col2:checked~div>div>house>.row1.col2>i:nth-of-type(3) {
+    display: none !important;
+}
+
+.hs.row1.col3:checked~div>div>house>.row1.col3 {
+    border-bottom: 0.75rem solid #20112a;
+}
+
+.hs.row1.col3:checked~div>div>house>.row1.col3>i:nth-of-type(3) {
+    width: 2rem;
+    height: 325%;
+    border-left: 0.75rem solid #20112a;
+    border-right: 0.75rem solid #20112a;
+    top: 12rem;
+    background: repeating-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 4rem, #20112a, #20112a 4.5rem);
+    z-index: -200;
+}
+
+.hs.row1.col3:checked~div>div>house>.row1.col3>i:nth-of-type(3):before {
+    width: 12rem;
+    height: 12rem;
+    border: 1.15rem dashed rgba(255, 255, 255, 0);
+    border-bottom-color: #20112a;
+    box-shadow: 0 0.75rem 0 #20112a, inset 0 -0.75rem 0 #20112a;
+    top: 0.5rem;
+    border-radius: 5rem;
+    left: -0.5rem;
+    transform: scaleY(-1);
+}
+
+.hs.row1.col3:checked~div>div>house>.row1.col3>i:nth-of-type(3):after {
+    width: 2rem;
+    height: 100%;
+    border-left: 0.75rem solid #20112a;
+    border-right: 0.75rem solid #20112a;
+    left: 9.8rem;
+    background: repeating-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 4rem, #20112a, #20112a 4.5rem);
+}
+
+.hs.row1.col3:checked~div>div>house>.row1.col3:nth-of-type(n + 5)>i:nth-of-type(3) {
+    height: 225%;
+}
+
+.hs.row1.col3:checked~div>div>house>.row1.col3:nth-of-type(n + 9)>i:nth-of-type(3) {
+    height: 13.5rem;
+}
+
+.hs.row2.col3:checked~.hs.row1.col3:checked~div>div>house>.row1.col3 {
+    border-bottom: none;
+}
+
+.hs.row2.col3:checked~.hs.row1.col3:checked~div>div>house>.row1.col3>i:nth-of-type(3) {
+    display: none !important;
+}
+
+.hs.row1.col4:checked~div>div>house>.row1.col4 {
+    border-bottom: 0.75rem solid #20112a;
+}
+
+.hs.row1.col4:checked~div>div>house>.row1.col4>i:nth-of-type(3) {
+    width: 2rem;
+    height: 325%;
+    border-left: 0.75rem solid #20112a;
+    border-right: 0.75rem solid #20112a;
+    top: 12rem;
+    background: repeating-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 4rem, #20112a, #20112a 4.5rem);
+    z-index: -200;
+}
+
+.hs.row1.col4:checked~div>div>house>.row1.col4>i:nth-of-type(3):before {
+    width: 12rem;
+    height: 12rem;
+    border: 1.15rem dashed rgba(255, 255, 255, 0);
+    border-bottom-color: #20112a;
+    box-shadow: 0 0.75rem 0 #20112a, inset 0 -0.75rem 0 #20112a;
+    top: 0.5rem;
+    border-radius: 5rem;
+    left: -0.5rem;
+    transform: scaleY(-1);
+}
+
+.hs.row1.col4:checked~div>div>house>.row1.col4>i:nth-of-type(3):after {
+    width: 2rem;
+    height: 100%;
+    border-left: 0.75rem solid #20112a;
+    border-right: 0.75rem solid #20112a;
+    left: 9.8rem;
+    background: repeating-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 4rem, #20112a, #20112a 4.5rem);
+}
+
+.hs.row1.col4:checked~div>div>house>.row1.col4:nth-of-type(n + 5)>i:nth-of-type(3) {
+    height: 225%;
+}
+
+.hs.row1.col4:checked~div>div>house>.row1.col4:nth-of-type(n + 9)>i:nth-of-type(3) {
+    height: 13.5rem;
+}
+
+.hs.row2.col4:checked~.hs.row1.col4:checked~div>div>house>.row1.col4 {
+    border-bottom: none;
+}
+
+.hs.row2.col4:checked~.hs.row1.col4:checked~div>div>house>.row1.col4>i:nth-of-type(3) {
+    display: none !important;
+}
+
+.hs.row2.col1:checked~div>div>house>.row2.col1 {
+    border-bottom: 0.75rem solid #20112a;
+}
+
+.hs.row2.col1:checked~div>div>house>.row2.col1>i:nth-of-type(3) {
+    width: 2rem;
+    height: 325%;
+    border-left: 0.75rem solid #20112a;
+    border-right: 0.75rem solid #20112a;
+    top: 12rem;
+    background: repeating-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 4rem, #20112a, #20112a 4.5rem);
+    z-index: -200;
+}
+
+.hs.row2.col1:checked~div>div>house>.row2.col1>i:nth-of-type(3):before {
+    width: 12rem;
+    height: 12rem;
+    border: 1.15rem dashed rgba(255, 255, 255, 0);
+    border-bottom-color: #20112a;
+    box-shadow: 0 0.75rem 0 #20112a, inset 0 -0.75rem 0 #20112a;
+    top: 0.5rem;
+    border-radius: 5rem;
+    left: -0.5rem;
+    transform: scaleY(-1);
+}
+
+.hs.row2.col1:checked~div>div>house>.row2.col1>i:nth-of-type(3):after {
+    width: 2rem;
+    height: 100%;
+    border-left: 0.75rem solid #20112a;
+    border-right: 0.75rem solid #20112a;
+    left: 9.8rem;
+    background: repeating-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 4rem, #20112a, #20112a 4.5rem);
+}
+
+.hs.row2.col1:checked~div>div>house>.row2.col1:nth-of-type(n + 5)>i:nth-of-type(3) {
+    height: 225%;
+}
+
+.hs.row2.col1:checked~div>div>house>.row2.col1:nth-of-type(n + 9)>i:nth-of-type(3) {
+    height: 13.5rem;
+}
+
+.hs.row3.col1:checked~.hs.row2.col1:checked~div>div>house>.row2.col1 {
+    border-bottom: none;
+}
+
+.hs.row3.col1:checked~.hs.row2.col1:checked~div>div>house>.row2.col1>i:nth-of-type(3) {
+    display: none !important;
+}
+
+.hs.row2.col2:checked~div>div>house>.row2.col2 {
+    border-bottom: 0.75rem solid #20112a;
+}
+
+.hs.row2.col2:checked~div>div>house>.row2.col2>i:nth-of-type(3) {
+    width: 2rem;
+    height: 325%;
+    border-left: 0.75rem solid #20112a;
+    border-right: 0.75rem solid #20112a;
+    top: 12rem;
+    background: repeating-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 4rem, #20112a, #20112a 4.5rem);
+    z-index: -200;
+}
+
+.hs.row2.col2:checked~div>div>house>.row2.col2>i:nth-of-type(3):before {
+    width: 12rem;
+    height: 12rem;
+    border: 1.15rem dashed rgba(255, 255, 255, 0);
+    border-bottom-color: #20112a;
+    box-shadow: 0 0.75rem 0 #20112a, inset 0 -0.75rem 0 #20112a;
+    top: 0.5rem;
+    border-radius: 5rem;
+    left: -0.5rem;
+    transform: scaleY(-1);
+}
+
+.hs.row2.col2:checked~div>div>house>.row2.col2>i:nth-of-type(3):after {
+    width: 2rem;
+    height: 100%;
+    border-left: 0.75rem solid #20112a;
+    border-right: 0.75rem solid #20112a;
+    left: 9.8rem;
+    background: repeating-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 4rem, #20112a, #20112a 4.5rem);
+}
+
+.hs.row2.col2:checked~div>div>house>.row2.col2:nth-of-type(n + 5)>i:nth-of-type(3) {
+    height: 225%;
+}
+
+.hs.row2.col2:checked~div>div>house>.row2.col2:nth-of-type(n + 9)>i:nth-of-type(3) {
+    height: 13.5rem;
+}
+
+.hs.row3.col2:checked~.hs.row2.col2:checked~div>div>house>.row2.col2 {
+    border-bottom: none;
+}
+
+.hs.row3.col2:checked~.hs.row2.col2:checked~div>div>house>.row2.col2>i:nth-of-type(3) {
+    display: none !important;
+}
+
+.hs.row2.col3:checked~div>div>house>.row2.col3 {
+    border-bottom: 0.75rem solid #20112a;
+}
+
+.hs.row2.col3:checked~div>div>house>.row2.col3>i:nth-of-type(3) {
+    width: 2rem;
+    height: 325%;
+    border-left: 0.75rem solid #20112a;
+    border-right: 0.75rem solid #20112a;
+    top: 12rem;
+    background: repeating-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 4rem, #20112a, #20112a 4.5rem);
+    z-index: -200;
+}
+
+.hs.row2.col3:checked~div>div>house>.row2.col3>i:nth-of-type(3):before {
+    width: 12rem;
+    height: 12rem;
+    border: 1.15rem dashed rgba(255, 255, 255, 0);
+    border-bottom-color: #20112a;
+    box-shadow: 0 0.75rem 0 #20112a, inset 0 -0.75rem 0 #20112a;
+    top: 0.5rem;
+    border-radius: 5rem;
+    left: -0.5rem;
+    transform: scaleY(-1);
+}
+
+.hs.row2.col3:checked~div>div>house>.row2.col3>i:nth-of-type(3):after {
+    width: 2rem;
+    height: 100%;
+    border-left: 0.75rem solid #20112a;
+    border-right: 0.75rem solid #20112a;
+    left: 9.8rem;
+    background: repeating-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 4rem, #20112a, #20112a 4.5rem);
+}
+
+.hs.row2.col3:checked~div>div>house>.row2.col3:nth-of-type(n + 5)>i:nth-of-type(3) {
+    height: 225%;
+}
+
+.hs.row2.col3:checked~div>div>house>.row2.col3:nth-of-type(n + 9)>i:nth-of-type(3) {
+    height: 13.5rem;
+}
+
+.hs.row3.col3:checked~.hs.row2.col3:checked~div>div>house>.row2.col3 {
+    border-bottom: none;
+}
+
+.hs.row3.col3:checked~.hs.row2.col3:checked~div>div>house>.row2.col3>i:nth-of-type(3) {
+    display: none !important;
+}
+
+.hs.row2.col4:checked~div>div>house>.row2.col4 {
+    border-bottom: 0.75rem solid #20112a;
+}
+
+.hs.row2.col4:checked~div>div>house>.row2.col4>i:nth-of-type(3) {
+    width: 2rem;
+    height: 325%;
+    border-left: 0.75rem solid #20112a;
+    border-right: 0.75rem solid #20112a;
+    top: 12rem;
+    background: repeating-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 4rem, #20112a, #20112a 4.5rem);
+    z-index: -200;
+}
+
+.hs.row2.col4:checked~div>div>house>.row2.col4>i:nth-of-type(3):before {
+    width: 12rem;
+    height: 12rem;
+    border: 1.15rem dashed rgba(255, 255, 255, 0);
+    border-bottom-color: #20112a;
+    box-shadow: 0 0.75rem 0 #20112a, inset 0 -0.75rem 0 #20112a;
+    top: 0.5rem;
+    border-radius: 5rem;
+    left: -0.5rem;
+    transform: scaleY(-1);
+}
+
+.hs.row2.col4:checked~div>div>house>.row2.col4>i:nth-of-type(3):after {
+    width: 2rem;
+    height: 100%;
+    border-left: 0.75rem solid #20112a;
+    border-right: 0.75rem solid #20112a;
+    left: 9.8rem;
+    background: repeating-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 4rem, #20112a, #20112a 4.5rem);
+}
+
+.hs.row2.col4:checked~div>div>house>.row2.col4:nth-of-type(n + 5)>i:nth-of-type(3) {
+    height: 225%;
+}
+
+.hs.row2.col4:checked~div>div>house>.row2.col4:nth-of-type(n + 9)>i:nth-of-type(3) {
+    height: 13.5rem;
+}
+
+.hs.row3.col4:checked~.hs.row2.col4:checked~div>div>house>.row2.col4 {
+    border-bottom: none;
+}
+
+.hs.row3.col4:checked~.hs.row2.col4:checked~div>div>house>.row2.col4>i:nth-of-type(3) {
+    display: none !important;
+}
+
+.hs.row3.col1:checked~div>div>house>.row3.col1 {
+    border-bottom: 0.75rem solid #20112a;
+}
+
+.hs.row3.col1:checked~div>div>house>.row3.col1>i:nth-of-type(3) {
+    width: 2rem;
+    height: 325%;
+    border-left: 0.75rem solid #20112a;
+    border-right: 0.75rem solid #20112a;
+    top: 12rem;
+    background: repeating-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 4rem, #20112a, #20112a 4.5rem);
+    z-index: -200;
+}
+
+.hs.row3.col1:checked~div>div>house>.row3.col1>i:nth-of-type(3):before {
+    width: 12rem;
+    height: 12rem;
+    border: 1.15rem dashed rgba(255, 255, 255, 0);
+    border-bottom-color: #20112a;
+    box-shadow: 0 0.75rem 0 #20112a, inset 0 -0.75rem 0 #20112a;
+    top: 0.5rem;
+    border-radius: 5rem;
+    left: -0.5rem;
+    transform: scaleY(-1);
+}
+
+.hs.row3.col1:checked~div>div>house>.row3.col1>i:nth-of-type(3):after {
+    width: 2rem;
+    height: 100%;
+    border-left: 0.75rem solid #20112a;
+    border-right: 0.75rem solid #20112a;
+    left: 9.8rem;
+    background: repeating-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 4rem, #20112a, #20112a 4.5rem);
+}
+
+.hs.row3.col1:checked~div>div>house>.row3.col1:nth-of-type(n + 5)>i:nth-of-type(3) {
+    height: 225%;
+}
+
+.hs.row3.col1:checked~div>div>house>.row3.col1:nth-of-type(n + 9)>i:nth-of-type(3) {
+    height: 13.5rem;
+}
+
+.hs.row4.col1:checked~.hs.row3.col1:checked~div>div>house>.row3.col1 {
+    border-bottom: none;
+}
+
+.hs.row4.col1:checked~.hs.row3.col1:checked~div>div>house>.row3.col1>i:nth-of-type(3) {
+    display: none !important;
+}
+
+.hs.row3.col2:checked~div>div>house>.row3.col2 {
+    border-bottom: 0.75rem solid #20112a;
+}
+
+.hs.row3.col2:checked~div>div>house>.row3.col2>i:nth-of-type(3) {
+    width: 2rem;
+    height: 325%;
+    border-left: 0.75rem solid #20112a;
+    border-right: 0.75rem solid #20112a;
+    top: 12rem;
+    background: repeating-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 4rem, #20112a, #20112a 4.5rem);
+    z-index: -200;
+}
+
+.hs.row3.col2:checked~div>div>house>.row3.col2>i:nth-of-type(3):before {
+    width: 12rem;
+    height: 12rem;
+    border: 1.15rem dashed rgba(255, 255, 255, 0);
+    border-bottom-color: #20112a;
+    box-shadow: 0 0.75rem 0 #20112a, inset 0 -0.75rem 0 #20112a;
+    top: 0.5rem;
+    border-radius: 5rem;
+    left: -0.5rem;
+    transform: scaleY(-1);
+}
+
+.hs.row3.col2:checked~div>div>house>.row3.col2>i:nth-of-type(3):after {
+    width: 2rem;
+    height: 100%;
+    border-left: 0.75rem solid #20112a;
+    border-right: 0.75rem solid #20112a;
+    left: 9.8rem;
+    background: repeating-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 4rem, #20112a, #20112a 4.5rem);
+}
+
+.hs.row3.col2:checked~div>div>house>.row3.col2:nth-of-type(n + 5)>i:nth-of-type(3) {
+    height: 225%;
+}
+
+.hs.row3.col2:checked~div>div>house>.row3.col2:nth-of-type(n + 9)>i:nth-of-type(3) {
+    height: 13.5rem;
+}
+
+.hs.row4.col2:checked~.hs.row3.col2:checked~div>div>house>.row3.col2 {
+    border-bottom: none;
+}
+
+.hs.row4.col2:checked~.hs.row3.col2:checked~div>div>house>.row3.col2>i:nth-of-type(3) {
+    display: none !important;
+}
+
+.hs.row3.col3:checked~div>div>house>.row3.col3 {
+    border-bottom: 0.75rem solid #20112a;
+}
+
+.hs.row3.col3:checked~div>div>house>.row3.col3>i:nth-of-type(3) {
+    width: 2rem;
+    height: 325%;
+    border-left: 0.75rem solid #20112a;
+    border-right: 0.75rem solid #20112a;
+    top: 12rem;
+    background: repeating-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 4rem, #20112a, #20112a 4.5rem);
+    z-index: -200;
+}
+
+.hs.row3.col3:checked~div>div>house>.row3.col3>i:nth-of-type(3):before {
+    width: 12rem;
+    height: 12rem;
+    border: 1.15rem dashed rgba(255, 255, 255, 0);
+    border-bottom-color: #20112a;
+    box-shadow: 0 0.75rem 0 #20112a, inset 0 -0.75rem 0 #20112a;
+    top: 0.5rem;
+    border-radius: 5rem;
+    left: -0.5rem;
+    transform: scaleY(-1);
+}
+
+.hs.row3.col3:checked~div>div>house>.row3.col3>i:nth-of-type(3):after {
+    width: 2rem;
+    height: 100%;
+    border-left: 0.75rem solid #20112a;
+    border-right: 0.75rem solid #20112a;
+    left: 9.8rem;
+    background: repeating-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 4rem, #20112a, #20112a 4.5rem);
+}
+
+.hs.row3.col3:checked~div>div>house>.row3.col3:nth-of-type(n + 5)>i:nth-of-type(3) {
+    height: 225%;
+}
+
+.hs.row3.col3:checked~div>div>house>.row3.col3:nth-of-type(n + 9)>i:nth-of-type(3) {
+    height: 13.5rem;
+}
+
+.hs.row4.col3:checked~.hs.row3.col3:checked~div>div>house>.row3.col3 {
+    border-bottom: none;
+}
+
+.hs.row4.col3:checked~.hs.row3.col3:checked~div>div>house>.row3.col3>i:nth-of-type(3) {
+    display: none !important;
+}
+
+.hs.row3.col4:checked~div>div>house>.row3.col4 {
+    border-bottom: 0.75rem solid #20112a;
+}
+
+.hs.row3.col4:checked~div>div>house>.row3.col4>i:nth-of-type(3) {
+    width: 2rem;
+    height: 325%;
+    border-left: 0.75rem solid #20112a;
+    border-right: 0.75rem solid #20112a;
+    top: 12rem;
+    background: repeating-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 4rem, #20112a, #20112a 4.5rem);
+    z-index: -200;
+}
+
+.hs.row3.col4:checked~div>div>house>.row3.col4>i:nth-of-type(3):before {
+    width: 12rem;
+    height: 12rem;
+    border: 1.15rem dashed rgba(255, 255, 255, 0);
+    border-bottom-color: #20112a;
+    box-shadow: 0 0.75rem 0 #20112a, inset 0 -0.75rem 0 #20112a;
+    top: 0.5rem;
+    border-radius: 5rem;
+    left: -0.5rem;
+    transform: scaleY(-1);
+}
+
+.hs.row3.col4:checked~div>div>house>.row3.col4>i:nth-of-type(3):after {
+    width: 2rem;
+    height: 100%;
+    border-left: 0.75rem solid #20112a;
+    border-right: 0.75rem solid #20112a;
+    left: 9.8rem;
+    background: repeating-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 4rem, #20112a, #20112a 4.5rem);
+}
+
+.hs.row3.col4:checked~div>div>house>.row3.col4:nth-of-type(n + 5)>i:nth-of-type(3) {
+    height: 225%;
+}
+
+.hs.row3.col4:checked~div>div>house>.row3.col4:nth-of-type(n + 9)>i:nth-of-type(3) {
+    height: 13.5rem;
+}
+
+.hs.row4.col4:checked~.hs.row3.col4:checked~div>div>house>.row3.col4 {
+    border-bottom: none;
+}
+
+.hs.row4.col4:checked~.hs.row3.col4:checked~div>div>house>.row3.col4>i:nth-of-type(3) {
+    display: none !important;
+}
+
+.hs.row3.col1:checked~.hs.house.row3.col2:not(:checked)~.hs.row3.col3:checked~div>div>house>.row3.col2>i:nth-of-type(5) {
+    display: block;
+    width: 105%;
+}
+
+.hs.row3.col1:checked~.hs.house.row3.col2:not(:checked)~.hs.shed.row3.col3:checked~div>div>house>.row3.col2>i:nth-of-type(5) {
+    display: block;
+    width: 115%;
+}
+
+.hs.row3.col2:checked~.hs.house.row3.col3:not(:checked)~.hs.row3.col4:checked~div>div>house>.row3.col3>i:nth-of-type(5) {
+    display: block;
+    width: 105%;
+}
+
+.hs.row3.col2:checked~.hs.house.row3.col3:not(:checked)~.hs.shed.row3.col4:checked~div>div>house>.row3.col3>i:nth-of-type(5) {
+    display: block;
+    width: 115%;
+}
+
+.hs.row3.col3:checked~.hs.house.row3.col4:not(:checked)~.hs.row3.col5:checked~div>div>house>.row3.col4>i:nth-of-type(5) {
+    display: block;
+    width: 105%;
+}
+
+.hs.row3.col3:checked~.hs.house.row3.col4:not(:checked)~.hs.shed.row3.col5:checked~div>div>house>.row3.col4>i:nth-of-type(5) {
+    display: block;
+    width: 115%;
+}
+
+.hs.row3.col4:checked~.hs.house.row3.col5:not(:checked)~.hs.row3.col6:checked~div>div>house>.row3.col5>i:nth-of-type(5) {
+    display: block;
+    width: 105%;
+}
+
+.hs.row3.col4:checked~.hs.house.row3.col5:not(:checked)~.hs.shed.row3.col6:checked~div>div>house>.row3.col5>i:nth-of-type(5) {
+    display: block;
+    width: 115%;
+}
+
+.hs.row3.col1:checked~.hs.house.row3.col2:not(:checked)~.hs.house.row3.col3:not(:checked)~.hs.row3.col4:checked~div>div>house>.row3.col2>i:nth-of-type(5) {
+    display: block;
+    width: 205%;
+}
+
+.hs.row3.col1:checked~.hs.house.row3.col2:not(:checked)~.hs.house.row3.col3:not(:checked)~.hs.row3.col4:checked~div>div>house>.row3.col2>i:nth-of-type(5):after {
+    border: 0.5rem solid rgba(255, 255, 255, 0);
+    border-top: 1rem solid #bc6e2f;
+    top: 2.75rem;
+    left: 3.5rem;
+    transform: rotate(4deg);
+    z-index: -1 !important;
+    filter: drop-shadow(2.5rem 0.1rem 0 #bc2f59) drop-shadow(5rem 0 0 #bc6e2f);
+}
+
+.hs.row3.col1:checked~.hs.house.row3.col2:not(:checked)~.hs.house.row3.col3:not(:checked)~.hs.row3.col4:checked~div>div>house>.row3.col2>i:nth-of-type(5):before {
+    border: 0.5rem solid rgba(255, 255, 255, 0);
+    border-top: 1rem solid #5ebc2f;
+    top: 3.25rem;
+    left: 13.5rem;
+    transform: rotate(-4deg);
+    z-index: -1 !important;
+    filter: drop-shadow(2.5rem -0.1rem 0 #bc2f59) drop-shadow(5rem 0 0 #bc6e2f);
+}
+
+.hs.row3.col1:checked~.hs.row3.col2:checked~div>div>house>.row3.col1:after {
+    box-shadow: 0 2rem 0 currentColor, 0 4rem 0 currentColor, 0 6rem 0 currentColor, 0 8rem 0 currentColor, 0 10rem 0 currentColor;
+}
+
+.hs.row3.col0:checked~.hs.row3.col1:checked~.hs.row3.col2:checked~div>div>house>.row3.col1:after {
+    box-shadow: -2rem 4rem 0 rgba(204, 51, 51, 0.5), 0 7rem 0 currentColor;
+}
+
+.hs.row3.col0:checked~.hs.row3.col1:checked~div>div>house>.row3.col1:after {
+    box-shadow: -2rem 3rem 0 rgba(204, 51, 51, 0.5), 0 5rem 0 currentColor, 10.75rem 0 0 currentColor, 10.75rem 2rem 0 currentColor, 10.75rem 4rem 0 currentColor, 10.75rem 6rem 0 currentColor, 10.75rem 8rem 0 currentColor, 10.75rem 10rem 0 currentColor;
+}
+
+.hs.row3.col2:checked~.hs.house.row3.col3:not(:checked)~.hs.house.row3.col4:not(:checked)~.hs.row3.col5:checked~div>div>house>.row3.col3>i:nth-of-type(5) {
+    display: block;
+    width: 205%;
+}
+
+.hs.row3.col2:checked~.hs.house.row3.col3:not(:checked)~.hs.house.row3.col4:not(:checked)~.hs.row3.col5:checked~div>div>house>.row3.col3>i:nth-of-type(5):after {
+    border: 0.5rem solid rgba(255, 255, 255, 0);
+    border-top: 1rem solid #bc6e2f;
+    top: 2.75rem;
+    left: 3.5rem;
+    transform: rotate(4deg);
+    z-index: -1 !important;
+    filter: drop-shadow(2.5rem 0.1rem 0 #bc2f59) drop-shadow(5rem 0 0 #bc6e2f);
+}
+
+.hs.row3.col2:checked~.hs.house.row3.col3:not(:checked)~.hs.house.row3.col4:not(:checked)~.hs.row3.col5:checked~div>div>house>.row3.col3>i:nth-of-type(5):before {
+    border: 0.5rem solid rgba(255, 255, 255, 0);
+    border-top: 1rem solid #5ebc2f;
+    top: 3.25rem;
+    left: 13.5rem;
+    transform: rotate(-4deg);
+    z-index: -1 !important;
+    filter: drop-shadow(2.5rem -0.1rem 0 #bc2f59) drop-shadow(5rem 0 0 #bc6e2f);
+}
+
+.hs.row3.col2:checked~.hs.row3.col3:checked~div>div>house>.row3.col2:after {
+    box-shadow: 0 2rem 0 currentColor, 0 4rem 0 currentColor, 0 6rem 0 currentColor, 0 8rem 0 currentColor, 0 10rem 0 currentColor;
+}
+
+.hs.row3.col1:checked~.hs.row3.col2:checked~.hs.row3.col3:checked~div>div>house>.row3.col2:after {
+    box-shadow: -2rem 6rem 0 rgba(204, 51, 51, 0.5), 0 8rem 0 currentColor;
+}
+
+.hs.row3.col1:checked~.hs.row3.col2:checked~div>div>house>.row3.col2:after {
+    box-shadow: -2rem 3rem 0 rgba(204, 51, 51, 0.5), 0 5rem 0 currentColor, 10.75rem 0 0 currentColor, 10.75rem 2rem 0 currentColor, 10.75rem 4rem 0 currentColor, 10.75rem 6rem 0 currentColor, 10.75rem 8rem 0 currentColor, 10.75rem 10rem 0 currentColor;
+}
+
+.hs.row3.col3:checked~.hs.house.row3.col4:not(:checked)~.hs.house.row3.col5:not(:checked)~.hs.row3.col6:checked~div>div>house>.row3.col4>i:nth-of-type(5) {
+    display: block;
+    width: 205%;
+}
+
+.hs.row3.col3:checked~.hs.house.row3.col4:not(:checked)~.hs.house.row3.col5:not(:checked)~.hs.row3.col6:checked~div>div>house>.row3.col4>i:nth-of-type(5):after {
+    border: 0.5rem solid rgba(255, 255, 255, 0);
+    border-top: 1rem solid #bc6e2f;
+    top: 2.75rem;
+    left: 3.5rem;
+    transform: rotate(4deg);
+    z-index: -1 !important;
+    filter: drop-shadow(2.5rem 0.1rem 0 #bc2f59) drop-shadow(5rem 0 0 #bc6e2f);
+}
+
+.hs.row3.col3:checked~.hs.house.row3.col4:not(:checked)~.hs.house.row3.col5:not(:checked)~.hs.row3.col6:checked~div>div>house>.row3.col4>i:nth-of-type(5):before {
+    border: 0.5rem solid rgba(255, 255, 255, 0);
+    border-top: 1rem solid #5ebc2f;
+    top: 3.25rem;
+    left: 13.5rem;
+    transform: rotate(-4deg);
+    z-index: -1 !important;
+    filter: drop-shadow(2.5rem -0.1rem 0 #bc2f59) drop-shadow(5rem 0 0 #bc6e2f);
+}
+
+.hs.row3.col3:checked~.hs.row3.col4:checked~div>div>house>.row3.col3:after {
+    box-shadow: 0 2rem 0 currentColor, 0 4rem 0 currentColor, 0 6rem 0 currentColor, 0 8rem 0 currentColor, 0 10rem 0 currentColor;
+}
+
+.hs.row3.col2:checked~.hs.row3.col3:checked~.hs.row3.col4:checked~div>div>house>.row3.col3:after {
+    box-shadow: -2rem 5rem 0 rgba(204, 51, 51, 0.5), 0 8rem 0 currentColor;
+}
+
+.hs.row3.col2:checked~.hs.row3.col3:checked~div>div>house>.row3.col3:after {
+    box-shadow: -2rem 3rem 0 rgba(204, 51, 51, 0.5), 0 5rem 0 currentColor, 10.75rem 0 0 currentColor, 10.75rem 2rem 0 currentColor, 10.75rem 4rem 0 currentColor, 10.75rem 6rem 0 currentColor, 10.75rem 8rem 0 currentColor, 10.75rem 10rem 0 currentColor;
+}
+
+.hs.row3.col4:checked~.hs.house.row3.col5:not(:checked)~.hs.house.row3.col6:not(:checked)~.hs.row3.col7:checked~div>div>house>.row3.col5>i:nth-of-type(5) {
+    display: block;
+    width: 205%;
+}
+
+.hs.row3.col4:checked~.hs.house.row3.col5:not(:checked)~.hs.house.row3.col6:not(:checked)~.hs.row3.col7:checked~div>div>house>.row3.col5>i:nth-of-type(5):after {
+    border: 0.5rem solid rgba(255, 255, 255, 0);
+    border-top: 1rem solid #bc6e2f;
+    top: 2.75rem;
+    left: 3.5rem;
+    transform: rotate(4deg);
+    z-index: -1 !important;
+    filter: drop-shadow(2.5rem 0.1rem 0 #bc2f59) drop-shadow(5rem 0 0 #bc6e2f);
+}
+
+.hs.row3.col4:checked~.hs.house.row3.col5:not(:checked)~.hs.house.row3.col6:not(:checked)~.hs.row3.col7:checked~div>div>house>.row3.col5>i:nth-of-type(5):before {
+    border: 0.5rem solid rgba(255, 255, 255, 0);
+    border-top: 1rem solid #5ebc2f;
+    top: 3.25rem;
+    left: 13.5rem;
+    transform: rotate(-4deg);
+    z-index: -1 !important;
+    filter: drop-shadow(2.5rem -0.1rem 0 #bc2f59) drop-shadow(5rem 0 0 #bc6e2f);
+}
+
+.hs.row3.col4:checked~.hs.row3.col5:checked~div>div>house>.row3.col4:after {
+    box-shadow: 0 2rem 0 currentColor, 0 4rem 0 currentColor, 0 6rem 0 currentColor, 0 8rem 0 currentColor, 0 10rem 0 currentColor;
+}
+
+.hs.row3.col3:checked~.hs.row3.col4:checked~.hs.row3.col5:checked~div>div>house>.row3.col4:after {
+    box-shadow: -2rem 6rem 0 rgba(204, 51, 51, 0.5), 0 6rem 0 currentColor;
+}
+
+.hs.row3.col3:checked~.hs.row3.col4:checked~div>div>house>.row3.col4:after {
+    box-shadow: -2rem 3rem 0 rgba(204, 51, 51, 0.5), 0 5rem 0 currentColor, 10.75rem 0 0 currentColor, 10.75rem 2rem 0 currentColor, 10.75rem 4rem 0 currentColor, 10.75rem 6rem 0 currentColor, 10.75rem 8rem 0 currentColor, 10.75rem 10rem 0 currentColor;
+}
+
+.hs.row1.col1:checked~div>div>house>.row1.col1 {
+    border-bottom: 0.75rem solid #20112a;
+}
+
+.hs.row1.col1:checked~div>div>house>.row1.col1>i:nth-of-type(3) {
+    width: 2rem;
+    height: 325%;
+    border-left: 0.75rem solid #20112a;
+    border-right: 0.75rem solid #20112a;
+    top: 12rem;
+    background: repeating-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 4rem, #20112a, #20112a 4.5rem);
+    z-index: -200;
+}
+
+.hs.row1.col1:checked~div>div>house>.row1.col1>i:nth-of-type(3):before {
+    width: 12rem;
+    height: 12rem;
+    border: 1.15rem dashed rgba(255, 255, 255, 0);
+    border-bottom-color: #20112a;
+    box-shadow: 0 0.75rem 0 #20112a, inset 0 -0.75rem 0 #20112a;
+    top: 0.5rem;
+    border-radius: 5rem;
+    left: -0.5rem;
+    transform: scaleY(-1);
+}
+
+.hs.row1.col1:checked~div>div>house>.row1.col1>i:nth-of-type(3):after {
+    width: 2rem;
+    height: 100%;
+    border-left: 0.75rem solid #20112a;
+    border-right: 0.75rem solid #20112a;
+    left: 9.8rem;
+    background: repeating-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 4rem, #20112a, #20112a 4.5rem);
+}
+
+.hs.row1.col1:checked~div>div>house>.row1.col1:nth-of-type(n + 5)>i:nth-of-type(3) {
+    height: 225%;
+}
+
+.hs.row1.col1:checked~div>div>house>.row1.col1:nth-of-type(n + 9)>i:nth-of-type(3) {
+    height: 13.5rem;
+}
+
+.hs.row2.col1:checked~.hs.row1.col1:checked~div>div>house>.row1.col1 {
+    border-bottom: none;
+}
+
+.hs.row2.col1:checked~.hs.row1.col1:checked~div>div>house>.row1.col1>i:nth-of-type(3) {
+    display: none !important;
+}
+
+.hs.row1.col2:checked~div>div>house>.row1.col2 {
+    border-bottom: 0.75rem solid #20112a;
+}
+
+.hs.row1.col2:checked~div>div>house>.row1.col2>i:nth-of-type(3) {
+    width: 2rem;
+    height: 325%;
+    border-left: 0.75rem solid #20112a;
+    border-right: 0.75rem solid #20112a;
+    top: 12rem;
+    background: repeating-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 4rem, #20112a, #20112a 4.5rem);
+    z-index: -200;
+}
+
+.hs.row1.col2:checked~div>div>house>.row1.col2>i:nth-of-type(3):before {
+    width: 12rem;
+    height: 12rem;
+    border: 1.15rem dashed rgba(255, 255, 255, 0);
+    border-bottom-color: #20112a;
+    box-shadow: 0 0.75rem 0 #20112a, inset 0 -0.75rem 0 #20112a;
+    top: 0.5rem;
+    border-radius: 5rem;
+    left: -0.5rem;
+    transform: scaleY(-1);
+}
+
+.hs.row1.col2:checked~div>div>house>.row1.col2>i:nth-of-type(3):after {
+    width: 2rem;
+    height: 100%;
+    border-left: 0.75rem solid #20112a;
+    border-right: 0.75rem solid #20112a;
+    left: 9.8rem;
+    background: repeating-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 4rem, #20112a, #20112a 4.5rem);
+}
+
+.hs.row1.col2:checked~div>div>house>.row1.col2:nth-of-type(n + 5)>i:nth-of-type(3) {
+    height: 225%;
+}
+
+.hs.row1.col2:checked~div>div>house>.row1.col2:nth-of-type(n + 9)>i:nth-of-type(3) {
+    height: 13.5rem;
+}
+
+.hs.row2.col2:checked~.hs.row1.col2:checked~div>div>house>.row1.col2 {
+    border-bottom: none;
+}
+
+.hs.row2.col2:checked~.hs.row1.col2:checked~div>div>house>.row1.col2>i:nth-of-type(3) {
+    display: none !important;
+}
+
+.hs.row1.col3:checked~div>div>house>.row1.col3 {
+    border-bottom: 0.75rem solid #20112a;
+}
+
+.hs.row1.col3:checked~div>div>house>.row1.col3>i:nth-of-type(3) {
+    width: 2rem;
+    height: 325%;
+    border-left: 0.75rem solid #20112a;
+    border-right: 0.75rem solid #20112a;
+    top: 12rem;
+    background: repeating-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 4rem, #20112a, #20112a 4.5rem);
+    z-index: -200;
+}
+
+.hs.row1.col3:checked~div>div>house>.row1.col3>i:nth-of-type(3):before {
+    width: 12rem;
+    height: 12rem;
+    border: 1.15rem dashed rgba(255, 255, 255, 0);
+    border-bottom-color: #20112a;
+    box-shadow: 0 0.75rem 0 #20112a, inset 0 -0.75rem 0 #20112a;
+    top: 0.5rem;
+    border-radius: 5rem;
+    left: -0.5rem;
+    transform: scaleY(-1);
+}
+
+.hs.row1.col3:checked~div>div>house>.row1.col3>i:nth-of-type(3):after {
+    width: 2rem;
+    height: 100%;
+    border-left: 0.75rem solid #20112a;
+    border-right: 0.75rem solid #20112a;
+    left: 9.8rem;
+    background: repeating-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 4rem, #20112a, #20112a 4.5rem);
+}
+
+.hs.row1.col3:checked~div>div>house>.row1.col3:nth-of-type(n + 5)>i:nth-of-type(3) {
+    height: 225%;
+}
+
+.hs.row1.col3:checked~div>div>house>.row1.col3:nth-of-type(n + 9)>i:nth-of-type(3) {
+    height: 13.5rem;
+}
+
+.hs.row2.col3:checked~.hs.row1.col3:checked~div>div>house>.row1.col3 {
+    border-bottom: none;
+}
+
+.hs.row2.col3:checked~.hs.row1.col3:checked~div>div>house>.row1.col3>i:nth-of-type(3) {
+    display: none !important;
+}
+
+.hs.row1.col4:checked~div>div>house>.row1.col4 {
+    border-bottom: 0.75rem solid #20112a;
+}
+
+.hs.row1.col4:checked~div>div>house>.row1.col4>i:nth-of-type(3) {
+    width: 2rem;
+    height: 325%;
+    border-left: 0.75rem solid #20112a;
+    border-right: 0.75rem solid #20112a;
+    top: 12rem;
+    background: repeating-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 4rem, #20112a, #20112a 4.5rem);
+    z-index: -200;
+}
+
+.hs.row1.col4:checked~div>div>house>.row1.col4>i:nth-of-type(3):before {
+    width: 12rem;
+    height: 12rem;
+    border: 1.15rem dashed rgba(255, 255, 255, 0);
+    border-bottom-color: #20112a;
+    box-shadow: 0 0.75rem 0 #20112a, inset 0 -0.75rem 0 #20112a;
+    top: 0.5rem;
+    border-radius: 5rem;
+    left: -0.5rem;
+    transform: scaleY(-1);
+}
+
+.hs.row1.col4:checked~div>div>house>.row1.col4>i:nth-of-type(3):after {
+    width: 2rem;
+    height: 100%;
+    border-left: 0.75rem solid #20112a;
+    border-right: 0.75rem solid #20112a;
+    left: 9.8rem;
+    background: repeating-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 4rem, #20112a, #20112a 4.5rem);
+}
+
+.hs.row1.col4:checked~div>div>house>.row1.col4:nth-of-type(n + 5)>i:nth-of-type(3) {
+    height: 225%;
+}
+
+.hs.row1.col4:checked~div>div>house>.row1.col4:nth-of-type(n + 9)>i:nth-of-type(3) {
+    height: 13.5rem;
+}
+
+.hs.row2.col4:checked~.hs.row1.col4:checked~div>div>house>.row1.col4 {
+    border-bottom: none;
+}
+
+.hs.row2.col4:checked~.hs.row1.col4:checked~div>div>house>.row1.col4>i:nth-of-type(3) {
+    display: none !important;
+}
+
+.hs.row2.col1:checked~div>div>house>.row2.col1 {
+    border-bottom: 0.75rem solid #20112a;
+}
+
+.hs.row2.col1:checked~div>div>house>.row2.col1>i:nth-of-type(3) {
+    width: 2rem;
+    height: 325%;
+    border-left: 0.75rem solid #20112a;
+    border-right: 0.75rem solid #20112a;
+    top: 12rem;
+    background: repeating-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 4rem, #20112a, #20112a 4.5rem);
+    z-index: -200;
+}
+
+.hs.row2.col1:checked~div>div>house>.row2.col1>i:nth-of-type(3):before {
+    width: 12rem;
+    height: 12rem;
+    border: 1.15rem dashed rgba(255, 255, 255, 0);
+    border-bottom-color: #20112a;
+    box-shadow: 0 0.75rem 0 #20112a, inset 0 -0.75rem 0 #20112a;
+    top: 0.5rem;
+    border-radius: 5rem;
+    left: -0.5rem;
+    transform: scaleY(-1);
+}
+
+.hs.row2.col1:checked~div>div>house>.row2.col1>i:nth-of-type(3):after {
+    width: 2rem;
+    height: 100%;
+    border-left: 0.75rem solid #20112a;
+    border-right: 0.75rem solid #20112a;
+    left: 9.8rem;
+    background: repeating-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 4rem, #20112a, #20112a 4.5rem);
+}
+
+.hs.row2.col1:checked~div>div>house>.row2.col1:nth-of-type(n + 5)>i:nth-of-type(3) {
+    height: 225%;
+}
+
+.hs.row2.col1:checked~div>div>house>.row2.col1:nth-of-type(n + 9)>i:nth-of-type(3) {
+    height: 13.5rem;
+}
+
+.hs.row3.col1:checked~.hs.row2.col1:checked~div>div>house>.row2.col1 {
+    border-bottom: none;
+}
+
+.hs.row3.col1:checked~.hs.row2.col1:checked~div>div>house>.row2.col1>i:nth-of-type(3) {
+    display: none !important;
+}
+
+.hs.row2.col2:checked~div>div>house>.row2.col2 {
+    border-bottom: 0.75rem solid #20112a;
+}
+
+.hs.row2.col2:checked~div>div>house>.row2.col2>i:nth-of-type(3) {
+    width: 2rem;
+    height: 325%;
+    border-left: 0.75rem solid #20112a;
+    border-right: 0.75rem solid #20112a;
+    top: 12rem;
+    background: repeating-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 4rem, #20112a, #20112a 4.5rem);
+    z-index: -200;
+}
+
+.hs.row2.col2:checked~div>div>house>.row2.col2>i:nth-of-type(3):before {
+    width: 12rem;
+    height: 12rem;
+    border: 1.15rem dashed rgba(255, 255, 255, 0);
+    border-bottom-color: #20112a;
+    box-shadow: 0 0.75rem 0 #20112a, inset 0 -0.75rem 0 #20112a;
+    top: 0.5rem;
+    border-radius: 5rem;
+    left: -0.5rem;
+    transform: scaleY(-1);
+}
+
+.hs.row2.col2:checked~div>div>house>.row2.col2>i:nth-of-type(3):after {
+    width: 2rem;
+    height: 100%;
+    border-left: 0.75rem solid #20112a;
+    border-right: 0.75rem solid #20112a;
+    left: 9.8rem;
+    background: repeating-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 4rem, #20112a, #20112a 4.5rem);
+}
+
+.hs.row2.col2:checked~div>div>house>.row2.col2:nth-of-type(n + 5)>i:nth-of-type(3) {
+    height: 225%;
+}
+
+.hs.row2.col2:checked~div>div>house>.row2.col2:nth-of-type(n + 9)>i:nth-of-type(3) {
+    height: 13.5rem;
+}
+
+.hs.row3.col2:checked~.hs.row2.col2:checked~div>div>house>.row2.col2 {
+    border-bottom: none;
+}
+
+.hs.row3.col2:checked~.hs.row2.col2:checked~div>div>house>.row2.col2>i:nth-of-type(3) {
+    display: none !important;
+}
+
+.hs.row2.col3:checked~div>div>house>.row2.col3 {
+    border-bottom: 0.75rem solid #20112a;
+}
+
+.hs.row2.col3:checked~div>div>house>.row2.col3>i:nth-of-type(3) {
+    width: 2rem;
+    height: 325%;
+    border-left: 0.75rem solid #20112a;
+    border-right: 0.75rem solid #20112a;
+    top: 12rem;
+    background: repeating-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 4rem, #20112a, #20112a 4.5rem);
+    z-index: -200;
+}
+
+.hs.row2.col3:checked~div>div>house>.row2.col3>i:nth-of-type(3):before {
+    width: 12rem;
+    height: 12rem;
+    border: 1.15rem dashed rgba(255, 255, 255, 0);
+    border-bottom-color: #20112a;
+    box-shadow: 0 0.75rem 0 #20112a, inset 0 -0.75rem 0 #20112a;
+    top: 0.5rem;
+    border-radius: 5rem;
+    left: -0.5rem;
+    transform: scaleY(-1);
+}
+
+.hs.row2.col3:checked~div>div>house>.row2.col3>i:nth-of-type(3):after {
+    width: 2rem;
+    height: 100%;
+    border-left: 0.75rem solid #20112a;
+    border-right: 0.75rem solid #20112a;
+    left: 9.8rem;
+    background: repeating-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 4rem, #20112a, #20112a 4.5rem);
+}
+
+.hs.row2.col3:checked~div>div>house>.row2.col3:nth-of-type(n + 5)>i:nth-of-type(3) {
+    height: 225%;
+}
+
+.hs.row2.col3:checked~div>div>house>.row2.col3:nth-of-type(n + 9)>i:nth-of-type(3) {
+    height: 13.5rem;
+}
+
+.hs.row3.col3:checked~.hs.row2.col3:checked~div>div>house>.row2.col3 {
+    border-bottom: none;
+}
+
+.hs.row3.col3:checked~.hs.row2.col3:checked~div>div>house>.row2.col3>i:nth-of-type(3) {
+    display: none !important;
+}
+
+.hs.row2.col4:checked~div>div>house>.row2.col4 {
+    border-bottom: 0.75rem solid #20112a;
+}
+
+.hs.row2.col4:checked~div>div>house>.row2.col4>i:nth-of-type(3) {
+    width: 2rem;
+    height: 325%;
+    border-left: 0.75rem solid #20112a;
+    border-right: 0.75rem solid #20112a;
+    top: 12rem;
+    background: repeating-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 4rem, #20112a, #20112a 4.5rem);
+    z-index: -200;
+}
+
+.hs.row2.col4:checked~div>div>house>.row2.col4>i:nth-of-type(3):before {
+    width: 12rem;
+    height: 12rem;
+    border: 1.15rem dashed rgba(255, 255, 255, 0);
+    border-bottom-color: #20112a;
+    box-shadow: 0 0.75rem 0 #20112a, inset 0 -0.75rem 0 #20112a;
+    top: 0.5rem;
+    border-radius: 5rem;
+    left: -0.5rem;
+    transform: scaleY(-1);
+}
+
+.hs.row2.col4:checked~div>div>house>.row2.col4>i:nth-of-type(3):after {
+    width: 2rem;
+    height: 100%;
+    border-left: 0.75rem solid #20112a;
+    border-right: 0.75rem solid #20112a;
+    left: 9.8rem;
+    background: repeating-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 4rem, #20112a, #20112a 4.5rem);
+}
+
+.hs.row2.col4:checked~div>div>house>.row2.col4:nth-of-type(n + 5)>i:nth-of-type(3) {
+    height: 225%;
+}
+
+.hs.row2.col4:checked~div>div>house>.row2.col4:nth-of-type(n + 9)>i:nth-of-type(3) {
+    height: 13.5rem;
+}
+
+.hs.row3.col4:checked~.hs.row2.col4:checked~div>div>house>.row2.col4 {
+    border-bottom: none;
+}
+
+.hs.row3.col4:checked~.hs.row2.col4:checked~div>div>house>.row2.col4>i:nth-of-type(3) {
+    display: none !important;
+}
+
+.hs.row3.col1:checked~div>div>house>.row3.col1 {
+    border-bottom: 0.75rem solid #20112a;
+}
+
+.hs.row3.col1:checked~div>div>house>.row3.col1>i:nth-of-type(3) {
+    width: 2rem;
+    height: 325%;
+    border-left: 0.75rem solid #20112a;
+    border-right: 0.75rem solid #20112a;
+    top: 12rem;
+    background: repeating-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 4rem, #20112a, #20112a 4.5rem);
+    z-index: -200;
+}
+
+.hs.row3.col1:checked~div>div>house>.row3.col1>i:nth-of-type(3):before {
+    width: 12rem;
+    height: 12rem;
+    border: 1.15rem dashed rgba(255, 255, 255, 0);
+    border-bottom-color: #20112a;
+    box-shadow: 0 0.75rem 0 #20112a, inset 0 -0.75rem 0 #20112a;
+    top: 0.5rem;
+    border-radius: 5rem;
+    left: -0.5rem;
+    transform: scaleY(-1);
+}
+
+.hs.row3.col1:checked~div>div>house>.row3.col1>i:nth-of-type(3):after {
+    width: 2rem;
+    height: 100%;
+    border-left: 0.75rem solid #20112a;
+    border-right: 0.75rem solid #20112a;
+    left: 9.8rem;
+    background: repeating-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 4rem, #20112a, #20112a 4.5rem);
+}
+
+.hs.row3.col1:checked~div>div>house>.row3.col1:nth-of-type(n + 5)>i:nth-of-type(3) {
+    height: 225%;
+}
+
+.hs.row3.col1:checked~div>div>house>.row3.col1:nth-of-type(n + 9)>i:nth-of-type(3) {
+    height: 13.5rem;
+}
+
+.hs.row4.col1:checked~.hs.row3.col1:checked~div>div>house>.row3.col1 {
+    border-bottom: none;
+}
+
+.hs.row4.col1:checked~.hs.row3.col1:checked~div>div>house>.row3.col1>i:nth-of-type(3) {
+    display: none !important;
+}
+
+.hs.row3.col2:checked~div>div>house>.row3.col2 {
+    border-bottom: 0.75rem solid #20112a;
+}
+
+.hs.row3.col2:checked~div>div>house>.row3.col2>i:nth-of-type(3) {
+    width: 2rem;
+    height: 325%;
+    border-left: 0.75rem solid #20112a;
+    border-right: 0.75rem solid #20112a;
+    top: 12rem;
+    background: repeating-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 4rem, #20112a, #20112a 4.5rem);
+    z-index: -200;
+}
+
+.hs.row3.col2:checked~div>div>house>.row3.col2>i:nth-of-type(3):before {
+    width: 12rem;
+    height: 12rem;
+    border: 1.15rem dashed rgba(255, 255, 255, 0);
+    border-bottom-color: #20112a;
+    box-shadow: 0 0.75rem 0 #20112a, inset 0 -0.75rem 0 #20112a;
+    top: 0.5rem;
+    border-radius: 5rem;
+    left: -0.5rem;
+    transform: scaleY(-1);
+}
+
+.hs.row3.col2:checked~div>div>house>.row3.col2>i:nth-of-type(3):after {
+    width: 2rem;
+    height: 100%;
+    border-left: 0.75rem solid #20112a;
+    border-right: 0.75rem solid #20112a;
+    left: 9.8rem;
+    background: repeating-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 4rem, #20112a, #20112a 4.5rem);
+}
+
+.hs.row3.col2:checked~div>div>house>.row3.col2:nth-of-type(n + 5)>i:nth-of-type(3) {
+    height: 225%;
+}
+
+.hs.row3.col2:checked~div>div>house>.row3.col2:nth-of-type(n + 9)>i:nth-of-type(3) {
+    height: 13.5rem;
+}
+
+.hs.row4.col2:checked~.hs.row3.col2:checked~div>div>house>.row3.col2 {
+    border-bottom: none;
+}
+
+.hs.row4.col2:checked~.hs.row3.col2:checked~div>div>house>.row3.col2>i:nth-of-type(3) {
+    display: none !important;
+}
+
+.hs.row3.col3:checked~div>div>house>.row3.col3 {
+    border-bottom: 0.75rem solid #20112a;
+}
+
+.hs.row3.col3:checked~div>div>house>.row3.col3>i:nth-of-type(3) {
+    width: 2rem;
+    height: 325%;
+    border-left: 0.75rem solid #20112a;
+    border-right: 0.75rem solid #20112a;
+    top: 12rem;
+    background: repeating-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 4rem, #20112a, #20112a 4.5rem);
+    z-index: -200;
+}
+
+.hs.row3.col3:checked~div>div>house>.row3.col3>i:nth-of-type(3):before {
+    width: 12rem;
+    height: 12rem;
+    border: 1.15rem dashed rgba(255, 255, 255, 0);
+    border-bottom-color: #20112a;
+    box-shadow: 0 0.75rem 0 #20112a, inset 0 -0.75rem 0 #20112a;
+    top: 0.5rem;
+    border-radius: 5rem;
+    left: -0.5rem;
+    transform: scaleY(-1);
+}
+
+.hs.row3.col3:checked~div>div>house>.row3.col3>i:nth-of-type(3):after {
+    width: 2rem;
+    height: 100%;
+    border-left: 0.75rem solid #20112a;
+    border-right: 0.75rem solid #20112a;
+    left: 9.8rem;
+    background: repeating-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 4rem, #20112a, #20112a 4.5rem);
+}
+
+.hs.row3.col3:checked~div>div>house>.row3.col3:nth-of-type(n + 5)>i:nth-of-type(3) {
+    height: 225%;
+}
+
+.hs.row3.col3:checked~div>div>house>.row3.col3:nth-of-type(n + 9)>i:nth-of-type(3) {
+    height: 13.5rem;
+}
+
+.hs.row4.col3:checked~.hs.row3.col3:checked~div>div>house>.row3.col3 {
+    border-bottom: none;
+}
+
+.hs.row4.col3:checked~.hs.row3.col3:checked~div>div>house>.row3.col3>i:nth-of-type(3) {
+    display: none !important;
+}
+
+.hs.row3.col4:checked~div>div>house>.row3.col4 {
+    border-bottom: 0.75rem solid #20112a;
+}
+
+.hs.row3.col4:checked~div>div>house>.row3.col4>i:nth-of-type(3) {
+    width: 2rem;
+    height: 325%;
+    border-left: 0.75rem solid #20112a;
+    border-right: 0.75rem solid #20112a;
+    top: 12rem;
+    background: repeating-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 4rem, #20112a, #20112a 4.5rem);
+    z-index: -200;
+}
+
+.hs.row3.col4:checked~div>div>house>.row3.col4>i:nth-of-type(3):before {
+    width: 12rem;
+    height: 12rem;
+    border: 1.15rem dashed rgba(255, 255, 255, 0);
+    border-bottom-color: #20112a;
+    box-shadow: 0 0.75rem 0 #20112a, inset 0 -0.75rem 0 #20112a;
+    top: 0.5rem;
+    border-radius: 5rem;
+    left: -0.5rem;
+    transform: scaleY(-1);
+}
+
+.hs.row3.col4:checked~div>div>house>.row3.col4>i:nth-of-type(3):after {
+    width: 2rem;
+    height: 100%;
+    border-left: 0.75rem solid #20112a;
+    border-right: 0.75rem solid #20112a;
+    left: 9.8rem;
+    background: repeating-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 4rem, #20112a, #20112a 4.5rem);
+}
+
+.hs.row3.col4:checked~div>div>house>.row3.col4:nth-of-type(n + 5)>i:nth-of-type(3) {
+    height: 225%;
+}
+
+.hs.row3.col4:checked~div>div>house>.row3.col4:nth-of-type(n + 9)>i:nth-of-type(3) {
+    height: 13.5rem;
+}
+
+.hs.row4.col4:checked~.hs.row3.col4:checked~div>div>house>.row3.col4 {
+    border-bottom: none;
+}
+
+.hs.row4.col4:checked~.hs.row3.col4:checked~div>div>house>.row3.col4>i:nth-of-type(3) {
+    display: none !important;
+}
+
+.hs.row4.col1:checked~.hs.house.row4.col2:not(:checked)~.hs.row4.col3:checked~div>div>house>.row4.col2>i:nth-of-type(5) {
+    display: block;
+    width: 105%;
+}
+
+.hs.row4.col1:checked~.hs.house.row4.col2:not(:checked)~.hs.shed.row4.col3:checked~div>div>house>.row4.col2>i:nth-of-type(5) {
+    display: block;
+    width: 115%;
+}
