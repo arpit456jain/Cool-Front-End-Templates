@@ -25,8 +25,8 @@ It is an game which is completely made through html and css
 
 ![ss1](./img/Web%20capture_2-4-2022_133219_127.0.0.1.jpeg)
 ![ss2](./img/Web%20capture_2-4-2022_133244_127.0.0.1.jpeg)
-![ss2](./img/Web%20capture_2-4-2022_133540_127.0.0.1.jpeg)
-![ss2]()
+![ss3](./img/Web%20capture_2-4-2022_133540_127.0.0.1.jpeg)
+![ss4]()
 
 ## ‎‍💻 Authors
 
