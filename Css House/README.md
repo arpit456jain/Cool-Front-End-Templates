@@ -2,10 +2,10 @@
     <img alt="" height="80" src="">
   </a>
 </p>
-<h1 align="center"> </h1>
+<h1 align="center"> CSS HOUSE GAME </h1>
 
 <div align="center">
-
+CSS HOUSE GAME MADE THROUGH HTML AND CSS
 </div>
 
 <br />
@@ -19,7 +19,7 @@
 </div>
 
 ## ⚡️  Introduction
-
+It is an game which is completely made through html and css
 
 ## 📷 Screenshots
 
