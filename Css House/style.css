@@ -30,3 +30,218 @@ body {
     background: linear-gradient(rgba(96, 139, 136, 0.5), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
     box-shadow: inset 0 0 5rem 0 #252529;
 }
+
+div,
+house,
+shed,
+hbtn,
+sbtn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 50rem;
+    height: 50rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+div label,
+house label,
+shed label,
+hbtn label,
+sbtn label {
+    width: calc(50rem / 4);
+    height: calc(50rem / 4);
+    position: relative;
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+    display: inline;
+    cursor: pointer;
+    box-shadow: 0 0 0 2rem rgba(255, 255, 255, 0);
+}
+
+div label *,
+div label *:before,
+div label *:after,
+house label *,
+house label *:before,
+house label *:after,
+shed label *,
+shed label *:before,
+shed label *:after,
+hbtn label *,
+hbtn label *:before,
+hbtn label *:after,
+sbtn label *,
+sbtn label *:before,
+sbtn label *:after {
+    transform: translate3d(0, 0, 0);
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background: none;
+    border: none;
+    box-shadow: none;
+    pointer-events: none;
+}
+
+div label>i:nth-of-type(1):before,
+div label>i:nth-of-type(1):after,
+house label>i:nth-of-type(1):before,
+house label>i:nth-of-type(1):after,
+shed label>i:nth-of-type(1):before,
+shed label>i:nth-of-type(1):after,
+hbtn label>i:nth-of-type(1):before,
+hbtn label>i:nth-of-type(1):after,
+sbtn label>i:nth-of-type(1):before,
+sbtn label>i:nth-of-type(1):after {
+    filter: blur(0.5rem);
+    border: 1rem solid rgba(111, 111, 122, 0.75);
+    width: 5rem;
+    height: 5rem;
+    background: #6f6f7a;
+    opacity: 0;
+    border-radius: 50%;
+    box-shadow: 2rem -1.5rem 0 1rem rgba(111, 111, 122, 0.75), 3rem -2rem 0 1.5rem rgba(111, 111, 122, 0.5);
+}
+
+colour {
+    width: 100%;
+    height: 100%;
+}
+
+colour input,
+colour br {
+    position: relative;
+    display: inline-block;
+    opacity: 0.2;
+    top: 1rem;
+    left: 1rem;
+    transform: scale(0.75);
+    margin: -0.2rem;
+}
+
+@media (max-width: 900px) {
+    colour input,
+    colour br {
+        display: none;
+    }
+}
+
+colour input:checked {
+    opacity: 1;
+}
+
+colour br {
+    display: block;
+}
+
+input {
+    display: none;
+}
+
+div.main {
+    -webkit-box-reflect: below 4rem;
+}
+
+div.ss {
+    pointer-events: none;
+}
+
+sbtn {
+    height: calc(50rem - (50rem / 4));
+    bottom: auto;
+}
+
+sbtn label {
+    border: solid 1px rgba(116, 116, 116, 0.1);
+}
+
+sbtn label:nth-of-type(1) {
+    border-radius: 3rem 0 0 0;
+}
+
+sbtn label:nth-of-type(4) {
+    border-radius: 0 3rem 0 0;
+}
+
+sbtn label:hover {
+    border-color: #555;
+}
+
+hbtn label:nth-of-type(n + 12) {
+    border: solid 1px rgba(116, 116, 116, 0.1);
+}
+
+hbtn label:nth-of-type(n + 12):hover {
+    border-color: #555;
+}
+
+@keyframes smoke {
+    0% {
+        transform: scale(0.2) translate3d(0, 0, 0) rotate(-15deg);
+        opacity: 0.075;
+    }
+    50% {
+        transform: scale(1) translate3d(2rem, -4rem, 0) rotate(0);
+        opacity: 0.15;
+    }
+    100% {
+        transform: scale(2) translate3d(5rem, -5rem, 0) rotate(10deg);
+        opacity: 0;
+    }
+}
+
+island {
+    position: absolute;
+    top: 76rem;
+    top: 49.25rem;
+    left: -50%;
+    right: -50%;
+    margin: auto;
+    width: 80rem;
+    height: 5rem;
+    background: #63bc2f;
+    border-radius: 55% 55% 45% 45%;
+}
+
+grass {
+    position: absolute;
+    z-index: 500;
+    top: 76rem;
+    top: 49.25rem;
+    left: -50%;
+    right: -50%;
+    margin: auto;
+    width: 80rem;
+    height: 5rem;
+    -webkit-box-reflect: below -5rem;
+    transform: skewX(0);
+}
+
+grass:after,
+grass:before {
+    top: 0.75rem;
+    left: 0.6rem;
+    z-index: 100;
+    width: 0.5rem;
+    height: 1.75rem;
+    transform: skewY(60deg);
+    background: #63bc2f;
+    box-shadow: 1rem -1.6rem 0 #63bc2f, 2.1rem -3.6rem 0 #63bc2f, 2.9rem -4.8rem 0 #63bc2f, 4rem -7rem 0 #63bc2f;
+    filter: drop-shadow(5rem -8.3rem 0 #63bc2f) drop-shadow(10rem -17.3rem 0 #63bc2f) drop-shadow(20rem -34.5rem 0 #63bc2f) drop-shadow(40rem -69rem 0 #63bc2f);
+}
+
+grass:before {
+    transform: skewY(-60deg);
+    box-shadow: 1rem 1.6rem 0 #63bc2f, 2.1rem 3.6rem 0 #63bc2f, 2.9rem 4.8rem 0 #63bc2f, 4rem 7rem 0 #63bc2f;
+    filter: drop-shadow(5rem 8.3rem 0 #63bc2f) drop-shadow(10rem 17.3rem 0 #63bc2f) drop-shadow(20rem 34.5rem 0 #63bc2f) drop-shadow(40rem 69rem 0 #63bc2f);
+    left: 0;
+    top: 1.5rem;
+}
