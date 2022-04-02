@@ -79,18 +79,13 @@ a:hover{
 
 #poster1, #poster2, #poster3 {
 
+    background-image: url("./images/pic1.jpg");
+    background-size: 100% 100%;
+
     background-image: url("./img/pic1.jpg");
     background-size: cover;
 
     /*background-size: 100% 100%;*/
-
-    height: 100vh;
-    padding-top: 20px;
-    background-position: 50px; 
-    margin-bottom: 10px;
-    background-color: balck;
-    cursor: pointer;
-
 }
 
 h1{
@@ -128,7 +123,9 @@ h6{
     background-image: url("./img/pic2.jpg");
 
     background-image: url("./images/pic2.jpg");
-    /*background-size: 100% 100%;;*/
+
+    background-size: 100% 100%;;
+
 
 }
 
@@ -496,17 +493,30 @@ nav .menu-btn i{
 
     }
     #box2{
-        background-image: url("./img/pic10.jpg");
+
+        background-image: url("./images/pic10.jpg");
+        background-size: 100% 100%;
+
+        
     }
     #box3{
-        background-image: url("./img/pic11.jpg");
+        background-image: url("./images/pic11.jpg");
+        background-size: 100% 100%;
+
+
     }
     #box4{
-        background-image: url("./img/pic12.jpg");
+        background-image: url("./images/pic12.jpg");
+        background-size: 100% 100%;
+
+
     }
     #box5{
-        background-image: url("./img/pic13.jpg");
-    }
+        background-image: url("./images/pic13.jpg");
+        background-size: 100% 100%;
+        margin-bottom: 0;
+   }
+
 
         /*background-size: 100% 100%;*/
         /*background-size: 100% 100%;*/
@@ -551,6 +561,7 @@ nav .menu-btn i{
     display:block;
     color: #fff;
     padding: 10px;
+
 }
 
 nav ul{
@@ -570,6 +581,7 @@ nav ul{
 #click:checked ~ ul{
     left: 0%;
 }
+
 
 nav ul li{
     margin: 10px 0;
