@@ -13,6 +13,8 @@
        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
        <!-- Bootstrap core CSS -->
        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+       <!-- JQUERY CDN -->
+       <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.11.0/mdb.min.js"></script>
        <!-- Material Design Bootstrap -->
        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
        <!-- STYLES.CSS FILE -->    
@@ -23,71 +25,67 @@
 
 <body>
 
+ <!--NAVBAR STARTS-->
+    
 
-          <!--Adding a NavBar-->
-    
-          <nav class="navbar">
-            
-                <div class="logo">
-                    <img src="logo1.png"/>
-                </div>
-                    
-                <ul class="nav-links">
-                    <input type="checkbox" id="checkbox_toggle" />
-                     <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-                    <div class="menu">
-                        <li><a href="/">Cool-Front-End-Templates</a></li>
-                        <li><a href="https://amazing-css-effects.netlify.app/">Amazing-CSS-Effects</a></li>
-                        <li><a href="https://amazing-js-projects.netlify.app/">Amazing-JS-Effects</a></li>
-                    </div>
-                </ul>
-          </nav>
-    
-        <!--Adding a NavBar-->
+ <nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <!-- <a class="navbar-brand" href="#">&#123; AMAZING <span>JS</span> &#125;</a> -->
+    <img src="logo1.png" alt="logo" width="90px" />
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-mdb-toggle="collapse"
+      data-mdb-target="#navbarText"
+      aria-controls="navbarText"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html">Cool Front-End Template</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link " href="https://amazing-css-effects.netlify.app/">Amazing CSS Effects</a>
+        </li>
+
+        <li class="nav-item  ">
+          <a class="nav-link " aria-current="page" href="https://amazing-js-projects.netlify.app/">Amazing-JS-Projects</a>
+        </li>
         
-        <!-- <div class="topnav" id="myTopnav">
-            <a href="/index.html" class="active">Cool-Front-End-Templates</a>
-            <a href="https://amazing-js-projects.netlify.app/"
-              >Amazing-Css-Effects</a
-            >
-            <a href="https://amazing-js-projects.netlify.app/">Amazing-JS-projects</a>
-      
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-              <i class="fa fa-bars"></i>
-            </a>
-          </div> -->
+       
+       
+      </ul>
+    </div>
+  </div>
+</nav>
 
-        <h1 class="heading">Cool Front End Templates</h1>
-        <div class="SearchBox">
-          <input placeholder="Search Projects..." class="searchBar" id="searchBar"></input>
-          <i class="searchIcon fa-solid fa-magnifying-glass"></i>
-        </div>
-        
+<!--NAVBAR ENDS-->
+
+<!-- CARDS SECTION STARTED -->
+    <!-- <p class="tags tags-opening">&#60; h1 &#62;</p> -->
+    <p class="tags tags-opening">&#60;p&#62; Hello There👋, Welcome to &#60;	&#47;p&#62;</p>
+    <h1 class="heading"><strong style="text-transform: lowercase; color:  #61DBFB; font-size: 18px;">h1</strong>&#123; Cool-<span>FrontEnd</span>-Templates &#125;</h1>
+    <!-- <p class="tags tags-closing">&#60; &#47; h1 &#62;</p> -->
+    <div class="searchBox">
+      <input placeholder="Search Projects..." class="searchBar" id="searchBar"></input>
+      <h4 id="counter"></>
+    </div>
+
+
+    <div class="container">
+      <div class="row" id="cardd">
+          
+      </div>
+
+    </div>
     
 
-    <section class="styles" id="styles">
-
-        <!-- old card design starts -->
-        <!-- <div class="stylebox">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, veniam.</p>
-            <button>View</button>
-        </div> -->
-        <!-- old card design ends -->
-
-        <!-- new card design starts -->
-         <!-- <div class="stylebox">
-             <div class="image">
-                 <img src="/Food Ordering/img/b4.jpg" alt="">
-             </div>
-            <p>Sunt, venia</p>
-            <div class="btn-group">
-            <a href="">View</a>
-            <a href="" class="code">Code</a>
-            </div>
-        </div> -->
-        <!-- new card design ends -->
-     
-    </section>
+    
 <!--==========================
     Footer
   ============================-->
