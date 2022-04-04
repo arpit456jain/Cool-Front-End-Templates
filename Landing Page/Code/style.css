@@ -131,6 +131,7 @@ body{
     grid-template-columns: 1fr 1fr;
     place-items: center;
     overflow: hidden;
+    position: relative;
 }
 .heading{
     font-size: 4.3rem;
@@ -146,7 +147,7 @@ body{
     border-radius: 50%;
     background-color: var(--clr-bg-main);
     z-index: -1;
-    
+    display: none;
 }
 .main-Content {
     padding-top: 5rem;
@@ -162,6 +163,17 @@ body{
 }
 .illusImage{
     width: 50vw;
+}
+.illustration::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 500px;
+    background-color: var(--clr-bg-main);
+    border-radius: 430px 0px 0px 460px;
+    z-index: -10;
 }
 .underLine{
     display: inline-block;
@@ -208,6 +220,24 @@ body{
     background-color: #fab8c4;
     bottom: -7%;
     left: 30%;
+}
+
+@media (max-width:1024px){
+    .heading{
+        font-size: 3.5rem;
+    }
+    .illustration::before{
+        right: -20%;
+        border-radius: 1000px 0px 0px 1000px;
+    }
+    .leftElements .navLinks .nav-link-items{
+        padding: 0;
+    }
+}
+@media (max-width:768px){
+    .illustration::before{
+        right: -40%;
+    }
 }
 @media (max-width:425px){
     :root{
@@ -282,6 +312,15 @@ body{
     }
     .illusImage{
         width: 70vw;
+    }
+    .illustration::before{
+        top: auto;
+        right: auto;
+        bottom: -10%;
+        left: 0;
+        height: 250px;
+        width: 100%;
+        border-radius: 430px 460px 0px 0px;
     }
     .underLine{
         width: 1rem;
