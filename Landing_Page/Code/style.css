@@ -225,6 +225,7 @@ body{
 @media (max-width:1024px){
     .heading{
         font-size: 3.5rem;
+        font-weight: 400;
     }
     .illustration::before{
         right: -20%;
