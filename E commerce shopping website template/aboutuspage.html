@@ -12,42 +12,36 @@
       href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap"
       rel="stylesheet"
     />
-    <script
-      src="https://kit.fontawesome.com/427bd0507f.js"
-      crossorigin="anonymous"
-    ></script>
   </head>
   <body>
-    <div class="header">
-      <div class="container">
-        <div class="navbar">
-          <div class="logo">
-            <img src="./img/mylogo1.png" alt="logo" id="agent" />
-          </div>
-          <nav>
-            <ul id="MenuItems">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="aboutuspage.html">About Us</a></li>
-              <li><a href="contactpage.html">Contact Us</a></li>
-              <li><a href="">Products</a></li>
-              <li><a href="">Account</a></li>
-            </ul>
-            <img
-              src="./img/bag icon.png"
-              alt="cart"
-              height="50px"
-              class="bag-icon"
-            />
-            <img
-              src="./img/menu 2.png"
-              height="50px"
-              class="menu-icon"
-              onclick="menutoggle()"
-            />
+    <script src="script.js" defer></script>
+          <nav class="navbar">
+            <div class="logo">
+              <img src="./images/mylogo1.png" alt="logo" id="agent" />
+            </div>
+            <a href="#" class="toggle-button">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </a>
+            <div class="navbar-links">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutuspage.html">About Us</a></li>
+                <li><a href="contactpage.html">Contact Us</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="profile.html">Account</a></li>
+                <li><a href="#"><img
+                  src="./images/bag icon.png"
+                  alt="cart"
+                  height="32px"
+                  class="bag-icon"
+                /></a></li>
+              </ul>
+            </div>
+
           </nav>
-        </div>
-      </div>
-    </div>
+
     <br>
     <br>
     <br>
@@ -56,7 +50,7 @@
       <h1>About Us</h2>
     </div>
     <div class="about-section">
-      <p>Insert text about company and mission.</p>
+      <p>We have humble beginnings, we started as a company who wanted to create a site where people could easily purchase name brand clothing for less and feel confident and comfortable in their attire. We really believe that fashion is not just a statement but a feeling. A feeling that can bring a personality to life. Whether you are a skater, biker, or computer enthusiast we have something in store for you at infinity store. Don't forget to follow us on all our social media platforms.</p>
       <p>We are a comapany whose main motive is to provide quality goods and services to our customers.</p>
     </div>
     <br>
@@ -68,7 +62,7 @@
         <div class="row">
           <div class="col-3">
            
-            <img src="./img/profile.jpg" alt="man 1" />
+            <img src="./images/profimg.jpg" alt="man 1" />
             <br>
             <h3>
               CEO and Founder
@@ -79,7 +73,7 @@
           <div class="col-3">
             
             
-            <img src="./img/profile.jpg" alt="man 1" />
+            <img src="./images/profimg.jpg" alt="man 1" />
             <br>
             <h3>
               Designation
@@ -88,7 +82,7 @@
             <h4>Insert Name Here</h4>
           </div>
           <div class="col-3">                                  
-            <img src="./img/profile.jpg" alt="man 1" />
+            <img src="./images/profimg.jpg" alt="man 1" />
             <br>
             <h3>
               Designation
@@ -101,6 +95,7 @@
     </div>
     <br>
     <br>
+    
     <!--footer-->
     <div class="footer">
       <div class="container">
@@ -110,15 +105,15 @@
             <p>Download App for Android and ios mobile phone</p>
             <div class="logo1">
               <img
-                src="./img/Google-Play-Icon3.jpg"
+                src="./images/Google-Play-Icon3.jpg"
                 width="100%"
                 height="50px"
               />
-              <img src="./img/apple store.jpg" width="100%" height="50px" />
+              <img src="./images/apple store.jpg" width="100%" height="50px" />
             </div>
           </div>
           <div class="footer-col-2">
-            <img src="./img/mylogo1.png" />
+            <img src="./images/mylogo1.png" />
             <p>Our purpose is to make customers happy.</p>
           </div>
           <div class="footer-col-3">
@@ -147,19 +142,6 @@
     
     </div>
     </div>
-    <!-- js for toggle menu   -->
-    <script>
-      var MenuItems = document.getElementById("MenuItems");
-
-      MenuItems.style.maxHeight = "0px";
-
-      function menutoggle() {
-        if (MenuItems.style.maxHeight == "0px") {
-          MenuItems.style.maxHeight = "200px";
-        } else {
-          MenuItems.style.maxHeight = "0px";
-        }
-      }
     </script>
     </body>
     </html>
