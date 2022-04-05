@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+.section{
+  width: 100%;  
+}
+.section .container{
+    width:80%;
+    margin: 0px auto;
+    display: block;
+    padding: 50px 0px;
+}
+
+.container .title{
+    text-align: center;
+    max-width: 100%;
+    padding: 50px 0px;
+}
+
+.container .title h1{
+    font-size: 40px;
+    color:#2b2d5e;
+}
+
+.container .title h1::after{
+    content: "";
+    width: 100px;
+    background-color: #29648a;
+    height: 5px;
+    border-radius: 25px;
+    display: block;
+    margin: auto;
+}
+
+.content{
+    float: left;
+    width:55% ;
+}
+.image img{
+    width: 100%;
+    height: auto;
+}
+
+.image{
+    float:right;
+    width: 40%;
+}
+
+.content .article h3{
+    color: #29648a;
+    font-size: 18px;
+}
+
+.content .article p{
+    color: #333;
+    font-size: 17px;
+    line-height: 1.5;
+    margin-top: 20px;
+}
+
+.button{
+    margin-top: 50px;
+}
+
+.button a{
+    text-decoration: none;
+    padding: 9px 25px;
+    border-radius: 45px;
+    color: #fff;
+    background-color: #2b93d8;
+    font-size: 18px;
+}
+.button a:hover{
+    color: #fff;
+    background-color:#2b2d5e ;
+    transition: 1s ease;
+}
+ .socialMedia{
+    width: 100%;
+    clear: both;
+    display: inline-block;
+    margin-top: 50px;
+    text-align: center; 
+}
+
+ .socialMedia i{ 
+   color: #fff;
+   font-size: 22px;
+   height: 45px;
+   line-height: 44px;
+   background-color: rgb(41, 47, 102);
+   width: 45px;
+   text-align: center;
+   border-radius: 50%;
+   margin: 0px 5px;
+}
+
+.socialMedia i:hover{
+    color: red;
+    background-color: rgb(250, 187, 187);
+    transition:1s ease ;
+    transform: rotate(360deg) ;
+}
+
+/*Media queries*/
+@media screen and (max-width: 950px) {
+.container .title{
+    text-align: center;
+}    
+
+.section .container{
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+.content{
+    float: none;
+    margin: auto;
+    display: block;
+    width: 100%;
+}
+
+.image{
+    float: none;
+    margin-top: 15%;
+    width: 100%;
+}
+
+.image img{
+    display: block;
+    width: 100%;
+    height: auto;
+
+}
+
+.button{
+    text-align: center;
+}
+
+.button a{
+    padding: 5px 16px;
+
+}
+
+}
