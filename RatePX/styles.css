@@ -1,0 +1,519 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 100px;
+  background: #262626;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+header .logo {
+  color: white;
+  height: 50px;
+  line-height: 50px;
+  font-size: 24px;
+  float: left;
+  font-weight: bold;
+}
+
+header nav {
+  float: right;
+}
+
+header nav.active {
+  left: 0;
+}
+
+header nav ul {
+  display: block;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+header nav ul li {
+  list-style: none;
+}
+header nav ul li a {
+  height: 50px;
+  line-height: 50px;
+  padding: 0 20px;
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+  color: white;
+  background: #2196f3;
+}
+
+.menu-toggle {
+  color: white;
+  line-height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+@media (max-width: 991px) {
+  header {
+    padding: 0 20px;
+  }
+  .menu-toggle {
+    display: block;
+  }
+  header nav {
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 50px);
+    background: #333;
+    top: 50px;
+    left: -100%;
+    transition: 0.5s;
+  }
+  header nav ul {
+    display: block;
+    text-align: center;
+  }
+  header nav ul li a {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  }
+}
+
+.btarrow {
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+.arrow {
+  color: #323edd;
+  visibility: hidden;
+  position: fixed;
+  bottom: 30px;
+  right: 0px;
+}
+
+.mainImg {
+  background: url(main1.jpg);
+  margin-top: 50px;
+  /* width: 100%; */
+  background-size: cover;
+  background-position: center;
+  /* position: relative; */
+  min-height: 90vh;
+  /* background-attachment: fixed; */
+}
+
+.mainImg h1 {
+  position: absolute;
+  color: white;
+  font-weight: bold;
+  font-size: 35px;
+  right: 50px;
+  margin-top: 28vh;
+  font-family: "Lora", serif;
+}
+
+.mainImg h1.active1 {
+  display: none;
+}
+
+.mainImg button {
+  font-size: 16px !important;
+  font-weight: bold;
+  position: absolute;
+  right: 350px;
+  margin-top: 38vh;
+  background: none;
+  border: 2px solid black;
+  line-height: 1;
+  padding: 1em 2em;
+  color: white;
+  background-color: red;
+  border-radius: 10px;
+}
+
+.mainImg button:hover {
+  border: 1px solid red;
+}
+
+.mainImg button.active1 {
+  display: none;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.main-content > h2 {
+  font-size: 35px;
+  margin-bottom: 20px;
+  font-family: "Dancing Script", cursive;
+  color: white;
+}
+
+.wrapper {
+  padding: 15px 30px 30px;
+  color: white;
+  border: 2px solid black;
+  background-color: #24262b;
+  border-radius: 15px;
+}
+
+.wrapper .icon i {
+  text-align: center;
+  font-size: 45px;
+  left: 35%;
+  position: relative;
+  color: blue;
+}
+
+.wrapper .header {
+  font-size: 21px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.wrapper:hover {
+  border: 2px solid #a01919;
+  box-shadow: 0px 0px 20px #a01919;
+  -webkit-transform: scale(1.025);
+  transform: scale(1.025);
+  transition: 0.3s;
+}
+
+.graph {
+  width: 100%;
+  border-radius: 8px;
+}
+
+#graph {
+  padding: 50px;
+}
+
+.apph {
+  text-align: center;
+}
+
+.apppara {
+  text-align: center;
+  font-size: 20px;
+}
+
+#features {
+  background-color: black;
+}
+
+#trading {
+  padding: 60px;
+  background-color: black;
+}
+
+.tradingh {
+  padding-left: 60px;
+  color: white;
+  font-size: 34px;
+  line-height: 48px;
+}
+
+.tradingpara {
+  font-size: 18px;
+  padding-left: 60px;
+  color: white;
+}
+
+.smile {
+  color: white;
+  padding-left: 80px;
+  text-align: center;
+}
+
+.smile i {
+  font-size: 40px;
+  color: blue !important;
+}
+
+.happy {
+  margin-top: 15px;
+}
+
+.trading {
+  width: 100%;
+  border-radius: 10px;
+}
+
+#global {
+  padding-top: 50px;
+  padding-bottom: 240px;
+  background-image: url(earth.jpg);
+}
+
+#global > h1 {
+  text-align: center;
+  color: white;
+  margin-bottom: 80px;
+}
+
+.companies li {
+  cursor: pointer;
+  font-family: "Festive", cursive;
+  width: 100%;
+  display: inline !important;
+  color: palevioletred;
+  font-size: 35px !important;
+  list-style: none;
+  margin: 15px;
+}
+
+#global button {
+  font-size: 20px !important;
+  width: 180px !important;
+  position: relative;
+  top: 50px;
+  left: 44%;
+}
+
+#news {
+  background-color: black;
+  padding: 50px;
+  background-image: url(main.jpg);
+  height: 50vh;
+  width: 100%;
+}
+
+#news h1 {
+  font-family: roboto;
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+}
+
+#news p {
+  color: white;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-box {
+  padding: 5px;
+  border-radius: 5px;
+  background: white;
+}
+
+.form-box input {
+  font-size: 18px;
+  color: black;
+  padding: 15px 10px;
+  border: none;
+  outline: none;
+  background: #ececec;
+}
+
+.form-box button {
+  color: #ffffff;
+  padding: 15px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  background: #4769d8;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.form-box button:hover {
+  background-color: #fc5296;
+  background-image: linear-gradient(315deg, #fc5296 0%, #f67062 74%);
+}
+
+/* Footer */
+
+.footer {
+  background-color: #24262b;
+  padding: 70px 0;
+}
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+.footer-col h4 {
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover {
+  color: #ffffff;
+  padding-left: 8px;
+}
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover {
+  color: #24262b;
+  background-color: #ffffff;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.social {
+  margin-top: 12px;
+}
+
+#copyright {
+  text-align: center;
+  color: white;
+  background-color: #24262b;
+  padding: 10px;
+}
+
+/*responsive*/
+@media (max-width: 767px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 574px) {
+  .footer-col {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-device-width: 1000px) {
+  .flex-container {
+    display: grid;
+  }
+  .mainImg {
+    background-attachment: fixed;
+  }
+  .mainImg button {
+    position: absolute;
+    left: 27%;
+    margin-top: 380px;
+    width: 150px;
+    font-size: 15px !important;
+  }
+  .mainImg h1 {
+    position: absolute;
+    left: 60px;
+  }
+  .main-content {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .wrapper {
+    margin-bottom: 10px;
+  }
+  .apppara {
+    margin-top: 0px;
+    font-size: 18px;
+  }
+  .companies li {
+    text-align: center;
+    display: grid !important;
+    margin: 0px;
+  }
+  #global button {
+    left: 25%;
+  }
+  #news h1 {
+    font-size: 32px;
+  }
+
+  #graph {
+    padding: 20px;
+  }
+  #news h1 {
+    font-size: 32px;
+  }
+
+  .form-box input {
+    font-size: 12px;
+  }
+  .form-box button {
+    padding: 11px 16px;
+    font-size: 13px;
+  }
+  #trading {
+    padding: 40px;
+  }
+  .tradingh {
+    font-size: 25px;
+    padding-left: 0;
+    text-align: center;
+  }
+  .tradingpara {
+    font-size: 18px;
+    padding-left: 0;
+  }
+  .smile {
+    padding: 0;
+  }
+  .smile i {
+    margin-top: 20px;
+  }
+  .happy {
+    margin-top: 20px;
+  }
+}
