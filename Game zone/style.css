@@ -180,3 +180,42 @@ ul {
 .center{
     text-align: center;
 }
+
+/* Responsive */
+
+@media only screen and (max-width:1425px){
+    
+    .navbar-brand img{
+        height: 55px;
+        margin: 13px 96px;
+    }
+    .nav li{
+        padding:58px 5px 5px 5px;
+    }
+    .nav li a{
+        font-size: 2rem;
+    }
+
+    #home .h-primary{
+        font-size: 4.7rem;
+    }
+
+    #home ul{
+        flex-wrap: wrap;
+    }
+
+    #FL{
+        display: flex;
+        flex-wrap: wrap;
+    } 
+
+    #FL .item-1 img{
+        height:65px;
+        width: 80px;
+        padding: 2px 3px;
+    }
+
+    #clients img{
+        margin-top: 117px;
+    }
+}
