@@ -318,6 +318,145 @@ hr {
   align-items: center;
 }
 
+@media only screen and (max-width: 768px) {
+  .sidepanel ul {
+    list-style: none;
+    color: #eee;
+  }
+  .sidepanel a {
+    color: rgb(255, 255, 255);
+  }
+  .sidebar-brand {
+    display: flex;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  .sidebar-brand-text {
+    margin-left: 15px;
+    font-size: 25px;
+  }
+ 
+  .nav-link {
+    font-size: 18px;
+    
+  }
+  .sidebar-divider{
+    background-color: #eee;
+  }
+
+  .topbar{
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+  }
+  .navbar-search{
+    display: flex;
+  } 
+  .topbar ul{ 
+    list-style: none;
+    display: flex;
+    padding-left: 10px;
+  }
+  .topbar .img-profile{
+    position: absolute;
+    right: 35px;
+    top: 10px;
+    float: right;
+    width: 20px;
+  }
+  .topbar li{
+    margin: 0 10px;
+  }
+  .input-group{
+    display: flex;
+  }
+  .topbar select{
+    display: flex;
+    margin: 0 10px;
+  }
+  .topbar form button{
+    display: none;
+  }
+  .topbar .icon{
+    position: relative;;
+    bottom: -5px;
+    font-size: 20px;
+    color: rgb(218, 214, 214);
+  }
+  .topbar .search{
+    color: #597eec;
+    position: relative;
+    left: 0;
+    bottom: -5px;
+    font-size: 18px;
+  }
+  .topbar .nav-item .nav-link .badge-counter.count{
+    position: absolute;
+    transform: scale(0.9);
+    transform-origin: top right;
+    right: 265px;
+    margin-top: 0.35rem;
+}
+  .topbar .nav-item .nav-link .badge-counter {
+    position: absolute;
+    transform: scale(0.9);
+    transform-origin: top right;
+    right: 220px;
+    margin-top: 0.35rem;
+}
+  .badge-danger {
+    font-size: 10px;
+    color: #fff;
+    background-color: #e74a3b;
+}
+.topbar .dropdown a span{
+  display: flex;
+}
+.topbar .dropdown a img{
+  margin-left: 10px;
+  width: 40px;
+}
+
+.shadow{
+  width: 90%;
+}
+.pie{
+  height: 300px;
+}
+.card-header{
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 8px;
+}
+canvas{
+ margin: 15px 0;
+}
+.card-header select{
+  height: 20px;
+  position: relative;
+  bottom: -12px;
+}
+.card-body{
+  height: 200px;
+}
+.chartjs-size-monitor{
+  display: flex;
+}
+#myPieChart, #Monthlychart, #Yearlychart{
+  height: 1px;
+}
+.charts{
+  margin-top: 150px;
+}
+.pie-charts{
+  margin: 20px 0 220px;
+}
+.card-header h6{
+  font-size: 2rem;
+}
+
+}
+
 @media only screen and (max-width: 600px) {
   .sidepanel ul {
     list-style: none;
