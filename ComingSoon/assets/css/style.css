@@ -1,195 +1,72 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
 body {
-  font-family: "Open Sans", sans-serif;
-  color: #fff;
-  /*background: url("../img/bg.jpg") top center no-repeat;*/
-  background-size: 100% 100%;
-  position: relative;
+	font-family: 'Open Sans', sans-serif;
+	background-color: #effffd;
+	background-size: 100% 100%;
+	position: relative;
 }
-
-body::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background: rgba(34, 34, 34, 0.8);
-  opacity: 0.5;
+.heading {
+	text-align: center;
+	font-size: 55px;
+	font-weight: bold;
+	margin: 30px;
+	color: #ff6b6b;
 }
-
-#header .social-links a {
-  font-size: 24px;
-  display: inline-block;
-  color: rgba(255, 255, 255, 0.8);
-  line-height: 1;
-  padding-top: 14px;
-  margin: 0 10px;
-  text-align: center;
-  transition: 0.3s;
-}
-
-#header .social-links a:hover {
-  color: #fff;
-}
-
-
 #footer {
-  background: rgba(19, 19, 19, 0.4);
-  padding: 30px 0;
-  color: #fff;
-  font-size: 14px;
-  position: relative;
+	background: rgba(19, 19, 19, 0.4);
+	padding: 30px 0;
+	color: #fff;
+	font-size: 14px;
+	position: relative;
 }
 
-
-/*footer section*/
-.myfooter ul
-{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0
-}
-.myfooter  ul li
-{
-  list-style: none;
-  margin:7px;
-  font-size: 2.4rem;
-  padding: 7px;
-}
-.myfooter  ul li:nth-child(1) a
-{
-  color:#3B5998;
-}
-.myfooter  ul li:nth-child(2) a
-{
-  color:  #f40083;
+.countdown {
+	display: flex;
+	gap: 15px;
+	padding: 10px 10px;
 }
 
-
-.fa:hover {
-    opacity: 0.9;
-    font-size: 2.8rem;
+.countdown .box {
+	padding: 5px;
+	background-color: #fff;
+	border: 1px solid;
+	text-align: center;
+	flex: 1 1 20px;
 }
 
-.logo
-{
-  width: 10vw;
-  height: 15vh;
+.countdown .box h3 {
+	font-size: 50px;
 }
-#header .comgsoon
-{
-  font-size:4rem;
-}
-#header .eventname
-{
-  font-size: 5rem;
-  font-weight: 700;
-}
-@media (min-width: 1024px) {
-  body {
-    background-attachment: fixed;
-  }
+.countdown .box span {
+	color: #ff6b6b;
+	font-size: 20px;
 }
 
-a {
-  color: #ff0000;
+.announce {
+	text-align: center;
+	margin-top: 70px;
+	font-size: 3em;
+	font-weight: bold;
+	color: #ff6b6b;
 }
 
-#header .comgsoon
-{
-  font-size:3rem;
-}
-#header .eventname
-{
-  font-size: 4rem;
-  font-weight: 700;
-}
-a:hover {
-  color: #ff3333;
-  text-decoration: none;
+.info {
+	padding: 10px;
+	font-size: 1.5em;
+	text-align: center;
+	font-family: 'Lora', serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Raleway", sans-serif;
+.events {
+	padding: 10px;
+	font-size: 1.3em;
+	text-align: center;
+	font-family: 'PT Serif', serif;
 }
 
-#main {
-  position: relative;
+.contact {
+	padding: 10px;
+	font-size: 1em;
+	text-align: center;
 }
-#header {
-  position: relative;
-  width: 100%;
-  /* countdown */
-}
-
-#header h1 {
-  margin: 0 0 10px 0;
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 56px;
-  color: #fff;
-}
-
-#header h2 {
-  color: #eee;
-  margin-bottom: 40px;
-  font-size: 22px;
-}
-
-#header .countdown {
-  margin-bottom: 10px;
-}
-
-#header .countdown div {
-  text-align: center;
-  margin: 10px;
-  width: 100px;
-  padding: 15px 0;
-  background: rgba(255, 255, 255, 0.12);
-  border-top: 5px solid #ff0000;
-}
-
-#header .countdown div h3 {
-  font-weight: 700;
-  font-size: 44px;
-  margin-bottom: 15px;
-}
-
-#header .countdown div h4 {
-  font-size: 16px;
-  font-weight: 600;
-}
-
-@media (max-width: 575px) {
-  #header .countdown div {
-    width: 70px;
-    padding: 10px 0;
-    margin: 10px 8px;
-  }
-  #header .countdown div h3 {
-    font-size: 28px;
-    margin-bottom: 10px;
-  }
-  #header .countdown div h4 {
-    font-size: 14px;
-    font-weight: 500;
-  }
-  #header .comgsoon
-{
-  font-size:3rem;
-}
-#header .eventname
-{
-  font-size: 3.2rem;
-  font-weight: 600;
-}
-.logo
-{
-  width: 15vw;
-  height: 10vh;
-}
-}
-
-
