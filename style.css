@@ -9,8 +9,7 @@ html{
 body {
   margin: 0 auto;
   padding: auto;
-  /* background-color: rgb(19, 24, 44); */
-  background-color: #1d1d1d;
+  background-color: rgb(19, 24, 44);
 }
 
 
@@ -23,6 +22,7 @@ h1 {
   text-decoration: none;
   letter-spacing: 0.15em;
   text-align: center;
+  margin: 1.8em 0 1.5em 0;
   padding: 15px 20px;
   position: relative;
     }
@@ -44,136 +44,88 @@ h1 {
     }  
    
 
-.SearchBox{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+/* CARDS DESIGN STARTS  */
+
+.image{
+  padding: .5em;
+  transition: 0.3s;
 }
-
-.searchBar{
-  outline: none;
-  border: 3px solid #222636;
-  font-family: 'Space Mono';
-  font-size: 13px;
-  padding: .5em 2em .5em .3em;
-  text-align: left;
-  width: 250px;
+.image:hover{
+  padding: 0;
 }
-
-.searchIcon{
-  color: black;
-  position: absolute;
-  right: 37em;
-
-}
-
-@media only screen and (max-width: 600px){
-  .searchIcon{
-    color: #000;
-    right: 7em;
-  }
-}
-
-@media only screen and (max-width: 400px){
-  .searchIcon{
-    color: #000;
-    right: 5em;
-  }
-}
-
-/* @media only screen and (max-width: 768px){
-  .searchIcon{
-    color: #000;
-    right: 18em;
-  }
-} */
 
 .styles {
   display: flex;
-  justify-content: space-around;
-  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  
   margin-top: 4vmin;
   flex-wrap: wrap;
-  /* flex-direction: column; */
 }
 
 .stylebox {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   flex-wrap: wrap;
-  background-color: whitesmoke;
-  padding: 1rem;
+  overflow: hidden;
+  background-color: white;
+  padding: .2rem;
   text-align: center;
   font-family: 'Bitter', sans-serif;
   margin: 1.5rem;
   border-radius: 5px;
   border: none;
   width: 20rem;
-  justify-content: center;
   transition: .2s;
 }
-.stylebox:hover{
-  transform: scale(1.02);
-  -webkit-box-shadow: 0 0 10px 2px black;
-  -moz-box-shadow: 0 0 10px 2px black;
-  box-shadow: 0 0 10px 2px black;
+.stylebox:hover {
+  
+  box-shadow: 15px 15px 17px #000;
 }
-.stylebox .image{
-  width: 18rem;
+.stylebox .image {
+  width: 98%;
+  overflow: hidden;
   height: 13rem;
+  border-radius: .5em;
+  transition: .4s;
 }
-.stylebox .image img{
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-  image-rendering:pixelated;
-}
-.stylebox p{
-  text-align: left;
-  font-size: 1.2rem;
-  font-weight: 600;
-  text-transform: capitalize;
-}
-.stylebox .btn-group {
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-}
-/* .stylebox a {
-  
-  border: 2px solid #1d1d1d;
-  padding: 1vmin;
-  font-size: 1.2rem;
-  
-  color: black;
-  text-decoration: none;
-  transition: 0.2s;
-  width: 100%;
-}
-.stylebox a:hover
-{
-  background-color: #1d1d1d;
-  color: white;
-} */
 
-.btnn{
+.stylebox .image:hover{
+  transform: scale(1.17);
+  border-radius: .5em;
+}
+/*  */
+
+.card-heading{
+  display: flex;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 1em .5em;
+  font-family: 'Bitter';
+}
+.card-data{
+  display: flex;
+  flex-direction: column;
+}
+
+button{
   border: 2px solid #101522;
-  width: 100%;
+  width: 95%;
+  font-size: 1em;
+  font-family: 'Bitter';
+  font-weight: bold;
   padding: .5em;
   transition: 0.3s;
+  margin-bottom: 1em ;
 }
+
 .btnn:hover{
   background-color: #101522;
-  color: white;
+  color: #fff;
 }
-.stylebox a.code {
-  background-color: rgb(47, 128, 0);
-}
-.stylebox a.code:hover {
-  background-color: rgb(39, 105, 0);
-}
-
-
 
 @media only screen and (max-width: 600px) {
   .styles {
@@ -182,20 +134,30 @@ h1 {
     flex-direction: column;
     justify-content: space-around;
     margin: 0 auto;
-    margin-top: 4vmin;
+    margin-top: 10vmin;
   }
   .stylebox {
-    padding: .5rem;
+    padding: .3rem;
     margin: auto;
     width: 18rem;
     margin-bottom: 1.5rem;
   }
-  .stylebox .image{
+  .stylebox .image {
+    overflow: hidden;
     width: 17rem;
     height: 12rem;
-    border-radius: .5rem;
+    padding: 0;
+    margin: 0;
+    padding: .5em .5em 0 .5em;
+    border-radius: 0.5rem;
+    transition: .3s;
   }
 }
+
+
+
+
+/* CARDS DESIGN ENDS */
 
 /* scroll top starts */
 #scroll-top{
@@ -204,7 +166,7 @@ h1 {
   right: 1rem;
   padding: .6rem 1rem;
   font-size: 2rem;
-  background: #00ff37;
+  background:  #61DBFB;
   color: rgb(13, 0, 44);
   border-radius: 50%;
   transition: 1s linear;
@@ -222,163 +184,142 @@ h1 {
 /* scroll top ends */
 
 
-/* CSS for NavBar starts */
-/*.topnav {
-  background-color: rgb(19, 24, 44);
-  background-color: #1d1d1d;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
- .topnav .logo{
-  width: 7em;
-}
-
-ul{
-  list-style: none;
-}
-.navbar-links li{
-  font-family: 'Space Mono', monospace;
- 
-}
-.navbar-links ul{
-  display: flex;
-  flex-direction:row;
-}
-
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  margin:0 2em;
-  padding: .5em;
-  text-decoration: none;
-  font-size: 16px;
-}
-
-.topnav a:hover {
-  background-color: #ddd;
-  
-  color: black;
-}
-
-.topnav a.active {
-  background-color: #04aa6d;
-  color: white;
-}
-
-.topnav .icon {
-  display: none;
-}
-
-.burger div{
-  width: 25px;
-  height: 4px;
-  margin: 4px;
-  background-color: white;
-}
-
-.burger{
-  display: none;
-} */
+/* NAVABR STARTS HERE */
 
 a {
   text-decoration: none;
+  color: white;
+  letter-spacing: .5px;
+  transition: .3s;
  }
+ a:hover{
+   color:  #61DBFB;
+   transform: translateY(-10%);
+ }
+ .navbar-nav a.active{
+   color:  #61DBFB;
+ }
+
  li {
   list-style: none;
  }
 
- .navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  padding: 20px;
-  box-shadow: none;
-  -webkit-box-shadow:none
-  background-color: #1d1d1d;
-  color: #fff;
+ .navbar{
+   background-color: rgb(19, 24, 44);
  }
- .nav-links a {
-  color: #fff;
- }
- .logo img{
-   width: 7em;
+ .navbar-toggler{
+   color: white;
+   line-height: 10px;
+   transform: translate(50%, -200%);
  }
 
- .menu {
-  display: flex;
-  gap: 1em;
+
+
+.nav-link{
+  font-family: 'Space Mono', monospace;
+  margin:0 1em ;
   font-size: 16px;
-  font-family: 'Space Mono';
- }
+}
+span{
+  color:  #61DBFB;
+}
 
- .menu li:hover {
-  background-color: #fff;
-  border-radius: 1em;
-  transition: 0.3s ease;
-  box-shadow: 0 0 10px 2px rgba(26,1,253,0.42);
- }
- a:hover{
-   color: #1d1d1d;
-   background-color: #fff;
- }
+.navbar-brand{
+  font-family: 'Space Mono',monospace;
+  
+}
 
- .menu li {
-  padding: 5px 14px;
-  border-radius:1em ;
- }
+.navbar-brand:hover{
+  transform: none;
+  color: white;
+}
 
- input[type=checkbox]{
-  display: none;
- } 
- /*HAMBURGER MENU*/
- .hamburger {
-  display: none;
-  font-size: 24px;
-  user-select: none;
- }
+#navbarText{
+  justify-content: right;
+  align-items: right;
+}
+
+@media only screen and (max-width: 786px) {
+  
+}
+
+ 
+/* NAVBAR ENDS HERE */
+
+/* MISC. DESIGNING */
+.tags{
+  padding: 0;
+  margin: 0;
+ color: #61DBFB;
+ font-family: 'Space Mono';
+ font-size: 16px;
+ opacity: 70%;
+}
+
+.tags-opening{
+  transform: translate(24%, 290%);
+}
 
 
 
- @media (max-width: 768px) {
-   
-  .menu { 
-   display:none;
-   position: absolute;
-   background: #1d1d1d ;
-   right: 0;
-   left: 0;
-   height: 92vh;
-   text-align: center;
-   padding: 96px 0;
-   z-index: 1000;
-   top: 20vh;
+#counter{
+  color: white;
+  font-family: 'Bitter';
+  text-align: center;
+  margin: 0 .1em;
+  border: 2px solid #61DBFB;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+  padding: .2em .5em .2em .9em;
+  
+  box-shadow: 0px 10px 10px #000;
+}
+
+@media only screen and (max-width: 786px){
+  .tags-opening{
+    transform: translate(10%, 200%);
   }
-  .menu li:hover {
-   display: inline-block;
-   background-color:#fff;
-   transition: 0.3s ease;
+  .heading{
+    font-size: 36px;
   }
-  .menu li + li {
-   margin-top: 12px;
-  }
-  input[type=checkbox]:checked ~ .menu{
-   display: block;
-  }
-  .hamburger {
-   display: block;
-   
+  .searchBox{
+    margin-bottom: 2em;
   }
 }
 
 
-/* CSS for NavBar end */
 
+/* END OF MISC. DESIGING */
+
+/* SEARCH BOX STARTS */
+
+
+.searchBar{
+  outline: none;
+  border: 2px solid  #61DBFB;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+  background-color: transparent;
+  font-family: 'Space Mono';
+  font-size: 13px;
+  padding: .8em 2em .8em .9em;
+  color: white;
+  text-align: left;
+  width: 250px;
+  box-shadow: 0px 10px 10px #000;
+  
+}
+
+.searchBox{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+}
+
+
+/* SEARCH BOX ENDS */
 
 /*--------------------------------------------------------------
 # Footer
