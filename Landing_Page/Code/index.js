@@ -10,7 +10,7 @@ dropDownBtn.addEventListener("mouseout", ()=>{
     dropDownMenu.classList.remove('show');
 })
 menuBtn.addEventListener("click" , ()=>{
-    navMenu.setAttribute('style', 'display:flex;');
+    navMenu.setAttribute('style', 'height:25rem;width:25rem');
 })
 hideMenu.addEventListener('click', ()=>{
     navMenu.removeAttribute('style');

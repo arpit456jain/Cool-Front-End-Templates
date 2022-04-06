@@ -23,6 +23,7 @@ body{
     top: 0;
     left: 0;
     background-color: transparent;
+    z-index: 100;
 }
 .logo{
     display: flex;
@@ -92,17 +93,18 @@ body{
     position: relative;
 }
 .dropDown-Menu{
-    padding: 10px;
     width: 245px;
+    height: 0;
     position: absolute;
     top: 100%;
     left: 0;
     border-radius: 8px;
     background-color: #5b56e9f3;
-    display: none;
+    transition: 500ms;
 }
 .show{
-    display: block;
+    padding: 10px;
+    height: 12rem;
 }
 .dropDown-Menu .dropdown-Menu-list{
     text-decoration: none;
@@ -266,9 +268,9 @@ body{
         top: -120%;
         right: -149px;
         border-radius: 50%;
-        height: 25rem;
-        width: 25rem;
-        display: none;
+        height: 0;
+        width: 0;
+        transition: 500ms;
     }
     .dropdown-item{
         padding-right: 6rem;
