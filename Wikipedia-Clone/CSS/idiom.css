@@ -1,0 +1,19 @@
+.idiom {
+    width: 267.66px;
+    height: 36px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #3366cc;
+    background-color: #f8f9fa;
+    border: 1px solid #a2a9b1;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.idiom strong {
+    color: #3366cc;
+    font-size: 1.4rem;
+}

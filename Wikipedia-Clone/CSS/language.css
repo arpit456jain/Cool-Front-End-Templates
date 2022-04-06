@@ -1,0 +1,33 @@
+.languages-container {
+    max-width: 580px;
+    display: flex;
+    flex-wrap: wrap;
+    order: 1;
+}
+
+.languages {
+    width: 33%;
+    height: 64px;
+    margin-bottom: 16px;
+    padding: 0 16px;
+}
+
+.languages-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.languages-type {
+    color: #3366cc;
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+}
+
+.languages-description {
+    text-align: center;
+}
+
+.languages-details {
+    font-size: 1.3rem;
+}

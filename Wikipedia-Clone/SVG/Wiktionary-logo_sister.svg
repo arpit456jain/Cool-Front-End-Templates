@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="35" height="35" viewBox="0 0 350 350">
+	<title>
+		Wiktionary
+	</title>
+	<defs>
+		<linearGradient id="a">
+			<stop offset="0" stop-color="#f4e3ca"/>
+			<stop offset="1" stop-color="#e9cc9d"/>
+		</linearGradient>
+		<linearGradient id="b">
+			<stop offset="0" stop-color="#0036d4"/>
+			<stop offset="1" stop-color="#010057"/>
+		</linearGradient>
+		<linearGradient xlink:href="#a" id="c" gradientUnits="userSpaceOnUse" gradientTransform="translate(-2383.4 667) scale(3.053)" x1="870.86" y1="-140.09" x2="795.29" y2="-169.78"/>
+		<linearGradient xlink:href="#b" id="d" gradientUnits="userSpaceOnUse" gradientTransform="matrix(2.04906 -.50644 .57986 2.07962 -647.13 -304.35)" x1="370.37" y1="344.23" x2="283.23" y2="259.18"/>
+	</defs>
+	<g transform="translate(-17.7 -6.6) scale(1.03655)" stroke="#000">
+		<rect transform="matrix(.9871 -.1602 .1692 .98558 0 0)" y="75.56" x="13.21" ry="37.49" rx="27.96" height="273.34" width="274.39" fill="#e7c78d" stroke-width="3.31" stroke-linecap="round" stroke-linejoin="round"/>
+		<rect transform="matrix(.9871 -.1602 .1692 .98558 0 0)" y="56.55" x="19.58" ry="37.49" rx="27.96" height="273.34" width="274.39" fill="url(#c)" stroke-width="3.31" stroke-linecap="round" stroke-linejoin="round"/>
+		<path fill="url(#d)" stroke-width="2.49" d="M294.4 64.78l.72 4.93c-4.48.65-7.98 2.02-10.52 4.11-2.54 2.1-4.73 5.64-6.58 10.62-1.23 3.36-2.8 11.16-4.7 23.42l-26.34 152.62-5.07.73-56.24-109.85-21.81 121.19-4.56.66-73.26-142.64c-5.46-10.65-8.85-16.91-10.16-18.81a17.41 17.41 0 0 0-8.02-6.53c-3.16-1.22-7.23-1.47-12.21-.74l-.73-4.93 63.6-9.24.73 4.93-3.04.44c-4.47.65-7.74 2.22-9.79 4.7a10.12 10.12 0 0 0-2.4 8.24c.46 3.1 3.37 9.99 8.75 20.64l48.83 96.5 15.75-90.36-7.31-14.45-5.85-11.54c-2.43-4.19-5-7.8-7.69-10.86a16.08 16.08 0 0 0-4.69-3.68 22.7 22.7 0 0 0-6.84-2.55c-1.69-.3-4.26-.2-7.72.3l-.73-4.92 66.9-9.72.73 4.93-4.56.67c-4.73.68-8.04 2.25-9.92 4.7-1.88 2.46-2.55 5.5-2.02 9.14.67 4.53 3.74 12.17 9.21 22.9l47.48 93.43 17.96-104.3c2.09-11.55 2.82-19.46 2.19-23.73-.3-2.04-1.2-3.86-2.69-5.46a9.95 9.95 0 0 0-5.18-3.06c-3.39-.78-7.66-.8-12.82-.05l-.73-4.93 51.32-7.45z"/>
+	</g>
+</svg>

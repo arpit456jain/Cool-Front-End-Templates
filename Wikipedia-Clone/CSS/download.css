@@ -1,0 +1,39 @@
+.download {
+    background-color: #f8f9fa;
+    padding-top: 10px;
+    order: 2;
+}
+
+.download-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.download-image {
+    width: 29.4px;
+    height: 29.4px;
+}
+
+.download-description {
+    margin-left: 10px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.download-anuncio {
+    margin: 20px 10px;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.download-apps {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.download-apps-img {
+    width: 124px;
+    height: 38px;
+}

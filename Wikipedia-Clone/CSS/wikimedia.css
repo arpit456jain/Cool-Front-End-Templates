@@ -1,0 +1,17 @@
+.wikimedia {
+    margin: 10px 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wikimedia-image {
+    width: 42px;
+    height: 42px;
+}
+
+.wikimedia-description {
+    margin-top: 10px;
+    font-size: 13px;
+}
