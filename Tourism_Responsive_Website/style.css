@@ -97,6 +97,7 @@ h1{
     font-weight: 600;
     border-radius: 50%;
     padding: 10px;
+    margin: 10px;
     box-shadow: 0 0 10px 1px rgba(37,73,214,0.18);
     left: 20px;
     bottom: -50px;
@@ -152,7 +153,6 @@ h1{
     font-size: 20px;
     top: 50%;
     left: 50%;
-    text-shadow: -2px 2px 2px #000;
     transform: translate(-50%, -50%);
     text-align: center;
     margin-top: 20px;
