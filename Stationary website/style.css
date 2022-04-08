@@ -32,3 +32,20 @@
     transform: scale(1.1);
 }
 
+@media screen and (max-width:992px){
+    #footer{
+        margin-top: 20px;
+    }
+    #footer .row{
+        flex-direction: column;
+    }
+    #footer .row .subscribe{
+        padding: 20px 0px;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+    }
+   #footer .row ul{
+       width: max-content;
+   }
+}
