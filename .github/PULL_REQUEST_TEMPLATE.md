@@ -2,7 +2,7 @@
 
 Please include a summary of the change and which issue is fixed. Please also include relevant motivation and context. List any dependencies that are required for this change.
 
-Fixes # (issue no.)
+Fixes:  #(issue no.)
 
 <!---give the issue number you fixed----->
 
@@ -15,25 +15,16 @@ Fixes # (issue no.)
 - [ ] Breaking change (fix or feature that would cause existing functionality to not work as expected)
 - [ ] This change requires a documentation update
 
-# Explain the Testing instructions
-
-**Test Configuration**:
-
-- Operating system:
-- Version:
-- Text-editors used:
-
 # Checklist:
 
 <!----Please delete options that are not relevant.And in order to tick the check box just but x inside them for example [x] like this----->
-
+- [ ] I have made this from my own
+- [ ] I have taken help from some online resourses 
 - [ ] My code follows the style guidelines of this project
 - [ ] I have performed a self-review of my own code
 - [ ] I have commented my code, particularly in hard-to-understand areas
 - [ ] I have made corresponding changes to the documentation
 - [ ] My changes generate no new warnings
-- [ ] I have added tests that prove my fix is effective or that my feature works
-- [ ] New and existing unit tests pass locally with my changes
-- [ ] Any dependent changes have been merged and published in downstream modules
+
 
 # ATTACH SCREEN-SHOTS / DEPLOYMENT LINK

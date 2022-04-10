@@ -1,0 +1,293 @@
+body{
+    margin: 1%;
+    overflow-x: hidden;
+
+    /* background-image: url(img/img3.jpg); */
+
+}
+
+.navbar{
+    text-align: center;
+}
+.navbar  img{
+    width: 62px;
+    height:62px;
+    border-radius: 50px;
+    transition: all 0.5s ease-in-out;
+}
+.navbar img:hover{
+    -webkit-filter: invert(1);
+}
+.navbar .container-fluid a{
+    color: white;
+    font-family: emoji;
+    font-size: 19px;
+    font-weight: 500;
+    transition: all 0.5s ease-in-out;
+}
+.navbar .container-fluid a:hover{
+    transform: scale(1.2);
+    color: orange;
+}
+.homePage{
+    height: 800px;
+
+    background-image: url(img/img3.jpg);
+    opacity: 0.9;
+    background-color: rgb(28 26 26 / 25%);
+    background-blend-mode: darken;
+    
+
+}
+.homePage h1 {
+    color: #fff;
+    text-align: center;
+    font-weight: 500;
+    padding-top: 240px;
+    font-family: fangsong;
+    margin-top: 0px;
+    font-size: 65px;
+    transition: all 0.5s ease-in-out;
+    animation-name: example;
+    animation-duration: 2s;
+}
+@keyframes example {
+    0%   {transform: translateY(-135px);}
+}   
+.homePage h4{
+    font-family: fontawesome;
+    color: #fff;
+    text-align: center;
+    padding-top: 10px;
+    padding-left: 70px;
+    padding-right: 70px;
+    transition: all 0.5s ease-in-out;
+    animation-name: example1;
+    animation-duration: 2s;
+}
+@keyframes example1 {
+    0%   {transform: translateY(135px);}
+}  
+#about{
+    background-color: #cad1e0;
+}
+#about h1{
+    text-align: center;
+    font-size: 45px;
+    font-family: fontawesome;
+}
+
+#about p{
+    text-align: center;
+    font-size: 20px;
+    padding: 25px;
+    font-family: fangsong;
+}
+
+#gallery{
+    text-align: center;
+    background-color: #395B64 ;
+}
+#gallery h1{
+    font-size: 45px;
+    font-family: fangsong;
+    color: white;
+}
+
+.gym-image{
+    text-align: center;
+    margin: 0px center 0px center;
+    width: 50%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#pricing button{
+    background-color: red;
+    color: white;
+    transition: all 0.5s ease-in-out;
+}
+#pricing button:hover{
+    background-color: green;
+}
+#pricing p{
+    font-family: fangsong;
+}
+#pricing h3{
+    font-family: fontawesome;
+}
+#pricing .heading-pricing{
+    font-size: 45px;
+}
+
+#pricing .subtitle-pricing{
+    font-size: 20px;
+}
+
+#pricing h2{
+    font-family: fontawesome;
+}
+#pricing{
+    padding: 2%;
+    text-align: center;
+    background-color: #cad1e0;
+}
+#pricing .card-header{
+    background-color: rgb(0 0 0 / 3%);
+}
+#pricing .card:hover{
+    transition: all 0.4s ease-in-out;
+    transform: translateY(-32px);
+    box-shadow: 10px 10px 8px rgb(56, 52, 52);
+}
+.heading-pricing{
+    margin-top: 4%;
+}
+.subtitle-pricing{
+    margin-bottom: 2%;
+    padding: 1%;
+}
+.pricing-card{
+    padding: 2% 3%;
+}
+.card-body p{
+    padding-top: 2%;
+}
+
+.contact{
+    text-align: center;
+    background-color: white;
+}
+.contact img{
+    padding-top: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 50px;
+    margin-left: 40px;
+}
+#footer i{
+   font-size: 25px;
+   padding: 10px;
+}
+#footer button{
+    border-radius: 20px;
+}
+#footer button:hover{
+    background-color: blue;
+}
+#contact button{
+    border-radius: 20px;
+}
+#contact button:hover{
+    background-color: blue;
+}
+#back {
+	z-index: 3;
+	position: sticky;
+	bottom: 12px;
+}
+
+#back button{
+	outline: none;
+	border: none;
+	position: relative;
+	border-radius: 50px;
+	left: 95%;
+	width: 50px;
+	height: 50px;
+	background-color:#212529;
+	transition: all 0.3s ease-in-out;
+}
+
+#back button:hover{
+	background-color:rgba(235, 89, 4, 0.986);
+}
+#back i{
+	color: white;
+	font-size: 1.2rem;
+}
+
+ #contact .cont-head {
+     text-align: center; 
+    font-size: 45px;
+    font-family: fontawesome;
+}
+#contact label{
+    font-family: fangsong; 
+    
+}
+@media screen and (max-width:983px){
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    #back{
+        visibility: hidden;
+    }
+    .navbar{
+        width: 100%;
+    }
+    .homePage{
+        width: 100%;
+    }
+    .homePage{
+        height: 600px;
+        background-image: url(img/pic.jpeg);
+        opacity: 0.9;
+        background-color: rgb(28 26 26 / 25%);
+        background-blend-mode: darken;
+        
+    }
+    .homePage h1 {
+        font-weight: 500;
+        padding-top: 100px;
+        font-size: 50px;
+    
+    }
+    .homePage h4{
+    padding: 10px;
+    font-size: 18px;
+    }
+    #footer .row{
+        flex-direction: column;
+    }
+    #footer .row .subscribe{
+        align-items: center;
+        
+        justify-content: center;
+        width: 80%;
+    }
+    #footer .icon{
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

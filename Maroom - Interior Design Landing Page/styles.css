@@ -28,7 +28,7 @@ header .navbar .navbar-brand {
 }
 
 #landing-page .container-fluid {
-  background: url(./assets/landing-image.jpeg);
+  background: url(./img/landing-image.jpeg);
   height: 100vh;
   background-size: cover;
   position: relative;

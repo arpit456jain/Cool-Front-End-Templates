@@ -81,7 +81,7 @@ hr{
 .bottom{
     overflow: hidden;
     padding: 30px 0 50px;
-    background-image: url(images/bottom.jpg);
+    background-image: url(img/bottom.jpg);
     height: 230px;
     background-repeat: no-repeat;
     background-size: cover;

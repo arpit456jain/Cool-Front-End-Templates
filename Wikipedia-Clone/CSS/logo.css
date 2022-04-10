@@ -1,0 +1,13 @@
+.logo {
+    position: relative;
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Times New Roman", Times, serif;
+}
+  
+.logo-img {
+    width: 57px;
+    margin-right: 10px;
+}

@@ -121,18 +121,63 @@ GitHub will alert you that you can merge the two branches because there is no co
 
 <br>
 
+## CONTRIBUTING A NEW TEMPLATE?
+### Please adhere to these guidelines 
+
+1. Create a folder with the name of your frontend template 
+
+2. Start building inside your folder with an entry file called index.html and after building, attach an image named "preview.png" within the folder root which represents the preview image of your template
+
+3. Go into the style_link.json file and add an object corresponding to your project in the following format:
+```
+    {
+  
+      "name": "Name-of-folder-in-exact-case-used-in-naming",
+      "link": "Name-of-folder-in-exact-case-used-in-naming/index.html"
+  
+    },
+
+```
+#### Important to note:  
+If the folder name has white spaces e.g "My  Project", the object should be:
+
+```
+    {
+  
+      "name": "My Project", (not "my project" or "My project" or "My-project")
+      "link": "My%20Project/index.html" (not "My Project/index.html" or "My project/index.html"
+  
+    },
+
+```
+#### Note: The name key is case sensitive and the link key is white space sensitive in the json object so if you have white spaces in the initial name of your folder, replace space with "%20" in the json link but if there are no white spaces like in the case of "ABlogPage" or "Form", use the exact name of the project
+
+If the folder name has no white spaces e.g "My-project", the object should be:
+
+```
+    {
+  
+      "name": "My-project",  (not "my-project" or "My-Project" or "My Project")
+      "link": "My-project/index.html"  (not "My%20project/index.html" or "My-Project/index.html")
+  
+    },
+
+```
+
+   
+
 ## 📌Till Then
 
-### Need Some Help in this Repo -> [Web Development And Resourcses](https://github.com/arpit456jain/Web-Development-Path-And-Resources)
+### Need Some Help in this Repo -> [Web Development And Resources](https://github.com/arpit456jain/Web-Development-Path-And-Resources)
 
-<p align="center"><img src="http://www.gurpreetsaluja.com/wp-content/uploads/2016/05/always-keep-learning.png" width=30%></p>
+<p align="center"><img src="https://www.gurpreetsaluja.com/wp-content/uploads/2016/05/always-keep-learning.png" width=100%></p>
 <hr>
 
 ### This project was a part of the following Open Source Program
 
-![Devincept](https://user-images.githubusercontent.com/56088741/123548852-1ef59d00-d784-11eb-8e39-255e0c3e97d5.gif)
+[<img alt="Devincept" width=100% src="https://user-images.githubusercontent.com/56088741/123548852-1ef59d00-d784-11eb-8e39-255e0c3e97d5.gif">](https://user-images.githubusercontent.com/56088741/123548852-1ef59d00-d784-11eb-8e39-255e0c3e97d5.gif)
 
-![HacktoberFest'21](https://user-images.githubusercontent.com/59393136/135566614-5635902f-2907-4e01-8baf-3cb1b43a6b20.png)
+[<img alt="HacktoberFest'21" width=100% src="https://user-images.githubusercontent.com/59393136/135566614-5635902f-2907-4e01-8baf-3cb1b43a6b20.png">](https://user-images.githubusercontent.com/59393136/135566614-5635902f-2907-4e01-8baf-3cb1b43a6b20.png)
 
 <hr>
 
@@ -152,6 +197,8 @@ GitHub will alert you that you can merge the two branches because there is no co
   <tbody><tr>
      <td align="center"><a href="https://github.com/astha2412"><img alt="" src="https://avatars.githubusercontent.com/u/87020129?v=4" width="100px;"><br><sub><b>Kumari Astha Rani </b></sub></a><br></td> </a></td>
      <td align="center"><a href="https://github.com/VidhiBhatt01"><img alt="" src="https://avatars.githubusercontent.com/u/83345228?v=4" width="100px;"><br><sub><b> Vidhi Bhatt</b></sub></a><br></td></a></td>
+		 <td align="center"><a href="https://github.com/DEEPALI-SUK"><img alt="" src="https://avatars.githubusercontent.com/u/64724041?v=4" width="100px;"><br><sub><b> DEEPALI-SUK</b></sub></a><br></td></a></td>
+		 <td align="center"><a href="https://github.com/DEEPIKA-SUK"><img alt="" src="https://avatars.githubusercontent.com/u/64724039?v=4" width="100px;"><br><sub><b> DEEPIKA-SUK</b></sub></a><br></td></a></td>
 
 </tbody></table>
 
