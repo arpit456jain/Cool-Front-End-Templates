@@ -38,6 +38,16 @@ h1 {
 
 }
 
+.hov a{
+    padding:13px 15px;
+    color: white;
+    font-weight: bold;
+}
+
+.hov a:hover{
+    color: rgb(28, 28, 167);
+}
+
 .sub_text {
     text-transform: capitalize;
     color: black;
