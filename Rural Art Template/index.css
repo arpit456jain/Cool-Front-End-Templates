@@ -18,17 +18,11 @@
 .nav > ul > li {
   display: inline-block;
 }
-
-body {
-  margin: 0px;
+.responsive {
+  width: 100% !important;
+  height: auto !important;
 }
 
-.main {
-  background-color: #c7cfb7;
-  margin: 25px;
-  border-radius: 12px;
-  height: 170px;
-}
 
 .head h1 {
   padding: 25px;
@@ -276,6 +270,11 @@ body {
     text-align: center;
   }
 }
+@media only screen and (min-width: 601px) {
+  .box {
+    font-size: 80px;
+  }
+}
 
 .owl-carousel {
   width: 100vw;
@@ -289,7 +288,7 @@ body {
 
 .bold {
   background-color: #bbdfc8;
-  width: 30px;
+  width: 30em;
   height: 320px;
   margin: 50px;
   margin-left: 120px;
