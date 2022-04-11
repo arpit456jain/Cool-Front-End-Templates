@@ -347,10 +347,16 @@ footer .center {
   padding-top: 10px;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 995px) {
   section .contact-flex {
     flex-direction: column;
     margin-bottom: 100px;
+  }
+
+  .toggle {
+    position: absolute;
+    top: 1.5em;
+    right: 1.5rem;
   }
 }
 
@@ -368,12 +374,16 @@ footer .center {
   }
 
   .hero-content {
-    margin-right: 10%;
+    margin-right: 20%;
+    width: 100%;
   }
   .contact-text {
     width: 80%;
-    margin-left: 10%;
     flex-direction: column;
+  }
+
+  .main-heading {
+    font-size: 40px;
   }
 }
 
@@ -391,5 +401,8 @@ footer .center {
 
   .contact-text {
     width: 100%;
+    left: 10%;
+    right: 50%;
+    flex-direction: column;
   }
 }
