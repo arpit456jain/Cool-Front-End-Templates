@@ -87,6 +87,10 @@ body{
 
 .categories{
     margin: 70px 0;
+    background-color: #4D77FF;
+}
+.categories img{
+    margin-top: 40px;
 }
 
 .col-3{
