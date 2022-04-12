@@ -1,0 +1,10 @@
+html{
+    scroll-behavior: smooth;
+}
+.link{
+    transition: 0.3s;
+}
+.link:hover{
+    color: indigo;
+    transform: translateY(-0.5em);
+}
