@@ -93,6 +93,11 @@ h1 {
   transition: .4s;
 }
 
+.stylebox .image img{
+  height: 100%;
+  width: 100%;
+}
+
 .stylebox .image:hover{
   transform: scale(1.17);
   border-radius: .5em;
