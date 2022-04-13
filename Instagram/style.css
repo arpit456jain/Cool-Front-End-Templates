@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Engagement&display=swap');
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
+
+* {
+  box-sizing: border-box;
+  padding:0;
+  margin: 0;
+  font-family: Roboto, sans-serif;
+  transition: 0.5s;
+}
+
+body {
+  background-color: #fafafa;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container h1 {
+  font-family: 'Engagement', cursive;
+  font-size: 3.8rem;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.form-container {
+  background-color: white;
+  padding: 20px 45px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #eee;
+}
+
+input {
+  width: 100%;
+  height: 40px;
+  padding: 0 10px;
+  border: 1px solid #eee;
+  background-color: #fafafa;
+  color: #BDBDBD;
+  border-radius: 3px;
+  margin-bottom: 8px;
+  font-size: 0.75rem;
+}
+
+button {
+  background-color: #0095f6;
+  width: 100%;
+  height: 35px;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  margin: 10px 0 20px;
+  cursor: pointer;
+}
+
+.or {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+span {
+  font-weight: 600;
+  color: #8e8e8e;
+  font-size: 0.9rem;
+}
+
+hr {
+  width: 40%;
+  height: 1px;
+  border: none;
+  background-color: #BDBDBD;
+}
+
+.facebook {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.facebook svg {
+  width: 18px;
+  fill: #385185;
+  margin-right: 10px;
+}
+
+.facebook a {
+  color: #385185;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.forgot {
+  width: 100%;
+  text-align: center;
+  font-size: 0.8rem;
+  margin-top: 15px;
+}
+
+.forgot a {
+  text-decoration: none;
+  color: black;
+}
+
+.signup {
+  background-color: white;
+  border: 1px solid #eee;
+  margin-top: 10px;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.signup span {
+  color: black;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.signup a {
+  font-weight: 600;
+  text-decoration: none;
+  color: #0095f6;
+}
+
+.content p {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.appstore {
+  display: flex;
+  justify-content: center;
+}
+
+.appstore img {
+  height: 40px;
+  margin: 0 5px;
+}
+
+footer {
+  padding: 25px 5% 20px;
+  text-align: center;
+}
+
+.links a {
+  text-decoration: none;
+  color: #8e8e8e;
+  font-size: 0.9rem;
+  margin-right: 20px;
+  font-weight: 100;
+  line-height: 35px;
+}
+
+select {
+  background-color: transparent;
+  border: none;
+  color: #8e8e8e;
+  width: 65px;
+}
+
+.la-copy {
+  margin-top: 20px;
+  font-size: 0.85rem;
+  color: #8e8e8e;
+}
+
+.phone {
+  background-image: url('https://www.instagram.com/static/images/homepage/phones/home-phones.png/1dc085cdb87d.png');
+  height: 650px;
+  width: 390px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin: 45px 45px 0 0;
+}
+
+.bg {
+  position: absolute;
+  width: 250px;
+  height: 550px;
+  top: 30px;
+  right: 20px;
+  opacity: 0;
+  background-position: center;
+  background-size: cover;
+  animation: slideshow 10s linear infinite;
+}
+
+@keyframes slideshow {
+  0% {
+    opacity: 1;
+    background-image: url('https://www.instagram.com/static/images/homepage/screenshots/screenshot1.png/fdfe239b7c9f.png')
+  }
+  20% {
+    opacity: 1;
+    background-image: url('https://www.instagram.com/static/images/homepage/screenshots/screenshot1.png/fdfe239b7c9f.png')
+  }
+  25% {
+    opacity: 1;
+    background-image: url('https://www.instagram.com/static/images/homepage/screenshots/screenshot2.png/4d62acb667fb.png')
+  }
+  45% {
+    opacity: 1;
+    background-image: url('https://www.instagram.com/static/images/homepage/screenshots/screenshot2.png/4d62acb667fb.png')
+  }
+  50% {
+    opacity: 1;
+    background-image: url('https://www.instagram.com/static/images/homepage/screenshots/screenshot3.png/94edb770accf.png')
+  }
+  70% {
+    opacity: 1;
+    background-image: url('https://www.instagram.com/static/images/homepage/screenshots/screenshot3.png/94edb770accf.png')
+  }
+  75% {
+    opacity: 1;
+    background-image: url('https://www.instagram.com/static/images/homepage/screenshots/screenshot4.png/a4fd825e3d49.png')
+  }
+  95% {
+    opacity: 1;
+    background-image: url('https://www.instagram.com/static/images/homepage/screenshots/screenshot4.png/a4fd825e3d49.png')
+  }
+  100% {
+    opacity: 0;
+    background-image: url('https://www.instagram.com/static/images/homepage/screenshots/screenshot4.png/a4fd825e3d49.png')
+  }
+}
+
+@media screen and (max-width: 830px){
+  .phone {
+    display: none;
+  }
+  .content {
+    margin-top: 40px;
+  }
+}
