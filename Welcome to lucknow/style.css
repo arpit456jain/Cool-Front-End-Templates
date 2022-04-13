@@ -1,0 +1,9 @@
+.link{
+    cursor: pointer;
+transition: 0.3s;
+color: white;
+}
+.link:hover{
+    transform: translateY(-0.5em);
+    color: aqua;
+}
