@@ -121,6 +121,51 @@ GitHub will alert you that you can merge the two branches because there is no co
 
 <br>
 
+## CONTRIBUTING A NEW TEMPLATE?
+### Please adhere to these guidelines 
+
+1. Create a folder with the name of your frontend template 
+
+2. Start building inside your folder with an entry file called index.html and after building, attach an image named "preview.png" within the folder root which represents the preview image of your template
+
+3. Go into the style_link.json file and add an object corresponding to your project in the following format:
+```
+    {
+  
+      "name": "Name-of-folder-in-exact-case-used-in-naming",
+      "link": "Name-of-folder-in-exact-case-used-in-naming/index.html"
+  
+    },
+
+```
+#### Important to note:  
+If the folder name has white spaces e.g "My  Project", the object should be:
+
+```
+    {
+  
+      "name": "My Project", (not "my project" or "My project" or "My-project")
+      "link": "My%20Project/index.html" (not "My Project/index.html" or "My project/index.html"
+  
+    },
+
+```
+#### Note: The name key is case sensitive and the link key is white space sensitive in the json object so if you have white spaces in the initial name of your folder, replace space with "%20" in the json link but if there are no white spaces like in the case of "ABlogPage" or "Form", use the exact name of the project
+
+If the folder name has no white spaces e.g "My-project", the object should be:
+
+```
+    {
+  
+      "name": "My-project",  (not "my-project" or "My-Project" or "My Project")
+      "link": "My-project/index.html"  (not "My%20project/index.html" or "My-Project/index.html")
+  
+    },
+
+```
+
+   
+
 ## 📌Till Then
 
 ### Need Some Help in this Repo -> [Web Development And Resources](https://github.com/arpit456jain/Web-Development-Path-And-Resources)

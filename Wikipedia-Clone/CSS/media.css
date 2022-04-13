@@ -1,0 +1,146 @@
+@media (min-width: 481px) {
+    .languages-container {
+        margin: 20px 0;
+        width: 479px;
+        min-height: 325px;
+        order: 0;
+        position: relative;
+    }
+
+    .logo {
+        position: relative;
+        flex-direction: column-reverse;
+    }
+
+    .logo-img {
+        width: 200px;
+        height: 183px;
+        position: absolute;
+        top: 158px;
+        left: -25px;
+    }
+
+    .languages-type {
+        font-size: 1.6rem;
+    }
+
+    .languages {
+        min-width: 100px;
+    }
+
+    .left-1 {
+        position: absolute;
+        left: 80px;
+        top: 10px;
+    }
+
+    .right-1 {
+        position: absolute;
+        right: 60px;
+        top: 10px;
+    }
+
+    .left-2 {
+        position: absolute;
+        left: -1px;
+        top: 80px;
+    }
+
+    .right-2 {
+        position: absolute;
+        right: -5px;
+        top: 80px;
+    }
+
+    .left-3 {
+        position: absolute;
+        left: -20px;
+        top: 150px;
+    }
+
+    .right-3 {
+        position: absolute;
+        right: -20px;
+        top: 150px;
+    }
+
+    .left-4 {
+        position: absolute;
+        left: -10px;
+        top: 210px;
+    }
+
+    .right-4 {
+        position: absolute;
+        right: -10px;
+        top: 210px;
+    }
+
+    .left-5 {
+        position: absolute;
+        left: 40px;
+        top: 280px;
+    }
+
+    .right-5 {
+        position: absolute;
+        right: 35px;
+        top: 280px;
+    }
+
+    .search-container {
+        margin-bottom: 30px;
+    }
+
+    .idiom {
+        margin-bottom: 30px;
+    }
+
+    .app {
+        width: 33%;
+    }
+}
+
+@media (min-width: 769px) {
+    .main-footer {
+        position: relative;
+        margin: 1%;
+    }
+
+    .wikimedia {
+        width: 33%;
+        margin-top: 20px;
+        flex-direction: row;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .wikimedia-description {
+        margin: 0;
+        margin-left: 10px;
+    }
+
+    .download {
+        width: 33%;
+        order: 1;
+        margin-top: 10px;
+        padding-bottom: 30px;
+    }
+
+    .download-anuncio {
+        margin-top: 10px;
+        text-align: left;
+        padding-left: 40px;
+    }
+
+    .download-apps {
+        margin-left: 35px;
+    }
+
+    .app-container {
+        width: 65%;
+        margin-top: 0;
+        position: absolute;
+        transform: translate(50%, 20px);
+    }
+}

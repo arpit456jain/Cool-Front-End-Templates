@@ -1,111 +1,310 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>JAINS Stationary</title>
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> 
-  <!-- link icon  -->
-  <link rel="icon" href="img/favicon.png" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <script src="https://kit.fontawesome.com/c1c97e61e2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
+    <title>JAINS Stationery</title>
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
+    
+    
+  </head>
 
-</head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#"><span style="color:rgb(238, 255, 1); font-size: larger;
-      ">Jains</span> stationary</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="about us.html">About us <span class="sr-only">(current)</span></a>
-        </li>
-
-        
-        <li class="nav-item ">
-          <a class="nav-link" href="/contact us.html">Contact us</a>
-        </li>
-      </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <div class="logo">
+        <a href="#"><img src="./img/favicon.png" alt=""></a>
+      </div>
+      <!-- <a class="navbar-brand" href="#"><span style="color:rgb(238, 255, 1); font-size: larger;
+        ">Jains Stationary</span> </a> -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./about us.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contact us.html">Contact Us</a>
+          </li>
+          
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+          <button type="button"  data-bs-toggle="modal" data-bs-target="#login"class="btn btn-sm btn-warning mx-2">Login</button>
+        <button type="button" data-bs-toggle="modal" data-bs-target="#signup" class="btn btn-sm btn-warning">Signup</button>
+        </form>
+      </div>
     </div>
   </nav>
 
-  <div class="alert alert-success  alert-dismissible fade show" role="alert">
-<strong>SALE!!!</strong> You should can get 30% off <a href="#">click here.</a> 
-    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-      <span aria-hidden="true">&times;</span>
+
+<!-- Login in Modal -->
+<div class="modal fade" id="login" tabindex="-1" aria-labelledby="loginLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="loginLabel">Login to your account</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="loginemail" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="loginemail" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="loginpass" class="form-label">Password</label>
+            <input type="password" class="form-control" id="loginpass">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <span style="width: 82%;">Don't have an account ? <a data-bs-toggle="modal" data-bs-target="#signup" style="color: rgb(0, 94, 255); cursor: pointer; text-decoration: underline;" >Signup</a></span>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Sign up Modal-->
+<div class="modal fade" id="signup" tabindex="-1" aria-labelledby="signupLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="signupLabel">Signup to create an account</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="signemail" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="signemail" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="signpass" class="form-label">Password</label>
+            <input type="password" class="form-control" id="signpass">
+          </div>
+          <div class="mb-3">
+            <label for="cpass" class="form-label">Confirm Password</label>
+            <input type="password" class="form-control" id="cpass">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck2">
+            <label class="form-check-label" for="exampleCheck2">Check me out</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Signup</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Alert -->
+  <div class="alert alert-success alert-dismissible fade show mb-0" role="alert">
+    <strong>SALE !! </strong> You can get 30% off <a href="#">click here.</a> 
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+
+  <!-- Carousel -->
+  <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/img1.jpg" class="d-block w-100" alt="..." style="height: 665px;">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 style=" font-family: serif; font-size: 3rem;">Welcome to Jains Stationery</h5>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/img2.jpg" class="d-block w-100" alt="..." style="height: 665px;">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 style=" font-family: serif; font-size: 3rem;">We deliver all kind of stationery items</h5>
+         
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/img4.jpg" class="d-block w-100" alt="..." style="height: 665px;">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 style=" font-family: serif; font-size: 3rem;">We don't compromise with quality of products</h5>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
     </button>
   </div>
 
-  <div class="container-fluid mt-2 pl-0 pr-0">
-    <div class="jumbotron">
-      <h1 class="display-4"> <strong> Welcome to Our stationary</strong> </h1>
-      <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to
-        featured content or information.</p>
+
+<!-- Card -->
+  <div class="container my-5 products">
+    <h1 class="text-center py-5 mt-5" style="font-family: revert;">Our Products</h1>
+    <div class="row cards">
+      <div class="col-md-4 text-center p-4">
+        <img src="img/note3.jpg" alt="" class="bd-placeholder-img rounded-circle" width="200" height="200">
+        <h2 class="pt-4">Notebooks</h2>
+        <p>Price : <a style="cursor: pointer; color: red;">₹200</a></p>
+      </div>
+      <div class="col-md-4 text-center p-4">
+        <img src="img/pencil.jpeg" alt="" class="bd-placeholder-img " width="200" height="200">
+        <h2 class="pt-4">Wooden Pencils</h2>
+        <p>Price : <a style="cursor: pointer; color: red;">₹50</a></p>
+      </div>
+      <div class="col-md-4 text-center p-4">
+        <img src="img/pen.jpeg" alt="" class="bd-placeholder-img " width="200" height="200">
+        <h2 class="pt-4">Gel & Ball Pens</h2>
+        <p>Price : <a style="cursor: pointer; color: red;">₹30</a></p>
+      </div>
+      <div class="col-md-4 text-center p-4">
+        <img src="img/pen3.jpg" alt="" class="bd-placeholder-img " width="200" height="200">
+        <h2 class="pt-4">Sketch Pens</h2>
+        <p>Price : <a style="cursor: pointer; color: red;">₹150</a></p>
+      </div>
+      <div class="col-md-4 text-center p-4">
+        <img src="img/cray2.jpg" alt="" class="bd-placeholder-img " width="200" height="200">
+        <h2 class="pt-4">Crayons</h2>
+        <p>Price : <a style="cursor: pointer; color: red;">₹220</a></p>
+      </div>
+      <div class="col-md-4 text-center p-4">
+        <img src="img/gift2.jpeg" alt="" class="bd-placeholder-img " width="200" height="200">
+        <h2 class="pt-4">Gift Wrappers</h2>
+        <p>Price : <a style="cursor: pointer; color: red;">₹50</a></p>
+      </div>
+      <div class="col-md-4 text-center p-4">
+        <img src="img/graph.jpg" alt="" class="bd-placeholder-img " width="200" height="200">
+        <h2 class="pt-4">Graph Papers</h2>
+        <p>Price : <a style="cursor: pointer; color: red;">₹80</a></p>
+      </div>
+      <div class="col-md-4 text-center p-4">
+        <img src="img/o.jpg" alt="" class="bd-placeholder-img " width="200" height="200">
+        <h2 class="pt-4">Organizers</h2>
+        <p>Price : <a style="cursor: pointer; color: red;">₹300</a></p>
+      </div>
+      <div class="col-md-4 text-center p-4">
+        <img src="img/clip.jpg" alt="" class="bd-placeholder-img " width="200" height="200">
+        <h2 class="pt-4">Staplers & Paper Clips</h2>
+        <p>Price : <a style="cursor: pointer; color: red;">₹150</a></p>
+      </div>
+    </div>
+  </div>
+
+  
+<!-- Jumbotron -->
+<div class="cotainer map" id="map" style="width: 70%; margin: auto;" >
+  <div class="p-5 mb-4 bg-light rounded-3 bg-dark text-white ">
+    <div class="container-fluid py-5 locate">
+      <h1 class="display-5 fw-bold" style="font-family: serif;">Locate Us </h1>
       <hr class="my-2">
-      <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-      <a class="btn btn-primary btn-lg" target="_blank" href="https://www.google.com/maps/place/Jain+Stationers+and+electricals/@26.8949116,80.8926612,12z/data=!4m8!1m2!2m1!1sjain+stationers!3m4!1s0x399bfdfd600dfbe9:0x7c8993c0ebbf9ac2!8m2!3d26.8725077!4d80.9715247" role="button">View on Google Map</a>
+      <p class="col-md-8 fs-4" style="font-family: serif;">Jains Stationery is now available on Google Map. You can locate us easily on Google Map.</p>
+      <a class="btn btn-danger btn-lg" target="_blank" href="https://www.google.com/maps/place/Jain+Stationers+and+electricals/@26.8949116,80.8926612,12z/data=!4m8!1m2!2m1!1sjain+stationers!3m4!1s0x399bfdfd600dfbe9:0x7c8993c0ebbf9ac2!8m2!3d26.8725077!4d80.9715247" role="button" style="font-family: serif;">View on Google Map</a>
+     
     </div>
   </div>
-
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4 text-center">
-        <img src="img/1.jpg" alt="" class="bd-placeholder-img rounded-circle" width="140" height="140">
-        <h2>Books-Copies</h2>
-        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris
-          condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod.
-          Donec sed odio dui. </p>
-        <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
-      </div>
-      <div class="col-md-4 text-center">
-        <img src="img/8.jpg" alt="" class="bd-placeholder-img rounded-circle" width="140" height="140">
-         <h2>Gift raps</h2>
-        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris
-          condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod.
-          Donec sed odio dui. </p>
-        <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
-      </div>
-      <div class="col-md-4 text-center">
-        <img src="img/6.jpg" alt="" class="bd-placeholder-img rounded-circle" width="140" height="140">
-        <h2>Crayons and sketches</h2>
-        <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta
-          felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum
-        </p>
-        <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
-      </div>
+</div>
+  <hr class="mt-5" >
+  
+<!-- Footer -->
+    <div class="container mt-5 myfooter" id="footer">
+      <footer">
+        <div class="row py-4">
+          <div class="col-2">
+            <h5>Company</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">→ Home</a></li>
+              <li class="nav-item mb-2"><a href="./about us.html" class="nav-link p-0 text-muted">→ About Us</a></li>
+              <li class="nav-item mb-2"><a href="./contact us.html" class="nav-link p-0 text-muted">→ Contact Us</a></li>
+              <li class="nav-item mb-2"><a target="_blank" href="https://www.google.com/maps/place/Jain+Stationers+and+electricals/@26.8949116,80.8926612,12z/data=!4m8!1m2!2m1!1sjain+stationers!3m4!1s0x399bfdfd600dfbe9:0x7c8993c0ebbf9ac2!8m2!3d26.8725077!4d80.9715247" class="nav-link p-0 text-muted">→ View on Map</a></li>
+             
+            </ul>
+          </div>
+          <div class="col-2">
+            <h5>Locations</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2 text-muted">→ Delhi</li>
+              <li class="nav-item mb-2 text-muted">→ Mumbai</li>
+              <li class="nav-item mb-2 text-muted">→ Chennai</li>
+              <li class="nav-item mb-2 text-muted">→ Bengaluru</li>
+              
+            </ul>
+          </div>
+          <div class="col-2">
+            <h5>Contact</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2 text-muted"><i class="fa fa-map-marker" style="color: red; padding-right: 13px;"></i>New Delhi</li>
+              <li class="nav-item mb-2 text-muted">	
+                <i class="fa fa-phone" style="color: green; padding-right: 13px;"></i>123-456-789</li>
+              <li class="nav-item mb-2 text-muted">	
+                <i class="fa fa-envelope" style="color: blue; padding-right: 13px;"></i>jaininfo@gmail.com</li>
+              
+              
+            </ul>
+          </div>
+    
+          <div class="col-4 offset-1 subscribe">
+            <form>
+              <h5>Subscribe to our newsletter</h5>
+              <p>Monthly digest of whats new and exciting from us.</p>
+              <div class="d-flex w-100 gap-2">
+                <label for="newsletter1" class="visually-hidden">Email address</label>
+                <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                <button class="btn btn-primary" type="button">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+    
+        <div class=" py-4 border-top text-center">
+          <p>© 2021 Jains Stationery, Inc. All rights reserved.</p>
+          <p class="float-right"><a href="#">Back to top</a></p>
+        </div>
+      </footer>
     </div>
-  </div>
-  <hr>
-  <footer class="container">
-      <p class="float-right"><a href="#">Back to top</a></p>
-      <p>© 2020-20121 Jains stationary. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
-    </footer>
-    <hr>
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-    crossorigin="anonymous"></script>
-</body>
 
+ <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
 </html>

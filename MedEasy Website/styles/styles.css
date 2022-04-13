@@ -23,6 +23,7 @@
 *,::before,::after{
     box-sizing: border-box;
     transition: 0.2s ease;
+
 }
 body{
     margin: var(--header-height) 20px;
@@ -81,9 +82,7 @@ img{
         right: -100%;
         width: 70%;
         height: 100vh;
-        /* height: 100%; */
         padding: 3.5rem 1.5rem 0;
-        /* background: rgba(255, 255, 255, 0.3); */
         background: rgba(255, 255, 255, 0.875);
         backdrop-filter: blur(10px);
         transition: 0.2s;
@@ -158,16 +157,13 @@ hr{
     border: 0.5px solid var(--pink);
 }
 .services_container{
-    
     display: flex;
     justify-content: space-around;
-    /* align-items: center; */
     flex-wrap:wrap;
 }
 .card{
     height: 400px;
     width: 250px;
-    /* background-color: var(--white); */
     background: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(10px);
     display: flex;
@@ -228,6 +224,7 @@ hr{
     border-bottom-color:var(--pink);
     background-color: var(--light-pink);
 }
+
 .form button{
     background-color: var(--pink);
     border: 2px solid var(--pink);
@@ -238,11 +235,12 @@ hr{
     font-size: large;
     cursor: pointer;
 }
+
 .form button:hover{
     background-color: var(--yellow);
     border-color: var(--yellow);
-    /* color: var(--dark-blue); */
 }
+
 .create{
     font-family: cursive;
     font-weight: 500;
@@ -264,13 +262,10 @@ hr{
     height: auto;
 }
  footer{
-     /* position: fixed;
-     width: 100%; */
     margin-top: 50px;
     font-family: 'Ubuntu', sans-serif;
     text-align: center;
     margin-bottom: 15px;
-    /* bottom: 0; */
 } 
 
 #linktree{
@@ -280,7 +275,6 @@ hr{
 #linktree:hover{
     color: var(--pink);
 }
-
 
 
 @media screen and (min-width: 768px) {
@@ -323,9 +317,11 @@ hr{
         margin-left: 30px;
         margin-bottom: 0;
     }
+  
     .services_container{
         margin-top: 20px;
     }
+
     .contribute_container{
         margin-top: 20px;
         justify-content:center;
@@ -341,7 +337,7 @@ hr{
         width: 53rem;
         height: 150px;
     }
-
+  
     .form input{
         margin-right: 20px;
         width: 16rem;
@@ -388,7 +384,6 @@ hr{
         height: auto;
         display: flex;
         flex-wrap: wrap;
-        /* border: 2px solid red; */
     }
-    
+ 
 }
