@@ -14,7 +14,14 @@
     text-align: center;
     background: white;
   }
-  
+ 
+  h6{
+    font-size: 14px;
+  }
+  a{
+    color: black;
+    text-decoration: dotted;
+  }
   .leftcolumn {   
     float: left;
     width: 75%;
