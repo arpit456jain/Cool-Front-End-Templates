@@ -1,6 +1,8 @@
+
 *{
     margin : 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 :root{
@@ -12,9 +14,7 @@
     display: flex;
     align-items: center;
 }
-#logo{
-    margin: 10px 30px;
-}
+
 #logo img{
     height: 75px;
     margin: 2px 4px;
@@ -57,14 +57,41 @@
 }
 
 /* home section */
-#home{
-     display: flex;
-     flex-direction: column;
-     padding:  3px 200px;
-     height: 447px;
-     justify-content: center;
-     align-items: center;
+
+.about{
+    min-height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(img/bg-1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+
 }
+
+.about .content{
+    text-align:center;
+    padding: 1rem;
+
+}
+
+.about .content h1{
+    font-size: 4rem;
+    color: rgb(24, 4, 54);
+    font-family: 'Bree Serif', serif;
+    line-height: 1;
+
+}
+
+.about.content p{
+    padding: 1rem 0;
+    width:70rem;
+    font-size: rem;
+    font-family: 'Bree Serif', serif;
+    color: rgb(29, 28, 31);
+}
+
+
 #home::before{
     content: "";
     position: absolute;
@@ -77,27 +104,34 @@
     opacity: 0.89;
 }
 
-#home h1{
-    color: rgb(24, 4, 54);
-    text-align: centre;
-    font-size: 38px;
-    font-family: 'Bree Serif', serif;
-}
-#home p{
-    color: rgb(29, 28, 31);
-    text-align: centre;
-    font-size: 22px;
-    font-family: 'Bree Serif', serif;
-}
+
 
 /* services section */
 .services-container{
     background: url(img/bg-2.jpg) no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 
 }
+
 #services{
     margin:6px 10px;
     display: flex;
+    
+}
+
+.box{
+    margin-top: 5%;
+}
+
+.services-container .box{
+    padding:34px;
+    text-align: center;
+    border: 2px solid rgb(97, 24, 24);
+    flex:1 1 20rem;
+    margin:2rem;
     
 }
 
@@ -120,18 +154,27 @@
 }
 #services .box p{
     font-family: 'Bree Serif', serif;
-    padding: 12px;
-}    
+    padding: 2 rem;
+} 
 
-/* client section */
+
+@media(max-width: 700px){
+    #services{
+        flex-direction: column;
+    }
+}
+
+ /*client section */
+
 #client-section{
     height: 344px;
-    position: relative;
+    margin:auto;
+    /* position: relative; */
 }
 #client-section::before{
     content: "";
     position: absolute;
-    background: url('img/bg-3.jpg')no-repeat center center/cover;
+    background: url('img/bg-3.jpg');
     width: 100%;
     height: 100%;
     z-index: -1;
@@ -143,7 +186,8 @@
     align-items: center;
 }
 #clients img{
-    height: 150px;
+    height: 120px;
+    width:120px;
 	
 }
 .client-item{
@@ -152,10 +196,23 @@
   width: 200px;
   height: 200px;
   margin: 0 auto;
+  margin-top: 2%;
 	
 }
+
 .client-item :hover{
 	 transform: scale(1.5);
+}
+
+@media screen and (max-width: 500px){
+    #clients img{
+        height: 60px;
+        width: 60px;
+    }
+    .client-item{
+        padding:15px;
+        margin-top:10%;
+    }
 }
 /* contact section */
 

@@ -20,58 +20,82 @@
 
     <!-- navbar area -->
 
-    <nav id="navbar">
-        <div id="logo">
-            <img src="img/grocer_logo2.jpg" alt="Grocerystore">
-        </div>
 
-        <ul>
-            <li class="item"><a href="#">Home</a></li>
-            <li class="item"><a href="#">About Us</a></li>
-            <li class="item"><a href="#">Services</a></li>
-            <li class="item"><a href="#">Contact Us</a></li>
-        </ul>
-    </nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        
+          <div class="container-fluid">
+            <div id="logo">
+                <img src="img/grocer_logo2.jpg" alt="Grocerystore">
+            </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li cSlass="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#services">Our Clients</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#contact">Contact Us</a>
+              </li> 
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
 
     <!-- home section -->
 
-    <section id="home">
-        <h1 class="primary">Welcome to online Grocery Store</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptatum sit adipisci rem omnis numquam
+    <section id="home" class="about">
+        <div class="content">
+            <h1 class="primary">Welcome to online Grocery Store</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptatum sit adipisci rem omnis numquam
             earum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste debitis quis sequi expedita blanditiis
             quibusdam dignissimos delectus modi omnis Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Labore,Lorem ipsum dolor sit amet consectetur sefrte.
             <br> Lorem ipsum dolor sit amet consectetur adipisicing.Sequi vel reiciendis ab maxime temporibus temporious
             perferendis.
-        </p>
-        <button class="btn">Shop Now</button>
+            </p>
+            <button class="btn">Shop Now</button>
+         </div>   
     </section>
+    <br>
+    <br>
 
-    <!-- Servieces Section -->
 
-    <section class="services-container">
+                             <!-- Service Section -->
+
+    <section class="services-container" id="services-link">
         <h1 class="h-primary center">Our Services</h1>
         <div id="services">
             <div class="box">
                 <img src="img/fruits-1.jpg" alt="">
                 <h2 class="center">Fruits Section </h2>
                 <div>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis dicta repellendus sit aut magni
+                    <p class="center"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis dicta repellendus sit aut magni
                     quo deleniti natus. Amet provident exercitationem maxime nemo accusantium maiores sint illo, neque
                     nostrum aperiam eaque?Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero vel quisquam
                     voluptatum sapiente? Omnis aut laborum ducimus eius consequuntur praesentium.</p>
                 </div>
             </div>
+
             <div class="box">
                 <img src="img/veges-2.jpg" alt="">
                 <h2 class="center">Vegetables Section</h2>
                 <div>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis dicta repellendus sit aut magni
+                    <p class="center"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis dicta repellendus sit aut magni
                     quo deleniti natus. Amet provident exercitationem maxime nemo accusantium maiores sint illo, neque
                     nostrum aperiam eaque?Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero vel quisquam
                     voluptatum sapiente? Omnis aut laborum ducimus eius consequuntur praesentium.</p>
                 </div>
             </div>
+
             <div class="box">
                 <img src="img/delivery.png" alt="">
                 <h2 class="center">Home Delivery</h2>
@@ -79,12 +103,14 @@
                     quo deleniti natus. Amet provident exercitationem maxime nemo accusantium maiores sint illo, neque
                     nostrum aperiam eaque?Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero vel quisquam
                     voluptatum sapiente? Omnis aut laborum ducimus eius consequuntur praesentium.</p>
-                
-            </div>
+                 </div>
         </div>
-    </section>
 
-    <!-- Client Section  -->
+    </section> 
+    <br>
+    <br>
+
+    <!-- Client Section  -->  
 
     <section id="client-section">
         <h1 class="h-primary center">Our Clients</h1>
@@ -106,6 +132,8 @@
             </div>
         </div>
     </section>
+    <br>
+    <br>
 
     <!-- Contact Section -->
 
