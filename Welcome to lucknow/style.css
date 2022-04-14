@@ -1,3 +1,10 @@
+html{
+    overflow-x: hidden;
+}
+body{
+    overflow-x: hidden;
+}
+
 .link{
     cursor: pointer;
 transition: 0.3s;
