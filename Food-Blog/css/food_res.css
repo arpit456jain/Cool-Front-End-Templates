@@ -1,0 +1,59 @@
+@media screen and (max-width: 504px) {
+    .navbar {
+        padding: 18px 9px;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        z-index: inherit;
+    }
+    .navbar a {
+        font-size: 18px;
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .navbar {
+        float: none;
+        display: block;
+        text-align: left;
+        z-index: inherit;
+        ;
+    }
+    .navbar #left {
+        float: none;
+    }
+    .container::before {
+        z-index: inherit;
+    }
+    .heading h1 {
+        text-align: center;
+    }
+    .heading2 {
+        top: 730px;
+    }
+    .chefscol {
+        top: 655px;
+        overflow-x: scroll;
+    }
+    .ef {
+        top: 730px;
+    }
+    .heading3 {
+        top: 830px;
+    }
+    .container3 {
+        top: 730px;
+    }
+    .kl {
+        top: 800px;
+    }
+    .container4 {
+        top: 870px;
+    }
+    .mn {
+        top: 930px;
+    }
+    .contactform {
+        top: 990px;
+    }
+}
