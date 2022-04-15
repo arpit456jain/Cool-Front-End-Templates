@@ -9,9 +9,9 @@
 .navbar a{
     padding: 10px;
 }
-.navbar #left{
+/* .navbar #left{
     display: none;
-}
+} */
 .container::before {
     width: 100%;
     height: 340px;
