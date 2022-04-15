@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <title>Koco Feast</title>
+</head>
+<body>
+    <header>
+     <a href="#" class="Logo"><img src="Logo.png" alt="KOCO FEAST"></a>  
+     <nav class="navigate">
+        <ul>
+            <li><a href="#" class="active">HOME</a></li>
+            <li><a href="#about">ABOUT US</a></li>
+            <li><a href="#product">PRODUCTS</a></li>
+            <li><a href="#services">SERVICES</a></li>
+            <li><a href="#contact">CONTACT US</a></li>
+        </ul>
+    </nav>
+    
+    <div class="icon">
+        
+        <i class="fas fa-bars" id="menu-bar"></i>
+    </div>
+</header>
+<!--------HOME-->
+<section id="home" class="home">
+    <h1> Baked with love.
+    </h1>
+    <p>
+        For personalized  cakes, cookies,<br> cupcakes and brownies.
+        <div class="home-btn">
+            <button>Order Now<i class="fas fa-angle-right"></i> </button>
+        </div>
+    </p>
+</section>
+<!------------------ABOUT ---------------->
+<section id="about" class="about">
+    <div class="about-content">
+        <h2>ABOUT US</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur. <br>
+            Lorem ipsum dolor sit.<br>
+            Lorem ipsum dolor sit amet consectetur Aperiam.<br>
+        </p>
+        <button class="btn">Read More<i class="fas fa-angle-right"></i> </button>
+    </div>
+    <div class="image">
+        <img src="cakemove.jpg" alt="Cake">
+    </div>
+</section>
+
+<!----------------PRODUCT ------------------>
+<section id="product" class="product">
+    <div class="product">
+        <h1 class="title">Our &nbsp;<span>Products</span></h1>
+        <div class="inner-cake-row">
+            <div class="inner-cake-col">
+                <img src="1.jpg" alt="Cake image">
+                <h2>Cakes</h2>
+            </div>
+            <div class="inner-cake-col">
+                <img src="2.jpg" alt="Hamper">
+                <h2>Hamper</h2>
+            </div>
+            <div class="inner-cake-col">
+                <img src="3.jpg" alt="Brownies">
+                <h2>Brownies</h2>
+            </div>
+            <div class="inner-cake-col">
+                <img src="4.jpg" alt="Chocolates">
+                <h2>Chocolates</h2>
+            </div>
+            <div class="inner-cake-col">
+                <img src="5.jpg" alt="Cupcakes">
+                <h2>Cupcakes</h2>
+            </div>
+            <div class="inner-cake-col">
+                <img src="6.jpg" alt="Cookies">
+                <h2>Cookies</h2>
+            </div>
+        </div>
+    </div>
+</section>
+<!------------ SERVICES -------------->
+<section id="services" class="services">
+    <h1 class="title">Design Your&nbsp;<span>Occasion</span></h1>
+    <div class="cake-list">
+        <a class="btn1 active" data-src = "birthday.jpg">Birthday</a>
+        <a class="btn1" data-src = "groomtobe.jpg">Groom-To-Be</a>
+        <a class="btn1" data-src = "babyshower.jpg">Baby-Shower</a>
+        <a class="btn1" data-src = "anniversay.jpg">Anniversaries</a>
+    </div>
+    <div class="cake-row">
+        <div class="image">
+            <img src="birthday.jpg" alt="Birthday Cake" id ="cake-img">
+        </div>
+        <div class="cake-content">
+            <div class="cake-info">
+                <h3>Design Your Cake With Flavours&nbsp;</h3>
+                <a><i class="fas fa-hand-point-right"></i>Chocolate Truffle Cake</a><br>
+                <a><i class="fas fa-hand-point-right"></i>Chocolate Mousse Cake</a><br>
+                <a><i class="fas fa-hand-point-right"></i>Vanilla Cream Cake</a><br>
+                <a><i class="fas fa-hand-point-right"></i>Flavoured Cake</a><br>
+                <a><i class="fas fa-hand-point-right"></i>Fondant Cake</a><br>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- FOOTER -->
+<footer class="contact" id="contact">
+    <div class="cake-contact">
+        <div class="cake-contact-row">
+            <div class="cake-contact-col">
+                <img src="imm1.jpg" alt="img" class="imgs">
+            </div>
+            <div class="cake-contact-col">
+                <h3>Contact Us</h3>
+                <div class="social">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-instagram"></i>
+                </div>
+                <p>40,dum dum road, Neelamber Vihar Complex,<br>
+                   kolkata-74,contact: 9831646991.
+                </p>
+                <form action="#" method="get">
+                    <input type="text" name="Name" id="name" placeholder="Enter Your Name" required>
+                    <input type="text" name="Email" id="email" placeholder="Enter Your Email ID"required>
+                    <input type="text" name="Mobile No." id="mobile" placeholder="Enter Your Mobile No." required>
+                    <textarea name="" id="" cols="10" rows="8" placeholder="Please Give Your Feedback "></textarea>
+                    <button class="btn">Submit<i class="fas fa-angle-right"></i></button>
+                </form>
+            </div>
+        </div>
+        
+    </div>
+    <div class="copyright">
+        <a href="#home"><i class="fas fa-arrow-alt-circle-up"></i></a>
+        <p>
+            All copyright belong to &copy; Koco Feast.
+        </p>
+    </div>
+</footer>
+
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+   $(document).ready(function()
+   {
+     $('.icon').click(function()
+     {
+            $(this).toggleClass('fas fa-times');
+             $('.navigate').toggleClass('nav-toggle');
+        });
+
+   $('services .cake-list .btn1').click(function()
+   {
+       $(this).addClass("active").siblings().removeClass("active");
+
+          let src = $(this).attr('data-src');
+          $('#cake-img').attr("src",src);
+       });
+    $(window).on('scroll load',function()
+    {
+        $(this).toggleClass('fas fa-times');
+        $('.navigate').toggleClass('nav-toggle');
+    });
+    
+});
+</script>
+</html>
