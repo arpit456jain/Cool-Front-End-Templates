@@ -1,80 +1,168 @@
-html,body{
-    margin: 0;
-    padding: 0;
-}
-body{
-    background-image:linear-gradient(#151525,#51426e70);
-    background-color: #151525 ;
-    height: 100vh;
-}
-*{
-    font-family: 'Poppins', sans-serif;
-}
-div[data-type=form-body]{
-    background-color: #151525;
-    color: aliceblue;
-    
-    overflow: scroll;
-    display: flex;
-    
-}
-@media only screen and (max-width: 600px) {
-    div[data-type=form-body]{
-        width: 100vw;
-        height: 100vh;
-    }
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 
+@media only screen and (max-width: 600px) {
+  div[data-type="form-body"] {
+    width: 100vw;
+    height: 100vh;
+  }
 }
 @media only screen and (min-width: 600px) {
-    div[data-type=form-body]{
-        width: 600px;
-        height: calc(100vh - 200px);
-        margin-top: 100px;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 10px;
-    }
-}
-.hidden{
- display:none;
-}
-div[data-actual-form] input,button{
-    background-color: transparent;
-    outline: none;
-    border: 1px solid #fff;
-    padding: 5px;
-    color: #fff;
-    margin:10px;
-    border-radius:5px;
-    transition: 0.7s;
+  div[data-type="form-body"] {
+    width: 600px;
+    height: calc(100vh - 200px);
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+  }
 }
 
-div[data-actual-form]{
-    margin:auto; 
-    overflow: scroll;
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
-*::-webkit-scrollbar{
-    width: 0;
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(
+    45deg,
+    hsla(180, 58%, 10%, 1) 70%,
+    hsla(180, 60%, 22%, 1) 100%
+  );
 }
-a{
-    color: rgb(132, 132, 252);
-    text-decoration: none;  
+
+.wrapper {
+  color: #fff;
+  border-radius: 10px;
+  width: 450px;
+  background: #151525;
+  padding: 30px;
+  box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.1);
 }
-a:hover{
-    text-decoration: underline;
+
+#headline {
+  position: relative;
+  text-align: center;
+  bottom: 1rem;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
-secondary-text{
-    overflow:hidden ;
-    font-size: 10px;
-    color: #ffffff5b;
-    max-width: 100px;
+
+.wrapper .input-data {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 40px;
+  width: 100%;
+  position: relative;
 }
-p{
-    font-size: 14px;
+
+.wrapper .input-data input {
+  height: 100%;
+  width: 100%;
+  border: 2px solid #e1e5ee;
+  font-family: inherit;
+  border-radius: 0.5rem;
+  background: none;
+  color: white;
+  padding: 1.25rem;
+  outline: none;
 }
-div[data-actual-form] input:focus{
-    border: 1px solid transparent;
-    border-bottom: 1px solid #fff;
-    border-radius:0;
-    text-decoration: underline;
+
+.wrapper .input-data label {
+  position: absolute;
+  left: 1rem;
+  top: 0.6rem;
+  padding: 0 0.5rem;
+  color: white;
+  cursor: text;
+  transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
+  background: #151525;
+}
+
+.wrapper .input-data input:hover {
+  border-color: #adffff;
+}
+.wrapper .input-data input:focus {
+  border-color: #18ffff;
+}
+
+.form__input:focus ~ .form__label,
+.form__input:not(:placeholder-shown).form__input:not(:focus) ~ .form__label {
+  top: -0.5rem;
+  font-size: 0.8rem;
+  left: 0.8rem;
+}
+
+.logbut {
+  position: relative;
+  left: 8rem;
+  padding: 10px 40px 10px 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  background-color: white;
+  outline: none;
+  border: none;
+}
+
+.logbut:hover {
+  background: none;
+  border: 2px solid #18ffff;
+  color: #fff;
+  cursor: pointer;
+}
+
+#google {
+  position: relative;
+  height: 25px;
+  width: 25px;
+  top: 3.5rem;
+  left: 1.8rem;
+}
+
+#facebook {
+  position: relative;
+  height: 25px;
+  width: 25px;
+  top: 3.5rem;
+  left: 2.8rem;
+}
+
+#google, #facebook:hover {
+    cursor: pointer;
+}
+
+.bottom__lines {
+  font-size: 10px;
+  line-height: 1.2rem;
+  margin-top: 40px;
+  margin-bottom: 5px;
+}
+
+.link__one,
+.link__two {
+  color: #18ffff;
+}
+
+.sec__text {
+  color: rgb(255, 255, 255);
+  background-color: none;
+  border: 1px solid #ffffff;
+  padding: 15px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 2rem;
+  left: 23rem;
+  font-size: 0.6rem;
+  margin-top: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 0.05rem;
 }
