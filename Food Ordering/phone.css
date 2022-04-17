@@ -4,13 +4,10 @@
 	padding: 0;
 }
 
-body
-{
-	background-color:white;
-}
+
 #navbar ul li a
 {
-	font-size: 1.6rem;
+	font-size: 1.4rem;
 }
 #home h1
 {

@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-image: url('./images/back.jpg');
+    background-image: url('./img/back.jpg');
 }
 
 input:focus::placeholder {

@@ -1,0 +1,51 @@
+.logo img{
+    width: 45px;
+    height: 45px;
+    margin:4px 12px ;
+
+}
+.logo img:hover{
+    transition: all 0.5s ease-in-out;
+    transform: rotate(360deg);
+}
+
+.products img:hover{
+    transition: all 0.4s ease-in-out;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+.products .cards p a:hover{
+    text-decoration: underline;
+}
+.products .cards h2{
+    font-family: serif;
+}
+.about h2{
+    padding-top: 70px;
+    padding-bottom: 30px;
+}
+.about .para span{
+    padding:10px 0px;
+}
+.about img:hover{
+    transition: all 0.4s ease-in-out;
+    transform: scale(1.1);
+}
+
+@media screen and (max-width:992px){
+    #footer{
+        margin-top: 20px;
+    }
+    #footer .row{
+        flex-direction: column;
+    }
+    #footer .row .subscribe{
+        padding: 20px 0px;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+    }
+   #footer .row ul{
+       width: max-content;
+   }
+}

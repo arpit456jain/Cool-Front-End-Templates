@@ -13,7 +13,7 @@ body{
     font-size: 10.8pt;
     color: #000000;
     /* You can have your customised background below */
-    background: url("bg.png");
+    background: url("img/bg.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

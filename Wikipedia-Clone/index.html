@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
+        <!-- Local CSS Modules -->
+        <link rel="stylesheet" href="./CSS/styles.css" />
+        <link rel="stylesheet" href="./CSS/app.css" />
+        <link rel="stylesheet" href="./CSS/download.css" />
+        <link rel="stylesheet" href="./CSS/footer.css" />
+        <link rel="stylesheet" href="./CSS/idiom.css" />
+        <link rel="stylesheet" href="./CSS/language.css" />
+        <link rel="stylesheet" href="./CSS/line.css" />
+        <link rel="stylesheet" href="./CSS/logo.css" />
+        <link rel="stylesheet" href="./CSS/main-footer.css" />
+        <link rel="stylesheet" href="./CSS/media.css" />
+        <link rel="stylesheet" href="./CSS/search.css" />
+        <link rel="stylesheet" href="./CSS/wiki.css" />
+        <link rel="stylesheet" href="./CSS/wikimedia.css" />
+
+        <!-- BootStrap Module -->
+        <link rel="stylesheet" src="./CSS/bootstrap.min.css">
+
+        <!-- Import Google Fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&family=Roboto:wght@300;400&display=swap">
+
+        <title>Wikipedia</title>
+
+        <!-- WebPage Icon -->
+        <link rel="icon" href="./ICON/wikipedia.ico">
+    </head>
+    <body>
+        <main class="container">
+
+            <!-- Logo Section -->
+            <section class="logo">
+                <img class="logo-img" src="./SVG/Wikipedia-logo-v2.svg" alt="Logo Wikipedia" />
+                <div class="wiki-name">
+                    <h1 class="wiki-name-title">Wikipedia</h1>
+                    <p class="wiki-name-detail">The Free Encyclopedia</p>
+                </div>
+            </section>
+            <!-- End of Logo Section -->
+
+            <!-- Lanaguage Section -->
+            <section class="languages-container">
+
+                <!--================================== Left Column ===============================================-->
+                <!-- First Row -->
+                <div class="languages left-1">
+                    <a href="#" class="languages-info">
+                        <strong class="languages-type">English</strong>
+                        <div class="languages-description">
+                            <small class="languages-details"> 6 458 000+ </small>
+                            <small class="languages-details">articles</small>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Second Row -->
+                <div class="languages left-2">
+                  <a href="#" class="languages-info">
+                      <strong class="languages-type">日本語</strong>
+                      <div class="languages-description">
+                          <small class="languages-details"> 1 314 000+ </small>
+                          <small class="languages-details">記事</small>
+                      </div>
+                  </a>
+                </div>
+
+                <!-- Third Row -->
+                <div class="languages left-3">
+                  <a href="#" class="languages-info">
+                      <strong class="languages-type">Deutsch</strong>
+                      <div class="languages-description">
+                          <small class="languages-details"> 2 667 000+ </small>
+                          <small class="languages-details">Artikel</small>
+                      </div>
+                  </a>
+                </div>
+
+                <!-- Fourth Row -->
+                <div class="languages left-4">
+                  <a href="#" class="languages-info">
+                      <strong class="languages-type">中文</strong>
+                      <div class="languages-description">
+                          <small class="languages-details"> 1 256 000+ </small>
+                          <small class="languages-details">條目</small>
+                      </div>
+                  </a>
+                </div>
+
+                <!-- Fifth Row -->
+                <div class="languages left-5">
+                  <a href="#" class="languages-info">
+                      <strong class="languages-type">Português</strong>
+                      <div class="languages-description">
+                          <small class="languages-details"> 1 085 000+ </small>
+                          <small class="languages-details">artigos</small>
+                      </div>
+                  </a>
+                </div>
+
+                <!--================================== Right Column ===============================================-->
+                <!-- First Row -->
+                <div class="languages right-1">
+                  <a href="#" class="languages-info">
+                      <strong class="languages-type">Русский</strong>
+                      <div class="languages-description">
+                          <small class="languages-details"> 1 798 000+ </small>
+                          <small class="languages-details">статей</small>
+                      </div>
+                  </a>
+              </div>
+
+              <!-- Second Row -->
+              <div class="languages right-2">
+                <a href="#" class="languages-info">
+                    <strong class="languages-type">Español</strong>
+                    <div class="languages-description">
+                        <small class="languages-details"> 1 755 000+ </small>
+                        <small class="languages-details">articulos</small>
+                    </div>
+                </a>
+              </div>
+
+              <!-- Third Row -->
+              <div class="languages right-3">
+                <a href="#" class="languages-info">
+                    <strong class="languages-type">Français</strong>
+                    <div class="languages-description">
+                        <small class="languages-details"> 2 667 000+ </small>
+                        <small class="languages-details">articles</small>
+                    </div>
+                </a>
+              </div>
+
+              <!-- Fourth Row -->
+              <div class="languages right-4">
+                <a href="#" class="languages-info">
+                    <strong class="languages-type">Italiano</strong>
+                    <div class="languages-description">
+                        <small class="languages-details"> 1 742 000+ </small>
+                        <small class="languages-details">voci</small>
+                    </div>
+                </a>
+              </div>
+
+              <!-- Fifth Row -->
+              <div class="languages right-5">
+                <a href="#" class="languages-info">
+                    <strong class="languages-type">Polski</strong>
+                    <div class="languages-description">
+                        <small class="languages-details"> 1 512 000+ </small>
+                        <small class="languages-details">haseł</small>
+                    </div>
+                </a>
+              </div>
+              
+            </section>
+            <!-- End of Lanaguage Section -->
+
+            <!-- Search Bar Section -->
+            <section class="search-container">
+                <div class="search">
+                    <input class="search-input" type="text" />
+                    <select class="search-select">
+                        <option value="EN">EN</option>
+                        <option value="ES">ES</option>
+                        <option value="FR">FR</option>
+                    </select>
+                </div>
+                <button class="search-button"><i class="search__image"></i></button>
+            </section>
+            <!-- End of Search Bar Section -->
+
+            <!-- Extended Footer Section -->
+            <div class="main-footer-container">
+
+                <!-- Read Wikipedia in your language Section -->
+                <section class="idiom__container">
+                    <button class="idiom">
+                        <img src="./SVG/language-icon.svg" alt="Icono de idiom" />
+                        <strong>Read Wikipedia in your language</strong>
+                        <img src="./SVG/arrow-down-blue.svg" alt="Icono flecha hacia abajo" />
+                    </button>
+                </section>
+
+                <!-- Line Separator to separate the above and below content -->
+                <div class="line"></div> 
+                    
+                    <!-- Upper Footer -->
+                    <section class="main-footer">
+
+                        <!-- Wikimedia Foundation Section -->
+                        <figure class="wikimedia">
+                            <img class="wikimedia-image" src="./SVG/Wikimedia-logo_black.svg" alt="Imagen Wikimedia" />
+                            <figcaption class="wikimedia-description">
+                                Wikipedia is hosted by the Wikimedia Foundation, a non-profit organization that also hosts a range of other projects.
+                                You can support our work with a donation.
+                            </figcaption>
+                        </figure>
+                        <!-- End of Wikimedia Foundation Section -->
+
+                        <!-- Play Store & App Store Section -->
+                        <section class="download">
+                            <figure class="download-title">
+                                <img class="download-image" src="./SVG/wikipedia_app_tile.svg" alt="Mini logo Wikipedia" />
+                                <figcaption class="download-description">
+                                    Download Wikipedia for Android or iOS
+                                </figcaption>
+                            </figure>
+                            <p class="download-anuncio">
+                                Save your favorite articles to read offline, sync your reading lists across devices and customize your reading experience with the official Wikipedia app.
+                            </p>
+                            <div class="download-apps">
+                                <img class="download-apps-img" src="./SVG/badge_google_play_store.svg" alt="Logo Play Store" />
+                                <img class="download-apps-img" src="./SVG/badge_ios_app_store.svg" alt="Logo App Store" />
+                            </div>
+                        </section>
+                        <!-- End of Play Store & App Store Section -->
+
+                        <!-- Wikipedia Application Container Section -->
+                        <section class="app-container">
+
+                            <!-- Commons Section -->
+                            <article class="app">
+                                <figure class="app-img">
+                                    <img src="./SVG/Commons-logo_sister.svg" alt="Image Commons" />
+                                </figure>
+                                <div class="app-details">
+                                    <a class="app-title">Commons</a>
+                                    <p class="app-description">
+                                        Free usable photos & more
+                                    </p>
+                                </div>
+                            </article>
+                            <!-- End of Commons Section -->
+
+                            <!-- Wikivoyage Section -->
+                            <article class="app">
+                                <figure class="app-img">
+                                    <img src="./SVG/Wikivoyage-logo_sister.svg" alt="Image Wikivoyage" />
+                                </figure>
+                                <div class="app-details">
+                                    <a class="app-title">Wikivoyage</a>
+                                    <p class="app-description">Free travel guide</p>
+                                </div>
+                            </article>
+                            <!-- End of Wikivoyage Section -->
+
+                            <!-- Wikionary Section -->
+                            <article class="app">
+                                <figure class="app-img">
+                                    <img src="./SVG/Wiktionary-logo_sister.svg" alt="Image Wikionary" />
+                                </figure>
+                                <div class="app-details">
+                                    <a class="app-title">Wikionary</a>
+                                    <p class="app-description">Free dictionary</p>
+                                </div>
+                            </article>
+                            <!-- End of Wikionary Section -->
+
+                            <!-- Wikibooks Section -->
+                            <article class="app">
+                                <figure class="app-img">
+                                    <img src="./SVG/Wikibooks-logo_sister.svg" alt="Image Wikibooks" />
+                                </figure>
+                                <div class="app-details">
+                                    <a class="app-title">Wikibooks</a>
+                                    <p class="app-description">Free textbooks</p>
+                                </div>
+                            </article>
+                            <!-- End of Wikibooks Section -->
+
+                            <!-- Wikinews Section -->
+                            <article class="app">
+                                <figure class="app-img">
+                                    <img src="./SVG/Wikinews-logo.svg" alt="Image Wikinews" />
+                                </figure>
+                                <div class="app-details">
+                                    <a class="app-title">Wikinews</a>
+                                    <p class="app-description">Free news source</p>
+                                </div>
+                            </article>
+                            <!-- End of Wikinews Section -->
+
+                            <!-- Wikidata Section -->
+                            <article class="app">
+                                <figure class="app-img">
+                                    <img src="./SVG/Wikidata-logo_sister.svg" alt="Image Wikidata" />
+                                </figure>
+                                <div class="app-details">
+                                    <a class="app-title">Wikidata</a>
+                                    <p class="app-description">Free knowledge base</p>
+                                </div>
+                            </article>
+                            <!-- End of Wikidata Section -->
+
+                            <!-- Wikiversity Section -->
+                            <article class="app">
+                                <figure class="app-img">
+                                    <img src="./SVG/Wikiversity-logo_sister.svg" alt="Image Wikiversity" />
+                                </figure>
+                                <div class="app-details">
+                                    <a class="app-title">Wikiversidad</a>
+                                    <p class="app-description">Plataforma educativa libre</p>
+                                </div>
+                            </article>
+                            <!-- End of Wikiversity Section -->
+
+                            <!-- Wikiquote Section -->
+                            <article class="app">
+                                <figure class="app-img">
+                                    <img src="./SVG/Wikiquote-logo_sister.svg" alt="Image Wikiquote" />
+                                </figure>
+                                <div class="app-details">
+                                    <a class="app-title">Wikiquote</a>
+                                    <p class="app-description">Free quote compendium</p>
+                                </div>
+                            </article>
+                            <!-- End of Wikiquote Section -->
+
+                            <!-- MediaWiki Section -->
+                            <article class="app">
+                                <figure class="app-img">
+                                    <img src="./SVG/MediaWiki-logo_sister.svg" alt="Image MediaWiki" />
+                                </figure>
+                                <div class="app-details">
+                                    <a class="app-title">MediaWiki</a>
+                                    <p class="app-description">Free & open wiki application</p>
+                                </div>
+                            </article>
+                            <!-- End of MediaWiki Section -->
+
+                            <!-- Wikisource Section -->
+                            <article class="app">
+                                <figure class="app-img">
+                                    <img src="./SVG/Wikisource-logo_sister.svg" alt="Image Wikisource" />
+                                </figure>
+                                <div class="app-details">
+                                    <a class="app-title">Wikisource</a>
+                                    <p class="app-description">Free library</p>
+                                </div>
+                            </article>
+                            <!-- End of Wikisource Section -->
+
+                            <!-- Wikispecies Section -->
+                            <article class="app">
+                                <figure class="app-img">
+                                    <img src="./SVG/Wikispecies-logo_sister.svg" alt="Image Wikispecies" />
+                                </figure>
+                                <div class="app-details">
+                                    <a class="app-title">Wikispecies</a>
+                                    <p class="app-description">Free species directory</p>
+                                </div>
+                            </article>
+                            <!-- End of Wikispecies Section -->
+
+                            <!-- MetaWiki Section -->
+                            <article class="app">
+                                <figure class="app-img">
+                                    <img src="./SVG/Meta-Wiki-logo_sister.svg" alt="Image Meta-Wiki" />
+                                </figure>
+                                <div class="app-details">
+                                    <a class="app-title">Meta-Wiki</a>
+                                    <p class="app-description">Community coordination & documentation</p>
+                                </div>
+                            </article>
+                            <!-- End of MetaWiki Section -->
+                            
+                        </section>
+                        <!-- Wikipedia Application Container Section -->
+
+                    </section>
+                    <!-- End of Upper Footer -->
+
+                    <!-- Lower Footer -->
+                    <footer>
+                        <p>
+                            This is a Wikipedia Clone created by <a href="#">Kumar Laxmikant</a>
+                        </p>
+                    </footer>
+                    <!-- End of Lower Footer -->
+            </div>
+        </main>
+    </body>
+</html>

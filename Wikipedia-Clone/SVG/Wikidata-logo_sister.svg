@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="47" height="47" viewBox="0 0 1050 590">
+	<title>
+		Wikidata
+	</title>
+	<path fill="#900" d="M120 545h30V45h-30v500zm60 0h90V45h-90v500zM300 45v500h90V45h-90z"/>
+	<path fill="#396" d="M840 545h30V45h-30v500zm60-500v500h30V45h-30zM420 545h30V45h-30v500zm60-500v500h30V45h-30z"/>
+	<path fill="#069" d="M540 545h90V45h-90v500zm120 0h30V45h-30v500zm60-500v500h90V45h-90z"/>
+</svg>

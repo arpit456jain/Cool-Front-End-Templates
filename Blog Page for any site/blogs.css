@@ -10,7 +10,7 @@
 }
 body{
     display: flex;
-    background-image: url(./bg6.jpg);
+    background-image: url(img/bg6.jpg);
     background-repeat: no-repeat;
     background-size:1800px 1500px;
     position:relative;

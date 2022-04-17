@@ -1,13 +1,12 @@
 // Navbar Toggling starts
 
-function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-      x.className += " responsive";
-    } else {
-      x.className = "topnav";
-    }
-  }
+//NavBar
+$(document).ready(function () {
+    $("ul.navbar-nav a").click(function (e) {
+     $("ul.navbar-nav a").removeClass("active");
+     $(this).addClass("active");
+      });
+  });
 
 // Navbar Toggling end 
 
@@ -33,6 +32,8 @@ scrolltop.on('click', function(e) {
 let projects = [] ;
 const allProjectList = document.getElementById('styles');
 console.log(allProjectList)
+const experi = document.getElementById('cardd');
+const ProjectCounter = document.getElementById('counter');
 const searchBar = document.getElementById("searchBar");
 console.log(searchBar);
 
@@ -57,23 +58,23 @@ const getProject = fetch('style_links.json')
 });
 
  const displayProjects = (projects) => {
-
-    const htmlString = projects
+        const htmlString = projects
     .map((project) => {
         return`<div class="stylebox">
              <div class="image">
-                 <img src="https://raw.githubusercontent.com/arpit456jain/Cool-Front-End_Templates/master/${project.name}/preview.png" alt="">
+                 <img src="./${project.name}/preview.png" alt="">
               </div>
               <div class="card-data">
                   <p class="card-heading">${project.name}</p>
-                  <a href=${project.link}><button class="btnn">View</button></a>
+                  <a href=${project.link} target="_blank"><button class="btnn">View</button></a>
               </div>
        
           </div>`;
           
     })
     
-    allProjectList.innerHTML = htmlString;
+    experi.innerHTML = htmlString;
+    ProjectCounter.innerHTML = projects.length;
     
 }
 

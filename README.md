@@ -2,7 +2,9 @@
 
 ### This project is part of Girl script Summer of code 2022
 
-![Gssoc'2022](https://i.postimg.cc/k40ntsV4/1500x500.jpg)
+<a href="https://gssoc.girlscript.tech/" target="_blank">
+  <img alt="Gssoc'2022" width=100% src="https://i.postimg.cc/k40ntsV4/1500x500.jpg">
+</a>
 
 <div align="center">
 
@@ -24,7 +26,7 @@
 
 Will Add some cool templates in it.
 
-## 🎥 Demo
+## <a href="https://www.youtube.com/watch?v=_AohaKbJjlg&ab_channel=ARPITJAIN" style="text-decoration:none">🎥</a> Demo
 
 #### Website for this repository : https://cool-front-end-templates.netlify.app/
 
@@ -121,18 +123,63 @@ GitHub will alert you that you can merge the two branches because there is no co
 
 <br>
 
+## CONTRIBUTING A NEW TEMPLATE?
+### Please adhere to these guidelines 
+
+1. Create a folder with the name of your frontend template 
+
+2. Start building inside your folder with an entry file called index.html and after building, attach an image named "preview.png" within the folder root which represents the preview image of your template
+
+3. Go into the style_link.json file and add an object corresponding to your project in the following format:
+```
+    {
+  
+      "name": "Name-of-folder-in-exact-case-used-in-naming",
+      "link": "Name-of-folder-in-exact-case-used-in-naming/index.html"
+  
+    },
+
+```
+#### Important to note:  
+If the folder name has white spaces e.g "My  Project", the object should be:
+
+```
+    {
+  
+      "name": "My Project", (not "my project" or "My project" or "My-project")
+      "link": "My%20Project/index.html" (not "My Project/index.html" or "My project/index.html"
+  
+    },
+
+```
+#### Note: The name key is case sensitive and the link key is white space sensitive in the json object so if you have white spaces in the initial name of your folder, replace space with "%20" in the json link but if there are no white spaces like in the case of "ABlogPage" or "Form", use the exact name of the project
+
+If the folder name has no white spaces e.g "My-project", the object should be:
+
+```
+    {
+  
+      "name": "My-project",  (not "my-project" or "My-Project" or "My Project")
+      "link": "My-project/index.html"  (not "My%20project/index.html" or "My-Project/index.html")
+  
+    },
+
+```
+
+   
+
 ## 📌Till Then
 
-### Need Some Help in this Repo -> [Web Development And Resourcses](https://github.com/arpit456jain/Web-Development-Path-And-Resources)
+### Need Some Help in this Repo -> [Web Development And Resources](https://github.com/arpit456jain/Web-Development-Path-And-Resources)
 
-<p align="center"><img src="http://www.gurpreetsaluja.com/wp-content/uploads/2016/05/always-keep-learning.png" width=30%></p>
+<p align="center"><img src="https://www.gurpreetsaluja.com/wp-content/uploads/2016/05/always-keep-learning.png" width=100%></p>
 <hr>
 
 ### This project was a part of the following Open Source Program
 
-![Devincept](https://user-images.githubusercontent.com/56088741/123548852-1ef59d00-d784-11eb-8e39-255e0c3e97d5.gif)
+<a href="https://in.linkedin.com/company/devincept"><img alt="Devincept" title="Devincept" width=100% src="https://user-images.githubusercontent.com/56088741/123548852-1ef59d00-d784-11eb-8e39-255e0c3e97d5.gif"></a>
 
-![HacktoberFest'21](https://user-images.githubusercontent.com/59393136/135566614-5635902f-2907-4e01-8baf-3cb1b43a6b20.png)
+<a href="https://hacktoberfest.digitalocean.com/"><img alt="HacktoberFest'21" title="HacktoberFest'21" width=100% src="https://user-images.githubusercontent.com/59393136/135566614-5635902f-2907-4e01-8baf-3cb1b43a6b20.png"></a>
 
 <hr>
 
