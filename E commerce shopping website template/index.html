@@ -14,21 +14,26 @@
 </head>
 <body>
     <div class="header">
-    <div class="container">
      <div class="navbar">
-            <div class="logo"> <img src="images/mylogo1.png" alt="logo" id="agent"></div>
+             <div class="logo"> <img src="images/mylogo1.png" alt="logo" id="agent"></div> 
              <nav>
+            <input type="checkbox" id="check"> 
+            <label for="check" class="checkbtn">
+              <i class="fa fa-bars" ></i>
+
+            </label>    
             <ul id="MenuItems">
-                 <li><a href="">Home</a></li>
-                 <li><a href="">About Us</a></li>
+                 <li><a class="active" href="#">Home</a></li>
+                 <li><a href="#">About Us</a></li>
                  <li><a href="contactpage.html">Contact Us</a></li>
-                 <li><a href="">Products</a></li>
-                 <li><a href="">Account</a></li>
+                 <li><a href="#">Products</a></li>
+                 <li><a href="#">Account</a></li>
+                 <img src="images/bag icon.png" alt="cart" height="50px" class="bag-icon">
             </ul>
-            <img src="images/bag icon.png" alt="cart" height="50px" class="bag-icon">
-            <img src="images/menu 2.png" height="50px" class="menu-icon" onclick="menutoggle()">
+            <!-- <img src="images/menu 2.png" height="50px" class="menu-icon" onclick="menutoggle()"> -->
             </nav>
         </div>
+<div class="container">  
         <div class="row">
             <div class="col-2">
                 <h1>Get the Style <br> your wardrobe needs!</h1>
@@ -372,12 +377,5 @@
      }
  </script>
 
-     
-     
-
-     
-     
- 
-    
 </body>
 </html>

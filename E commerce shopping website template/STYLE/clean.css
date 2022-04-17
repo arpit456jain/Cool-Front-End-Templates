@@ -2,7 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;}
+
+html,
+body{
+  width:100%;
+  overflow-x:hidden;  /*to remove white spaces from the right*/
 }
+
 
 .logo #agent{
     width: 130px;
@@ -11,32 +19,54 @@
 
 .navbar{
     display: flex;
-    padding: 20px;
     align-items: center;
+    background-color: #333;
 }
 
 nav{
-    flex: 1;
     text-align: right;
+    width: 100%;
 }
 
 nav ul{
-    display: inline-block;
-    list-style-type: none;
+    float:right;
+    margin-right: 20px;
+    /* list-style-type: none; */
+    padding-bottom: 75px;
 }
 
 nav ul li{
     display: inline-block;
-    margin-right: 20px;
+    line-height: 80px;
+    /* margin: 0 5px; */
 }
 
-a{
-    text-decoration: none;
-    color: blueviolet;
+nav ul li a{
+    font-size: 16px;
+    color: rgb(204, 177, 229);
+    padding: 7px 12px;
+    border-radius: 4px;
 }
- a:hover{
-     color: brown;
+ a.active, a:hover{
+     background: rgba(110, 109, 109, 0.79);
+     color: #fff;
+     transition: .5s;
  }
+
+.checkbtn{
+font-size: 35px;
+color: #fff;
+float: right;
+line-height: 80px;
+margin-right: 40px;
+cursor: pointer;
+display: none;
+ }
+
+#check{
+    display: none;
+} 
+
 p{
     color:blueviolet;
 }
@@ -59,6 +89,7 @@ p{
 }
 .col-2 img{
     max-width: 100%;
+    height: auto;
     padding: 50px 0;
 }
 .col-2 h1{
@@ -273,35 +304,93 @@ ul{
 }
 /* media query for menu */
 @media only screen and (max-width:800px) {
-    nav ul{
-        position: absolute;
-        top: 70px;
-        left: 0;
-        background: #333;
+   
+    .navbar .logo img{
+    display: none;
+    }
+
+    nav ul {
+        position: fixed;
+        background: #333 ; 
         width: 100%;
-        overflow: hidden;
-        transition: max-height 0.5s;
+        height: 100vh;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition:all .5s;
+    }
+    .navbar ul img{
+        display: none;
     }
     nav ul li{
+        background: #333;
         display: block;
-        margin-right: 50px;
-        margin-top: 10px;
-        margin-bottom: 10px;
+        padding: 50px 0;
+        line-height:20px ;
     }
+
     nav ul li a{
-        color: #fff;
+        font-size: 20px;
     }
-    .menu-icon{
+    a:hover,a.active{
+        background:none;
+        color: #fff; 
+    }
+
+     .checkbtn{   /*to display menu icon in mobile view */
         display: block;
         cursor: pointer;
-    }
-}
-/* media query for less than 600 screen size*/
-@media only screen and (max-width:600px) {
-    .row{
-        text-align: center;
+        color: #fff;
+    }  
+    
+    #check:checked ~ ul{
+        left: 0;
     }
     .col-2,.col-3,.col-4{
         flex-basis: 100%;
     }
+    .col-2 img{
+        max-width: 100%;
+        height: auto;
+        display: block;
+        object-fit: contain;
+
+    } 
+    .col-2 h1{
+        font-size: 6.9vw;
+        line-height: 110%;
+        }
+    .col-2 p{
+        font-size:3vw;
+    }
+    .col-2 small{
+        font-size: 2.5vw;
+    }
+    .col-5 img{
+        padding-bottom: 15px;
+    }
+    
+}
+
+/* media query for less than 1200 screen size, specifically footer*/
+@media only screen and (max-width:1200px) {
+    .footer .row{
+        display: block;
+         } 
+         .footer .row img{
+             max-width: 100%;
+             display: block;
+             height: auto;
+
+         }
+         .footer-col-1 , .footer-col-2 , .footer-col-3 , .footer-col-4{
+             text-align: left;
+             font-size: 2vw;
+             padding-left: 20px;
+         }
+    .Copyright{
+        text-align: left;
+        font-size: 1.5vw;
+        padding-left:20px;
+    }     
 }
