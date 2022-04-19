@@ -18,9 +18,46 @@
   box-sizing: border-box;
 }
 
+.sidepanel {
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #4e73df;
+  background-image: linear-gradient(180deg, #4e73df 10%, #224abe 100%);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  overflow: hidden;
+}
+
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 25px;
+  color: #091b53;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  color: rgb(43, 98, 180);
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  color: rgb(24, 26, 122);
+}
 body {
   margin: 0;
-  font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -28,7 +65,12 @@ body {
   text-align: left;
   background-color: #fff;
 }
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-top: 0;
   margin-bottom: 0.5rem;
 }
@@ -37,7 +79,9 @@ p {
   margin-bottom: 1rem;
 }
 
-ol,ul,dl {
+ol,
+ul,
+dl {
   margin-top: 0;
   margin-bottom: 1rem;
 }
@@ -53,10 +97,11 @@ a:hover {
   text-decoration: underline;
 }
 
-h6, .h6 {
+h6,
+.h6 {
   font-size: 1rem;
 }
-h2{
+h2 {
   text-align: center;
 }
 hr {
@@ -72,11 +117,75 @@ hr {
   margin-right: -0.75rem;
   margin-left: -0.75rem;
 }
-.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col,
-.col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm,
-.col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md,
-.col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg,
-.col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl,
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12,
+.col,
+.col-auto,
+.col-sm-1,
+.col-sm-2,
+.col-sm-3,
+.col-sm-4,
+.col-sm-5,
+.col-sm-6,
+.col-sm-7,
+.col-sm-8,
+.col-sm-9,
+.col-sm-10,
+.col-sm-11,
+.col-sm-12,
+.col-sm,
+.col-sm-auto,
+.col-md-1,
+.col-md-2,
+.col-md-3,
+.col-md-4,
+.col-md-5,
+.col-md-6,
+.col-md-7,
+.col-md-8,
+.col-md-9,
+.col-md-10,
+.col-md-11,
+.col-md-12,
+.col-md,
+.col-md-auto,
+.col-lg-1,
+.col-lg-2,
+.col-lg-3,
+.col-lg-4,
+.col-lg-5,
+.col-lg-6,
+.col-lg-7,
+.col-lg-8,
+.col-lg-9,
+.col-lg-10,
+.col-lg-11,
+.col-lg-12,
+.col-lg,
+.col-lg-auto,
+.col-xl-1,
+.col-xl-2,
+.col-xl-3,
+.col-xl-4,
+.col-xl-5,
+.col-xl-6,
+.col-xl-7,
+.col-xl-8,
+.col-xl-9,
+.col-xl-10,
+.col-xl-11,
+.col-xl-12,
+.col-xl,
 .col-xl-auto {
   position: relative;
   width: 100%;
@@ -128,7 +237,8 @@ hr {
   font-size: 1rem;
   line-height: 1.5;
   border-radius: 0.35rem;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 .btn:hover {
@@ -136,7 +246,8 @@ hr {
   text-decoration: none;
 }
 
-.btn:focus, .btn.focus {
+.btn:focus,
+.btn.focus {
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgba(78, 115, 223, 0.25);
 }
@@ -181,8 +292,8 @@ hr {
   right: 0;
   left: auto;
 }
-.card-body{
-        height:400px;
+.card-body {
+  height: 400px;
 }
 #myProgress {
   width: 100%;
@@ -205,4 +316,273 @@ hr {
   height: 10px;
   background-color: #6e0ea2;
   align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .sidepanel ul {
+    list-style: none;
+    color: #eee;
+  }
+  .sidepanel a {
+    color: rgb(255, 255, 255);
+  }
+  .sidebar-brand {
+    display: flex;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  .sidebar-brand-text {
+    margin-left: 15px;
+    font-size: 25px;
+  }
+ 
+  .nav-link {
+    font-size: 18px;
+    
+  }
+  .sidebar-divider{
+    background-color: #eee;
+  }
+
+  .topbar{
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+  }
+  .navbar-search{
+    display: flex;
+  } 
+  .topbar ul{ 
+    list-style: none;
+    display: flex;
+    padding-left: 10px;
+  }
+  .topbar .img-profile{
+    position: absolute;
+    right: 35px;
+    top: 10px;
+    float: right;
+    width: 20px;
+  }
+  .topbar li{
+    margin: 0 10px;
+  }
+  .input-group{
+    display: flex;
+  }
+  .topbar select{
+    display: flex;
+    margin: 0 10px;
+  }
+  .topbar form button{
+    display: none;
+  }
+  .topbar .icon{
+    position: relative;;
+    bottom: -5px;
+    font-size: 20px;
+    color: rgb(218, 214, 214);
+  }
+  .topbar .search{
+    color: #597eec;
+    position: relative;
+    left: 0;
+    bottom: -5px;
+    font-size: 18px;
+  }
+  .topbar .nav-item .nav-link .badge-counter.count{
+    position: absolute;
+    transform: scale(0.9);
+    transform-origin: top right;
+    right: 265px;
+    margin-top: 0.35rem;
+}
+  .topbar .nav-item .nav-link .badge-counter {
+    position: absolute;
+    transform: scale(0.9);
+    transform-origin: top right;
+    right: 220px;
+    margin-top: 0.35rem;
+}
+  .badge-danger {
+    font-size: 10px;
+    color: #fff;
+    background-color: #e74a3b;
+}
+.topbar .dropdown a span{
+  display: flex;
+}
+.topbar .dropdown a img{
+  margin-left: 10px;
+  width: 40px;
+}
+
+.shadow{
+  width: 90%;
+}
+.pie{
+  height: 300px;
+}
+.card-header{
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 8px;
+}
+canvas{
+ margin: 15px 0;
+}
+.card-header select{
+  height: 20px;
+  position: relative;
+  bottom: -12px;
+}
+.card-body{
+  height: 200px;
+}
+.chartjs-size-monitor{
+  display: flex;
+}
+#myPieChart, #Monthlychart, #Yearlychart{
+  height: 1px;
+}
+.charts{
+  margin-top: 150px;
+}
+.pie-charts{
+  margin: 20px 0 220px;
+}
+.card-header h6{
+  font-size: 2rem;
+}
+
+}
+
+@media only screen and (max-width: 600px) {
+  .sidepanel ul {
+    list-style: none;
+    color: #eee;
+  }
+  .sidepanel a {
+    color: rgb(255, 255, 255);
+  }
+  .sidebar-brand {
+    display: flex;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  .sidebar-brand-text {
+    margin-left: 15px;
+    font-size: 25px;
+  }
+ 
+  .nav-link {
+    font-size: 18px;
+    
+  }
+  .sidebar-divider{
+    background-color: #eee;
+  }
+
+  .topbar{
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+  }
+  .navbar-search{
+    display: flex;
+  } 
+  .topbar ul{ 
+    list-style: none;
+    display: flex;
+    padding-left: 10px;
+  }
+  .topbar .img-profile{
+    width: 30px;
+  }
+  .topbar li{
+    margin: 0 10px;
+  }
+  .topbar select{
+    display: none;
+  }
+  .topbar form button{
+    display: none;
+  }
+  .topbar .icon{
+    position: relative;;
+    bottom: -5px;
+    font-size: 20px;
+    color: rgb(218, 214, 214);
+  }
+  .topbar .search{
+    color: #597eec;
+    position: relative;
+    left: 0;
+    bottom: -5px;
+    font-size: 18px;
+  }
+  .topbar .nav-item .nav-link .badge-counter.count{
+    position: absolute;
+    transform: scale(0.9);
+    transform-origin: top right;
+    right: 165px;
+    margin-top: 0.35rem;
+}
+  .topbar .nav-item .nav-link .badge-counter {
+    position: absolute;
+    transform: scale(0.9);
+    transform-origin: top right;
+    right: 120px;
+    margin-top: 0.35rem;
+}
+  .badge-danger {
+    font-size: 10px;
+    color: #fff;
+    background-color: #e74a3b;
+}
+.topbar .dropdown a span{
+  display: none;
+}
+.topbar .dropdown a img{
+  margin-left: 10px;
+  width: 40px;
+}
+
+.shadow{
+  width: 90%;
+}
+.pie{
+  height: 300px;
+}
+.card-header{
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 8px;
+}
+canvas{
+ margin: 15px 0;
+}
+.card-header select{
+  height: 20px;
+  position: relative;
+  bottom: -12px;
+}
+.card-body{
+  height: 200px;
+}
+.chartjs-size-monitor{
+  display: flex;
+}
+#myPieChart, #Monthlychart, #Yearlychart{
+  height: 1px;
+}
+.charts{
+  margin-top: 150px;
+}
+.pie-charts{
+  margin: 20px 0 220px;
+}
+.card-header h6{
+  font-size: 2rem;
+}
 }

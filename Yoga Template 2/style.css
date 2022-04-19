@@ -17,7 +17,7 @@ html {
 /* NAVIGATION */
 
 .navigation {
-  background-color: rgba(238, 238, 238, 0.75);
+  background-color: rgba(238, 238, 238, 1);
   display: flex;
   align-items: center;
   justify-content: space-between;

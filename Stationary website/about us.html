@@ -1,51 +1,184 @@
 <!doctype html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>JAINS stationary</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/c1c97e61e2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
+    <title>JAINS Stationery</title>
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
+    
+    
+  </head>
 
-   
-     <!-- link icon  -->
-  <link rel="icon" href="img/favicon.png" type="image/x-icon">
-
-</head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="index.html"><span style="color:rgb(238, 255, 1); font-size: larger;
-            ">Jains</span> stationary</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+        <div class="logo">
+            <a href="./index.html"><img src="./img/favicon.png" alt=""></a>
+          </div>
+      <!-- <a class="navbar-brand" href="./index.html"><span style="color:rgb(238, 255, 1); font-size: larger;
+        ">Jains Stationary</span> </a> -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contact us.html">Contact Us</a>
+          </li>
+          
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+          <button type="button"  data-bs-toggle="modal" data-bs-target="#login"class="btn btn-sm btn-warning mx-2">Login</button>
+        <button type="button" data-bs-toggle="modal" data-bs-target="#signup" class="btn btn-sm btn-warning">Signup</button>
+        </form>
+      </div>
+    </div>
+  </nav>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="about us.html">About us <span class="sr-only">(current)</span></a>
-                </li>
 
-                
-                <li class="nav-item ">
-                    <a class="nav-link" href="contact us.html">Contact us</a>
-                </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
-        </div>
-    </nav>
+<!-- Login in Modal -->
+<div class="modal fade" id="login" tabindex="-1" aria-labelledby="loginLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="loginLabel">Login to your account</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="loginemail" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="loginemail" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="loginpass" class="form-label">Password</label>
+            <input type="password" class="form-control" id="loginpass">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <span style="width: 82%;">Don't have an account ? <a data-bs-toggle="modal" data-bs-target="#signup" style="color: rgb(0, 94, 255); cursor: pointer; text-decoration: underline;" >Signup</a></span>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Sign up Modal-->
+<div class="modal fade" id="signup" tabindex="-1" aria-labelledby="signupLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="signupLabel">Signup to create an account</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="signemail" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="signemail" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="signpass" class="form-label">Password</label>
+            <input type="password" class="form-control" id="signpass">
+          </div>
+          <div class="mb-3">
+            <label for="cpass" class="form-label">Confirm Password</label>
+            <input type="password" class="form-control" id="cpass">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck2">
+            <label class="form-check-label" for="exampleCheck2">Check me out</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Signup</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container py-5 my-5 about" >
+  <div class="row featurette">
+    <div class="col-md-7 para">
+      <h2 class="featurette-heading text-center" style="font-family: 'Font Awesome 5 Free'; font-size: 40px;">Jains Stationery<br> <span class="text-muted text-center">Best online shops for stationery addicts.</span></h2>
+      <p class="lead text-center" style="font-family: serif;">At Jains Stationery, we enlist thousands of stationery products that unknowingly become a part of our daily life at home, office, school or college. We constantly keep adding to this petty list of attractions for the only reason to bring you joyous smiles and comfortable shopping. We deliver in every nook and corner of India through our courier partners. We deliver at all metropolitan cities in two days. Jains Stationery is a great place for planner addict, bullet journal, junkies, and stationery lover.</p>
+    </div>
+    <div class="col-md-5">
+      <img src="./img/8.jpg"  width="500" height="500" alt="">
+     
+  
+    </div>
+  </div>
+</div>
+<div class="container products">
+  <h1 class="text-center py-4" style="font-family: revert;">Our Services </h1>
+  <div class="row cards">
+    <div class="col-md-4 text-center p-2">
+      <img src="img/plane.jpg" alt="" class="bd-placeholder-img " width="200" height="200">
+      <h2 class="pt-3">Free Shipping</h2>
+      
+    </div>
+    <div class="col-md-4 text-center p-2">
+      <img src="img/card.png" alt="" class="bd-placeholder-img " width="200" height="200">
+      <h2 class="pt-3">Easy Payment</h2>
+      
+    </div>
+    <div class="col-md-4 text-center p-2">
+      <img src="img/return.jpg" alt="" class="bd-placeholder-img " width="200" height="200">
+      <h2 class="pt-3">Return and Refund</h2>
+      
+    </div>
+    <div class="col-md-4 text-center p-2">
+      <img src="img/lock4.png" alt="" class="bd-placeholder-img " width="200" height="200">
+      <h2 class="pt-3">Security</h2>
+      
+    </div>
+    <div class="col-md-4 text-center p-2">
+      <img src="img/good.jpg" alt="" class="bd-placeholder-img " width="200" height="200">
+      <h2 class="pt-3">Good Quality</h2>
+   
+    </div>
+    <div class="col-md-4 text-center p-2">
+      <img src="img/dura.jpg" alt="" class="bd-placeholder-img " width="200" height="200">
+      <h2 class="pt-3">
+        Durability</h2>
+      
+    </div>
     
+  </div>
+</div>
+
+<!--     
     <div class="container my-3">
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
@@ -73,149 +206,79 @@
                   <span class="sr-only">Next</span>
                 </a>
               </div>
-        </div>
-    <div class="container">
-        <div class="accordion" id="accordionExample">
-            <div class="card">
-                <div class="card-header" id="headingOne">
-                    <h2 class="mb-0">
-                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
-                            aria-expanded="true" aria-controls="collapseOne">
-                            Our stationary items are listed here
-                        </button>
-                    </h2>
-                </div>
+        </div> -->
 
-                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
-                    data-parent="#accordionExample">
-                    <div class="card-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
-                        3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
-                        laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin
-                        coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes
-                        anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
-                        occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard
-                        of them accusamus labore sustainable VHS.
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-header" id="headingTwo">
-                    <h2 class="mb-0">
-                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
-                            data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            How to Reach our shop
-                        </button>
-                    </h2>
-                </div>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                    <div class="card-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
-                        3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
-                        laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin
-                        coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes
-                        anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
-                        occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard
-                        of them accusamus labore sustainable VHS.
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-header" id="headingThree">
-                    <h2 class="mb-0">
-                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
-                            data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            About the Owner
-                        </button>
-                    </h2>
-                </div>
-                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                    <div class="card-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
-                        3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
-                        laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin
-                        coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes
-                        anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
-                        occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard
-                        of them accusamus labore sustainable VHS.
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-header" id="headingFive">
-                    <h2 class="mb-0">
-                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
-                            data-target="#collapseFive" aria-expanded="true" aria-controls="collapseOne">
-                            Our stationary items are listed here
-                        </button>
-                    </h2>
-                </div>
+   
+    <hr class="mt-5">
 
-                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
-                    <div class="card-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
-                        3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
-                        laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin
-                        coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes
-                        anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
-                        occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard
-                        of them accusamus labore sustainable VHS.
-                    </div>
-                </div>
+   <!-- Footer -->
+    <div class="container mt-5" id="footer">
+        <footer class="">
+          <div class="row py-4">
+            <div class="col-2">
+              <h5>Company</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="./index.html" class="nav-link p-0 text-muted">→ Home</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">→ About Us</a></li>
+                <li class="nav-item mb-2"><a href="./contact us.html" class="nav-link p-0 text-muted">→ Contact Us</a></li>
+                <li class="nav-item mb-2"><a target="_blank" href="https://www.google.com/maps/place/Jain+Stationers+and+electricals/@26.8949116,80.8926612,12z/data=!4m8!1m2!2m1!1sjain+stationers!3m4!1s0x399bfdfd600dfbe9:0x7c8993c0ebbf9ac2!8m2!3d26.8725077!4d80.9715247" class="nav-link p-0 text-muted">→ View on Map</a></li>
+               
+              </ul>
+            </div>
+      
+            <div class="col-2">
+              <h5>Locations</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2 text-muted">→ Delhi</li>
+                <li class="nav-item mb-2 text-muted">→ Mumbai</li>
+                <li class="nav-item mb-2 text-muted">→ Chennai</li>
+                <li class="nav-item mb-2 text-muted">→ Bengaluru</li>
+                
+              </ul>
             </div>
 
-        </div>
-    </div>
-
-    <div class="container mt-2 ">
-        <div class="row justify-content-center">
-
-            <div class="card mx-2" style="width: 22rem;">
-                <img src="img/1.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div class="col-2">
+                <h5>Contact</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2 text-muted"><i class="fa fa-map-marker" style="color: red; padding-right: 13px;"></i>New Delhi</li>
+                  <li class="nav-item mb-2 text-muted">	
+                    <i class="fa fa-phone" style="color: green; padding-right: 13px;"></i>123-456-789</li>
+                  <li class="nav-item mb-2 text-muted">	
+                    <i class="fa fa-envelope" style="color: blue; padding-right: 13px;"></i>jaininfo@gmail.com</li>
+                  
+                  
+                </ul>
+              </div>
+      
+            <div class="col-4 offset-1 subscribe">
+              <form>
+                <h5>Subscribe to our newsletter</h5>
+                <p>Monthly digest of whats new and exciting from us.</p>
+                <div class="d-flex w-100 gap-2">
+                  <label for="newsletter1" class="visually-hidden">Email address</label>
+                  <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                  <button class="btn btn-primary" type="button">Subscribe</button>
                 </div>
+              </form>
             </div>
-            <div class="card mx-2" style="width: 19.5rem;">
-                <img src="img/2.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-            <div class="card mx-2" style="width: 22rem;">
-                <img src="img/6.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <hr>
-    <footer class="container">
-        <p class="float-right"><a href="#">Back to top</a></p>
-        <p>© 2020-20121 Jains stationary. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
-      </footer>
-      <hr>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
-</body>
-
-</html>
+          </div>
+      
+          <div class=" py-4  border-top text-center">
+            <p>© 2021 Jains Stationery, Inc. All rights reserved.</p>
+            <p class="float-right"><a href="#">Back to top</a></p>
+          </div>
+        </footer>
+      </div>
+  
+   <!-- Optional JavaScript; choose one of the two! -->
+  
+      <!-- Option 1: Bootstrap Bundle with Popper -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  
+      <!-- Option 2: Separate Popper and Bootstrap JS -->
+      <!--
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+      -->
+    </body>
+  </html>
