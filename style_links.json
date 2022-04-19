@@ -177,13 +177,13 @@
     {
   
       "name": "We design and develop",
-      "link": "We%20design%20dnd%20develop/index.html"
+      "link": "We%20design%20and%20develop/index.html"
   
     },
     {
   
       "name": "Weather",
-      "link": "Weather/weather.html"
+      "link": "Weather/index.html"
   
     },
     {
@@ -295,18 +295,7 @@
       "link": "Blogger's%20Template/index.html"
   
     },
-  
-  
-    
-  
-    
-    {
-  
-      "name": "Psychopod Website",
-      "link": "Psychopod%20Website/index.html"
-  
-    },
-  
+
     {
   
        "name": "Sneaker Storefront",
@@ -574,14 +563,10 @@
         "name":"Animated Frontend Website",
         "link": "AnimatedFrontendWebsite/index.html"
       },
-    {
-       "name": "ZomatoClone",
-      "link": "ZomatoClone/index.html"
-  
-    },
     {   
       "name": "Tourism_Responsive_Website",
       "link": "Tourism_Responsive_Website/index.html"
     }
   
-]
+  ]
+
