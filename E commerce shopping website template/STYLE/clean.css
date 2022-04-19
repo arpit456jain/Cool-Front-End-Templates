@@ -89,6 +89,13 @@ body {
   .navbar-links li {
     text-align: center;
   }
+ .categories{
+    margin: 70px 0;
+    background-color: #4D77FF;
+}
+.categories img{
+    margin-top: 40px;
+}
 
   .navbar-links li a {
     padding: 0.5rem 1rem;

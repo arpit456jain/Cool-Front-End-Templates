@@ -2,7 +2,9 @@
 
 ### This project is part of Girl script Summer of code 2022
 
-![Gssoc'2022](https://i.postimg.cc/k40ntsV4/1500x500.jpg)
+<a href="https://gssoc.girlscript.tech/" target="_blank">
+  <img alt="Gssoc'2022" width=100% src="https://i.postimg.cc/k40ntsV4/1500x500.jpg">
+</a>
 
 <div align="center">
 
@@ -24,7 +26,7 @@
 
 Will Add some cool templates in it.
 
-## 🎥 Demo
+## <a href="https://www.youtube.com/watch?v=_AohaKbJjlg&ab_channel=ARPITJAIN" style="text-decoration:none">🎥</a> Demo
 
 #### Website for this repository : https://cool-front-end-templates.netlify.app/
 
@@ -175,9 +177,9 @@ If the folder name has no white spaces e.g "My-project", the object should be:
 
 ### This project was a part of the following Open Source Program
 
-[<img alt="Devincept" width=100% src="https://user-images.githubusercontent.com/56088741/123548852-1ef59d00-d784-11eb-8e39-255e0c3e97d5.gif">](https://user-images.githubusercontent.com/56088741/123548852-1ef59d00-d784-11eb-8e39-255e0c3e97d5.gif)
+<a href="https://in.linkedin.com/company/devincept"><img alt="Devincept" title="Devincept" width=100% src="https://user-images.githubusercontent.com/56088741/123548852-1ef59d00-d784-11eb-8e39-255e0c3e97d5.gif"></a>
 
-[<img alt="HacktoberFest'21" width=100% src="https://user-images.githubusercontent.com/59393136/135566614-5635902f-2907-4e01-8baf-3cb1b43a6b20.png">](https://user-images.githubusercontent.com/59393136/135566614-5635902f-2907-4e01-8baf-3cb1b43a6b20.png)
+<a href="https://hacktoberfest.digitalocean.com/"><img alt="HacktoberFest'21" title="HacktoberFest'21" width=100% src="https://user-images.githubusercontent.com/59393136/135566614-5635902f-2907-4e01-8baf-3cb1b43a6b20.png"></a>
 
 <hr>
 
