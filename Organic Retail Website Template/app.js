@@ -1,11 +1,8 @@
-
-
-const body = document.body;
+const body = document.querySelector('body');
 const content = document.querySelector('.js-content');
 const blocks = document.querySelectorAll('.block');
 
 const updateOffset = () => {
-  requestAnimationFrame(updateOffset);
   body.style.setProperty('--y', content.scrollTop);
   updateProps();
 };
