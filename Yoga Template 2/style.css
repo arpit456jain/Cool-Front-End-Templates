@@ -210,6 +210,11 @@ html {
   box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.7);
   width: 32rem;
 }
+.services-img:hover{
+
+  box-shadow: -1rem 1rem  rgb(228, 190, 2),1rem -1rem rgb(236, 24, 24),0 1rem 4rem rgba(239, 239, 239, 0.7);
+  width: 32rem;
+}
 
 .button-sub-1 {
   text-align: center;
