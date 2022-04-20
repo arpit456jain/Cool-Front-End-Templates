@@ -1,8 +1,0 @@
-.main-footer-container {
-    order: 1;
-}
-
-.main-footer {
-    display: flex;
-    flex-direction: column;
-}
