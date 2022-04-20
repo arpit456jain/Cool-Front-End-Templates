@@ -85,6 +85,42 @@ html {
   color: wheat;
   opacity: 0.9;
 }
+
+@media screen and ( max-width: 800px) {
+    
+    .head-large{
+      font-size: 5rem;
+    }
+
+    .section-landing:before, .section-end:before{
+      opacity: 0;
+    }
+  
+}
+
+@media screen and (max-width:440px) {
+  .head-large{
+    font-size: 4rem;
+  }
+  .img-caption h2{
+      font-size: 80%;
+    }
+  .img-caption p {
+        font-size: 15px;
+    }
+    
+  .type-left .img-caption{
+    margin-top: 35px;
+  }
+
+  .img-grid:nth-child(2) .img-caption p{
+    font-size: 13px;
+  }
+
+  .type-left .img-caption h2{
+    margin-bottom: 10px;
+  }
+}
 .head-small {
   margin-bottom: 1.5rem;
   font-size: 1.2rem;
@@ -170,9 +206,9 @@ html {
 }
 .img-gridItem img {
   display: block;
-  width: 50%;
-  height: 40vh;
-  object-fit: cover;
+  width: 45%;
+  height: 35vh;
+  object-fit:none;
   will-change: transform;
   backface-visibility: visible;
 }
