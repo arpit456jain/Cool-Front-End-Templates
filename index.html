@@ -125,8 +125,7 @@
                     <i class="fab fa-facebook"></i>
                     <i class="fab fa-instagram"></i>
                 </div>
-                <p>40,dum dum road, Neelamber Vihar Complex,<br>
-                   kolkata-74,contact: 9831646991.
+                <p>Lorem ipsum dolor
                 </p>
                 <form action="#" method="get">
                     <input type="text" name="Name" id="name" placeholder="Enter Your Name" required>
@@ -157,9 +156,30 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+<script>
+   $(document).ready(function()
+   {
+     $('.icon').click(function()
+     {
+            $(this).toggleClass('fas fa-times');
+             $('.navigate').toggleClass('nav-toggle');
+        });
 
-   
-    <script src="style_links.json"></script>
+   $('services .cake-list .btn1').click(function()
+   {
+       $(this).addClass("active").siblings().removeClass("active");
+
+          let src = $(this).attr('data-src');
+          $('#cake-img').attr("src",src);
+       });
+    $(window).on('scroll load',function()
+    {
+        $(this).toggleClass('fas fa-times');
+        $('.navigate').toggleClass('nav-toggle');
+    });
+    
+});
+</script>
 
 </html>
 
