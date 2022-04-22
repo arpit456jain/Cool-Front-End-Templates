@@ -1,0 +1,2 @@
+define(['ko','jquery','../template/renderer'],function(ko,$,renderer){'use strict';function onFocus(e){e.target.select();}
+ko.bindingHandlers.autoselect={init:function(element,valueAccessor){var enabled=ko.unwrap(valueAccessor());if(enabled!==false){$(element).on('focus',onFocus);}}};renderer.addAttribute('autoselect');});

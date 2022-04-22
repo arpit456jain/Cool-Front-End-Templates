@@ -1,0 +1,4 @@
+define(['ko','underscore','mage/apply/main','../template/renderer'],function(ko,_,mage,renderer){'use strict';function setHtml(el,html){ko.utils.emptyDomNode(el);html=ko.utils.unwrapObservable(html);if(!_.isNull(html)&&!_.isUndefined(html)){if(!_.isString(html)){html=html.toString();}
+el.innerHTML=html;}}
+function applyComponents(el,ctx){ko.utils.arrayForEach(el.childNodes,ko.cleanNode);ko.applyBindingsToDescendants(ctx,el);mage.apply();}
+ko.bindingHandlers.bindHtml={init:function(){return{controlsDescendantBindings:true};},update:function(el,valueAccessor,allBindings,viewModel,bindingContext){setHtml(el,valueAccessor());applyComponents(el,bindingContext);}};renderer.addAttribute('bindHtml');});
