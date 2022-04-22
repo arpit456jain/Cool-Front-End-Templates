@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="26" viewBox="0 0 128 26">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ea2006;
+      }
+
+      .cls-2, .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        font-size: 16px;
+        font-family: Montserrat-Regular, Montserrat;
+      }
+    </style>
+  </defs>
+  <g id="E_coupons" data-name="E coupons" transform="translate(-1572 -2)">
+    <rect id="Rectangle_2753" data-name="Rectangle 2753" class="cls-1" width="128" height="26" rx="13" transform="translate(1572 2)"/>
+    <g id="Group_9634" data-name="Group 9634" transform="translate(-150 -1)">
+      <text id="E-Coupons" class="cls-2" transform="translate(1796 21)"><tspan x="-44.048" y="0">E-Coupons</tspan></text>
+      <path id="Icon_metro-tag" data-name="Icon metro-tag" class="cls-3" d="M16.5,1.928H11.148a1.862,1.862,0,0,0-1.143.473L3.367,9.04a.671.671,0,0,0,0,.947l5.746,5.746a.671.671,0,0,0,.947,0L16.7,9.094a1.862,1.862,0,0,0,.473-1.143V2.6a.671.671,0,0,0-.669-.669ZM13.156,7.282a1.339,1.339,0,1,1,1.339-1.339A1.339,1.339,0,0,1,13.156,7.282Z" transform="translate(1728.829 7.072)"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,5 @@
+define(['ko','../template/renderer'],function(ko,renderer){'use strict';ko.bindingHandlers.simpleChecked={'after':['attr'],init:function(element,valueAccessor){var isCheckbox=element.type==='checkbox',isRadio=element.type==='radio',updateView,updateModel;if(!isCheckbox&&!isRadio){return;}
+updateModel=function(){var modelValue=ko.dependencyDetection.ignore(valueAccessor),isChecked=element.checked;if(ko.computedContext.isInitial()){return;}
+if(modelValue.peek()===isChecked){return;}
+if(isRadio&&!isChecked){return;}
+modelValue(isChecked);};updateView=function(){var modelValue=ko.utils.unwrapObservable(valueAccessor());element.checked=!!modelValue;};ko.utils.registerEventHandler(element,'change',updateModel);ko.computed(updateModel,null,{disposeWhenNodeIsRemoved:element});ko.computed(updateView,null,{disposeWhenNodeIsRemoved:element});}};ko.expressionRewriting._twoWayBindings.simpleChecked=true;renderer.addAttribute('simpleChecked');renderer.addAttribute('simple-checked',{binding:'simpleChecked'});});
