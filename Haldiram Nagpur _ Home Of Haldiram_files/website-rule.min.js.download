@@ -1,1 +1,0 @@
-define(['uiClass'],function(Element){'use strict';return Element.extend({defaults:{scopeConfig:{}},process:function(customerData){var customer=customerData.get('customer');if(this.scopeConfig&&customer()&&~~customer().websiteId!==~~this.scopeConfig.websiteId&&~~customer().websiteId!==0){customerData.reload(['customer']);}}});});
