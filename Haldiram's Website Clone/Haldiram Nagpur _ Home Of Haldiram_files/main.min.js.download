@@ -1,0 +1,6 @@
+define(['underscore','jquery','./scripts'],function(_,$,processScripts){'use strict';var dataAttr='data-mage-init',nodeSelector='['+dataAttr+']';function init(el,config,component){require([component],function(fn){if(typeof fn==='object'){fn=fn[component].bind(fn);}
+if(_.isFunction(fn)){fn(config,el);}else if($(el)[component]){$(el)[component](config);}},function(error){if('console'in window&&typeof window.console.error==='function'){console.error(error);}
+return true;});}
+function getData(el){var data=el.getAttribute(dataAttr);el.removeAttribute(dataAttr);return{el:el,data:JSON.parse(data)};}
+return{apply:function(context){var virtuals=processScripts(!context?document:context),nodes=document.querySelectorAll(nodeSelector);_.toArray(nodes).map(getData).concat(virtuals).forEach(function(itemContainer){var element=itemContainer.el;_.each(itemContainer.data,function(obj,key){if(obj.mixins){require(obj.mixins,function(){var i,len;for(i=0,len=arguments.length;i<len;i++){$.extend(true,itemContainer.data[key],arguments[i](itemContainer.data[key],element));}
+delete obj.mixins;init.call(null,element,obj,key);});}else{init.call(null,element,obj,key);}});});},applyFor:init};});

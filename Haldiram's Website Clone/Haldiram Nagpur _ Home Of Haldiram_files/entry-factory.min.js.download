@@ -1,0 +1,1 @@
+define(['./entry'],function(LogEntry){'use strict';return{createEntry:function(message,level,messageData){return new LogEntry(message,level,messageData);}};});

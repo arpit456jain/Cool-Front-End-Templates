@@ -1,0 +1,1 @@
+define(['underscore'],function(_){'use strict';var LEVELS,CODE_MAP;LEVELS={NONE:0,ERROR:1,WARN:2,INFO:3,DEBUG:4,ALL:5};CODE_MAP=_.invert(LEVELS);return{getLevels:function(){return LEVELS;},getNameByCode:function(code){return CODE_MAP[code];}};});

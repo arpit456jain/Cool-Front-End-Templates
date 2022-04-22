@@ -1,0 +1,1 @@
+define(['underscore'],function(_){'use strict';return{buildQuery:function(data){var filters=[];_.each(data,function(value,key){filters.push({field:key,value:value,'condition_type':'in'});});return{searchCriteria:{filterGroups:[{filters:filters}]}};}};});

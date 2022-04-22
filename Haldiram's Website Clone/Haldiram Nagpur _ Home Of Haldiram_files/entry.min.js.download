@@ -1,0 +1,2 @@
+define(['./levels-pool'],function(logLevels){'use strict';function LogEntry(message,level,data){this.timestamp=Date.now();this.level=level;this.levelName=logLevels.getNameByCode(level);this.data=data;this.message=message;}
+return LogEntry;});
