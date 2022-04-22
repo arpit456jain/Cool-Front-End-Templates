@@ -1,0 +1,6 @@
+define(['jquery'],function($){'use strict';function KeyboardHandler(){var body=$('body'),focusState=false,tabFocusClass='_keyfocus',productsGrid='[data-container="product-grid"]',catalogProductsGrid=$(productsGrid),CODE_TAB=9;function onFocusInHandler(){focusState=true;body.addClass(tabFocusClass).off('focusin.keyboardHandler',onFocusInHandler);}
+function onClickHandler(){focusState=false;body.removeClass(tabFocusClass).off('click',onClickHandler);}
+function smartKeyboardFocus(){$(document).on('keydown keypress',function(event){if(event.which===CODE_TAB&&!focusState){body.on('focusin.keyboardHandler',onFocusInHandler).on('click',onClickHandler);}});if(catalogProductsGrid.length){body.on('focusin.gridProducts',productsGrid,function(){if(body.hasClass(tabFocusClass)){$(this).addClass('active');}});body.on('focusout.gridProducts',productsGrid,function(){$(this).removeClass('active');});}}
+function handleFocus(element){element.on('focusin.emulateTabFocus',function(){focusState=true;body.addClass(tabFocusClass);element.off();});element.on('focusout.emulateTabFocus',function(){focusState=false;body.removeClass(tabFocusClass);element.off();});}
+return{apply:smartKeyboardFocus,focus:handleFocus};}
+return new KeyboardHandler;});

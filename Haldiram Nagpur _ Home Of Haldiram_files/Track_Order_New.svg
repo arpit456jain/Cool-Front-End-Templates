@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="26" viewBox="0 0 128 26">
+    <g data-name="Track Order" transform="translate(-1712 -2)">
+        <rect data-name="Rectangle 2754" width="128" height="26" rx="13" transform="translate(1712 2)" style="fill:#ea2006"/>
+        <g data-name="Group 9635">
+            <g data-name="Group 9633">
+                <text data-name="Track Order" transform="translate(1785 20)" style="font-size:16px;font-family:Montserrat-Regular,Montserrat;fill:#fff"><tspan x="-46.976" y="0">Track Order</tspan></text>
+            </g>
+            <path data-name="Icon awesome-map-marker-alt" d="M5.383 15.677C.843 9.095 0 8.419 0 6a6 6 0 0 1 12 0c0 2.419-.843 3.095-5.383 9.677a.75.75 0 0 1-1.233 0zM6 8.5A2.5 2.5 0 1 0 3.5 6 2.5 2.5 0 0 0 6 8.5z" transform="translate(1722 7)" style="fill:#fff"/>
+        </g>
+    </g>
+</svg>

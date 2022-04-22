@@ -1,0 +1,6 @@
+define(['underscore','jquery'],function(_,$){'use strict';var scriptSelector='script[type="text/x-magento-init"]',dataAttr='data-mage-init',virtuals=[];function addVirtual(components){virtuals.push({el:false,data:components});}
+function setData(components,elem){var data=elem.getAttribute(dataAttr);data=data?JSON.parse(data):{};_.each(components,function(obj,key){if(_.has(obj,'mixins')){data[key]=data[key]||{};data[key].mixins=data[key].mixins||[];data[key].mixins=data[key].mixins.concat(obj.mixins);delete obj.mixins;}});data=$.extend(true,data,components);data=JSON.stringify(data);elem.setAttribute(dataAttr,data);}
+function processElems(components,selector){var elems,iterator;if(selector==='*'){addVirtual(components);return;}
+elems=document.querySelectorAll(selector);iterator=setData.bind(null,components);_.toArray(elems).forEach(iterator);}
+function getNodeData(node){var data=node.textContent;node.parentNode.removeChild(node);return JSON.parse(data);}
+return function(){var nodes=document.querySelectorAll(scriptSelector);_.toArray(nodes).map(getNodeData).forEach(function(item){_.each(item,processElems);});return virtuals.splice(0,virtuals.length);};});
