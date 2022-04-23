@@ -1,0 +1,99 @@
+(function () {
+    var helpersVersion = "1.9.0";
+
+    var dependencyName = "helpers-v" + helpersVersion.replace(/\./g,'-');
+
+    if (typeof (iperDependencies[dependencyName]) !== 'undefined')
+        return;
+
+    window.iperDependencies[dependencyName] = function () {
+        const IperEngagementCookiePrefix = "IPER_ENG_";
+
+        function seed() {
+            return Math.floor(65536 * (1 + Math.random())).toString(16).substring(1);
+        };
+
+        function generateGuid() {
+            return seed() + seed() + "-" + seed() + "-" + seed() + "-" + seed() + "-" + seed() + seed() + seed();
+        };
+
+        function getUrlParams() {
+            var vars = {};
+            window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        };
+
+        function getCookie(a) {
+            var b = document.cookie.match('(^|[^;]+)\\s*' + a + '\\s*=\\s*([^;]+)');
+            return b ? b.pop() : '';
+        };
+
+        function setCookie(name, value, expires, sameSite) {
+            if (typeof sameSite === "undefined") sameSite = "Lax";
+            value && value.toString().length > 512 || (expires ? document.cookie = name + "=" + value + ";expires=" + expires + ";path=/;SameSite=" + sameSite + ";" + (sameSite.toLowerCase() === "none" ? "Secure" : "") : document.cookie = name + "=" + value + ";path=/;SameSite=" + sameSite + ";" + (sameSite.toLowerCase() === "none" ? "Secure" : ""));
+        };
+
+        function getIperCookie(name) {
+            return getCookie(IperEngagementCookiePrefix + name);
+        };
+
+        function setIperCookie(name, value, expires, sameSite) {
+            setCookie(IperEngagementCookiePrefix + name, value, expires, sameSite);
+        };
+
+        function getClientCookie(name) {
+            return getCookie(name);
+        };
+
+        function loadScripts(scripts, scriptsLoadedCallback) {
+            var _scripts = scripts;
+            var _scriptsLoadedCallback = scriptsLoadedCallback;
+
+            var loadNextScript = function () {
+                if (_scripts.length === 0) {
+                    if (typeof _scriptsLoadedCallback === 'function') {
+                        _scriptsLoadedCallback();
+                    }
+                    return;
+                }
+
+                var script = _scripts.shift();
+                var headTag = document.getElementsByTagName('head')[0];
+                var scriptTag = document.createElement('script');
+                scriptTag.type = 'text/javascript';
+                scriptTag.src = script;
+                scriptTag.onload = function (e) {
+                    loadNextScript();
+                };
+                headTag.appendChild(scriptTag);
+            }
+
+            loadNextScript();
+        };
+
+        function getRandomNumberByWeights(spec) {
+            // Ex spec: {1:0.8, 2:0.1, 3:0.1}
+            // Probabilities must add up to 1
+            // Can use 2 values past decimal, ex: 0.33
+            var i, j, table = [];
+            for (i in spec) {
+                for (j = 0; j < spec[i] * 100; j++) {
+                    table.push(i);
+                }
+            }
+            return table[Math.floor(Math.random() * table.length)];
+        }
+
+        return {
+            generateGuid: generateGuid,
+            getUrlParams: getUrlParams,
+            getIperCookie: getIperCookie,
+            setIperCookie: setIperCookie,
+            getClientCookie: getClientCookie,
+            loadScripts: loadScripts,
+            getRandomNumberByWeights: getRandomNumberByWeights
+        };
+    };
+})();

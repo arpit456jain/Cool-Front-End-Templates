@@ -1,0 +1,732 @@
+(function () {
+    var discreetVersion = "1.9.0";
+
+    var dependencyName = "discreet-v" + discreetVersion.replace(/\./g,'-');
+
+    if (typeof (iperDependencies[dependencyName]) !== 'undefined')
+        return;
+
+    window.iperDependencies[dependencyName] = function () {
+        var _autofillEngine = (function () {
+            function processQuestion(question) {
+                var rules = question.hasOwnProperty('autofillRules') ? question.autofillRules : null;
+                if (rules === null) return;
+
+                //sorting the rules by orderId
+                rules.sort(function (a, b) {
+                    return a.order - b.order;
+                });
+
+                //check if a default is set and returns its index in the array
+                var defaultIndex = (function () {
+                    for (var i = 0; i < rules.length; i++) {
+                        var index = -1;
+                        if (rules[i].variableTypeId === 5) {
+                            index = i;
+                            break;
+                        }
+                    }
+                    return index;
+                })();
+
+                var defaultTag = null;
+
+                //Extract default rule, set default tag and push default rule to the end of the rules array
+                if (defaultIndex >= 0) {
+                    var defaultRule = rules[defaultIndex];
+                    defaultTag = defaultRule.answerTagId;
+                    rules.splice(defaultIndex, 1);
+                    rules.push(defaultRule);
+                }
+
+                var ruleFound = false;
+                var autofillString = "";
+                //process rules in the question
+                for (var i = 0; i < rules.length; i++) {
+                    var rule = rules[i];
+                    var rulesValid = evaluateRule(rule);
+                    if (rulesValid) {
+                        autofillString += '&' + question.autofillParameter + '=' + rule.answerTagId;
+                        ruleFound = true;
+                        break;
+                    }
+                }
+                //none of the rules returned true and the last rule is set as default	
+                if (!ruleFound && defaultTag !== null) {
+                    autofillString += '&' + question.autofillParameter + '=' + defaultTag;
+                }
+
+                return autofillString;
+            }
+            function evaluateRule(rule) {
+                var check = {
+                    cookieExists: function () { return iPerceptions.Wrapper.getCookie(rule.variableName) !== '' },
+                    jsVarIsPresent: function () { return typeof window[rule.variableName] !== 'undefined' },
+                    getCookie: function () { return iPerceptions.Wrapper.getCookie(rule.variableName) },
+                    contains: function (a, b) { return a.toLowerCase().indexOf(b.toLowerCase()) >= 0 },
+                    evaluateCustomCode: function (value) { 
+                        if (void 0 === value && 0 === value.length) return !1;
+                        try {
+                            return value();
+                        } catch (e) { }
+                        return !1;
+                    }
+                };
+                switch (rule.variableTypeId) {
+                    case 1: //cookie
+                        return cookieRulesValid(rule, check);
+                    case 2: //url
+                        return urlRulesValid(rule, check);
+                    case 3: //javaScriptVar
+                        return javaScriptVarRulesValid(rule, check);
+                    case 4: //customScript
+                        return customScriptValid(rule, check);
+                }
+            }
+            function cookieRulesValid(rule, check) {
+                return ((rule.conditionOperationTypeId === 1 && check.cookieExists())
+                    || (rule.conditionOperationTypeId === 2 && !check.cookieExists())
+                    || (rule.conditionOperationTypeId === 3 && check.cookieExists() && check.contains(check.getCookie(rule.variableName), rule.conditionValue))
+                    || (rule.conditionOperationTypeId === 4 && check.cookieExists() && !check.contains(check.getCookie(rule.variableName), rule.conditionValue))
+                    || (rule.conditionOperationTypeId === 5 && check.cookieExists() && check.getCookie() === rule.conditionValue)
+                    || (rule.conditionOperationTypeId === 6 && check.cookieExists() && check.getCookie() !== rule.conditionValue)
+                );
+            }
+            function urlRulesValid(rule, check) {
+                return ((rule.conditionOperationTypeId === 3 && check.contains(iPerceptions.Wrapper.pageUrl, rule.conditionValue))
+                    || (rule.conditionOperationTypeId === 4 && !check.contains(iPerceptions.Wrapper.pageUrl, rule.conditionValue))
+                    || (rule.conditionOperationTypeId === 5 && iPerceptions.Wrapper.pageUrl === rule.conditionValue)
+                    || (rule.conditionOperationTypeId === 6 && !iPerceptions.Wrapper.pageUrl !== rule.conditionValue));
+            }
+            function javaScriptVarRulesValid(rule, check) {
+                return ((rule.conditionOperationTypeId === 1 && check.jsVarIsPresent())
+                    || (rule.conditionOperationTypeId === 2 && !check.jsVarIsPresent())
+                    || (rule.conditionOperationTypeId === 3 && check.jsVarIsPresent() && check.contains(window[rule.variableName], rule.conditionValue))
+                    || (rule.conditionOperationTypeId === 4 && check.jsVarIsPresent() && !check.contains(window[rule.variableName], rule.conditionValue))
+                    || (rule.conditionOperationTypeId === 5 && check.jsVarIsPresent() && window[rule.variableName] === rule.conditionValue)
+                    || (rule.conditionOperationTypeId === 6 && check.jsVarIsPresent() && window[rule.variableName] !== rule.conditionValue));
+            }
+            function customScriptValid(rule, check) {
+                return check.evaluateCustomCode(rule.conditionValueFunc);
+            }
+            function processAutofills(autofillData) {
+                var autofillString = "";
+                for (var i = 0; i < autofillData.length; i++) {
+                    var qtn = autofillData[i];
+                    autofillString += processQuestion(qtn);
+                }
+                return autofillString;
+            }
+            return {
+                processAutofills: processAutofills
+            }
+        })();
+
+        var _appendedDataEngine = (function () {
+            function getCookiebyName(name) {
+                var pair = document.cookie.match(new RegExp(name + '=([^;]+)'));
+                return !!pair ? pair[1] : null;
+            };
+            function getUrlVars() {
+                var vars = {};
+                var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                    vars[key] = value;
+                });
+                return vars;
+            };
+            function checkjsVars(appendedDataVariableName) {
+                var typeJsVariable = typeof appendedDataVariableName;
+                if (typeJsVariable !== "function") {
+                    return window[appendedDataVariableName];
+                } else {
+                    return "[Script Error]";
+                }
+            };
+            function processAppendedData(appendedDataJsonObj) {
+                var outputList = [];
+                var output = "";
+                for (var i = 0; i < appendedDataJsonObj.length; i++) {
+                    addingAppendedVariableRuleToOutput(appendedDataJsonObj[i], outputList);
+                }
+                //concatenate list and return output
+                for (var j = 0; j < outputList.length; j++) {
+                    output += "&" + outputList[j];
+                }
+                return output;
+            };
+            function addingAppendedVariableRuleToOutput(appendedVariableData, outputList) {
+                if (appendedVariableData === null) return;
+
+                for (var i = 0; i < appendedVariableData.appendedDataRules.length; i++) {
+                    var appendedDataRule = appendedVariableData.appendedDataRules[i];
+                    var dataType = appendedDataRule.variableType;
+                    var appendedDataVariableName = appendedDataRule.variableValue;
+                    var appendedDataVariableFunc = appendedDataRule.variableValueFunc;
+                    var appendedVariableOutput = appendDataTypeToOutput(dataType, appendedDataVariableName, appendedDataVariableFunc);
+                    var formatedOutputForVariable = getFormatOutpuForVariable(appendedVariableData.parameter, appendedVariableData.variableName, appendedVariableOutput);
+
+                    if (formatedOutputForVariable) {
+                        outputList.push(formatedOutputForVariable);
+                    }
+                }
+            };
+            function appendDataTypeToOutput(dataType, appendedDataVariableName, appendedDataVariableFunc) {
+                var appendedDataVariableValue = "";
+                switch (dataType) {
+                    case "cookie":
+                        appendedDataVariableValue = getCookiebyName(appendedDataVariableName);
+                        break;
+                    case "url":
+                        appendedDataVariableValue = getUrlVars()[appendedDataVariableName];
+                        break;
+                    case "javaScriptVar":
+                        try {
+                            appendedDataVariableValue = checkjsVars(appendedDataVariableName);
+                            break;
+                        } catch (err) {
+                            appendedDataVariableValue = "[Script Error]";
+                        }
+                        break;
+                    case "customScript":
+                        try {
+                            appendedDataVariableValue = appendedDataVariableFunc();
+                        } catch (err) {
+                            appendedDataVariableValue = "[Script Error]";
+                        }
+                        break;
+                    default:
+                        appendedDataVariableValue = "[Error]";
+                }
+                return appendedDataVariableValue;
+            };
+            function getFormatOutpuForVariable(appendedDataParameter, appendedDataParameterName, appendedDataVariableValue) {
+                if (appendedDataVariableValue) {
+                    return appendedDataParameter + "=" + appendedDataParameterName + "~" + appendedDataVariableValue;
+                } else {
+                    return appendedDataParameter + "=" + appendedDataParameterName + "~" + "[No Value]";
+                }
+            };
+            return {
+                processAppendedData: processAppendedData
+            }
+        })();
+
+        function engagementCommonLogicBuilder(){
+            var engagementCommonLogic = {
+                openCollection: function(collectionUrl, collectionConfig) {
+                    var w; var h; 
+                    var left = 0;
+                    var top = 0;
+                    if (/(unix|linux)/i.test(navigator.userAgent)) {
+                        w = Math.min(screen.width, 1024); h = Math.min(screen.height, 768);
+                    } else { 
+                        if (collectionConfig && collectionConfig.useCustomWindowSize){
+                            w = collectionConfig.width;
+                            h = collectionConfig.height;
+                            var horizontalCenter = (screen.width  / 2) - (w / 2);
+                            var verticalCenter = (screen.height / 2) - (h / 2);
+                            left = horizontalCenter;
+                            top = verticalCenter;
+                        } else {
+                            w = screen.width;
+                            h = screen.height;
+                        }
+                    }
+                    window.open(collectionUrl, '', 
+                    'width=' + w 
+                    + ', height=' + h 
+                    + ', left=' + left 
+                    + ', top=' + top 
+                    + ', resizable=yes, toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, copyhistory=no');
+                }
+            };
+            return engagementCommonLogic;
+        }
+        var _engagementCommonLogic = (engagementCommonLogicBuilder)();
+
+        var _secondEngagementLogic = (function () {
+            function setupDomainChangedEvent() {
+                var movedKey = 'movedFromPage';
+                localStorage.setItem(movedKey, false);
+
+                window.addEventListener('beforeunload', function (e) {
+                    localStorage.setItem(movedKey, true);
+                    // the absence of a returnValue property on the event will guarantee the browser unload happens
+                    delete e['returnValue'];
+                });
+            };
+            function openSecondEngagementPopup() {
+                secondEngagementLogic.openWindow();
+                addWindowContent();
+            };
+            function addWindowContent() {
+                addPopupJS();
+            };
+            function addPopupJS() {
+                var popupJS = buildPopupJS(secondEngagementLogic.customization.JS);
+                var s = document.createElement("script");
+                s.type = "text/javascript";
+                s.innerHTML = popupJS;
+                try {
+                    secondEngagementLogic.windowHandle.document.body.appendChild(s);
+                }
+                catch (e) {
+                    var x = secondEngagementLogic.windowHandle.document.createElement("script");
+                    x.type = "text/javascript";
+                    x.innerHTML = popupJS;
+                    secondEngagementLogic.windowHandle.document.body.appendChild(x);
+                }
+            };
+            function buildPopupJS(customizationJS){
+                var popupLogic = function() {
+                    var secondEngagement = {
+                        collectionUrl: '_$collectionURL$_',
+                        config:  _$config$_,
+                        collectionConfig: _$collectionConfig$_,
+                        context:  _$context$_,
+                        surveyId:  _$surveyId$_,
+                        deviceId:  _$deviceId$_,
+                        languageId:  _$languageId$_,
+                        engagementConfig:  _$engagementConfig$_,
+                        html: '_$html$_',
+                        css: '_$css$_',
+                        isIE11: false,
+                        engagementCommonLogic: (_$engagementCommonLogic$_)(),
+                        runHook: function (hookName) {
+                            if (typeof secondEngagement.hooks !== 'undefined' && typeof secondEngagement.hooks[hookName] !== 'undefined')
+                                secondEngagement.hooks[hookName]();
+                        },
+                        openCollection: function() {
+                            secondEngagement.engagementCommonLogic.openCollection(secondEngagement.collectionUrl, secondEngagement.collectionConfig);
+                        },
+                        disableStartSurveyButton: function() {
+                            var startSurveyButton = document.getElementById('ip-start');
+                            startSurveyButton.disabled = true;
+                        },
+                        enableStartSurveyButton: function() {
+                            var startSurveyButton = document.getElementById('ip-start');
+                            startSurveyButton.onclick = secondEngagement.startSurveyEvent;
+                            startSurveyButton.disabled = false;
+                        },
+                        startSurveyEvent: function(){
+                            secondEngagement.openCollection();
+                            secondEngagement.close();
+                        },
+                        close: function(){
+                            window.close(self);
+                        },
+                        domainChangedSupportedByBrowser: function(){
+                            var isEdge = (document.documentMode || /Edge/.test(navigator.userAgent));
+                            return !isEdge && !secondEngagement.isIE11;
+                        },
+                        addHTML: function () {
+                            document.body.innerHTML = secondEngagement.html;
+                        },
+                        addCSS: function () {
+                            var s = document.createElement("style");
+                            s.type = "text/css";
+                            s.innerHTML = secondEngagement.css;
+                            document.head.appendChild(s);
+                        },
+                        addIE11Css: function (){
+                            var link = document.createElement("link");
+                            link.rel = "stylesheet";
+                            link.type = "text/css";
+                            link.href = secondEngagement.context.ie11CssPath;
+                            document.head.appendChild(link);
+                        },
+                        addEngagementToPage: function(){
+                            secondEngagement.addHTML();
+                            secondEngagement.addCSS();
+                            if (secondEngagement.isIE11){
+                                secondEngagement.addIE11Css();
+                            }
+                        },
+                        setupEvents: function(){
+                            if (secondEngagement.config.skipDelay) {
+                                secondEngagement.enableStartSurveyButton();
+                            } else if (secondEngagement.config.event === 'domainChange' && secondEngagement.domainChangedSupportedByBrowser()) {
+                                function domainHasChanged(n) {
+                                    switch(n.key){
+                                        case 'movedFromPage':
+                                            if(n.newValue && n.newValue == "true"){
+                                                secondEngagement.enableStartSurveyButton();
+                                                window.removeEventListener('storage', domainHasChanged);
+                                            }
+                                    }
+                                }
+                                window.addEventListener('storage', domainHasChanged);
+                            } else if (secondEngagement.config.event === 'delay' || (secondEngagement.config.event === 'domainChange' && !secondEngagement.domainChangedSupportedByBrowser())) {
+                                setTimeout(secondEngagement.enableStartSurveyButton, secondEngagement.config.delay);
+                            } else {
+                                secondEngagement.enableStartSurveyButton();
+                            }
+                        },
+                        setIE11BodyStyle: function(){
+                            var body = document.getElementsByTagName('body')[0];
+                            body.style.margin = "0px";
+                            body.style.overflow = "hidden";
+                        },
+                        init: function(){
+                            secondEngagement.isIE11 = secondEngagement.context.browser === "Internet Explorer" && secondEngagement.context.browserVersion === "11.0";
+                            if (secondEngagement.isIE11){
+                                secondEngagement.setIE11BodyStyle();
+                            }
+
+                            secondEngagement.addEngagementToPage();
+                            secondEngagement.runHook("secondEngagementAdded");
+                            secondEngagement.disableStartSurveyButton();
+                            secondEngagement.setupEvents();
+                        }
+                    };
+                
+                    (function(){ _$customizationJS$_ })();
+
+                    window["secondEngagement" + secondEngagement.surveyId] = secondEngagement;
+                
+                    secondEngagement.init();
+                };
+                
+                var engagementConfig = {
+                    siteId: secondEngagementLogic.engagement.config.siteId
+                };
+
+                var popupLogicStr = popupLogic.toString();
+                popupLogicStr = popupLogicStr.replace("_$collectionURL$_", secondEngagementLogic.collectionUrl.replace(/'/g, "\\'"));
+                popupLogicStr = popupLogicStr.replace("_$config$_", JSON.stringify(secondEngagementLogic.config));
+                popupLogicStr = popupLogicStr.replace("_$collectionConfig$_", secondEngagementLogic.engagement.config.collectionConfig ? JSON.stringify(secondEngagementLogic.engagement.config.collectionConfig) : "null");
+                popupLogicStr = popupLogicStr.replace("_$context$_", JSON.stringify(secondEngagementLogic.engagement.context));
+                popupLogicStr = popupLogicStr.replace("_$surveyId$_", JSON.stringify(secondEngagementLogic.engagement.surveyId));
+                popupLogicStr = popupLogicStr.replace("_$deviceId$_", JSON.stringify(secondEngagementLogic.engagement.deviceId));
+                popupLogicStr = popupLogicStr.replace("_$languageId$_", JSON.stringify(secondEngagementLogic.engagement.languageId));
+                popupLogicStr = popupLogicStr.replace("_$engagementConfig$_", JSON.stringify(engagementConfig));
+                popupLogicStr = popupLogicStr.replace("_$customizationJS$_", customizationJS);
+                popupLogicStr = popupLogicStr.replace("_$html$_", (secondEngagementLogic.customization.HTML || '').replace(/(\r\n|\n|\r)/gm, "").replace(/'/g, "\\'"));
+                popupLogicStr = popupLogicStr.replace("_$css$_", (secondEngagementLogic.customization.CSS || '').replace(/(\r\n|\n|\r)/gm, "").replace(/'/g, "\\'"));
+                popupLogicStr = popupLogicStr.replace("_$engagementCommonLogic$_", engagementCommonLogicBuilder.toString());
+                return "(" + popupLogicStr + ")();";
+            };
+            function getEngagementSetup(customization, config, collectionUrl, engagement) {
+                secondEngagementLogic.customization = customization;
+                secondEngagementLogic.config = config;
+                secondEngagementLogic.collectionUrl = collectionUrl;
+                secondEngagementLogic.engagement = engagement;
+            };
+            function isIE11()
+            {
+                return secondEngagementLogic.engagement.context.browser === "Internet Explorer" && secondEngagementLogic.engagement.context.browserVersion === "11.0";
+            };
+            function isChrome()
+            {
+                return secondEngagementLogic.engagement.context.browser === "Chrome";
+            };
+            var secondEngagementLogic = {
+                customization: null,
+                config: null,
+                collectionUrl: null,
+                engagement: null,
+                windowHandle: null,
+                isIE11: false,
+                isChrome: false,
+                openWindow: function() {
+                    var config = secondEngagementLogic.config;
+                    var leftsize = screen.width - config.width - 100;
+                    var topsize = screen.height - config.height - 150;
+    
+                    var width = config.width;
+                    var height = config.height + (secondEngagementLogic.isChrome ? 1 : 0);
+    
+                     if (secondEngagementLogic.isIE11){
+                         width = config.width - 4;
+                         height = config.height - 4;
+                     }
+    
+                    secondEngagementLogic.windowHandle = window.open("", "",
+                        "width=" + width
+                        + ", height=" + height
+                        + ", left=" + leftsize
+                        + ", top=" + topsize
+                        + ", resizable=no, toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, copyhistory=no");
+                    secondEngagementLogic.windowHandle.document.body.style="margin: 0px; overflow: hidden;";
+                },
+                launch: function (customization, config, collectionUrl, engagement) {
+                    getEngagementSetup(customization, config, collectionUrl, engagement);
+                    secondEngagementLogic.isIE11 = isIE11();
+                    secondEngagementLogic.isChrome = isChrome();
+
+                    if (config.event == "domainChange") {
+                        setupDomainChangedEvent();
+                    }
+                    openSecondEngagementPopup();
+                }
+            }
+            return secondEngagementLogic;
+        })();
+
+        var discreet = {
+            config: null,
+            engagement: null,
+            secondEngagementCustomization: null,
+            surveyId: null,
+            deviceId: null,
+            languageId: null,
+            hitCounts: {},
+            autofillEngine: _autofillEngine,
+            appendedDataEngine: _appendedDataEngine,
+            secondEngagementLogic: _secondEngagementLogic,
+            engagementCommonLogic: _engagementCommonLogic,
+            elements: {
+                engagementContainer: "engagement-container"
+            },
+            hooks: null,
+            setupEvents: function () {
+                var container = document.getElementById(discreet.elements.engagementContainer + "-" + discreet.engagement.surveyId);
+
+                var yesEvent = function () {
+                    discreet.runHook("yesClicked");
+                    discreet.close();
+                    discreet.nextStep();
+                };
+                var noEvent = function () {
+                    discreet.runHook("noClicked");
+                    discreet.close();
+                };
+                var closeEvent = function(){
+                    discreet.runHook("closed");
+                    discreet.close();
+                };
+
+                var yesButton = container.querySelectorAll("#ip-yes")[0];
+                if (yesButton) {
+                    yesButton.onclick = yesEvent;
+                    yesButton.addEventListener('keydown', function (event) {
+                        if (event.code === 'Space' || event.code === 'Enter') {
+                            yesEvent();
+                        }
+                    });
+                }
+
+                var noButton = container.querySelectorAll("#ip-no")[0];
+                if (noButton) {
+                    noButton.onclick = noEvent;
+                    noButton.addEventListener('keydown', function (event) {
+                        if (event.code === 'Space' || event.code === 'Enter') {
+                            noEvent();
+                        }
+                    });
+                }
+
+                var closeButton = container.querySelectorAll("#ip-close")[0];
+                if (closeButton) {
+                    closeButton.onclick = closeEvent;
+                    closeButton.addEventListener('keydown', function (event) {
+                        if (event.code === 'Space' || event.code === 'Enter') {
+                            closeEvent();
+                        }
+                    });
+                }
+            },
+            nextStep: function() {
+                discreet.increaseEngagementHitCount(3);
+                if (discreet.config.skipSecondEngagement){
+                    discreet.openCollection();
+                } else {
+                    discreet.invokeSecondEngagement();
+                }
+            },
+            increaseEngagementHitCount: function(traceId, siteId) {
+                siteId = typeof siteId !== 'undefined' ? siteId : discreet.engagement.config.siteId;
+                
+                var protocol = "https";
+                if (!discreet.hitCounts["traceId" + traceId]) {
+                    discreet.hitCounts["traceId" + traceId] = document.createElement("img");
+                    discreet.hitCounts["traceId" + traceId].src = protocol + "://" + discreet.engagement.context.domains.hitcount + "/Counter/counter_N.png"
+                    +"?surveyID=" + discreet.engagement.surveyId
+                    + "&siteID=" + siteId
+                    + "&langID=" + discreet.engagement.languageId
+                    + "&traceID=" + traceId;
+                }
+            },
+            openCollection: function(){
+                var collectionUrl = discreet.buildCollectionUrl();
+                discreet.engagementCommonLogic.openCollection(collectionUrl, discreet.engagement.config.collectionConfig);
+            },
+            invokeSecondEngagement: function () {
+                var collectionUrl = discreet.buildCollectionUrl();
+                discreet.secondEngagementLogic.launch(discreet.secondEngagementCustomization, discreet.engagement.config.secondEngagementConfig, collectionUrl, discreet.engagement);
+            },
+            buildCollectionUrl: function () {
+                var engagementContext = discreet.engagement.context;
+                var engagementConfig = discreet.engagement.config;
+                var engagementSurveySetup = discreet.engagement.surveySetup;
+                var surveyId = discreet.engagement.surveyId;
+                var collectionConfig = engagementConfig.collectionConfig;
+
+                var collectionDisplayMode = collectionConfig && collectionConfig.viewMode ? collectionConfig.viewMode : "1";
+
+                var collectionProtocol = "https";
+                var collectionDomain = engagementContext.domains.collection;
+                var collectionQueryString = engagementContext.collectionQueryString;
+                var rn = "&rn=" + surveyId;
+                var vm = "&vm=" + collectionDisplayMode;
+                var referrer = "&referrer=" + escape(document.location);
+                var res = "&res=" + screen.width + "x" + screen.height;
+                var siteId = "&siteID=" + engagementConfig.siteId;
+                var autofillParams = (typeof engagementSurveySetup.autofillData !== 'undefined' && engagementSurveySetup.autofillData.length > 0) ?
+                    discreet.autofillEngine.processAutofills(engagementSurveySetup.autofillData) : '';
+                var appendedDataParams = (typeof engagementSurveySetup.appendedData !== 'undefined' && engagementSurveySetup.appendedData.length > 0) ?
+                    discreet.appendedDataEngine.processAppendedData(engagementSurveySetup.appendedData) : '';
+                var skipStart = "&skipstart=" + (collectionConfig ? collectionConfig.skipWelcomePage : false);
+
+                var customData = "";
+                if (typeof discreet.engagement.customData != "undefined") {
+                    for (var sKey in discreet.engagement.customData){
+                        customData += "&" + sKey + "=" + encodeURIComponent(discreet.engagement.customData[sKey]);
+                    }
+                }
+
+                var collectionUrl = collectionProtocol + "://" 
+                + collectionDomain
+                + "?" + collectionQueryString
+                + rn
+                + vm
+                + referrer
+                + res
+                + autofillParams
+                + appendedDataParams
+                + customData
+                + siteId
+                + skipStart;
+
+                if (engagementSurveySetup.sGA) {
+                    collectionUrl = engagementSurveySetup.setupGA(collectionUrl);
+                }
+
+                return collectionUrl
+            },
+            runHook: function (hookName) {
+                if (typeof discreet.hooks !== 'undefined' && typeof discreet.hooks[hookName] !== 'undefined')
+                    discreet.hooks[hookName]();
+            },
+            getWindowWidthAndHeight: function () {
+                if (typeof (window.innerWidth) == 'number') {
+                    discreet.winWidth = window.innerWidth;
+                    discreet.winHeight = window.innerHeight;
+                }
+                else if (document.documentElement && (document.documentElement.clientWidth || document.documentElement.clientHeight)) {
+                    discreet.winWidth = document.documentElement.clientWidth;
+                    discreet.winHeight = document.documentElement.clientHeight;
+                }
+                else if (document.body && (document.body.clientWidth || document.body.clientHeight)) {
+                    discreet.winWidth = document.body.clientWidth;
+                    discreet.winHeight = document.body.clientHeight;
+                }
+                discreet.IPEInvHeight = 0;
+                discreet.IPELeftwinWidth = parseInt(discreet.winWidth - (discreet.config.width + 50));
+                discreet.IPETopwinHeight = parseInt(discreet.winHeight);
+                discreet.IPEfinishUP = false;
+            },
+            flyIPE: function () {
+                if ((discreet.IPEInvHeight <= discreet.config.height) && (discreet.IPEfinishUP == false)) {
+                    discreet.IPETopwinHeight = discreet.IPETopwinHeight - discreet.config.IPEspeed;
+                    discreet.IPEInvHeight = discreet.IPEInvHeight + discreet.config.IPEspeed;
+                    var invL = document.getElementById(discreet.elements.engagementContainer + "-" + discreet.engagement.surveyId);
+                    if (invL != null) {
+                        invL.style.top = discreet.IPETopwinHeight + "px";
+                        invL.style.zIndex = "100000";
+                    }
+                    discreet.setTimeout(discreet.flyIPE.bind(this), 1)
+                } else {
+                    discreet.IPEfinishUP = true;
+                    discreet.runHook("afterMove");
+                }
+            },
+            beginFly: function () {
+                var IPEinvLGL = document.getElementById(discreet.elements.engagementContainer + "-" + discreet.engagement.surveyId);
+                if (IPEinvLGL != null) {
+                    IPEinvLGL.style.position = "fixed";
+                    IPEinvLGL.style.left = discreet.IPELeftwinWidth + "px";
+                    IPEinvLGL.style.top = discreet.IPETopwinHeight + "px";
+                    IPEinvLGL.style.height = "0px";
+                    IPEinvLGL.style.display = "block";
+                    discreet.flyIPE();
+                }
+            },
+            clWin: function () {
+                var vL = document.getElementById(discreet.elements.engagementContainer + "-" + discreet.engagement.surveyId).style;
+                vL.visibility = "hidden";
+                vL.display = "none";
+
+                try {
+                    var ids = [discreet.elements.engagementContainer + "-" + discreet.engagement.surveyId];
+                    var d = null;
+                    for (var i = 0; i < ids.length; i++) {
+                        d = document.getElementById(ids[i]);
+                        if (d) {
+                            d.parentNode.removeChild(d);
+                        }
+                    }
+                } catch (ex) { }
+            },
+            addHTMLToDOM: function (html) {
+                var htmlElement = document.createElement('div');
+                htmlElement.id = "engagement-container-" + discreet.engagement.surveyId;
+                htmlElement.style.display = "none";
+                htmlElement.innerHTML = html;
+                document.body.appendChild(htmlElement);
+            },
+            addCSSToDOM: function (css) {
+                var styleElement = document.createElement('style');
+                styleElement.type = "text/css";
+                document.head.appendChild(styleElement);
+                styleElement.appendChild(document.createTextNode(css));
+            },
+            addEngagementToPage: function (customization) {
+                discreet.addHTMLToDOM(customization.HTML);
+                discreet.addCSSToDOM(customization.CSS);
+            },
+            setTimeout: function(method, milliseconds){
+                return setTimeout(method, milliseconds);
+            },
+            show: function () {
+                var engagementContainer = document.getElementById(discreet.elements.engagementContainer + "-" + discreet.engagement.surveyId);
+                engagementContainer.style.display = "block";
+                discreet.increaseEngagementHitCount(2);
+                discreet.runHook("afterShow");
+            },
+            close: function () {
+                var engagementContainer = document.getElementById(discreet.elements.engagementContainer + "-" + discreet.engagement.surveyId);
+                engagementContainer.style.display = "none";
+                try {
+                    engagementContainer.parentNode.removeChild(engagementContainer);
+                } catch(ex) {
+                }
+            },
+            getEngagementSetup: function(engagement){
+                discreet.config = engagement.config.engagementTypeConfig;
+                discreet.engagement = {
+                    surveyId: engagement.surveyId,
+                    deviceId: engagement.deviceId,
+                    languageId: engagement.languageId,
+                    config: engagement.config,
+                    context: engagement.context,
+                    surveySetup: engagement.surveySetup
+                };
+                discreet.secondEngagementCustomization = engagement.secondEngagementCustomization;
+                discreet.hooks = engagement.hooks;
+            },
+            init: function (engagement) {
+                discreet.getEngagementSetup(engagement);
+                discreet.addEngagementToPage(engagement.customization);
+                discreet.runHook("engagementAdded");
+                discreet.setupEvents();
+                discreet.getWindowWidthAndHeight();
+                discreet.show();
+                discreet.beginFly();
+                discreet.runHook("afterInit");
+            }
+        }
+
+        return discreet;
+    };
+})();
