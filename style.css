@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bitter&family=Space+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@300;500;600&family=Poppins:wght@300;500;700&family=Space+Mono:wght@400;700&display=swap');
+
 
 html{
   overflow-x: hidden;
@@ -12,11 +12,19 @@ body {
   background-color: rgb(19, 24, 44);
 }
 
+
 .wrapper_box{
   /* background-color: rgb(245, 93, 93); */
   max-width: 100%;
   overflow-x: hidden;
 }
+
+.logo-title{
+  font-family: 'Poppins';
+  color: white;
+}
+
+
 
   /* heading */
 h1 {
