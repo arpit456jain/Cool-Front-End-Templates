@@ -180,31 +180,55 @@ body{
 #contact button:hover{
     background-color: blue;
 }
-#back {
+
+/* Go to Top Link */
+
+/* #back-to-top {
 	z-index: 3;
-	position: sticky;
 	bottom: 12px;
 }
 
-#back button{
+#back-to-top button{
 	outline: none;
 	border: none;
 	position: relative;
 	border-radius: 50px;
-	left: 95%;
+	left: 94%;
 	width: 50px;
 	height: 50px;
 	background-color:#212529;
 	transition: all 0.3s ease-in-out;
 }
 
-#back button:hover{
+#back-to-top button:hover{
 	background-color:rgba(235, 89, 4, 0.986);
 }
-#back i{
+#back-to-top i{
 	color: white;
 	font-size: 1.2rem;
+} */
+
+
+#Move-topBtn{
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    font-size: 22px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: none;
+  }
+  
+#Move-topBtn:hover{
+  border-radius: 50px;
+  background-color:rgba(235, 89, 4, 0.986);
 }
+
 
  #contact .cont-head {
      text-align: center; 
