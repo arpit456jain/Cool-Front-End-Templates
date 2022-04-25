@@ -1,0 +1,472 @@
+@import url('https://fonts.googleapis.com/css2?family=Georama:wght@300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Georama', sans-serif;
+     box-sizing: border-box;
+     text-transform: capitalize;
+}
+html{
+   font-size: 15px;  
+   scroll-behavior: smooth;
+}
+html::-webkit-scrollbar{
+   width: .8rem;
+
+}
+
+section{
+   min-height: 100vh;
+   padding: 1rem 10%;
+   padding-top: 8rem;
+}
+
+header{
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   background: whitesmoke;
+   padding: 1rem;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   box-shadow: 0 .2rem .3rem lightgrey;
+}
+
+header .Logo img{
+   height: 6rem;
+}
+
+header .navigate ul{
+   display: flex;
+   align-items: center;
+   justify-content: center; 
+   list-style: none;
+}
+
+
+header .navigate ul li{
+   margin-left: 3rem;
+}
+
+header .navigate ul li a{
+   text-decoration: none;
+   font-size: 1.2rem;
+   color: rgb(255, 49, 221);
+   font-weight: 500;
+}
+
+header .navigate ul li a:hover,
+header .navigate ul li a.active{
+
+   color: black;
+}
+
+header .icon{
+
+   font-size: 2rem;
+   color: black;
+   cursor: pointer;
+   display: none;
+
+}
+header .navigate.nav-toggle{
+      transform: scaleY(1);
+      opacity: 1;
+
+}
+
+.fa-times{
+   transition: .5s ease; 
+   transform:rotate(180deg);
+}
+
+@media(max-width: 768px){
+
+   header .icon{
+      display: block;
+   }
+   header .navigate{
+      position: fixed;
+      top: 8rem;
+      left: 0;
+      width: 100%;
+      background: rgb(226, 226, 226);
+      transform: scaleY(0);
+      transform-origin: top;
+      opacity: 0;
+   }
+   header .navigate ul{
+
+      flex-flow: column;
+      padding: 1rem;
+
+   }
+   header .navigate ul li{
+      margin: 1rem;
+      width: 100%;
+   }
+   header .navigate ul li a{
+      display: block;
+      color: #ff64e5;
+      padding-left: 2rem;
+      border-right: .1rem solid #000;
+      font-size: 1rem;
+
+   }
+
+header .navigate ul li a:hover,
+header .navigate ul li a.active{
+     color: black;
+     border-color: rgb(248, 117, 161);
+   }
+   
+}
+
+/*----------------HOME---------------*/
+.home{
+   background: linear-gradient(rgba(214,155,155,0.5),rgba(0,0,0,0.5)),url("back_.jpg");
+   background-position: center;
+   background-size: cover;
+   color: #fff;
+   text-align: center ;
+
+}
+.home h1{
+   padding-top: 20%;
+   font-size: 4rem;
+   text-shadow: .2rem .2rem #fa4975;
+   letter-spacing: 1rem
+}
+.home p{
+
+   font-size: 1.5rem;
+   line-height: 2rem;
+}
+.home-btn{
+   padding: 1rem 0;
+}
+.home-btn button{
+   width: 15rem;
+   padding: 1rem .7rem;
+   border: none;
+   border-radius: .1rem;
+   font-size: 1.2rem;
+   font-weight: 600;
+   text-align: center;
+   letter-spacing: .1rem;
+   color: #fff;
+   background: #fa4975; 
+
+}
+.home-btn button i{
+   margin-left: .5rem;
+   font-size: 1rem;
+   text-align: center;
+   animation: animate .5s ease infinite;
+   transition: .5s ease;
+
+}
+@keyframes animate{
+   0%{
+      transform: translateX(-5px);
+   }
+   100%{
+      transform: translateX(5px);
+   }
+}
+@media(max-width: 768px){
+   .home h1{
+      font-size: 3rem;
+      padding-top: 50%;
+   }
+   .home p{
+      font-size: 1.2rem;
+   }
+}
+
+/* ----------------ABOUT---------- */
+.about{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.about .about-content{
+
+   width: 100%;
+   height: auto;
+   padding: 4rem 2rem;
+   box-shadow: 0 .2rem .5rem #b3b8b5;
+   background: goldenrod;
+   border-radius: 1rem;
+}
+.about-content h2{
+   font-size: 2.5rem;
+   color: #fff;
+   padding: .5rem 0;
+   letter-spacing: .2rem;
+   text-shadow: .2rem .2rem rgb(156, 46, 97);
+}
+.about-content p{
+   font-size: 1rem;
+   font-weight: 500;
+   line-height: 1.5rem;
+   color: white;
+}
+.about .image img{
+   width: 80%;
+   height: auto;
+   margin: 2rem;
+}
+.btn{
+   margin: 1rem 0;
+   width: 10rem;
+   padding: .6rem;
+   border-radius: .2rem;
+   border: none;
+   background:  rgb(156, 46, 97);
+   font-size: 1rem;
+   font-weight: 600;
+   letter-spacing: .1rem;
+   
+}
+.about-content button i{
+   margin-left: .5rem;
+   font-size: 1rem;
+   text-align: center;
+   animation: animate .5s ease infinite;
+   transition: .5s ease;
+
+}
+@media(max-width: 768px){
+    .about{
+       display: block;
+       justify-content: space-between;
+       align-items: center;
+    } 
+
+}
+
+/* -----------------PRODUCT--------------------- */
+.title{
+   text-align: center;
+   font-size: 3rem;
+   padding: .5rem;
+   color: #000000;
+}
+.title span{
+   color: rgb(0, 0, 0);
+}
+.product .inner-cake-row{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+.product .inner-cake-col{
+   max-width: 1300px;
+   background: #fff;
+   height: 34rem;
+   flex: 1 1 20rem;
+   padding: 1.2rem;
+   margin: 1.5rem;
+   border-radius: 1rem;
+   box-shadow: 0 .3rem .6rem rgb(160, 163, 155);
+   text-align: center;
+}
+.product .inner-cake-col:hover{
+   transform: translateY(-5rem);
+   transition: .5rem ease;
+}
+
+.product .inner-cake-col img{
+   height: 31rem;
+   width: 100%;
+   object-fit: cover; 
+}
+.product .inner-cake-col h2{
+   color: black;
+   font-size: 1.2rem;
+   font-weight: 800;
+}
+@media(max-width:768px){
+   .title{
+      text-align: center;
+      font-size: 2rem;
+   }
+}
+
+/* Services */
+.services .cake-list{
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 1rem 0;
+   margin: 1.5rem 0;
+   border-top: .2rem solid rgb(144, 49, 221);
+   border-bottom: .2rem solid rgb(144, 49, 221);
+}
+.services .cake-list .btn1{
+   width: 8rem;
+   padding: .8rem;
+   border-radius: .4rem;
+   border: none;
+   background: #33e5f1;
+   color: #fff;
+   font-size: .8rem;
+   font-weight: 600;
+   letter-spacing: .1rem;
+   margin: .5rem;
+   text-align: center;
+}
+.services .cake-list .btn1.active,
+.services .cake-list .btn1:hover{
+   background: rgb(73, 148, 190);
+   transition: .5s ease;
+   cursor: pointer;
+}
+.services .cake-row{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+.services .cake-row .image{
+   margin: 1.5rem;
+   padding: 1rem;
+   flex: .5 .5 12rem;
+   border-radius: 1rem;
+   box-shadow: 0 .5rem .1rem rgb(123, 121, 133);
+}
+.services .cake-row .image img{
+   width: 70%;
+   height: 20rem;
+   object-fit: cover;
+}
+.services .cake-content{
+
+   flex: 1 1 20rem;
+}
+.services .cake-content .cake-info{
+   padding: 1rem 4rem;
+}
+.services .cake-content .cake-info h3{
+   font-size: 1.5rem;
+   color: rgb(155, 50, 18);
+   
+}
+.services .cake-content .cake-info a i{
+   padding: 1rem 1rem 0 0;
+   font-size: 1.5rem;
+   color: rgb(95, 17, 102);
+}
+.services .cake-content .cake-info a{
+   font-size: 1rem;
+   font-weight: 600;
+   color: rgb(223, 128, 241);
+   cursor: pointer;
+}
+.services .cake-content .cake-info a:hover{
+   text-decoration: underline;
+}
+
+@media(max-width:768px){
+   .services .cake-list .btn1{
+      display: inline-block;
+      margin: 2rem;
+      font-size: .6rem;
+   }
+
+}
+
+/* ------------------CONTACT---------------- */
+
+.content{
+   padding: top 8.5em;
+}
+.cake-contact{
+   width: 100%;
+   background: whitesmoke;
+
+}
+.cake-contact-row{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+}
+
+.cake-contact-col{
+   margin: 2rem;
+   flex: 1 1 20rem;
+   text-align: center;
+
+}
+.cake-contact-col .imgs{
+   border: 1px solid white;
+}
+.cake-contact-col .img{
+   width: 50%;
+   height: auto;
+   margin: 1.5rem;
+   padding: 1rem;
+   flex: 1 1 21rem;
+   border: 1px solid transparent;
+   border-radius: 1rem;
+}
+.cake-contact-col h1{
+   padding: 1rem 0;
+   color: #ff64e5;
+   letter-spacing: .1rem;
+}
+.cake-contact-col .social{
+   padding: .8rem;
+   border: none;
+   border-radius: 1rem;
+   background: #ff64e5;
+   color: #fff;
+   font-size: 1.5rem;
+
+}
+
+.cake-contact-col .social i:hover{
+   background-color: aqua;
+   color: #fff;
+   transition: .5s ease;
+}
+.cake-contact-col p{
+   padding: .5rem 0;
+   line-height: 1.5rem;
+   color: grey;
+
+}
+.cake-contact-col input,
+.cake-contact-col textarea{
+   width: 80%;
+   padding: 1rem;
+   margin-bottom: 1.2rem;
+   border: none;
+   border-bottom: .1rem dotted #ff64e5;
+}
+.cake-contact-col textarea{
+   resize: none;
+}
+.copyright{
+   margin-top: 5rem;
+   padding: 3rem;
+   text-align: center;
+   background: grey;
+}
+
+.copyright i{
+   font-size: 2rem;
+   color: #fff;
+}
+.copyright p{
+   letter-spacing: .1rem;
+   font-size: 1.5rem;
+   color: white;
+}
