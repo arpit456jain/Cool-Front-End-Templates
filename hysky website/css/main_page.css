@@ -4,7 +4,7 @@
 
 html{
     scroll-behavior: smooth;
-
+    overflow-x: hidden;
 }
 
 body{
@@ -220,18 +220,27 @@ body{
     margin: auto;
 }
 @media only screen and (max-width: 1500px){
+    body{
+    overflow-x: hidden;
+    }
     .sub_inner{
         flex-basis: 46%;
         /* border: 2px solid red; */
     }
 }
 @media only screen and (max-width: 879px){
+    body{
+    overflow-x: hidden;
+    }
     .sub_inner{
         flex-basis: 100%;
         padding: 2rem 0rem;
     }
 }
 @media only screen and (max-width: 530px){
+    body{
+    overflow-x: hidden;
+    }
     .container1{
         width: 90%;
     }
@@ -286,6 +295,9 @@ body{
 
 }
 @media only screen and (max-width: 530px){
+    body{
+    overflow-x: hidden;
+    }
     .services_text_outer{
         width: 95%;  
     }
