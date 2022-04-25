@@ -58,7 +58,7 @@ p {
 }
 
 .title-image {
-  width: 400px;
+  width: 80%;
   position: relative;
   left: 120px;
 }
@@ -174,11 +174,15 @@ p {
 
 @media (max-width:992px) {
   .title-image {
-    width: 70%;
+    width: 400px;
     position: relative;
     left: 0;
   }
   #title {
     text-align: center;
+  }
+  .navbar-nav .nav-item a{
+    font-size: 1.4rem;
+    font-weight: bold;
   }
 }

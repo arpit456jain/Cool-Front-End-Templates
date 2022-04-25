@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bitter&family=Space+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@300;500;600&family=Poppins:wght@300;500;700&family=Space+Mono:wght@400;700&display=swap');
+
 
 html{
   overflow-x: hidden;
@@ -10,6 +10,18 @@ body {
   margin: 0 auto;
   padding: auto;
   background-color: rgb(19, 24, 44);
+}
+
+
+.wrapper_box{
+  /* background-color: rgb(245, 93, 93); */
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.logo-title{
+  font-family: 'Poppins';
+  color: white;
 }
 
 
@@ -47,6 +59,7 @@ h1 {
 
 /* CARDS DESIGN STARTS  */
 
+
 .image{
   padding: .5em;
   transition: 0.3s;
@@ -56,6 +69,7 @@ h1 {
 }
 
 .styles {
+  /* background-color: rgb(226, 135, 229); */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -65,9 +79,13 @@ h1 {
   flex-wrap: wrap;
 }
 
-.stylebox {
+#cardd{
+  /* background-color: rgb(70, 131, 156); */
   display: flex;
-  flex-direction: column;
+}
+.stylebox {
+  display: block;
+  /* flex-direction: column; */
   justify-content: center;
   flex-wrap: wrap;
   overflow: hidden;
@@ -75,11 +93,13 @@ h1 {
   padding: .2rem;
   text-align: center;
   font-family: 'Bitter', sans-serif;
-  margin: 1.5rem;
+  margin: 1.5rem auto;
   border-radius: 5px;
   border: none;
   width: 20rem;
   transition: .2s;
+  /* margin-left: 4rem; */
+  text-align: center;
 }
 .stylebox:hover {
   
@@ -91,6 +111,11 @@ h1 {
   height: 13rem;
   border-radius: .5em;
   transition: .4s;
+}
+
+.stylebox .image img{
+  height: 100%;
+  width: 100%;
 }
 
 .stylebox .image:hover{
@@ -127,6 +152,48 @@ button{
   color: #fff;
 }
 
+
+
+@media screen  and (max-width:992px){
+  /* .stylebox{
+    margin:2rem 2rem;
+  } */
+ 
+}
+
+@media screen  and (max-width:849px){
+  .stylebox{
+    margin:2rem 1rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .styles {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 10vmin;
+  }
+  .stylebox {
+    padding: .3rem;
+    margin: 2rem auto;
+    width: 18rem;
+    margin-bottom: 1.5rem;
+  }
+  .stylebox .image {
+    overflow: hidden;
+    width: 17rem;
+    height: 12rem;
+    padding: 0;
+    margin: 0;
+    padding: .5em .5em 0 .5em;
+    border-radius: 0.5rem;
+    transition: .3s;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .styles {
     display: flex;
@@ -138,7 +205,7 @@ button{
   }
   .stylebox {
     padding: .3rem;
-    margin: auto;
+    margin: 2rem auto;
     width: 18rem;
     margin-bottom: 1.5rem;
   }
