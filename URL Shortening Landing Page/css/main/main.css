@@ -1,0 +1,215 @@
+.main{
+    overflow-x: hidden;
+}
+.main-info {
+    position: relative;
+    height: 670px;
+    padding: 70px 0;
+}
+.main-description {
+    width: 50%;
+    margin-right: 30px;  
+}
+.main-description .text{
+    max-width: 40ch;
+    margin: 10px 0 36px 0;
+}
+
+.illustration {
+    width: 733px;
+    height: 482px;
+    position: absolute;
+    top: 28px;
+    right: -265px;
+    object-fit: cover;
+}
+
+.section-bg{
+    background-color: #f0f1f6;
+    padding: 105px 0 105px 0;
+    position: relative;
+}
+
+.section-bg .container > .text {
+    max-width: 45ch;
+    margin: 32px auto 92px auto;
+}
+
+.shorten{
+    position: absolute;
+    top: -94px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.cards{
+    gap: 32px;
+}
+
+.card > div{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 80px 42px 42px;
+    position: relative;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card:nth-child(2){
+    margin-top: 56px;
+
+}
+
+.card:nth-child(2),
+.card:nth-child(3){
+    position: relative;
+}
+.card:nth-child(2)::before,
+.card:nth-child(3)::before{
+    content: "";
+    height: 8px;
+    width: 40px;background-color: var(--color-primary-1);
+    position: absolute;
+}
+
+.card:nth-child(2)::before{
+    top: 100px;
+}
+.card:nth-child(3)::before{
+    top: 52px;
+}
+.card:nth-child(2)::before,
+.card:nth-child(3)::before{
+    left: -32px;
+}
+
+.card:nth-child(2)::after{
+   top: 100px;
+   right: -41px;
+}
+
+.card:nth-child(3){
+    margin-top: 104px;
+}
+
+.card h3{
+    margin-bottom: 24px;
+}
+.card p{
+    max-width: 40ch;
+    font-size: 1.5rem;
+}
+
+.icon{
+    width: 89px;
+    height: 89px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-primary-2);
+    border-radius: 89px;
+    position: absolute;
+    top: -49px;
+}
+
+.icon img{
+    width: 42px;
+    height: 42px;
+}
+
+.section-bg-boost {
+    background: url("../../images/bg-boost-desktop.svg") center/cover no-repeat var(--color-primary-2);
+    padding: 54px 42px;
+    text-align: center;
+}
+
+.section-bg-boost h2{
+    margin-bottom: 24px;
+    color: #fff
+}
+
+@media (max-width:993px){
+    .main-info{
+        padding: 572px 0 130px 0;
+        height: auto;
+    }
+
+    .main-description{
+        text-align: center;
+        margin: 0;
+    }
+    .main-description .text{
+        max-width: 60ch;
+        margin: 15px auto 24px auto;
+    }
+    .main-description{
+        width: auto;
+    }
+
+    .illustration{
+        position: absolute;
+        top: 28px;
+        left: 50%;
+        object-fit: cover;
+        transform: translateX(-50%);
+    }
+    .section-bg{
+        padding: 110px 0 80px 0;
+    }
+
+    .shorten{
+        top: -58px
+    }
+    .cards{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .card{
+        text-align: center;
+        
+    }
+    .card > div{
+        padding: 72px 32px 42px;
+    }
+    .card:nth-child(2)::before,
+    .card:nth-child(3)::before{
+        content: "";
+        height: 48px;
+        width: 8px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .card:nth-child(2)::before,
+    .card:nth-child(3)::before {
+        top: -88px;
+        
+    }
+    .card:nth-child(3){
+        margin-top: 56px;
+    }
+    .icon{
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .card h3{
+        margin-bottom: 16px;
+    }
+}
+
+@media (max-width:785px){
+    .shorten{
+        top: -77px
+    }
+}
+
+@media (max-width:560px){
+    .main-info{
+        padding-top: 427px;
+    }
+    .illustration {
+        width: 505px;
+        height: 335px;
+    }
+    .section-bg-boost{
+        background-image: url("../../images/bg-boost-mobile.svg");
+    }
+}

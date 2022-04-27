@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Shortly URL shortening API </title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+  <header class="header">
+    <div class="container flex">
+      <div class="header-logo logo">
+        <img src="./images/logo.svg" alt="Shortening Logo" width="121" height="33">
+      </div>
+      <div class="navbar-mobile" width="33" height="33" aria-expanded="false">
+        <img src="./images/bars-solid.svg" alt="Menu mobile">
+      </div>
+      <nav class="flex navbar">
+        <ul class="flex">
+          <li><a href="#" class="navbar-link">Features</a></li>
+          <li><a href="#"class="navbar-link">Pricing</a></li>
+          <li><a href="#"class="navbar-link">Resources</a></li>
+        </ul>
+        <ul class="flex">
+          <li><a href="#"class="navbar-link">Login</a></li>
+          <li><a href="#" class="btn-small">Sign Up</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="main">
+    <section class="main-info container flex">
+      <div class="main-description">
+        <h1 class="title-xl color-neutral-3">
+          More than just shorter links
+        </h1>
+        <p class="text">
+          Build your brand’s recognition and get detailed insights 
+          on how your links are performing.
+        </p>
+          <a href="#" class="btn-medium"> Get Started</a>
+      </div>
+      <img src="./images/illustration-working.svg" alt="" width="733" height="482" class="illustration">
+    </section>
+    <section class="section-bg">
+      <div class="container shorten">
+          <form action="" class="form-bg">
+            <input type="text" class="url-input" placeholder="Shorten a link here..." data-urlInput>
+            <button class="btn-medium btn" data-shorten>Shorten It!</button>
+          </form>
+          <p class="form-tips" data-formTips>Please add a link</p>
+      </div>
+      <div class="container url-list">
+        <ul data-linkList>
+        </ul>
+      </div>
+      <div class="container">
+        <h2 class="title-m color-neutral-3 text-center">Advanced Statistics</h2>
+        <p class="text text-center">Track how your links are performing across the web with our 
+          advanced statistics dashboard.</p>
+          <div class="flex cards">
+            <div class="card">
+              <div>
+                <div class="flex icon">
+                  <img src="./images/icon-brand-recognition.svg" alt="">
+                </div>
+                <h3 class="title-s color-neutral-3">Brand Recognition</h3>
+                <p class="text">
+                  Boost your brand recognition with each click. Generic links don’t mean a thing. Branded links help instil confidence in your content.</p>
+              </div>
+            </div>
+            <div class="card">
+              <div>
+                <div class="flex icon">
+                  <img src="./images/icon-detailed-records.svg" alt="">
+                </div>
+                <h3 class="title-s color-neutral-3">Detailed Records</h3>
+                <p class="text">Gain insights into who is clicking your links. Knowing when and where people engage with your content helps inform better decisions.</p>
+              </div>
+            </div>
+            <div class="card">
+              <div>
+                <div class="flex icon">
+                  <img src="./images/icon-fully-customizable.svg" alt="">
+                </div>
+                <h3 class="title-s color-neutral-3">Fully Customizable</h3>
+                <p class="text">Improve brand awareness and content discoverability through customizable inks, supercharging audience engagement.</p>
+              </div>
+              </div>
+          </div>
+      </div>
+    </section>
+    <section class="section-bg-boost">
+      <h2 class="title-m">Boost your links today</h2>
+      <a href="#" class="btn-medium">Get Started</a>
+    </section>
+  </main>
+  <footer class="footer-bg">
+    <div class="container flex">
+      <div class="logo">
+        <img src="./images/logo-white.svg" alt="Shortening Logo" width="121" height="33">
+      </div> 
+      <div class="flex footer-content">
+        <div>
+          <div>
+            <span class="list-title">Features</span>
+            <ul class="footer-list">
+              <li class="list-item"><a href="#">Link Shortening</a></li>
+              <li class="list-item"><a href="#">Branded Links</a></li>
+              <li class="list-item"><a href="#">Analytics</a></li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <span class="list-title">Resources</span>
+          <ul class="footer-list">
+            <li class="list-item"><a href="#">Blog</a></li>
+            <li class="list-item"><a href="#">Developers</a></li>
+            <li class="list-item"><a href="#">Support</a></li>
+          </ul>
+        </div>
+        <div>
+          <span class="list-title">Company</span>
+          <ul class="footer-list">
+            <li class="list-item"><a href="#">About</a></li>
+            <li class="list-item"><a href="#">Our Team</a></li>
+            <li class="list-item"><a href="#">Careers</a></li>
+            <li class="list-item"><a href="">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <ul class="flex social-list">
+            <li>
+              <a href="#" class="link-social" alt="Facebook">
+                <img src="./images/icon-facebook.svg" alt="" class="icon-main">
+                <img src="./images/icon-facebook-blue.svg" alt="">
+              </a>
+          </li>
+            <li>
+              <a href="#" class="link-social" alt="Twitter">
+                <img src="./images/icon-twitter.svg" alt="" class="icon-main">
+                <img src="./images/icon-twitter-blue.svg" alt="">
+              </a>
+              </li>
+            <li>
+              <a href="#" class="link-social" alt="Pinterest">
+                <img src="./images/icon-pinterest.svg" alt="" class="icon-main">
+                <img src="./images/icon-pinterest-blue.svg" alt="">
+              </a>
+              </li>
+            <li>
+              <a href="#" class="link-social" alt="Instagram">
+                <img src="./images/icon-instagram.svg" alt="" class="icon-main">
+                <img src="./images/icon-instagram-blue.svg" alt="">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      </div>
+    <div class="attribution">
+     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+     Coded by <a href="https://github.com/Abh1ShekSingh" target="_blank" target="_blank" rel="noopener noreferrer">Abhishek</a>.
+   </div>
+  </footer>
+  <script src="./js/index.js"></script>
+</body>
+</html>

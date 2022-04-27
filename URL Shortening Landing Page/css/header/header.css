@@ -1,0 +1,18 @@
+.header{
+    padding: 54px 5px;
+}
+.header .container{
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.header-logo {
+    margin-right: 48px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px){
+    .header{
+        padding: 40px 0;
+    }
+}
