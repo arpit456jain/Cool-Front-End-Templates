@@ -10,43 +10,46 @@
   <title>Technology</title>
 </head>
 
-<body style="background-color:#000000">
-  <header class="text-gray-600 body-font" style="background-color: #313436;">
-    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-      <a
-        class="flex order-first lg:order-none title-font font-medium items-center text-gray-900 lg:items-center lg:justify-center mb-4 md:mb-0">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round"
-          stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-blue-500 rounded-full"
-          viewBox="0 0 24 24">
-          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-        </svg>
-        <span class="ml-3 text-xl" style="color: white;font-weight: bold;">Technology</span>
-      </a>
-      <nav class="flex flex-wrap items-center text-base md:ml-auto">
-        <a href="/" class="mr-5 hover:text-gray-900" style="color: white;font-weight: bold;">Home</a>
-        <a href="/" class="mr-5 hover:text-gray-900" style="color: white;font-weight: bold;">About</a>
-        <a href="/" class="mr-5 hover:text-gray-900" style="color: white;font-weight: bold;">Contact</a>
-        <a href="/" class="hover:text-gray-900" style="color: white;font-weight: bold;">Services</a>
-      </nav>
-      <div class="lg:w-1/5 inline-flex lg:justify-end ml-5 lg:ml-0">
-        <button
-          class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Notice
-          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            class="w-4 h-4 ml-1" viewBox="0 0 24 24">
-            <path d="M5 12h14M12 5l7 7-7 7"></path>
-          </svg>
-        </button>
-      </div>
+<body style="background-color:whitesmoke">
+  
+  <nav class="nav flex flex-wrap items-center justify-between px-4 shadow-md">
+    <div class="flex flex-no-shrink items-center mr-6 gap-3 py-3 text-grey-darkest">
+      <img src="./images/logo.png" alt="" width="10%">
+      <span class="font-semibold text-2xl tracking-lose">Technology </span>
     </div>
-  </header>
+  
+    <input class="menu-btn hidden" type="checkbox" id="menu-btn">
+    <label class="menu-icon block cursor-pointer md:hidden px-2 py-4 relative select-none" for="menu-btn">
+      <span class="navicon bg-grey-darkest flex items-center relative"></span>
+    </label>
+  
+    <ul class="menu border-b md:border-none flex justify-end list-reset m-0 w-full md:w-auto">
+      <li class="border-t md:border-none">
+        <a href="/" class="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker font-bold">Home</a>
+      </li>
+      
+      <li class="border-t md:border-none">
+        <a href="#" class="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker">About</a>
+      </li>
+      
+      <li class="border-t md:border-none">
+        <a href="#" class="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker">Services</a>
+      </li>
+      <li class="border-t md:border-none">
+        <a href="#" class="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker">Contact</a>
+      </li>
+      
+    </ul>
+  </nav>
+
+
   <section class="text-gray-600 body-font">
     <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
-      <img class="lg:w-4/6 md:w-5/6 w-5/6 mb-10 object-cover object-center rounded main_img" alt="hero"
-        src="img/tech.jpg">
-      <div class="text-center lg:w-2/3 w-full">
-        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900 heading">Technology is best when it
+      
+      <div class="hero text-center lg:w-2/3 w-full">
+        <h1 class=" sm:text-6xl text-5xl  mb-4 font-medium heading leading-relaxed"><span style="color: #ffb347;">Technology</span> is best when it
           brings people together.</h1>
-        <p class="mb-8 leading-relaxed sub_text" style="color:white"> Technology is something that is gaining increasing
+        <p class="mb-8 leading-relaxed sub_text leading-6 text-grey-600 mt-10"> Technology is something that is gaining increasing
           importance in the world today. Wherever you look, there is technology. Even the device you are using to read
           this article uses technology. In simple words, technology is when we use science to apply it for practical
           purposes.Technology has many effects. It has helped develop more advanced economies (including today's global
@@ -56,21 +59,23 @@
           technology. Examples include the rise of the notion of efficiency in terms of human productivity, and the
           challenges of bioethics.</p>
       </div>
+      <img src="./images/Tech.svg" alt="">
     </div>
     </div>
   </section>
 
-  <section class="text-gray-600 body-font" style="background-color: #000000;">
-    <h1 class="sm:text-3xl text-2xl font-medium title-font text-center text-gray-900" style="color:aliceblue">CEO's of
-      Top Tech Companies </h1>
+
+  <section class="text-gray-600 body-font" style="background-color: white;">
+    <h1 class="secHead sm:text-3xl text-2xl font-medium text-center text-gray-900">CEO's of
+      <span style="color: #ffb347;">Top Tech</span> Companies </h1>
     <div class="container px-5 py-24 mx-auto card">
       <div class="flex flex-wrap -m-4">
 
         <div class="p-4 md:w-1/3">
           <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden"
             style="background-color: white;">
-            <img class="lg:h-48 md:h-36 w-full object-cover object-center ceo_img"
-              src="data:image/jpeg;base64,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"
+            <img class=" w-full object-cover object-center ceo_img"
+              src="https://pbs.twimg.com/profile_images/864282616597405701/M-FEJMZ0_400x400.jpg"
               alt="blog">
             <div class="p-6">
               <h2 class="tracking-widest text-xs title-font font-medium text-black-400 mb-1 ceo_name">Sundar Pichai</h2>
@@ -107,11 +112,12 @@
             </div>
           </div>
         </div>
+
         <div class="p-4 md:w-1/3">
           <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden"
             style="background-color: white;">
-            <img class="lg:h-48 md:h-36 w-full object-cover object-center ceo_img"
-              src="https://img.caixin.com/2018-11-24/1543035822545341.jpg" alt="blog">
+            <img class=" w-full object-cover object-center ceo_img"
+              src="https://pbs.twimg.com/profile_images/1221837516816306177/_Ld4un5A_400x400.jpg" alt="blog">
             <div class="p-6">
               <h2 class="tracking-widest text-xs title-font font-medium text-black-400 mb-1">Satya Nadella</h2>
               <h1 class="title-font text-lg font-medium text-gray-900 mb-3">CEO of Microsoft</h1>
@@ -147,12 +153,12 @@
             </div>
           </div>
         </div>
+
         <div class="p-4 md:w-1/3">
           <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden"
             style="background-color: white;">
-            <img class="lg:h-48 md:h-36 w-full object-cover object-center ceo_img"
-              src="data:image/jpeg;base64,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"
-              alt="blog">
+            <img class=" w-full object-cover object-center ceo_img"
+              src="https://i0.wp.com/thenfapost.com/wp-content/uploads/2021/04/Tim-Cook.jpg?fit=400%2C400&ssl=1" alt="blog">
             <div class="p-6">
               <h2 class="tracking-widest text-xs title-font font-medium text-black-400 mb-1">Tim Cook</h2>
               <h1 class="title-font text-lg font-medium text-gray-900 mb-3">CEO of Apple Inc.</h1>
@@ -191,8 +197,9 @@
       </div>
     </div>
   </section>
-  <section class="contact_body">
-    <div class="contact_cont">
+
+  <section class="contact_body " >
+    <div class="contact_cont shadow-md">
       <div class="text">Contact Us</div>
       <form action="#">
         <div class="form-row">
@@ -235,9 +242,10 @@
       </form>
     </div>
   </section>
-  <section class="text-gray-600 body-font">
+
+  <section class="text-gray-600 body-font" style="background-color: white;">
     <div class="container px-5 py-24 mx-auto">
-      <h1 class="sm:text-3xl text-2xl font-medium title-font text-center text-gray-900 mb-20 heading">Best Technologies
+      <h1 class="sm:text-6xl text-2xl font-medium title-font text-center text-gray-900 mb-20 techSection ">Best <span style="color: #ffb347;">Technologies</span>
         in 2021
 
       </h1>
@@ -250,10 +258,10 @@
               <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
             </svg>
           </div>
-          <div class="flex-grow pl-6">
-            <h2 class="text-gray-900 text-lg title-font font-medium mb-2 sub_head" style="color:aliceblue">Artificial
+          <div class="flex-grow pl-6 ">
+            <h2 class="text-gray-900 text-lg title-font font-medium mb-2 sub_head" >Artificial
               Intelligence (AI) and Machine Learning</h2>
-            <p class="leading-relaxed text-base" style="color:aliceblue">Artificial Intelligence, or AI, has already
+            <p class="leading-relaxed text-base" >Artificial Intelligence, or AI, has already
               received a lot of buzz in the past decade, but it continues to be one of the new technology trends because
               its notable effects on how we live, work and play are only in the early stages. AI is already known for
               its superiority in image and speech recognition, navigation apps, smartphone personal assistants,
@@ -277,9 +285,9 @@
             </svg>
           </div>
           <div class="flex-grow pl-6">
-            <h2 class="text-gray-900 text-lg title-font font-medium mb-2 sub_head" style="color:aliceblue">Robotic
+            <h2 class="text-gray-900 text-lg title-font font-medium mb-2 sub_head" >Robotic
               Process Automation (RPA)</h2>
-            <p class="leading-relaxed text-base" style="color:aliceblue">Robotic Process Automation, or RPA, is another
+            <p class="leading-relaxed text-base" >Robotic Process Automation, or RPA, is another
               technology that is automating jobs. RPA is the use of software to automate business processes such as
               interpreting applications, processing transactions, dealing with data, and even replying to emails. RPA
               automates repetitive tasks that people used to do. </p>
@@ -301,9 +309,9 @@
             </svg>
           </div>
           <div class="flex-grow pl-6">
-            <h2 class="text-gray-900 text-lg title-font font-medium mb-2 sub_head" style="color:aliceblue">Edge
+            <h2 class="text-gray-900 text-lg title-font font-medium mb-2 sub_head">Edge
               Computing</h2>
-            <p class="leading-relaxed text-base" style="color:aliceblue">Formerly a new technology trend to watch, cloud
+            <p class="leading-relaxed text-base" >Formerly a new technology trend to watch, cloud
               computing has become mainstream, with major players AWS (Amazon Web Services), Microsoft Azure and Google
               Cloud Platform dominating the market. The adoption of cloud computing is still growing, as more and more
               businesses migrate to a cloud solution. But it’s no longer the emerging technology trend. </p>
@@ -318,7 +326,7 @@
       </div>
     </div>
   </section>
-  <section class="text-gray-600 body-font" style="background-color: #000000;">
+  <section class="text-gray-600 body-font" style="background-color: whitesmoke;">
     <div class="container px-5 py-24 mx-auto">
       <div class="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="inline-block w-8 h-8 text-gray-400 mb-8"
@@ -327,7 +335,7 @@
             d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z">
           </path>
         </svg>
-        <p class="leading-relaxed text-lg" style="color:aliceblue">Technology affects people all over the world.
+        <p class="leading-relaxed text-lg text-grey-600 leading-6 quote" >Technology affects people all over the world.
           Advances in technology have made our countries safer and our lives easier, they have also negatively affected
           our lives. Technology have brought us online banking, smart cars, smart TVs, lightning fast computers, and the
           virtual reality. Also there include cyber warfare, hackers, identity theft, cyber stalking, and a host of
@@ -338,54 +346,19 @@
     </div>
   </section>
 
-  <h1 style="color:aliceblue">SOME BIGGEST TECH COMPANIES-:</h1>
+  
 
   <section class="text-gray-600 body-font">
-    <div class="container px-5 py-24 mx-auto">
-      <div class="flex flex-wrap -m-4">
-        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-          <a class="block relative h-48 rounded overflow-hidden">
-            <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="images/MS.jpg">
-          </a>
-          <div class="mt-4">
-            <h1 class="text-gray-500 text-xs tracking-widest title-font mb-1" style="color:aliceblue">MICROSOFT
-              CORPORATION</h1>
-
-          </div>
+    <div class="container px-5 pb-24 mx-auto">
+      <div class="flex  justify-center items-center">
+        <div class="flex flex-row justify-evenly items-center">
+          <img src="./images/microsoft.png" alt="" style="width: 10%;">
+          <img src="./images/googel.png" alt="" style="width: 10%;">
+          <img src="./images/apple.png" alt="" style="width: 10%;">
+          <img src="./images/cisco.png" alt="" style="width: 10%;">
+          <img src="./images/ADB.png" alt="" style="width: 10%;">
         </div>
-        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-          <a class="block relative h-48 rounded overflow-hidden">
-            <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="images/APPLE.jpg">
-          </a>
-          <div class="mt-4">
-            <h1 class="text-gray-500 text-xs tracking-widest title-font mb-1" style="color:aliceblue">APPLE INC</h1>
-
-
-          </div>
-        </div>
-        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-          <a class="block relative h-48 rounded overflow-hidden">
-            <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="images/ADB.png">
-          </a>
-          <div class="mt-4">
-            <h1 class="text-gray-500 text-xs tracking-widest title-font mb-1" style="color:aliceblue">ADOBE INC</h1>
-
-          </div>
-        </div>
-        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-          <a class="block relative h-48 rounded overflow-hidden">
-            <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="images/CS.png">
-          </a>
-          <div class="mt-4">
-            <h1 class="text-gray-500 text-xs tracking-widest title-font mb-1" style="color:aliceblue">Cisco Systems Inc.
-            </h1>
-
-          </div>
-        </div>
-
-
-
-      </div>
+    </div>
     </div>
   </section>
 
@@ -394,28 +367,28 @@
 
 
 
-  <footer class="text-gray-600 body-font" style="background-color: #000000;">
+  <footer class="text-gray-600 body-font" style="background-color: white;">
     <div class="container align-center">
       <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left md:mt-0 mt-10">
 
 
       </div>
-      <div class="flex-grow flex flex-wrap -mb-10 md:text-left text-center order-first footer">
-        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+      <div class="flex-grow flex flex-wrap -mb-10 md:text-left text-center order-first footer ">
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4 py-10">
           <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3 foot_head">Information Technology
           </h2>
           <nav class="list-none mb-10">
             <li>
-              <a class="text-gray-600 anc hover:text-gray-800">Big Data</a>
+              <a class="text-gray-600 foot-links hover:text-gray-800">Big Data</a>
             </li>
             <li>
-              <a class="text-gray-600 anc hover:text-gray-800">Cyber Security</a>
+              <a class="text-gray-600 foot-links hover:text-gray-800">Cyber Security</a>
             </li>
             <li>
-              <a class="text-gray-600 anc hover:text-gray-800">Data Analysis Tools</a>
+              <a class="text-gray-600 foot-links hover:text-gray-800">Data Analysis Tools</a>
             </li>
             <li>
-              <a class="text-gray-600 anc hover:text-gray-800">Cloud Computing</a>
+              <a class="text-gray-600 foot-links hover:text-gray-800">Cloud Computing</a>
             </li>
           </nav>
         </div>
@@ -424,16 +397,16 @@
           </h2>
           <nav class="list-none mb-10">
             <li>
-              <a class="text-gray-600 anc hover:text-gray-800">Synchronous</a>
+              <a class="text-gray-600 foot-links hover:text-gray-800">Synchronous</a>
             </li>
             <li>
-              <a class="text-gray-600 anc hover:text-gray-800">Asynchronous</a>
+              <a class="text-gray-600 foot-links hover:text-gray-800">Asynchronous</a>
             </li>
             <li>
-              <a class="text-gray-600 anc hover:text-gray-800">Linear Learning</a>
+              <a class="text-gray-600 foot-links hover:text-gray-800">Linear Learning</a>
             </li>
             <li>
-              <a class="text-gray-600 anc hover:text-gray-800">Collaborative Learning</a>
+              <a class="text-gray-600 foot-links hover:text-gray-800">Collaborative Learning</a>
             </li>
           </nav>
         </div>
@@ -442,16 +415,16 @@
           </h2>
           <nav class="list-none mb-10">
             <li>
-              <a class="text-gray-600 anc hover:text-gray-800">Internet of Things</a>
+              <a class="text-gray-600 foot-links hover:text-gray-800">Internet of Things</a>
             </li>
             <li>
-              <a class="text-gray-600 anc hover:text-gray-800">Robotics</a>
+              <a class="text-gray-600 foot-links hover:text-gray-800">Robotics</a>
             </li>
             <li>
-              <a class="text-gray-600 anc hover:text-gray-800">Artificial Intelligence</a>
+              <a class="text-gray-600 foot-links hover:text-gray-800">Artificial Intelligence</a>
             </li>
             <li>
-              <a class="text-gray-600 anc hover:text-gray-800">Superintelligence</a>
+              <a class="text-gray-600 foot-links hover:text-gray-800">Superintelligence</a>
             </li>
           </nav>
         </div>
@@ -460,16 +433,16 @@
           </h2>
           <nav class="list-none mb-10">
             <li>
-              <a class="text-gray-600 anc hover:text-gray-800">Virtual reality</a>
+              <a class="text-gray-600 foot-links hover:text-gray-800">Virtual reality</a>
             </li>
             <li>
-              <a class="text-gray-600 anc hover:text-gray-800">Artificial organs</a>
+              <a class="text-gray-600 foot-links hover:text-gray-800">Artificial organs</a>
             </li>
             <li>
-              <a class="text-gray-600 anc hover:text-gray-800">Wireless brain sensors</a>
+              <a class="text-gray-600 foot-links hover:text-gray-800">Wireless brain sensors</a>
             </li>
             <li>
-              <a class="text-gray-600 anc hover:text-gray-800">Robotic surgery</a>
+              <a class="text-gray-600 foot-links hover:text-gray-800">Robotic surgery</a>
             </li>
           </nav>
         </div>
@@ -478,10 +451,10 @@
 
 
   </footer>
-  <footer class="text-gray-600 body-font" style="background-color: #202529;">
-    <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
-      <p class="text-sm text-gray-500 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0"
-        style="text-align: center;"> Copyright Ayushi Mishra 2021
+  <footer class="text-gray-600 body-font" style="background-color: #ffb347;">
+    <div class="container px-5 py-8 mx-auto flex justify-center items-center sm:flex-row flex-col">
+      <p class="Copyright text-sm text-white  text-center sm:py-2 sm:mt-0">
+         Copyright Ayushi Mishra 2022 | Later Contributed by Abhishek 2022
       </p>
     </div>
   </footer>
