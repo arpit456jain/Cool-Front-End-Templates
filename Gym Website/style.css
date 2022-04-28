@@ -619,6 +619,9 @@ h5{
     font-family: "Poppins";
     font-weight: 700;
 }
+.each-col{
+  margin-right: -3em;
+}
 @media screen and (max-width:983px){
     *{
         margin: 0px;
