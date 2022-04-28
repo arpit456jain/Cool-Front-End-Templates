@@ -15,7 +15,7 @@
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js" integrity="sha512-qp27nuUylUgwBZJHsmm3W7klwuM5gke4prTvPok3X5zi50y3Mo8cgpeXegWWrdfuXyF2UdLWK/WCb5Mv7CKHcA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
 
@@ -42,7 +42,21 @@
         </div>
     </div>
 </header>
+
 <!-- ***** Header Area End ***** -->
+<div class="topnav">
+  <a href="#home" class="active" style="font-family: Poppins;font-weight: 700; font-size: 26px;color: black;">GUARDIAN <span>GYM</span></a>
+  <div id="myLinks">
+    <a href="#news">HOME</a>
+    <a href="#contact">ABOUT US</a>
+    <a href="#about">OUR GALLERY</a>
+    <a href="#about">OUR PRICING</a>
+    <a href="#about">CONTACT</a>
+  </div>
+  <a href="javascript:void(0);" style="color: black;" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
 
 <!-- ***** Main Banner Area Start ***** -->
 <div class="main-banner" id="top">
@@ -196,8 +210,8 @@
   <!-- Footer Section -->
   <div class="container bd-footer" id="footer">
     <footer class="pt-5">
-      <div class="row">
-        <div class="col-2">
+      <div class="foot row">
+        <div class="each-col col-2">
           <h5>Company</h5>
           <ul class="nav flex-column">
             <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
@@ -208,7 +222,7 @@
           </ul>
         </div>
   
-        <div class="col-2">
+        <div class=" each-colcol-2">
           <h5>Services</h5>
           <ul class="nav flex-column">
             <li class="nav-item mb-2"><a class="nav-link p-0 text-muted">Personal Trainer</a></li>
@@ -219,7 +233,7 @@
           </ul>
         </div>
   
-        <div class="col-2">
+        <div class="each-col col-2">
           <h5>Location</h5>
           <ul class="nav flex-column">
             <li class="nav-item mb-2"><a class="nav-link p-0 text-muted">Delhi</a></li>
@@ -265,6 +279,16 @@
 
   <button id="Move-topBtn"><i class="fa fa-chevron-up"></i></button>
   <script type="text/javascript" src="script.js"></script>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+    </script>
   
 </body>
 </html>

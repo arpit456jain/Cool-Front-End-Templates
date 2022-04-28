@@ -273,6 +273,9 @@ a{
   .header-area.header-sticky .nav li a.active {
     color: #ed563b;
   }
+  .topnav{
+    display: none;
+  }
   
   @media (max-width: 1200px) {
     .header-area .main-nav .nav li {
@@ -297,103 +300,12 @@ a{
       background-color: #f7f7f7;
       padding: 0px 15px;
       height: 80px;
+      display: none;
       box-shadow: none;
       text-align: center;
     }
-    .header-area .container {
-      padding: 0px;
-    }
-    .header-area .logo {
-      margin-left: 30px;
-    }
-    .header-area .menu-trigger {
-      display: block !important;
-    }
-    .header-area .main-nav {
-      overflow: hidden;
-    }
-    .header-area .main-nav .nav {
-      float: none;
-      width: 100%;
-      display: none;
-      -webkit-transition: all 0s ease 0s;
-      -moz-transition: all 0s ease 0s;
-      -o-transition: all 0s ease 0s;
-      transition: all 0s ease 0s;
-      margin-left: 0px;
-    }
-    .header-area .main-nav .nav li:first-child {
-      border-top: 1px solid #eee;
-    }
-    .header-area .main-nav .nav li:last-child {
-      width: 100%;
-      background-color: #ed563b;
-      color: #fff;
-    }
-    .header-area .main-nav .nav li:last-child a {
-      background-color: #ed563b!important;
-    }
-    .header-area .main-nav .nav li:last-child a:hover,
-    .header-area .main-nav .nav li:last-child:hover a {
-      background-color: #ed563b!important;
-      color: #fff!important;
-    }
-    .header-area.header-sticky .nav {
-      margin-top: 80px !important;
-    }
-    .header-area .main-nav .nav li {
-      width: 100%;
-      background: #fff;
-      border-bottom: 1px solid #eee;
-      padding-left: 0px !important;
-      padding-right: 0px !important;
-    }
-    .header-area .main-nav .nav li a {
-      height: 50px !important;
-      line-height: 50px !important;
-      padding: 0px !important;
-      border: none !important;
-      background: #f7f7f7 !important;
-      color: #232d39 !important;
-    }
-    .header-area .main-nav .nav li:last-child a {
-      color: #fff!important;
-    }
-    .header-area .main-nav .nav li a:hover {
-      background: #eee !important;
-      color: #ed563b!important;
-    }
-    .header-area .main-nav .nav li.submenu ul {
-      position: relative;
-      visibility: inherit;
-      opacity: 1;
-      z-index: 1;
-      transform: translateY(0%);
-      transition-delay: 0s, 0s, 0.3s;
-      top: 0px;
-      width: 100%;
-      box-shadow: none;
-      height: 0px;
-    }
-    .header-area .main-nav .nav li.submenu ul li a {
-      font-size: 12px;
-      font-weight: 400;
-    }
-    .header-area .main-nav .nav li.submenu ul li a:hover:before {
-      width: 0px;
-    }
-    .header-area .main-nav .nav li.submenu ul.active {
-      height: auto !important;
-    }
-    .header-area .main-nav .nav li.submenu:after {
-      color: #3B566E;
-      right: 25px;
-      font-size: 14px;
-      top: 15px;
-    }
-    .header-area .main-nav .nav li.submenu:hover ul, .header-area .main-nav .nav li.submenu:focus ul {
-      height: 0px;
-    }
+    
+   
   }
   
   @media (min-width: 767px) {
@@ -712,11 +624,70 @@ h5{
         margin: 0px;
         padding: 0px;
     }
+    .topnav {
+      overflow: hidden;
+      background-color: #333;
+      position: relative;
+      display: contents;
+      
+    }
+    
+    .topnav #myLinks {
+      display: none;
+    }
+    
+    .topnav a {
+      color: grey;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      display: block;
+    }
+    
+    .topnav a.icon {
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    
+    .topnav a:hover {
+      color: black;
+    }
+    
+    #myLinks{
+      font-family: "Poppins";
+      font-weight: 700;
+    }
+    .active {
+      
+      color: white;
+    }
     #back{
         visibility: hidden;
     }
     .navbar{
         width: 100%;
+    }
+    .about-text{
+      flex-direction: column;
+    }
+    #about p{
+      margin: 0;
+      padding: 1em 0;
+      text-align: center;
+    }
+    .about-image{
+      width: 100%;
+    }
+    .foot,footer{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .each-col{
+      margin-right: 3em;
     }
     .homePage{
         width: 100%;
