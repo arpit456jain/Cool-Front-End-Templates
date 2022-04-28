@@ -1,0 +1,100 @@
+body{
+    padding: 2%;
+    background-color: #EEEEEE;
+}
+
+
+
+.heading{
+    text-align: center;
+    color: black;
+    font-size: 70px;
+    background-color: #A1E3D8;
+    margin-left: 300px;
+    margin-right: 300px;
+    border: 20px black;
+}
+/* Navbar */
+.navbar{
+    padding: 20px;
+    /* padding-top: 20px; */
+}
+.navbar a{
+    text-decoration: none;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-left: 2px;
+    text-align: center;
+    color: black;
+    font-weight: 900;
+}
+
+.img1{
+    text-align: center;
+}
+.carousel-item{
+    text-align: center;
+}
+.carousel{
+    padding-top: 40px;
+    background-color: #A1E3D8;
+    padding-bottom: 40px;
+    margin-left: 60px;
+    margin-right: 60px;
+
+}
+.carousel img{
+    width: 30%;
+}
+.carousel-control-prev-icon{
+    color: black;
+}
+.sub-heading{
+    padding-bottom: 2%;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    /* height: 100px;
+    width: 100px;
+    outline: black; */
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.card-view{
+    padding: 4%;
+    text-align: center;
+    /* padding: 5%; */
+}
+.card-body p{
+    text-align: center;
+}
+.card-body h5{
+    text-align: center;
+}
+.card-body a{
+    text-align: center;
+}
+.button{
+    text-align: center;
+}
+.card{
+    display: inline-block;
+    /* padding: 4%; */
+    text-align: center;
+    margin: 26px;
+}
+
+.footer{
+    background-color: black;
+    margin: 0px;
+    padding: 0px;
+}
+.footer h3{
+    color: #EEEEEE;
+}
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+footer{
+    text-align: center;
+    padding: 5%;
+}
