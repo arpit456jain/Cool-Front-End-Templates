@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link  href="style.css" rel="stylesheet" >
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rancho">
+</head>
+
+<body  id="bg1">
+    <div class="flex-container2">
+        <div class="container round" style="width:400px;">
+            <h5 class="dark-brown tag round left"><a style="text-decoration:none" href="index.html"><b>Home</b></a></h5>
+        </div>
+        <div class="card round margin-top-20" style="width:700px;">
+            <h1 class="margin-left-48 text-darkbrown jumbo"><b>Create your post</b></h1><br>
+            <div>
+                <div class="col-40">
+                    <h5><label class="text-darkbrown margin-left-48"><b>Name:</b></label></h5>
+                </div>
+                <div class="col-60">
+                    <input class="margin-left" classname="Name" placeholder="Name..." type="text"  required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-40">
+                    <h5><label class="text-darkbrown margin-left-48" for="Title"><b>Write the title of your blog:</b></label></h5>
+                </div>
+                <div class="col-60">
+                    <input class="margin-left" classname="Title" placeholder="Title..." type="text" required>
+                </div>     
+            </div>
+            <div class="row">
+                <div class="col-40">
+                    <h5><label class="margin-left-48 text-darkbrown" for="Body"><b>Body of your Blog:</b></label></h5>
+                </div>
+                <div class="col-60">
+                    <textarea class="margin-left text-darkbrown" id="Blog Content" classname="Body" placeholder="Write here.." required> </textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-40">
+                    <h5 class="margin-left-48 text-darkbrown"><b>Upload Banner Image:</b></h5>
+                </div>
+                <div class="col-60">
+                    <form  class="margin-left-52 text-darkbrown" action="uploads.php" method="post" enctype="multipart/form-data">
+                        <input class="round margin-top-17" type="file" name="fileToUpload" id="fileToUpload" required>
+                        <input class="dark-brown round margin-top" type="submit" value="Upload" name="submit">
+                    </form>
+                </div>
+            </div>
+            <div class="text-darkbrown margin-left-48">
+                <br>
+                <h3><b>Social links:</b></h3>
+                <div>
+                    <div class="col-40">
+                        <label for="instagram"><b>Add your Instagram Handle:</b></label>
+                    </div>
+                    <div class="col-60">
+                        <input type="url" id="Instagram" name="Instagram" required>
+                    </div>
+                </div>
+                <div>
+                    <div class="col-40">
+                        <label for="linkedin"><b>Add your LinkedIn Handle:</b></label>
+                    </div>
+                    <div class="col-60">
+                        <input type="url" id="LinkedIn" name="LinkedIn">
+                    </div>
+                </div>
+                <div>
+                    <div class="col-40">
+                        <label for="Gmail"><b>Add your Gmail:</b></label>
+                    </div>
+                    <div class="col-60">
+                        <input type="url" id="Gmail" name="Gmail" required> 
+                    </div>
+                    <input class="right dark-brown round large margin-right margin-top margin-bottom-16" type="submit" value="SUBMIT">
+                </div>        
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
