@@ -1,0 +1,138 @@
+html,body{
+	height: 100%;
+	width: 100%;
+}
+body{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+header{
+	width: 100%;
+	height: 60px;
+	background: #fff;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	z-index: 2;
+}
+.nav-item{
+	display: flex;
+	flex-direction: inherit;
+	align-items: inherit;
+	height: 100%;
+	justify-content: inherit;
+}
+.nav-div{
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0 20px;
+}
+.nav-div:hover{
+	background-color: #F5F5F5;
+}
+
+
+main{
+	width: 100%;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+}
+video{
+	width: 100%;
+	height: 650px;
+	background-size: cover;
+	object-fit: cover;
+	overflow: hidden;
+	position: absolute;
+}
+.vid-text{
+	position: absolute;
+}
+.free-trail{
+	width: 114px;
+	color: #fff;
+	background-color: #1473e6;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 32px;
+	border-radius: 16px;
+	cursor: pointer;
+}
+.free-trail:hover{
+	background-color: #0d66d0;
+}
+.learn_more:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+.cc-n{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	height: 69px;
+	width: 100%;
+	font-size: normal;
+	color: #1473e6;
+}
+.cc-n span{
+	margin-right: 25px;
+}
+.cc-n > .ud:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+.carousel{
+	width: calc(100% - 48px);
+	margin: 40px 0px;
+	margin-left: 24px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.carousel-item{
+	width: 33.333333%;
+	max-width: 33.333333%;
+	min-height: auto;
+	flex: 1 1 auto;
+	position: relative;
+	margin: 0 20px;
+}
+.carousel-item > section{
+	padding: 24px;
+	padding-top: 36px;
+	position: absolute;
+	left: 0;
+	top:  0;
+}
+.carousel-item > section > h3{
+	margin-top: 0;
+}
+
+
+footer{
+	width: 100%;
+	padding-top: 40px;
+	padding-bottom: 20px;
+	background-color: #fafafa;
+	display: flex;
+	flex-direction: column;
+}
+.links{
+	width: 100%;
+	justify-content: space-around;
+	display: flex;
+	flex-direction: row;
+}
+.links > section{
+	width: 15%;
+}
