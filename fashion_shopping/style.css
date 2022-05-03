@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    background-image: url(images/background_image.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.navbar {
+    width: 100%;
+    height: 10vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 200px;
+    cursor: pointer;
+}
+
+.cart {
+    width: 60px;
+    cursor: pointer;
+}
+
+nav {
+    flex: 1;
+    padding-left: 60px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0px 20px;
+    font-size: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.content h1 {
+    font-size: 85px;
+    font-weight: 100;
+    margin-top: 24px;
+    margin-bottom: 15px;
+    color: #232d60;
+}
+
+.content p {
+    font-size: 30px;
+    color: #1d2f95;
+}
+
+.content {
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
+.content .btn {
+    display: inline-block;
+    background: linear-gradient(45deg, #87adfe, #ff77cd);
+    border-radius: 6px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #fff;
+    box-shadow: 3px 8px 22px rgba(94, 28, 68, 0, 15);
+}
+
+.arrow-icons {
+    margin-top: 40px;
+    display: flex;
+}
+
+.arrow-icons img {
+    width: 30px;
+    margin-right: 25px;
+}
+
+.hover_effect {
+    height: 90%;
+    position: absolute;
+    bottom: 0;
+    right: 160px;
+    top: 85px;
+    right: 40px;
+}
+
+.hover_effect {
+    height: 25%;
+    width: auto;
+}
+
+.hover_effect:hover {
+    height: 100%;
+    width: auto;
+}
+
+img:hover {
+    /* Start the vibrate animation with duration 0.5 seconds */
+    animation: vibrate 0.5s;
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
+}
+
+.social-links {
+    transform: rotate(-90deg);
+    position: absolute;
+    left: -80px;
+    bottom: 180px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: black;
+    padding-right: 20px;
+    font-size: 20px;
+}
