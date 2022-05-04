@@ -9,16 +9,51 @@ h1{
 }
 hr{ border: 0 solid #c4a07c;}
 
-#bg{background-image: url("Img/index_bg.png");
-    min-height: 850px;}
-#bg1{background-image: url("Img/background 1.jpg");
-    min-height: 700px;}
-#bg2{background-image: url("Img/bg_2.jpeg");
-    min-height: 700px;}
+#bg{background-image: url("index_bg.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size: cover;
+    }
+#bg1{background-image: url("background 1.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size: cover;
+ }
+#bg2{background-image: url("bg_2.jpeg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size: cover;
+    }
 
 #more {display: none;} 
 #more1 {display: none;} 
 
+.card-width{
+    width:400px;
+}
+@media screen and (max-width: 600px){
+   .card-width{
+    width:160px;
+    } 
+}
+.card-height{
+    height:250px;
+}
+@media screen and (max-width: 600px){
+   .card-height{
+    height:150px;} 
+}
+
+.card-width-2{
+    width:700px;
+}
+@media screen and (max-width: 600px){
+   .card-width-2{
+    width:460px;} 
+}
 .col-40 {
     float: left;
     width: 40%;
@@ -35,7 +70,7 @@ hr{ border: 0 solid #c4a07c;}
     clear: both;
   }
 @media screen and (max-width: 600px) {
-    .col-25, .col-75, input[type=submit] {
+    .col-40, .col-60, input[type=submit] {
       width: 100%;
       margin-top:0;
     }
@@ -93,6 +128,11 @@ input[type=url], select, textarea{
 .xlarge{font-size:24px!important}.xxlarge{font-size:36px!important}.xxxlarge{font-size:48px!important}.jumbo{font-size:64px!important}
 .tiny{font-size:10px!important}.small{font-size:12px!important}.medium{font-size:15px!important}.large{font-size:19px!important}
 
+@media screen and (max-width: 600px){
+    .xxlarge{font-size:12px!important}
+    .jumbo{font-size:22px!important}
+}
+
 /*opacity*/
 .opacity,.hover-opacity:hover{opacity:0.70}.opacity-off,.hover-opacity-off:hover{opacity:1}
 .opacity-max{opacity:0.25}.opacity-min{opacity:0.75}
@@ -106,12 +146,15 @@ input[type=url], select, textarea{
 .margin-bottom{margin-bottom:35px!important}
 .margin-left{margin-left:16px!important}
 .margin-right-55{margin-right:55px!important}.margin-right{margin-right:16px!important}
+.margin-right-20{margin-right:20px!important}
 .margin-left-48{margin-left:48px!important}
 .margin-left-52{margin-left:52px!important}
 .margin-bottom-16{margin-bottom:16px!important}
 .margin-top-20{margin-top:20px!important}
 .margin-top-17{margin-top:17px!important;}
 .margin-top-0{margin-top:0px!important}
+.margin-top-40{margin-top:40px!important}
+
 /*round-bg*/
 .round-small{border-radius:2px}.round,.round-medium{border-radius:4px}.round-large{border-radius:12px}.round-xlarge{border-radius:16px}.round-xxlarge{border-radius:32px}
 /*tag*/
@@ -161,8 +204,3 @@ h1,h2,h3,h4,h5,h6{font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin
 hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-image{max-width:100%;height:auto}img{vertical-align:middle}a{color:inherit}
 .w3-main,#main{transition:margin-left .4s}
-
-
-
-
-
