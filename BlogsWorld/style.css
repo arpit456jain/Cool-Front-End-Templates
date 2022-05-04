@@ -9,19 +9,19 @@ h1{
 }
 hr{ border: 0 solid #c4a07c;}
 
-#bg{background-image: url("index_bg.png");
+#bg{background-image: url("./Img/index_bg.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment:fixed;
     background-size: cover;
     }
-#bg1{background-image: url("background 1.jpg");
+#bg1{background-image: url("./Img/background 1.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment:fixed;
     background-size: cover;
  }
-#bg2{background-image: url("bg_2.jpeg");
+#bg2{background-image: url("./Img/bg_2.jpeg");
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment:fixed;
@@ -36,7 +36,7 @@ hr{ border: 0 solid #c4a07c;}
 }
 @media screen and (max-width: 600px){
    .card-width{
-    width:160px;
+    width:300px;
     } 
 }
 .card-height{
@@ -44,7 +44,7 @@ hr{ border: 0 solid #c4a07c;}
 }
 @media screen and (max-width: 600px){
    .card-height{
-    height:150px;} 
+    height:200px;} 
 }
 
 .card-width-2{
@@ -104,6 +104,13 @@ input[type=url], select, textarea{
 .flex-container3 {display: flex;flex-direction: column;}
 .flex-container4 {display: flex;align-self:center;}
 
+@media screen and (max-width: 600px){
+   .flex-container1{
+    display: flex;flex-direction:column;align-items:center;} 
+    .flex-container {display: flex;justify-content: center;align-items:center;}
+}
+
+
 /*float*/
 .left{float:left!important}.right{float:right!important}
 .center{text-align:center!important}
@@ -129,8 +136,9 @@ input[type=url], select, textarea{
 .tiny{font-size:10px!important}.small{font-size:12px!important}.medium{font-size:15px!important}.large{font-size:19px!important}
 
 @media screen and (max-width: 600px){
-    .xxlarge{font-size:12px!important}
-    .jumbo{font-size:22px!important}
+    .xxlarge{font-size:14px!important}
+    .jumbo{font-size:23px!important}
+    .large{font-size:12px!important}
 }
 
 /*opacity*/
