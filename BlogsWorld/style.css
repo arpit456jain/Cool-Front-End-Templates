@@ -27,7 +27,6 @@ hr{ border: 0 solid #c4a07c;}
     background-attachment:fixed;
     background-size: cover;
     }
-
 #more {display: none;} 
 #more1 {display: none;} 
 
@@ -54,6 +53,12 @@ hr{ border: 0 solid #c4a07c;}
    .card-width-2{
     width:460px;} 
 }
+@media screen and (max-width: 600px){
+   .gap{
+    margin-top:17px;
+    } 
+}
+
 .col-40 {
     float: left;
     width: 40%;
