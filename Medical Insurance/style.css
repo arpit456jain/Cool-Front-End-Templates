@@ -5,6 +5,10 @@ html {
 }
 
 body {
+background-color: #fff;
+	background-size:  8px 8px, 8px 8px;
+	background-position: center, center;
+	background-image: linear-gradient(#ebf4f9 1px, transparent 1px),linear-gradient(90deg, #ebf4f9 1px, transparent 1px);
   margin: 1.5rem;
 }
 @media screen and (min-width: 480px) {
@@ -20,8 +24,8 @@ section {
 }
 
 .logo {
-  width: 100rem;
-  margin: -150px;
+  width: 55rem;
+  margin: 0px;
   display: block;
 }
 
