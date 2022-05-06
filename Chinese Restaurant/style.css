@@ -1,29 +1,119 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	overflow-x: hidden;
+	font-family: 'Overpass', sans-serif;
+}
+html{
+	scroll-behavior: smooth;
+}
 .myfont
 {
 	font-family: 'Dancing Script';
 }
 
 /*nav*/
+#logo img
+{
+	width: 80px;
+	height: 80px;
+	margin: 10px;
+	padding: 10px;
+	border-radius: 50%;
+}
+#logo img:hover{
+	cursor: pointer;
+	transition: all 0.6s ease-in-out;
+	transform: rotate(360deg);
+}
+.welcome h3{
+	font-family: fangsong;
+}
+.welcome h5{
+	margin: 30px 0px;
+	font-family: serif;
+}
 .navsec
 {
 	height: 100vh;
+	max-height: 800px;
+	
 }
 .navsec::before
 {
 	content: "";
 	width: 100%;
-	height: 100vh;
-	background:url("img/bg.jpg");	
+	height: 150vh;
+	background:url("img/pic.jpeg");	
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	position: absolute;
 	z-index: -1;
+	background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
 }
-.mynavbar a 
+
+.mynavbar .links a 
 {
-/*color: #c3ce57;*/
-font-size: 2rem;
+margin: 12px 12px;
+font-size: 1.3rem;
+font-family: serif;
 }
+.mynavbar a:hover{
+
+transition: all 0.5s ease-in-out;
+	
+}
+.navsec .book-table{
+	border-radius: 50px;
+	
+}
+.navsec .book-table:hover{
+	background-color: white;
+	color:green ;
+	transition: all 0.5s ease-in-out;
+	
+}
+.navbar-toggler{
+	font-size: inherit;
+	line-height: inherit;
+}
+
+.t-name{
+		-webkit-animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+				animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+@-webkit-keyframes tracking-in-expand {
+	0% {
+	  letter-spacing: -0.5em;
+	  opacity: 0;
+	}
+	40% {
+	  opacity: 0.6;
+	}
+	100% {
+	  opacity: 1;
+	}
+  }
+  @keyframes tracking-in-expand {
+	0% {
+	  letter-spacing: -0.5em;
+	  opacity: 0;
+	}
+	40% {
+	  opacity: 0.6;
+	}
+	100% {
+	  opacity: 1;
+	}
+  }
+  
 
 section .mybtn1
 {
@@ -32,18 +122,17 @@ section .mybtn1
 		opacity: 0.6;
 		margin: 20px;
 		padding: 10px 40px;
-		font-size: 2rem;
+		font-size: 1rem;
+		outline-style: none;
+		border: 1px solid #393d12;
+		border-radius: 5px;
 }
 section .mybtn1:hover
 {
-		color: #393d12;
+		color: #cfdf43;
 		background-color: #c3ce57;
 		opacity: 0.6;
 		margin: 20px;
-		padding: 20px 50px;
-		border-radius: 20px;
-		border:none;
-		font-size: 2rem;
 }
 .navsec .mydiv
 {
@@ -53,31 +142,24 @@ section .mybtn1:hover
 }  
 .sectwo
 {
-	height: 40vh;
+	height: auto;
 	color: #c3ce57;
-	background-image: url("img/9.jpg");
-	background-repeat:no-repeat;
+	background-image: url("img/img.jpg");
+	background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .sectwo p
 {
 	color: #fff;
+	font-family:  'Overpass';
 }
 .secthree
 {
-	/*background-color:#474c16;*/
-	opacity: .9
+	opacity: .9;
+
 }
-/*.secthree::before
-{
-	content: "";
-	width: 100%;
-	height: 46vh;
-	background:url("img/bg3.png");	
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-	position: absolute;
-	z-index: -1;
-*/
 .secthree .mycard2
 {
 	background-color:#474c16;
@@ -86,9 +168,7 @@ section .mybtn1:hover
 }
 .secthree .mycard2:hover
 {
-	background-color:#474c16;
-	color: #fff;
-	border: none;
+	transition: all 0.4s ease-in-out;
 	padding:10px;	
 }
 
@@ -105,22 +185,33 @@ section .mybtn1:hover
 }
 .secfour .mycard
 {
-height: 30vh;
+height: auto;
 border: none;
 /*background-color:#474c16;*/
 }
-.secfour .mycard:hover
+.secfour .mycard:hover{
+	cursor: pointer;
+}
+.secfour .mycard img:hover{
+	transition: all 0.6s ease-in-out;
+	transform: scale(1.2);
+	z-index: 2;
+	cursor: pointer;
+}
+.secfour .mycard p
 {
-height: 30vh;
-border: none;
-margin:20px;
-padding: 5px;
-/*background-color:#474c16;*/
+	color: black;
 }
 
 .secfour .mycard h5
 {
-	color: green;
+	color: white;
+	font-size: 1.5rem;
+}
+.secfour .mycard h5:hover
+{
+	transition: all 0.4s ease-in-out;
+	transform: translateX(23px);
 }
 .secfour .mycard img
 {
@@ -133,16 +224,30 @@ height: 30vh;
 	width: 100vw;
 	height: 30vh;	
 }
-.secseven
-{
-	/*background-color: green;*/
+.secseven img{
+	height: 80px;
+	width: 80px;
+	border-radius: 50px;
 }
-
+.secseven img:hover{
+	transition: all 0.4s ease-in-out;
+	transform: scale(1.1);
+	cursor: pointer;
+	filter: invert();
+}
+.secseven .myservice span:hover{
+	color: white;
+	cursor: pointer;
+}
 .seceight
 {
 	background-image: url("img/9.jpg");
 	width: 100vw;
 	height: 100vh;	
+	background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .secnine,.secnine input,.mycolor
 {
@@ -162,36 +267,61 @@ height: 30vh;
 }
 .secnine #mybtn2:hover
 {
-	margin: 20px 20px;
-	padding: 5px 80px;
+	transition: all 0.4s ease-in-out;
 	color:black;
 	background-color: #fff;
-	border: 2px solid #fff;
-	border-radius: 10px;
-	font-size: 1.2rem;
+	transform: scale(1.1);
 }
+
 
 .secten
 {
 	background-image: url("img/8.jpg");
 	width: 100vw;
 	height: 100vh;	
+	background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-
+.seceleven .card img{
+	width: 100%;
+	height: 280px;
+}
 .seceleven .mybtn3
 {
 	color: black;
 	text-transform: capitalize;
     border-bottom: 3px solid green;
+	text-decoration: none;
+}
+.seceleven .card:hover{
+	background-color: orange;
+	transition: all 0.3s ease-in-out;
+	box-shadow: 12px 12px 10px;
+	transform: translateY(-26px);
+}
+.sec12 h6{
+	font-family: 'Dancing Script';
+	font-size: 2rem;
+	
+	color: orange;
 }
 
 
 /*footer*/
+.myfooter{
+	margin-block-start: 2rem;
+}
+
 .myfooter ul
 {
 	display: flex;
+	align-items: center;
+	justify-content: center;
 	padding: 0;
 }
+
 .myfooter ul li
 {
 	list-style: none;
@@ -199,29 +329,109 @@ height: 30vh;
 	font-size: 2rem;
 	padding: 10px;
 }
+
 .myfooter ul li a i
 {
 	color:black;
 	border-radius: 50%;
-	 padding: 8px;
-	 background-color: #fff;
+	padding: 8px;
+	background-color: #fff;
 }
 
-.fa:hover {
+.myfooter ul li:hover {
+	transition: all 0.5s ease-in-out;
     opacity: 0.9;
-    font-size: 2.7rem;
+    transform: scale(1.2);
+	filter: invert();
 }
 /*footer end*/
 
 .sec13 li
 {
 	list-style: none;
+	
+}
+.sec13 .last li a{
+	text-decoration: none;
+	color: black;
+
+}
+.sec13 p{
+	font-family:   ui-rounded;
+	font-size: 1.1rem;
+}
+.sec13 .last li:hover{
+	color: white;
+	transition: all 0.4s ease-in-out;
+	transform: translateX(15px);
+}
+.sec13 .last li a:hover{
+	color: white;
+}
+.sec13 p,li{
+	color: black;
+}
+.sec13 h5{
+	color: black;
+}
+.sec13 h6{
+	color: black;
+}
+#back {
+	z-index: 3;
+	position: sticky;
+	bottom: 12px;
+}
+#back button{
+	outline: none;
+	border: none;
+	position: relative;
+	border-radius: 50px;
+	left: 95%;
+	width: 50px;
+	height: 50px;
+	background-color:#607d8b;
+	transition: all 0.3s ease-in-out;
+}
+#back button:hover{
+	background-color:orange;	
+}
+#back i{
+	color: white;
+	font-size: 1.2rem;
+}
+.copy{
+	text-align: center;
+	color: black
+}
+
+@media(min-width:992px){
+	.navbar-expand-lg .navbar-nav .nav-link {
+		padding-right: 1rem;
+	}
+
+	.navbar{
+		padding: 0.5rem 2rem;
+	}
+
+	.nav-link:hover{
+		border-bottom: 1px solid #19692c;
+	}
+}
+
+@media(max-width:992px){
+
+	.navbar{
+		background-color: black;
+	}
+
+	.collapsed + .navbar{
+		background-color: transparent;
+	}
 }
 
 @media screen and (max-width: 452px) {
-  body {
-    /*background-color: blue;*/
-  }
+ 
   .myfooter ul li
 {
 	list-style: none;

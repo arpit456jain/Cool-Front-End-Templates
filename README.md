@@ -1,7 +1,10 @@
 # Cool Front-End Templates
 
-### This project is part of Hacktoberfest'21
-![Hacktoberfest](https://user-images.githubusercontent.com/59393136/135566614-5635902f-2907-4e01-8baf-3cb1b43a6b20.png)
+### This project is part of Girl script Summer of code 2022
+
+<a href="https://gssoc.girlscript.tech/" target="_blank">
+  <img alt="Gssoc'2022" width=100% src="https://i.postimg.cc/k40ntsV4/1500x500.jpg">
+</a>
 
 <div align="center">
 
@@ -23,11 +26,12 @@
 
 Will Add some cool templates in it.
 
-## 🎥 Demo
+## <a href="https://www.youtube.com/watch?v=_AohaKbJjlg&ab_channel=ARPITJAIN" style="text-decoration:none">🎥</a> Demo
 
 #### Website for this repository : https://cool-front-end-templates.netlify.app/
 
 # Must Check These Repos Also
+
 - [Cool Front-End Templates ](https://github.com/arpit456jain/Cool-Front-End_Templates)
 - [Amazing Css effects](https://github.com/arpit456jain/Amazing-Css-Effects)
 - [Amazing Js Projects](https://github.com/arpit456jain/Amazing-Js-Projects)
@@ -70,14 +74,14 @@ $ git clone https://github.com/<your-github-username>/Cool-Front-End_Templates
 
 #### Step 3: Creating a new branch (IMP)
 
-This is one of the very important step that you should follow to contribute in Open Source. A branch helps to manage the workflow, isolate your code and does not creates a mess. To create a new branch:
+This is one of the very important step that you should follow to contribute to Open Source. A branch helps to manage the workflow, isolate your code and does not create a mess. To create a new branch:
 
 ```bash
 $ git branch <name_of_branch>
 $ git checkout -b <name_of_branch>
 ```
 
-Keep your cloned repo upto date by pulling from upstream (this will also avoid any merge conflicts while committing new changes)
+Keep your cloned repo up-to date by pulling from upstream (this will also avoid any merge conflicts while committing new changes)
 
 ```bash
 git pull origin main
@@ -87,7 +91,7 @@ git pull origin main
 
 Make relevant changes according to the issue that you were assigned on. Contribute in any way you feel like :)
 
-#### Step 6: Commiting and Pushing
+#### Step 6: Committing and Pushing
 
 Once you have modified an existing file or added a new file to the project, you can add it to your local repository, which we can do with the git add command.
 
@@ -119,16 +123,63 @@ GitHub will alert you that you can merge the two branches because there is no co
 
 <br>
 
+## CONTRIBUTING A NEW TEMPLATE?
+### Please adhere to these guidelines 
+
+1. Create a folder with the name of your frontend template 
+
+2. Start building inside your folder with an entry file called index.html and after building, attach an image named "preview.png" within the folder root which represents the preview image of your template
+
+3. Go into the style_link.json file and add an object corresponding to your project in the following format:
+```
+    {
+  
+      "name": "Name-of-folder-in-exact-case-used-in-naming",
+      "link": "Name-of-folder-in-exact-case-used-in-naming/index.html"
+  
+    },
+
+```
+#### Important to note:  
+If the folder name has white spaces e.g "My  Project", the object should be:
+
+```
+    {
+  
+      "name": "My Project", (not "my project" or "My project" or "My-project")
+      "link": "My%20Project/index.html" (not "My Project/index.html" or "My project/index.html"
+  
+    },
+
+```
+#### Note: The name key is case sensitive and the link key is white space sensitive in the json object so if you have white spaces in the initial name of your folder, replace space with "%20" in the json link but if there are no white spaces like in the case of "ABlogPage" or "Form", use the exact name of the project
+
+If the folder name has no white spaces e.g "My-project", the object should be:
+
+```
+    {
+  
+      "name": "My-project",  (not "my-project" or "My-Project" or "My Project")
+      "link": "My-project/index.html"  (not "My%20project/index.html" or "My-Project/index.html")
+  
+    },
+
+```
+
+   
+
 ## 📌Till Then
 
-### Need Some Help in this Repo -> [Web Development And Resourcses](https://github.com/arpit456jain/Web-Development-Path-And-Resources)
+### Need Some Help in this Repo -> [Web Development And Resources](https://github.com/arpit456jain/Web-Development-Path-And-Resources)
 
-<p align="center"><img src="http://www.gurpreetsaluja.com/wp-content/uploads/2016/05/always-keep-learning.png" width=30%></p>
+<p align="center"><img src="https://www.gurpreetsaluja.com/wp-content/uploads/2016/05/always-keep-learning.png" width=100%></p>
 <hr>
 
 ### This project was a part of the following Open Source Program
 
-![Devincept](https://user-images.githubusercontent.com/56088741/123548852-1ef59d00-d784-11eb-8e39-255e0c3e97d5.gif)
+<a href="https://in.linkedin.com/company/devincept"><img alt="Devincept" title="Devincept" width=100% src="https://user-images.githubusercontent.com/56088741/123548852-1ef59d00-d784-11eb-8e39-255e0c3e97d5.gif"></a>
+
+<a href="https://hacktoberfest.digitalocean.com/"><img alt="HacktoberFest'21" title="HacktoberFest'21" width=100% src="https://user-images.githubusercontent.com/59393136/135566614-5635902f-2907-4e01-8baf-3cb1b43a6b20.png"></a>
 
 <hr>
 
@@ -140,6 +191,19 @@ GitHub will alert you that you can merge the two branches because there is no co
      <td align="center"><a href="https://github.com/ankitapuri"><img alt="" src="https://avatars.githubusercontent.com/ankitapuri" width="100px;"><br><sub><b> Ankita Puri</b></sub></a><br></td></a></td>
 
 </tbody></table>
+
+
+ <h1 align=center> Project Mentors 👩‍🏫 </h1>
+<p align="center">
+<table>
+  <tbody><tr>
+     <td align="center"><a href="https://github.com/astha2412"><img alt="" src="https://avatars.githubusercontent.com/u/87020129?v=4" width="100px;"><br><sub><b>Kumari Astha Rani </b></sub></a><br></td> </a></td>
+     <td align="center"><a href="https://github.com/VidhiBhatt01"><img alt="" src="https://avatars.githubusercontent.com/u/83345228?v=4" width="100px;"><br><sub><b> Vidhi Bhatt</b></sub></a><br></td></a></td>
+		 <td align="center"><a href="https://github.com/DEEPALI-SUK"><img alt="" src="https://avatars.githubusercontent.com/u/64724041?v=4" width="100px;"><br><sub><b> DEEPALI-SUK</b></sub></a><br></td></a></td>
+		 <td align="center"><a href="https://github.com/DEEPIKA-SUK"><img alt="" src="https://avatars.githubusercontent.com/u/64724039?v=4" width="100px;"><br><sub><b> DEEPIKA-SUK</b></sub></a><br></td></a></td>
+
+</tbody></table>
+
 <h2 align=center> ✨ Contributors </h2>
 
 Thanks go to these **Wonderful People** 👨🏻‍💻: 🚀 **Contributions** of any kind are welcome!
@@ -158,7 +222,7 @@ Thanks go to these **Wonderful People** 👨🏻‍💻: 🚀 **Contributions** 
 
 <h1 align=center>Happy Coding 👨‍💻 </h1>
 
-##  💬Join Our CodeSmashers Community
+## 💬Join Our CodeSmashers Community
 
 Join - https://discord.gg/gtYUZQSjTt
 

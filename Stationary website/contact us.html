@@ -1,120 +1,234 @@
 <!doctype html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>JAINS stationary</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
+    <script src="https://kit.fontawesome.com/c1c97e61e2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
+    <title>JAINS Stationery</title>
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
     
-     <!-- link icon  -->
-  <link rel="icon" href="img/favicon.png" type="image/x-icon">
-
-</head>
+    
+  </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="index.html"><span style="color:rgb(238, 255, 1); font-size: larger;
-            ">Jains</span> stationary</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link" href="about us.html">About us<span class="sr-only">(current)</span></a>
-                </li>
-
-                <li class="nav-item active">
-                    <a class="nav-link" href="contact us.html">Contact us</a>
-                </li>
-
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
-        </div>
-    </nav>
-
-    <div class="container mt-3">
-        <h3>Contact us for any query</h3>
-        <hr>
-        <form>
-            <div class="form-row">
-                <div class="form-group col-md-6">
-                    <label for="FirstName">First Name</label>
-                    <input type="text" class="form-control" id="FirstName" placeholder="enter your FirstName">
-                </div>
-                <div class="form-group col-md-6">
-                    <label for="LastName">Last Name</label>
-                    <input type="text" class="form-control" id="LastName" placeholder="enter your LastName">
-                </div>
-            </div>
-            <div class="form-row">
-                <div class="form-group col-md-6">
-                    <label for="inputEmail4">Email</label>
-                    <input type="email" class="form-control" id="inputEmail4" placeholder="enter your email">
-                </div>
-                <div class="form-group col-md-6">
-                    <label for="reason">Reason for contacting</label>
-                    <input type="text" class="form-control" id="reason" placeholder="enter your reason for contacting us">
-                </div>
-            </div>
-            <div class="form-group">
-                <label for="inputAddress">Address</label>
-                <input type="text" class="form-control" id="inputAddress" placeholder="Your Address">
-            </div>
-           
-            <div class="form-row">
-                <div class="form-group col-md-6">
-                    <label for="inputCity">City</label>
-                    <input type="text" class="form-control" id="inputCity" placeholder="enter your city">
-                </div>
-                <div class="form-group col-md-4">
-                    <label for="inputState">State</label>
-                    <select id="inputState" class="form-control">
-                        <option selected>Choose...</option>
-                        <option>...</option>
-                    </select>
-                </div>
-                <div class="form-group col-md-2">
-                    <label for="inputZip">Zip</label>
-                    <input type="text" class="form-control" id="inputZip">
-                </div>
-            </div>
-            <div class="form-group">
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="gridCheck">
-                    <label class="form-check-label" for="gridCheck">
-                        Check me out
-                    </label>
-                </div>
-            </div>
-            <button type="submit" class="btn btn-primary">Sign in</button>
+    <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+        <div class="logo">
+            <a href="./index.html"><img src="./img/favicon.png" alt=""></a>
+          </div>
+      <!-- <a class="navbar-brand" href="./index.html"><span style="color:rgb(238, 255, 1); font-size: larger;
+        ">Jains Stationary</span> </a> -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="./about us.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Contact Us</a>
+          </li>
+          
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+          <button type="button"  data-bs-toggle="modal" data-bs-target="#login"class="btn btn-sm btn-warning mx-2">Login</button>
+        <button type="button" data-bs-toggle="modal" data-bs-target="#signup" class="btn btn-sm btn-warning">Signup</button>
         </form>
+      </div>
     </div>
-    <hr>
+  </nav>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
+
+<!-- Login in Modal -->
+<div class="modal fade" id="login" tabindex="-1" aria-labelledby="loginLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="loginLabel">Login to your account</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="loginemail" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="loginemail" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="loginpass" class="form-label">Password</label>
+            <input type="password" class="form-control" id="loginpass">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <span style="width: 82%;">Don't have an account ? <a data-bs-toggle="modal" data-bs-target="#signup" style="color: rgb(0, 94, 255); cursor: pointer; text-decoration: underline;" >Signup</a></span>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Sign up Modal-->
+<div class="modal fade" id="signup" tabindex="-1" aria-labelledby="signupLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="signupLabel">Signup to create an account</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="signemail" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="signemail" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="signpass" class="form-label">Password</label>
+            <input type="password" class="form-control" id="signpass">
+          </div>
+          <div class="mb-3">
+            <label for="cpass" class="form-label">Confirm Password</label>
+            <input type="password" class="form-control" id="cpass">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck2">
+            <label class="form-check-label" for="exampleCheck2">Check me out</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Signup</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+<div class="container px-4 my-4">
+    <h1 class="text-center pt-4" style=" font-family: serif; font-size: 3.2rem; margin-top: 85px;">Contact Now</h1>
+    <form style="width: 70%; margin:30px auto;" >
+        <div class="mb-3">
+            <label for="name" class="form-label">Enter your Name</label>
+            <input type="text" class="form-control" id="name" aria-describedby="emailHelp">
+          </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Enter your Email</label>
+          <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+        <label for="address" class="form-label">Enter your Address</label>
+            <input type="text" class="form-control" id="address" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <label for="phone" class="form-label">Enter your Phone Number</label>
+                <input type="number" class="form-control" id="phone" aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Reason for Contacting</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck3">
+                <label class="form-check-label" for="exampleCheck3">Check me out</label>
+              </div>
+        <button type="submit" class="btn btn-primary my-4">Submit</button>
+      </form>
+</div>
+   
+    <hr class="mt-5">
+
+   <!-- Footer -->
+   <div class="container mt-5" id="footer">
+    <footer class="">
+      <div class="row py-4">
+        <div class="col-2">
+          <h5>Company</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="./index.html" class="nav-link p-0 text-muted">→ Home</a></li>
+            <li class="nav-item mb-2"><a href="./about us.html" class="nav-link p-0 text-muted">→ About Us</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">→ Contact Us</a></li>
+            <li class="nav-item mb-2"><a target="_blank" href="https://www.google.com/maps/place/Jain+Stationers+and+electricals/@26.8949116,80.8926612,12z/data=!4m8!1m2!2m1!1sjain+stationers!3m4!1s0x399bfdfd600dfbe9:0x7c8993c0ebbf9ac2!8m2!3d26.8725077!4d80.9715247" class="nav-link p-0 text-muted">→ View on Map</a></li>
+           
+          </ul>
+        </div>
+  
+        <div class="col-2">
+          <h5>Locations</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2 text-muted">→ Delhi</li>
+            <li class="nav-item mb-2 text-muted">→ Mumbai</li>
+            <li class="nav-item mb-2 text-muted">→ Chennai</li>
+            <li class="nav-item mb-2 text-muted">→ Bengaluru</li>
+            
+          </ul>
+        </div>
+
+        <div class="col-2">
+            <h5>Contact</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2 text-muted"><i class="fa fa-map-marker" style="color: red; padding-right: 13px;"></i>New Delhi</li>
+              <li class="nav-item mb-2 text-muted">	
+                <i class="fa fa-phone" style="color: green; padding-right: 13px;"></i>123-456-789</li>
+              <li class="nav-item mb-2 text-muted">	
+                <i class="fa fa-envelope" style="color: blue; padding-right: 13px;"></i>jaininfo@gmail.com</li>
+              
+              
+            </ul>
+          </div>
+  
+        <div class="col-4 offset-1 subscribe">
+          <form>
+            <h5>Subscribe to our newsletter</h5>
+            <p>Monthly digest of whats new and exciting from us.</p>
+            <div class="d-flex w-100 gap-2">
+              <label for="newsletter1" class="visually-hidden">Email address</label>
+              <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+              <button class="btn btn-primary" type="button">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+  
+      <div class=" py-4 border-top text-center">
+        <p>© 2021 Jains Stationery, Inc. All rights reserved.</p>
+        <p class="float-right"><a href="#">Back to top</a></p>
+      </div>
+    </footer>
+  </div>
+
+<!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+  -->
 </body>
-
 </html>
