@@ -13,6 +13,10 @@
   
     },
     {
+      "name":"Clipboard Landing Page",
+      "link":"Clipboard_Landing_Page/index.html"
+    },
+    {
   
       "name": "ComingSoon",
       "link": "ComingSoon/index.html"
@@ -53,6 +57,10 @@
       "name": "Google Clone",
       "link": "Google%20Clone/index.html"
   
+    },
+    { 
+      "name": "Huddle Landing Page",
+      "link": "Huddle/index.html"
     },
     {
   
@@ -367,6 +375,14 @@
       "link": "Template%20Mobile%20Development%20Company/index.html"
   
     },
+
+    {
+  
+      "name": "Thanking SVG page",
+     "link": "Thanking SVG page/index.html"
+ 
+   },
+
     {
   
        "name": "Tourism-Portal",
