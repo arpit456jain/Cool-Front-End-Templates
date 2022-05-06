@@ -1,3 +1,7 @@
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 .logo{height: 25px;
 width:120px;
 margin-left: 30px;}
