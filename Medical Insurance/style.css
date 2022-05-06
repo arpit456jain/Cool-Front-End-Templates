@@ -24,7 +24,7 @@ section {
 }
 
 .logo {
-  width: 55rem;
+  width: auto;
   margin: 0px;
   display: block;
 }
