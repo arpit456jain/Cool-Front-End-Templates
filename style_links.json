@@ -403,19 +403,23 @@
   
     },
     {   
+      
       "name": "Tourism_Responsive_Website",
       "link": "Tourism_Responsive_Website/index.html"
+      
     },
     {
+      
       "name": "Chrome Extension UI",
       "link": "Chrome%20Extension%20Project/index.html"
+      
     },
- 
-  {
+    {
+      
       "name": "Step By Step Process",
       "link": "Step%20By%20Step%20Process/index.html"
+      
     }
-
   
   ]
 
