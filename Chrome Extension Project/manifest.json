@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "Chrome Extension Project",
+  "version": "1",
+  "description": "This is Sample extension UI to enhance my coding skills. Created By: Aarya Ahjolia",
+  "icons": {
+    "16": "Other icons/A_logo.png",
+    "48": "Other icons/A_logo.png",
+    "128": "Other icons/A_logo.png"
+  },
+  "browser_action": {
+    "default_icon": "Other icons/A_logo.png",
+    "default_popup": "index.html"
+  }
+}
