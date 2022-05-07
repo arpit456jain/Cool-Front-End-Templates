@@ -13,6 +13,10 @@
   
     },
     {
+      "name":"Clipboard Landing Page",
+      "link":"Clipboard_Landing_Page/index.html"
+    },
+    {
   
       "name": "ComingSoon",
       "link": "ComingSoon/index.html"
@@ -371,6 +375,14 @@
       "link": "Template%20Mobile%20Development%20Company/index.html"
   
     },
+
+    {
+  
+      "name": "Thanking SVG page",
+     "link": "Thanking SVG page/index.html"
+ 
+   },
+
     {
   
        "name": "Tourism-Portal",
@@ -397,7 +409,10 @@
   {   
       "name": "Medical Insurance",
       "link": "Medical Insurance/index.html"
+  },
+    {
+      "name": "Chrome Extension UI",
+      "link": "Chrome%20Extension%20Project/index.html"
     }
-  
   ]
 
