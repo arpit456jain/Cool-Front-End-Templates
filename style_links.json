@@ -8,15 +8,13 @@
     },
     {
   
-      "name": "Adobe Photoshop Website Clone",
-      "link": "Adobe%20PhotoShop%20Clone%20Website%20Clone/index.html"
-  
-    },
-    {
-  
       "name": "Chinese Restaurant",
       "link": "Chinese%20Restaurant/index.html"
   
+    },
+    {
+      "name":"Clipboard Landing Page",
+      "link":"Clipboard_Landing_Page/index.html"
     },
     {
   
@@ -377,6 +375,14 @@
       "link": "Template%20Mobile%20Development%20Company/index.html"
   
     },
+
+    {
+  
+      "name": "Thanking SVG page",
+     "link": "Thanking SVG page/index.html"
+ 
+   },
+
     {
   
        "name": "Tourism-Portal",
