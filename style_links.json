@@ -409,6 +409,10 @@
   {   
       "name": "Cart Menu",
       "link": "Cart Menu/index.html"
+  },
+    {
+      "name": "Chrome Extension UI",
+      "link": "Chrome%20Extension%20Project/index.html"
     }
   ]
 
