@@ -28,4 +28,4 @@ This is a NVIDIA Clone made using Javascript,CSS,HTML5
 https://user-images.githubusercontent.com/93239528/165764203-81878125-8851-45cc-a0b4-1a6a27cb8bf2.mp4
 
 
-## Deployed Link: https://amazing-croissant-9c9024.netlify.app/ 
+## Deployed Link: https://subtle-palmier-919a35.netlify.app/ 
