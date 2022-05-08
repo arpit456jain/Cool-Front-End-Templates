@@ -408,7 +408,7 @@
     },
   {   
       "name": "Medical Insurance",
-      "link": "Medical Insurance/index.html"
+      "link": "Medical%20Insurance/index.html"
   },
     {
       "name": "Chrome Extension UI",
