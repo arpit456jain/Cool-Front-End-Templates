@@ -132,6 +132,20 @@ body {
     margin: 0 auto 1rem;
   }
 }
+
+@media (max-width: 480px) {
+  .container {
+    width: 450px;
+    margin: 0 0 0 -5px;
+  }
+img {
+  max-width: 100%;
+}
+body {
+padding : 0;
+}
+}
+
 #underline {
             text-decoration: none;
 }
