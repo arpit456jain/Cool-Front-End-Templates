@@ -407,12 +407,21 @@
       "link": "Tourism_Responsive_Website/index.html"
     },
   {   
+
       "name": "Cart Menu",
       "link": "Cart%20Menu/index.html"
+  },
+  {
+      "name": "Medical Insurance",
+      "link": "Medical%20Insurance/index.html"
   },
     {
       "name": "Chrome Extension UI",
       "link": "Chrome%20Extension%20Project/index.html"
+    },
+    {
+      "name": "Discord Clone",
+      "link": "Discord%20Clone/index.html"
     }
   ]
 
