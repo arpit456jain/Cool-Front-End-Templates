@@ -39,6 +39,14 @@ body{
     font-size: 4.5vw;
   }
 }
+@media screen and (max-width: 400px) {
+.process-items .process-item p {
+      font-size: 5.5vw;    
+      font-size: 20px;
+	max-height: 21px;
+}
+
+}
 .process-items .process-item input {
   display: none;
 }
