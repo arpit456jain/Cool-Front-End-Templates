@@ -409,6 +409,9 @@
     {
       "name": "Chrome Extension UI",
       "link": "Chrome%20Extension%20Project/index.html"
+    } ,  {
+      "name": "NVIDIA_Clone",
+      "link": "NVIDIA_Clone/index.html"
     }
   ]
 
