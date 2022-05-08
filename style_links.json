@@ -408,7 +408,7 @@
     },
   {   
       "name": "Cart Menu",
-      "link": "Cart Menu/index.html"
+      "link": "Cart%20Menu/index.html"
   },
     {
       "name": "Chrome Extension UI",
