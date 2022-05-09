@@ -1,0 +1,182 @@
+html {
+  font-family: sans-serif;
+  background: white;
+  color: #005F92;
+}
+
+body {
+background-color: #fff;
+	background-size:  8px 8px, 8px 8px;
+	background-position: center, center;
+	background-image: linear-gradient(#ebf4f9 1px, transparent 1px),linear-gradient(90deg, #ebf4f9 1px, transparent 1px);
+  margin: 1.5rem;
+}
+@media screen and (min-width: 480px) {
+  body {
+    flex-direction: row;
+    margin: 3rem;
+  }
+}
+
+section {
+  margin: auto;
+  max-width: 35rem;
+}
+
+.logo {
+  width: auto;
+  margin: 0px;
+  display: block;
+}
+
+a {
+  color: #f51e47;
+}
+a:visited {
+  color: #f51e47;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 3rem;
+}
+
+h2 {
+  font-size: 2.3rem;
+  line-height: 2.3rem;
+}
+
+h1, h2, h3 {
+  display: block;
+  margin: 0;
+  text-align: center;
+  font-family: "Playfair Display", sans-serif;
+}
+
+h3 {
+  font-size: 2rem;
+  line-height: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.highlight {
+  font-style: italic;
+  color: #f51e47;
+}
+
+label {
+  display: block;
+  width: 100%;
+  font-size: 0.7rem;
+  line-height: 0.8rem;
+  margin-bottom: 0.2rem;
+}
+
+input {
+  display: block;
+  width: 100%;
+  font-size: 1rem;
+  border: none;
+  border-radius: 1rem;
+  padding: 0.2rem 1rem;
+  color: #005F92;
+  border: 4px #00324d solid;
+}
+input:focus {
+  outline: none;
+  border: 4px #2b9cd9 solid;
+}
+
+.calc-container {
+  margin: auto;
+  padding: 2rem;
+  color: white;
+  background-color: #00324d;
+  margin-bottom: 3rem;
+  max-width: 35rem;
+  border-radius: 2rem;
+}
+.calc-container i {
+  opacity: 0.7;
+  font-size: 0.8rem;
+  line-height: 0.8rem;
+}
+
+.calc-columns {
+  display: flex;
+  flex-direction: column-reverse;
+}
+@media screen and (min-width: 480px) {
+  .calc-columns {
+    flex-direction: row;
+  }
+}
+
+.calc-column {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.input-item {
+  display: block;
+  margin-bottom: 0.7rem;
+  margin-right: 2.5rem;
+}
+@media screen and (min-width: 480px) {
+  .input-item {
+    margin-right: 3rem;
+  }
+}
+
+.price-point {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.big-price {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.little-price {
+  font-size: 2.3rem;
+  font-weight: bold;
+  color: #2b9cd9;
+}
+
+.price-extras {
+  opacity: 0.7;
+}
+
+.more-taxes {
+  color: #f51e47;
+}
+
+.or {
+  display: block;
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  text-align: center;
+  font-family: "Playfair Display", sans-serif;
+  font-style: italic;
+  color: red;
+}
+
+.more {
+  display: block;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+.small {
+  font-size: 2.5rem;
+}
