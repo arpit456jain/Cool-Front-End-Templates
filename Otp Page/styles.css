@@ -1,0 +1,124 @@
+:root {
+  --bg-color: rgb(23, 5, 31);
+  --blue: #1c87c5;
+  --pink: #ff0095;
+  --red: #f52929;
+  --margenta: #6e14a1;
+  --otp-desp-color: #c5b9b9;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: var(--bg-color);
+}
+.otp {
+  background: rgba(45, 19, 80, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  border-radius: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  width: 60vw;
+  height: 70vh;
+  margin: 6% auto;
+  text-align: center;
+  color: #eee;
+}
+
+.otp .otp-title {
+  margin: 40px 0;
+  font-size: 2.3rem;
+}
+
+.otp .otp-desp {
+  font-size: 1.3rem;
+  color: var(--otp-desp-color);
+}
+
+.digit-group{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.digit-group input {
+  background-color: transparent;
+  width: 50px;
+  height: 80px;
+  border: 2px solid var(--otp-desp-color);
+  line-height: 50px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 200;
+  color: #eee;
+  margin: 50px 15px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.otp-btn{
+  border: 1px solid var(--bg-color);
+  width: 20%;
+  height: 8%;
+  background-color: var(--otp-desp-color);
+  border-radius: 10px;
+  color: var(--bg-color);
+  cursor: pointer;
+  box-shadow: inset 2px -2px 8px rgb(34, 34, 34);
+}
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+}
+
+.circle:nth-child(1) {
+  background: var(--red);
+  filter: blur(130px);
+  -webkit-filter: blur(70px);
+  left: -5vw;
+  top: -5vh;
+  height: 250px;
+  width: 250px;
+}
+.circle:nth-child(2) {
+  background-color: var(--margenta);
+  filter: blur(130px);
+  -webkit-filter: blur(40px);
+  right: 13vw;
+  top: 10vh;
+  height: 150px;
+  width: 150px;
+}
+.circle:nth-child(3) {
+  background-color: var(--pink);
+  filter: blur(130px);
+  -webkit-filter: blur(40px);
+  left: 10vw;
+  bottom: 5vh;
+  height: 250px;
+  width: 250px;
+}
+.circle:nth-child(4) {
+  background-color: var(--blue);
+  filter: blur(130px);
+  -webkit-filter: blur(90px);
+  right: -5vw;
+  bottom: -10vh;
+  height: 325px;
+  width: 325px;
+}
+
+@media only screen and (max-width: 600px) {
+  .otp{
+    width: 90vw;
+  }
+  .digit-group input{
+    height: 40px;
+    width: 25px;
+    font-size: 20px;
+    margin: 30px 5px;
+  }
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>OTP Page</title>
+</head>
+<body>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="otp">
+        <h1 class="otp-title">Verify OTP</h1>
+        <p class="otp-desp">We have sent the otp on your mobile number +41 1000560071 </p>
+        <form method="get" class="digit-group" data-group-name="digits" data-autosubmit="false" autocomplete="off">
+            <input type="text" id="digit-1" name="digit-1" data-next="digit-2"/>
+            <input type="text" id="digit-2" name="digit-2" data-next="digit-3" data-previous="digit-1" />
+            <input type="text" id="digit-3" name="digit-3" data-next="digit-4" data-previous="digit-2" />
+            <input type="text" id="digit-4" name="digit-4" data-next="digit-5" data-previous="digit-3" />
+            <input type="text" id="digit-5" name="digit-5" data-next="digit-6" data-previous="digit-4" />
+            <input type="text" id="digit-6" name="digit-6" data-previous="digit-5" />
+        </form>
+        <button type="submit" class="otp-btn">Submit</button>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="index.js" type="text/javascript"></script>
+</body>
+</html>
