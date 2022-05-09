@@ -22,7 +22,7 @@ h2
 }
 .recipe-section .recipes .recipe-item .recipe-block {
   display: block;
-  width: 100%;
+  width: 82%;
   position: relative;
 }
 .recipe-section .recipes .recipe-item .recipe-block h3 {
@@ -38,18 +38,21 @@ h2
   font-size: 4rem;
   text-shadow: 0 0 2vw rgba(0, 0, 0, 0.7);
 }
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 840px) {
   .recipe-section .recipes .recipe-item .recipe-block h3 {
     font-size: 8vw;
     text-shadow: 0 0 4vw rgba(0, 0, 0, 0.7);
   }
 }
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 740px) {
   .recipe-section .recipes .recipe-item {
     width: 100%;
     padding-right: 0;
     padding: 0 5%;
   }
+	img {
+		width : 110%;
+}
 }
 @media screen and (max-width: 540px) {
   .recipe-section .recipes {
