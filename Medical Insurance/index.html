@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+  <title>Medicare Calculator</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:800,800i&display=swap" rel="stylesheet">
+
+<section>
+	<h1>Medicare for <span class="highlight">All</span></h1>
+<p>Medicare for All could save the US $450 BILLION anually and save 68,000 lives every year according to a recent <a
+		href="https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(19)33019-3/fulltext?fbclid=IwAR2HaC9sJu1CORFnTcl0V4izAf5MSGY7HWQqn5tZlj7ep5Fs5kdfll1zG9o" target="_blank">Yale
+		study</a>.</p>
+<p>It provides dental, eye and hearing aid coverage with no networks, no premiums, no deductibles, no copays, and no
+	surprise bills! </p>
+	<p>Here are a few options for funding this policy:</p>
+</section>
+
+<section>
+<h2>4% Income Tax</h2>
+	<p>Create a 4 percent income-based premium paid by employees, exempting the first $29,000 in income for a family of four.</p>
+	<p><i>(Revenue raised: About $4 trillion over 10 years.)</i></p>
+<div class="calc-container">
+	<h3>What will you pay?</h3>
+	<div class="calc-columns">
+		<div class="calc-column">
+			<div class="input-item">
+				<label for="income">Family Income</label>
+				<input type="number" id="income" name="income" min="0" step="10000" value="60000" onchange="calculateIncomeTax()"
+					oninput="calculateIncomeTax()">
+			</div>
+			<div class="input-item">
+				<label for="current-costs">Current Medical Costs</label>
+				<input type="number" id="current-costs" name="current-costs" min="0" step="10000" value="6015"
+					onchange="calculateIncomeTax()" oninput="calculateIncomeTax()">
+			</div>
+		</div>
+
+		<div class="calc-column">
+			<div class="price-point">
+				<span id="income-output" class="big-price">
+					$1,240
+				</span>
+				<span class="price-extras">
+					per year
+				</span>
+			</div>
+
+			<div class="price-point">
+				<span id="income-savings" class="little-price">
+					$4,775
+				</span>
+				<span id="income-savings-text" class="price-extras">
+					savings
+				</span>
+			</div>
+		</div>
+	</div>
+	
+	<i>In 2018, the average family paid $6,015 in premiums for insurance. Under this option, a typical family of four
+		earning $60,000, would pay a 4 percent income-based premium to fund Medicare for All on income above $29,000 – just
+		$1,240 a year – saving that family $4,775 a year. Families of four making less than $29,000 a year would not pay this
+		premium.</i>
+</div>
+</section>
+
+<span class="or">and</span>
+<section>
+<h2>7.5% Payroll Tax</h2>
+	<p>Impose a 7.5 percent income-based premium paid by employers, exempting the first $1 million in payroll to protect small businesses.</p>
+	<p><i>(Revenue raised: Over $5.2 trillion over 10 years.)</i></p>
+<div class="calc-container">
+	<h3>What will your employer pay?</h3>
+	<div class="calc-columns">
+		<div class="calc-column">
+			<div>
+				<div class="input-item">
+					<label for="employees">Employees</label>
+					<input type="number" id="employees" name="employees" min="0" step="10" value="20" onchange="calculatePayrollTax()"
+						oninput="calculatePayrollTax()">
+				</div>
+				<div class="input-item">
+					<label for="average-salary">Average Salary</label>
+					<input type="number" id="average-salary" name="average-salary" min="0" step="10000" value="60000"
+						onchange="calculatePayrollTax()" oninput="calculatePayrollTax()">
+				</div>
+				<div class="input-item">
+					<label for="average-salary">Current Cost per Employee</label>
+					<input type="number" id="current-premiums" name="current-premiums" min="0" step="1000" value="14561"
+						onchange="calculatePayrollTax()" oninput="calculatePayrollTax()">
+				</div>
+			</div>
+		</div>
+		<div class="calc-column">
+			<div class="price-point">
+				<span id="payroll-output" class="big-price">
+					$750
+				</span>
+					<span class="price-extras">
+						per employee / per year
+					</span>
+			</div>
+			<div class="price-point">
+				<span id="payroll-savings" class="little-price">
+					$276,220
+				</span>
+					<span id="payroll-savings-text" class="price-extras">
+					total savings
+				</span>
+			</div>
+		</div>
+	</div>
+<i>In 2018, employers paid an average of $14,561 in private health insurance premiums for a worker with a family of
+		four. Under this option, employers would pay a 7.5 percent payroll tax to help finance Medicare for All – just $4,500
+		–
+		a savings of more than $10,000 a year.</i>
+</div>
+</section>
+
+
+<span class="or small">more options</span>
+<section>
+<h2>No Health Tax Expenditures</h2>
+	<p>Eliminating health tax expenditures, which would no longer be needed under Medicare for All.
+</p>
+	<p><i>(Revenue raised: About $3 trillion over 10 years.)</i></p>
+</section>
+
+
+<section>
+<h2>New Tax Bracket</h2>
+	<p>Raising the top marginal income tax rate to 52% on income over $10 million.</p>
+	<p><i>(Revenue raised: About $700 billion over 10 years.)</i></p>
+</section>
+
+<section>
+<h2>Replace SALT Deduction Cap</h2>
+	<p>Replacing the cap on the state and local tax deduction with an overall dollar cap of $50,000 for a married couple on all itemized deductions.</p>
+	<p><i>(Revenue raised: About $400 billion over 10 years.)</i></p>
+</section>
+
+<section>
+<h2>Capital Gains as Income</h2>
+	<p>Taxing capital gains at the same rates as income from wages and cracking down on gaming through derivatives, like-kind exchanges, and the zero tax rate on capital gains passed on through bequests.</p>
+	<p><i>(Revenue raised: About $2.5 trillion over 10 years.)</i></p>
+</section>
+
+<section>
+<h2>Restore Estate Tax - Close Loopholes</h2>
+	<p>Enacting the For the 99.8% Act, which returns the estate tax exemption to the 2009 level of $3.5 million, closes egregious loopholes, and increases rates progressively including by adding a top tax rate of 77% on estate values in excess of $1 billion.</p>
+	<p><i>(Revenue raised: $336 billion over 10 years.)</i></p>
+</section>
+
+<section>
+<h2>Restore Corporate Income Tax</h2>
+	<p>Enacting corporate tax reform including restoring the top federal corporate income tax rate to 35 percent.
+</p>
+	<p><i>(Revenue raised: $3 trillion ,of which $1 trillion would be used to help finance Medicare for All and $2 trillion would be used for the Green New Deal.)</i></p>
+</section>
+
+<span class="more">find out more at <a href="https://github.com/DragonUncaged">DragonUncaged.com</a></span>
+
+<a href="https://github.com/DragonUncaged" target="_blank">
+	<img class="logo" src="./svg.svg" alt="DragonUncaged">
+</a>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
