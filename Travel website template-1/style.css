@@ -2,32 +2,30 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Josefin Sans", sans-serif;
+
 }
 
 header {
   width: 100%;
   height: 100vh;
-  background-image: url('img/istock-478831658.jpg') ;
+  background-image: url('./img/istock-478831658.jpg') ;
+  background-blend-mode: darken;
+  opacity: 0.85;
+  background-color: rgba(0, 0, 0, 0.227);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 nav {
   width: 100%;
-  height: 15vh;
+  height: 10vh;
   background: none;
   color: darkgreen;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  text-transform: uppercase;
-}
+  font-size: 20px;
 
-nav .logo {
-  width: 25%;
-  text-align: center;
-  /*background: red;*/
 }
 
 nav .menu {
@@ -35,17 +33,6 @@ nav .menu {
   display: flex;
   justify-content: space-around;
 }
-
-nav .menu a {
-  width: 25%;
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-}
-
-/* nav .menu a:first-child {
-  color: white;
-} */
 
 main {
   width: 100%;
@@ -73,10 +60,11 @@ section h1 {
 }
 
 section p {
-  font-size: 25px;
+  font-size: 30px;
+
   word-spacing: 2px;
   margin-bottom: 25px;
-  text-shadow: 1px 1px 1px black;
+  text-shadow: 1px 3px 2px #00b894;
 }
 
 section a {
@@ -92,7 +80,6 @@ section a {
 }
 
 section .btnone {
-  /*background: #00b894;*/
   background: #fff;
   color: #000;
 }
@@ -129,12 +116,14 @@ section .btntwo {
     content: "Jaipur";
   }
   60% {
-    content: "kerala";
+    content: "Kerala";
   }
   80% {
-    content: "delhi";
+    content: "Delhi";
   }
   100% {
     content: "Mumbai";
   }
 }
+
+
