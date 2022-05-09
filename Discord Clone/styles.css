@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+:root {
+  --dark-bg: #36393f;
+  --dark-server-list: #202225;
+  --server-divider: #2d2f32;
+  --blurple: #7289da;
+  --dark-blurple: #4d5e94;
+  --green: #43b581;
+  --dark-primary: #2f3136;
+  --text-gray: #dcddde;
+  --user-box: #292b2f;
+  --iconColor: #b9bbbe;
+  --red: #dd4444;
+  --category-color: #8e9296;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--dark-bg);
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+}
+
+.rootDiv {
+  display: grid;
+  grid-template-columns: 0px 70px 300px;
+  grid-template-rows: auto;
+}
+
+.servers {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: row1-start;
+  grid-row-end: 3;
+  position: absolute;
+  width: 70px;
+  height: 100%;
+  background-color: var(--dark-server-list);
+  overflow-y: auto;
+  scrollbar-width: 0px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  user-select: none;
+}
+
+.servers::-webkit-scrollbar,
+.nav::-webkit-scrollbar {
+  width: 0px;
+}
+
+.homebutton {
+  position: relative;
+  background-color: var(--dark-bg);
+  color: #ffffff;
+  border-radius: 50%;
+  text-align: center;
+  height: 48px;
+  width: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.server {
+  position: relative;
+  background-color: var(--dark-bg);
+  color: #ffffff;
+  border-radius: 50%;
+  text-align: center;
+  height: 48px;
+  width: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 7px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.server img {
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  text-align: center;
+  transition: 0.2s;
+  user-select: none;
+}
+
+.invite {
+  color: var(--green) !important;
+  font-size: 48px;
+}
+
+.invite:hover {
+  color: #ffffff !important;
+  background-color: var(--green) !important;
+}
+
+.server-active,
+.server:hover {
+  background-color: var(--blurple);
+  border-radius: 30%;
+  transition: 0.3s;
+}
+
+.server img:hover {
+  border-radius: 30%;
+  transition: 0.3s;
+}
+
+.homebutton:hover {
+  background-color: var(--blurple);
+  border-radius: 30%;
+  transition: 0.3s;
+}
+
+.server-divider {
+  margin-top: 7px;
+  width: 50%;
+  background-color: var(--server-divider);
+  height: 3px;
+  border: none;
+  border-radius: 15px;
+}
+
+.side-bar {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  position: relative;
+  float: right;
+  width: 80%;
+  height: 100vh;
+  background-color: var(--dark-primary);
+}
+.nav {
+  overflow-y: auto;
+}
+
+.navGuildItems {
+  display: flex;
+  justify-content: space-between;
+}
+
+.guild-opener {
+  height: 30px;
+  margin-left: 50px;
+  margin-bottom: 40px;
+}
+
+.navguild {
+  border-bottom: 1px solid var(--dark-server-list);
+}
+
+.category {
+  margin: 10px;
+  color: var(--category-color);
+}
+.category p{
+    padding: 3px 0;
+}
+.category-title:hover {
+  color: #fff;
+}
+.category-channel:hover {
+    background-color: var(--dark-bg);
+    border-radius: 5px;
+    color: #fff;
+  }
+
+.guildDropdown {
+  margin-right: 43px;
+}
+.userBox {
+  position: absolute;
+  bottom: 0;
+  background-color: var(--user-box);
+  width: 100%;
+  height: 53px;
+  margin-bottom: 0;
+  display: flex;
+}
+
+.userAvatar {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  margin: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+  user-select: none;
+}
+
+.userAvatar:hover {
+  background-color: #000000;
+  opacity: 0.8;
+}
+
+.userinfo {
+  margin-left: 55px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.username {
+  display: block !important;
+  margin: 0;
+  font-weight: bolder;
+}
+
+.discriminator {
+  display: block !important;
+  margin: 0;
+  font-weight: lighter;
+  color: var(--text-gray);
+}
+
+.guildSelectorName {
+  user-select: none;
+  cursor: pointer;
+}
+
+.usermenuicons {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.mic,
+.headphone,
+.settings {
+  padding: 3px;
+  user-select: none;
+  cursor: pointer;
+}
+
+.mic svg,
+.headphone svg,
+.settings svg {
+  height: 20px;
+  width: 20px;
+  fill: var(--iconColor);
+}
+
+.mic:hover,
+.headphone:hover,
+.settings:hover {
+  background-color: var(--dark-bg);
+}
+
+.icon-strikethrough {
+  fill: var(--red);
+}

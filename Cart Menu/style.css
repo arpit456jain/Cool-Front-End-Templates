@@ -1,0 +1,124 @@
+body {
+  font-size: 1vw;
+  margin: 0;
+  font-family: "lato", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button {
+  background: orange;
+  padding: 1em 2em;
+  font-size: 1.2em;
+  border: none;
+  outline: none;
+  color: white;
+}
+
+product-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 1em;
+  justify-content: center;
+}
+product-grid product-item {
+  font-size: 1em;
+  margin: 1em;
+  width: 20em;
+  display: inline-flex;
+  flex-direction: column;
+  background: white;
+  border: solid 1px grey;
+}
+@media screen and (max-width: 530px) {
+  product-grid product-item {
+    width: 100%;
+    font-size: 2.25em;
+  }
+}
+@media screen and (min-width: 530px) and (max-width: 800px) {
+  product-grid product-item {
+    width: 30em;
+    font-size: 1.5em;
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 1200px) {
+  product-grid product-item {
+    width: 20em;
+    font-size: 1em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  product-grid product-item {
+    width: 240px;
+    font-size: 12px;
+  }
+}
+product-grid product-item .product-header {
+  font-size: 1.5em;
+  background: grey;
+  display: block;
+}
+product-grid product-item .product-header .product-title {
+  padding: 1em;
+}
+product-grid product-item .product-header .product-title .product-brand {
+  text-transform: uppercase;
+  color: orange;
+}
+product-grid product-item .product-header .product-title .product-name {
+  text-transform: uppercase;
+  color: white;
+}
+product-grid product-item .product-header .product-title .product-subtitle {
+  color: lightgrey;
+  display: block;
+  font-size: 0.7em;
+}
+product-grid product-item .product-header .product-image {
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+product-grid product-item .product-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-basis: 100%;
+  padding: 1em;
+}
+product-grid product-item .product-details p {
+  align-self: start;
+  padding: 0;
+  margin: 0;
+  font-size: 1.3em;
+  line-height: 1.3em;
+}
+product-grid product-item .product-details .product-price {
+  margin-top: 2em;
+  text-align: center;
+}
+product-grid product-item .product-details .product-price .product-previous-price {
+  font-size: 1.2em;
+  display: block;
+  text-decoration: line-through;
+  line-height: 1em;
+}
+product-grid product-item .product-details .product-price .product-previous-price sup {
+  font-size: 0.5em;
+  text-decoration: none;
+}
+product-grid product-item .product-details .product-price .product-current-price {
+  font-size: 4em;
+  display: block;
+  font-weight: bold;
+}
+product-grid product-item .product-details .product-price .product-current-price sup {
+  font-size: 0.5em;
+}
+product-grid product-item .product-details button {
+  width: 100%;
+}
