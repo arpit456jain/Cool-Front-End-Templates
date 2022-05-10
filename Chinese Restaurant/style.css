@@ -212,15 +212,13 @@ section .mybtn1:hover
 	margin: 0 auto;
 }
 .sectwoimg{
-	width: 50%;
+
 }
 .sectwo-Content{
 	margin: 0 0 0 5em;
 }
 .sectwodiv img{
-	transform: scale(.8);
-	position: relative;
-	left: -5em;
+	width: 100%;
 }
 .sectwo
 {
