@@ -2,8 +2,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Josefin Sans", sans-serif;
+
 }
+
 
 header {
   width: 100%;
@@ -25,7 +26,10 @@ nav {
 }
 
 nav .logo {
+  text-decoration: none;
+  color: darkgreen;
   width: 25%;
+ 
   text-align: center;
   /*background: red;*/
 }
@@ -39,13 +43,9 @@ nav .menu {
 nav .menu a {
   width: 25%;
   text-decoration: none;
-  color: black;
+  color: darkgreen;
   font-weight: bold;
 }
-
-/* nav .menu a:first-child {
-  color: white;
-} */
 
 main {
   width: 100%;
@@ -73,10 +73,11 @@ section h1 {
 }
 
 section p {
-  font-size: 25px;
+  font-size: 30px;
+
   word-spacing: 2px;
   margin-bottom: 25px;
-  text-shadow: 1px 1px 1px black;
+  text-shadow: 1px 3px 2px #00b894;
 }
 
 section a {
@@ -92,7 +93,6 @@ section a {
 }
 
 section .btnone {
-  /*background: #00b894;*/
   background: #fff;
   color: #000;
 }
@@ -129,12 +129,22 @@ section .btntwo {
     content: "Jaipur";
   }
   60% {
-    content: "kerala";
+    content: "Kerala";
   }
   80% {
-    content: "delhi";
+    content: "Delhi";
   }
   100% {
     content: "Mumbai";
   }
 }
+
+#myContact{
+  background-color: #212529;;
+  height: 10vh;
+
+}
+#myContact a{
+  color: white;
+}
+
