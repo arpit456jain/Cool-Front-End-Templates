@@ -595,6 +595,7 @@ textarea{
   .contact__button{
     justify-self: center;
   }
+
 }
 
 @media screen and (min-width: 768px){
@@ -658,4 +659,36 @@ textarea{
     .home__container {
         height: 640px;
     }
+}
+
+
+@media screen and (max-width: 736px){
+  .contact-img img{
+    display:none
+  }
+  
+  .contact-box{
+    max-width: 850px;
+    display: flex;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0px 0px 19px 5px rgb(0 0 0 / 19%);
+  }  
+}
+
+@media screen and (max-width: 419px){
+  .field, .ofield {
+    width: none;
+    border: 2px solid rgba(0, 0, 0, 0);
+    outline: none;
+    background-color: rgba(230, 230, 230, 0.6);
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    margin-bottom: 22px;
+    transition: .3s;
+    border-radius: 10px;
+  }
 }
