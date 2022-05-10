@@ -1,0 +1,257 @@
+/* Colors */
+:root {
+  --gold: #d5966c;
+  --almostBlack: #151515;
+  --darkGrey: #444444;
+  --white: #ffffff;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Button */
+.btn-container {
+  display: flex;
+  position: absolute;
+  top: 0;
+}
+
+.btn {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 24px;
+  letter-spacing: 3.7px;
+  text-transform: uppercase;
+  color: var(--white);
+  background-color: var(--almostBlack);
+  padding: 24px 33px;
+}
+
+.btn-arrow {
+  width: initial;
+  max-width: 100%;
+  background-color: var(--gold);
+  padding: 24px;
+  margin: 0;
+  cursor: pointer;
+}
+
+.btn-container:hover .btn {
+  background-color: var(--gold);
+}
+
+.btn-container:hover .btn-arrow {
+  background-color: var(--almostBlack);
+}
+
+/* Location section */
+.ourLocation {
+  background-color: var(--almostBlack);
+  padding: 48px 0 56px;
+}
+
+.ourLocationContainer {
+  width: 95%;
+  margin: 0 auto;
+  max-width: 1110px;
+}
+
+h1 {
+  font-size: 50px;
+  line-height: 45px;
+  color: var(--white);
+  margin-bottom: 48px;
+}
+
+h1,
+.ourLocation-street {
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.ourLocation-details {
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--white);
+}
+
+.ourLocation-street {
+  font-size: 32px;
+  line-height: 32px;
+  color: var(--gold);
+}
+
+.ourLocation-address {
+  list-style-type: none;
+}
+
+.ourLocation-street,
+.ourLocation-address {
+  margin-bottom: 20px;
+}
+
+/* Footer section */
+footer {
+  background-color: var(--gold);
+  color: var(--almostBlack);
+  padding: 48px 0;
+}
+
+.footer-content {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1110px;
+}
+
+.footer-title {
+  font-size: 22px;
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 900;
+  line-height: 22px;
+  text-transform: uppercase;
+  margin-bottom: 35px;
+}
+
+.footer-text {
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 38px;
+}
+
+.footer-link {
+  display: inline-block;
+  filter: invert(1);
+}
+
+.footer-link + .footer-link {
+  margin-left: 20px;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  opacity: 0.5;
+}
+
+@media (min-width: 640px) {
+  /* Button */
+  .btn-container {
+    left: 39px;
+  }
+
+  /* Location section */
+  .ourLocation {
+    padding: 88px 0 80px;
+  }
+
+  .ourLocationContainer {
+    width: 90%;
+    display: flex;
+  }
+
+  h1 {
+    font-size: 55px;
+    line-height: 50px;
+    margin-bottom: 0;
+    margin-right: 68px;
+  }
+
+  /* Footer section */
+  footer {
+    padding: 56px 0;
+  }
+
+  .footer-content {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-title {
+    max-width: 110px;
+    margin-bottom: 0;
+  }
+
+  .footer-text {
+    max-width: 281px;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1053px) {
+  /* Button */
+  .btn-container {
+    left: 156px;
+  }
+  /* Location section */
+  .ourLocation {
+    padding: 104px 0 128px;
+  }
+
+  .ourLocationContainer {
+    justify-content: space-between;
+  }
+
+  .ourLocation-details {
+    max-width: 540px;
+  }
+
+  h1 {
+    max-width: 350px;
+    font-size: 70px;
+    line-height: 70px;
+    margin-right: 0;
+  }
+
+  .ourLocation-details {
+    font-size: 22px;
+    line-height: 32px;
+  }
+
+  .ourLocation-street {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 24px;
+  }
+
+  .ourLocation-address {
+    margin-bottom: 32px;
+  }
+
+  /* Footer section */
+  footer {
+    padding: 80px 0;
+  }
+
+  .footer-title {
+    font-size: 30px;
+    line-height: 30px;
+    max-width: none;
+  }
+
+  .footer-text {
+    max-width: 430px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+}

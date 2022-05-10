@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Frontend Mentor | Art gallery website</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800;900&family=Outfit:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Frontend mentor icon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="location.css" />
+  </head>
+  <body>
+    <!-- Map section -->
+    <picture>
+      <source
+        media="(min-width: 767px)"
+        srcset="
+          assets/desktop/image-map@2x.png 2x,
+          assets/desktop/image-map.png    1x
+        "
+      />
+
+      <source
+        media="(min-width: 375px)"
+        srcset="
+          assets/tablet/image-map@2x.png 2x,
+          assets/tablet/image-map.png    1x
+        "
+      />
+
+      <source
+        srcset="
+          assets/mobile/image-map@2x.png 2x,
+          assets/mobile/image-map.png    1x
+        "
+      />
+
+      <img
+        src="assets/mobile/image-map.png"
+        alt="a map of gallery's location"
+      />
+    </picture>
+    <!-- Button -->
+    <div class="btn-container">
+      <img
+        class="btn-arrow"
+        src="assets/icon-arrow-left.svg"
+        alt="left-arrow"
+      />
+      <a href="index.html" class="btn">Back to Home</a>
+    </div>
+
+    <!-- Location section -->
+    <div class="ourLocation">
+      <div class="ourLocationContainer">
+        <h1>Our location</h1>
+        <div class="ourLocation-details">
+          <p class="ourLocation-street">99 King Street</p>
+          <ul class="ourLocation-address">
+            <li>Newport</li>
+            <li>RI 02840</li>
+            <li>United States of America</li>
+          </ul>
+          <p>
+            Our newly opened gallery is located near the Edward King House on 99
+            King Street, the Modern Art Gallery is free to all visitors and open
+            seven days a week from 8am to 9pm.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Footer section -->
+    <footer>
+      <div class="footer-content">
+        <h3 class="footer-title">
+          Modern <br />
+          Art Gallery
+        </h3>
+        <p class="footer-text">
+          The Modern Art Gallery is free to all visitors and open seven days a
+          week from 8am to 9pm. Find us at 99 King Street, Newport, USA.
+        </p>
+        <div>
+          <a class="footer-link" href="#"
+            ><img src="assets/icon-facebook.svg" alt="Art gallery's facebook"
+          /></a>
+          <a class="footer-link" href="#"
+            ><img src="assets/icon-instagram.svg" alt="Art gallery's instagram"
+          /></a>
+          <a class="footer-link" href="#"
+            ><img src="assets/icon-twitter.svg" alt="Art gallery's twitter"
+          /></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
