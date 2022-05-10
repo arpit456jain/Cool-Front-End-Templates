@@ -1,0 +1,124 @@
+body{
+	background-color: #fff;
+	background-size:  8px 8px, 8px 8px;
+	background-position: center, center;
+	background-image: linear-gradient(#ebf4f9 1px, transparent 1px),linear-gradient(90deg, #ebf4f9 1px, transparent 1px);
+}
+.process-items {
+  display: block;
+  text-align: center;
+  user-select: none;
+}
+.process-items .process-item {
+  color: #F2BABB;
+  font-size: 1.1vw;
+  width: 18em;
+  border-radius: 0.5em;
+  margin: 0 1em;
+  background: white;
+  box-shadow: 0 0.1em 1em 0 rgba(0, 0, 0, 0.2);
+  font-family: "Lato", sans-serif;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 3em;
+}
+@media screen and (min-width: 1440px) {
+  .process-items .process-item {
+    font-size: 15.8px;
+  }
+}
+@media screen and (max-width: 1020px) {
+  .process-items .process-item {
+    font-size: 2vw;
+  }
+}
+@media screen and (max-width: 540px) {
+  .process-items .process-item {
+    font-size: 4.5vw;
+  }
+}
+@media screen and (max-width: 400px) {
+.process-items .process-item p {
+      font-size: 5.5vw;    
+      font-size: 20px;
+	max-height: 21px;
+}
+
+}
+.process-items .process-item input {
+  display: none;
+}
+.process-items .process-item input:checked ~ label .plus-bar {
+  transform: scaleY(0);
+}
+.process-items .process-item input:checked ~ label p {
+  max-height: 300px;
+  opacity: 1;
+}
+.process-items .process-item input:checked ~ label:before {
+  transform: scale(1.38);
+}
+.process-items .process-item label {
+  display: block;
+}
+.process-items .process-item label:before {
+  content: "";
+  width: 15.84em;
+  height: 15.84em;
+  background: currentColor;
+  position: absolute;
+  top: 1.08em;
+  left: 1.08em;
+  border-radius: 9em;
+  transform: scale(1);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.3, 1);
+  transform-origin: bottom;
+}
+.process-items .process-item label svg {
+  position: relative;
+  display: block;
+}
+.process-items .process-item .process-art {
+  width: 100%;
+  height: 18em;
+}
+.process-items .process-item .process-fill-color {
+  fill: currentColor;
+}
+.process-items .process-item span {
+  font-weight: 600;
+  text-transform: uppercase;
+  display: block;
+}
+.process-items .process-item .process-item-label {
+  color: black;
+}
+.process-items .process-item .process-item-title {
+  font-size: 1.2em;
+}
+.process-items .process-item p {
+  margin: 0 20px;
+  padding-top: 10px;
+  max-height: 0;
+  transition: max-height 0.3s cubic-bezier(0.4, 0, 0.3, 1), opacity 0.3s cubic-bezier(0.4, 0, 0.3, 1);
+  overflow: hidden;
+  color: #555;
+  font-size: 17px;
+  line-height: 22px;
+  opacity: 0;
+  text-align: left;
+  font-weight: 300;
+}
+.process-items .process-item .plus-icon {
+  cursor: pointer;
+  width: 100%;
+  height: 2em;
+  padding: 1em 0;
+}
+.process-items .process-item .plus-icon .plus-bar {
+  transform: scaleY(1);
+  transform-origin: center;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.3, 1);
+}
