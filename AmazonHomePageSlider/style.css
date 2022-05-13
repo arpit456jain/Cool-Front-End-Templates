@@ -3,6 +3,7 @@ body{
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
+    overflow-x: hidden;
     background-color: #EAEDED;
 }
 .topheader{
@@ -1069,3 +1070,36 @@ ul li{
         grid-template-columns: 1fr 1fr;
     }
 } */
+@media (max-width:1115px)
+{
+    .usi{
+        display: none;
+    }
+}
+@media(max-width:1060px)
+{
+    .shirsha{
+        display: none;
+    }
+}
+@media(max-width:985px)
+{
+    .mukar{
+        left: 90%;
+    }
+    .subdef{
+        display: none;
+    }
+    ul{
+        display: none;
+    }
+}
+@media(max-width:796px)
+{
+    .mukar{
+        left: 85%;
+    }
+    .info{
+        margin-left: 20%;
+    }
+}
