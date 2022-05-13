@@ -1,0 +1,629 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	overflow-x: hidden;
+	font-family: 'Overpass', sans-serif;
+}
+html{
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+}
+.myfont
+{
+	font-family: 'Poppins';
+	font-size: 62px;
+	font-weight: 600;
+	letter-spacing: 3px;
+}
+.myfont span{
+	color: orangered;
+}
+.Home-container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+
+
+/*nav*/
+#logo img
+{
+	width: 80px;
+	height: 80px;
+	margin: 10px;
+	padding: 10px;
+	border-radius: 50%;
+}
+#logo img:hover{
+	cursor: pointer;
+	transition: all 0.6s ease-in-out;
+	transform: rotate(360deg);
+}
+.welcome h3{
+	font-family: "Poppins";
+	font-size: 16px;
+	letter-spacing: 3px;
+}
+@media only screen and (max-width:1000px){
+	.Home-container h1{
+		text-align: center;
+		font-size: 36px;
+	}
+	.Home-container h3{
+		font-size: 12px;
+	}
+	.Home-container h5{
+		font-size: 16px;
+	}
+	.sectwo-Content h2{
+		font-size: 15px;
+	}
+	#logo img{
+		width: 60px;
+		height: 60px;
+	}
+}
+.welcome h5{
+	margin: 30px auto;
+	text-align: center;
+	width: 60%;
+	font-family: "Poppins";
+	font-weight: 400;
+	line-height: 2em;
+	letter-spacing: 2px;
+}
+.navsec
+{
+	height: 100vh;
+	max-height: 800px;
+	
+}
+.navsec::before
+{
+	content: "";
+	width: 100%;
+	height: 150vh;
+	background:url("img/pic.jpeg");	
+	filter: brightness(30%);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	z-index: -1;
+	background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+}
+
+#book button{
+	font-family: "Poppins";
+	color:white;
+	font-size: 14px;
+	background-color: orangered;
+}
+
+.nav-link{
+	color: white;
+	font-family: "Poppins";
+	font-weight: 400;
+	letter-spacing: 3px;
+}
+
+.navbar-nav{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.mynavbar .links a 
+{
+margin: 12px 12px;
+font-size: 14px;
+font-family: "Poppins";
+}
+.mynavbar a:hover{
+	color: whitesmoke;
+
+transition: all 0.5s ease-in-out;
+	
+}
+.navsec .book-table{
+	border-radius: 50px;
+	
+}
+.navsec .book-table:hover{
+	background-color: white;
+	color:white ;
+	transition: all 0.5s ease-in-out;
+	
+}
+.navbar-toggler{
+	font-size: inherit;
+	line-height: inherit;
+}
+
+.t-name{
+		-webkit-animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+				animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+@-webkit-keyframes tracking-in-expand {
+	0% {
+	  letter-spacing: -0.5em;
+	  opacity: 0;
+	}
+	40% {
+	  opacity: 0.6;
+	}
+	100% {
+	  opacity: 1;
+	}
+  }
+  @keyframes tracking-in-expand {
+	0% {
+	  letter-spacing: -0.5em;
+	  opacity: 0;
+	}
+	40% {
+	  opacity: 0.6;
+	}
+	100% {
+	  opacity: 1;
+	}
+  }
+  
+
+section .mybtn1
+{
+		color: #c3ce57;
+		background-color:#393d12;
+		opacity: 0.6;
+		margin: 20px;
+		padding: 10px 40px;
+		font-size: 1rem;
+		outline-style: none;
+		border: 1px solid #393d12;
+		border-radius: 5px;
+}
+section .mybtn1:hover
+{
+		color: #cfdf43;
+		background-color: #c3ce57;
+		opacity: 0.6;
+		margin: 20px;
+}
+.navsec .mydiv
+{
+	height: 80vh;
+	color: #c3ce57;
+	font-weight: bold;
+}  
+.sectwodiv{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	margin: 0 auto;
+}
+
+.location ul li:hover{
+	color: black;
+}
+
+.sectwo-Content{
+	margin: 0 0 0 5em;
+}
+.sectwodiv img{
+	width: 45em;
+}
+@media only screen  and (max-width:1000px) {
+	.sectwodiv img{
+		width:100%;
+	}
+}
+.sectwo
+{
+	height: auto;
+	color: #c3ce57;
+	background-color: white;
+}
+.sectwo h2{
+	font-family: "Poppins";
+	letter-spacing: 3px;
+	font-weight: 600;
+	font-size: 50px;
+	color: #101010;
+}
+.sectwo p
+{
+	color: #101010;
+	font-family:  'Poppins';
+	font-weight: 300;
+	letter-spacing: 3px;
+	line-height: 1.5em;
+}
+.sectwo span{
+	color: orangered;
+}
+.secthree
+{
+	opacity: .9;
+
+}
+.secthree .mycard2
+{
+	background-color:#474c16;
+	color: #fff;
+	border: none;	
+}
+.secthree .mycard2:hover
+{
+	transition: all 0.4s ease-in-out;
+	padding:10px;	
+}
+
+.secthree .mycard2 i
+{
+	color: green;
+	border: none;
+}
+
+.secfour
+{
+	background-color: black;
+	opacity: .9;
+}
+.secfour .mycard
+{
+height: auto;
+border: none;
+/*background-color:#474c16;*/
+}
+.secfour .mycard:hover{
+	cursor: pointer;
+}
+.secfour .mycard img:hover{
+	transition: all 0.6s ease-in-out;
+	transform: scale(1.2);
+	z-index: 2;
+	cursor: pointer;
+}
+.secfour .mycard p
+{
+	color: black;
+}
+
+.secfour .mycard h5
+{
+	color: white;
+	font-size: 1.5rem;
+}
+.secfour .mycard h5:hover
+{
+	transition: all 0.4s ease-in-out;
+	transform: translateX(23px);
+}
+.secfour .mycard img
+{
+height: 30vh;
+}
+
+.secsix
+{
+	background-image: url("img/7.jpg");
+	width: 100vw;
+	height: 30vh;	
+}
+.secseven img{
+	height: 80px;
+	width: 80px;
+	border-radius: 50px;
+}
+.secseven img:hover{
+	transition: all 0.4s ease-in-out;
+	transform: scale(1.1);
+	cursor: pointer;
+	filter: invert();
+}
+.secseven .myservice span:hover{
+	color: white;
+	cursor: pointer;
+}
+.seceight
+{
+	background-image: url("img/9.jpg");
+	width: 100vw;
+	height: 100vh;	
+	background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.secnine,.secnine input,.mycolor
+{
+	background-color: black;
+	opacity: 0.9;
+	color: #fff;
+}
+
+.secnine #mybtn2
+{
+	margin: 20px 20px;
+	padding: 5px 80px;
+	color: #fff;
+	background-color: black;
+	border: 2px solid #fff;
+	border-radius: 10px;
+}
+.secnine #mybtn2:hover
+{
+	transition: all 0.4s ease-in-out;
+	color:black;
+	background-color: #fff;
+	transform: scale(1.1);
+}
+
+
+.secten
+{
+	background-image: url("img/8.jpg");
+	width: 100vw;
+	height: 100vh;	
+	background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.seceleven .card img{
+	width: 100%;
+	height: 280px;
+}
+.seceleven .mybtn3
+{
+	color: black;
+	text-transform: capitalize;
+	text-decoration: none;
+}
+.seceleven .card:hover{
+	transition: all 0.3s ease-in-out;
+	box-shadow: 12px 12px 10px #101010;
+	transform: translateY(-26px);
+}
+.sec12 h6{
+	font-family: 'Poppins';
+	font-size: 1rem;
+	
+	color: orange;
+}
+
+
+/*footer*/
+.myfooter{
+	margin-block-start: 2rem;
+}
+
+.myfooter ul
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0;
+}
+
+.myfooter ul li
+{
+	list-style: none;
+	margin-left: 20px;
+	font-size: 2rem;
+	padding: 10px;
+	font-family: "Poppins";
+	letter-spacing: 3px;
+}
+
+.myfooter ul li a i
+{
+	color:black;
+	border-radius: 50%;
+	padding: 8px;
+	background-color: #fff;
+}
+
+.myfooter ul li:hover {
+	transition: all 0.3s ease-in-out;
+    opacity: 0.9;
+    transform: scale(1.2);
+	filter: invert();
+}
+/*footer end*/
+h6{
+	font-family:  "Poppins";
+	letter-spacing: 2px;
+}
+.sec13 li
+{
+	list-style: none;
+	font-family:  "Poppins";
+	letter-spacing: 2px;
+	
+}
+.sec13 .last li a{
+	text-decoration: none;
+	color: black;
+
+}
+.sec13 p{
+	font-family:  "Poppins";
+	letter-spacing: 1px;
+	font-size: 14px;
+}
+.sec13 .last li:hover{
+	color: white;
+	transition: all 0.3s ease-in-out;
+	transform: translateX(15px);
+}
+.sec13 .last li a:hover{
+	color: black;
+}
+.sec13 p,li{
+	color: black;
+}
+.sec13 h5{
+	color: black;
+}
+.sec13 h6{
+	color: black;
+}
+#back {
+	z-index: 3;
+	position: sticky;
+	bottom: 12px;
+}
+#back button{
+	outline: none;
+	border: none;
+	position: relative;
+	border-radius: 50px;
+	left: 95%;
+	width: 50px;
+	height: 50px;
+	background-color:#607d8b;
+	transition: all 0.3s ease-in-out;
+}
+#back button:hover{
+	background-color:orange;	
+}
+#back i{
+	color: white;
+	font-size: 1.2rem;
+	font-family:  "Poppins";
+	letter-spacing: 3px;
+}
+.copy{
+	text-align: center;
+	color: black
+}
+
+
+@media(min-width:992px){
+	.navbar-expand-lg .navbar-nav .nav-link {
+		padding-right: 1rem;
+	}
+
+	.navbar{
+		padding: 0.5rem 2rem;
+	}
+
+	.nav-link:hover{
+		border-bottom: 1px solid #19692c;
+	}
+}
+
+@media(max-width:992px){
+
+	.navbar{
+		background-color: black;
+	}
+
+	.collapsed + .navbar{
+		background-color: transparent;
+	}
+}
+
+@media screen and (max-width: 452px) {
+ 
+  .myfooter ul li
+{
+	list-style: none;
+	margin-left: 10px;
+	font-size: 1rem;
+	padding: 5px;
+}
+.myfooter ul li a i
+{
+	color:black;
+	border-radius: 50%;
+	 padding: 5px;
+	 background-color: #fff;
+}
+}
+
+@media only screen and (max-width:1000px){
+	.sectwodiv{
+		flex-direction: column;
+	}
+	.sectwo-Content{
+		margin: 1em;
+	}
+	
+	
+
+}
+
+/* 
+TRYIUNG SOMEIUGRIHYDFS */
+.menu_list{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 5em 0 ;
+	background-color: whitesmoke;
+}
+.menu_list h4,h5{
+	font-family: "Poppins";
+	font-weight: 400;
+	line-height: 2em;
+	letter-spacing: 3px;
+}
+
+.menu_list h1{
+	font-family: "Poppins";
+	font-size: 48px;
+	font-weight: 600;
+	margin-bottom: 1em;
+}
+
+.menu_list span{
+	color: orangered;
+}
+
+.single_menu_list {
+	margin: 1em 5em;
+	margin-bottom: 110px;
+}
+
+.single_menu_list img {
+	max-width: 40%;
+	left: 0px;
+	top: 0;
+	border: 1px solid #ddd;
+	padding: 3px;
+	border-radius: 50%;
+	transition: .4s
+}
+
+.single_menu_list:hover img {
+	border-radius: 0;
+	transition: .4s
+}
+
+.single_menu_list h4 {
+	font-size: 20px;
+	font-family: "Poppins";
+	border-bottom: 1px dashed #333;
+	padding-bottom: 15px;
+	margin-bottom: 10px;
+}
+
+.single_menu_list h4 span {
+	float: right;
+	font-weight: bold;
+	color: orangered;
+	font-style: italic;
+}
