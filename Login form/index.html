@@ -30,6 +30,7 @@
               <input type="password" id="loginpassword" placeholder="Password" />
             </div>
             <input type="submit" id="loginBtn" value="Login" class="btn solid" />
+            <input type="submit" id="logoutBtn" value="Logout" class="btn solid" />
             <p class="social-text">Or Sign in with social platforms</p>
             <div class="social-media">
               <a href="#" class="social-icon">
@@ -107,7 +108,7 @@
   <script type="module">
 
     import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-app.js";
-    import { getAuth, createUserWithEmailAndPassword, onAuthStateChanged,signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-auth.js";
+    import { getAuth, signOut,createUserWithEmailAndPassword, onAuthStateChanged,signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-auth.js";
 
     const firebaseConfig = {
       apiKey: "AIzaSyBI428lyjJC943Y-sxfEv6v8RXwNBRuTmM",
@@ -160,6 +161,8 @@
 
     const auth = getAuth();
     const user = auth.currentUser;
+   
+
     onAuthStateChanged(auth, (user) => {
     if (user) {
       const uid = user.uid;
@@ -169,10 +172,30 @@
       }else{
         document.getElementById('username').innerHTML = "Welcome, "+ user.email
       }
-      window.location.href = "welcome.html";
+      document.getElementById('logoutBtn').style.display = 'block'
+      document.getElementById('loginBtn').style.display = 'none'
       
+    }else{
+      document.getElementById('useravatar').src = "";
+      document.getElementById('username').innerHTML = "";
+      document.getElementById('username').innerHTML = "";
+      document.getElementById('loginBtn').style.display = 'block'
+      document.getElementById('logoutBtn').style.display = 'none';
+   
     }
+    
 });
+
+document.getElementById('logoutBtn').addEventListener('click', (e) => {
+  e.preventDefault();
+  signOut(auth).then(() => {
+    alert("User Signed Out")
+  }) .catch((err) => {
+    alert(err)
+  })
+});
+
+
 
   </script>
   
