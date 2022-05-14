@@ -146,7 +146,8 @@
       signInWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
         const user = userCredential.user;
-        alert("Success Login");
+        window.location.href = "welcome.html";
+        //alert("Success Login");
       })
       .catch((error) => {
         const errorCode = error.code;
