@@ -146,8 +146,8 @@
       signInWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
         const user = userCredential.user;
-        window.location.href = "welcome.html";
-        //alert("Success Login");
+       
+        alert("Success Login");
       })
       .catch((error) => {
         const errorCode = error.code;
@@ -169,6 +169,7 @@
       }else{
         document.getElementById('username').innerHTML = "Welcome, "+ user.email
       }
+      window.location.href = "welcome.html";
       
     }
 });
