@@ -478,7 +478,10 @@
   {
       "name": "Market Share Graph",
       "link": "Market%20Share%20Graph/index.html"
+    },
+    {
+      "name":"Amazon HomePage Slider",
+      "link":"AmazonHomePageSlider/Amazon.html"
     }
-
   ]
 

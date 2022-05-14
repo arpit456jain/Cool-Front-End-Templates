@@ -213,6 +213,7 @@ input[type="text"]
     width: 100%;
     position: relative;
     align-items: center;
+    overflow: hidden;
     height: 6.4%;
     background-color: #232F3E;
 }
@@ -1101,5 +1102,32 @@ ul li{
     }
     .info{
         margin-left: 20%;
+    }
+}
+@media (max-width:580px) {
+    .cart{
+        display: none;
+    }
+    
+}
+@media(max-width:478px)
+{
+    .mukar{
+        left: 75%;
+    }
+    .return{
+        display: none;
+    }
+    .nation{
+        display: none;
+    }
+    .info{
+        margin-left: 8%;
+    }
+}
+@media(max-width:364px)
+{
+    .bar{
+        display: none;
     }
 }
