@@ -33,7 +33,7 @@
             <input type="submit" id="logoutBtn" value="Logout" class="btn solid" />
             <p class="social-text">Or Sign in with social platforms</p>
             <div class="social-media">
-              <a href="#" class="social-icon">
+              <a id="logingithubBtn" href="#" class="social-icon">
                 <i class="fab fa-github"></i>
               </a>
               
@@ -62,7 +62,7 @@
             <input id="signupBtn" type="submit" class="btn" value="Sign up" />
             <p class="social-text">Or Sign up with social platforms</p>
             <div class="social-media">
-              <a href="#" class="social-icon">
+              <a id="signgithubBtn" href="#" class="social-icon">
                 <i class="fab fa-github"></i>
               </a>
           
@@ -213,8 +213,14 @@
       }else{
         document.getElementById('username').innerHTML = "Welcome, "+ user.email
       }
+      document.getElementById('logingooglebtn').style.display = 'none'
+      document.getElementById('signgooglebtn').style.display = 'none'
+      document.getElementById('signgithubBtn').style.display = 'none'
+      document.getElementById('logingithubBtn').style.display = 'none'
       document.getElementById('logoutBtn').style.display = 'block'
       document.getElementById('loginBtn').style.display = 'none'
+      
+      document.getElementsByClassName('social-text').style.display = 'none'
       
     }else{
       document.getElementById('useravatar').src = "";
@@ -222,6 +228,11 @@
       document.getElementById('username').innerHTML = "";
       document.getElementById('loginBtn').style.display = 'block'
       document.getElementById('logoutBtn').style.display = 'none';
+      document.getElementById('logingooglebtn').style.display = 'visible'
+      document.getElementById('signgooglebtn').style.display = 'visible'
+      document.getElementById('signgithubBtn').style.display = 'visible'
+      document.getElementById('logingithubBtn').style.display = 'visible'
+      document.getElementsByClassName('social-text').style.display = 'visible'
    
     }
     
