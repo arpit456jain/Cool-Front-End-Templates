@@ -2,6 +2,12 @@
   
    {
   
+      "name": "Coffee Website Template",
+      "link": "coffee%20website/index.html"
+  
+  },
+  {
+  
       "name": "Organic Retail Website Template",
       "link": "Organic%20Retail%20Website%20Template/index.html"
   
@@ -459,7 +465,7 @@
     
       "name": "NFT Viewer",
       "link": "NFT Viewer/index.html"
-    
+  },
     {
      
       "name": "Reward Point",
@@ -476,7 +482,10 @@
   {
       "name": "Recipe Website",
       "link": "Recipe%20Website/index.html"
-    }
-
+    },
+  {
+      "name": "university",
+      "link": "university/index.html"
+  }
   ]
 
