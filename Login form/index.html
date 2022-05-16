@@ -18,7 +18,7 @@
       <div class="forms-container">
         <div class="signin-signup">
           <form action="#" class="sign-in-form">
-            <img id="useravatar" src="" />
+            <img style="border-radius: 100px;" id="useravatar" width="50px" src="" />
             <h3 id="username" style="color: #444;"></h3>
             <h2 class="title">Login</h2>
             <div class="input-field">
@@ -33,11 +33,11 @@
             <input type="submit" id="logoutBtn" value="Logout" class="btn solid" />
             <p class="social-text">Or Sign in with social platforms</p>
             <div class="social-media">
-              <a href="#" class="social-icon">
-                <i class="fab fa-facebook-f"></i>
+              <a id="logingithubBtn" href="#" class="social-icon">
+                <i class="fab fa-github"></i>
               </a>
               
-              <a href="#" class="social-icon">
+              <a id="logingooglebtn" class="social-icon">
                 <i class="fab fa-google"></i>
               </a>
               
@@ -62,11 +62,11 @@
             <input id="signupBtn" type="submit" class="btn" value="Sign up" />
             <p class="social-text">Or Sign up with social platforms</p>
             <div class="social-media">
-              <a href="#" class="social-icon">
-                <i class="fab fa-facebook-f"></i>
+              <a id="signgithubBtn" href="#" class="social-icon">
+                <i class="fab fa-github"></i>
               </a>
           
-              <a href="#" class="social-icon">
+              <a id="signgooglebtn" href="#" class="social-icon">
                 <i class="fab fa-google"></i>
               </a>
               
@@ -108,7 +108,7 @@
   <script type="module">
 
     import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-app.js";
-    import { getAuth, signOut,createUserWithEmailAndPassword, onAuthStateChanged,signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-auth.js";
+    import { getAuth,signInWithPopup, GoogleAuthProvider,signOut,createUserWithEmailAndPassword, onAuthStateChanged,signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-auth.js";
 
     const firebaseConfig = {
       apiKey: "AIzaSyBI428lyjJC943Y-sxfEv6v8RXwNBRuTmM",
@@ -157,6 +157,47 @@
       });
     })
 
+    document.getElementById('signgooglebtn').addEventListener('click', (e) => {
+      alert('inside')
+      e.preventDefault();
+      const provider = new GoogleAuthProvider()
+      const auth = getAuth();
+      signInWithPopup(auth, provider)
+        .then((result) => {
+          const credential = GoogleAuthProvider.credentialFromResult(result);
+          const token = credential.accessToken;
+          const user = result.user;
+          alert(user.displayName+" has Logged In !")
+        }).catch((error) => {
+          const errorCode = error.code;
+          const errorMessage = error.message;
+          const email = error.email;
+          alert(errorMessage)
+          const credential = GoogleAuthProvider.credentialFromError(error);
+        });
+
+    })
+
+    document.getElementById('logingooglebtn').addEventListener('click', (e) => {
+      e.preventDefault();
+      const provider = new GoogleAuthProvider()
+      const auth = getAuth();
+      signInWithPopup(auth, provider)
+        .then((result) => {
+          const credential = GoogleAuthProvider.credentialFromResult(result);
+          const token = credential.accessToken;
+          const user = result.user;
+          alert(user.displayName+" has Logged In !")
+        }).catch((error) => {
+          const errorCode = error.code;
+          const errorMessage = error.message;
+          const email = error.email;
+          alert(errorMessage)
+          const credential = GoogleAuthProvider.credentialFromError(error);
+        });
+
+    })
+
 
 
     const auth = getAuth();
@@ -168,12 +209,17 @@
       const uid = user.uid;
       if(user.photoURL != null && user.displayName != null){
         document.getElementById('useravatar').src = user.photoURL;
-        document.getElementById('username').innerHTML = "Welcome "+ user.displayName;
+        document.getElementById('username').innerHTML = "Welcome, "+ user.displayName;
       }else{
         document.getElementById('username').innerHTML = "Welcome, "+ user.email
       }
+      document.getElementById('logingooglebtn').style.display = 'none'
+      document.getElementById('signgooglebtn').style.display = 'none'
+      document.getElementById('signgithubBtn').style.display = 'none'
+      document.getElementById('logingithubBtn').style.display = 'none'
       document.getElementById('logoutBtn').style.display = 'block'
       document.getElementById('loginBtn').style.display = 'none'
+      document.getElementsByClassName('social-text').style.display = 'none'
       
     }else{
       document.getElementById('useravatar').src = "";
@@ -181,6 +227,11 @@
       document.getElementById('username').innerHTML = "";
       document.getElementById('loginBtn').style.display = 'block'
       document.getElementById('logoutBtn').style.display = 'none';
+      document.getElementById('logingooglebtn').style.display = 'visible'
+      document.getElementById('signgooglebtn').style.display = 'visible'
+      document.getElementById('signgithubBtn').style.display = 'visible'
+      document.getElementById('logingithubBtn').style.display = 'visible'
+      document.getElementsByClassName('social-text').style.display = 'visible'
    
     }
     
