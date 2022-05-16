@@ -1,0 +1,160 @@
+body {
+  --nav-bar: #064663;
+  --nav-body: #eee;
+  --active: #ffb820d7;
+}
+body {
+  overflow-x: hidden;
+}
+.navbar {
+  background-color: var(--nav-bar);
+}
+.navbar a {
+  color: var(--nav-body);
+}
+.navbar a:hover {
+  color: var(--active);
+}
+.active {
+  color: var(--active);
+}
+.carousel img {
+  width: 100%;
+  height: 80vh;
+  opacity: 0.8;
+}
+/* about us */
+.about {
+  margin: 30px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--nav-bar);
+}
+.about > div {
+  padding: 50px;
+}
+.about img {
+  width: 80vh;
+  border-radius: 15px;
+  border: 1px solid var(--nav-bar);
+  box-shadow: 0 0 28px rgb(92, 90, 90);
+}
+.about span {
+  color: rgb(71, 63, 63);
+}
+/* cards */
+.cards {
+  margin: 30px;
+  padding: 10px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.crd-body {
+  display: flex;
+}
+.crd {
+  margin: 1px;
+  color: var(--nav-bar);
+  padding: 30px;
+
+  background: rgba(255, 184, 32, 0.7);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4.5px);
+  -webkit-backdrop-filter: blur(4.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+/* galerry */
+
+.rw {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+  margin: 50px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Contact */
+.contact{
+  background-color: var(--nav-bar);
+  padding: 50px;
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: var(--active);
+  color: #eee;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 50%;
+}
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+/* media quiries */
+
+@media only screen and (max-width: 800px) {
+  .about {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .about {
+    flex-direction: column;
+  }
+  .about > div {
+    padding: 5px;
+  }
+  .about img {
+    margin-top: 30px;
+    width: 40vh;
+  }
+  .cards {
+    padding: 20px;
+  }
+  .crd {
+    margin: 5px;
+  }
+  .crd-body {
+    flex-direction: column;
+  }
+}
