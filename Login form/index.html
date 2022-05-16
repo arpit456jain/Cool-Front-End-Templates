@@ -108,7 +108,7 @@
   <script type="module">
 
     import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-app.js";
-    import { getAuth,signInWithPopup, GoogleAuthProvider,signOut,createUserWithEmailAndPassword, onAuthStateChanged,signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-auth.js";
+    import { getAuth,signInWithPopup,GithubAuthProvider, GoogleAuthProvider,signOut,createUserWithEmailAndPassword, onAuthStateChanged,signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-auth.js";
 
     const firebaseConfig = {
       apiKey: "AIzaSyBI428lyjJC943Y-sxfEv6v8RXwNBRuTmM",
@@ -198,6 +198,44 @@
 
     })
 
+    document.getElementById('signgithubBtn').addEventListener('click', (e) => {
+      const auth = getAuth();
+      const provider = new GithubAuthProvider();
+      signInWithPopup(auth, provider)
+        .then((result) => {
+          const credential = GithubAuthProvider.credentialFromResult(result);
+          const token = credential.accessToken;
+          const user = result.user;
+          alert(user.displayName+" has Logged In")
+        }).catch((error) => {
+          const errorCode = error.code;
+          const errorMessage = error.message;
+          const email = error.email;
+          const credential = GithubAuthProvider.credentialFromError(error);
+          alert(errorMessage)
+        });
+
+    })
+
+    document.getElementById('logingithubBtn').addEventListener('click', (e) => {
+      const auth = getAuth();
+      const provider = new GithubAuthProvider();
+      signInWithPopup(auth, provider)
+        .then((result) => {
+          const credential = GithubAuthProvider.credentialFromResult(result);
+          const token = credential.accessToken;
+          const user = result.user;
+          alert(user.displayName+" has Logged In")
+        }).catch((error) => {
+          const errorCode = error.code;
+          const errorMessage = error.message;
+          const email = error.email;
+          const credential = GithubAuthProvider.credentialFromError(error);
+          alert(errorMessage)
+        });
+
+    })
+
 
 
     const auth = getAuth();
@@ -219,7 +257,6 @@
       document.getElementById('logingithubBtn').style.display = 'none'
       document.getElementById('logoutBtn').style.display = 'block'
       document.getElementById('loginBtn').style.display = 'none'
-      document.getElementsByClassName('social-text').style.display = 'none'
       
     }else{
       document.getElementById('useravatar').src = "";
@@ -231,7 +268,6 @@
       document.getElementById('signgooglebtn').style.display = 'visible'
       document.getElementById('signgithubBtn').style.display = 'visible'
       document.getElementById('logingithubBtn').style.display = 'visible'
-      document.getElementsByClassName('social-text').style.display = 'visible'
    
     }
     
