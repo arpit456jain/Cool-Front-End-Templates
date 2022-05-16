@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Bootstraps -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+     
+    <title>Academica</title>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand text-warning" href="#">Achademica</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link text-warning" aria-current="page" href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Academics
+              </a>
+              <ul class="dropdown-menu bg-warning" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item text-primary" href="./pages/syllabus.html">Syllabus</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item text-primary" href="pages/results.html">Results</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#galery">Galery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <button type="button" class="btn btn-warning">Apply</button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Carousel -->
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      data-bs-ride="false"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://imageio.forbes.com/specials-images/imageserve/6052170a9df9bdf69d63f201/0x0.jpg?format=jpg&width=1200"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Best Education</h5>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat
+              at, facilis dignissimos beatae eveniet fugit iste veniam delectus
+              quod fugiat velit necessitatibus, dolor perspiciatis nisi a
+              incidunt asperiores laboriosam aspernatur..
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://media.istockphoto.com/photos/handsome-afro-student-posing-on-bookshelves-background-picture-id1171062918?k=20&m=1171062918&s=612x612&w=0&h=I6djuMs92BCgJaBv5iIsPALt2oZ8mYQU7ttF1hmhPkE="
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/201811/coaching.jpeg?dQUqh7zEMRN9LUjfXPwmNqpWsX90XLgK"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- About -->
+    <section id="about">
+      <div class="about">
+        <div>
+          <h1 class="about-title">About Us</h1>
+          <span
+            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+            numquam voluptas nihil non molestiae quas ipsum ut deserunt sed ex
+            quis vitae excepturi veniam cum, eos porro iusto necessitatibus.
+            Illo! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Dolore voluptate quisquam, reiciendis soluta sed corporis doloribus
+            dolorem labore atque ex molestiae. Dolores exercitationem dolore et
+            facere placeat hic ab delectus. Lorem ipsum dolor sit, amet
+            consectetur adipisicing elit. Veniam id quisquam iure labore odit
+            beatae enim error ipsum. Consequatur laborum quia ab at optio
+            dignissimos dolor rerum hic deleniti adipisci.</span
+          >
+        </div>
+        <div>
+          <img
+            src="data:image/jpeg;base64,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"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="cards">
+        <div class="crd-body">
+          <div class="crd">
+            <h3>Scholarship Eligibility</h3>
+            <span>Temporibus explicabo, tenetur ratione  possimus voluptas hic praesentium.</span>
+        </div>
+        <div class="crd">
+            <h3>Skilled Lecture</h3>
+            <span>Temporibus explicabo, tenetur ratione  possimus voluptas hic praesentium.</span>
+        </div>
+        <div class="crd">
+            <h3>Book Library and Store</h3>
+            <span>Temporibus explicabo, tenetur ratione  possimus voluptas hic praesentium.</span>
+        </div>
+      </div>
+    </section>
+
+ 
+    <!-- Gallery -->
+    <section id="galery">
+        <div class="about">
+            <h1>Gallery</h1>
+        </div>
+           
+        <div class="rw"> 
+            <div class="column">
+              <img src="https://d28htnjz2elwuj.cloudfront.net/wp-content/uploads/2019/02/04142709/college-students-600x400-600x400.jpg" style="width:100%">
+              <img src="https://images.pexels.com/photos/1462630/pexels-photo-1462630.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" style="width:100%">
+              <img src="https://www.cicnews.com/wp-content/uploads/2020/02/20200220_InternationalStudentsRecordNumbers.jpg" style="width:100%">
+        </div> 
+            <div class="column">
+                <img src="https://study.eshipglobal.com/img/StudentsIMG.jpg" style="width:100%">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0dNkJx7WC3STqfspgqyyo7NghuCUzcIBt0Q&usqp=CAU" style="width:100%">
+                <img src="https://www.sas.com/en_in/learn/academic-programs/students/_jcr_content/par/styledcontainer_2064_565976224/par/image_copy.img.jpg/1551454841455.jpg" style="width:100%">
+              </div>
+ 
+            <div class="column">
+                <img src="https://thumbs.dreamstime.com/b/group-university-students-happy-front-building-37039307.jpg" style="width:100%">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQW2HtT0COBJDAtg_35TfjIi2oo1eKBCFe9m8SKuPLbgx4YUrGPpJ_i5IXBbFI9-1cU0nY&usqp=CAU" style="width:100%">
+              <img src="https://media.istockphoto.com/photos/studying-on-campus-picture-id1318948090?b=1&k=20&m=1318948090&s=170667a&w=0&h=NB3FF6NGfqAMKnKPCr1hh9-Z27xpdLgU0coArzjy4Ak=" style="width:100%">
+              
+            </div>
+            <div class="column">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu2yqGVP_wkjlbFL5JAVpcHH-0rbK_9prracIZ8w-Fomxw0EsOeUoBpFi7YG1nCIHRTrE&usqp=CAU" style="width:100%">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAox5m8wmbyniFbPyvn_W5VOX7T4xpQB4mag&usqp=CAU" style="width:100%">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7gW6qd1GZo-UC0TwjW11TcXFNH_zCcd7vfg&usqp=CAU" style="width:100%">
+             
+            </div>
+          </div>
+             
+       
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <div class="about">
+            <h1>Contact Us  </h1>
+        </div>
+        <div class="contact">
+          <div style="margin-bottom: 30px;">
+            <h1 style="color: #ffb820d7;">Academica</h1>
+          </div>
+          <div>
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">Name</span>
+            <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+          </div>
+          
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <span class="input-group-text" id="basic-addon2">@example.com</span>
+          </div>
+          
+          <div class="input-group">
+            <span class="input-group-text">Message</span>
+            <textarea class="form-control" aria-label="With textarea"></textarea>
+          </div>
+        </div>
+        </div>
+    </section>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+
+    <script>
+      //Get the button
+      var mybutton = document.getElementById("myBtn");
+      
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+      
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+      </script>
+  </body>
+</html>
