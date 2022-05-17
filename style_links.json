@@ -159,5 +159,9 @@
     {
       "name": "Art Gallery Website",
       "link": "ArtGalleryWebsite/index.html"
+    },
+    {
+      "name": "Documentation Page",
+      "link": "Tech-Landing-page/index.html"
     }
 ]
