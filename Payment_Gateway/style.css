@@ -164,6 +164,26 @@ footer div div div {
         margin: 3px 7px;
       }
   }
+@media screen and (max-width: 546px) {
+    #Fname , #Lname , #Address1 , #Address2 , #Number{
+        margin-right:2rem;
+    }     
+    .paymentMethod{
+        margin: .2rem;
+        width: 25%;
+        height: 10%;
+        border: 1px solid rgb(138, 135, 135);
+        font-size: .7rem;
+    }
+    .method{
+        padding-bottom:1rem;
+        width: 30%;
+        height: 100%;
+        text-align: center;
+        padding: .3rem; 
+    }
+  
+  }
 @media screen and (max-width: 425px) {
     input[type=text],input[type=number],input[type=email],input[type=tel],input[type=month] ,select {
         width: 35%;
@@ -242,9 +262,7 @@ footer div div div {
         width: 30%;
         height: 100%;
         text-align: center;
-        padding: .3rem;
-
-        
+        padding: .3rem; 
     }
     .toggler2{
         display: block;
