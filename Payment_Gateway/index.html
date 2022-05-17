@@ -32,17 +32,17 @@
     <div class="mainContainer d-flex justify-content-between">
         <div>
 
-            <h5>Billing Information</h5> 
+            <h5 id="billing">Billing Information</h5> 
             
-            <input required class="fname mx-5" type="text" size="50" id="fname" name="Fname" placeholder="First Name">
-            <input required class="city mx-4" type="text" size="50" id="city" name="City" placeholder="City"> 
-            <input required class="lname mx-5" type="text" size="50" id="lname" name="Lname" placeholder="Last Name">
-            <input required class="state mx-4" type="text" size="50" id="state" name="State" placeholder="State"> 
-            <input required class="address mx-5" type="text" size="50" id="Address2" name="Address2" placeholder="Address1"> 
-            <input required class="zip mx-4" type="text" size="50" id="Zip" name="Zip" placeholder="Zip Code"> 
-            <input required class="address mx-5" type="text" size="50" id="Address2" name="Address2" placeholder="Address2"> 
-            <input required class="email mx-4" type="email" size="50" id="Email" name="email" placeholder="Email"> 
-            <input required class="pnumber mx-5 mb-3 " type="tel" size="50" id="Number" name="pNumber" placeholder="Phone Number"> 
+            <input required class="fname" type="text" size="50" id="Fname" name="Fname" placeholder="First Name">
+            <input required class="city" type="text" size="50" id="City" name="City" placeholder="City"> 
+            <input required class="lname" type="text" size="50" id="Lname" name="Lname" placeholder="Last Name">
+            <input required class="state" type="text" size="50" id="State" name="State" placeholder="State"> 
+            <input required class="address" type="text" size="50" id="Address1" name="Address2" placeholder="Address1"> 
+            <input required class="zip" type="text" size="50" id="Zip" name="Zip" placeholder="Zip Code"> 
+            <input required class="address" type="text" size="50" id="Address2" name="Address2" placeholder="Address2"> 
+            <input required class="email" type="email" size="50" id="Email" name="email" placeholder="Email"> <br class="toggler">
+            <input required class="pnumber mb-3 " type="tel" size="50" id="Number" name="pNumber" placeholder="Phone Number"> 
     
         </div>
 
@@ -50,7 +50,7 @@
     <div class="mainContainer d-flex justify-content-between">
  <!-- INTER FONT  -->
     <div class="paymentMethod">
-        <h5>Select Payment Method</h5>
+        <h5 id="paymentMethod">Select Payment Method</h5>
         <div class="d-flex justify-content-between">
             <div class="method">
               <a href="./wallet.html"> <p> Wallet</p></a>
@@ -58,6 +58,7 @@
             <div class="method">
            <a href="./cardDetail.html"> <p> Debit card</p></a>
             </div>
+            <br class="toggler2">
             <div class="method">
              <a href="./upi.html"><p>UPI</p></a>
             </div>
@@ -79,7 +80,7 @@
         <div class="footer-copyright">
          <div class="container">
             <div class="row">
-              <div class="col-md-12 text-center">
+              <div class="copyright col-md-12 text-center">
                   <p>Copyright Company Name © 2021. All rights reserved.</p>
              </div>
             </div>
