@@ -379,18 +379,11 @@
     "name": "School Website",
     "link": "School%20Website/index.html"
   },
-  
 
    {
-
-  
-
        "name": "Festivals In India",
 
       "link": "festivals%20in%20india/index.html"
-
-  
-
     },
    {
   
@@ -398,4 +391,10 @@
       "link": "university/index.html"
   
   },
+
+  {
+    "name":"AmazonHomePageslider",
+    "link":"AmazonHomePageSlider/index.html"
+  }
 ]
+
