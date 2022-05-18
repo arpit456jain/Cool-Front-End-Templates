@@ -1,0 +1,166 @@
+body {
+  margin: 0;
+}
+
+.nutrition-facts-container {
+  color: #444;
+  font-size: 1vw;
+  width: 100%;
+  display: inline-block;
+  font-family: "Source Sans Pro", sans-serif;
+  border: solid currentColor 0.8em;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 2em;
+  background-color: antiquewhite;
+}
+.nutrition-facts-container .nutrition-facts-title {
+  display: block;
+  font-size: 13.9em;
+  font-weight: 900;
+  line-height: 0.8em;
+}
+.nutrition-facts-container .nutrition-servings {
+  font-size: 6.5em;
+  line-height: 1.1em;
+}
+.nutrition-facts-container .nutrition-serving-size {
+  display: table;
+  width: 100%;
+  font-weight: 900;
+  font-size: 7.5em;
+  line-height: 1.1em;
+}
+.nutrition-facts-container .nutrition-serving-size span {
+  display: table-cell;
+}
+.nutrition-facts-container .nutrition-serving-size span:last-child {
+  text-align: right;
+}
+.nutrition-facts-container .nutrition-amount-per-serving {
+  font-weight: 700;
+  font-size: 6em;
+}
+.nutrition-facts-container .nutrition-calories {
+  display: table;
+  width: 100%;
+  font-weight: 900;
+  font-size: 11em;
+  line-height: 0.5em;
+  margin-bottom: 0.2em;
+}
+.nutrition-facts-container .nutrition-calories span {
+  display: table-cell;
+}
+.nutrition-facts-container .nutrition-calories span:last-child {
+  text-align: right;
+  font-size: 1.4em;
+}
+.nutrition-facts-container .nutrition-daily-value {
+  font-size: 5em;
+  text-align: right;
+  display: block;
+  font-weight: 700;
+}
+.nutrition-facts-container .nutrition-information {
+  width: 100%;
+  font-size: 5.5em;
+  border-collapse: collapse;
+}
+.nutrition-facts-container .nutrition-information.nutrition-vitamins td,
+.nutrition-facts-container .nutrition-information.nutrition-vitamins span {
+  font-weight: 400 !important;
+}
+.nutrition-facts-container .nutrition-information tbody tr td {
+  border-top: 0.08em solid currentColor;
+}
+.nutrition-facts-container .nutrition-information tbody tr td:last-child {
+  text-align: right;
+  font-weight: 700;
+}
+.nutrition-facts-container .nutrition-information tbody tr:first-child span:first-child {
+  font-weight: 700;
+}
+.nutrition-facts-container .nutrition-information tbody tr:not(:first-child) td {
+  padding-left: 1em;
+}
+.nutrition-facts-container .nutrition-disclaimer {
+  font-size: 4.2em;
+  display: table;
+  padding-top: 0.4em;
+}
+.nutrition-facts-container .nutrition-disclaimer span:last-child {
+  display: table-cell;
+}
+.nutrition-facts-container hr {
+  display: block;
+  border: none;
+  border-bottom: solid currentColor 2em;
+}
+.nutrition-facts-container .hr-light {
+  border-width: 0.5em;
+}
+.nutrition-facts-container .hr-bold {
+  border-width: 4em;
+}
+.nutrition-facts-container .indent {
+  padding-left: 2em !important;
+}
+.nutrition-facts-container .bold {
+  font-weight: 700;
+}
+
+.some-other-content {
+  display: inline-block;
+}
+
+@media only screen and (min-width: 700px) {
+  .nutrition-facts-container{
+    width: 60%;
+  }
+  .nutrition-facts-container .nutrition-facts-title {
+    font-size: 80px;
+  }
+  .nutrition-facts-container .nutrition-servings {
+    font-size: 40px;
+  }
+
+  .nutrition-facts-container .nutrition-information
+  {
+    font-size: 40px;
+  }
+
+  .nutrition-facts-container .nutrition-calories span:last-child 
+  {
+    font-size: 57px;
+  }
+  .nutrition-facts-container .nutrition-calories span
+    {
+      font-size: 60px;
+    }
+    .nutrition-facts-container .nutrition-serving-size span {
+      font-size: 40px;
+      line-height: 49px;
+    }
+
+    .nutrition-facts-container .nutrition-amount-per-serving {
+      font-weight: 700;
+      font-size: 4em;
+  }
+    .nutrition-facts-container .nutrition-daily-value {
+    font-size: 25px;
+    }
+    .nutrition-facts-container .nutrition-disclaimer {
+      font-size: 20px;
+    }
+    .nutrition-facts-container .hr-bold{
+      border-width: 1em;
+    }
+}
+
+@media only screen and (max-width: 500px)
+{
+.nutrition-facts-container {
+    width: 100%;
+}
+}

@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@300;500;600&family=Poppins:wght@300;500;700&family=Space+Mono:wght@400;700&display=swap');
+
+* {
+    outline: none;
+    box-sizing: border-box;
+}
+
+ .heading {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+
+.logo {
+    color: white;
+    font-weight: bold;
+}
+li a{
+    font-family: 'Space Mono';
+}
+
+nav{
+    background-color: white;
+}
+
+span{
+    font-family: 'Poppins';
+    font-weight: 700;
+    
+}
+
+@media (max-width: 767px) {
+    .navicon {
+      width: 1.125em;
+      height: .125em;
+    }
+  
+    .navicon::before,
+    .navicon::after {
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      transition: all .2s ease-out;
+      content: '';
+      background: #3D4852;
+    }
+  
+    .navicon::before {
+      top: 5px;
+    }
+  
+    .navicon::after {
+      top: -5px;
+    }
+  
+    .menu-btn:not(:checked) ~ .menu {
+      display: none;
+    }
+  
+    .menu-btn:checked ~ .menu {
+      display: block;
+    }
+  
+    .menu-btn:checked ~ .menu-icon .navicon {
+      background: transparent;
+    }
+  
+    .menu-btn:checked ~ .menu-icon .navicon::before {
+      transform: rotate(-45deg);
+    }
+  
+    .menu-btn:checked ~ .menu-icon .navicon::after {
+      transform: rotate(45deg);
+    }
+  
+    .menu-btn:checked ~ .menu-icon .navicon::before,
+    .menu-btn:checked ~ .menu-icon .navicon::after {
+      top: 0;
+    }
+  }
+
+.main_img {
+    object-fit: cover;
+}
+
+.heading {
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 25px;
+
+}
+
+.secHead{
+    font-family: 'Poppins';
+    font-weight: 700;
+    padding-top: 3em;
+}
+
+.sub_text {
+    text-transform: capitalize;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.ceo_img {
+    object-fit: fill;
+}
+
+.sub_head {
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.footer {
+    padding-top: 20px;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.foot_head {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+}
+
+p {
+    color: black;
+}
+
+li .anc {
+    color: white;
+}
+
+
+.contact_body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 40px;
+    background-color: whitesmoke;
+}
+
+.contact_cont {
+    background: #fff;
+    width: 800px;
+    max-width: 800px;
+    padding: 25px 40px 10px 40px;
+    box-shadow: 0px 0px 10px rbga(0, 0, 0, 0.5);
+}
+
+.contact_cont .text {
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    font-family: 'Poppins';
+}
+label,input{
+    font-family: 'Space Mono';
+}
+.contact_cont form {
+    padding: 30px 0 0 0 0;
+}
+
+.contact_cont form .form-row {
+    display: flex;
+    margin: 32px 0;
+}
+
+form .form-row .input-data {
+    width: 100%;
+    height: 40px;
+    margin: 0 20px;
+    position: relative;
+}
+
+form .form-row .textarea {
+    height: 70px;
+}
+
+.input-data input,
+.textarea textarea {
+    display: block;
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 17px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.12);
+}
+
+.textarea textarea{
+    resize: none;
+    padding-top: 10px;
+}
+.input-data input:focus ~ label,
+.textarea textarea:focus ~ label,
+.input-data input:valid ~ label,
+.textarea textarea:valid ~ label{
+    transform: translateY(-20px); 
+    color: #3498db;
+    font-size: 14px;
+}
+.input-data label {
+    position: absolute;
+    bottom: 10px;
+    font-size: 16px;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.textarea label{
+    width: 100%;
+    bottom: 40px;
+    background: #fff;
+}
+.input-data .underline{
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+}
+.input-data .underline:before,
+.input-data .underline::after{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: #3498db;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: tranform 0.3s ease;
+}
+.input-data input:focus ~ .underline:before,.underline::after,
+.textarea textarea:focus ~ .underline:before,.underline::after,
+.input-data input:valid ~ .underline:before,.underline::after,
+.textarea textarea:valid ~ .underline:before,.underline::after{
+    transform: scaleX(1); 
+    /* color: #3498db;
+    font-size: 14px; */
+}
+.submit-btn .input-data{
+    height: 45px!important;
+    width: 25%!important; 
+    overflow: hidden;
+}
+.submit-btn .input-data .inner{
+    height: 100%;
+    width: 300%;
+    position: absolute;
+    left: -100%;
+    transition: all 0.3s;
+    background-color: #ffb347;
+}
+.submit-btn .input-data:hover .inner{
+    left: 0;
+}
+.submit-btn .input-data input{
+    position: relative;
+    z-index: 2;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+@media(max-width:700px){
+    .contact_cont .text{
+        font-size: 30px;
+    }
+    .contact_cont form{
+        padding: 10px 0 0 0 0;
+    }
+    .contact_cont form .form-row{
+        display: block;
+    }
+    form .form-row .input-data{
+        margin: 35px 0!important;
+    }
+    .submit-btn .input-data{
+        width: 40%!important;
+    }
+}
+
+.techSection{
+    font-family: 'Poppins';
+    font-weight: 700;
+}
+.quote{
+    font-family: 'Poppins';
+}
+
+.foot_head{
+    font-family: 'Poppins';
+    color: #000;
+}
+
+.foot-links{
+    font-family: 'Poppins';
+    font-weight: lighter;
+}
+
+.Copyright{
+    font-family: 'Poppins';
+}

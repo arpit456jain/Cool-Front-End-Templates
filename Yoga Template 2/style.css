@@ -17,7 +17,7 @@ html {
 /* NAVIGATION */
 
 .navigation {
-  background-color: rgba(238, 238, 238, 0.75);
+  background-color: rgba(238, 238, 238, 1);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -208,6 +208,11 @@ html {
 .services-img {
   border-radius: 5px;
   box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.7);
+  width: 32rem;
+}
+.services-img:hover{
+
+  box-shadow: -1rem 1rem  rgb(228, 190, 2),1rem -1rem rgb(236, 24, 24),0 1rem 4rem rgba(239, 239, 239, 0.7);
   width: 32rem;
 }
 

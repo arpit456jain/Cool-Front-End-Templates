@@ -1,0 +1,373 @@
+<meta name="viewport" content= "width=device-width, initial-scale=1.0">
+
+<style id="css">
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.content {
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  clip-path: border-box;
+  transform: translateZ(0);
+}
+.block {
+  position: relative;
+  height: 100vh;
+}
+[class*='item-parallax'] {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease-out;
+  will-change: transform;
+}
+.item-parallax-media {
+  z-index: 1;
+}
+.item-parallax-media img {
+  will-change: transform;
+}
+.item-parallax-content {
+  z-index: 2;
+}
+.block:nth-child(1) .item-parallax-content {
+  transform: translateY(calc(var(--yBlock-1) * 0.5px));
+}
+.block:nth-child(1) .item-parallax-media img {
+  transform: translateY(calc(var(--yBlock-1) * 0.1px));
+}
+.block:nth-child(2) .item-parallax-content {
+  transform: translateY(calc(var(--yBlock-2) * 0.5px));
+}
+.block:nth-child(2) .item-parallax-media img {
+  transform: translateY(calc(var(--yBlock-2) * 0.1px));
+}
+.block:nth-child(3) .item-parallax-content {
+  transform: translateY(calc(var(--yBlock-3) * 0.5px));
+}
+.block:nth-child(3) .item-parallax-media img {
+  transform: translateY(calc(var(--yBlock-3) * 0.1px));
+}
+.block:nth-child(4) .item-parallax-content {
+  transform: translateY(calc(var(--yBlock-4) * 0.5px));
+}
+.block:nth-child(4) .item-parallax-media img {
+  transform: translateY(calc(var(--yBlock-4) * 0.1px));
+}
+.block:nth-child(5) .item-parallax-content {
+  transform: translateY(calc(var(--yBlock-5) * 0.5px));
+}
+.block:nth-child(5) .item-parallax-media img {
+  transform: translateY(calc(var(--yBlock-5) * 0.1px));
+}
+html {
+  background-color: #00171f;
+}
+.flex-container {
+  display: flex;
+}
+.centered-content {
+  margin: auto;
+}
+.head-large {
+  margin-bottom: 5vw;
+  font-size: 10vw;
+  line-height: 1.2em;
+  font-family: 'Inknut Antiqua', serif;
+  color: wheat;
+  opacity: 0.9;
+}
+
+@media screen and ( max-width: 800px) {
+    
+    .head-large{
+      font-size: 5rem;
+    }
+
+    .section-landing:before, .section-end:before{
+      opacity: 0;
+    }
+  
+}
+
+@media screen and (max-width:440px) {
+  .head-large{
+    font-size: 4rem;
+  }
+  .img-caption h2{
+      font-size: 80%;
+    }
+  .img-caption p {
+        font-size: 15px;
+    }
+    
+  .type-left .img-caption{
+    margin-top: 35px;
+  }
+
+  .img-grid:nth-child(2) .img-caption p{
+    font-size: 13px;
+  }
+
+  .type-left .img-caption h2{
+    margin-bottom: 10px;
+  }
+}
+.head-small {
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+  line-height: 1.2em;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.head-centered {
+  text-align: center;
+}
+.copy {
+  display: block;
+  max-width: 500px;
+  margin-right: auto;
+  margin-bottom: 1.5rem;
+  margin-left: auto;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  line-height: 1.8em;
+  text-align: center;
+}
+.copy-white {
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.item-parallax-media {
+  overflow: hidden;
+}
+.item-parallax-media img {
+  position: absolute;
+  top: -10%;
+  left: -10%;
+  width: 120%;
+  height: 120%;
+  object-fit: cover;
+}
+.section-landing:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 24%;
+  width: 10px;
+  height: 80%;
+  background-color: white;
+  z-index: 3;
+  transform: translateY(-13vw);
+}
+.section-landing .item-parallax-media {
+  opacity: calc(1 - (var(--y) * 0.0009));
+}
+.landing-content {
+  padding-left: 30%;
+}
+.section-intro:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 80%;
+  background-color: #0d232a;
+  transform: translateX(-50%) translateY(-50%) rotate(calc((var(--y) * 0.1deg)));
+  will-change: transform;
+  backface-visibility: visible;
+}
+.img-grid {
+  flex-direction: column;
+  justify-content: space-around;
+}
+.img-gridItem {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.img-gridItem img {
+  display: block;
+  width: 45%;
+  height: 35vh;
+  object-fit:none;
+  will-change: transform;
+  backface-visibility: visible;
+}
+.img-gridItem.type-left img {
+  margin-right: auto;
+}
+.img-gridItem.type-right img {
+  margin-left: auto;
+}
+.img-gridItem:nth-child(1) img {
+  transform: translateX(calc(var(--yBlock-4) * -0.03%));
+}
+.img-gridItem:nth-child(2) img {
+  transform: translateX(calc(var(--yBlock-4) * 0.03%));
+}
+.img-caption {
+  position: absolute;
+  top: 50%;
+  width: 50%;
+  transform: translateY(-50%);
+}
+.img-caption * {
+  text-align: left;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+.type-left .img-caption {
+  right: 0;
+}
+.type-right .img-caption {
+  left: 0;
+}
+.section-end:before {
+  content: '';
+  position: absolute;
+  bottom: 50%;
+  left: 24%;
+  width: 10px;
+  height: 80%;
+  background-color: white;
+  z-index: 3;
+  transform: translateY(8vw);
+}
+.custom-properties-ftw {
+  padding: 2.5rem 1.5rem;
+}
+.custom-properties-ftw .head-small {
+  margin-bottom: 0;
+}
+</style>
+  
+<main class="content js-content">
+  
+  <section class="block section-landing">
+    <figure class="item-parallax-media">
+      <img src="https://i.postimg.cc/DwP6Ky8V/Untitled-design-13.png" alt="" />
+    </figure>
+    <div class="item-parallax-content flex-container">
+      <div class="landing-content centered-content">
+        <h1 class="head-large">Buy Organic </h1>
+      </div>
+    </div>
+  </section>
+  
+  <section class="block section-intro">
+    <div class="item-parallax-content flex-container">
+      <div class="centered-content">
+        <h2 class="head-small head-centered">Visibility</h2>
+        <p class="copy copy-white">
+        To be the world’s most successful and important natural harvest company. Successful in helping our customers apply technology to solve their problems. Successful in introducing this extraordinary technology to new customers. Important because we will continue to be the basic resource of much of what is invested in this industry.
+        </p>
+        <p class="copy copy-white">
+  People working together as a lean, global enterprise to make people’s lives better through processing and mobility leadership.We believe in deep collaboration and cross-pollination of our groups, which allow us to innovate in a way that others cannot.
+        </p>
+      </div>
+    </div>
+  </section>
+  
+  <section class="block section-part">
+    <figure class="item-parallax-media">
+      <img src="https://i.postimg.cc/Pxq7PvBn/Untitled-design-12.png" alt="" />
+    </figure>
+    <div class="item-parallax-content flex-container">
+      <div class="centered-content">
+        <h1 class="head-large head-centered">Garden <br/>of Purity</h1>
+        <p class="copy copy-white">
+          Organic farming avoids chemical pesticides and fertilizers and seeks to increase soil fertility through feeding soil micro-life with residues from life such as garbage compost and sewage, manure, plant residues, food processing wastes
+        </p>
+      </div>
+    </div>
+  </section>
+  
+  <section class="block">
+    <div class="item-parallax-content flex-container img-grid">
+      <figure class="img-gridItem type-right">
+        <img src="https://i.postimg.cc/J4Bbc3J4/Untitled-design-11.png" alt="" />
+        <figcaption class="img-caption">
+          <h2 class="head-small">Natural</h2>
+          <p class="copy copy-white">
+            Nature adopts different method to supply of nutrients to the soil and maintain the fertility of soil. The supply of nutrients are undisrupted in the nature.
+          </p>
+        </figcaption>
+      </figure>
+      <figure class="img-gridItem type-left">
+        <img src="https://i.postimg.cc/nV0bkpHL/Untitled-design-10.png" alt="" />
+        <figcaption class="img-caption">
+          <h2 class="head-small">Sustainable</h2>
+          <p class="copy copy-white">
+            Organic Agriculture aims at the development of viable and sustainable agriculture. Organic food is produced by the following a system of farm management practices that seek to nurture ecosystem which achieve sustainable productivity.
+          </p>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+  
+  <section class="block section-end">
+    <figure class="item-parallax-media">
+      <img src="https://i.postimg.cc/yNGXc9xt/Orange-Autumn-Leaf-Quote-Fall-Desktop-Wallpaper.png" alt="" />
+    </figure>
+    <div class="item-parallax-content flex-container">
+      <div class="landing-content centered-content">
+        <h1 class="head-large">Back to Basic</h1>
+      </div>
+    </div>
+  </section>
+  
+  <section class="custom-properties-ftw">
+    <h3 class="head-small head-centered">Custom Properties</h3>
+  </section>
+</main>
+<script id="jsbin-javascript">
+
+
+
+const body = document.body;
+const content = document.querySelector('.js-content');
+const blocks = document.querySelectorAll('.block');
+
+const updateOffset = () => {
+  requestAnimationFrame(updateOffset);
+  body.style.setProperty('--y', content.scrollTop);
+  updateProps();
+};
+
+const updateProps = () => {
+  let i = -1;
+
+  for (let block of blocks) {
+    i += 1;
+    let top = blocks[i].getBoundingClientRect().top;
+
+    if (top < window.innerHeight * 1.3 && top > window.innerHeight * -1.3) {
+      body.style.setProperty(`--yBlock-${i + 1}`, top);
+    } else {
+      body.style.setProperty(`--yBlock-${i + 1}`, 0);
+    }
+  }
+};
+
+updateProps();
+updateOffset();
+</script>

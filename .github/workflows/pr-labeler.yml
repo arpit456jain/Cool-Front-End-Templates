@@ -3,7 +3,7 @@ name: Add label to Merged PR
 # The events for whcih this workflow wii be triggered
 on:
   pull_request_target:
-    types: [closed]
+    types: [opened]
 
 # The machine will run each job when workflow will be triggered
 jobs:

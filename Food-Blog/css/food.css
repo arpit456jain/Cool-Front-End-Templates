@@ -1,0 +1,382 @@
+* {
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
+  height: 4000px;
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+.container::before {
+  background-color: black;
+  background: url(https://images.pexels.com/photos/1095550/pexels-photo-1095550.jpeg?cs=srgb&dl=pexels-daria-shevtsova-1095550.jpg&fm=jpg) no-repeat center
+    center/cover;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 384px;
+  z-index: -1;
+  opacity: 0.4;
+}
+.navbar {
+  padding: 18px 9px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 20000;
+}
+.navbar a {
+  text-decoration: none;
+  padding: 22px;
+  color: white;
+  border-radius: 5px;
+  font-family: "Quicksand", sans-serif;
+  transition: background-color 0.3s ease-in-out 0s;
+}
+.navbar #left {
+  position: relative;
+  top: 0px;
+  /* left: 680px; */
+  left: 98%;
+}
+.navbar a:hover,
+.navbar a#visited {
+  border: 1px solid rgba(32, 32, 32, 0.795);
+  background-color: rgb(32, 32, 32);
+  cursor: pointer;
+}
+.heading {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  position: absolute;
+  top: 165px;
+  left: 0px;
+  font-family: "Quicksand", sans-serif;
+}
+
+.heading h1 {
+  font-size: 4em;
+  margin: 10px 0px;
+  position: relative;
+  animation-name: pogo1;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+}
+@keyframes pogo1 {
+  from {
+    /* top: -50px; */
+    transform: scale(0);
+  }
+  to {
+    /* top: 0px; */
+    transform: scale(1);
+  }
+}
+.heading p {
+  position: relative;
+  margin: 0;
+  position: relative;
+  animation-name: pogo2;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+}
+@keyframes pogo2 {
+  from {
+    top: 70px;
+  }
+  to {
+    top: 0px;
+  }
+}
+.heading2 {
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 430px;
+  text-transform: capitalize;
+  font-size: 50px;
+  animation: pogo3 3s ease-in-out 6s;
+  z-index: 3;
+  color: rgb(107, 107, 107);
+}
+@keyframes pogo3 {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.ab,
+.cd {
+  position: relative;
+  top: 428px;
+  margin: 0px 340px;
+  z-index: 3;
+  color: rgb(107, 107, 107);
+}
+
+.ab,
+.cd {
+  animation: pogo4 3s ease-in-out 4s;
+}
+@keyframes pogo4 {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.chefscol {
+  display: flex;
+  /* flex-direction: column; */
+  width: 100%;
+  height: 550px;
+  flex-wrap: wrap;
+  position: relative;
+  top: 355px;
+  left: 0px;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: white;
+  
+}
+.box {
+  border: 1px solid rgb(165, 165, 165);
+  width: 300px;
+  height: 350px;
+  padding: 10px;
+  background-color: rgb(201, 201, 201);
+  /* box-shadow: 8px 7px rgb(90, 90, 90); */
+  border-radius: 20px;
+  color: black;
+  
+}
+.box img {
+  height: 150px;
+  width: 150px;
+  border: 2px solid black;
+}
+.intro {
+  font-weight: 550;
+  text-transform: capitalize;
+  margin-top: 5px;
+  margin-left: 64px;
+  font-weight: bold;
+}
+.name {
+  font-weight: 550;
+  text-transform: capitalize;
+  margin-top: 8px;
+  margin-left: 150px;
+}
+#sp {
+  margin-top: 0px;
+}
+.ef {
+  margin: 0px 60px;
+  position: relative;
+  top: 447px;
+}
+.container3 {
+  width: 100%;
+  height: 600px;
+  padding-top: 70px;
+  display: flex;
+  flex-flow: row wrap;
+  position: relative;
+  top: 468px;
+  left: 0px;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: whitesmoke;
+}
+.recipes {
+  width: 300px;
+  height: 400px;
+  background-color: rgb(255, 217, 0);
+  color: black;
+  border: 1px solid rgb(255, 187, 0);
+  border-radius: 5px;
+}
+.heading3 {
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 558px;
+  text-transform: capitalize;
+  font-size: 50px;
+  color: black;
+  z-index: 2;
+}
+.gh,
+.ij {
+  position: relative;
+  top:560px;
+  z-index: 2;
+  color: black;
+  margin: 0px 340px;
+}
+.inboximg {
+  width: 200px;
+  height: 200px;
+  margin-left: 51px;
+  margin-top: 8px;
+  border: 1px solid rgb(255, 187, 0) ;
+  box-shadow: 15px 10px rgba(255, 255, 255, 0.87);
+}
+.inboxpara {
+  width: 282px;
+  height: 138px;
+  padding: 8px;
+  margin: 18px  8px 8px 8px;
+  background-color: rgb(255, 187, 0);
+  border-radius: 10px;
+  font-size:14.5px;
+  text-align: center;
+  line-height: 2;
+  font-weight: 500;
+}
+.btn1 {
+  border: none;
+  width: 50%;
+  padding: 15px 10px;
+  margin: 0px 89px;
+  background-color: rgb(145, 255, 0);
+  border-radius: 8px;
+  font-weight: bold;
+}
+.btn1:hover{
+  background-color: rgb(106, 187, 0);
+  cursor: pointer;
+}
+.paraheading{
+  /* margin:0px 0px 0px 113px ; */
+  font-weight:bold;
+  text-decoration: underline black 1px;
+  font-size: 15.5px;
+  text-transform: capitalize;
+}
+.container4{
+  width: 100% ;
+  height:375px ;
+  position: relative;
+  top: 600px;
+  padding:0px  10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: maroon;
+
+}
+.container4::before{
+  content: "";
+  position: absolute;
+  background-color: rgba(82, 0, 0, 0.918);
+  height: 350px;
+  width: 98%;
+  border-radius: 24px;
+  box-shadow: 3px 3px 5px black;
+}
+.container4 #about_name{
+  text-align: center;
+  font-weight: bold;
+  text-decoration: underline;
+  z-index: 2;
+
+}
+.container4 #about_para{
+  display: flex;
+  text-align: center;
+  font-size: 15px;
+  z-index: 2;
+}
+#owner_img{
+  height: 175px;
+  width: 175px;
+  clip-path: circle(50% at 50% 50%);
+}
+.kl{
+  margin: 0px 60px;
+  position: relative;
+  top: 531px;
+}
+
+.contactform{
+  margin: auto;
+  width: 68%;
+  height: 370px;
+  position: relative;
+  top:750px ;
+  border: 1px solid cyan;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  background-color:#ccc;
+}
+/* .contactform::before{
+  content: "";
+  position: absolute;
+  top: 10px;
+  left:10px;
+  width:98%;
+  height:350px ;
+  background-color: rgba(26, 25, 25, 0.747);
+  z-index: -1;
+  border-radius: 24px;
+} */
+.contactform form input{
+  padding: 10px 8px;
+  width: 45%;
+  border: none;
+
+}
+.contactform form p{
+  /* padding: 10px; */
+  margin: 0px;
+  
+
+}
+#contact_heading{
+  font-size: 30px;
+  font-weight: bold;
+  margin:20px 0px;
+  color: rgb(87, 87, 87);
+  
+}
+.btn2 {
+  border: none;
+  width: 40%;
+  padding: 15px 10px;
+  margin: 0px 89px;
+  background-color: rgb(145, 255, 0);
+  border-radius: 8px;
+  font-weight: bold;
+  background-color: rgb(160, 160, 160);
+}
+.btn2:hover{
+  cursor:pointer;
+  background-color: rgb(95, 95, 95);
+  color: white;
+}
+.mn{
+  margin: 0px 60px;
+  position: relative;
+  top: 670px;
+}

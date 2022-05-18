@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap');
+
+:root {
+  --dark-Blue: hsl(240, 38%, 20%);
+  --grayish-Blue: hsl(240, 18%, 77%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: url(./images/pattern-curve.svg) no-repeat;
+  background-position: bottom;
+  max-width: 390px;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+h1,
+p {
+  opacity: 0.9;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 1rem;
+  overflow: hidden;
+}
+
+.images {
+  margin: 2rem 0;
+  background: url(./images/pattern-bg.svg) no-repeat;
+  background-size: contain;
+  background-position: top;
+  position: relative;
+  height: 20rem;
+}
+
+.block_portrait img {
+  position: relative;
+  top: 1.5rem;
+  left: 2.6rem;
+  height: 17.5rem;
+  box-shadow: 0 48px 40px -40px black;
+}
+
+.block_arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fefefe;
+  width: 5rem;
+  padding: 0.5rem 2rem;
+  position: absolute;
+  bottom: 0;
+  left: 9rem;
+  border-radius: 2rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+  z-index: 5;
+}
+
+.block_arrow img {
+  margin-left: 2rem;
+}
+
+.arrow_right {
+  margin-right: 2rem;
+}
+
+.quotes {
+  text-align: center;
+}
+
+.quote {
+  height: 3rem;
+  z-index: -1;
+}
+
+.quote__text {
+  margin-top: -1.7rem;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+h1 {
+  font-size: 1rem;
+}
+
+p.light {
+  font-size: 0.8rem;
+  color: var(--grayish-Blue);
+}
+
+.portrait__one {
+  display: none;
+}
+
+.portrait__one.active {
+  display: block;
+}
+
+.portrait__two {
+  display: none;
+}
+
+.portrait__two.active {
+  display: block;
+}
+
+.quote__one {
+  display: none;
+}
+
+.quote__one.active {
+  display: block;
+}
+
+.quote__two {
+  display: none;
+}
+
+.quote__two.active {
+  display: block;
+}
+
+.attribution {
+  font-size: 0.8rem;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* 
+
+
+ */
+
+.attribution {
+  font-size: 0.8rem;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 768px) {
+  body {
+    background-position: bottom left;
+    max-width: 100vw;
+    height: 100vh;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .quotes {
+    width: 70rem;
+    text-align: left;
+    position: relative;
+    left: 10rem;
+    z-index: 100;
+  }
+
+  .images {
+    width: 70rem;
+    height: 35rem;
+  }
+
+  .block_portrait img {
+    top: 3.2rem;
+    left: 6.5rem;
+    height: 29rem;
+  }
+
+  .block_arrow {
+    bottom: 2rem;
+    left: 12rem;
+  }
+
+  .quote__text {
+    font-size: 1.9rem;
+  }
+
+  .quote__author {
+    display: flex;
+    align-items: center;
+  }
+
+  .quote__author h1 {
+    font-size: 1rem;
+    margin-right: 0.5rem;
+  }
+}

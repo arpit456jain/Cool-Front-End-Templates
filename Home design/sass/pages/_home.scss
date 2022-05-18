@@ -1,0 +1,39 @@
+.section-about{
+
+    padding: 5rem 0;
+    background-color: #eee;
+    margin-left: 5.2rem;
+    margin-right: 5.2rem;
+    height: 50rem;
+   margin-bottom: 9rem;
+}
+.section-grid{
+    background-image: linear-gradient( to right bottom,$color-blue,#eee);
+    margin-left: 5.2rem;
+    margin-right: 5.2rem;
+    transform: skewY(-5deg);
+    margin-top: -13rem;
+    height: 75rem;
+    & > * {
+        transform: skewY(5deg);
+    }
+  
+}
+
+.section-teams{
+   padding: 4rem 0;
+    background-color: #eee;
+    height: 55rem;
+    margin-left: 5.2rem;
+    margin-right: 5.2rem;
+    margin-top: -8.2vh;
+
+     
+}
+.section-footer{
+    height: 25rem;
+   
+    margin-left: 5.2rem;
+    margin-right: 5.2rem;
+    
+}
