@@ -1,0 +1,93 @@
+h2
+{
+    background: -webkit-linear-gradient(white, #38495a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+	text-align: center;
+}
+.recipe-section {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+}
+.recipe-section .recipes {
+  width: 105%;
+  margin-left: 5%;
+}
+.recipe-section .recipes .recipe-item {
+  display: inline-block;
+  width: 45%;
+  padding-right: 5%;
+}
+.recipe-section .recipes .recipe-item .recipe-block {
+  display: block;
+  width: 82%;
+  position: relative;
+}
+.recipe-section .recipes .recipe-item .recipe-block h3 {
+  color: white;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+  pointer-events: none;
+  margin: 0;
+  padding: 0 5%;
+  font-size: 4rem;
+  text-shadow: 0 0 2vw rgba(0, 0, 0, 0.7);
+}
+@media screen and (max-width: 840px) {
+  .recipe-section .recipes .recipe-item .recipe-block h3 {
+    font-size: 8vw;
+    text-shadow: 0 0 4vw rgba(0, 0, 0, 0.7);
+  }
+}
+@media screen and (max-width: 740px) {
+  .recipe-section .recipes .recipe-item {
+    width: 100%;
+    padding-right: 0;
+    padding: 0 5%;
+  }
+	img {
+		width : 110%;
+}
+}
+@media screen and (max-width: 540px) {
+  .recipe-section .recipes {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+.recipe-section .nutrition-container {
+  font-family: "Lato";
+  font-size: 14px;
+  line-height: 13px;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+.recipe-section .nutrition-container input {
+  display: none;
+}
+.recipe-section .nutrition-container input + label {
+  cursor: pointer;
+}
+.recipe-section .nutrition-container input + label .expand-icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+.recipe-section .nutrition-container input:checked + label .expand-icon .expand-plus {
+  display: none;
+}
+.recipe-section .nutrition-container input:checked + label ~ .nutrition-data {
+  opacity: 1;
+  max-height: 1000px;
+}
+.recipe-section .nutrition-container .nutrition-data {
+  opacity: 0;
+  max-height: 0px;
+  overflow: hidden;
+}
