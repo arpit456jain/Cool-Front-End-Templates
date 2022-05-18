@@ -281,11 +281,7 @@
     "link": "Thanking SVG page/index.html"
   },
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 
->>>>>>> upstream/master
     {
       "name": "Chrome Extension UI",
       "link": "Chrome%20Extension%20Project/index.html"
@@ -314,22 +310,6 @@
   {
       "name": "Market Share Graph",
       "link": "Market%20Share%20Graph/index.html"
-<<<<<<< HEAD
-<<<<<<< HEAD
-    }
-=======
-    },
-  {
-  
-      "name": "university",
-      "link": "university/index.html"
-  
-  }
-
->>>>>>> upstream/master
-  ]
-=======
-=======
     },
   {
       "name": "Recipe Website",
@@ -341,7 +321,6 @@
   },
 
 
->>>>>>> upstream/master
   {
     "name": "Tourism-Portal",
     "link": "Tourism-Portal/index.html"
@@ -371,7 +350,6 @@
     "name": "Nestle Nutrition Clone",
     "link": "Nestle%20Nutrition%20Clone/index.html"
   },
->>>>>>> upstream/master
 
 
   {
@@ -406,8 +384,8 @@
     "name": "School Website",
     "link": "School%20Website/index.html"
   },
-    {
-      "name":"Amazon Slider",
-      "link":"AmazonHomePageSlider/index.html"
-    }
+  {
+    "name":"AmazonHomePageslider",
+    "link":"AmazonHomePageSlider/index.html"
+  }
 ]
