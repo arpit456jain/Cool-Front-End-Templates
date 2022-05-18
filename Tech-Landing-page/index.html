@@ -9,8 +9,10 @@
 </head>
 <body>
     <nav id="navbar">
-        <header>JS Documentation</header>
-        <ul>
+        <header>JS documentation 
+            <img src="menu.png" class="menu" alt="">
+        </header> 
+        <ul class="nav">
             <li>
                 <a class="nav-link" href="#Introduction">Introduction</a>
             </li>
@@ -229,5 +231,14 @@
             </p>
         </section>
     </main>
+
+    <script>
+        const menu = document.querySelector('.menu')
+        const navUl = document.querySelector('.nav')
+
+        menu.addEventListener('click', function() {
+            navUl.classList.toggle('active')
+        })
+    </script>
 </body>
 </html>
