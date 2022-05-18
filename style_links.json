@@ -383,5 +383,9 @@
   {
     "name": "School Website",
     "link": "School%20Website/index.html"
+  },
+  {
+    "name":"AmazonHomePageslider",
+    "link":"AmazonHomePageSlider/index.html"
   }
 ]
