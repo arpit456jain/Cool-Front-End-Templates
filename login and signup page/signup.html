@@ -39,7 +39,7 @@
 							<input id="signPsd" type="password" placeholder="Password">
 						</div>
 						<input id="signBtn" type="submit" value="Sign up" class="btn btn-lg btn-outline-primary rounded-pill m-3 font-weight-bold">
-						<input id="logOutBtn" type="submit" value="Log Out" class="btn btn-lg btn-outline-primary rounded-pill m-3 font-weight-bold">
+						<!-- <input id="logOutBtn" type="submit" value="Log Out" class="btn btn-lg btn-outline-primary rounded-pill m-3 font-weight-bold"> -->
 						
 						<p style="color:lightskyblue;">OR</p>
 						<div class="social-icon d-flex justify-content-center">
@@ -106,7 +106,6 @@
 	onAuthStateChanged(auth, (user) => {
 		const uid = user.uid;
 		if(user){
-			console.log(user)
 			document.getElementById('signBtn').style.display = "none";
 			document.getElementById('logOutBtn').style.display = "block";
 			document.getElementById('userName').innerHTML = "Welcome, "+user.email;
@@ -126,6 +125,7 @@
 		}).catch((error) => {
 			alert(error)
 		});
+		window.reload()
 	})
 	
 
