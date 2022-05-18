@@ -310,16 +310,11 @@
   {
       "name": "Market Share Graph",
       "link": "Market%20Share%20Graph/index.html"
-
     },
   {
-  
-      "name": "university",
-      "link": "university/index.html"
-  
-  },
- 
-
+      "name": "Recipe Website",
+      "link": "Recipe%20Website/index.html"
+    },
   {
     "name": "Tourism-Portal",
     "link": "Tourism-Portal/index.html"
@@ -350,6 +345,7 @@
     "name": "Nestle Nutrition Clone",
     "link": "Nestle%20Nutrition%20Clone/index.html"
   },
+
 
   {
     "name": "Chrome Extension UI",
@@ -395,5 +391,11 @@
 
   
 
-    }
+    },
+   {
+  
+      "name": "university",
+      "link": "university/index.html"
+  
+  },
 ]
