@@ -336,12 +336,6 @@
       "link": "Recipe%20Website/index.html"
     },
   {
-      "name": "university",
-      "link": "university/index.html"
-  },
-
-
-  {
     "name": "Tourism-Portal",
     "link": "Tourism-Portal/index.html"
   },
@@ -349,6 +343,7 @@
     "name": "weather1",
     "link": "weather1/index.html"
   },
+
 
   {
     "name": "Whatsapp",
@@ -403,5 +398,27 @@
   {
     "name": "School Website",
     "link": "School%20Website/index.html"
+  },
+
+  {
+    "name": "Payment Gateway Template",
+    "link": "Payment_Gateway/index.html"
+  },
+   {
+       "name": "Festivals In India",
+
+      "link": "festivals%20in%20india/index.html"
+    },
+   {
+  
+      "name": "university",
+      "link": "university/index.html"
+  
+  },
+
+  {
+    "name":"AmazonHomePageslider",
+    "link":"AmazonHomePageSlider/index.html"
   }
 ]
+
