@@ -1,3 +1,4 @@
+/* Big tablet to 1200px (widths smaller taht the 1140px row) */
 
 @media only screen and (max-width: 1200px) {
   .hero-text-box {
@@ -7,22 +8,10 @@
   .row {
     padding: 0 2%;
   }
-  .table1{
-  	width: 100%;
-    padding: 0 2%;
-  }
-  .about-text{
-  	width: 100%;
-    padding: 0 2%;
-  }
-  .about1{
-    height: auto;
-    width: auto;
-  }
-  iframe{
-    width: 100%;
-  }
-}
+
+
+/* Small tablet to big tablet: from 768px to 1023px */
+
 @media only screen and (max-width: 1023px) {
   body {
     font-size: 18px;
@@ -74,38 +63,19 @@
   body {
     font-size: 16px;
   }
-  .row1{
-    width:100%;
-   
-  }
-  .one{
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-  .two{
-    width: 100%;
-    height: auto;
-  }
-  .app{
-    display: none;
-  }
-
-  .about-text{
-    width: 100%;
-  }
-  .about1-text textarea{
-    width: 80%;
-  }
-  .image1{
-    display: none;
-  }
   section {
     padding: 30px 0;
   }
   .row,
   .hero-text-box {
     padding: 0 4%;
+  }
+  .table1 img{
+    display: flex;
+  justify-content: center;
+  align-items: center; 
+  float: none;
+  margin: auto;
   }
   .col {
     width: 100%;
