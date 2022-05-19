@@ -1,0 +1,21 @@
+body {
+    --nav-bar: #064663;
+    --nav-body: #eee;
+    --active: #ffb820d7;
+  }
+
+body{
+    background-color: rgb(250, 235, 215);
+}
+.navbar {
+    background-color: var(--nav-bar);
+  }
+  .navbar a {
+    color: var(--nav-body);
+  }
+  .navbar a:hover {
+    color: var(--active);
+  }
+  .active {
+    color: var(--active);
+  }

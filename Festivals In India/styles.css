@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    /* background: linear-gradient(to top,rgb(137, 134, 134), rgb(6, 45, 86) ); */
+    zoom: 63%;
+
+
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    ;
+
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* background-color: black; */
+    background-image: url("collage.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 600px;
+    max-height: fit-content;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+.main{
+    display: flex;
+    /* flex-direction: column; */
+    /* border: 1px solid black; */
+    background-color:rgba(0,0,0,.25);
+    align-items: center;
+    position: absolute;
+    top:%;
+    
+}
+
+.headings{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 45px;
+    text-align: center;
+    margin: 40px 0px ;
+}
+
+
+#festivals{
+    display: flex;
+    flex-direction: column;
+    padding:20px;
+    font-size: 21px;
+}
+
+.content{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    min-height: 650px;
+    max-height: fit-content;
+    border: 1px solid black;
+    margin: 10px;
+    margin-top: 20px;
+    align-items: center;
+    text-align: justify;
+    padding: 10px;
+    border-radius: 15px;
+    background: linear-gradient(to top,rgb(137, 134, 134), rgb(6, 45, 86) );
+    background-size: 100% 200%;
+    color: white;
+    transition: all 1s;
+}
+
+.card:hover{
+    background-position: left;
+    color:goldenrod;
+    border: none;
+    box-shadow: 0 0 20px rgb(71, 65, 65);
+}
+
+.card img{
+    width: 200px;
+    height: 150px;
+    padding-top: 20px;
+    padding-bottom: 0%;
+}
+.hit-the-floor {
+    color: #fff;
+    font-size: 95px;
+    font-weight: bold;
+    font-family: Helvetica;
+    text-shadow:
+      0 1px 0 #ccc,
+      0 2px 0 #c9c9c9,
+      0 3px 0 #bbb,
+      0 4px 0 #b9b9b9,
+      0 5px 0 #aaa,
+      0 6px 1px rgba(0,0,0,.1),
+      0 0 5px rgba(0,0,0,.1),
+      0 1px 3px rgba(0,0,0,.3),
+      0 3px 5px rgba(0,0,0,.2),
+      0 5px 10px rgba(0,0,0,.25),
+      0 10px 10px rgba(0,0,0,.2),
+      0 20px 20px rgba(0,0,0,.15);
+  }
+  
+  .hit-the-floor {
+    text-align: center;
+  }
