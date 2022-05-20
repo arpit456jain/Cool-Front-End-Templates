@@ -9,7 +9,7 @@
     padding: 0 2%;
   }
 
-
+}
 /* Small tablet to big tablet: from 768px to 1023px */
 
 @media only screen and (max-width: 1023px) {
@@ -155,4 +155,15 @@
   .contact-form {
     width: 100%;
   }
+  .about-text{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    margin: auto;
+}
+.table1 img{
+  width: 350px;
+  height: 350px;
+}
+
 }
