@@ -135,7 +135,7 @@ h1 {
 }
 
 button{
-  border: 2px solid #13182c;
+  border: none;
   width: 95%;
   font-size: 1em;
   font-family: 'Bitter';
@@ -143,6 +143,10 @@ button{
   padding: 0.5em;
   transition: 0.3s;
   margin-bottom: 1em;
+  border-radius: 50px;
+  background: linear-gradient(145deg, #e5e5e5, #c1c1c1);
+  box-shadow:  20px 20px 60px #b6b6b6,
+              -20px -20px 60px #f6f6f6;
 }
 
 .btnn:hover{
