@@ -10,7 +10,7 @@
   }
 
 }
-/* Small tablet to big tablet: from 768px to 1023px */
+
 
 @media only screen and (max-width: 1023px) {
   body {
@@ -165,5 +165,16 @@
   width: 350px;
   height: 350px;
 }
-
+}
+@media only screen and (max-width: 340px){
+.row img{
+  display: none;
+}
+.btn-full:link, .btn-full:visited, input[type=submit] {
+    background-color: #e67e22;
+    border: 1px solid #e67e22;
+    color: #fff;
+    margin-right: 15px;
+    margin: 5px;
+}
 }
