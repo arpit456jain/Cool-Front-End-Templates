@@ -17,7 +17,7 @@ body {
   background-color: var(--primary-color);
   margin: 0;
   padding: 1rem;
-  max-width: 1600px;
+  max-width: 100%;
   text-align: center;
   border-bottom-left-radius: 2rem;
   border-top-right-radius: 2rem;
@@ -59,8 +59,9 @@ button:hover {
 }
 
 .op {
-  margin-left: 10rem;
+  margin-left: auto;
   font-weight: 600;
+  font-size: larger;
 }
 
 .footer {
