@@ -84,22 +84,20 @@ h1 {
   display: flex;
 }
 .stylebox {
-  display: block;
-  /* flex-direction: column; */
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   flex-wrap: wrap;
   overflow: hidden;
   background-color: white;
-  padding: .2rem;
+  padding: 1.6rem;
   text-align: center;
   font-family: 'Bitter', sans-serif;
-  margin: 1.5rem auto;
-  border-radius: 5px;
+  margin: 0.8rem;
+  border-radius: 25px;
   border: none;
-  width: 20rem;
-  transition: .2s;
-  /* margin-left: 4rem; */
-  text-align: center;
+  width: 21rem;
+  transition: .4s;
 }
 .stylebox:hover {
   
@@ -137,14 +135,14 @@ h1 {
 }
 
 button{
-  border: 2px solid #101522;
+  border: 2px solid #13182c;
   width: 95%;
   font-size: 1em;
   font-family: 'Bitter';
   font-weight: bold;
-  padding: .5em;
+  padding: 0.5em;
   transition: 0.3s;
-  margin-bottom: 1em ;
+  margin-bottom: 1em;
 }
 
 .btnn:hover{
