@@ -27,13 +27,13 @@ const data=[
 reviewBlock.innerHTML='';
 data.forEach((data,index)=>{
     const html=`<div class="review1">
-<div class="customer-name">${data.name}<img class="tickmark" src="/content/correct.png" alt=""></div>
+<div class="customer-name">${data.name}<img class="tickmark" src="correct.png" alt=""></div>
 <div class="star">
-    <img src="/content/star.png" alt="">
-    <img src="/content/star.png" alt="">
-    <img src="/content/star.png" alt="">
-    <img src="/content/star.png" alt="">
-    <img src="/content/star.png" alt="">
+    <img src="star.png" alt="">
+    <img src="star.png" alt="">
+    <img src="star.png" alt="">
+    <img src="star.png" alt="">
+    <img src="star.png" alt="">
 </div>
 <div class="headingReview">${data.headingReview}</div>
 <p class="actualReview">${data.text}</p>

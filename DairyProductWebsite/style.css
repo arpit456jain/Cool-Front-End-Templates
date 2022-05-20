@@ -30,6 +30,7 @@ section {
     height: 77vh;
     margin: 3em auto 0em auto;
     display: grid;
+    /* align-items: center; */
     grid-template-columns: 1fr 2fr;
 }
 
@@ -39,11 +40,15 @@ section {
 
 .images {
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    overflow: hidden;
 }
 
 .adjust {
     position: absolute;
-    height: 80%;
+    height: 100%;
 
 }
 
