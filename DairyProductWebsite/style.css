@@ -253,13 +253,16 @@ span {
     cursor: pointer;
 }
 
-@media(max-width:1200px) {
-    .adjust1 {
-        display: none;
+@media(max-width:1063px) {
+    .adjust {
+        height: 90%;
     }
 
-    .adjust2 {
-        display: none;
+}
+
+@media(max-width:987px) {
+    .adjust {
+        height: 80%;
     }
 
 }
@@ -267,6 +270,10 @@ span {
 @media(max-width:969px) {
     .ReviewSection {
         padding: 2.2em 1em;
+    }
+
+    header {
+        padding: 0em 1em;
     }
 }
 
@@ -280,14 +287,14 @@ span {
     }
 
     .adjust {
-        height: 88%;
+        height: 75%;
     }
 }
 
 @media(max-width:804px) {
 
     .adjust {
-        height: 80%;
+        height: 70%;
     }
 
     section {
@@ -298,6 +305,12 @@ span {
 @media(max-width:723px) {
     .adjust {
         height: 65%;
+    }
+}
+
+@media(max-width:696px) {
+    .adjust {
+        height: 60%;
     }
 }
 
@@ -348,6 +361,7 @@ span {
     }
 
 
+
 }
 
 @media(max-width:378px) {
@@ -361,6 +375,16 @@ span {
 
     #textcomp {
         width: 12em;
+    }
+
+    .review1 {
+        .review1 {
+            padding: 0.5em .2em 3em .2em;
+        }
+    }
+
+    .ReviewContent {
+        grid-gap: 2px;
     }
 
 }
