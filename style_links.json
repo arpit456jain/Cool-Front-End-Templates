@@ -376,10 +376,21 @@
     "link": "university/index.html"
   },
   {
+      "name": "Admin Dashboard",
+      "link": "Admin Dashboard/index.html"
+    },
+    {
+      "name": "Artica",
+      "link": "Artica/index.html"
+    },
+    {
+      "name": "Art Gallery Website",
+      "link": "ArtGalleryWebsite/index.html"
+    },
+  {
     "name": "School Website",
     "link": "School%20Website/index.html"
   },
-
   {
     "name": "Payment Gateway Template",
     "link": "Payment_Gateway/index.html"
@@ -399,6 +410,10 @@
   {
     "name":"AmazonHomePageslider",
     "link":"AmazonHomePageSlider/index.html"
-  }
+  },
+   {
+      "name": "Documentation Page",
+      "link": "Tech-Landing-page/index.html"
+    }
 ]
 

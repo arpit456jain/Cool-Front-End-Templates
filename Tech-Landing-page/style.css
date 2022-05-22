@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 25px;
+  background-color: #f5f5f5;
+}
+
+#navbar {
+  background-color: #f5f5f5;
+  position: fixed;
+  min-width: 290px;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 100vh;
+  border-right: solid;
+  border-color: #000;
+  margin-right: 3px;
+}
+
+header {
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.8em;
+  background-color: #393b44;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.menu {
+  cursor: pointer;
+  height: 1.5rem;
+  width: 1.5rem;
+  display: none;
+}
+
+#navbar ul {
+  height: 88%;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin-top: 0;
+}
+
+#navbar li {
+  border-top: 1px solid;
+  list-style: none;
+  position: relative;
+  width: 100%;
+}
+
+.nav-link {
+  display: block;
+  padding: 2px 30px;
+  color: #111;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid rgb(190, 190, 190);
+}
+
+.nav-link:hover {
+  color: #000;
+}
+
+#main-doc {
+  margin-left: 350px;
+  margin-right: 30px;
+  color: #393b44;
+}
+
+#main-doc header {
+  text-align: left;
+  margin-top: 30px;
+  margin-left: 0;
+}
+
+p {
+  margin-top: 20px;
+}
+
+code {
+  display: block;
+  text-align: left;
+  white-space: pre-line;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 2;
+  background-color: #aaaaaa;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+li {
+  line-height: 2.5;
+}
+
+@media (max-width: 700px) {
+  body {
+    margin: 0;
+    font-family: "Lato", sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 25px;
+  }
+
+  header {
+    padding: 20px;
+    text-align: center;
+    font-size: 1.8em;
+    background-color: #393b44;
+  }
+
+  #navbar {
+    border-right: none;
+    border-bottom: 2px solid #1e2022;
+    height: 300px;
+    overflow-y: scroll;
+    width: 100%;
+    position: relative;
+    transition: 0.3s ease-in-out;
+  }
+
+  #navbar ul {
+    display: none;
+  }
+
+  #navbar ul.active {
+    display: block;
+  }
+
+  .menu {
+    display: block;
+  }
+
+  .nav-link {
+    display: block;
+    padding: 0px 30px;
+  }
+  #main-doc {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 0;
+    color: #4d4e53;
+    width: 100%;
+    min-width: 0px;
+  }
+}
