@@ -432,11 +432,13 @@
     "link":"AmazonHomePageSlider/index.html"
   },
   {
+    "name":"BankistWebsite",
+    "link":"BankistWebsite/index.html"
+  },
+  {
     "name":"CV Template",
     "link":"CV Template/index.html"
-  }
-  ,
-
+  },
   {
     "name":"personal-portfolio-website",
     "link":"personal-portfolio-website/index.html"
