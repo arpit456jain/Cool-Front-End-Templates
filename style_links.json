@@ -305,21 +305,21 @@
     {
       "name": "Chrome Extension UI",
       "link": "Chrome%20Extension%20Project/index.html"
-      
+
     },
     {
-      
+
       "name": "Step By Step Process",
       "link": "Step%20By%20Step%20Process/index.html"
-      
+
     },
   {
-    
+
       "name": "NFT Viewer",
       "link": "NFT Viewer/index.html"
   },
     {
-     
+
       "name": "Reward Point",
       "link": "reward%20point/index.html"
     },
@@ -421,15 +421,19 @@
       "link": "festivals%20in%20india/index.html"
     },
    {
-  
+
       "name": "university",
       "link": "university/index.html"
-  
+
   },
 
   {
     "name":"AmazonHomePageslider",
     "link":"AmazonHomePageSlider/index.html"
+  },
+  {
+    "name":"CV Template",
+    "link":"CV Template/index.html"
   }
   ,
 
@@ -448,4 +452,3 @@
     }
 
 ]
-
