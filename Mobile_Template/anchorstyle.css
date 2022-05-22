@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.Head{
+    display: flex;
+    position: fixed;
+    top: 0;
+   
+  }
+  .navbar{
+    list-style: none;
+    display: flex;
+  }
+  .list{
+    font-size: 20px;
+    text-transform: capitalize;
+  }
+  ul li a{
+    text-decoration: none;
+    padding: 20px 25px;
+    color: rgb(8, 4, 5);
+    z-index: 2;
+  }
+  .list:hover{
+    font-size: large;
+  }
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow-x: hidden;
+    margin: 0;
+    background-position: center center;
+    background-size: cover;
+    transition: 0.4s;
+}
+body::before {
+    content: '';
+    position: relative;
+    top: 0px; 
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+  }
+  .slider-container{
+    position: absolute;
+    margin-top:30px;
+    width: 65vw;
+    height: 80vh;
+    overflow: hidden;
+    padding: 0;
+}
+
+.inner{
+    height:70vh;
+    width: 70vw;
+}
+ .img{
+   width: 850px;
+   height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    vertical-align: middle;
+    opacity: 0.7;
+} 
+
+
+
+
+   .slide .active{
+      opacity: 1;
+  } 
+  .arrow { 
+   position: fixed;
+   background-color: transparent;
+   color: rgb(200, 140, 140);
+   padding: 18px;
+   font-size: 30px;
+   top: 50%;
+   transform: translateY(-50%);
+   cursor: pointer;
+   z-index: 1;
+ }
+ 
+ 
+  .arrow:focus {
+   outline: 0;
+ }
+ 
+ .left-arrow {
+   left: 12.5vw;
+  } 
+ 
+ .right-arrow {
+   right:12.5vw;
+  } 
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #999999;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active,
+      .dot:hover {
+        background-color: #111111;
+        z-index: 3;
+      }
