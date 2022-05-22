@@ -78,7 +78,7 @@ h1 {
 
 .social {
     position: fixed;
-    top: 90%;
+    top: 80%;
     left: 20px;
     transform: translateY(-50%);
 
@@ -182,6 +182,9 @@ h1 {
     }
     
 /* Other sections */
+    html,body{
+    overflow-x: hidden;
+    }
     h1,h3,.play-btn-section{
         padding: 0;
     }
@@ -204,12 +207,16 @@ h1 {
     }
 
     .play-btn {
-        
-        width: 96%;
+        border-radius: 100px;
+        width: 80%;
     }
 }
 @media (max-width:360px){
 
+    html,body{
+        overflow: hidden;
+        
+        }
     .toggle-button{
         display: flex;
     }
@@ -254,6 +261,11 @@ h1 {
         height: 15rem;
         padding: 0;
         margin: 0 auto;
+    }
+    .play-btn {
+        padding: 1rem 1rem;
+        border-radius: 90px;
+        width: 100%;
     }
 
 } 
