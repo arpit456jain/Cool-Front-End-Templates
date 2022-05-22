@@ -125,33 +125,53 @@
     "link": "Yoga%20Template%202/index.html"
   },
 
-  {
-    "name": "Login form",
-    "link": "Login%20form/index.html"
+     
+    {
+  
+      "name": "Local Fast Food",
+      "link": "Local%20Fast%20Food/index.html"
+  
   },
-
-  {
-    "name": "simple dark form",
-    "link": "simple%20dark%20form/index.html"
-  },
-  {
-    "name": "Apple Webiste UI Clone",
-    "link": "Apple%20Webiste%20UI%20Clone/index.html"
-  },
-  {
-    "name": "Admin Dashboard",
-    "link": "Admin%20Dashboard/index.html"
-  },
-
-  {
-    "name": "Moninfo-Indian Monuments Template",
-    "link": "Moninfo-Indian%20Monuments%20Template/index.html"
-  },
-
-  {
-    "name": "Netflix Clone-2",
-    "link": "Netflix%20Clone-2/index.html"
-  },
+    {
+  
+      "name": "Login form",
+      "link": "Login%20form/index.html"
+  
+    },
+  
+    {
+  
+      "name": "simple dark form",
+      "link": "simple%20dark%20form/index.html"
+  
+    },
+    {
+  
+      "name": "Apple Webiste UI Clone",
+      "link": "Apple%20Webiste%20UI%20Clone/index.html"
+  
+    },
+    {
+  
+        "name": "Admin Dashboard",
+        "link": "Admin%20Dashboard/index.html"
+  
+    },
+  
+    {
+  
+      "name": "Moninfo-Indian Monuments Template",
+      "link": "Moninfo-Indian%20Monuments%20Template/index.html"
+  
+  
+    },
+  
+    {
+  
+      "name": "Netflix Clone-2",
+      "link": "Netflix%20Clone-2/index.html"
+  
+    },
 
   {
     "name": "Gym Website",
@@ -285,21 +305,21 @@
     {
       "name": "Chrome Extension UI",
       "link": "Chrome%20Extension%20Project/index.html"
-      
+
     },
     {
-      
+
       "name": "Step By Step Process",
       "link": "Step%20By%20Step%20Process/index.html"
-      
+
     },
   {
-    
+
       "name": "NFT Viewer",
       "link": "NFT Viewer/index.html"
   },
     {
-     
+
       "name": "Reward Point",
       "link": "reward%20point/index.html"
     },
@@ -376,10 +396,21 @@
     "link": "university/index.html"
   },
   {
+      "name": "Admin Dashboard",
+      "link": "Admin Dashboard/index.html"
+    },
+    {
+      "name": "Artica",
+      "link": "Artica/index.html"
+    },
+    {
+      "name": "Art Gallery Website",
+      "link": "ArtGalleryWebsite/index.html"
+    },
+  {
     "name": "School Website",
     "link": "School%20Website/index.html"
   },
-
   {
     "name": "Payment Gateway Template",
     "link": "Payment_Gateway/index.html"
@@ -390,10 +421,10 @@
       "link": "festivals%20in%20india/index.html"
     },
    {
-  
+
       "name": "university",
       "link": "university/index.html"
-  
+
   },
 
   {
@@ -403,6 +434,23 @@
   {
     "name":"BankistWebsite",
     "link":"BankistWebsite/index.html"
-  }
-]
+  },
+  {
+    "name":"CV Template",
+    "link":"CV Template/index.html"
+  },
+  {
+    "name":"personal-portfolio-website",
+    "link":"personal-portfolio-website/index.html"
+  },
 
+  {
+    "name":"DairyProductWebsite",
+    "link":"DairyProductWebsite/index.html"
+  },
+   {
+      "name": "Documentation Page",
+      "link": "Tech-Landing-page/index.html"
+    }
+
+]
