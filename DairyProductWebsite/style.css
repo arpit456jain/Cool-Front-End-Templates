@@ -1,0 +1,390 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+}
+
+header {
+    height: 5em;
+    background-color: #E8EFFD;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0em 7em;
+    box-sizing: border-box;
+}
+
+.Name {
+    color: #95B0FF;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    font-size: 1.5em;
+    margin-left: .5em;
+}
+
+section {
+    position: relative;
+    width: 83vw;
+    height: 77vh;
+    margin: 3em auto 0em auto;
+    display: grid;
+    /* align-items: center; */
+    grid-template-columns: 1fr 2fr;
+}
+
+.content {
+    position: relative;
+}
+
+.images {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    overflow: hidden;
+}
+
+.adjust {
+    position: absolute;
+    height: 100%;
+
+}
+
+.heading {
+    font-size: 3.9375em;
+    font-family: serif;
+    font-weight: 540;
+    color: #676A6C;
+    line-height: 60px;
+}
+
+.adjust1 {
+    position: absolute;
+    height: 30%;
+    left: 66%;
+    top: 80%;
+    transform: translateX(-66%);
+    transform: translateY(-80%);
+
+}
+
+.adjust2 {
+    position: absolute;
+    height: 30%;
+    left: 80%;
+    top: 15%;
+    transform: translateY(-15%);
+    transform: translateX(-80%);
+}
+
+p {
+    margin: 0%;
+    margin-top: 2em;
+    padding: 0%;
+    color: #aaaaaa;
+    font-size: 1.25em;
+}
+
+.button {
+    position: absolute;
+    background-color: #FF8881;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .6em 0em;
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 4.8em;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.menuicon {
+    margin-left: auto;
+}
+
+.ReviewSection {
+    /* height: 38em; */
+    height: 100%;
+    padding: 2.2em 7em;
+    position: relative;
+    background-color: #E8EFFD;
+    box-sizing: border-box;
+}
+
+.text-head {
+    font-size: 17px;
+    color: #777777;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0em;
+}
+
+.text-main-head {
+    color: #75b9c7;
+    font-size: 35px;
+    margin: .5em 0em 1em 0em;
+}
+
+.ReviewContent {
+    height: 100%;
+    position: relative;
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+    /* background-color: #FF8881; */
+    color: #676A6C;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.review1 {
+    /* background-color: aqua; */
+    height: 100%;
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+    /* padding: 1em 1.8em; */
+    padding: 1em 1.8em 7em 1.8em;
+    background-color: white;
+    box-shadow: 0px 0px 5px #75b9c7;
+}
+
+.customer-name {
+    display: flex;
+    align-items: center;
+}
+
+.tickmark {
+    margin-left: 1em;
+}
+
+.star {
+    display: flex;
+    margin-top: 1.3em;
+}
+
+.headingReview {
+    margin-top: .5em;
+    font-size: 22px;
+    font-family: serif;
+}
+
+.actualReview {
+    font-size: 14px;
+    color: #969696;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+}
+
+span {
+    text-decoration: underline;
+}
+
+.contact-page {
+    /* height: 35em; */
+    height: 100%;
+    position: relative;
+    box-sizing: border-box;
+    padding: 3em 7em;
+    width: 100%;
+    text-align: center;
+}
+
+.Cont {
+    color: #03363D;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 55px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.complain {
+    margin-left: .3em;
+}
+
+.inputReview {
+    margin-top: 2em;
+    width: 100%;
+    align-items: center;
+    gap: 1em;
+    display: flex;
+    flex-flow: column;
+}
+
+.samehw {
+    height: 2.5em;
+    width: 20em;
+    border: solid .2px #6bc8df;
+    outline: none;
+    font-size: 18px;
+    box-sizing: border-box;
+    padding: .5em 1em;
+    border-radius: 5px;
+}
+
+#textcomp {
+    border: solid .2px #6bc8df;
+    outline: none;
+    font-size: 18px;
+    border-radius: 5px;
+    padding: .5em 1em;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.compbutton {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    color: white;
+    background-color: #FD6930;
+    width: 32%;
+    height: 2.3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media(max-width:1063px) {
+    .adjust {
+        height: 90%;
+    }
+
+}
+
+@media(max-width:987px) {
+    .adjust {
+        height: 80%;
+    }
+
+}
+
+@media(max-width:969px) {
+    .ReviewSection {
+        padding: 2.2em 1em;
+    }
+
+    header {
+        padding: 0em 1em;
+    }
+}
+
+@media(max-width:865px) {
+    .ReviewContent {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    section {
+        height: 80vh;
+    }
+
+    .adjust {
+        height: 75%;
+    }
+}
+
+@media(max-width:804px) {
+
+    .adjust {
+        height: 70%;
+    }
+
+    section {
+        font-size: 14px;
+    }
+}
+
+@media(max-width:723px) {
+    .adjust {
+        height: 65%;
+    }
+}
+
+@media(max-width:696px) {
+    .adjust {
+        height: 60%;
+    }
+}
+
+@media(max-width:603px) {
+    section {
+        font-size: 12px;
+    }
+
+    .heading {
+        line-height: 45px;
+    }
+
+    .adjust {
+        height: 50%;
+    }
+
+    .Cont {
+        font-size: 30px;
+    }
+}
+
+@media(max-width:499px) {
+    section {
+        font-size: 11px;
+    }
+
+    .adjust {
+        height: 40%;
+    }
+
+    .compbutton {
+        width: 80%;
+    }
+
+}
+
+@media(max-width:423px) {
+    section {
+        font-size: 10px;
+    }
+
+    .adjust {
+        height: 35%;
+    }
+
+    .review1 {
+        padding: 1em 1em 5em 1em;
+    }
+
+
+
+}
+
+@media(max-width:378px) {
+    .adjust {
+        height: 30%;
+    }
+
+    .samehw {
+        width: 12em;
+    }
+
+    #textcomp {
+        width: 12em;
+    }
+
+    .review1 {
+        .review1 {
+            padding: 0.5em .2em 3em .2em;
+        }
+    }
+
+    .ReviewContent {
+        grid-gap: 2px;
+    }
+
+}

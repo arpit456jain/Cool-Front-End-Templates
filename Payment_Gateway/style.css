@@ -1,0 +1,294 @@
+body{
+    background: rgb(228, 228, 217);
+    font-family: 'Lato', sans-serif;
+    position: sticky;
+    overflow: hidden;
+}
+.heading{
+    text-align: center;
+    margin-top: 2rem;
+
+}
+#Heading{
+    margin-top: 0%;
+    color: #064441;
+}
+span{
+    color: #CDEFE2;
+}
+h5{
+    color: rgb(40, 43, 73);
+    text-align: center;
+}
+h3{
+    color: aliceblue;
+}
+
+.mainContainer{
+    margin: auto;
+    width: 60%;
+    margin-top: 1rem;
+    border: 1px solid rgb(138, 135, 135);
+    
+
+}
+.mainContainer div{
+    margin: auto;
+    width: 100%;
+    z-index: 1;
+    background: #FFFCFC;
+}
+#Fname , #Lname , #Address1 , #Address2 , #Number{
+    margin-right:4rem;
+}
+#City,#State,#Zip,#Email{
+    margin-left: 3rem;
+}
+.paymentMethod{
+    margin: auto;
+    width: 40%;
+    height: 20%;
+    border: 1px solid rgb(138, 135, 135);
+}
+.method{
+    padding-bottom:2rem;
+    width: 40%;
+    height: 100%;
+    text-align: center;
+    padding: 1rem;
+    
+}
+.toggler{
+    display: none;
+}
+.toggler2{
+    display: none;
+}
+.method p{
+    padding: 6px;
+    margin-bottom: 0;
+    background-color: #064441;
+    color: aliceblue;
+}
+.method p:hover{
+    background-color: cadetblue;
+    color: rgb(8, 16, 45);
+}
+
+
+
+label{
+    padding-top: .05rem;
+}
+
+input[type=text],input[type=number],input[type=email],input[type=tel],input[type=month] ,select {
+    width: 40%;
+    padding: 12px 20px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 2%;
+    box-sizing: border-box;
+    color: #202a20;
+  }
+
+  
+  input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+ 
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+
+  .lefty,.righty{
+      position: absolute;
+      width:50%;
+      height: 100vh;
+      z-index: -1;
+  }
+  .lefty{
+      background: #064441;
+    }
+    .righty{
+        background: #CDEFE2;
+        margin-left: 50%;
+      
+  }
+
+  button{
+      border: 5px solid #2e2d2d ;
+  }
+
+.collect{
+    margin: 0;
+    color: #797777;
+}
+.cname{
+    color: aliceblue;
+    text-align: center;
+}
+footer{
+    background-color: #2e2d2d;
+    color: aliceblue;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+footer div div div {
+    text-align: center;
+
+}
+
+
+@media screen and (max-width: 1249px) {
+    input[type=text],input[type=number],input[type=email],input[type=tel],input[type=month] ,select {
+        width: 35%;
+        padding: 12px 20px;
+        margin: 5px 10px;
+      }
+  }
+
+@media screen and (max-width: 835px) {
+    input[type=text],input[type=number],input[type=email],input[type=tel],input[type=month] ,select {
+        width: 30%;
+        height: 15%;
+        padding: 6px 8px;
+        margin: 3px 7px;
+      }
+  }
+@media screen and (max-width: 546px) {
+    #Fname , #Lname , #Address1 , #Address2 , #Number{
+        margin-right:2rem;
+    }     
+    .paymentMethod{
+        margin: .2rem;
+        width: 25%;
+        height: 10%;
+        border: 1px solid rgb(138, 135, 135);
+        font-size: .7rem;
+    }
+    .method{
+        padding-bottom:1rem;
+        width: 30%;
+        height: 100%;
+        text-align: center;
+        padding: .3rem; 
+    }
+  
+  }
+@media screen and (max-width: 425px) {
+    input[type=text],input[type=number],input[type=email],input[type=tel],input[type=month] ,select {
+        width: 35%;
+        height: 15%;
+        padding:3px 4px;
+        margin: 2px 2px;
+      }
+      #Fname , #Lname , #Address1 , #Address2 , #Number {
+          margin-left: 1rem;
+          margin-right: 2rem;
+      }
+      h5{
+          font-size: 1rem;
+      }
+
+      #City,#State,#Zip,#Email{
+          margin-left:1rem;
+      }
+      
+      input,
+    input::-webkit-input-placeholder  {
+        font-size: .5rem ;
+    }
+    .paymentMethod{
+        margin: .3rem;
+        width: 30%;
+        height: 10%;
+        border: 1px solid rgb(138, 135, 135);
+        font-size: .7rem;
+    }
+    .method{
+        padding-bottom:1rem;
+        width: 40%;
+        height: 100%;
+        text-align: center;
+        padding: .5rem;
+
+        
+    }
+    .toggler2{
+        display: block;
+    }
+  }
+@media screen and (max-width: 375px) {
+    input[type=text],input[type=number],input[type=email],input[type=tel],input[type=month] ,select {
+        width: 35%;
+        height: 15%;
+        padding:1px;
+        margin: 1px;
+      }
+      #Fname , #Lname , #Address1 , #Address2 , #Number {
+          margin-left: .5rem;
+          margin-right: 1rem;
+      }
+      .mainContainer #billing,.mainContainer .paymentMethod #paymentMethod{
+          font-size: .7rem;
+      }
+
+      #City,#State,#Zip,#Email{
+          margin-left:1rem;
+      }
+      
+      input,
+    input::-webkit-input-placeholder  {
+        font-size: .5rem ;
+    }
+    .paymentMethod{
+        margin: .2rem;
+        width: 25%;
+        height: 10%;
+        border: 1px solid rgb(138, 135, 135);
+        font-size: .7rem;
+    }
+    .method{
+        padding-bottom:1rem;
+        width: 30%;
+        height: 100%;
+        text-align: center;
+        padding: .3rem; 
+    }
+    .toggler2{
+        display: block;
+    }
+
+    .cname,.copyright{
+        font-size: .7rem;
+    }
+  }
+  
+  
+  @media screen and (max-width: 320px){
+    .paymentMethod{
+        margin: .1rem;
+        width: 25%;
+        height: 10%;
+        border: 1px solid rgb(138, 135, 135);
+        font-size: .7rem;
+    }
+    .method{
+        padding-bottom:1rem;
+        width: 30%;
+        height: 100%;
+        text-align: center;
+        padding: .1rem;
+
+    }
+
+  }
