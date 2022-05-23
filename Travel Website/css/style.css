@@ -277,14 +277,17 @@ section {
     display: flex;
     justify-content: space-evenly;
     gap: 2rem;
+    flex-wrap: wrap;
 }
 
 .services .box-container .box {
-  background: #10192a;
-  border-radius: 1rem;
-  padding: 3rem;
-  text-align: center;
-  border: 0.2rem solid #111;
+    width: auto;
+    background: #10192a;
+    border-radius: 1rem;
+    padding: 3rem;
+    text-align: center;
+    border: 0.2rem solid #111;
+    width: 31%;
 }
 
 .services .box-container .box:hover {
@@ -541,9 +544,9 @@ section {
   section {
     padding: 3rem 2rem;
   }
-  .footer .box-container {
-    flex-wrap: wrap;
-}
+  .services .box-container .box {
+      width: 47%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -593,6 +596,9 @@ section {
   }
   .dest-row {
       flex-direction: column;
+  }
+  .serv-row {
+      flex-wrap: wrap;
   }
 
 }
