@@ -1,0 +1,44 @@
+html {
+  font-size: 1vw;
+  font-family: sans-serif;
+}
+
+h1, h2, h3 {
+  color: #1F77B4;
+  text-align: center;
+}
+
+a {
+  text-align: center;
+  display: block;
+  margin: 5rem;
+}
+
+.container {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  padding: 0 5rem;
+  position: relative;
+  display: inline-block;
+}
+.column svg {
+  width: 100%;
+}
+.column table {
+  width: 100%;
+  margin-left: 2rem;
+}
+.column table th {
+  text-align: left;
+}
+.column:first-child {
+  border-right: solid grey 1px;
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+  <title>Reward Points Mobile</title>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<svg id="points-meter" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 320 320">
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="0" stdDeviation="4" flood-color="#000000" flood-opacity="0.5" />
+    </filter>
+    <clipPath id="mask">
+        <path id="half-circle" d="M 40 160A 120 120 0 0 1 280 160z" />
+    </clipPath>
+    <g clip-path="url(#mask)">
+        <image id="red-fill" y="12" width="320" height="320" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABAAAAAQACAMAAABIw9uxAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQ1IDc5LjE2MzQ5OSwgMjAxOC8wOC8xMy0xNjo0MDoyMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTkgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OEI5RjdDRTZEMEIxMTFFODhCMEVGM0FFNTlGMDIwODkiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OEI5RjdDRTdEMEIxMTFFODhCMEVGM0FFNTlGMDIwODkiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4RjMwNjJGNUQwQUUxMUU4OEIwRUYzQUU1OUYwMjA4OSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4RjMwNjJGNkQwQUUxMUU4OEIwRUYzQUU1OUYwMjA4OSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PoIX0WoAAAAGUExURf//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wHuXAMY/AvDqGYCrCwFwt1UDXJgvfxc+zcfQefVxVgAE4N0BkAAetyJ2TSoAL55tuiQVgBcXwBWpAHzjhbYJwONOjKPN0wrgkoTvDMAmAGC5KQCAAAACAAgAIAAgAIAAkDhwjhwC8OLx78ghACYA2oYAOG5fNf6/tACudQeF0PjfvvWNOb8CwCsDsPlrbAEgOk42ARAAHnolC4ACCIAJugBY2wjAO2fo7pMCIADGv2GSfmuuIQEQgJdeEsa/AJjHggCYxoIAfGYCHAMEAOcWFwkgAIAAAAIACAAgAIAAAAIACAAgACAAgAAAAgAIACAAgAAAAgAIACAAgAAAAgAIACAAgAAAAgAIACAAgAAAAgAIACAAgAAAAgAIACAAgAAAAgAIACAAgAAAAgAIACAAgAAAAgAIACAAIACAAAACAAgAIACAAAACAAgAIACAAAACAAgAIACAAAACAAgAIACAAAACAAgAIACAAAACAAgAIACAAAACAAgAIACAAAACAAgAIACAAAACAAgAIAAgAIAAAAIACAAgAIAAAAIACAAgAIAAAAIACAAgAIAAAAIACAAgAIAAAAIACAAgAIAAAAIACAAgAIAAAAIACAAgAIAAAAIACAAgAIAAAAIACAAgACAAgAAAAgAIACAAgAAAAgAIACAAgAAAAgAIACAAgAAAAgAIACAAgAAAAgAIACAAgAAAAgAIACAAgAAAAgAIACAAgAAAAgAIACAAgAAAAgAIACAAIACAAAACAAgAIACAAAACAAgAIACAAAACAAgAIACAAAACAAgAIACAAAACAAgAIACAAAACAAgAIACAAAACAAgAIACAAAACAAgAIACAAAACAAgACIBDAAIACAAgAIAAAAIACAAgAIAAAAIACAAgAIAAAAIACAAgAIAAAAIACAAgAIAAAAIACAAgAIAAAAIACAAgAIAAAAIACAAgAIAAAAIACAAgAIAAgAAAAgAIACAAgAAAAgAIACAAgAAAAgAIACAAgAAAAgAIACAAgAAAAgAIACAAgAAAAgAIACAAgAAAAgAIACAAgAAAAgAIACAAgAAAAgAIACAAgACAAAACAAgAIACAAAACAAgAIACAAAACAAgAIACAAAACAAgAIACAAAACAAgAIACAAAACAAgAIACAAAACAAgAIACAAAACAAgAIACAAAACAAgAIACAAIAAAAIACAAgAIAAAAIACAAgAIAAAAIACAAgAIAAAAIACAAgAIAAAAIACAAgAIAAAAIACAAgAIAAAAIACAAgAIAAAAIACAAgAIAAAAIACAAgAIAAgAAAAgAIACAAgAAAAgAIACAAgAAAAgAIACAAgAAAAgAIACAAgAAAAgAIACAAgAAAAgAIACAAgAAAAgAIACAAgAAAAgAIACAAgAAAAgAIACAAgACAAAACAAgAIACAAAACAAgAIACAAAACAAgAIACAAAACAAgAIACAAAACAAgAIACAAAACAAgAIACAAAACAAgAIACAAAACAAgAIACAAAACAAgAIACAAIAAAAIACAAgAIAAAAIACAAgAIAAAAIACAAgAIAAAAIACAAgAIAAAAIACAAgAIAAAAIACACwzn8EGADIPQesX7GYiQAAAABJRU5ErkJggg=="/>
+    </g>
+    <use xlink:href="#half-circle" fill="none" stroke="#ccc"/>
+    <circle cx="50%" cy="50%" r="90" fill="white" filter="url(#shadow)" stroke="#E4002B"/>
+		<g font-family="'Open Sans', sans-serif">
+			<text id="points-meter-text" x="50%" y="54%" text-anchor="middle" font-weight="700" font-size="58">0</text>
+			<text x="50%" y="63%" text-anchor="middle" font-weight="700" font-size="31">points</text>
+			<text x="90%" y="50%" font-size="18">500</text>
+			<text x="50%" y="86%" font-size="12" text-anchor="middle">500 points earned = $5 reward.</text>
+		</g>
+</svg>
+
+<div class="awards-wrapper">
+	<div class="awards awards--1-item-hidden">
+		<svg class="award-item award-item--hidden" viewBox="0 0 200 200">
+				<filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+					<feDropShadow dx="2" dy="2" stdDeviation="4" flood-color="#000000" flood-opacity="0.5" />
+				</filter>
+				<circle cx="50%" cy="50%" r="56" fill="#E4002B" filter="url(#shadow)"/>
+				<text class="award-date" x="50%" y="30" text-anchor="middle" font-size="16" fill="grey">Just Added</text>
+				<text x="48%" y="100" text-anchor="middle" font-size="56" fill="white" font-weight="700"><tspan font-size="25">$</tspan><tspan dy="19" class="award-amount-text">5</tspan></text>
+				<text x="50%" y="180" text-anchor="middle" font-size="16">Exp 10/19</text>
+			<circle class="circle-1" cx="50%" cy="50%" r="65" fill="none" stroke-dasharray="2 5" stroke="#ccc" stroke-width="2"/>
+    <circle class="circle-2"  cx="50%" cy="50%" r="76" fill="none" stroke-dasharray="2 5" stroke="#d4d4d4"/>
+		</svg>
+		<svg class="award-item" viewBox="0 0 200 200">
+				<filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+					<feDropShadow dx="2" dy="2" stdDeviation="4" flood-color="#000000" flood-opacity="0.5" />
+				</filter>
+				<circle cx="50%" cy="50%" r="56" fill="#E4002B" filter="url(#shadow)"/>
+				<text class="award-date" x="50%" y="30" text-anchor="middle" font-size="16" fill="grey">Added 10.20.18</text>
+				<text x="48%" y="100" text-anchor="middle" font-size="56" fill="white" font-weight="700"><tspan font-size="25">$</tspan><tspan dy="19">10</tspan></text>
+				<text x="50%" y="180" text-anchor="middle" font-size="16">Exp 10/19</text>
+			<circle class="circle-1" cx="50%" cy="50%" r="65" fill="none" stroke-dasharray="2 5" stroke="#ccc" stroke-width="2"/>
+    <circle class="circle-2"  cx="50%" cy="50%" r="76" fill="none" stroke-dasharray="2 5" stroke="#d4d4d4"/>
+		</svg>
+		<svg class="award-item" viewBox="0 0 200 200">
+				<filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+					<feDropShadow dx="2" dy="2" stdDeviation="4" flood-color="#000000" flood-opacity="0.5" />
+				</filter>
+				<circle cx="50%" cy="50%" r="56" fill="#E4002B" filter="url(#shadow)"/>
+				<text class="award-date" x="50%" y="30" text-anchor="middle" font-size="16" fill="grey">Added 10.20.18</text>
+				<text x="48%" y="100" text-anchor="middle" font-size="56" fill="white" font-weight="700"><tspan font-size="25">$</tspan><tspan dy="19">20</tspan></text>
+				<text x="50%" y="180" text-anchor="middle" font-size="16">Exp 10/19</text>
+			<circle class="circle-1" cx="50%" cy="50%" r="65" fill="none" stroke-dasharray="2 5" stroke="#ccc" stroke-width="2"/>
+    <circle class="circle-2"  cx="50%" cy="50%" r="76" fill="none" stroke-dasharray="2 5" stroke="#d4d4d4"/>
+		</svg>
+		<svg class="award-item" viewBox="0 0 200 200">
+				<filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+					<feDropShadow dx="2" dy="2" stdDeviation="4" flood-color="#000000" flood-opacity="0.5" />
+				</filter>
+				<circle cx="50%" cy="50%" r="56" fill="#E4002B" filter="url(#shadow)"/>
+				<text class="award-date" x="50%" y="30" text-anchor="middle" font-size="16" fill="grey">Added 10.20.18</text>
+				<text x="48%" y="100" text-anchor="middle" font-size="56" fill="white" font-weight="700"><tspan font-size="25">$</tspan><tspan dy="19">5</tspan></text>
+				<text x="50%" y="180" text-anchor="middle" font-size="16">Exp 10/19</text>
+			<circle class="circle-1" cx="50%" cy="50%" r="65" fill="none" stroke-dasharray="2 5" stroke="#ccc" stroke-width="2"/>
+    <circle class="circle-2"  cx="50%" cy="50%" r="76" fill="none" stroke-dasharray="2 5" stroke="#d4d4d4"/>
+		</svg>
+		<svg class="award-item" viewBox="0 0 200 200">
+				<filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+					<feDropShadow dx="2" dy="2" stdDeviation="4" flood-color="#000000" flood-opacity="0.5" />
+				</filter>
+				<circle cx="50%" cy="50%" r="56" fill="#E4002B" filter="url(#shadow)"/>
+				<text class="award-date" x="50%" y="30" text-anchor="middle" font-size="16" fill="grey">Added 10.20.18</text>
+				<text x="48%" y="100" text-anchor="middle" font-size="56" fill="white" font-weight="700"><tspan font-size="25">$</tspan><tspan dy="19">10</tspan></text>
+				<text x="50%" y="180" text-anchor="middle" font-size="16">Exp 10/19</text>
+			<circle class="circle-1" cx="50%" cy="50%" r="65" fill="none" stroke-dasharray="2 5" stroke="#ccc" stroke-width="2"/>
+    <circle class="circle-2"  cx="50%" cy="50%" r="76" fill="none" stroke-dasharray="2 5" stroke="#d4d4d4"/>
+		</svg>
+		<svg class="award-item" viewBox="0 0 200 200">
+				<filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+					<feDropShadow dx="2" dy="2" stdDeviation="4" flood-color="#000000" flood-opacity="0.5" />
+				</filter>
+				<circle cx="50%" cy="50%" r="56" fill="#E4002B" filter="url(#shadow)"/>
+				<text class="award-date" x="50%" y="30" text-anchor="middle" font-size="16" fill="grey">Added 10.20.18</text>
+				<text x="48%" y="100" text-anchor="middle" font-size="56" fill="white" font-weight="700"><tspan font-size="25">$</tspan><tspan dy="19">20</tspan></text>
+				<text x="50%" y="180" text-anchor="middle" font-size="16">Exp 10/19</text>
+			<circle class="circle-1" cx="50%" cy="50%" r="65" fill="none" stroke-dasharray="2 5" stroke="#ccc" stroke-width="2"/>
+    <circle class="circle-2"  cx="50%" cy="50%" r="76" fill="none" stroke-dasharray="2 5" stroke="#d4d4d4"/>
+		</svg>
+	</div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

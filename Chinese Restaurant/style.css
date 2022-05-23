@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
 *{
 	margin: 0px;
 	padding: 0px;
@@ -8,11 +9,26 @@ body{
 }
 html{
 	scroll-behavior: smooth;
+	overflow-x: hidden;
 }
 .myfont
 {
-	font-family: 'Dancing Script';
+	font-family: 'Poppins';
+	font-size: 62px;
+	font-weight: 600;
+	letter-spacing: 3px;
 }
+.myfont span{
+	color: orangered;
+}
+.Home-container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+
 
 /*nav*/
 #logo img
@@ -29,11 +45,37 @@ html{
 	transform: rotate(360deg);
 }
 .welcome h3{
-	font-family: fangsong;
+	font-family: "Poppins";
+	font-size: 16px;
+	letter-spacing: 3px;
+}
+@media only screen and (max-width:1000px){
+	.Home-container h1{
+		text-align: center;
+		font-size: 36px;
+	}
+	.Home-container h3{
+		font-size: 12px;
+	}
+	.Home-container h5{
+		font-size: 16px;
+	}
+	.sectwo-Content h2{
+		font-size: 15px;
+	}
+	#logo img{
+		width: 60px;
+		height: 60px;
+	}
 }
 .welcome h5{
-	margin: 30px 0px;
-	font-family: serif;
+	margin: 30px auto;
+	text-align: center;
+	width: 60%;
+	font-family: "Poppins";
+	font-weight: 400;
+	line-height: 2em;
+	letter-spacing: 2px;
 }
 .navsec
 {
@@ -47,6 +89,7 @@ html{
 	width: 100%;
 	height: 150vh;
 	background:url("img/pic.jpeg");	
+	filter: brightness(30%);
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	position: absolute;
@@ -58,13 +101,34 @@ html{
  
 }
 
+#book button{
+	font-family: "Poppins";
+	color:white;
+	font-size: 14px;
+	background-color: orangered;
+}
+
+.nav-link{
+	color: white;
+	font-family: "Poppins";
+	font-weight: 400;
+	letter-spacing: 3px;
+}
+
+.navbar-nav{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 .mynavbar .links a 
 {
 margin: 12px 12px;
-font-size: 1.3rem;
-font-family: serif;
+font-size: 14px;
+font-family: "Poppins";
 }
 .mynavbar a:hover{
+	color: whitesmoke;
 
 transition: all 0.5s ease-in-out;
 	
@@ -75,7 +139,7 @@ transition: all 0.5s ease-in-out;
 }
 .navsec .book-table:hover{
 	background-color: white;
-	color:green ;
+	color:white ;
 	transition: all 0.5s ease-in-out;
 	
 }
@@ -140,20 +204,52 @@ section .mybtn1:hover
 	color: #c3ce57;
 	font-weight: bold;
 }  
+.sectwodiv{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	margin: 0 auto;
+}
+
+.location ul li:hover{
+	color: black;
+}
+
+.sectwo-Content{
+	margin: 0 0 0 5em;
+}
+.sectwodiv img{
+	width: 45em;
+}
+@media only screen  and (max-width:1000px) {
+	.sectwodiv img{
+		width:100%;
+	}
+}
 .sectwo
 {
 	height: auto;
 	color: #c3ce57;
-	background-image: url("img/img.jpg");
-	background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+	background-color: white;
+}
+.sectwo h2{
+	font-family: "Poppins";
+	letter-spacing: 3px;
+	font-weight: 600;
+	font-size: 50px;
+	color: #101010;
 }
 .sectwo p
 {
-	color: #fff;
-	font-family:  'Overpass';
+	color: #101010;
+	font-family:  'Poppins';
+	font-weight: 300;
+	letter-spacing: 3px;
+	line-height: 1.5em;
+}
+.sectwo span{
+	color: orangered;
 }
 .secthree
 {
@@ -292,18 +388,16 @@ height: 30vh;
 {
 	color: black;
 	text-transform: capitalize;
-    border-bottom: 3px solid green;
 	text-decoration: none;
 }
 .seceleven .card:hover{
-	background-color: orange;
 	transition: all 0.3s ease-in-out;
-	box-shadow: 12px 12px 10px;
+	box-shadow: 12px 12px 10px #101010;
 	transform: translateY(-26px);
 }
 .sec12 h6{
-	font-family: 'Dancing Script';
-	font-size: 2rem;
+	font-family: 'Poppins';
+	font-size: 1rem;
 	
 	color: orange;
 }
@@ -328,6 +422,8 @@ height: 30vh;
 	margin-left: 20px;
 	font-size: 2rem;
 	padding: 10px;
+	font-family: "Poppins";
+	letter-spacing: 3px;
 }
 
 .myfooter ul li a i
@@ -339,16 +435,21 @@ height: 30vh;
 }
 
 .myfooter ul li:hover {
-	transition: all 0.5s ease-in-out;
+	transition: all 0.3s ease-in-out;
     opacity: 0.9;
     transform: scale(1.2);
 	filter: invert();
 }
 /*footer end*/
-
+h6{
+	font-family:  "Poppins";
+	letter-spacing: 2px;
+}
 .sec13 li
 {
 	list-style: none;
+	font-family:  "Poppins";
+	letter-spacing: 2px;
 	
 }
 .sec13 .last li a{
@@ -357,16 +458,17 @@ height: 30vh;
 
 }
 .sec13 p{
-	font-family:   ui-rounded;
-	font-size: 1.1rem;
+	font-family:  "Poppins";
+	letter-spacing: 1px;
+	font-size: 14px;
 }
 .sec13 .last li:hover{
 	color: white;
-	transition: all 0.4s ease-in-out;
+	transition: all 0.3s ease-in-out;
 	transform: translateX(15px);
 }
 .sec13 .last li a:hover{
-	color: white;
+	color: black;
 }
 .sec13 p,li{
 	color: black;
@@ -399,11 +501,14 @@ height: 30vh;
 #back i{
 	color: white;
 	font-size: 1.2rem;
+	font-family:  "Poppins";
+	letter-spacing: 3px;
 }
 .copy{
 	text-align: center;
 	color: black
 }
+
 
 @media(min-width:992px){
 	.navbar-expand-lg .navbar-nav .nav-link {
@@ -446,4 +551,79 @@ height: 30vh;
 	 padding: 5px;
 	 background-color: #fff;
 }
+}
+
+@media only screen and (max-width:1000px){
+	.sectwodiv{
+		flex-direction: column;
+	}
+	.sectwo-Content{
+		margin: 1em;
+	}
+	
+	
+
+}
+
+/* 
+TRYIUNG SOMEIUGRIHYDFS */
+.menu_list{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 5em 0 ;
+	background-color: whitesmoke;
+}
+.menu_list h4,h5{
+	font-family: "Poppins";
+	font-weight: 400;
+	line-height: 2em;
+	letter-spacing: 3px;
+}
+
+.menu_list h1{
+	font-family: "Poppins";
+	font-size: 48px;
+	font-weight: 600;
+	margin-bottom: 1em;
+}
+
+.menu_list span{
+	color: orangered;
+}
+
+.single_menu_list {
+	margin: 1em 5em;
+	margin-bottom: 110px;
+}
+
+.single_menu_list img {
+	max-width: 40%;
+	left: 0px;
+	top: 0;
+	border: 1px solid #ddd;
+	padding: 3px;
+	border-radius: 50%;
+	transition: .4s
+}
+
+.single_menu_list:hover img {
+	border-radius: 0;
+	transition: .4s
+}
+
+.single_menu_list h4 {
+	font-size: 20px;
+	font-family: "Poppins";
+	border-bottom: 1px dashed #333;
+	padding-bottom: 15px;
+	margin-bottom: 10px;
+}
+
+.single_menu_list h4 span {
+	float: right;
+	font-weight: bold;
+	color: orangered;
+	font-style: italic;
 }
