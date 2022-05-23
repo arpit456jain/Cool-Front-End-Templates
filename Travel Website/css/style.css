@@ -212,11 +212,13 @@ section {
 .dest-row{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     gap: 2rem;
 }
 
-.destination .box-container .box {
+.destination .box-container .dest-row .box {
   border-radius: 1rem;
+  width: 23%;
   overflow: hidden;
   background: #10192a;
 }
@@ -578,6 +580,9 @@ section {
   .home .content h3 {
     font-size: 9vw;
   }
+  .destination .box-container .dest-row .box {
+      width: 48%;
+  }
 }
 
 @media (max-width: 450px) {
@@ -600,6 +605,16 @@ section {
   .serv-row {
       flex-wrap: wrap;
   }
+  .destination .box-container .dest-row .box {
+    width: 99%;
+}
+.logo {
+    font-size: 2rem;
+}
+
+.header .btn {
+    font-size: 1rem;
+}
 
 }
 
