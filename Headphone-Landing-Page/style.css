@@ -216,6 +216,7 @@ h1 {
     html,body{
         overflow-x: hidden;
     }
+    body{text-align: center;}
     .toggle-button{
         display: flex;
     }
