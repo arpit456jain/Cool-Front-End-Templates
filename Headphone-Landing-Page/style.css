@@ -78,7 +78,7 @@ h1 {
 
 .social {
     position: fixed;
-    top: 80%;
+    top: 90%;
     left: 20px;
     transform: translateY(-50%);
 
@@ -148,7 +148,9 @@ h1 {
 
   
 @media (min-width:360px) and (max-width:991px) {
-    
+    html,body{
+        overflow-x: hidden;
+    }
     .toggle-button{
         display: flex;
     }
@@ -182,9 +184,6 @@ h1 {
     }
     
 /* Other sections */
-    html,body{
-    overflow-x: hidden;
-    }
     h1,h3,.play-btn-section{
         padding: 0;
     }
@@ -207,16 +206,16 @@ h1 {
     }
 
     .play-btn {
-        border-radius: 100px;
+        border-radius: 75px;
+        align-items: center;
         width: 80%;
     }
 }
 @media (max-width:360px){
 
     html,body{
-        overflow: hidden;
-        
-        }
+        overflow-x: hidden;
+    }
     .toggle-button{
         display: flex;
     }
@@ -263,9 +262,10 @@ h1 {
         margin: 0 auto;
     }
     .play-btn {
-        padding: 1rem 1rem;
-        border-radius: 90px;
-        width: 100%;
+        border-radius: 75px;
+        align-items: center;
+        padding: 15px;
+        width: 90%;
     }
 
 } 
