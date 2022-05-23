@@ -21,7 +21,7 @@
 }
 
 .packages .box-container .box{
-    flex:1 1 30rem;
+    width: 32%;
     background-color: #10192a;    
     border-radius: .5rem;
     overflow: hidden;
@@ -38,38 +38,51 @@
     transform: scale(1.1);
 }
   
-  .packages .box-container .box .content{
+.packages .box-container .box .content{
     padding:2rem;
     color: #fff;
-  }
+}
   
-  .packages .box-container .box .content h3{
+.packages .box-container .box .content h3{
     font-size:2rem;
     color:#999;
-  }
+}
   
-  .packages .box-container .box .content p{
+.packages .box-container .box .content p{
     font-size:1.7rem;
     color:#fff;
     padding:1rem 0;
-  }
+}
   
-  .packages .box-container .box .content .stars i{
+.packages .box-container .box .content .stars i{
     font-size:1.7rem;
-  }
+}
   
-  .packages .box-container .box .content .price{
+.packages .box-container .box .content .price{
     font-size: 2rem;
     color:#999;
     padding-top: 1rem;
-  }
+}
   
-  .packages .box-container .box .content .price span{
+.packages .box-container .box .content .price span{
     color:#555;
     font-size: 1.5rem;
     text-decoration: line-through;
-  }
+}
 
-  .footer {
-      margin-top: 10rem;
-  }
+.footer {
+    margin-top: 10rem;
+}
+
+@media (max-width:1215px) {
+    .packages .box-container .box {
+        width: 48%;
+    }
+
+}
+@media (max-width: 450px) {
+    .packages .box-container .box {
+        width: 99%;
+    }
+}
+

@@ -19,7 +19,7 @@
     text-underline-offset: 10px;
 }
 
-.img-data img {
+.imgg {
     width: 35vw;
     border-radius: 2.3rem;
     margin: 1rem;
@@ -69,4 +69,11 @@
 .footer {
     margin-top: 100px;
     background-color: #10192a;
+}
+
+@media (max-width: 768px) {
+    .img-data {
+        flex-direction: column;
+        align-items: center;
+    }
 }
