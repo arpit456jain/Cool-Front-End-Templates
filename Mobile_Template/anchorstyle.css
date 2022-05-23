@@ -11,12 +11,12 @@
     display: flex;
   }
   .list{
-    font-size: 20px;
+    font-size: 1.5vw;
     text-transform: capitalize;
   }
   ul li a{
     text-decoration: none;
-    padding: 20px 25px;
+    padding: 2vw ;
     color: rgb(8, 4, 5);
     z-index: 2;
   }
@@ -62,8 +62,8 @@ body::before {
     width: 70vw;
 }
  .img{
-   width: 850px;
-   height: 500px;
+   width: 70vw;
+   height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -73,18 +73,15 @@ body::before {
     opacity: 0.7;
 } 
 
-
-
-
-   .slide .active{
+.slide .active{
       opacity: 1;
   } 
   .arrow { 
    position: fixed;
    background-color: transparent;
    color: rgb(200, 140, 140);
-   padding: 18px;
-   font-size: 30px;
+   padding: 1.2vw;
+   font-size: 2.5vw;
    top: 50%;
    transform: translateY(-50%);
    cursor: pointer;
@@ -105,9 +102,9 @@ body::before {
   } 
   .dot {
     cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
+    height: 1.8vh;
+    width: 1.1vw;
+    /* margin: 0 ; */
     background-color: #999999;
     border-radius: 50%;
     display: inline-block;
@@ -119,3 +116,16 @@ body::before {
         background-color: #111111;
         z-index: 3;
       }
+  @media screen and (max-width: 900px){
+ .active ,.arrow,.list {
+    cursor: pointer;
+  }
+} 
+    
+@media screen and (max-width: 900px){
+  .list:hover{
+    font-size: 2vw;
+  }
+
+}
+  
