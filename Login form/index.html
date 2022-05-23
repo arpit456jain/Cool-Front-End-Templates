@@ -18,50 +18,55 @@
       <div class="forms-container">
         <div class="signin-signup">
           <form action="#" class="sign-in-form">
+            <img style="border-radius: 100px;" id="useravatar" width="50px" src="" />
+            <h3 id="username" style="color: #444;"></h3>
             <h2 class="title">Login</h2>
             <div class="input-field">
               <i class="fas fa-user"></i>
-              <input type="text" placeholder="Username" />
+              <input type="email" id="loginemail" placeholder="Email" />
             </div>
             <div class="input-field">
               <i class="fas fa-lock"></i>
-              <input type="password" placeholder="Password" />
+              <input type="password" id="loginpassword" placeholder="Password" />
             </div>
-            <input type="submit" value="Login" class="btn solid" />
+            <input type="submit" id="loginBtn" value="Login" class="btn solid" />
+            <input type="submit" id="logoutBtn" value="Logout" class="btn solid" />
             <p class="social-text">Or Sign in with social platforms</p>
             <div class="social-media">
-              <a href="#" class="social-icon">
-                <i class="fab fa-facebook-f"></i>
+              <a id="logingithubBtn" href="#" class="social-icon">
+                <i class="fab fa-github"></i>
               </a>
               
-              <a href="#" class="social-icon">
+              <a id="logingooglebtn" class="social-icon">
                 <i class="fab fa-google"></i>
               </a>
               
             </div>
           </form>
           <form action="#" class="sign-up-form">
+            
+            <!-- <h3 id="username"></h3> -->
             <h2 class="title">Sign up</h2>
-            <div class="input-field">
+            <!-- <div class="input-field">
               <i class="fas fa-user"></i>
               <input type="text" placeholder="Username" />
-            </div>
+            </div> -->
             <div class="input-field">
               <i class="fas fa-envelope"></i>
-              <input type="email" placeholder="Email" />
+              <input type="email" id="email" placeholder="Email" />
             </div>
             <div class="input-field">
               <i class="fas fa-lock"></i>
-              <input type="password" placeholder="Password" />
+              <input type="password" id="password" placeholder="Password" />
             </div>
-            <input type="submit" class="btn" value="Sign up" />
+            <input id="signupBtn" type="submit" class="btn" value="Sign up" />
             <p class="social-text">Or Sign up with social platforms</p>
             <div class="social-media">
-              <a href="#" class="social-icon">
-                <i class="fab fa-facebook-f"></i>
+              <a id="signgithubBtn" href="#" class="social-icon">
+                <i class="fab fa-github"></i>
               </a>
           
-              <a href="#" class="social-icon">
+              <a id="signgooglebtn" href="#" class="social-icon">
                 <i class="fab fa-google"></i>
               </a>
               
@@ -75,7 +80,7 @@
           <div class="content">
             <h3>New here ?</h3>
             <p style="font-size:x-large; font-weight: bold;">
-              WELCOME
+               WELCOME
             </p>
             <button class="btn transparent" id="sign-up-btn">
               Sign up
@@ -86,7 +91,7 @@
         <div class="panel right-panel">
           <div class="content">
             <h3>One of us ?</h3>
-            <p style="font-weight: bold; font-size: x-large;">
+            <p id="username"  style="font-weight: bold; font-size: x-large;">
               WELCOME
             </p>
             <button class="btn transparent" id="sign-in-btn">
@@ -100,4 +105,184 @@
 
     <script src="app.js"></script>
   </body>
+  <script type="module">
+
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-app.js";
+    import { getAuth,signInWithPopup,GithubAuthProvider, GoogleAuthProvider,signOut,createUserWithEmailAndPassword, onAuthStateChanged,signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-auth.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyBI428lyjJC943Y-sxfEv6v8RXwNBRuTmM",
+      authDomain: "coolfrontend-c4d1b.firebaseapp.com",
+      projectId: "coolfrontend-c4d1b",
+      storageBucket: "coolfrontend-c4d1b.appspot.com",
+      messagingSenderId: "727613541235",
+      appId: "1:727613541235:web:98337bbdba14f5fbe51306"
+    };
+    const app = initializeApp(firebaseConfig);
+
+    document.getElementById('signupBtn').addEventListener('click', (e) => {
+      e.preventDefault();
+      const auth = getAuth();
+      var email = document.getElementById('email').value;
+      var password = document.getElementById('password').value;
+
+      createUserWithEmailAndPassword(auth, email, password)
+      .then((userCredential) => {
+        const user = userCredential.user;
+        alert(user.email+"Has Logged In");
+      })
+      .catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        alert(errorMessage)
+      });
+    })
+
+    document.getElementById('loginBtn').addEventListener('click',(e) => {
+      e.preventDefault();
+      const auth = getAuth();
+      var email = document.getElementById('loginemail').value;
+      var password = document.getElementById('loginpassword').value;
+
+      signInWithEmailAndPassword(auth, email, password)
+      .then((userCredential) => {
+        const user = userCredential.user;
+       
+        alert("Success Login");
+      })
+      .catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        alert(errorMessage);
+      });
+    })
+
+    document.getElementById('signgooglebtn').addEventListener('click', (e) => {
+      alert('inside')
+      e.preventDefault();
+      const provider = new GoogleAuthProvider()
+      const auth = getAuth();
+      signInWithPopup(auth, provider)
+        .then((result) => {
+          const credential = GoogleAuthProvider.credentialFromResult(result);
+          const token = credential.accessToken;
+          const user = result.user;
+          alert(user.displayName+" has Logged In !")
+        }).catch((error) => {
+          const errorCode = error.code;
+          const errorMessage = error.message;
+          const email = error.email;
+          alert(errorMessage)
+          const credential = GoogleAuthProvider.credentialFromError(error);
+        });
+
+    })
+
+    document.getElementById('logingooglebtn').addEventListener('click', (e) => {
+      e.preventDefault();
+      const provider = new GoogleAuthProvider()
+      const auth = getAuth();
+      signInWithPopup(auth, provider)
+        .then((result) => {
+          const credential = GoogleAuthProvider.credentialFromResult(result);
+          const token = credential.accessToken;
+          const user = result.user;
+          alert(user.displayName+" has Logged In !")
+        }).catch((error) => {
+          const errorCode = error.code;
+          const errorMessage = error.message;
+          const email = error.email;
+          alert(errorMessage)
+          const credential = GoogleAuthProvider.credentialFromError(error);
+        });
+
+    })
+
+    document.getElementById('signgithubBtn').addEventListener('click', (e) => {
+      const auth = getAuth();
+      const provider = new GithubAuthProvider();
+      signInWithPopup(auth, provider)
+        .then((result) => {
+          const credential = GithubAuthProvider.credentialFromResult(result);
+          const token = credential.accessToken;
+          const user = result.user;
+          alert(user.displayName+" has Logged In")
+        }).catch((error) => {
+          const errorCode = error.code;
+          const errorMessage = error.message;
+          const email = error.email;
+          const credential = GithubAuthProvider.credentialFromError(error);
+          alert(errorMessage)
+        });
+
+    })
+
+    document.getElementById('logingithubBtn').addEventListener('click', (e) => {
+      const auth = getAuth();
+      const provider = new GithubAuthProvider();
+      signInWithPopup(auth, provider)
+        .then((result) => {
+          const credential = GithubAuthProvider.credentialFromResult(result);
+          const token = credential.accessToken;
+          const user = result.user;
+          alert(user.displayName+" has Logged In")
+        }).catch((error) => {
+          const errorCode = error.code;
+          const errorMessage = error.message;
+          const email = error.email;
+          const credential = GithubAuthProvider.credentialFromError(error);
+          alert(errorMessage)
+        });
+
+    })
+
+
+
+    const auth = getAuth();
+    const user = auth.currentUser;
+   
+
+    onAuthStateChanged(auth, (user) => {
+    if (user) {
+      const uid = user.uid;
+      if(user.photoURL != null && user.displayName != null){
+        document.getElementById('useravatar').src = user.photoURL;
+        document.getElementById('username').innerHTML = "Welcome, "+ user.displayName;
+      }else{
+        document.getElementById('username').innerHTML = "Welcome, "+ user.email
+      }
+      document.getElementById('logingooglebtn').style.display = 'none'
+      document.getElementById('signgooglebtn').style.display = 'none'
+      document.getElementById('signgithubBtn').style.display = 'none'
+      document.getElementById('logingithubBtn').style.display = 'none'
+      document.getElementById('logoutBtn').style.display = 'block'
+      document.getElementById('loginBtn').style.display = 'none'
+      
+    }else{
+      document.getElementById('useravatar').src = "";
+      document.getElementById('username').innerHTML = "";
+      document.getElementById('loginBtn').style.display = 'block'
+      document.getElementById('logoutBtn').style.display = 'none';
+      document.getElementById('logingooglebtn').style.display = 'visible'
+      document.getElementById('signgooglebtn').style.display = 'visible'
+      document.getElementById('signgithubBtn').style.display = 'visible'
+      document.getElementById('logingithubBtn').style.display = 'visible'
+   
+    }
+    
+});
+
+document.getElementById('logoutBtn').addEventListener('click', (e) => {
+  e.preventDefault();
+  signOut(auth).then(() => {
+    alert("User Signed Out")
+  }) .catch((err) => {
+    alert(err)
+  })
+});
+
+
+
+  </script>
+  
 </html>
