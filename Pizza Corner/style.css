@@ -1,18 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
-
 *{
 	margin: 0;
 	padding: 0;
 }
 html{
     scroll-behavior: smooth;
-	overflow-x: hidden;
 }
 body
 {
-	background-color: #333;
-	overflow-x: hidden;
-	color: white;
+	background:black;
 }
 #logo img{
 	width: 75px;
@@ -54,7 +49,7 @@ body
 	width: 100%;
 	height: 100vh;
 	position: absolute;
-	/* background-image: url(img/b3.jpg); */
+	background-image: url(img/b3.jpg);
 	z-index: -1;
 	background-size: 100% 100%;
 }
@@ -181,10 +176,27 @@ span
 }
 
 #food-gallery .card:hover{
-	transition: all 0.4s ease-in-out;
-	transform: scale(1.05);
+	transition: all 0.6s ease-in-out;
+	transform: scale(1.2);
 	z-index: 2;
 	cursor: pointer;
+}
+#five p{
+	font-family: serif;
+	font-size: 1.15rem;
+}
+#five h1{
+	font-family: 'FontAwesome';
+}
+#five::before
+{
+	content: "";
+	width: 100%;
+	height: 70vh;
+	position: absolute;
+	background-image: url(img/b3.jpg);
+	z-index: -1;
+	opacity: .3;
 }
 #seven
 {
@@ -298,170 +310,14 @@ span
 	#contact-form {
 		width: 100%;	
 	}
-}
-
-/* 
-NEW CSS */
-li{
-	list-style: none;
-	font-family: 'Poppins';
-	font-weight: 500;
-	letter-spacing: .2em;
-	cursor: pointer;
-}
-.navLink ul{
-	display: flex;
-	gap: 2em;
-	justify-content: center;
-	align-items: center;
-}
-.navbar{
-	display: flex;
-	justify-content: space-evenly;
-	align-items: center;
-}
-
-.Main{
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	gap: 3em;
-	padding: 4em 10em;
-}
-.Main img{
-	width: 50%;
-}
-.main_right h1{
-	font-family: 'Poppins';
-	letter-spacing: .2em;
-	font-weight: 800;
-	font-size: 62px;
-}
-
-.main_right p{
-	letter-spacing: .2em;
-	font-family: 'Poppins';
-	font-weight: 500;
-	color: #ff9f00;
-}
-
-.logo img{
-	width: 10%;
-}
-
-.about{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	padding: 7em 14em;
-
-}
-.about h2{
-	font-family: 'Poppins';
-	font-weight: 800;
-	letter-spacing: .2em;
-}
-.about p{
-	font-family: 'Poppins';
-	font-weight: 400;
-	letter-spacing: .1em;
-	line-height: 2em;
-	text-align: center;
-}
-
-#food-gallery h1{
-	font-family: 'Poppins';
-	font-weight: 800;
-	color: #ff9f00;
-	text-align: center;
-}
-
-.card img{
+	#five::before
+	{
+	content: "";
 	width: 100%;
-	height: 50vh;
-}
-.card{
-	border: none;
-}
-
-#five{
-	padding: 7em 0 0 0;
-}
-#five h1{
-	font-family: 'Poppins';
-	font-weight: 800;
-}
-#five p{
-	font-family: 'Poppins';
-	letter-spacing: .2em;
-	font-family: 'Poppins';
-	line-height: 2em;
-}
-
-#menu {
-	padding: 7em 0 0 0 ;
-}
-
-#menu h1{
-	font-family: 'Poppins';
-	color: #ff9f00;
-	font-weight: 800;
-	text-align: center;
-}
-
-.card-body p{
-	color: #333;
-	font-family: 'Poppins';
-	font-weight: 500;
-	letter-spacing: .1em;
-}
-.card-body h3{
-	color: #333;
-	font-family: 'Poppins';
-	font-weight: 500;
-	letter-spacing: .1em;
-}
-
-#footer{
-	padding: 7em 0 0 0 ;
-}
-
-.main-logo{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-.nav a{
-	font-family: 'Poppins';
-	font-weight: 500;
-	letter-spacing: .1em;
-}
-
-@media only screen and (max-width:1000px){
-	.navbar{
-		flex-direction:column;
-		justify-content: center;
-		align-items: center;
-	}
-	.navbar .logo{
-		text-align: center;
-	}
-	.Main{
-		flex-direction: column-reverse;
-	}
-	.Main img{
-		position: absolute;
-		width: 50%;
-		left: 15em;
-		top: 22em;
-		z-index: -1;
-	}
-	.about{
-		text-align: center;
-		padding: 7em 4em ;
-	}
-	.about p{
-		padding: 0;
+	height: 90vh;
+	position: absolute;
+	background-image: url(img/b3.jpg);
+	z-index: -1;
+	opacity: .3;
 	}
 }
