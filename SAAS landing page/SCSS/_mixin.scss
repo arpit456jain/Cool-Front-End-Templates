@@ -1,0 +1,34 @@
+@mixin flex($jsC,$alI){   //jsC-justify Content alI- align Items
+    display:flex;
+    justify-content:$jsC;
+    align-items:$alI;
+}
+@mixin button($bg,$txt){
+    background-color:$bg;
+    color:$txt;
+    font-weight:bold;
+       font-size: 1.2rem;
+       padding:1rem 1.4rem;
+     border-radius: 5px;
+     position:relative;
+     &::before{
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color:$txt;
+        
+        opacity: 0.2;
+        clip-path: circle(0 at center);
+        transition: 0.4s ease-out;
+    }
+        &:hover::before {
+            clip-path: circle(200px at center);
+            color:$txt;
+          }
+    
+  
+}
+
