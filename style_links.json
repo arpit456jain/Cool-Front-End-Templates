@@ -451,6 +451,10 @@
    {
       "name": "Documentation Page",
       "link": "Tech-Landing-page/index.html"
-    }
+    },
+{
+   "name" : "Mobile_Template",
+   "link" : "Mobile_Template/index.html"
+}
 
 ]
