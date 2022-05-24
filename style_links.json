@@ -451,6 +451,10 @@
    {
       "name": "Documentation Page",
       "link": "Tech-Landing-page/index.html"
+    },
+    {
+      "name": "Search Github Profile",
+      "link": "Search Github user/index.html"
     }
 
 ]

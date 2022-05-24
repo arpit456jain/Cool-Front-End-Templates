@@ -289,3 +289,23 @@ h2.heading {
   .footer .gssoc{
       margin-top: 5px;
   }
+ 
+
+  @media only screen and (max-width:700px) {
+    h2.heading {
+        font-size: 35px;
+        margin-bottom: 15px;
+        
+        color: #fff;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        padding: 5px 160px 5px 160px;
+        text-align: center;
+        margin-top: 30px;
+        margin-left: 160px; 
+        margin-right: 160px;
+                         
+    }
+      
+  }
