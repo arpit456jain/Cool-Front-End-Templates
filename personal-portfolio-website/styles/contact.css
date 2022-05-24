@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: .5s ease;
+    color: whitesmoke;
+}
+body{
+    font-family: monospace;
+    font-size: 1rem;
+     background-image: url(../images/bggif.gif);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+nav{
+    width: 100%;
+    height: 10vh;
+    line-height: 10vh;
+    margin-bottom: 10px;
+}
+.heading{
+    float: left;
+    margin-left: 1.5rem;
+    font-size: 1.8rem;
+    text-decoration: 7px underline plum;
+}
+
+.nav_list{
+    float: right;
+}
+.nav_list a{
+    font-size: 2rem;
+    margin: 0 1.5rem;
+}
+.nav_list i:hover{
+    color: plum;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+.form{
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form_box{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.76);
+    border: 5px solid rgb(54, 53, 53);
+    width: 64%;
+    padding: 20px;
+}
+.map{
+    width: 34.5%;
+    border: 5px solid rgb(54, 53, 53);
+}
+.map iframe{
+    width: 100%;
+    height: 100%;
+}
+.form_box input, .form_box textarea{
+    background-color: rgba(0, 0, 0, 0.76);
+    width: 100%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid plum;
+    padding: 10px 5px;
+    margin-bottom: 10px;
+}
+
+::placeholder {
+    color: rgb(138, 135, 135);
+    font-family: monospace;
+  }
+  ::-ms-input-placeholder {
+    color: rgb(138, 135, 135);
+  }
+
+button{
+    margin-top: 8px;
+    border: none;
+    background-color: plum;
+    padding: 9px;
+    color: black;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+}
+button:hover{
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.76);
+}
+footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    height: 60px;
+    font-family: cursive;
+    background-color: rgba(0, 0, 0, 0.76);
+    text-align: center;
+    line-height: 60px;
+}
+footer span{
+    font-family: monospace;
+    color: plum;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+footer a{
+    font-size: 1.3rem;
+}
+ footer i{
+     margin-left: 4px;
+ }
+
+footer i:hover{
+    color: plum;
+}
+
+@media screen and (max-width:750px) {
+    body{
+        font-size: 0.9rem;
+        overflow: visible;
+    }
+    .contact{
+        height: auto;
+        min-height: 100vh;
+        overflow: hidden;
+     }
+    nav{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        height: 18vh;
+        line-height: normal;
+        margin-bottom: 20px;
+    }
+    .heading{
+        width: 100%;
+        float: none;
+        margin-left: 1.4rem;
+        font-size: 1.6rem;
+    }
+    .heading p{
+        display: inline-block;
+       border-bottom: 7px solid plum;
+   }
+    .nav_list{
+        float: none;
+        margin-bottom: 20px;
+    }
+    .nav_list a{
+        font-size: 1.8rem;
+        margin: 0 1rem;
+    }
+    .container{
+        height: auto;
+        min-height: 70vh;
+    }
+    .form{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+    .form_box{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .map{
+        width: 100%;
+    }
+    footer{
+        margin-top: 30px;
+        position: relative;
+    }
+
+}
