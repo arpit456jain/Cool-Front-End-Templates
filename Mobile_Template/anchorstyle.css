@@ -11,13 +11,14 @@
     display: flex;
   }
   .list{
-    font-size: 1.5vw;
+    font-size: 3.5vw;
     text-transform: capitalize;
   }
   ul li a{
     text-decoration: none;
     padding: 2vw ;
-    color: rgb(8, 4, 5);
+    color:white;
+    text-shadow: 2px 2px 1px brown;
     z-index: 2;
   }
   .list:hover{
@@ -122,10 +123,9 @@ body::before {
   }
 } 
     
-@media screen and (max-width: 900px){
-  .list:hover{
-    font-size: 2vw;
+@media screen and (min-width: 600px){
+  .list{
+    font-size: 1.7vw;
+  }
   }
 
-}
-  
