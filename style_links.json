@@ -56,8 +56,8 @@
     "link": "Coffee%20Website%20Template/index.html"
   },
   {
-    "name": "Coming Soon ",
-    "link": "ComingSoon/index.html"
+    "name": "Coming Soon",
+    "link": "Coming%20Soon/index.html"
   },
   {
     "name": "Covid-19",
@@ -65,11 +65,11 @@
   },
   {
     "name":"CV Template",
-    "link":"CV Template/index.html"
+    "link":"CV%20Template/index.html"
   },
   {
     "name":"Dairy Product Website",
-    "link":"DairyProductWebsite/index.html"
+    "link":"Dairy%20Product%20Website/index.html"
   },
   {
     "name": "Digital Banking",
@@ -80,12 +80,8 @@
     "link": "Discord%20Clone/index.html"
   },
   {
-    "name": "Documentation Page",
-    "link": "Tech-Landing-page/index.html"
-  },
-  {
-    "name": "E-commerce Website Template",
-    "link": "E%20commerce%20shopping%20website%20template/index.html"
+    "name": "E commerce Website Template",
+    "link": "E%20commerce%20Website%20Template/index.html"
   },
   {
     "name": "Festivals In India",
@@ -120,8 +116,8 @@
     "link": "Google%20Clone/index.html"
   },
   {
-    "name": "Google Forms Website Clone",
-    "link": "Google%20Forms%20Clone/Google Forms.html"
+    "name": "Google Forms Clone",
+    "link": "Google%20Forms%20Clone/index.html"
   },
   {
     "name": "Gym Website",
@@ -132,7 +128,7 @@
     "link": "Home%20design/index.html"
   },
   {
-    "name": "Huddle Landing Page",
+    "name": "Huddle",
     "link": "Huddle/index.html"
   },
   {  
@@ -145,11 +141,11 @@
   },
   {
     "name": "Insurance Landing Page",
-    "link": "InsuranceLandingPage/index.html"
+    "link": "Insurance%20Landing%20Page/index.html"
   },
   {
-    "name": "Light Dark LandingPage",
-    "link": "light-dark-LandingPage/index.html"
+    "name": "Light Dark Landing Page",
+    "link": "light%20Dark%20Landing%20Page/index.html"
   },
   {
     "name": "Local Fast Food",
@@ -184,16 +180,16 @@
     "link": "NFT%20Viewer/index.html"
   },
   {
-    "name": "NeonScience Website Clone",
-    "link": "NeonScience%20Clonee/index.html"
+    "name": "NeonScience Clone",
+    "link": "NeonScience%20Clone/index.html"
   },
   {
     "name": "Nestle Nutrition Clone",
     "link": "Nestle%20Nutrition%20Clone/index.html"
   },
   {  
-    "name": "Netflix Clone ",
-    "link": "Netflix%20Clone-2/index.html"
+    "name": "Netflix Clone",
+    "link": "Netflix%20Clone/index.html"
   },
   {
     "name": "Obatin - Medicine Landing Page",
@@ -208,8 +204,8 @@
     "link": "Organic%20Retail%20Website%20Template/index.html"
   },
   {
-    "name": "Payment Gateway Template",
-    "link": "Payment_Gateway/index.html"
+    "name": "Payment Gateway",
+    "link": "Payment%20Gateway/index.html"
   },
   {
     "name":"Personal Portfolio Website",
@@ -263,10 +259,6 @@
     "name": "Shopping Website",
     "link": "Shopping-Website/index.html"
   },
-  {  
-    "name": "Simple Dark Form",
-    "link": "simple%20dark%20form/index.html"
-  },
   {
     "name": "Sneaker Storefront",
     "link": "Sneaker%20Storefront/index.html"
@@ -296,6 +288,10 @@
     "link": "Tailwind%20Portfolio/index.html"
   },
   {
+    "name": "Tech Landing Page",
+    "link": "Tech%20Landing%20Page/index.html"
+  },
+  {
     "name": "Technology Page",
     "link": "Technology%20Page/index.html"
   },
@@ -304,12 +300,12 @@
     "link": "Template%20Mobile%20Development%20Company/index.html"
   },
   {
-    "name": "Testimonial ",
+    "name": "Testimonial",
     "link": "Testimonial/index.html"
   },
   {
     "name": "Thanking SVG page",
-    "link": "Thanking SVG page/index.html"
+    "link": "Thanking%20SVG%20page/index.html"
   },
   {
     "name": "Tourism Portal",
@@ -333,7 +329,7 @@
   },
   {
     "name": "University Template 2",
-    "link": "university/index.html"
+    "link": "University%20Template%202/index.html"
   },
   {
     "name": "We design and develop",
