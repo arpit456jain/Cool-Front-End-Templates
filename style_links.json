@@ -436,6 +436,11 @@
     "link":"AmazonHomePageSlider/index.html"
   },
   {
+
+    "name":"Profile Card",
+    "link":"Profile%20Card/index.html"
+  }
+
     "name":"BankistWebsite",
     "link":"BankistWebsite/index.html"
   },
@@ -447,6 +452,7 @@
     "name":"personal-portfolio-website",
     "link":"personal-portfolio-website/index.html"
   },
+
 
   {
     "name":"DairyProductWebsite",
