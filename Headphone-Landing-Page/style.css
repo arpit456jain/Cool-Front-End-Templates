@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800&display=swap');
+
+* {
+    margin: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    /* font-family: sans-serif; */
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: black;
+    /* font-weight: bold; */
+}
+
+/* header {
+    height: 90vh;
+    width: 100vh;
+} */
+
+.menu {
+    padding: 1rem;
+    margin-bottom: 0;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    width: 9.4rem;
+    border-radius: 25px;
+    font-size: 0.9rem;
+}
+
+/* .right-menu {
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+} */
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.hero-img {
+    height: 600px;
+    width: 600px;
+    /* transform: skew(0deg)  ; */
+    /* transform: scaleX(-1) scaleY(1.2); */
+}
+
+.hero-container {
+    max-width: 90%;
+    align-content: center;
+    margin: 0rem;
+    /* padding: 0rem 5rem; */
+}
+
+.heading {
+    padding: 4rem 0 0 2rem;
+    /* margin-left: 1rem; */
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.social {
+    position: fixed;
+    top: 90%;
+    left: 20px;
+    transform: translateY(-50%);
+
+}
+
+.cart {
+    width: 35px;
+    height: 35px;
+}
+
+/* utitlity class */
+.gap {
+    padding-top: 3rem;
+}
+
+.play-btn-section {
+    padding-top: 4rem;
+    margin: 0;
+
+}
+
+.play-btn {
+    /* padding-left: 0; */
+    background:linear-gradient(rgba(255, 199, 47, .8), rgba(250, 196, 47, .8), rgba(247, 184, 10, 0.8)), url("./assets/btn-head.png");
+    background-repeat: no-repeat;
+    background-position: 40% 80%;
+    padding: 3rem;
+    width: 121%;
+    border: none;
+    border-radius: 100px 0px 0 100px;
+
+
+}
+
+.toggle-button{
+    position: absolute;
+    top: 2.2rem;
+    right: 2rem;
+    display:none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color:black;
+    border-radius: 10px;
+}
+
+
+/* .material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 800,
+    'GRAD' 10000,
+    'opsz' 80;
+    width: 40px;
+    height: 40px;
+
+  } */
+
+
+
+
+  
+@media (min-width:360px) and (max-width:991px) {
+    html,body{
+        overflow-x: hidden;
+    }
+    .toggle-button{
+        display: flex;
+    }
+    .menu{
+        display: none;
+        width: 150%;
+        flex-direction: column;
+        text-align: center;
+    }
+    .container{
+        margin: 1.2rem;
+        width: 100%;
+    }
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+    ul{
+        width: 200%;
+        
+    }
+
+    .menu li{
+        text-align: center;
+        padding-bottom: 1rem ;
+        width: 100%;        
+    }
+    .menu.active{
+        display: flex;
+    }
+    
+/* Other sections */
+    h1,h3,.play-btn-section{
+        padding: 0;
+    }
+    .hero-container {
+        max-width: 100%;
+    }
+
+    .hero-img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 25rem;
+        height: 25rem;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .heading {
+        text-align: center;
+    }
+
+    .play-btn {
+        border-radius: 75px;
+        align-items: center;
+        width: 80%;
+    }
+}
+@media (max-width:360px){
+
+    html,body{
+        overflow-x: hidden;
+    }
+    body{text-align: center;}
+    .toggle-button{
+        display: flex;
+    }
+    .menu{
+        display: none;
+        width: 150%;
+        flex-direction: column;
+        text-align: center;
+    }
+    .container{
+        margin: 1.2rem;
+        width: 100%;
+    }
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+    ul{
+        width: 200%;
+        
+    }
+
+    .menu li{
+        text-align: center;
+        padding-bottom: 1rem ;
+        width: 100%;        
+    }
+    .menu.active{
+        display: flex;
+    }
+
+    /* other sections */
+    h1{
+        font-size: 1.75rem;
+    }
+    .hero-img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 15rem;
+        height: 15rem;
+        padding: 0;
+        margin: 0 auto;
+    }
+    .play-btn {
+        border-radius: 75px;
+        align-items: center;
+        padding: 15px;
+        width: 90%;
+    }
+
+} 
+
+

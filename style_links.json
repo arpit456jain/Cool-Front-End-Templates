@@ -1,4 +1,8 @@
-[
+[ 
+  {
+    "name": "Headphone-Landing-Page",
+    "link": "Headphone-Landing-Page/index.html"
+  },
   {
     "name": "Coffee Website Template",
     "link": "coffee%20website/index.html"
@@ -448,13 +452,16 @@
     "name":"DairyProductWebsite",
     "link":"DairyProductWebsite/index.html"
   },
-   {
+  {
       "name": "Documentation Page",
-      "link": "Tech-Landing-page/index.html"
+      "link": "Tech-Landing-page/index.html
     },
     {
       "name":"ModelWindow",
       "link":"ModelWindow/index.html"
-    }
-
+  },
+  {
+      "name": "Candy Museum",
+      "link": "Candy Museum/index.html"
+  },
 ]
