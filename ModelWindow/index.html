@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ModelWindow</title>
+    <style>
+        body{
+            height: 100vh;
+            margin: 0;
+            position: relative;
+            background: linear-gradient(90deg, rgb(93, 212, 93),rgb(84, 201, 84));
+        }
+        header{
+            display: flex;
+            justify-content: center;
+        }
+        .showmodel{
+            padding: 20px 40px;
+            color: rgb(0, 0, 0);
+            font-size: 20px;
+            border-radius: 40px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: bolder;
+            margin: 20px 30px;
+            background-color: white;
+            cursor: pointer;
+        }
+        .over{
+            backdrop-filter: blur(2px);
+            height: 100vh;
+            width: 100vw;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .dis{
+            position: relative;
+            background-color: honeydew;
+            width: 60%;
+            padding: 40px 40px;
+            box-sizing: border-box;
+            text-align: center;
+            color:black;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 700;
+            /* margin: 10% 15%; */
+        }
+        .covering{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            margin: 0%;
+            height:80vh;
+        }
+        .cancel{
+            position: absolute;
+            font-size: 30px;
+            top: 0px;
+            cursor: pointer;
+        }
+        .anek{
+            display: none;
+        }
+        .lays{
+            display: none;
+        }
+        @media(max-width:720px)
+        {
+            .showmodel{
+                padding: 10px 20px;
+            }
+        }
+
+        @media(max-width:546px)
+        {
+            .showmodel{
+                font-size: 15px;
+                margin: 10px 15px;
+            }
+        }
+        @media(max-width:397px)
+        {
+            .showmodel{
+                font-size: 10px;
+                margin: 8px 13px;
+                /* padding: 20px 20px; */
+            }
+            .covering{
+                height: 90vh;
+            }
+        }
+        @media(max-width:370px)
+        {
+            .covering{
+                font-size: 10px;
+
+            }
+        }
+
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="showmodel">Model-1</div>
+        <div class="showmodel">Model-2</div>
+        <div class="showmodel">Model-3</div>
+    </header>
+    <div class="over lays"></div>
+    <div class="cont">
+        <div class="covering">
+    <div class="dis anek">
+        <h1>Hello this lorem ispum</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur temporibus laborum suscipit quae nesciunt repellat nam eius blanditiis, facilis minus voluptatum distinctio ex culpa eligendi. Laudantium a quia ipsam dolor?
+        Quo vitae.</p>
+        <div class="cancel">&times</div>
+    </div>
+</div>
+    </div>
+    <script>
+        
+        let blurback=document.querySelector('.over');
+        let keep=document.querySelectorAll('.showmodel');
+        console.log(keep);
+        let bigwin=document.querySelector('.dis');
+        function closemodel()
+        {
+            blurback.classList.add('lays');
+            bigwin.classList.add('anek');
+
+        }
+        function openmodel()
+        {
+            blurback.classList.remove('lays');
+            
+            bigwin.classList.remove('anek');
+
+        }
+        for(let i=0;i<keep.length;i++)
+        {
+            keep[i].addEventListener('click',openmodel);
+        }
+        let trap=document.querySelector('.cancel');
+        blurback.addEventListener('click',closemodel);
+        trap.addEventListener('click',closemodel);
+        document.addEventListener('keydown',function (e)
+        {
+         if(e.key=='Escape')
+         {
+             if(!bigwin.classList.contains('hidden'))
+             {
+                 closemodel();
+             }
+             
+         }
+            
+        })
+    </script>
+</body>
+</html>
