@@ -20,6 +20,7 @@
     color:white;
     text-shadow: 2px 2px 1px brown;
     z-index: 2;
+    /* margin-left: -5vw; */
   }
   .list:hover{
     font-size: large;
@@ -56,6 +57,7 @@ body::before {
     height: 80vh;
     overflow: hidden;
     padding: 0;
+    margin-left: 8vw;
 }
 
 .inner{
@@ -126,6 +128,12 @@ body::before {
 @media screen and (min-width: 600px){
   .list{
     font-size: 1.7vw;
+  
   }
+  .slider-container{
+    margin-left: auto;
+    margin-right: auto;
+  }
+ 
   }
 
