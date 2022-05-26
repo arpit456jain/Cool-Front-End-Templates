@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Weather template</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<main>
+			<h1 class="title">New Delhi</h1>
+			<div class="weather-container">
+				<time datetime="2021-10-2" class="date">2<sup>nd</sup> Oct 2021</time>
+				<div class="top-section">
+					<div class="condition" style="grid-area: condition">
+						<p>Sunny</p>
+						<img src="img/sun.svg" alt="sun" />
+					</div>
+					<div class="temp" style="grid-area: temp">
+						<h1>25&deg;C</h1>
+						<div class="hilo">
+							<p class="low"><span>Hi: </span> 10&deg;C</p>
+							<p class="high"><span>Lo: </span>35&deg;C</p>
+						</div>
+					</div>
+				</div>
+				<div class="bottom-section">
+					<div class="extra-info">
+						<div class="info" style="grid-area: rise">
+							<p class="param-name">Sun Rise</p>
+							<time datetime="5:30" class="big">5:30AM</time>
+						</div>
+						<div class="info" style="grid-area: set">
+							<p class="param-name">Sun Set</p>
+							<time datetime="19:30" class="big">7:30PM</time>
+						</div>
+						<div class="info" style="grid-area: wind">
+							<p class="param-name">Wind Speed</p>
+							<p class="big">10Km/h</p>
+						</div>
+						<div class="info" style="grid-area: humidity">
+							<p class="param-name">Humidity</p>
+							<p class="big">80%</p>
+						</div>
+						<div class="info" style="grid-area: aqi">
+							<p class="param-name">AQI</p>
+							<p class="big">172</p>
+						</div>
+						<div class="info" style="grid-area: pressure">
+							<p class="param-name">Pressure</p>
+							<p class="big">1034hPa</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>
