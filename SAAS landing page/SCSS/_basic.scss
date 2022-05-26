@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+html{
+font-size:62.5%;
+
+}
+body{
+width:100%;
+height:100vh;
+font-size:1.6rem;
+
+
+}
+a{
+    color:#000;
+}
+a,a:hover{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+h1{
+    font-weight:bolder;
+}

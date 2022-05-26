@@ -1,0 +1,493 @@
+@import "./_basic";
+@import "./_links";
+@import "./_mixin";
+@import "./_variables";
+
+.hero {
+  background-color: $bg-color;
+  width: 100%;
+  height: 100vh;
+  padding: 3rem 8rem;
+  & .navbar {
+    margin-bottom: 2rem;
+    margin-top:-0.5rem;
+    
+    & .brand {
+      font-weight: bold;
+      font-size: 2rem;
+    }
+
+    & .nav-item > .nav-link {
+      margin-right: 3rem;
+      
+      transform: translateY(-18%);
+      & .nav-link:last-child {
+        margin-right: 0;
+      }
+    }
+
+    & .brand,
+    .nav-link {
+      color: #000;
+    }
+    & .sign-in {
+      @include button(none, #000);
+    }
+    & .sign-up {
+      @include button($prime-color, #fff);
+    }
+  }
+}
+
+
+
+.main-header {
+  height: auto;
+  margin-top: 3rem;
+ 
+& h1.main-heading {
+  font-size: 6rem;
+}
+  
+  & .stars {
+    margin-bottom: 1.7rem;
+    span.fivestar {
+      margin-right: 1.5rem;
+    }
+    
+  }
+
+  & button.btn-prime {
+    @include button($prime-color, #fff);
+  }
+  & button.btn-link {
+    @include button(none, $prime-color);
+  }
+  & .list {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+}
+.section2 {
+    padding: 5rem 10rem;
+  & .part-1 {.row {
+    p.prime-p {
+      color: $prime-color;
+      font-weight: bolder;
+    }
+    & h2 {
+      font-weight: bolder;
+      font-size: 4rem;
+    }
+   
+  }
+    
+& .row-2{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    & .column>h3{
+font-weight:bolder;
+       
+    }
+}
+i.fas {
+    color: $prime-color;
+    text-align: center;
+    font-size: 3.6rem;
+    font-weight: bolder;
+  }
+    
+    
+
+
+  }
+  & .part-2{
+      margin-top: 4.5rem;
+      .row{
+          
+          background-color: $prime-color;
+          color:white;
+          padding-top: 3rem;
+          padding-left: 3rem;
+          padding-right: 3rem;
+          border-radius: 10px;
+          & h1.heading{
+              font-size:3rem;
+              font-weight: bolder;
+          }
+          & button.btn-prime{
+              @include button(#fff,$prime-color);
+              padding:1rem 3rem;
+              font-weight:bolder;
+              margin-top: 2rem;
+              font-size:2rem;
+          }
+      }
+
+  }
+
+}
+.section3{
+  width:100%;
+}
+
+.scrolling-wrapper{
+  overflow-x:auto;
+  cursor: pointer;
+  scrollbar-color: $prime-color $bg-color !important;
+  width:100%;
+  &>.col-5{
+    border:0.5px solid rgba(0,0,0,0.4);
+    border-radius:5px;
+    margin:3rem 2rem 3rem 0;
+    padding:1rem 1.5rem;
+    max-width:40rem;
+    
+    & .text{
+      font-size:1.5rem;
+    }
+    & .btn{
+      @include button(none,$prime-color);
+      width:90%;
+      border:1px solid rgba(0,0,0,0.4);
+      border-radius:5px ;
+      @include flex(center,center);
+      margin: 2rem auto 0.5rem auto;
+      font-weight: 700;
+    }
+    
+    
+  }
+
+ & h3{
+   color:$prime-color ;
+   font-weight:bold;
+ }
+}
+
+.footer{
+  width:100%;
+  background-color:$bg-color; 
+  margin:3rem 0;
+  padding: 2rem 4.5rem 2rem 4.5rem;
+  & .container .row>.col{
+font-size:1.3rem;
+& >a{
+  margin-top:1rem;
+}
+  & >h3{
+    font-weight:bold;
+  }
+  
+}
+}
+.SignUp{
+ & .container{
+   width:100%;height:100vh;
+   padding: 2rem 7rem;
+
+ }
+}
+.signup{
+  height:95vh;
+ 
+   padding:6rem 3rem;
+  
+   @include flex(center,start);
+   font-size:1.3rem;
+ 
+  & button{
+    @include button($prime-color, #fff);
+    border-color: #fff;
+    width:90%;
+  }
+ & form .form_field> .form-control1{
+    display:flex;
+    flex-direction:column;
+    align-items:start;
+    position:relative;
+    margin-top: 1rem;
+
+    & label{
+      font-weight:bolder;
+      margin-bottom: 0.3rem;
+    }
+    & input{
+      width:90%;
+      padding:0.7rem 2rem;
+      border-color: rgba(0,0,0,0.2);
+      border-radius: 5px;
+    }
+    
+    
+    & small{
+      font-size:1rem;
+      margin-bottom: 1rem;
+      visibility: hidden;
+    }
+    & div > i.fas{
+      position:absolute;
+      top:40%;
+      right:13%;
+      visibility: hidden;
+    }
+    
+  }
+  & small{
+    visibility: hidden;
+  }
+  
+//success
+  & form .form_field> .form-control1.success{
+    & input{
+      border-color:#2ecc71;
+    }
+    & div i.fa-check-circle{
+      visibility:visible;
+      color:#2ecc71;
+    }
+  }
+  //error
+  & form .form_field> .form-control1.error{
+    & input{
+      border-color:#e74c3c;
+    }
+    & div i.fa-exclamation-circle{
+      visibility:visible;
+      color:#e74c3c;
+    }
+    & small{
+      visibility: visible;
+      color:#e74c3c;
+    }
+  }
+
+}
+
+ 
+
+
+
+  
+
+
+
+
+
+
+// slider styling
+.carousel-container {
+  background-color:$prime-color;
+  color:white;
+  padding:4rem 5rem;
+  @include flex(center,center);
+  & .carousel-inner{
+    margin:0 auto;
+  }
+  
+  & > .carousel-item , .active{
+   
+width:100%;
+height:45vh;
+transition: all 0.5sec ease-in-out;
+
+& img{
+  max-height:300px;
+  
+ 
+}
+  }
+ 
+  & > .control-icon i{
+    color:$prime-color;
+    z-index: 100;
+  }
+  & .text{
+    text-align: center;
+    margin-top:4rem;
+  }
+ 
+  & .dots{
+    width:10px;
+    height:10px;
+    border-radius:50%;
+    margin-right:7px;
+    background-color: darkgrey;
+    cursor: pointer;
+    &:hover{
+      background-color: #fff;
+    }
+  }
+}
+
+
+
+// Media -queries
+
+@media screen and (max-width: 984px){
+  html{
+    font-size:55%;
+  }
+.hero{
+  width:100%;
+  height:100vh;
+}
+  .navbar{
+    align-items: center;
+    & .navbar-nav{
+      width:100%;
+      height: 30vh;
+      display:flex;flex-direction:column;
+      align-items:center;
+      justify-content: center;
+    }
+    & .navbar-nav >.nav-item .nav-link{
+      font-weight:bold;
+      margin:2rem 0 1rem 0;
+    }
+    & .sign-in{
+      width:100%;
+      @include button(#fff,$prime-color);
+    }
+
+
+  }
+  .main-row{
+    
+   
+    flex-wrap: wrap-reverse;
+    & .left .stars{
+      display:none !important;
+    }
+
+    & .left , .right{
+      display:flex;
+      flex-direction: column;
+      align-items:center;
+    }
+    & .left .buttongroup{
+      display:flex;
+      flex-direction: column;
+      align-items:center;
+      
+      & .btn-prime,.btn-link{
+        width:100%;
+        text-align: center;
+      }
+    }
+    & h1.main-heading{
+      font-size:4rem;
+    }
+   
+  }
+  
+  
+  .right img {
+   height:45vh;
+
+  }
+  
+  .section3 .scrolling-wrapper{
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:column;
+    align-items:center;
+  margin:2rem 3rem 2rem 3rem;
+    
+  }
+  .section3 .row > .column{
+    width:100%;
+    
+  }
+  .section2{
+    margin-bottom: 1rem;
+    & .row-2> .column {
+      margin-bottom: 4rem;
+    }
+    & .part-2 .text .btn-prime{
+      width:100%;
+    margin: 1rem 0 1rem 0;
+    }
+  }
+
+
+  .carousel-container{
+    display:none !important;
+        }
+  
+
+}
+@media screen and (max-width: 494px){
+  html{
+    font-size:45%;
+  }
+
+  h1.main-heading{
+    font-size:3rem;
+  }
+   .btn-prime,.btn-link{
+    width:100%;
+    margin: 1rem 0 1rem 0;
+  }
+  & .left , .right{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+  }
+  & .left .buttongroup{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    
+    & .btn-prime,.btn-link{
+      width:100%;
+      text-align: center;
+    }
+  }
+  .Sign-up {
+
+    & .form {
+      padding:0.5rem 1rem 0.5rem 1rem;
+& h3{
+  font-size:4rem;
+  margin:-2rem 0 5rem 0;
+}
+    & h1{
+      font-size:5rem;
+      margin-bottom: 2rem;
+    }
+      form{
+      display:flex;
+      flex-direction:column;
+      align-items: center;
+      width:100%;
+      & >.form-control1 {
+        width:100%;
+        font-size: 2rem;
+        margin:1rem 0 1rem 0;
+      }
+     
+    }}
+    & .carousel-container{
+   display:none !important;
+       }
+       
+     }
+  
+
+
+ 
+
+  
+  .footer-row{
+    .col{
+
+      margin: 1rem 0 1rem 0;
+    }
+  }
+  .SignUp .container .row .carousel-container{
+    display: none;
+    
+   
+  }
+}
