@@ -1,1 +1,0 @@
-This is basic Dairy Product website built using html and css

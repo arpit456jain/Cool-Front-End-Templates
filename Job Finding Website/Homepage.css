@@ -1,0 +1,203 @@
+*
+{
+    padding:0;
+    margin:0;
+    font-family: sans-serif;
+}
+.menu-bar
+{
+    background-image: linear-gradient(to right,#6d76ef,#7cd1e0);
+    
+}
+.nav-link
+{
+    font-size: 16px;
+    color:#fff !important;
+    margin:1px;
+}
+.menu-bar .navbar-toggler
+{
+    padding-right:0;
+    outline: none;
+    border: none;
+}
+.banner
+{
+    height:80vh;
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(im1.jpg);
+    background-size: cover;
+    background-position: center;
+    color:#fff;
+}
+.banner h1
+{
+    padding-top: 140px;
+    font-size:35px;
+    letter-spacing: 4px;
+    font-weight: 600;
+    text-decoration: 0 0 30px rgba(0,0,0,0.5);
+}
+.banner .hero-btn
+{
+    position:center;
+     padding:10px 5px;
+     border:1px solid #13a5a0e8;
+}
+.banner .hero-btn:hover{
+    border:1px solid #13a5a0e8;
+    background-color:#6d76ef;
+    transition: 1s;
+}
+.search-job
+{
+    padding:30px 0;
+    margin: -50px 6% 50px;
+    background-image: linear-gradient(to right,#6d76ef,#7cd1e0);
+
+}
+.search-job .form-control
+{
+    max-width: 250px;
+    display: inline-flex;
+    margin: 10px 5px;
+    border-radius: 0;
+    box-shadow:none !important;
+    border:none !important;
+}
+.search-job .btn-primary
+{
+    border-radius:0;
+    box-shadow: none !important;
+    border: none;
+    display: inline-flex;
+    margin:5px;
+    padding: 5px 20px;
+}
+#aboutus
+{
+    padding-top:40px;
+    padding-bottom: 100px;
+}
+#aboutus h3
+{
+    text-align:center;
+    padding-bottom:40px;
+}
+h3::before
+{
+    content: '';
+    background-image:linear-gradient(to right,#6d76ef,#7cd1e0); 
+    width:50px;
+    height:30px;
+    position: absolute;
+    z-index:-10;
+    margin-top: -15px;
+    border-top-left-radius: 70px;
+    border-bottom-right-radius:90px ;
+}
+#jobs
+{
+    background-color: #f8f8fa;
+    padding:50px 0;
+}
+.company-details
+{
+    box-shadow: 0 2px 70px 0 rgba(110,130,208, .18);
+    border-radius: 5px;
+    margin-bottom:20px;
+}
+.job-update
+{
+    background: #fff;
+    padding:10px 20px;
+    border-radius:5px;
+}
+.job-update .fa
+{
+    margin-top:5px;
+    margin-right:10px;
+    color:#77d1b1;
+}
+.job-update small{
+    background:#efefef;
+    padding:1px 5px;
+    margin: 0 5px;
+
+}
+.job-update a{
+    text-decoration: none !important;
+    color:#b6bed2;
+    float: right;
+}
+.apply-btn 
+{
+   height:40px;
+   background-image:linear-gradient(to right,#6d76ef,#7cd1e0);  
+   padding:7px;
+   border-bottom-left-radius: 5px;
+   border-bottom-right-radius: 5px ;
+}
+.apply-btn .btn-primary
+{
+    padding:0 30px;
+    float:right;
+    border-radius:0;
+    box-shadow:none !important;
+    background:#6d76ef;
+    border:1px solid #fff;
+}
+.page-link li
+{
+    height:25px;
+    width:25px;
+    list-style:none;
+    display:inline-block;
+    cursor:pointer;
+}
+.page-link li:hover, .active
+{
+    color:#fff;
+    background-image:linear-gradient(to right,#6d76ef,#7cd1e0); 
+
+}
+.left-arrow
+{
+    color:#999;
+}
+.right-arrow
+{
+    color:#29b929;
+}
+#site-stats
+{
+    padding: 100px 0;
+}
+#site-stats h3
+{
+    margin-bottom:30px;
+}
+.states-box
+{
+    padding:30px;
+    border-radius:10px;
+    margin:20px 0;
+    box-shadow: 0 2px 40px 0 rgba(100,130,208, .18);
+}
+.states-box .fa{
+    font-size: 30px;
+    margin-right:10px;
+    margin-bottom:10px;
+}
+#footer
+{
+    background-image:linear-gradient(to right,#6d76ef,#7cd1e0);;
+    padding:20px 10px 8px;
+}
+.footer h4{
+    margin:30px 0;
+}
+#footer p{
+    color:#333;
+}
+
+
