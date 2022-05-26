@@ -1,0 +1,151 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: linear-gradient(#599afa 50%, #4169a5 50%);
+	font-family: 'Montserrat', sans-serif;
+	min-height: 100vh;
+}
+
+main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+	min-height: 100vh;
+	margin-block: 2em;
+}
+
+.title {
+	color: #fff;
+	margin-bottom: 1em;
+}
+
+.weather-container {
+	position: relative;
+	min-height: 90%;
+	width: 90%;
+	max-width: 1000px;
+	background-color: rgb(255 255 255 / 0.6);
+	border-radius: 2rem;
+	padding: 1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	backdrop-filter: blur(0.5rem);
+	-webkit-backdrop-filter: blur(0.5rem);
+	margin-inline: 1em;
+	color: #2a456c;
+}
+
+.date {
+	position: relative;
+	font-size: 1.3rem;
+}
+
+.top-section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.condition {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 1em;
+}
+
+.condition p {
+	font-size: 2.5rem;
+}
+
+.condition img {
+	height: 120px;
+}
+
+.temp h1 {
+	font-size: 4.2rem;
+	font-weight: 400;
+}
+
+.hilo {
+	display: flex;
+	justify-content: space-between;
+	font-size: 1.1em;
+}
+
+.extra-info {
+	margin-block: 1.5em;
+	display: grid;
+	grid-template-areas:
+		'rise wind'
+		'set humidity'
+		'aqi pressure';
+	gap: 1.5em;
+}
+
+.info {
+	text-align: center;
+}
+
+.info .param-name {
+	color: #37588b;
+	font-size: 1rem;
+}
+
+.info .big {
+	font-size: 1.5rem;
+}
+
+@media screen and (min-width: 800px) {
+	main {
+		margin-block: 0;
+	}
+
+	.weather-container {
+		min-height: 500px;
+		gap: 2em;
+	}
+
+	.date {
+		position: absolute;
+		top: 0.2em;
+	}
+
+	.top-section {
+		display: grid;
+		grid-template-areas: 'temp condition';
+		justify-content: space-between;
+		width: 70%;
+	}
+
+	.hilo {
+		font-size: 1.4rem;
+	}
+
+	.temp h1 {
+		font-size: 6rem;
+	}
+
+	.condition img {
+		height: 160px;
+	}
+
+	.condition {
+		flex-direction: row;
+	}
+
+	.extra-info {
+		grid-template-areas:
+			'rise wind humidity'
+			'set aqi pressure';
+	}
+}

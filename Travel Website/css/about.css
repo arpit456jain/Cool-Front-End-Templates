@@ -1,0 +1,79 @@
+@import url("style.css");
+
+.abt {
+    color: #fff;
+    background-color: #10192a;
+    margin: auto;
+    margin-top: 9.7rem;
+    width: 80%;
+    border-radius: 1rem;
+    padding: 2rem 5rem;
+}
+
+.abt-head {
+    text-align: center;
+    font-size: 3vw;
+    font-weight: bolder;
+    padding: 2rem 0 1rem;
+    text-decoration: solid underline #29d9d5 5px;
+    text-underline-offset: 10px;
+}
+
+.imgg {
+    width: 35vw;
+    border-radius: 2.3rem;
+    margin: 1rem;
+}
+
+.img-data {
+    display: flex;
+    justify-content: space-around;
+    margin: 1.4rem;
+}
+
+.textbox {
+    font-size: 2rem;
+    padding: 2rem 0rem  2rem 3rem; 
+    letter-spacing: 1.5px;
+    line-height: 3rem;
+    font-weight: 300;
+}
+
+.sponsors {
+    color: #fff;
+    margin: auto;
+    margin-top: 9.7rem;
+    width: 95%;
+}
+
+.spon-head {
+    text-align: center;
+    font-size: 2vw;
+    font-weight: bolder;
+    padding: 2rem 0 3rem;
+    text-decoration: solid underline #29d9d5 3px;
+    text-underline-offset: 5px;
+}
+
+.spon-icon {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.spons{
+    width: 9vw;
+}
+
+
+.footer {
+    margin-top: 100px;
+    background-color: #10192a;
+}
+
+@media (max-width: 768px) {
+    .img-data {
+        flex-direction: column;
+        align-items: center;
+    }
+}
