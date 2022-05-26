@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700;900&family=Open+Sans&family=Roboto+Flex:opsz,wght@8..144,300&family=Roboto:wght@400;700&family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./style.css">
+
+
+    <style>
+        a{
+    color: aliceblue;
+    text-decoration: none;
+     }
+     .mainContainer input{
+         margin-left: 1rem;
+     }
+    
+
+    </style>
+
+    <title>Credit/Debit Card Payment</title>
+</head>
+<body>
+
+    <div class="lefty"> <br></div>
+    <div class="righty"></div>
+
+
+    <h3>You are paying using you Credit/Debit Card.</h3>
+
+    <div class="mainContainer d-flex justify-content-between">
+        <div>
+
+            <h5>Card Details</h5> 
+            
+            <input required class=" cname" type="text" size="50" name="cardName" id="cardName" placeholder="Name of Card">
+            <input required class=" cnumber" type="text" size="50" name="cardNumber" id="cardNumber" placeholder="Card Number">
+            <br>
+            <input required class=" expdate"  size="" name="expireDateMonth" id="expireDate" type="month" name="begin" placeholder="mm-yyyy" value=""min="01-2022" max="12-2041" >
+            <input required class=" cvv mb-3" type="text" size="3" name="cvv" id="cvv" placeholder="***"  value=""min="001" max="999">
+            <br><br>
+            
+        </div>
+
+    </div>
+   
+    <div class="text-center my-4">
+        <button class="btn btn-dark mx-2">Submit</button>
+    
+            <button class="btn btn-dark mx-2"><a href="./index.html">Go Back</a></button>
+        </div>
+
+<!-- FOOTER  -->
+<footer id="footer" class="mt-5 footer-1 ">
+    <div class="">
+        <h5 class="cname">Company's Name</h5>
+    </div>
+      
+    <div class="footer-copyright">
+     <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+              <p>Copyright Company Name © 2021. All rights reserved.</p>
+         </div>
+        </div>
+       </div>
+      </div>
+    </div>
+
+</footer>
+
+<script src="./script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+</body>
+</html>

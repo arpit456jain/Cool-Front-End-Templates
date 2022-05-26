@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Made With ❤ By Sreemoyee Sadhukhan Github Profile https://github.com/Sreemoyee26 -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ff156f">
+        <link rel="stylesheet" href="auditions_page.css">
+        <link rel="background" href="https://png.pngtree.com/thumb_back/fh260/back_pic/03/80/06/3757c30a762387b.jpg">
+        <title>Auditions page</title>
+    </head>
+    <body id="Change-Background-Image">
+
+            <button class="changeButton" onclick="changeBackground()">Click Me !</button> <!--On clicking this button changeBackground() function will be called-->        
+
+        <header>
+            <h1 id="title">MY ORGANISATION<h1>
+            <p id="description">Welcome to Auditions Panel</p>
+        </header>
+        <main>
+            <form id="survey-form">
+                <label class="responseHeading" for="name" id="name-label">Name:</label>        
+                <input type="text" id="name" required placeholder="Enter your name">
+                <br><br>
+                <label class="responseHeading" for="email" id="email-label">Email id:</label>
+                <input type="email" id="email" required placeholder="Enter valid email">
+                <br><br>
+                <label class="responseHeading" for="number" id="number-label">Age: <span style="font-size: 16px;">(optional)</span></label>
+                <input type="number" id="number" min="17" max="25" placeholder="Enter your age">
+                <br><br>
+                <label class="responseHeading" for="dropdown" id="year-label">Year of study</label>
+                <select id="dropdown">
+                    <option value="" selected disabled>Choose Your Year</option>
+                    <option value="BTECH_1">BTECH 1st Year</option>
+                    <option value="BTECH_2">BTECH 2nd Year</option>
+                </select>
+                <br><br>
+                <div id="department">
+                    <label class="responseHeading" for="dept" id="dept-label">Select your department :</label>
+                    <br>
+                    <br>
+                    <input type="radio" name="dept" id="cse" value="CSE">
+                    <label class="options" for="cse">Computer Science and Engineering</label>
+                    <br>
+                    <input type="radio" name="dept" id="ece" value="ECE">
+                    <label class="options" for="ece">Electronics and Communications Engineering</label>
+                    <br>
+                    <input type="radio" name="dept" id="ee" value="EE">
+                    <label class="options" for="ee">Electrical Engineering</label>
+                    <br>
+                    <input type="radio" name="dept" id="mech" value="MECH">
+                    <label class="options" for="mech">Mechanical Engineering</label>
+                    <br>
+                    <input type="radio" name="dept" id="civil" value="CIVIL">
+                    <label class="options" for="civil">Civil Engineering</label>
+                    <br>
+                    <input type="radio" name="dept" id="chem" value="CHEM">
+                    <label class="options" for="chem">Chemical Engineering</label>
+                    <br>
+                    <input type="radio" name="dept" id="bio" value="BIOTECH">
+                    <label class="options" for="bio">Biotechlogy</label>
+                    <br>
+                    <input type="radio" name="dept" id="mme" value="MME">
+                    <label class="options" for="mme">Metals and Metallurgical Engineering</label>
+                </div>
+                <br><br>
+                <div id="category">
+                    <label class="responseHeading" for="catg" id="catg-label">Enter your prefered category <span class="Always-Display-On-A-Seperate-Line">(Can choose more than one categories)</span></label> 
+                    <br>
+                    <input type="checkbox" name="catg" id="tech" value="Technical">
+                    <label class="options" for="tech">Technical</label>
+                    <br>
+                    <input type="checkbox" name="catg" id="webd" value="Web Development">
+                    <label class="options" for="webd">Web Development</label>
+                    <br>
+                    <input type="checkbox" name="catg" id="grap" value="Graphic Designing">
+                    <label class="options" for="grap">Graphic Designing</label>
+                    <br>
+                    <input type="checkbox" name="catg" id="pub" value="Publicity and Outreach">
+                    <label class="options" for="pub">Publicity and Outreach</label>
+                </div>
+                <br><br>
+                <label class="responseHeading" for="comments" id="com-sec">Additional Information <span style="font-size: 16px;">(optional)</span></label>
+                <br>
+                <textarea name="comments" placeholder="Any additional information you want to share?"></textarea>
+                <br><br><br>
+                <button type="submit" id="submit">Submit</button>
+            </form>
+        </main>
+    </body>
+    <script src="script.js"></script>
+</html>

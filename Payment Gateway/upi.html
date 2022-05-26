@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700;900&family=Open+Sans&family=Roboto+Flex:opsz,wght@8..144,300&family=Roboto:wght@400;700&family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+
+
+
+    <style>
+        
+        a{
+    color: aliceblue;
+    text-decoration: none;
+    }
+    @media screen and (max-width: 1249px) {
+    input[type=text],input[type=number],input[type=email],input[type=tel],input[type=month] ,select {
+        width: 50%;
+        padding: 12px 20px;
+        margin: 5px 10px;
+      }
+      @media screen and (max-width:768px){
+        input[type=text],select {
+        width: 50%;
+        padding: 10px 18px;
+        margin: 4px 9px;
+      }
+      p{
+          font-size: .7rem;
+      }
+        }
+  }
+
+
+
+
+
+    </style>
+    <title>UPI</title>
+</head>
+<body>
+    <div class="lefty"> <br></div>
+    <div class="righty"></div>
+    <h3>You are paying using your UPI Identity.</h3>
+    <div class="mainContainer d-flex justify-content-between">
+        <div>
+
+            <h5>UPI details</h5> 
+            <label for="UPI " class="mx-5"> UPI Address:</label><br>
+            <input class="mx-5" type="text" placeholder="xyz123@hdfc.gov">
+            <p class="collect mx-5">You will recieve a collect request.</p>
+            <br>
+            
+        </div>
+    </div>
+    <div class="text-center my-4">
+        <button class="btn btn-dark mx-2">Submit</button>
+    
+            <button class="btn btn-dark mx-2"><a href="./index.html">Go Back</a></button>
+        </div>
+
+
+
+
+<!-- FOOTER  -->
+<footer id="footer" class="mt-5 footer-1">
+    <div class="">
+        <h5 class="cname">Company's Name</h5>
+    </div>
+      
+    <div class="footer-copyright">
+     <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+              <p>Copyright Company Name © 2021. All rights reserved.</p>
+         </div>
+        </div>
+       </div>
+      </div>
+    </div>
+
+</footer>
+
+
+<script src="./script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+</body>
+</html>
