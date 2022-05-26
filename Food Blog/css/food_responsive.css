@@ -1,0 +1,70 @@
+.navbar{
+    position:absolute;
+    top:352px;
+    left: 0px;
+    padding: 0px;
+    margin: auto;
+
+}
+.navbar a{
+    padding: 10px;
+}
+.navbar #left{
+    display: none;
+}
+.container::before {
+    width: 100%;
+    height: 340px;
+}
+.heading p{
+    display: none;
+}
+.heading h1{
+    font-size: 3.5rem;
+    animation: none;
+}
+.heading2{
+    font-size:2.5rem ;
+    color: rgb(0, 0, 0);
+    background-color:rgb(201,201,201) ;
+    border:1px solid rgb(78, 78, 78) ;
+    animation: none;
+    font-weight: 500;
+}
+.ab,.cd{
+    /* color: rgb(44, 44, 44); */
+    color: rgb(0, 0, 0);
+    
+}
+.chefscol{
+    /* flex-wrap: nowrap; */
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    overflow-x: scroll;
+    
+}
+.box{
+    margin:100px 20px;
+}
+.container3{
+    flex-direction: column;
+    overflow-x: scroll;
+    
+}
+.recipes{
+    margin: 0px 20px;
+}
+#owner_img{
+    height: 100px;
+    width: 100px;
+}
+.container4::before{
+    width: 97%;
+}
+.contactform form input{
+    width: 80%;
+    margin: -3px;
+}
+.btn2{
+    margin: 0px 77px;
+}

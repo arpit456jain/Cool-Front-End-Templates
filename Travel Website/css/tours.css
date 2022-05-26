@@ -1,0 +1,88 @@
+@import url(style.css);
+
+.packages {
+    margin-top: 8rem;
+    color: #fff;
+}
+
+.packages .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:2rem;
+}
+  
+.heading{
+    text-align: center;
+    font-size: 3vw;
+    font-weight: bolder;
+    padding: 2rem 0 1rem;
+    text-decoration: solid underline #29d9d5 5px;
+    text-underline-offset: 8px;
+}
+
+.packages .box-container .box{
+    width: 32%;
+    background-color: #10192a;    
+    border-radius: .5rem;
+    overflow: hidden;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+}
+  
+.packages .box-container .box img{
+    height: 25rem;
+    width:100%;
+    object-fit: cover;
+}
+
+.packages .box-container .box img:hover{
+    transform: scale(1.1);
+}
+  
+.packages .box-container .box .content{
+    padding:2rem;
+    color: #fff;
+}
+  
+.packages .box-container .box .content h3{
+    font-size:2rem;
+    color:#999;
+}
+  
+.packages .box-container .box .content p{
+    font-size:1.7rem;
+    color:#fff;
+    padding:1rem 0;
+}
+  
+.packages .box-container .box .content .stars i{
+    font-size:1.7rem;
+}
+  
+.packages .box-container .box .content .price{
+    font-size: 2rem;
+    color:#999;
+    padding-top: 1rem;
+}
+  
+.packages .box-container .box .content .price span{
+    color:#555;
+    font-size: 1.5rem;
+    text-decoration: line-through;
+}
+
+.footer {
+    margin-top: 10rem;
+}
+
+@media (max-width:1215px) {
+    .packages .box-container .box {
+        width: 48%;
+    }
+
+}
+@media (max-width: 450px) {
+    .packages .box-container .box {
+        width: 99%;
+    }
+}
+

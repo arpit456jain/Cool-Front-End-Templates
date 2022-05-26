@@ -1,0 +1,345 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.12,
+* Autoprefixer: v10.4.4
+* Browsers: last 4 version
+*/
+
+:root {
+  --ios: hsl(171, 66%, 44%);
+  --ios-darker: hsl(171, 66%, 34%);
+  --ios-hover: hsl(171, 56%, 54%);
+  --ios-opacity: hsla(171, 66%, 44%, .2);
+  --mac: hsl(233, 100%, 69%);
+  --mac-darker: hsl(233, 100%, 59%);
+  --mac-hover: hsl(233, 90%, 79%);
+  --mac-opacity: hsla(233, 100%, 69%, .2);
+  --h-color: hsl(210, 10%, 33%);
+  --p-color: hsl(201, 11%, 66%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: 'Bai Jamjuree', sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.4;
+  text-align: center;
+  color: var(--p-color);
+}
+h1, h2, h3 {
+  color: var(--h-color);
+  font-weight: 600;
+}
+h1 {
+  font-size: 3.2rem;
+}
+h2 {
+  font-size: 2.8rem
+}
+h3 {
+  font-size: 2.6rem;
+}
+p {
+  max-width: 58ch;
+}
+.sub-grid p {
+  max-width: 35ch;
+}
+.page {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 16rem;
+}
+
+/* header */
+header {
+  padding: 12.3rem 3rem 0rem;
+  background: url("../images/bg-header-mobile.png") no-repeat;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  grid-row-gap: 2.4rem;
+  justify-items: center;
+}
+header img {
+  margin-bottom: 4.5rem;
+}
+
+/* call to action */
+.download {
+  display: -ms-inline-grid;
+  display: inline-grid;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  grid-gap: 2.4rem;
+  width: 100%;
+  margin-top: 2.5rem;
+}
+.call-to-action {
+  display: block;
+  text-decoration: none;
+  font-weight: 600;
+  color: hsl(360, 100%, 100%);
+  padding-block: 1.5rem;
+  border-radius: 50px;
+}
+.ios:link, ios:visited {
+  background-color: var(--ios);
+  border-bottom: 3px solid var(--ios-darker);
+  -webkit-box-shadow: 0 10px 10px var(--ios-opacity);
+          box-shadow: 0 10px 10px var(--ios-opacity);
+}
+.ios:hover, .ios:active {
+  background-color: var(--ios-hover);
+  border-bottom-color: var(--ios);
+}
+.mac:link, mac:visited {
+  background-color: var(--mac);
+  border-bottom: 3px solid var(--mac-darker);
+  -webkit-box-shadow: 0 10px 10px var(--mac-opacity);
+          box-shadow: 0 10px 10px var(--mac-opacity);
+}
+.mac:hover, .mac:active {
+  background-color: var(--mac-hover);
+  border-bottom-color: var(--mac);
+}
+
+/* main */
+main {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 13rem;
+  padding-inline: 3rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.track img, .access img {
+  display: block;
+  width:100%;
+}
+article {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 2.4rem;
+  justify-items: center;
+}
+section {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 2.4rem;
+  justify-items: center;
+}
+.sub-grid {
+  margin-top: 4.4rem;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 6rem;
+}
+.col-2 {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-row-align: center;
+      align-self: center;
+  grid-gap: 6rem;
+}
+.enterprise-logo {
+  padding-inline: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 7rem;
+}
+
+/* footer */
+footer {
+  background-color: hsl(220, 1%, 97%);
+  color: var(--h-color);
+}
+.footer-content {
+  padding-block: 4.5rem;
+  padding-inline: 3rem;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  grid-gap: 4.5rem;
+  max-width: 1110px;
+  margin: auto;
+}
+footer img {
+  width: 55px;
+}
+footer nav {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 3.5rem;
+}
+nav a:link, nav a:visited {
+  text-decoration: none;
+  color: var(--h-color);
+}
+nav a:hover, nav a:active {
+  color: var(--ios);
+}
+.social {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 4rem;
+  font-size: 2.2rem;
+}
+.social i:hover {
+  color: var(--ios)
+}
+.attribution-container {
+  background-color: hsl(220, 1%, 97%);
+}
+
+@media only screen and (min-width: 376px) {
+  header {
+    background: url("../images/bg-header-desktop.png") no-repeat;
+    background-size: cover;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .download {
+    -ms-grid-columns: 1fr 2.4rem 1fr;
+    grid-template-columns: 1fr 1fr;
+    width: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .call-to-action {
+    width: 226px;
+  }
+  .enterprise-logo {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer nav {
+    grid-auto-flow: column;
+    grid-gap: 2.5rem;
+  }
+}
+@media only screen and (min-width: 900px) {
+  h1 {
+    font-size: 4.5rem;
+  }
+  h2 {
+    font-size: 3.6rem
+  }
+  h3 {
+    font-size: 2.4rem;
+  }
+  .track .sub-grid {
+    grid-gap: 0rem;
+    -ms-grid-columns: 50% 0rem 50%;
+    grid-template-columns: 50% 50%;
+    justify-items: start;
+    text-align: left;
+    width: 100%;
+    height: 573px;
+    overflow: visible;
+  }
+  .col-1 {
+    position: relative;
+    width: 100%;
+  }
+  .track img {
+    height: 573px;
+    width: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .col-2 {
+    padding-left: 2rem;
+  }
+  .track .sub-grid section {
+    justify-items: start;
+    -ms-grid-rows: auto 2.4rem 1fr;
+    grid-template-rows: auto 1fr;
+  }
+  .workflow .sub-grid {
+    -ms-grid-columns: 1fr 4.3rem 1fr 4.3rem 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 4.3rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    max-width: 1110px;
+  }
+  .workflow section {
+    -ms-grid-rows: 40px 2.4rem auto 2.4rem 1fr;
+    grid-template-rows: 40px auto 1fr;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .workflow section p {
+    -ms-flex-item-align: baseline;
+        align-self: baseline;
+  }
+  .enterprise-logo {
+    max-width: 1110px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 1rem;
+  }
+  .footer-content {
+    -ms-grid-columns: auto 4.5rem auto 4.5rem auto;
+    grid-template-columns: repeat(3, auto);
+    justify-items: baseline;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer nav {
+    -ms-grid-columns: auto 2.5rem auto 2.5rem auto;
+    grid-template-columns: repeat(3, auto);
+    grid-auto-flow: row;
+    justify-items: baseline;
+  }
+  .social {
+    font-size: 2.4rem;
+    grid-gap: 2.4rem;
+    -ms-grid-column-align: end;
+        justify-self: end;
+  }
+}

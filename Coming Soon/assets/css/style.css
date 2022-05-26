@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+body {
+	font-family: 'Open Sans', sans-serif;
+	background-color: #effffd;
+	background-size: 100% 100%;
+	position: relative;
+}
+.heading {
+	text-align: center;
+	font-size: 55px;
+	font-weight: bold;
+	margin: 30px;
+	color: #ff6b6b;
+}
+#footer {
+	background: rgba(19, 19, 19, 0.4);
+	padding: 30px 0;
+	color: #fff;
+	font-size: 14px;
+	position: relative;
+}
+
+.countdown {
+	display: flex;
+	gap: 15px;
+	padding: 10px 10px;
+}
+
+.countdown .box {
+	padding: 5px;
+	background-color: #fff;
+	border: 1px solid;
+	text-align: center;
+	flex: 1 1 20px;
+}
+
+.countdown .box h3 {
+	font-size: 50px;
+}
+.countdown .box span {
+	color: #ff6b6b;
+	font-size: 20px;
+}
+
+.announce {
+	text-align: center;
+	margin-top: 70px;
+	font-size: 3em;
+	font-weight: bold;
+	color: #ff6b6b;
+}
+
+.info {
+	padding: 10px;
+	font-size: 1.5em;
+	text-align: center;
+	font-family: 'Lora', serif;
+}
+
+.events {
+	padding: 10px;
+	font-size: 1.3em;
+	text-align: center;
+	font-family: 'PT Serif', serif;
+}
+
+.contact {
+	padding: 10px;
+	font-size: 1em;
+	text-align: center;
+}
