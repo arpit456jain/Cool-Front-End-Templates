@@ -1,0 +1,778 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-size: 1.6rem;
+}
+
+a {
+  color: #000;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+h1 {
+  font-weight: bolder;
+}
+
+.hero {
+  background-color: #FBF8F3;
+  width: 100%;
+  height: 100vh;
+  padding: 3rem 8rem;
+}
+
+.hero .navbar {
+  margin-bottom: 2rem;
+  margin-top: -0.5rem;
+}
+
+.hero .navbar .brand {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.hero .navbar .nav-item > .nav-link {
+  margin-right: 3rem;
+  -webkit-transform: translateY(-18%);
+          transform: translateY(-18%);
+}
+
+.hero .navbar .nav-item > .nav-link .nav-link:last-child {
+  margin-right: 0;
+}
+
+.hero .navbar .brand,
+.hero .navbar .nav-link {
+  color: #000;
+}
+
+.hero .navbar .sign-in {
+  background-color: none;
+  color: #000;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 1rem 1.4rem;
+  border-radius: 5px;
+  position: relative;
+}
+
+.hero .navbar .sign-in::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.2;
+  -webkit-clip-path: circle(0 at center);
+          clip-path: circle(0 at center);
+  -webkit-transition: 0.4s ease-out;
+  transition: 0.4s ease-out;
+}
+
+.hero .navbar .sign-in:hover::before {
+  -webkit-clip-path: circle(200px at center);
+          clip-path: circle(200px at center);
+  color: #000;
+}
+
+.hero .navbar .sign-up {
+  background-color: #4D13D1;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 1rem 1.4rem;
+  border-radius: 5px;
+  position: relative;
+}
+
+.hero .navbar .sign-up::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  opacity: 0.2;
+  -webkit-clip-path: circle(0 at center);
+          clip-path: circle(0 at center);
+  -webkit-transition: 0.4s ease-out;
+  transition: 0.4s ease-out;
+}
+
+.hero .navbar .sign-up:hover::before {
+  -webkit-clip-path: circle(200px at center);
+          clip-path: circle(200px at center);
+  color: #fff;
+}
+
+.main-header {
+  height: auto;
+  margin-top: 3rem;
+}
+
+.main-header h1.main-heading {
+  font-size: 6rem;
+}
+
+.main-header .stars {
+  margin-bottom: 1.7rem;
+}
+
+.main-header .stars span.fivestar {
+  margin-right: 1.5rem;
+}
+
+.main-header button.btn-prime {
+  background-color: #4D13D1;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 1rem 1.4rem;
+  border-radius: 5px;
+  position: relative;
+}
+
+.main-header button.btn-prime::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  opacity: 0.2;
+  -webkit-clip-path: circle(0 at center);
+          clip-path: circle(0 at center);
+  -webkit-transition: 0.4s ease-out;
+  transition: 0.4s ease-out;
+}
+
+.main-header button.btn-prime:hover::before {
+  -webkit-clip-path: circle(200px at center);
+          clip-path: circle(200px at center);
+  color: #fff;
+}
+
+.main-header button.btn-link {
+  background-color: none;
+  color: #4D13D1;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 1rem 1.4rem;
+  border-radius: 5px;
+  position: relative;
+}
+
+.main-header button.btn-link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #4D13D1;
+  opacity: 0.2;
+  -webkit-clip-path: circle(0 at center);
+          clip-path: circle(0 at center);
+  -webkit-transition: 0.4s ease-out;
+  transition: 0.4s ease-out;
+}
+
+.main-header button.btn-link:hover::before {
+  -webkit-clip-path: circle(200px at center);
+          clip-path: circle(200px at center);
+  color: #4D13D1;
+}
+
+.main-header .list {
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.section2 {
+  padding: 5rem 10rem;
+}
+
+.section2 .part-1 .row p.prime-p {
+  color: #4D13D1;
+  font-weight: bolder;
+}
+
+.section2 .part-1 .row h2 {
+  font-weight: bolder;
+  font-size: 4rem;
+}
+
+.section2 .part-1 .row-2 {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.section2 .part-1 .row-2 .column > h3 {
+  font-weight: bolder;
+}
+
+.section2 .part-1 i.fas {
+  color: #4D13D1;
+  text-align: center;
+  font-size: 3.6rem;
+  font-weight: bolder;
+}
+
+.section2 .part-2 {
+  margin-top: 4.5rem;
+}
+
+.section2 .part-2 .row {
+  background-color: #4D13D1;
+  color: white;
+  padding-top: 3rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  border-radius: 10px;
+}
+
+.section2 .part-2 .row h1.heading {
+  font-size: 3rem;
+  font-weight: bolder;
+}
+
+.section2 .part-2 .row button.btn-prime {
+  background-color: #fff;
+  color: #4D13D1;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 1rem 1.4rem;
+  border-radius: 5px;
+  position: relative;
+  padding: 1rem 3rem;
+  font-weight: bolder;
+  margin-top: 2rem;
+  font-size: 2rem;
+}
+
+.section2 .part-2 .row button.btn-prime::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #4D13D1;
+  opacity: 0.2;
+  -webkit-clip-path: circle(0 at center);
+          clip-path: circle(0 at center);
+  -webkit-transition: 0.4s ease-out;
+  transition: 0.4s ease-out;
+}
+
+.section2 .part-2 .row button.btn-prime:hover::before {
+  -webkit-clip-path: circle(200px at center);
+          clip-path: circle(200px at center);
+  color: #4D13D1;
+}
+
+.section3 {
+  width: 100%;
+}
+
+.scrolling-wrapper {
+  overflow-x: auto;
+  cursor: pointer;
+  scrollbar-color: #4D13D1 #FBF8F3 !important;
+  width: 100%;
+}
+
+.scrolling-wrapper > .col-5 {
+  border: 0.5px solid rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  margin: 3rem 2rem 3rem 0;
+  padding: 1rem 1.5rem;
+  max-width: 40rem;
+}
+
+.scrolling-wrapper > .col-5 .text {
+  font-size: 1.5rem;
+}
+
+.scrolling-wrapper > .col-5 .btn {
+  background-color: none;
+  color: #4D13D1;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 1rem 1.4rem;
+  border-radius: 5px;
+  position: relative;
+  width: 90%;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2rem auto 0.5rem auto;
+  font-weight: 700;
+}
+
+.scrolling-wrapper > .col-5 .btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #4D13D1;
+  opacity: 0.2;
+  -webkit-clip-path: circle(0 at center);
+          clip-path: circle(0 at center);
+  -webkit-transition: 0.4s ease-out;
+  transition: 0.4s ease-out;
+}
+
+.scrolling-wrapper > .col-5 .btn:hover::before {
+  -webkit-clip-path: circle(200px at center);
+          clip-path: circle(200px at center);
+  color: #4D13D1;
+}
+
+.scrolling-wrapper h3 {
+  color: #4D13D1;
+  font-weight: bold;
+}
+
+.footer {
+  width: 100%;
+  background-color: #FBF8F3;
+  margin: 3rem 0;
+  padding: 2rem 4.5rem 2rem 4.5rem;
+}
+
+.footer .container .row > .col {
+  font-size: 1.3rem;
+}
+
+.footer .container .row > .col > a {
+  margin-top: 1rem;
+}
+
+.footer .container .row > .col > h3 {
+  font-weight: bold;
+}
+
+.SignUp .container {
+  width: 100%;
+  height: 100vh;
+  padding: 2rem 7rem;
+}
+
+.signup {
+  height: 95vh;
+  padding: 6rem 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  font-size: 1.3rem;
+}
+
+.signup button {
+  background-color: #4D13D1;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 1rem 1.4rem;
+  border-radius: 5px;
+  position: relative;
+  border-color: #fff;
+  width: 90%;
+}
+
+.signup button::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  opacity: 0.2;
+  -webkit-clip-path: circle(0 at center);
+          clip-path: circle(0 at center);
+  -webkit-transition: 0.4s ease-out;
+  transition: 0.4s ease-out;
+}
+
+.signup button:hover::before {
+  -webkit-clip-path: circle(200px at center);
+          clip-path: circle(200px at center);
+  color: #fff;
+}
+
+.signup form .form_field > .form-control1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  position: relative;
+  margin-top: 1rem;
+}
+
+.signup form .form_field > .form-control1 label {
+  font-weight: bolder;
+  margin-bottom: 0.3rem;
+}
+
+.signup form .form_field > .form-control1 input {
+  width: 90%;
+  padding: 0.7rem 2rem;
+  border-color: rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.signup form .form_field > .form-control1 small {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  visibility: hidden;
+}
+
+.signup form .form_field > .form-control1 div > i.fas {
+  position: absolute;
+  top: 40%;
+  right: 13%;
+  visibility: hidden;
+}
+
+.signup small {
+  visibility: hidden;
+}
+
+.signup form .form_field > .form-control1.success input {
+  border-color: #2ecc71;
+}
+
+.signup form .form_field > .form-control1.success div i.fa-check-circle {
+  visibility: visible;
+  color: #2ecc71;
+}
+
+.signup form .form_field > .form-control1.error input {
+  border-color: #e74c3c;
+}
+
+.signup form .form_field > .form-control1.error div i.fa-exclamation-circle {
+  visibility: visible;
+  color: #e74c3c;
+}
+
+.signup form .form_field > .form-control1.error small {
+  visibility: visible;
+  color: #e74c3c;
+}
+
+.carousel-container {
+  background-color: #4D13D1;
+  color: white;
+  padding: 4rem 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.carousel-container .carousel-inner {
+  margin: 0 auto;
+}
+
+.carousel-container > .carousel-item, .carousel-container .active {
+  width: 100%;
+  height: 45vh;
+  -webkit-transition: all 0.5sec ease-in-out;
+  transition: all 0.5sec ease-in-out;
+}
+
+.carousel-container > .carousel-item img, .carousel-container .active img {
+  max-height: 300px;
+}
+
+.carousel-container > .control-icon i {
+  color: #4D13D1;
+  z-index: 100;
+}
+
+.carousel-container .text {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.carousel-container .dots {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 7px;
+  background-color: darkgrey;
+  cursor: pointer;
+}
+
+.carousel-container .dots:hover {
+  background-color: #fff;
+}
+
+@media screen and (max-width: 984px) {
+  html {
+    font-size: 55%;
+  }
+  .hero {
+    width: 100%;
+    height: 100vh;
+  }
+  .navbar {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .navbar .navbar-nav {
+    width: 100%;
+    height: 30vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .navbar .navbar-nav > .nav-item .nav-link {
+    font-weight: bold;
+    margin: 2rem 0 1rem 0;
+  }
+  .navbar .sign-in {
+    width: 100%;
+    background-color: #fff;
+    color: #4D13D1;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 1rem 1.4rem;
+    border-radius: 5px;
+    position: relative;
+  }
+  .navbar .sign-in::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #4D13D1;
+    opacity: 0.2;
+    -webkit-clip-path: circle(0 at center);
+            clip-path: circle(0 at center);
+    -webkit-transition: 0.4s ease-out;
+    transition: 0.4s ease-out;
+  }
+  .navbar .sign-in:hover::before {
+    -webkit-clip-path: circle(200px at center);
+            clip-path: circle(200px at center);
+    color: #4D13D1;
+  }
+  .main-row {
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
+  }
+  .main-row .left .stars {
+    display: none !important;
+  }
+  .main-row .left, .main-row .right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .main-row .left .buttongroup {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .main-row .left .buttongroup .btn-prime, .main-row .left .buttongroup .btn-link {
+    width: 100%;
+    text-align: center;
+  }
+  .main-row h1.main-heading {
+    font-size: 4rem;
+  }
+  .right img {
+    height: 45vh;
+  }
+  .section3 .scrolling-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 2rem 3rem 2rem 3rem;
+  }
+  .section3 .row > .column {
+    width: 100%;
+  }
+  .section2 {
+    margin-bottom: 1rem;
+  }
+  .section2 .row-2 > .column {
+    margin-bottom: 4rem;
+  }
+  .section2 .part-2 .text .btn-prime {
+    width: 100%;
+    margin: 1rem 0 1rem 0;
+  }
+  .carousel-container {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 494px) {
+  html {
+    font-size: 45%;
+  }
+  h1.main-heading {
+    font-size: 3rem;
+  }
+  .btn-prime, .btn-link {
+    width: 100%;
+    margin: 1rem 0 1rem 0;
+  }
+  .left, .right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .left .buttongroup {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .left .buttongroup .btn-prime, .left .buttongroup .btn-link {
+    width: 100%;
+    text-align: center;
+  }
+  .Sign-up .form {
+    padding: 0.5rem 1rem 0.5rem 1rem;
+  }
+  .Sign-up .form h3 {
+    font-size: 4rem;
+    margin: -2rem 0 5rem 0;
+  }
+  .Sign-up .form h1 {
+    font-size: 5rem;
+    margin-bottom: 2rem;
+  }
+  .Sign-up .form form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  .Sign-up .form form > .form-control1 {
+    width: 100%;
+    font-size: 2rem;
+    margin: 1rem 0 1rem 0;
+  }
+  .Sign-up .carousel-container {
+    display: none !important;
+  }
+  .footer-row .col {
+    margin: 1rem 0 1rem 0;
+  }
+  .SignUp .container .row .carousel-container {
+    display: none;
+  }
+}
+/*# sourceMappingURL=custom.css.map */

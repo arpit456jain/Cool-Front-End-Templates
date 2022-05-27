@@ -1,0 +1,282 @@
+body {
+  text-align: center;
+}
+
+.container {
+  padding: 3% 15%;
+}
+
+/* -------------------------------------title -----------------------------------*/
+
+#title {
+  background-image: url("https://i.pinimg.com/originals/af/8d/63/af8d63a477078732b79ff9d9fc60873f.jpg");
+  padding-bottom: 50px;
+  text-align: left;
+}
+
+.heading {
+  font-family: "Montserrat-bold", sans-serif;
+  line-height: 1.5;
+  font-size: 60px;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* -----------------------------------Title-Image----------------------------- */
+
+.book-image {
+  width: 50%;
+  height: auto;
+  display: block;
+  margin: auto;
+  border: #fff solid 10px;
+}
+
+/*----------------------------------- Navigation-Bar--------------------------- */
+
+.navbar {
+  margin-bottom: 3rem;
+}
+
+.nav-item {
+  padding: 0 10px 0;
+}
+
+.nav-link {
+  font-size: 1.3rem;
+}
+
+.nav-link:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+.container .navbar .nav-item .nav-link {
+  color: rgb(140, 139, 184);
+}
+
+.container .navbar .navbar-brand {
+  font-family: "Comfortaa", cursive;
+  font-weight: lighter;
+  font-size: 2.5rem;
+}
+
+/*------------------------------------ Dropdown ----------------------------------*/
+
+.dropdown-menu:hover {
+  background-color: plum;
+}
+
+.dropdown-item {
+  font-family: "Montserrat", sans-serif;
+}
+
+/*------------------------------------- Download-Buttons---------------------------- */
+
+.Download-Buttons {
+  margin: 7% 3% 3% 0;
+}
+
+/*--------------------------------------- Features -------------------------------*/
+
+#features {
+  padding: 100px;
+}
+
+.features-text {
+  padding: 5% 0 5% 0;
+}
+
+.feature-heading {
+  font-family: "Montserrat-bold", sans-serif;
+  padding-top: 10px;
+  font-size: 1.7rem;
+  font-weight: 800;
+}
+
+.features-paragraph {
+  color: #8f8f8f;
+  font-size: 1.25rem;
+}
+
+.features-paragraph:hover {
+  color: plum;
+  cursor: pointer;
+}
+
+.icon {
+  max-width: 20%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* -----------------------------------Testimonials-------------------------------- */
+
+#testimonials {
+  background-color: orchid;
+}
+
+.testimonial-text {
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  font-size: 30px;
+  width: 80%;
+  line-height: 2;
+  height: auto;
+  margin: auto;
+}
+
+.testimonial-image {
+  width: 10%;
+  height: auto;
+  margin: 3% auto 3%;
+  border: white 5px solid;
+  display: block;
+}
+
+.testimonial-specification {
+  color: white;
+  font-family: "Sacramento", cursive;
+  font-size: 3rem;
+}
+
+.carousel-item {
+  padding: 100px;
+}
+
+/*----------------------------------------- Books -------------------------------------*/
+
+#books {
+  background-color: black;
+  margin: 100px 80px 100px;
+  width: auto;
+  height: auto;
+}
+
+#books img {
+  border: #fff 5px solid;
+}
+
+#books .container .row {
+  padding: 100px 30px 30px;
+  width: auto;
+  height: auto;
+}
+
+#books .container .row .img-col {
+  padding: 0 0 10px;
+}
+
+#books .books-button {
+  display: inline-block;
+  margin-bottom: 50px;
+}
+
+.img-text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  padding-top: 15px;
+  color: white;
+}
+.book-author {
+  font-family: "Sacramento", cursive;
+  font-size: 30px;
+  color: grey;
+  padding: 10px 0 0 0;
+}
+
+/* -----------------------------------Call to Action ---------------------------------*/
+
+#cta {
+  text-align: left;
+  font-family: "Montserrat-bold", sans-serif;
+}
+
+#cta .container .call-heading {
+  padding-bottom: 20px;
+  font-size: 2.5rem;
+}
+
+form label {
+  font-size: 1.4rem;
+}
+#emailHelp {
+  font-size: 1.23rem;
+}
+
+/*------------------------------------ Footer------------------------------------- */
+
+#footer {
+  background-color: #352044;
+  margin-top: 70px;
+}
+
+.footer-text {
+  padding: 70px;
+  color: #fff;
+}
+
+#footer .logo {
+  padding: 1%;
+  color: white;
+}
+
+#footer .copyright {
+  padding-top: 20px;
+  color: #836a94;
+  font-family: "Comfortaa", cursive;
+  font-size: 1.3rem;
+}
+
+.logo:hover {
+  background-color: plum;
+}
+
+/* --------------------------------Media Query------------------------- */
+
+@media (max-width: 1000px) {
+  #title {
+    text-align: center;
+  }
+
+  #title .heading {
+    font-size: 80px;
+  }
+
+  #title .book-image {
+    border-radius: 100%;
+    margin: auto;
+  }
+
+  .container .navbar .nav-item .nav-link {
+    font-size: 30px;
+    color: white;
+    background: rgba(100, 100, 100, 0.3);
+  }
+
+  .dropdown-item {
+    font-size: 30px;
+  }
+
+  .feature-heading {
+    font-size: 30px;
+  }
+
+  .features-text {
+    font-size: 25px;
+  }
+
+  .testimonial-text {
+    font-size: 30px;
+  }
+
+  .testimonial-specification {
+    font-size: 30px;
+  }
+
+  .testimonial-image {
+    width: 20%;
+  }
+}
