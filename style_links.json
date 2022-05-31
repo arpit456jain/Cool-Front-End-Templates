@@ -1,11 +1,8 @@
-
-[ 
+[
   {
-  
-      "name": "Floor Plans Website",
-      "link": "Floor Plans Website/index.html"
-  
-    },
+    "name": "Floor Plans Website",
+    "link": "Floor Plans Website/index.html"
+  },
   {
     "name": "Headphone-Landing-Page",
     "link": "Headphone-Landing-Page/index.html"
@@ -18,15 +15,13 @@
     "name": "Coffee Website Template",
     "link": "coffee%20website/index.html"
   },
-
   {
     "name": "Admin Dashboard",
     "link": "Admin%20Dashboard/index.html"
-
   },
   {
-    "name":"Amazon Home Page Slider",
-    "link":"Amazon%20Home%20Page%20Slider/index.html"
+    "name": "Amazon Home Page Slider",
+    "link": "Amazon%20Home%20Page%20Slider/index.html"
   },
   {
     "name": "Apple Webiste UI Clone",
@@ -41,8 +36,8 @@
     "link": "Auditions%20Page/index.html"
   },
   {
-    "name":"Bankist Website",
-    "link":"Bankist%20Website/index.html"
+    "name": "Bankist Website",
+    "link": "Bankist%20Website/index.html"
   },
   {
     "name": "Blog Page Website",
@@ -81,8 +76,8 @@
     "link": "Coming%20Soon/index.html"
   },
   {
-    "name":"Pizza Corner New Design",
-    "link":"PizzaCorner_NewInterface/index.html"
+    "name": "Pizza Corner New Design",
+    "link": "PizzaCorner_NewInterface/index.html"
   },
   {
     "name": "Portfolio",
@@ -93,8 +88,8 @@
     "link": "Covid-19/index.html"
   },
   {
-    "name":"CV Template",
-    "link":"CV%20Template/index.html"
+    "name": "CV Template",
+    "link": "CV%20Template/index.html"
   },
   {
     "name": "SAAS landing page",
@@ -103,10 +98,10 @@
   {
     "name": "Social Media Dashboard",
     "link": "Social%20Media%20Dashboard/index.html"
-
-    "name":"Dairy Product Website",
-    "link":"Dairy%20Product%20Website/index.html"
-
+  },
+  {
+    "name": "Dairy Product Website",
+    "link": "Dairy%20Product%20Website/index.html"
   },
   {
     "name": "Digital Banking",
@@ -156,7 +151,6 @@
     "name": "Google Forms Clone",
     "link": "Google%20Forms%20Clone/index.html"
   },
-
   {
     "name": "Local Fast Food",
     "link": "Local%20Fast%20Food/index.html"
@@ -165,7 +159,6 @@
     "name": "Login form",
     "link": "Login%20form/index.html"
   },
-
   {
     "name": "simple dark form",
     "link": "simple%20dark%20form/index.html"
@@ -178,17 +171,14 @@
     "name": "Admin Dashboard",
     "link": "Admin%20Dashboard/index.html"
   },
-
   {
     "name": "Moninfo-Indian Monuments Template",
     "link": "Moninfo-Indian%20Monuments%20Template/index.html"
   },
-
   {
     "name": "Netflix Clone-2",
     "link": "Netflix%20Clone-2/index.html"
   },
-
   {
     "name": "Gym Website",
     "link": "Gym%20Website/index.html"
@@ -201,7 +191,7 @@
     "name": "Huddle",
     "link": "Huddle/index.html"
   },
-  {  
+  {
     "name": "Indian Monuments Template",
     "link": "Moninfo-Indian%20Monuments%20Template/index.html"
   },
@@ -221,7 +211,7 @@
     "name": "Local Fast Food",
     "link": "Local%20Fast%20Food/index.html"
   },
-  {  
+  {
     "name": "Login form",
     "link": "Login%20form/index.html"
   },
@@ -257,7 +247,7 @@
     "name": "Nestle Nutrition Clone",
     "link": "Nestle%20Nutrition%20Clone/index.html"
   },
-  {  
+  {
     "name": "Netflix Clone",
     "link": "Netflix%20Clone/index.html"
   },
@@ -278,8 +268,8 @@
     "link": "Payment%20Gateway/index.html"
   },
   {
-    "name":"Personal Portfolio Website",
-    "link":"personal-portfolio-website/index.html"
+    "name": "Personal Portfolio Website",
+    "link": "personal-portfolio-website/index.html"
   },
   {
     "name": "Pizza Corner",
@@ -321,7 +311,6 @@
     "name": "Reward Point",
     "link": "reward%20point/index.html"
   },
-
   {
     "name": "Chrome Extension UI",
     "link": "Chrome%20Extension%20Project/index.html"
@@ -349,7 +338,7 @@
   {
     "name": "Recipe Website",
     "link": "Recipe%20Website/index.html"
-  }
+  },
   {
     "name": "School Website",
     "link": "School%20Website/index.html"
@@ -395,11 +384,9 @@
     "link": "Technology%20Page/index.html"
   },
   {
-
     "name": "Template Mobile Development Company",
     "link": "Template%20Mobile%20Development%20Company/index.html"
   },
-
   {
     "name": "Testimonial",
     "link": "Testimonial/index.html"
@@ -450,7 +437,6 @@
   },
   {
     "name": "Festivals In India",
-
     "link": "festivals%20in%20india/index.html"
   },
   {
@@ -470,7 +456,6 @@
     "link": "BankistWebsite/index.html"
   },
   {
-
     "name": "CV Template",
     "link": "CV Template/index.html"
   },
@@ -498,7 +483,6 @@
     "name": "DairyProductWebsite",
     "link": "DairyProductWebsite/index.html"
   },
-
   {
     "name": "Documentation Page",
     "link": "Tech-Landing-page/index.html"
@@ -511,14 +495,12 @@
     "name": "Yoga Template 2",
     "link": "Yoga%20Template%202/index.html"
   },
-
   {
     "name": "ZomatoClone",
     "link": "ZomatoClone/index.html"
   },
   {
-    "name":"AnimatedUnderlink",
-    "link":"AnimatedUnderlink/index.html"
+    "name": "AnimatedUnderlink",
+    "link": "AnimatedUnderlink/index.html"
   }
 ]
-
