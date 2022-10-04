@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRM</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg" id="aps_navbar">
+        <div class="container-fluid" id="title_bar_wrapper">
+            <div class="col-xs-12 col-sm-5 col-md-4 col-lg-3 col-xl-2 align-self-stretch d-flex justify-content-between">
+                <a class="navbar-brand" id="aps_title" href="#">Management 360&deg;</a>
+                <button type="button" id="aps_nav_menubtn">
+                    <i class="bi bi-list"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <div id="aps_content_wrapper" class="container-fluid">
+        <div class="row align-self-stretch align-items-stretch">
+            <div id="aps_sidebar" class="col-xs-12 col-sm-5 col-md-4 col-lg-3 col-xl-2">
+                <div id="aps_sidebar_items">
+                    <ul class="nav flex-column">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Ticket Management <i
+                            class="bi bi-ticket-perforated-fill aps_icons"></i></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Inventory <i class="bi bi-box2-fill aps_icons"></i></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Users <i class="bi bi-people-fill aps_icons"></i></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Profile <i class="bi bi-person-fill aps_icons"></i></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link">Logout <i class="bi bi-box-arrow-right aps_icons"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+              
+            </div>
+            <div class="col" id="aps_main">
+                <!-- main Include Table here -->
+
+                <h1>
+                    ALL TICKETS
+                </h1>
+                <div>
+                    Enable search bar here
+                </div>
+                <div>
+                    <!-- Table-->
+                    <table id="example" class="table" class="table-responsive" >
+                        <caption>List of users</caption>
+                        <thead>
+                          <tr class="table-primary">
+                            <th scope="col">S.No.</th>
+                            
+                            <th scope="col">Customer Name</th>
+                            <th scope="col">Date Created</th>
+                            <th scope="col">Priority</th>
+                            <th scope="col">Category</th>
+                            <th scope="col">Sub-Category</th>
+                            <th scope="col">Model No.</th>
+                            <th scope="col">Serial No.</th>
+                            <th scope="col">Summary</th>
+                            <th scope="col">AMC</th>
+                            <th scope="col">Status</th>
+                            <th scope="col">Fault Found Code</th>
+                            <th scope="col">Resolution Code</th>
+                            <th scope="col">Resolution Remarks</th>
+                            <th scope="col">Online resolvable</th>
+                            <th scope="col">Ticket ID</th>
+                            <th scope="col">Update</th>
+                            <!-- I guess this column was no longer needed. right??-->
+                            <!-- <th scope="col">Remove</th> -->
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                            <td>@mdo</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>@twitter</td>
+                          </tr>
+                          <!-- <tfoot>
+                            <tr>
+                              <th scope="col">S.No.</th>
+                              <th scope="col">Customer Name</th>
+                              <th scope="col">Date Created</th>
+                              <th scope="col">Priority</th>
+                              <th scope="col">Category</th>
+                              <th scope="col">Sub-Category</th>
+                              <th scope="col">Model No.</th>
+                              <th scope="col">Serial No.</th>
+                              <th scope="col">Summary</th>
+                              <th scope="col">AMC</th>
+                              <th scope="col">Status</th>
+                              <th scope="col">Fault Found Code</th>
+                              <th scope="col">Resolution Code</th>
+                              <th scope="col">Resolution Remarks</th>
+                              <th scope="col">Online resolvable</th>
+                              <th scope="col">Ticket ID</th>
+                              <th scope="col">Update</th>
+                              I guess this column was no longer needed. right??-->
+                              <!-- <th scope="col">Remove</th>
+                            </tr>
+                          </tfoot> -->
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"> </script>
+    <script src="script.js"></script>
+    <script src="script2.js"></script>
+    
+</body>
+
+</html>
