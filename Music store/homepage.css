@@ -1,0 +1,537 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Josefin+Sans:wght@200&family=Jost:wght@300&family=Luckiest+Guy&family=Monoton&family=Montserrat&family=Nunito:wght@200&family=Paytone+One&family=Poiret+One&family=Poppins:wght@300&family=Sacramento&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --color1: #A3705C;
+    --color2: #6F4C3F;
+    --color3: #FFDD82;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.header{
+    position: relative;
+}
+
+i:hover{
+    cursor: pointer;
+}
+
+.searchdiv{
+    height: 160px;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 56px;
+    box-sizing: border-box;
+    transform: translateY(-160px);
+    transition: transform 0.5s;
+}
+
+.showup{
+    transform: translateY(0);
+}
+
+.searchdiv i{
+    margin-right: 12px;
+}
+
+.searchdiv input{
+    height: 32px;
+    width: 60%;
+    border-radius: 4px;
+    border: 1px solid gray;
+    padding-left: 12px;
+    margin-right: 16px;
+    font-family: 'poppins';
+}
+
+.searchdiv button{
+    height: 36px;
+    width: 160px;
+    background-color: transparent;
+    border: 1px solid var(--color2);
+    color: var(--color2);
+    font-family: 'Montserrat';
+    font-size: 12px;
+    border-radius: 4px;
+}
+
+.searchdiv button:hover{
+    background-color: var(--color2);
+    color: white;
+}
+
+.bg{
+    width: 100vw;
+    height: 150vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: absolute;
+}
+
+.bg img{
+    object-fit: cover;
+}
+
+.bg svg{
+    position: absolute;
+    bottom: -52px;
+    z-index: 2;
+}
+
+.head-content{
+    position: relative;
+    width: 100vw;
+    height: 150vh;
+    background-color: rgba(0,0,0, 0.4);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+nav {
+    height: 72px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    padding: 32px;
+}
+
+nav i{
+    color: white;
+    margin-left: 12px;
+}
+
+p.name{
+    font-family:'jost';
+    font-weight: bold;
+    font-size: 28px;
+    letter-spacing: 2px;
+    color: white;
+}
+
+p.line{
+    font-size: 32px;
+    font-family:'Montserrat';
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 52px;
+}
+
+p.sub-line{
+    font-family: 'poppins';
+}
+
+button.shopbtn {
+    text-decoration: none;
+    width: 220px;
+    height: 52px;
+    border-radius: 4px;
+    text-align: center;
+    border: 1px solid white;
+    background-color: transparent;
+    margin:32px 0;
+    font-family: 'Montserrat';
+    color: white;
+    font-size: 12px;
+}
+
+button.shopbtn:hover{
+    background-color: white;
+    color: var(--color2);
+}
+
+.marquee{
+    height: 38px;
+    box-sizing: border-box;
+    background-color: var(--color3);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: var(--color2);
+    font-size: 15px;
+    white-space: nowrap;
+    text-transform: uppercase;
+    font-family:'Montserrat';
+}
+
+.marquee .track{
+    width: 100%;
+    position: absolute;
+    transform: translateX(-100vw);
+}
+
+.track span{
+    padding: 4px 24px;
+}
+
+.track span:nth-child(2n){
+    background-color: var(--color1);
+    color: white;
+}
+
+@keyframes marquee {
+    100%{ transform: translateX(100vw)}
+}
+
+
+
+.track{
+    animation: marquee 40s linear infinite ;
+}
+
+.track.two{
+    animation-delay: 20s;
+}
+
+.sub-head{
+    display: flex;
+    align-items: center;
+    height: 64px;
+ 
+}
+
+.sub-head .lines{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 14px 0;
+    box-sizing: border-box;
+}
+
+.lines.left{
+    width: 60px;
+}
+
+.lines hr{
+    border: 1px solid var(--color2);
+}
+
+p.hotdeals{
+    font-family: 'paytone One';
+    font-size: 38px;
+    width: 30%;
+    text-align: center;
+    color: var(--color2);
+}
+
+
+.dotd{
+    height: 750px;
+    display: grid;
+    gap: 16px;
+    grid-template-columns: 24% 24% 19% 29%;
+    grid-template-rows: 30% 40% 28%;
+    box-sizing: border-box;
+    padding-bottom: 24px;
+    margin: 16px;
+    margin-bottom: 32px;
+}
+
+.grid-item{
+    overflow: hidden;
+    position: relative;
+}
+
+.grid-item .deal{
+    position: absolute;
+    background-color: rgba(0,0,0, 0.4);
+    z-index: 12;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 24px;
+    padding: 8px;
+    font-family: 'Poiret One';
+    font-weight: bold;
+    transition: background-color 1s;
+}
+
+.item1 .deal{
+    justify-content: center;
+    align-items: center;
+}
+.item2 .deal{
+    align-items: center;
+    justify-content: center;
+}
+.item3 .deal{
+    align-items: center;
+    justify-content: center;
+}
+.item4 .deal{
+    align-items: center;
+    justify-content: center;    
+}
+
+.item6 .deal{
+    align-items: center;
+}
+
+.item1{
+    grid-column: 1/span 3;
+}
+
+
+.item2{
+    grid-column: 4;
+    grid-row: 1 / span 3;
+}
+
+.item4{
+    grid-row: 2;
+    grid-column: 2/span 2;
+}
+
+.item5{
+    grid-row: 3;
+    grid-column: 1/ span 2;
+}
+
+
+.grid-item img{
+    object-fit: cover;
+    position: absolute;
+    transition: transform 1s;
+}
+
+.grid-item:hover{
+    cursor: pointer;
+}
+
+.grid-item:hover .deal{
+    background-color: rgba(0,0,0, 0.8);
+}
+
+.grid-item:hover img{
+    transform: scale(1.2);
+}
+
+.about img{
+    object-fit: cover;
+    filter: brightness(60%);
+    -webkit-filter: brightness(60%);
+}
+
+.about .about-content{
+    width: 50%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 0 96px;
+}
+
+.about-content .smalltext{
+    font-size: small;
+    font-family: 'poppins';
+    padding: 12px 0;
+}
+
+.about-content .maintext{
+    font-size: large;
+    font-family: 'poppins';
+    font-weight: bolder;
+}
+
+.about-content button, .newslettercontent button{
+    height: 36px;
+    width: 160px;
+    background-color: transparent;
+    border: 1px solid var(--color2);
+    color: var(--color2);
+    font-family: 'Montserrat';
+    font-size: 12px;
+    border-radius: 4px;
+}
+
+.about-content button:hover, .newslettercontent button:hover{
+    cursor: pointer;
+    color: white;
+    background-color: var(--color2);
+}
+
+.about, .newsletter, .footer{
+    min-height: 400px;
+    display: flex;
+    margin: 16px;
+    box-sizing: border-box;
+}
+
+.newsletter{
+    background-color: rgba(236, 231, 231, 0.9);
+    border-radius: 6px;
+    margin-bottom: 0;
+}
+
+.newsletter .news-head{
+    font-size: 62px;
+    font-family: 'paytone One';
+    font-weight: bolder;
+    color: var(--color2);
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    width: 50%;
+}
+
+.newsletter .newslettercontent{
+    width: 50%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 0 96px;
+    font-family: 'poppins';
+}
+
+.newslettercontent .emailinput{
+    height: 32px;
+    margin: 18px 0;
+    border-radius: 2px;
+    border: 1px solid var(--color1);
+    padding-left: 8px;
+    font-family: 'poppins';
+}
+
+.premium{
+    min-height: 60vh;
+    background-color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.premium h1{
+    background: url("https://thumbs.gfycat.com/SneakyAntiqueDolphin.webp") no-repeat;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    display:block;
+    font-size: 160px;
+    width: 100%;
+    height: 100%;
+    font-family: 'paytone one';
+    letter-spacing: 3px;
+    text-align: center;
+    background-size: cover;
+}
+
+.wmusica{
+    width: 100%;
+    display: flex;
+    font-size: 48px;
+    justify-content: center;
+    align-items: center;
+    height: 42px;
+    font-family:'sacramento';
+}
+
+.wmusica img{
+    transform: scale(0.7);
+}
+
+.wmusica span{
+    padding: 0 12px;
+}
+
+.footer{
+    margin: 0;
+    display: block;
+}
+
+.footer .tagline{
+    height: 30px;
+    background-color: var(--color2);
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+    padding-top: 6px;
+    box-sizing: border-box;
+    font-family:'Montserrat';
+}
+
+.footer .brand-name{
+    font-family:'jost';
+    font-weight: bold;
+    font-size: 32px;
+    letter-spacing: 2px;
+    color: var(--color2);
+    padding: 24px ;
+}
+
+.footer .footerdiv{
+    display: flex;
+}
+
+.footer .footerdiv .fo{
+    min-height:260px;
+    margin-bottom: 8px;
+    width: 33.33%;
+    padding: 24px;
+}
+
+.fo .head{
+    font-family: 'poppins';
+    font-weight: bolder;
+    font-size: larger;
+    padding-bottom: 48px;
+    letter-spacing: 1px;
+    color: var(--color2);
+}
+
+.contactus .addr, .devinfo .links, .followlinks a{
+    font-family: 'Montserrat';
+    line-height: 32px;
+}
+
+.followlinks a{
+    text-decoration: none;
+    font-size: large;
+    color: black;
+}
+
+.footer .blinks{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 24px;
+    padding-bottom: 16px;
+    border: 0 solid gray;
+    border-top-width: 1px;
+}
+
+.blinks .footc{
+    font-size: 12px;
+    color: gray;
+    font-family:'Montserrat';
+}
