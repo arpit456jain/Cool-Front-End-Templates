@@ -28,7 +28,7 @@ Will Add some cool templates in it.
 
 ## <a href="https://www.youtube.com/watch?v=_AohaKbJjlg&ab_channel=ARPITJAIN" style="text-decoration:none">🎥</a> Demo
 
-#### Website for this repository : https://cool-front-end-templates.netlify.app/
+#### Website for this repository : https://cool-frontend-templates.netlify.app
 
 # Must Check These Repos Also
 
