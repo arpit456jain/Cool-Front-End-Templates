@@ -62,14 +62,20 @@ section{
     margin-top: 1rem;
     display: inline-block;
     padding:.9rem 3rem;
+    /* change there */
+    border-radius: 5px;
     font-size: 1.7rem;
-    color:#fff;
-    background: var(--main-color);
+    color:#000;
+    /* background: var(--main-color); */
+    background: linear-gradient(to left, #fff ,#d3ad7f);
     cursor: pointer;
 }
 
 .btn:hover{
-    letter-spacing: .2rem;
+    /* there is change */
+    /* letter-spacing: .2rem; */
+    translate: 2px;
+    box-shadow:4px 4px 6px #d3ad7f;
 }
 
 .header{
@@ -271,7 +277,9 @@ section{
 .menu .box-container .box{
     padding:5rem;
     text-align: center;
-    border:var(--border);    
+    border:var(--border);  
+      /*changes here  */
+    border-radius: 10px;
 }
 
 .menu .box-container .box img{
@@ -297,12 +305,15 @@ section{
 }
 
 .menu .box-container .box:hover{
-    background:#fff;
+    /* changes here */
+    background:black;
+    box-shadow: 5px 5px 9px #d3ad7f;
+    translate: 0 -5px 5px;
 }
 
-.menu .box-container .box:hover > *{
+/* .menu .box-container .box:hover > *{
     color:var(--black);
-}
+} */
 
 .products .box-container{
     display: grid;
@@ -314,6 +325,12 @@ section{
     text-align: center;
     border:var(--border);
     padding: 2rem;
+    border-radius: 10px;
+}
+.products .box-container .box:hover{
+    /* box-shadow: 5px 5px 9px #fff; */
+    box-shadow: 5px 5px 9px #d3ad7f;
+    translate: 0 -5px 5px;
 }
 
 .products .box-container .box .icons a{
@@ -324,6 +341,7 @@ section{
     border:var(--border);
     color:#fff;
     margin:.3rem;
+    border-radius: 50%;
 }
 
 .products .box-container .box .icons a:hover{
@@ -373,6 +391,11 @@ section{
     border:var(--border);
     text-align: center;
     padding:3rem 2rem;
+    border-radius: 10px;
+}
+.review .box-container .box:hover{
+    box-shadow: 5px 5px 9px #d3ad7f;
+    translate: 0 -5px 5px;
 }
 
 .review .box-container .box p{
@@ -456,7 +479,12 @@ section{
 }
 
 .blogs .box-container .box{
-    border:var(--border);    
+    border:var(--border); 
+    border-radius: 10px;   
+}
+.blogs .box-container .box:hover{
+    box-shadow: 5px 5px 9px #d3ad7f;
+    translate: 0 -5px 5px;
 }
 
 .blogs .box-container .box .image{
@@ -471,9 +499,9 @@ section{
     width: 100%;
 }
 
-.blogs .box-container .box:hover .image img{
+/* .blogs .box-container .box:hover .image img{
     transform: scale(1.2);
-}
+} */
 
 .blogs .box-container .box .content{
     padding:2rem;
@@ -540,6 +568,7 @@ section{
     color:#fff;
     border:var(--border);
     font-size: 2rem;
+    border-radius: 5px;
 }
 
 .footer .links a:hover{
