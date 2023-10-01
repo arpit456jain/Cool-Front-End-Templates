@@ -503,29 +503,29 @@ section{
     padding:1rem 0;
 }
 
-.footer{
-    background:var(--black);
+
+
+.footer .share {
+    padding: 1rem 0;
     text-align: center;
+    margin-top: -90px; /* Adjusted margin-top to move the social media icons closer to the upper border */
 }
 
-.footer .share{
-    padding:1rem 0;
-}
-
-.footer .share a{
+.footer .share a {
     height: 5rem;
     width: 5rem;
     line-height: 5rem;
     font-size: 2rem;
-    color:#fff;
-    border:var(--border);
-    margin:.3rem;
+    color: #fff;
+    border: var(--border);
+    margin: 0.3rem;
     border-radius: 50%;
 }
 
-.footer .share a:hover{
+.footer .share a:hover {
     background-color: var(--main-color);
 }
+
 
 .footer .links{
     display: flex;
@@ -555,6 +555,11 @@ section{
 
 .footer .credit span{
     color:var(--main-color);
+}
+.column h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    margin-top: 0; /* Add this line to remove default margin from h2 */
 }
 
 
@@ -639,4 +644,80 @@ section{
         font-size: 50%;
     }
 
+}
+
+
+/*footer*/
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--black);
+    color: #fff;
+    padding: 40px 20px 30px 20px;
+    flex-wrap: wrap;
+}
+
+.column {
+    width: 220px;
+    margin-bottom: 30px;
+}
+
+.column h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+
+.column p,
+.column ul {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    line-height: 1.5;
+}
+
+.column ul li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.column ul li i {
+    margin-right: 10px;
+}
+
+.column ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.column ul li a:hover {
+    color: #ffcc00;
+}
+
+
+
+
+.footer .social-icons-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px; /* Adjust margin-top to create space between social icons and text */
+}
+
+.footer .social-icons-container .share {
+    display: flex;
+}
+
+.footer .made-with-love {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 30px;
+}
+
+.footer .made-with-love i {
+    color: red;
 }
