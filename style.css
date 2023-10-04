@@ -1,7 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@300;500;600&family=Poppins:wght@300;500;700&family=Space+Mono:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bitter:wght@300;500;600&family=Poppins:wght@300;500;700&family=Space+Mono:wght@400;700&display=swap");
 
-
-html{
+html {
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
@@ -12,59 +11,53 @@ body {
   background-color: rgb(19, 24, 44);
 }
 
-
-.wrapper_box{
+.wrapper_box {
   /* background-color: rgb(245, 93, 93); */
   max-width: 100%;
   overflow-x: hidden;
 }
 
-.logo-title{
-  font-family: 'Poppins';
+.logo-title {
+  font-family: "Poppins";
   color: white;
 }
 
-
-
-  /* heading */
+/* heading */
 h1 {
   color: #fff;
   text-transform: uppercase;
-  font-family: 'Bitter',serif;
+  font-family: "Bitter", serif;
   text-decoration: none;
   letter-spacing: 0.15em;
   text-align: center;
   margin: 1.8em 0 1.5em 0;
   padding: 15px 20px;
   position: relative;
-    }
-    h1:after {    
-      background: none repeat scroll 0 0 transparent;
-      bottom: 0;
-      content: "";
-      display: block;
-      height: 2px;
-      left: 50%;
-      position: absolute;
-      background: #fff;
-      transition: width 0.3s ease 0s, left 0.3s ease 0s;
-      width: 0;
-    }
-    h1:hover:after { 
-      width: 100%; 
-      left: 0; 
-    }  
-   
-
+}
+h1:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+h1:hover:after {
+  width: 100%;
+  left: 0;
+}
 
 /* CARDS DESIGN STARTS  */
 
-
-.image{
-  padding: .5em;
+.image {
+  padding: 0.5em;
   transition: 0.3s;
 }
-.image:hover{
+.image:hover {
   padding: 0;
 }
 
@@ -74,12 +67,12 @@ h1 {
   justify-content: center;
   align-items: center;
   justify-content: space-evenly;
-  
+
   margin-top: 4vmin;
   flex-wrap: wrap;
 }
 
-#cardd{
+#cardd {
   /* background-color: rgb(70, 131, 156); */
   display: flex;
 }
@@ -92,80 +85,75 @@ h1 {
   background-color: white;
   padding: 1.6rem;
   text-align: center;
-  font-family: 'Bitter', sans-serif;
+  font-family: "Bitter", sans-serif;
   margin: 0.8rem;
   border-radius: 25px;
   border: none;
   width: 21rem;
-  transition: .4s;
+  transition: 0.4s;
 }
 .stylebox:hover {
-  
   box-shadow: 15px 15px 17px #000;
 }
 .stylebox .image {
   width: 98%;
   overflow: hidden;
   height: 13rem;
-  border-radius: .5em;
-  transition: .4s;
+  border-radius: 0.5em;
+  transition: 0.4s;
 }
 
-.stylebox .image img{
+.stylebox .image img {
   height: 100%;
   width: 100%;
 }
 
-.stylebox .image:hover{
+.stylebox .image:hover {
   transform: scale(1.17);
-  border-radius: .5em;
+  border-radius: 0.5em;
 }
 /*  */
 
-.card-heading{
+.card-heading {
   display: flex;
   font-size: 18px;
   font-weight: bold;
-  margin: 1em .5em;
-  font-family: 'Bitter';
+  margin: 1em 0.5em;
+  font-family: "Bitter";
 }
-.card-data{
+.card-data {
   display: flex;
   flex-direction: column;
 }
 
-button{
+button {
   border: none;
   width: 95%;
   font-size: 1em;
-  font-family: 'Bitter';
+  font-family: "Bitter";
   font-weight: bold;
   padding: 0.5em;
   transition: 0.3s;
   margin-bottom: 1em;
   border-radius: 50px;
   background: linear-gradient(145deg, #e5e5e5, #c1c1c1);
-  box-shadow:  20px 20px 60px #b6b6b6,
-              -20px -20px 60px #f6f6f6;
+  box-shadow: 20px 20px 60px #b6b6b6, -20px -20px 60px #f6f6f6;
 }
 
-.btnn:hover{
+.btnn:hover {
   background-color: #101522;
   color: #fff;
 }
 
-
-
-@media screen  and (max-width:992px){
+@media screen and (max-width: 992px) {
   /* .stylebox{
     margin:2rem 2rem;
   } */
- 
 }
 
-@media screen  and (max-width:849px){
-  .stylebox{
-    margin:2rem 1rem;
+@media screen and (max-width: 849px) {
+  .stylebox {
+    margin: 2rem 1rem;
   }
 }
 
@@ -179,7 +167,7 @@ button{
     margin-top: 10vmin;
   }
   .stylebox {
-    padding: .3rem;
+    padding: 0.3rem;
     margin: 2rem auto;
     width: 18rem;
     margin-bottom: 1.5rem;
@@ -190,9 +178,9 @@ button{
     height: 12rem;
     padding: 0;
     margin: 0;
-    padding: .5em .5em 0 .5em;
+    padding: 0.5em 0.5em 0 0.5em;
     border-radius: 0.5rem;
-    transition: .3s;
+    transition: 0.3s;
   }
 }
 
@@ -206,7 +194,7 @@ button{
     margin-top: 10vmin;
   }
   .stylebox {
-    padding: .3rem;
+    padding: 0.3rem;
     margin: 2rem auto;
     width: 18rem;
     margin-bottom: 1.5rem;
@@ -217,176 +205,160 @@ button{
     height: 12rem;
     padding: 0;
     margin: 0;
-    padding: .5em .5em 0 .5em;
+    padding: 0.5em 0.5em 0 0.5em;
     border-radius: 0.5rem;
-    transition: .3s;
+    transition: 0.3s;
   }
 }
-
-
-
 
 /* CARDS DESIGN ENDS */
 
 /* scroll top starts */
-#scroll-top{
+#scroll-top {
   position: fixed;
   bottom: -140%;
   right: 1rem;
-  padding: .6rem 1rem;
+  padding: 0.6rem 1rem;
   font-size: 2rem;
-  background:  #61DBFB;
+  background: #61dbfb;
   color: rgb(13, 0, 44);
   border-radius: 50%;
   transition: 1s linear;
   z-index: 1000;
   text-decoration: none;
 }
-#scroll-top:hover{
+#scroll-top:hover {
   -webkit-box-shadow: 0 0 10px 2px rgba(26, 1, 253, 0.42);
   -moz-box-shadow: 0 0 10px 2px rgba(26, 1, 253, 0.42);
   box-shadow: 0 0 10px 2px rgba(26, 1, 253, 0.42);
 }
-#scroll-top.active{
-  bottom: calc(100% - 36rem);
+#scroll-top.active {
+  bottom: 80px;
 }
 /* scroll top ends */
-
 
 /* NAVABR STARTS HERE */
 
 a {
   text-decoration: none;
   color: white;
-  letter-spacing: .5px;
-  transition: .3s;
- }
- a:hover{
-   color:  #61DBFB;
-   transform: translateY(-10%);
- }
- .navbar-nav a.active{
-   color:  #61DBFB;
- }
+  letter-spacing: 0.5px;
+  transition: 0.3s;
+}
+a:hover {
+  color: #61dbfb;
+  transform: translateY(-10%);
+}
+.navbar-nav a.active {
+  color: #61dbfb;
+}
 
- li {
+li {
   list-style: none;
- }
+}
 
- .navbar{
-   background-color: rgb(19, 24, 44);
- }
- .navbar-toggler{
-   color: white;
-   line-height: 10px;
-   transform: translate(50%, -200%);
- }
+.navbar {
+  background-color: rgb(19, 24, 44);
+}
+.navbar-toggler {
+  color: white;
+  line-height: 10px;
+  transform: translate(50%, -200%);
+}
 
-
-
-.nav-link{
-  font-family: 'Space Mono', monospace;
-  margin:0 1em ;
+.nav-link {
+  font-family: "Space Mono", monospace;
+  margin: 0 1em;
   font-size: 16px;
 }
-span{
-  color:  #61DBFB;
+span {
+  color: #61dbfb;
 }
 
-.navbar-brand{
-  font-family: 'Space Mono',monospace;
-  
+.navbar-brand {
+  font-family: "Space Mono", monospace;
 }
 
-.navbar-brand:hover{
+.navbar-brand:hover {
   transform: none;
   color: white;
 }
 
-#navbarText{
+#navbarText {
   justify-content: right;
   align-items: right;
 }
 
 @media only screen and (max-width: 786px) {
-  
 }
 
- 
 /* NAVBAR ENDS HERE */
 
 /* MISC. DESIGNING */
-.tags{
+.tags {
   padding: 0;
   margin: 0;
- color: #61DBFB;
- font-family: 'Space Mono';
- font-size: 16px;
- opacity: 70%;
+  color: #61dbfb;
+  font-family: "Space Mono";
+  font-size: 16px;
+  opacity: 70%;
 }
 
-.tags-opening{
+.tags-opening {
   transform: translate(24%, 290%);
 }
 
-
-
-#counter{
+#counter {
   color: white;
-  font-family: 'Bitter';
+  font-family: "Bitter";
   text-align: center;
-  margin: 0 .1em;
-  border: 2px solid #61DBFB;
+  margin: 0 0.1em;
+  border: 2px solid #61dbfb;
   border-top-right-radius: 100px;
   border-bottom-right-radius: 100px;
-  padding: .2em .5em .2em .9em;
-  
+  padding: 0.2em 0.5em 0.2em 0.9em;
+
   box-shadow: 0px 10px 10px #000;
 }
 
-@media only screen and (max-width: 786px){
-  .tags-opening{
+@media only screen and (max-width: 786px) {
+  .tags-opening {
     transform: translate(10%, 200%);
   }
-  .heading{
+  .heading {
     font-size: 36px;
   }
-  .searchBox{
+  .searchBox {
     margin-bottom: 2em;
   }
 }
-
-
 
 /* END OF MISC. DESIGING */
 
 /* SEARCH BOX STARTS */
 
-
-.searchBar{
+.searchBar {
   outline: none;
-  border: 2px solid  #61DBFB;
+  border: 2px solid #61dbfb;
   border-top-left-radius: 100px;
   border-bottom-left-radius: 100px;
   background-color: transparent;
-  font-family: 'Space Mono';
+  font-family: "Space Mono";
   font-size: 13px;
-  padding: .8em 2em .8em .9em;
+  padding: 0.8em 2em 0.8em 0.9em;
   color: white;
   text-align: left;
   width: 250px;
   box-shadow: 0px 10px 10px #000;
-  
 }
 
-.searchBox{
+.searchBox {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: 1em;
 }
-
 
 /* SEARCH BOX ENDS */
 
@@ -539,4 +511,3 @@ span{
   font-size: 13px;
   color: #ddd;
 }
-
