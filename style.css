@@ -247,8 +247,9 @@ button{
   -moz-box-shadow: 0 0 10px 2px rgba(26, 1, 253, 0.42);
   box-shadow: 0 0 10px 2px rgba(26, 1, 253, 0.42);
 }
+/* update the bottom position value of the scroll button */
 #scroll-top.active{
-  bottom: calc(100% - 36rem);
+  bottom: 80px;
 }
 /* scroll top ends */
 
