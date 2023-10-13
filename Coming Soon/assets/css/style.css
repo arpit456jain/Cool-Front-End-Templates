@@ -5,13 +5,18 @@ body {
 	background-color: #effffd;
 	background-size: 100% 100%;
 	position: relative;
+	margin: 0;
 }
 .heading {
+	display: block;
 	text-align: center;
 	font-size: 55px;
 	font-weight: bold;
 	margin: 30px;
 	color: #ff6b6b;
+}
+.heading img{
+	vertical-align: middle;
 }
 #footer {
 	background: rgba(19, 19, 19, 0.4);
@@ -19,6 +24,7 @@ body {
 	color: #fff;
 	font-size: 14px;
 	position: relative;
+	text-align: center;
 }
 
 .countdown {
@@ -37,6 +43,9 @@ body {
 
 .countdown .box h3 {
 	font-size: 50px;
+	font-weight: 500;
+	margin-top: 0px;
+	margin-bottom: 0.5rem;
 }
 .countdown .box span {
 	color: #ff6b6b;
@@ -45,7 +54,7 @@ body {
 
 .announce {
 	text-align: center;
-	margin-top: 70px;
+	margin: 70px 0px 8px;
 	font-size: 3em;
 	font-weight: bold;
 	color: #ff6b6b;
@@ -54,6 +63,7 @@ body {
 .info {
 	padding: 10px;
 	font-size: 1.5em;
+	margin: 0px 0px 16px;
 	text-align: center;
 	font-family: 'Lora', serif;
 }
@@ -69,4 +79,97 @@ body {
 	padding: 10px;
 	font-size: 1em;
 	text-align: center;
+	justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
+}
+#instagram:hover svg *{
+	fill: url(#ig);
+}
+#instagram:hover{
+	color: red;
+	background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+#facebook:hover svg *{
+	fill: url(#fb);
+}
+#facebook:hover{
+	color: blue;
+	background: linear-gradient(blue,white);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.btn{
+	text-decoration: none;
+	background-color: #ffffff;
+	margin: 2px;
+	border-radius: 5px;
+	background-color: #dc3545;
+	color: white;
+	padding: 6px 12px;
+	vertical-align:middle;
+	line-height: 1.5;
+}
+.btn:hover{
+	box-shadow: 1px 1px 5px black;
+}
+.col{
+	padding: 0 6px;
+}
+@media(min-width:991px){
+	.row{
+	  display: flex;
+	}
+	.col{
+	  flex: 0 0 auto;
+	  width: calc(50% - 12px);
+	}
+  }
+@media (max-width:601px) {
+	.heading {
+		font-size: 10vw;
+		font-weight: bold;
+		margin: 5vw;
+	}
+	.heading img{
+		width: 20vw;
+	}
+	.announce {
+		margin: 2.5vw;
+		font-size: 7.5vw;
+	}
+	.info {
+		padding: 1vw;
+		font-size: 5vw;
+	}
+	.events {
+		padding: 1vw;
+		font-size: 4vw;
+	}
+	.countdown {
+		display: flex;
+		gap: 1vw;
+		padding: 0px;
+	}
+	.countdown .box h3 {
+		font-size: 7.5vw;
+		font-weight: 0;
+		margin-top: 0px;
+	}
+	.countdown .box span {
+		font-size: 4vw;
+	}
+	.btn{
+		font-size: 3vw;
+		padding: 1vw;
+	}
+	.col{
+		padding: 1vw;
+	}
+	#footer{
+		font-size: 5vw;
+		padding: 2vw;
+	}
 }
