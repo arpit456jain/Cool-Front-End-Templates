@@ -83,11 +83,10 @@ body {
 	display: flex;
 	flex-wrap: wrap;
 }
-#instagram:hover svg *{
+#instagram:hover *{
 	fill: url(#ig);
 }
 #instagram:hover{
-	color: red;
 	background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -96,10 +95,8 @@ body {
 	fill: url(#fb);
 }
 #facebook:hover{
-	color: blue;
-	background: linear-gradient(blue,white);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+	color: #285AEB;
+	background-color: transparent;
 }
 .btn{
 	text-decoration: none;
