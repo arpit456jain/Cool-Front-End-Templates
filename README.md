@@ -1,10 +1,9 @@
 # Cool Front-End Templates
 
-### This project is part of Girl script Summer of code 2022
 
-<a href="https://gssoc.girlscript.tech/" target="_blank">
-  <img alt="Gssoc'2022" width=100% src="https://i.postimg.cc/k40ntsV4/1500x500.jpg">
-</a>
+<a href="https://hacktoberfest.digitalocean.com/"><img alt="HacktoberFest'21" title="HacktoberFest'21" width=100% src="https://miro.medium.com/v2/resize:fit:1400/1*Lz_KFgbak2sUjwjOG9SZ4g.png"></a>
+
+
 
 <div align="center">
 
@@ -176,10 +175,12 @@ If the folder name has no white spaces e.g "My-project", the object should be:
 <hr>
 
 ### This project was a part of the following Open Source Program
+<a href="https://gssoc.girlscript.tech/" target="_blank">
+  <img alt="Gssoc'2022" width=100% src="https://i.postimg.cc/k40ntsV4/1500x500.jpg">
+</a>
 
 <a href="https://in.linkedin.com/company/devincept"><img alt="Devincept" title="Devincept" width=100% src="https://user-images.githubusercontent.com/56088741/123548852-1ef59d00-d784-11eb-8e39-255e0c3e97d5.gif"></a>
 
-<a href="https://hacktoberfest.digitalocean.com/"><img alt="HacktoberFest'21" title="HacktoberFest'21" width=100% src="https://user-images.githubusercontent.com/59393136/135566614-5635902f-2907-4e01-8baf-3cb1b43a6b20.png"></a>
 
 <hr>
 
@@ -187,22 +188,12 @@ If the folder name has no white spaces e.g "My-project", the object should be:
 <p align="center">
 <table>
   <tbody><tr>
-     <td align="center"><a href="https://github.com/arpit456jain"><img alt="" src="https://avatars.githubusercontent.com/arpit456jain" width="100px;"><br><sub><b> Arpit Jain </b></sub></a><br></td> </a></td>
-     <td align="center"><a href="https://github.com/ankitapuri"><img alt="" src="https://avatars.githubusercontent.com/ankitapuri" width="100px;"><br><sub><b> Ankita Puri</b></sub></a><br></td></a></td>
+     <td align="center"><a href="https://github.com/arpit456jain"><img alt="" src="https://avatars.githubusercontent.com/arpit456jain" width="100px;"><br><sub><b> Arpit Jain </b></sub></a><br></td> </a>
 
 </tbody></table>
 
 
- <h1 align=center> Project Mentors 👩‍🏫 </h1>
-<p align="center">
-<table>
-  <tbody><tr>
-     <td align="center"><a href="https://github.com/astha2412"><img alt="" src="https://avatars.githubusercontent.com/u/87020129?v=4" width="100px;"><br><sub><b>Kumari Astha Rani </b></sub></a><br></td> </a></td>
-     <td align="center"><a href="https://github.com/VidhiBhatt01"><img alt="" src="https://avatars.githubusercontent.com/u/83345228?v=4" width="100px;"><br><sub><b> Vidhi Bhatt</b></sub></a><br></td></a></td>
-		 <td align="center"><a href="https://github.com/DEEPALI-SUK"><img alt="" src="https://avatars.githubusercontent.com/u/64724041?v=4" width="100px;"><br><sub><b> DEEPALI-SUK</b></sub></a><br></td></a></td>
-		 <td align="center"><a href="https://github.com/DEEPIKA-SUK"><img alt="" src="https://avatars.githubusercontent.com/u/64724039?v=4" width="100px;"><br><sub><b> DEEPIKA-SUK</b></sub></a><br></td></a></td>
-
-</tbody></table>
+ 
 
 <h2 align=center> ✨ Contributors </h2>
 
