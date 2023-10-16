@@ -70,3 +70,6 @@ body {
 	font-size: 1em;
 	text-align: center;
 }
+.row{
+	max-width: 100vw;
+}
