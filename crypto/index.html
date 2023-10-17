@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto</title>
+    <!-- bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD' crossorigin='anonymous'>
+    <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js' defer ></script>
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <div class="navigation container">
+        <nav class="navbar navbar-expand-sm navbar-light">
+            <a class="navbar-brand" href="#"> <img src="./assets/Logo.png" alt=""><h4> Crypto</h4></a>
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0 gap-3">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#calculate">Calculate</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="header section bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 header-inner d-flex justify-content-center flex-column">
+                    <div class="sale-banner rounded transparent d-sm-flex d-none ">
+                        <div class="bg-white rounded"><p>75% SAVE</p></div>
+                        <p>For the Black Friday weekend</p>
+                    </div>
+                    <div class="heading"><h1>Fastest & secure platform to invest in crypto</h1></div>
+                    <p>Buy and sell cryptocurrencies, trusted by 10M wallets with over $30 billion in transactions.</p>
+                    <button class="button arrow-button">
+                        <p>Try for FREE</p>
+                        <div class="arrow-holder"><i class="fa-solid fa-angle-right"></i></div>
+                    </button>
+                </div>
+                <div class="col-lg-6"><img src="./assets/Illustration.png" alt="" class="header-illustration illustration"></div>
+            </div>
+        </div>
+        <img src="./assets/light.png" alt="" class="light one">
+        <img src="./assets/light.png" alt="" class="light two">
+    </div>
+
+    <div class="why-us section">
+        <div class="container">
+            <div class="d-flex justify-content-lg-between align-items-center flex-wrap justify-content-start gap-3">
+                <div class="icon-box">
+                    <div class="transparent icon-wrapper"><i class="fa-solid fa-arrow-trend-up"></i></div>
+                    <div>
+                        <h2>$30B</h2>
+                        <p>Digital Currency Exchanged</p>
+                    </div>
+                </div>
+                <div class="icon-box">
+                    <div class="transparent icon-wrapper"><i class="fa-solid fa-user"></i></div>
+                    <div>
+                        <h2>10M+</h2>
+                        <p>Trusted Wallets Investor</p>
+                    </div>
+                </div>
+                <div class="icon-box">
+                    <div class="transparent icon-wrapper"><i class="fa-solid fa-globe-asia"></i></div>
+                    <div>
+                        <h2>195</h2>
+                        <p>Countries Supported</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 d-none d-lg-block"><img src="./assets/why us illustration.png" alt="" class="illustration"></div>
+                <div class="col-lg-6 header-inner d-flex justify-content-center align-items-start flex-column gap-2">
+                    <div class="heading"><h1>Why you should choose CRAPPO</h1></div>
+                    <p>Experience the next generation cryptocurrency platform. No financial borders, extra fees, and fake reviews.</p>
+                    <button class="button">
+                        Learn More
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="trade-security section " id="calculate">
+        <div class="container-sm pb-5">
+            <div class="pb-5">
+                <h1 class="text-center">Check how much you can earn</h1>
+                <p class="text-center mb-0">Let's check your hash rate to see how much you will earn today,</p>
+                <br>
+            </div>
+
+            <div class="calculator rounded  d-flex flex-column">  
+                    <div class="input-group row pb-4">
+                        <input type="number" class="form-control col-lg-5 col-12" name="" id="" title="hash rate" placeholder="Enter your Hash Rate">
+                            <select class="form-select col-lg-4 " id="inputGroupSelect01" title="select">
+                                <option value="1">Th/s</option>
+                                <option value="2">Th/s</option>
+                                <option value="3">Th/s</option>
+                            </select>
+                            <button class="button rounded col-md-2 ">Calculate</button>
+                    </div>
+                  <p class="color-accent">ESTIMATED 24 HOUR REVENUE:</p>
+                  <div class="d-flex flex-row" >
+                      <h3 class="color-main me-2">0.055 130 59 ETH</h3><h3 class="color-accent">($1275)</h3>
+                  </div>
+                  <p class="color-gray">Revenue will change based on mining difficulty and Ethereum price.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-secondary section">
+        <div class="container">
+            <div class="w-100 d-flex justify-content-center " >
+                <h1 class="text-center">Trade securely and market the high growth cryptocurrencies.</h1>
+            </div>
+            <div class="card-wrapper d-flex flex-wrap justify-content-lg-between gap-lg-1 gap-2 flex-lg-nowrap justify-content-center">
+                <div class="card">
+                    <img src="./assets/Icon.png" alt="">
+                    <div class="card-content">
+                        <h2>Bitcoin</h2>
+                        <p>Digital currency in which a record of transactions is maintained.</p>
+                        <button class="arrow-button">Start Mining <div class="arrow-holder"><i class="fa-solid fa-angle-right"></i></div> </button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./assets/etherium.png" alt="">
+                    <div class="card-content">
+                        <h2>Ethereum</h2>
+                        <p>Blockchain technology to create and run decentralized digital applications.</p>
+                        <button class="arrow-button">Start Mining <div class="arrow-holder"><i class="fa-solid fa-angle-right"></i></div> </button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./assets/simple-icons_litecoin.png" alt="">
+                    <div class="card-content">
+                        <h2>Litecoin</h2>
+                        <p>Cryptocurrency that enables instant payments to anyone in the world.</p>
+                        <button class="arrow-button">Start Mining <div class="arrow-holder"><i class="fa-solid fa-angle-right"></i></div> </button>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+    </div>
+
+    <div class="features section top" id="features">
+        <div class="container">
+            <div class="w-100 d-flex justify-content-center pb-5" >
+                <h1 class="text-center">Market sentiments, portfolio, and run the infrastructure of your choice.</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 py-lg-2 py-5 header-inner d-flex justify-content-center align-items-start flex-column gap-2">
+                    <div class="heading"><h2>Invest Smart</h2></div>
+                    <p>Get full statistic information about the behaviour of buyers and sellers will help you to make the decision.</p>
+                    <button class="button">
+                        Learn More
+                    </button>
+                </div>
+                <div class="col-lg-6">
+                    <div class="stock-cards">
+                        <img src="./assets/Group 164.png" alt="" class="big-card">
+                        <img src="./assets/Card visits per day.png" class="small-card two d-sm-block d-none" alt="">
+                        <img src="./assets/Card bounce rate.png" class="small-card one " alt="">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="row section top flex-lg-row flex-column-reverse">
+            <div class="col-lg-6 ">
+                <img src="./assets/Statistic.png" class="statistics" alt="">
+            </div>
+            <div class="col-lg-6 section header-inner d-flex justify-content-center align-items-start flex-column gap-2 ">
+                <div class="container">
+                    <div class="heading"><h2>Detailed Statistics</h2></div>
+                    <p>View all mining related information in realtime, at any point at any location and decide which polls you want to mine in.</p>
+                    <button class="button">
+                        Learn More
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="container section">
+            <div class="row">
+                <div class="col-lg-6 py-lg-2 py-5 header-inner d-flex justify-content-center align-items-start flex-column gap-2">
+                    <div class="heading"><h2>Grow your profit and track your investments</h2></div>
+                    <p>Use advanced analytical tools. Clear TradingView charts let you track current and historical profit investments.</p>
+                    <button class="button">
+                        Learn More
+                    </button>
+                </div>
+                <div class="col-lg-6">
+                    <img src="./assets/Table.png" alt="" class="table">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="start-mining section">
+        <div class="container p-lg-5 p-4">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1>Start mining now</h1>
+                    <h5>Join now with CRAPPO to get the latest news and start mining now</h5>
+                </div>
+                <div class="col-lg-6 d-flex justify-content-between align-items-center gap-1">
+                 <input type="text" title="email" placeholder="Enter you email">
+                 <button class="button">
+                    Subscribe
+                </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="section top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <a class="navbar-brand mb-5" href="#"><img src="./assets/Logo.png" alt=""><h2> Crypto</h2></a>
+                </div>
+                <div class="col-lg-2">
+                    <h4>Quick Link</h4>
+                    <ul>
+                        <li>Home</li>
+                        <li>Products</li>
+                        <li>About</li>
+                        <li>Features</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li>Download Whitepapper</li>
+                        <li>Smart Token</li>
+                        <li>Blockchain Explorer</li>
+                        <li>Crypto API</li>
+                        <li>Interest</li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <div class="payments">
+                        <h3 class="text-center text-md-start">We accept following payment systems</h3>
+                        <div class="row gap-2 my-4 justify-content-center justify-content-lg-start">
+                            <div class="col-lg-4 transparent rounded-sm"><img src="./assets/bx_bxl-visa.png" alt=""></div>
+                            <div class="col-lg-4 transparent rounded-sm"><img src="./assets/logos_mastercard.png" alt=""></div>
+                            <div class="col-lg-4 transparent rounded-sm"><img src="./assets/logos_bitcoin.png" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex mt-5 justify-content-between flex-column flex-md-row">
+                <div class="copyright text-center">
+                    <p class="m-0">Made by <a href="https://twitter.com/ihsanhaamza">Hamza Ihsan </a>👋</p>
+                </div>
+                <div class="social-icons d-flex justify-content-center">
+                    <a href="https://www.instagram.com/hamzaihsan04/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://twitter.com/ihsanhaamza"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://github.com/thehamzaihsan/crypto-landing-page"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
