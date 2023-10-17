@@ -1,0 +1,529 @@
+$background-color: #0d0d2b;
+$background-color-light:#2B076E;
+$accent-color: #3671e9;
+$border-radius: 32px;
+$border-radius-sm: 16px;
+$transparent: #252540;
+$background-secondary:#f1f1f1;
+$mobile:425px;
+$tablet:768px;
+
+
+@font-face {
+  font-family: Rubik;
+  src: url(./assets/Rubik-VariableFont_wght.ttf);
+}
+
+html{
+    overflow-x: hidden;
+}
+
+body {
+  background-color: $background-color;
+  font-family: "Rubik";
+  overflow-x: hidden;
+}
+
+@mixin hover-accent-color {
+  &:hover {
+    color: $accent-color !important;
+  }
+}
+
+.navigation {
+  margin-block: 1rem;
+  margin-bottom: 0px;
+}
+
+.nav-link {
+  color: white !important;
+  @include hover-accent-color();
+}
+
+.navbar-brand {
+  color: white !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  @include hover-accent-color();
+
+  h4 , h3 , h2{
+    margin-bottom: 0px;
+    margin-left: 1rem;
+  }
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+
+  a {
+    margin-bottom: 0px;
+    vertical-align: middle;
+  }
+}
+
+.navbar-collapse {
+  justify-content: end;
+}
+
+.illustration {
+  z-index: -1;
+  position: relative;
+}
+
+.header-inner {
+  h1 {
+    color: white;
+    font-size: 3rem !important;
+    margin-bottom: 1rem;
+  }
+  h2{
+    color: white;
+    margin-bottom: 1rem;
+  }
+  p {
+    color: white;
+  }
+  .bg-white {
+    p {
+      color: black;
+    }
+  }
+
+}
+
+.transparent {
+  background-color: $transparent;
+  p {
+    margin-bottom: 0px;
+  }
+
+  width: max-content;
+}
+
+.sale-banner {
+    vertical-align: middle;
+    padding: 0.25rem;
+    padding-inline: .25rem;
+    padding-right: 1rem;
+    margin-block: 1rem;
+    align-items: center;
+    gap: 0.5rem;
+
+  .bg-white {
+    padding: 0.5rem;
+    padding-inline: 1rem;
+  }
+}
+
+.rounded {
+  border-radius: $border-radius !important;
+}
+
+button{
+    p{
+        margin-bottom: 0px;
+        pointer-events: none;
+    }
+    &.arrow-button{
+        padding: .75rem;
+        padding-left:50px;
+        gap: .5rem;
+        position: relative;
+
+        &:hover{
+            padding-left: .75rem;
+            transition: padding-left 200ms;
+            padding-right:50px;
+            transition: padding-right 200ms;
+            .arrow-holder{
+                right: 0;
+                left: auto;
+                transition: right 200ms , left 200ms;
+                cursor:auto;
+            }
+        }
+
+        .arrow-holder{
+            background-color: white;
+            width: 40px;
+            height: 40px;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 100%;
+            position: absolute;
+            top: 0;
+            left:0;
+            margin: 0.25rem;
+            transition: left 200ms , right 200ms;
+    
+            .fa-solid{
+                color: $accent-color;
+            }
+        }
+    }
+
+    background-color: $accent-color !important;
+    width: max-content;
+    color: white;
+    border-radius: $border-radius;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    outline: none;
+    border: none;
+    padding: 1rem;
+}
+
+.header{
+    position: relative;
+    overflow:hidden;
+}
+
+.light{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-30% , -40%);
+    z-index: -10;
+}
+
+.icon-box{
+    display: flex;
+    gap:1rem;
+    justify-content: center;
+    align-items: center;
+
+    .transparent{
+        height: 80px;
+        width: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100%;
+
+        .fa-solid{
+            font-size: 1.5rem;
+            color:$accent-color;
+        }
+    }
+
+    h2{
+        color:white;
+        font-weight: bold;
+        margin-bottom:0.5rem;
+    }
+    p{
+        color:white;
+        margin-bottom:0px;
+    }
+    div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:flex-start;
+    }
+}
+
+.section{
+    padding-block: 7rem;
+    &.top{
+        padding-top: 7rem;
+        padding-bottom: 1rem;
+    }
+    &.bottom{
+        padding-top: 1rem;
+        padding-bottom: 7rem;
+    }
+}
+
+@media (max-width:$tablet) {
+  .section{
+    padding-block: 4rem;
+    &.top{
+        padding-top: 4rem;
+        padding-bottom: .5rem;
+    }
+    &.bottom{
+        padding-top: .5rem;
+        padding-bottom: 4rem;
+    }
+}
+}
+
+@media (min-width: 992px){
+  .col-lg-5 {
+      flex: 0 0 auto;
+      width: 41.66666667% !important;
+  }
+}
+
+
+
+.header{
+    margin-top: 0rem;
+}
+
+.why-us{
+    .button{
+        padding: 1rem !important;
+    }
+    background-image: url(./assets/u.png) , url(./assets/D.png) ;
+    background-position: bottom right , top right  ;
+    background-repeat: no-repeat;
+    .header-inner{
+        margin-top: 3rem;
+    }
+    .illustration{
+      transform: scale(0.8);
+      margin-right:3rem;
+    }
+}
+
+.trade-security{
+    color:white;
+    position: relative;
+}
+
+.calculator{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%);
+    max-width: 768px;
+    width: 100%;
+    background: white;
+    padding: 2rem;
+    input , select{
+      outline: none;
+      padding: 0.75rem;
+      border: none;
+      border-bottom:1px rgba(128, 128, 128, 0.542) solid;
+      border-radius: 0px;
+      margin: 1rem;
+      padding-inline-start: 0px;
+      &::placeholder{
+        color: $background-color;
+      }
+      &:focus{
+        border-color:rgba(128, 128, 128, 0.542);
+        box-shadow: none;
+      }
+    }
+    button{
+      margin: 1rem;
+    }
+}
+
+
+@media (max-width:$tablet) {
+  .calculator{
+    position:relative;
+    button{
+      margin: 0rem;
+    }
+  }
+}
+
+.bg-secondary{
+    h1{
+        color:$background-color;
+    }
+}
+.color-accent{
+  color: $accent-color !important;
+}
+.color-main{
+  color:$background-color;
+}
+.color-gray{
+  color: gray;
+}
+
+.card{
+    border-radius: $border-radius;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 350px;
+    padding:2rem;
+    gap: 2rem;
+
+    &:hover{
+        background: $background-color-light;
+        transition: background-color 200ms ;
+        color: white;
+    }
+
+    img{
+        width:80px;
+        height:80px;
+    }
+    .card-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        p{
+            text-align: center;
+        }
+    }
+}
+.bg-secondary{
+    background-color: $background-secondary !important;
+    &.section{
+        h1{
+            max-width: 520px;
+            margin-bottom: 2rem;
+            color: $background-color;
+        }
+    }
+}
+
+.features{
+    background-color: $background-color-light !important ;
+    background: url(./assets/circle-top.png) , url(./assets/circle\ bottom.png);
+    background-repeat: no-repeat;
+    background-position: center top , bottom right;
+
+    h1{
+        max-width: 700px;
+        color: white;
+    }
+    p{
+       max-width: 500px;
+    }
+
+    .table{
+      transform: scale(1.2);
+    }
+}
+
+.stock-cards{
+    position: relative;
+
+    .small-card{
+        position: absolute;
+        top: 70%;
+        left: 10%;
+        &.two{
+            left: 50%;
+            top: 80%;
+        }
+    }
+}
+.statistics{
+        width: 600px;
+}
+
+.start-mining{
+  background: linear-gradient( $background-color-light  , $background-color);
+
+  .container{
+    background: url(./assets/bitcoin.png) , url(./assets/eth.png);
+    background-color: $accent-color;
+    background-repeat: no-repeat;
+    background-position: 100% 140% , 0% 200%;
+    border-radius: $border-radius;
+    color: white;
+
+    h5{
+      font-weight:300;
+    }
+    input{
+      background-color: $accent-color !important;
+      border-style: solid;
+      border-color: #3671e9;
+      border-bottom-color: white;
+      border-bottom-width: 0.25px;
+      width:375px;
+      height: max-content;
+      color: white;
+      &:focus-visible{
+        outline: none;
+      }
+      &::placeholder{
+        color: white;
+      }
+    }
+    button{
+      color: black;
+      background-color: white !important;
+      margin-block: 1rem;
+    }
+  }
+}
+
+footer{
+  background: linear-gradient($background-color , rgb(24, 23, 30));
+  color:white;
+  .navbar-brand{
+    justify-content: flex-start;
+  }
+  h4{
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+    @include hover-accent-color();
+  }
+  ul{
+    padding-left: 0px;
+    list-style: none;
+  }
+  li{
+    padding-bottom: .5rem;
+    @include hover-accent-color();
+    cursor:pointer;
+  }
+  .payments{
+    .col-lg-4{
+      padding-inline: 1.5rem;
+      padding-block: .5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin:0.25rem;
+    }
+  }
+}
+.rounded-sm{
+  border-radius: 8px;
+}
+
+.social-icons{
+  display: flex;
+  gap:1rem;
+  .fa-brands{
+    font-size: 1.25rem;
+    &:hover{
+      color:$accent-color;
+    }
+  }
+}
+.navbar-toggler{
+  background: transparent !important;
+  span{
+    filter: invert(100);
+    background-image: url(./assets/menu.png) !important;
+  }
+  &:focus{
+    box-shadow: none;
+    border: none;
+  }
+  &[aria-expanded = true]{
+    span{
+      background-image: url(./assets/close.png) !important;
+    }
+  }
+}
+
+.social-icons a , .copyright a{
+  color:white;
+  text-decoration: none;
+}
+.social-icons a:hover , .copyright a:hover{
+  color: $accent-color;
+}
