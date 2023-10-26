@@ -67,7 +67,6 @@ body
 	justify-content: center;
 	align-items: center;
 }
-
 section img
 {	
 	width: 100%;
@@ -451,11 +450,16 @@ li{
 		flex-direction: column-reverse;
 	}
 	.Main img{
-		position: absolute;
 		width: 50%;
 		left: 15em;
 		top: 22em;
 		z-index: -1;
+	}
+	.imgpizza{
+		width: 400px;
+	}
+	#imgg{
+		width: 100%;
 	}
 	.about{
 		text-align: center;

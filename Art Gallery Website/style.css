@@ -46,9 +46,8 @@ p#footer {
     height: 250px;
 }
 .navbar{
-    width: 100%;
+    width: 100vw;
     height: 15vh;
-    margin: auto;
     display: flex;
     align-items: center;
 }
@@ -343,3 +342,4 @@ p{
         background-size: 100% 100%;
     }
 }
+/* @media screen and (max-width:) */
